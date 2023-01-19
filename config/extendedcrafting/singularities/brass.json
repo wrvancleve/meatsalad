@@ -1,0 +1,10 @@
+{
+  "name": "Brass",
+  "colors": [
+    "EFB83E",
+    "7D440F"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/brass"
+  }
+}

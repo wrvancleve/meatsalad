@@ -1,0 +1,10 @@
+{
+  "name": "Sapphire",
+  "colors": [
+    "276AD2",
+    "000B73"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/sapphire"
+  }
+}

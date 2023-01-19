@@ -1,0 +1,10 @@
+{
+  "name": "Iridium",
+  "colors": [
+    "D4CEC8",
+    "515255"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/iridium"
+  }
+}

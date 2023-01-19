@@ -1,0 +1,4 @@
+bin/
+mods/
+build_release.sh
+fetch_updates.sh

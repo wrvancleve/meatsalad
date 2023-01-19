@@ -1,0 +1,10 @@
+{
+  "name": "Pyrope",
+  "colors": [
+    "FF6698",
+    "600826"
+  ],
+  "ingredient": {
+    "tag": "blue_skies:gems/pyrope"
+  }
+}

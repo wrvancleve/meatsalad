@@ -1,0 +1,10 @@
+{
+  "name": "Lumium",
+  "colors": [
+    "FFFCE3",
+    "B6611C"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/lumium"
+  }
+}

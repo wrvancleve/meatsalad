@@ -1,0 +1,10 @@
+{
+  "name": "Charoite",
+  "colors": [
+    "B789D9",
+    "311D4B"
+  ],
+  "ingredient": {
+    "tag": "blue_skies:gems/charoite"
+  }
+}

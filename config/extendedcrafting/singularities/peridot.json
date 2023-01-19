@@ -1,0 +1,10 @@
+{
+  "name": "Peridot",
+  "colors": [
+    "8EAD00",
+    "425B00"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/peridot"
+  }
+}

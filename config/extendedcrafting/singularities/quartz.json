@@ -1,0 +1,10 @@
+{
+  "name": "Quartz",
+  "colors": [
+    "B3A091",
+    "3B2819"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/quartz"
+  }
+}
