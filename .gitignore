@@ -1,4 +1,5 @@
 bin/
 mods/
+releases/
 build_release.sh
 fetch_updates.sh
