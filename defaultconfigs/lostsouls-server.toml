@@ -60,7 +60,7 @@
 	minMobs = 10
 	#The maximum amount of mobs that are spawned by a haunted building
 	#Range: 1 ~ 10000
-	maxMobs = 50
+	maxMobs = 25
 	#The chance that a building is haunted. This version is used in case the building is in a Lost City sphere
 	#Range: 0.0 ~ 1.0
 	sphereHauntedChance = 0.800000011920929
@@ -69,7 +69,7 @@
 	sphereMinMobs = 10
 	#The maximum amount of mobs that are spawned by a haunted building. This version is used in case the building is in a Lost City sphere
 	#Range: 1 ~ 10000
-	sphereMaxMobs = 50
+	sphereMaxMobs = 35
 	#If this is true then mobs will only spawn if the light level is low enough. Otherwise they spawn regardless of light level
 	checkValidSpawn = false
 	#If this is true then the player will be notified when a building is cleared

@@ -22,9 +22,6 @@ function removeFromChests(item as crafttweaker.api.item.IItemStack, itemName as 
     );
 }
 
-removeAll(<item:minecraft:diamond>, "minecraft_diamond");
-removeFromChests(<item:minecraft:emerald>, "minecraft_emerald");
-
 removeAll(<item:minecraft:ancient_debris>, "minecraft_ancient_debris");
 removeAll(<item:minecraft:netherite_ingot>, "minecraft_netherite_ingot");
 removeAll(<item:minecraft:netherite_block>, "minecraft_netherite_block");

@@ -13,6 +13,9 @@ onEvent('tags.items', e => {
   e.add('forge:raw_materials/azure_silver', 'silentgear:raw_azure_silver');
   e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
   e.add('forge:dusts/netherite', 'alltheores:netherite_dust');
+  e.add('forge:raw_ores/iron', 'minecraft:raw_iron');
+  e.add('forge:raw_ores/copper', 'minecraft:raw_copper');
+  e.add('forge:raw_ores/gold', 'minecraft:raw_gold');
 
   // fix raw block crafting for other mods
   mekanismMetals.forEach(metal => e.add(`forge:raw_ores/${metal}`, `mekanism:raw_${metal}`))
