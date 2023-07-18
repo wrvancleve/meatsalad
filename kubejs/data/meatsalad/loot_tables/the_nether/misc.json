@@ -1,0 +1,359 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "minecraft:golden_apple",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "naturescompass:naturescompass",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "explorerscompass:explorerscompass",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens1",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens15",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:zombie_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:spider_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:skeleton_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:creeper_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:slime_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:magma_cube_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:zombie_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:spider_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:skeleton_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:creeper_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:slime_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:magma_cube_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:witch_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:blaze_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:ghast_gate\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens0",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens4",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens7",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens8",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens14",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:witch_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:blaze_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:enderman_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:ghast_gate_large\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens11",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens3",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens5",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens12",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

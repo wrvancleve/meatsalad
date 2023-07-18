@@ -1,0 +1,11 @@
+To refresh this file, delete it and run /reload command again! Last updated: Feb 13, 2023, 8:18:37 PM
+
+#cataclysm:soul_black_smith_avoid
+- cataclysm:burning_arena (from L_Enders_Cataclysm-0.52-1.19.2.jar)
+- minecraft:fortress (from L_Enders_Cataclysm-0.52-1.19.2.jar)
+- minecraft:bastion_remnant (from L_Enders_Cataclysm-0.52-1.19.2.jar)
+
+#cataclysm:burning_arena_avoid
+- cataclysm:soul_black_smith (from L_Enders_Cataclysm-0.52-1.19.2.jar)
+- minecraft:fortress (from L_Enders_Cataclysm-0.52-1.19.2.jar)
+- minecraft:bastion_remnant (from L_Enders_Cataclysm-0.52-1.19.2.jar)

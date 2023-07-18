@@ -2,7 +2,7 @@
 [pump]
 	#The range of the pump
 	#Range: 0 ~ 1024
-	range = 256
+	range = 64
 	#The interval in ticks for when to move on to the next block (higher is slower)
 	#Range: 0 ~ 1024
 	speed = 5

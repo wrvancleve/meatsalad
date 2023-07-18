@@ -1,0 +1,21 @@
+{
+  "type": "powah:energizing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/crimson_steel"
+    },
+    {
+      "tag": "forge:ingots/netherite"
+    },
+    {
+      "tag": "forge:ingots/azure_electrum"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "energy": 32000,
+  "result": {
+    "item": "silentgear:tyrian_steel_ingot"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "pools": [
+    {
+      "name": "treasure_room_loot_pool",
+      "rolls": {
+        "min": 3.0,
+        "max": 9.0
+      },
+      "bonus_rolls": 0.25,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/materials",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/treasure_gear",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/misc",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "treasure_room_loot_tome_pool",
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/ancient_tomes",
+          "weight": 20,
+          "quality": 2
+        }
+      ]
+    },
+    {
+      "name": "treasure_room_loot_gem_pool",
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 75
+        },
+        {
+          "type": "apotheosis:random_gem",
+		      "weight": 25,
+          "quality": 2
+        }
+      ]
+    },
+    {
+      "name": "treasure_room_loot_eye_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "endrem:magical_eye",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 70
+        }
+      ],
+      "bonus_rolls": 0.0
+    }
+  ]
+}

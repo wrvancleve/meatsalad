@@ -1,0 +1,35 @@
+{
+	"conditions": [
+		{
+			"modid": "cataclysm",
+			"type": "forge:mod_loaded"
+		}
+	],
+	"type": "cataclysm:ender_guardian",
+	"name": "entity.cataclysm.ender_guardian",
+	"name_color": "0xCE5FFF",
+	"gui_scale": 0.5,
+	"gui_x_offset": 0.0,
+	"gui_y_offset": 0.0,
+	"gui_z_offset": 0.0,
+	"sim_cost": 16384,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:end_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.ender_guardian",
+	"fabricator_drops": [
+		{
+			"item": "kubejs:ender_star",
+			"count": 1
+		}
+	],
+	"data_per_kill": [
+		1,
+		4,
+		10,
+		18
+	]
+}

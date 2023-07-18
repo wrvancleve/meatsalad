@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "c": {
+      "tag": "forge:gems/certus_quartz"
+    },
+    "X": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "i": {
+      "tag": "forge:ingots/iron"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "deg",
+    "irX",
+    "qCc"
+  ],
+  "result": {
+    "item": "rftoolsbase:dimensionalshard"
+  }
+}

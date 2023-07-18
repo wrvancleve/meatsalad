@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 12.0,
+        "min": 4.0
+      },
+      "bonus_rolls": 0.25,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/treasure_gear",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/materials",
+          "weight": 4,
+          "quality": 1
+        },
+        {
+          "type": "apotheosis:random_gem",
+		      "weight": 1,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/ancient_tomes",
+          "weight": 1,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/misc",
+          "weight": 1,
+          "quality": 1
+        }
+      ]
+    }
+  ]
+}

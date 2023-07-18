@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "allthemodium",
+  "key": {
+    "p": {
+      "tag": "allthemodium:demonic_planks"
+    },
+    "b": {
+      "tag": "forge:bookshelves"
+    },
+    "s": {
+      "item": "allthemodium:ancient_soulberries"
+    },
+    "d": {
+      "item": "thermal:basalz_rod"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "sbd",
+    "ppp"
+  ],
+  "result": {
+    "item": "allthemodium:demonic_bookshelf"
+  }
+}

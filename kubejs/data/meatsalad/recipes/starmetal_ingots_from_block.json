@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/starmetal"
+    }
+  ],
+  "result": {
+    "item": "kubejs:starmetal_ingot",
+    "count": 9
+  }
+}

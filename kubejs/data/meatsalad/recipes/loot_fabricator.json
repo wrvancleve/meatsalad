@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OEO",
+    "GCG",
+    "OIO"
+  ],
+  "key": {
+    "O": {
+      "tag": "forge:obsidian"
+    },
+    "G": {
+      "tag": "forge:ingots/blaze_gold"
+    },
+    "E": {
+      "tag": "forge:storage_blocks/emerald"
+    },
+    "I": {
+      "item": "rftoolsbase:infused_enderpearl"
+    },
+    "C": {
+      "tag": "forge:circuits/ultimate"
+    }
+  },
+  "result": {
+    "item": "hostilenetworks:loot_fabricator"
+  }
+}

@@ -10,15 +10,15 @@
 	[cyclic.enchantment]
 
 		[cyclic.enchantment.auto_smelt]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.beekeeper]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.beheading]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 			#Beheading enchant add player skin head drop, add any mob id and any skin
 			EntityMHF = ["minecraft:blaze:MHF_Blaze", "minecraft:cat:MHF_Ocelot", "minecraft:cave_spider:MHF_CaveSpider", "minecraft:chicken:MHF_Chicken", "minecraft:cow:MHF_Cow", "minecraft:enderman:MHF_Enderman", "minecraft:ghast:MHF_Ghast", "minecraft:iron_golem:MHF_Golem", "minecraft:magma_cube:MHF_LavaSlime", "minecraft:mooshroom:MHF_MushroomCow", "minecraft:ocelot:MHF_Ocelot", "minecraft:pig:MHF_Pig", "minecraft:zombie_pigman:MHF_PigZombie", "minecraft:sheep:MHF_Sheep", "minecraft:slime:MHF_Slime", "minecraft:spider:MHF_Spider", "minecraft:squid:MHF_Squid", "minecraft:villager:MHF_Villager", "minecraft:witch:MHF_Witch", "minecraft:wolf:MHF_Wolf", "minecraft:guardian:MHF_Guardian", "minecraft:elder_guardian:MHF_Guardian", "minecraft:snow_golem:MHF_SnowGolem", "minecraft:silverfish:MHF_Silverfish", "minecraft:endermite:MHF_Endermite"]
@@ -29,15 +29,8 @@
 			#Range: 1 ~ 99
 			per_level = 25
 
-		[cyclic.enchantment.growth]
-			#Radius per level.  size around player to perform growth logic
-			#Range: 1 ~ 16
-			radius = 2
-			#Set false to disable enchantment
-			enabled = true
-
 		[cyclic.enchantment.curse]
-			#(Gloom) Set false to disable enchantment
+			#(Gloom) Set false to stop enchantment from working
 			enabled = true
 
 		[cyclic.enchantment.disarm]
@@ -48,44 +41,51 @@
 			#Set false to disable enchantment
 			enabled = true
 
+		[cyclic.enchantment.growth]
+			#Set false to stop enchantment from working
+			enabled = false
+			#Radius per level.  size around player to perform growth logic
+			#Range: 1 ~ 16
+			radius = 2
+
 		[cyclic.enchantment.launch]
-			#(Multi-Jump) Set false to disable Multi Jump enchantment
+			#(Multijump) Set false to disable Multi Jump enchantment
 			enabled = true
 
 		[cyclic.enchantment.life_leech]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.magnet]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.multishot]
-			#(Multi-bow) Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.ender]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.quickshot]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 
 		[cyclic.enchantment.reach]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.step]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = false
 
 		[cyclic.enchantment.steady]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 
 		[cyclic.enchantment.laststand]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 			#Base XP cost to activate at level 1 (level 2 is this/2)
 			#Range: 1 ~ 9999
@@ -98,15 +98,15 @@
 			cooldown = 20
 
 		[cyclic.enchantment.traveler]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 
 		[cyclic.enchantment.venom]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 
 		[cyclic.enchantment.experience_boost]
-			#Set false to disable enchantment
+			#Set false to stop enchantment from working
 			enabled = true
 
 	#####################################################################################
@@ -116,7 +116,7 @@
 
 		[cyclic.worldgen.flowers]
 			#Do the four generate in the world.  If false, the 4 flower blocks and 3 features (flower_all, flower_tulip_ flower_lime) will still be registered and can be used externally (data packs etc), but the mod will not use the features to generate/place flowers in world-generation
-			enabled = true
+			enabled = false
 
 		[cyclic.worldgen.cyan_podzol_legacy]
 			#Enable the legacy feature that will spawn a Cyan flower when bonemeal is used on Podzol
@@ -189,8 +189,8 @@
 
 		#apple_ender settings
 		[cyclic.items.apple_ender]
-			#Ignored Structures
-			ignore = ["minecraft:shipwreck", "minecraft:mineshaft", "minecraft:stronghold", "minecraft:buried_treasure", "minecraft:pillager_outpost", "minecraft:village", "minecraft:nether_fossil"]
+			#Which structure tags are looked for
+			structure_tags = ["minecraft:eye_of_ender_located", "minecraft:on_woodland_explorer_maps", "minecraft:on_ocean_explorer_maps", "minecraft:village"]
 			#How many results the client will see
 			#Range: 1 ~ 60
 			printed = 5
@@ -356,7 +356,7 @@
 			experience = 500
 			#Maximum number of hearts that can be attained (including initial 10)
 			#Range: 1 ~ 200
-			maximum = 100
+			maximum = 10
 
 	#####################################################################################
 	# Block specific configs

@@ -1,0 +1,164 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/ultimate"
+    }
+  },
+  "name": {
+    "text": "Ultima"
+  },
+  "stats": {
+    "main": {
+      "durability": 3652.0,
+      "armor_durability": 81.0,
+      "enchantment_value": 16.0,
+      "rarity": 100.0,
+      "charging_value": 1.1,
+      "harvest_level": 6.0,
+      "harvest_speed": 18.0,
+      "melee_damage": 8.0,
+      "magic_damage": 6.0,
+      "attack_speed": 0.0,
+      "ranged_damage": 4.0,
+      "ranged_speed": 0.0,
+      "projectile_speed": 1.1,
+      "projectile_accuracy": 1.1,
+      "armor": 25.0,
+      "armor/helmet": 5.0,
+      "armor/chestplate": 9.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 4.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 12.0
+    },
+    "rod": {
+      "harvest_speed": {
+        "add": -2.0
+      }
+    },
+    "tip": {
+      "durability": {
+        "add": 251.0
+      },
+      "harvest_level": {
+        "max": 6.0
+      },
+      "rarity": {
+        "add": 30.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 3,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:void_ward",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:or",
+            "values": [
+              {
+                "type": "silentgear:material_count",
+                "count": 3
+              },
+              {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rod": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 4,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:imperial",
+        "level": 3
+      },
+      {
+        "name": "silentgear:gold_digger",
+        "level": 3
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#3D3C93"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#3D3C93"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#3D3C93"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#3D3C93"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#3D3C93"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#3D3C93"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "kubejs:dark_matter"
+    }
+  ],
+  "result": {
+    "item": "awakened_bosses:herobrine_cyan",
+    "count": 1
+  }
+}

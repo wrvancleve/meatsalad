@@ -1,0 +1,21 @@
+{
+  "type": "powah:energizing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/vibranium"
+    },
+    {
+      "tag": "forge:ingots/vibranium"
+    },
+    {
+      "tag": "forge:ingots/tyrian_steel"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "energy": 64000,
+  "result": {
+    "item": "kubejs:vibranium_tyrian_steel_ingot"
+  }
+}

@@ -1,11 +1,1 @@
-[
-    {
-        "dimension": "minecraft:the_end",
-        "mod": "weirdmobs",
-        "mincount": {
-          "amount": 25,
-          "mod": "weirdmobs"
-        },
-        "result": "deny"
-    }
-]
+[]

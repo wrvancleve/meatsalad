@@ -1,5 +1,0 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jan 16, 2023, 9:45:07 PM
-
-#twilightforest:phantom_armor_banned_enchants
-- minecraft:vanishing_curse
-- minecraft:binding_curse

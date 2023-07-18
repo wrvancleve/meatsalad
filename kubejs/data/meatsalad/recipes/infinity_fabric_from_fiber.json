@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "kubejs:infinity_fiber"
+    }
+  },
+  "result": {
+    "item": "kubejs:infinity_fabric"
+  }
+}

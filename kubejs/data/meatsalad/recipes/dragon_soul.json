@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "SES",
+    "BBB"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:dragon_egg"
+    },
+    "S": {
+      "item": "quark:dragon_scale"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "item": "kubejs:dragon_soul"
+  }
+}

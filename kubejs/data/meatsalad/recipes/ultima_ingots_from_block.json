@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/ultimate"
+    }
+  ],
+  "result": {
+    "item": "kubejs:ultima_ingot",
+    "count": 9
+  }
+}

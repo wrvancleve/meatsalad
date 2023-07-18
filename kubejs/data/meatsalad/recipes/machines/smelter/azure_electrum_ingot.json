@@ -1,0 +1,45 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/azure_silver"
+        },
+        {
+          "tag": "forge:dusts/azure_silver"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/gold"
+        },
+        {
+          "tag": "forge:dusts/gold"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ender_pearls"
+        },
+        {
+          "tag": "forge:dusts/ender_pearl"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "silentgear:azure_electrum_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 16000
+}

@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "name": "disc",
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:music_disc_ender_guardian",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "ender_guardian_ender_star",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ender_star"
+        }
+      ]
+    },
+    {
+      "name": "ender_guardian_gem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:treasure/ancient_gems"
+        }
+      ]
+    }
+  ]
+}

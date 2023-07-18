@@ -1,0 +1,21 @@
+{
+  "type": "powah:energizing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/azure_silver"
+    },
+    {
+      "tag": "forge:ingots/azure_silver"
+    },
+    {
+      "tag": "forge:ingots/gold"
+    },
+    {
+      "tag": "forge:ender_pearls"
+    }
+  ],
+  "energy": 16000,
+  "result": {
+    "item": "silentgear:azure_electrum_ingot"
+  }
+}

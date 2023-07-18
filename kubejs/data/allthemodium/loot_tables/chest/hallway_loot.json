@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "name": "hallway_loot",
+      "rolls": {
+        "min": 2.0,
+        "max": 7.0
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/materials",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/gear",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/misc",
+          "weight": 1
+        }
+      ],
+      "bonus_rolls": 0.0
+    },
+    {
+      "name": "hallway_loot_gem_pool",
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "apotheosis:random_gem",
+		      "weight": 20,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}
