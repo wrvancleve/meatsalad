@@ -1,0 +1,21 @@
+{
+  "type": "powah:energizing",
+  "ingredients": [
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "kubejs:ancient_powder"
+    },
+    {
+      "item": "kubejs:ancient_powder"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "energy": 20000000,
+  "result": {
+    "item": "kubejs:ancient_chorus_chunk"
+  }
+}

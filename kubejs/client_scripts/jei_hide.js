@@ -20,6 +20,15 @@ JEIEvents.hideItems(event => {
     Item.of('minecraft:tipped_arrow', '{Potion:"potionsmaster:allthemodium_sight"}')
   ])
 
+  // Hide alltheores extras
+  event.hide([
+    'alltheores:bronze_ore_hammer',
+    'alltheores:copper_ore_hammer',
+    'alltheores:invar_ore_hammer',
+    'alltheores:iron_ore_hammer',
+    'alltheores:platinum_ore_hammer'
+  ])
+
   // Hide angelring extras
   event.hide([
     'angelring:energetic_angel_ring',

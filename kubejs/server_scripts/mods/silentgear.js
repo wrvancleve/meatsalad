@@ -1,0 +1,12 @@
+ServerEvents.recipes(event => {
+  event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
+  event.remove({ id: 'silentgear:azure_electrum_ingot' })
+  event.remove({ id: 'silentgear:crimson_steel_ingot' })
+  event.remove({ id: 'silentgear:crushed_shulker_shell' })
+  event.remove({ id: 'silentgear:metal_alloyer' })
+  event.remove({ id: 'silentgear:metal_press' })
+  event.remove({ id: 'silentgear:recrystallizer' })
+  event.remove({ id: 'silentgear:refabricator' })
+  event.remove({ id: 'silentgear:starlight_charger' })
+  event.remove({ id: 'silentgear:starmetal_dust' })
+})

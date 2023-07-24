@@ -1,0 +1,45 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/crimson_steel"
+        },
+        {
+          "tag": "forge:dusts/crimson_steel"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/azure_electrum"
+        },
+        {
+          "tag": "forge:dusts/azure_electrum"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/shellite"
+        },
+        {
+          "tag": "forge:dusts/shellite"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "silentgear:tyrian_steel_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 16000
+}
