@@ -58,15 +58,6 @@ ServerEvents.recipes(event => {
   fullRemove('cyclic:emerald_hoe');
   fullRemove('cyclic:emerald_shovel');
   fullRemove('cyclic:emerald_sword');
-  fullRemove('cyclic:crystal_boots');
-  fullRemove('cyclic:crystal_chestplate');
-  fullRemove('cyclic:crystal_leggings');
-  fullRemove('cyclic:crystal_helmet');
-  fullRemove('cyclic:crystal_pickaxe');
-  fullRemove('cyclic:crystal_axe');
-  fullRemove('cyclic:crystal_hoe');
-  fullRemove('cyclic:crystal_shovel');
-  fullRemove('cyclic:crystal_sword');
 
   event.remove({ id: 'cyclic:antigravity' })
   event.remove({ id: 'cyclic:charm_antidote' })

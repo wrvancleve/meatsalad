@@ -1,4 +1,5 @@
 ItemEvents.modification(event => {
+  const UNCOMMON = "UNCOMMON";
   const RARE = "RARE";
   const EPIC = "EPIC";
 
@@ -14,22 +15,22 @@ ItemEvents.modification(event => {
     })
   }
 
-  modifyItem('alexsmobs:mimicream', EPIC);
-  modifyItem('gateways:gate_pearl', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens0', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens1', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens2', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens3', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens4', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens5', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens6', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens7', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens8', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens9', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens10', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens11', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens12', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens13', EPIC, 64);
-  modifyItem('industrialforegoing:laser_lens14', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens15', RARE, 64);
+  modifyItem('alexsmobs:mimicream', RARE);
+  modifyItem('gateways:gate_pearl', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens0', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens1', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens2', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens3', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens4', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens5', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens6', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens7', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens8', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens9', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens10', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens11', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens12', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens13', RARE, 64);
+  modifyItem('industrialforegoing:laser_lens14', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens15', UNCOMMON, 64);
 })

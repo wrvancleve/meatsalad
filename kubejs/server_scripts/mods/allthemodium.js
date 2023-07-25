@@ -62,37 +62,4 @@ ServerEvents.recipes(event => {
     e: 'rftoolsbase:infused_enderpearl',
     b: '#forge:ingots/blaze_gold'
   }, 'allthemodium', 'teleport_pad')
-
-  global.replaceShaped(event, [
-    'ppp',
-    'sbd',
-    'ppp'
-  ], {
-    p: '#allthemodium:ancient_planks',
-    s: 'allthemodium:ancient_soulberries',
-    b: '#forge:bookshelves',
-    d: 'thermal:blitz_rod'
-  }, 'allthemodium', 'ancient_bookshelf');
-
-  global.replaceShaped(event, [
-    'ppp',
-    'sbd',
-    'ppp'
-  ], {
-    p: '#allthemodium:demonic_planks',
-    s: 'allthemodium:ancient_soulberries',
-    b: '#forge:bookshelves',
-    d: 'thermal:basalz_rod'
-  }, 'allthemodium', 'demonic_bookshelf');
-
-  global.replaceShaped(event, [
-    'ppp',
-    'sbd',
-    'ppp'
-  ], {
-    p: '#allthemodium:soul_planks',
-    s: 'allthemodium:ancient_soulberries',
-    b: '#forge:bookshelves',
-    d: 'thermal:blizz_rod'
-  }, 'allthemodium', 'soul_bookshelf');
 })

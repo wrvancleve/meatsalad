@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
   event.shaped('8x kubejs:ancient_powder', [
-    "ARA",
-    "SaE",
-    "APA"
+    'ARA',
+    'SaE',
+    'APA'
   ], {
     A: '#forge:dusts/amethyst',
     R: '#forge:dusts/ruby',
@@ -13,9 +13,9 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:ancient_powder');
 
   event.shaped('kubejs:cosmic_shelling', [
-    "fEl",
-    "SUS",
-    "eNi"
+    'fEl',
+    'SUS',
+    'eNi'
   ], {
     f: 'minecraft:fire_charge',
     E: 'kubejs:ender_star',
@@ -28,9 +28,9 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:cosmic_shelling');
 
   event.shaped('kubejs:dragon_soul', [
-    "BBB",
-    "SES",
-    "BBB"
+    'BBB',
+    'SES',
+    'BBB'
   ], {
     B: 'minecraft:dragon_breath',
     S: 'quark:dragon_scale',

@@ -1,3 +1,10 @@
 ServerEvents.recipes(event => {
-  event.remove({ id: 'pipez:wrench' })
+  global.replaceShaped(event, [
+    ' I ',
+    ' FI',
+    'I  '
+  ], {
+    I: '#forge:ingots/iron',
+    F: 'minecraft:flint'
+  }, 'pipez', 'wrench');
 })

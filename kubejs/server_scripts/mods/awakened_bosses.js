@@ -18,5 +18,22 @@ ServerEvents.recipes(event => {
   fullRemove('awakened_bosses:herobrine_hoe')
 
   event.remove({ id: 'awakened_bosses:herobrine_blue_recipe' })
-  event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' })
+  event.shapeless(
+    'awakened_bosses:herobrine_blue',
+    [ 
+      'minecraft:blue_dye',
+      '#forge:storage_blocks/diamond',
+      'kubejs:dark_matter'
+    ]
+  ).id('meatsalad:herobrine_blue');
+
+  event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' });
+  event.shapeless(
+    'awakened_bosses:herobrine_cyan',
+    [ 
+      'minecraft:cyan_dye',
+      '#forge:storage_blocks/diamond',
+      'kubejs:dark_matter'
+    ]
+  ).id('meatsalad:herobrine_cyan');
 })

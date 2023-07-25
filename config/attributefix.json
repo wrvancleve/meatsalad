@@ -29,7 +29,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -51,7 +51,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -77,17 +77,6 @@
         "value": 10000000
       }
     },
-    "forge:entity_gravity": {
-      "enabled": false,
-      "min": {
-        "default": -8,
-        "value": -8
-      },
-      "max": {
-        "default": 8,
-        "value": 10000000
-      }
-    },
     "apotheosis:dodge_chance": {
       "enabled": false,
       "min": {
@@ -96,6 +85,17 @@
       },
       "max": {
         "default": 1,
+        "value": 10000000
+      }
+    },
+    "forge:entity_gravity": {
+      "enabled": false,
+      "min": {
+        "default": -8,
+        "value": -8
+      },
+      "max": {
+        "default": 8,
         "value": 10000000
       }
     },
@@ -128,7 +128,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
         "value": 10000000
       }
     },
@@ -146,8 +146,8 @@
     "apotheosis:draw_speed": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 4,
@@ -172,7 +172,7 @@
         "value": 0
       },
       "max": {
-        "default": 40,
+        "default": 200,
         "value": 10000000
       }
     },
@@ -183,7 +183,7 @@
         "value": 1
       },
       "max": {
-        "default": 1024,
+        "default": 100,
         "value": 10000000
       }
     },
@@ -194,7 +194,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
         "value": 10000000
       }
     },
@@ -256,11 +256,11 @@
     "apotheosis:life_steal": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -271,7 +271,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -282,7 +282,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -315,7 +315,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
         "value": 10000000
       }
     },
@@ -341,17 +341,6 @@
         "value": 10000000
       }
     },
-    "apotheosis:piercing": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 2,
-        "value": 10000000
-      }
-    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -366,11 +355,11 @@
     "apotheosis:current_hp_damage": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 2,
+        "default": 1,
         "value": 10000000
       }
     },
@@ -381,18 +370,18 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
     "apotheosis:crit_chance": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -415,17 +404,6 @@
       },
       "max": {
         "default": 5,
-        "value": 10000000
-      }
-    },
-    "savage_and_ravage:explosive_damage_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
         "value": 10000000
       }
     },
@@ -458,7 +436,7 @@
         "value": 0
       },
       "max": {
-        "default": 30,
+        "default": 100,
         "value": 10000000
       }
     }

@@ -20,15 +20,6 @@ StartupEvents.registry('block', event => {
   const HARVEST_LEVEL_FIVE_TAG = 'forge:needs_harvest_level_five_tool';
 
   const TYPE_PROPERTIES = {
-    ore: {
-      registry_name: '{0}_ore',
-      base_texture_name: 'end_stone',
-      overlay_texture_name: 'end_ore',
-      material_type: 'stone',
-      display_name: '{0} Ore',
-      type_tag: 'ores',
-      material_tag: '{0}',
-    },
     storage_block: { 
       registry_name: '{0}_block',
       base_texture_name: 'block',
@@ -55,133 +46,42 @@ StartupEvents.registry('block', event => {
     return frags.join(' ');
   }
 
-  function makeBlock(textureNamespaces, type, material, hardness, resistance, harvest_level_tag) {
-    /*
-    if (harvest_level_tag != null) {
-      event.create(`${type}_${material}`)
-        .texture('layer0', `${textureNamespace}:block/${type}`)
-        .color(1, color)
-        .displayName(getDisplayName(type, material))
-        .material(material_type)
-        .hardness(5.0)
-        .resistance(6.0)
-        .tag(`forge:${type}s`)
-        .tag(`forge:${type}s/${material}`)
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock(harvest_level_tag)
-        .tagBlock(`forge:${type}s`)
-        .tagBlock(`forge:${type}s/${material}`)
-        .requiresTool(true);
-    } else {
-      event.create(`${type}_${material}`)
-        .texture('layer0', `${textureNamespace}:block/${type}`)
-        .color(1, color)
-        .displayName(getDisplayName(type, material))
-        .material(material_type)
-        .hardness(5.0)
-        .resistance(6.0)
-        .tag(`forge:${type}s`)
-        .tag(`forge:${type}s/${material}`)
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock(`forge:${type}s`)
-        .tagBlock(`forge:${type}s/${material}`)
-        .requiresTool(true);
-    }
-    */
+  function makeBlock(textureNamespace, type, material, hardness, resistance, harvest_level_tag) {
     let color = global.materialProperties[material].color;
     let type_properties = TYPE_PROPERTIES[type];
     let registry_name = type_properties.registry_name.replace('{0}', material);
     let base_texture_name = type_properties.base_texture_name;
-    let overlay_texture_name = type_properties.overlay_texture_name;
     let material_type = type_properties.material_type;
     let display_name = type_properties.display_name.replace('{0}', makeReadableText(material));
     let type_tag = type_properties.type_tag;
     let material_tag = type_properties.material_tag.replace('{0}', material);    
 
     if (harvest_level_tag != null) {
-      if (overlay_texture_name != null) {
-        event.create(registry_name)
-          .texture('layer0', `${textureNamespaces.base}:block/${base_texture_name}`)
-          .texture('layer1', `${textureNamespaces.overlay ?? textureNamespaces.base}:block/${overlay_texture_name}`)
-          .color(1, color)
-          .displayName(display_name)
-          .material(material_type)
-          .hardness(hardness)
-          .resistance(resistance)
-          .tagBoth(`forge:${type_tag}`)
-          .tagBoth(`forge:${type_tag}/${material_tag}`)
-          .tagBlock('minecraft:mineable/pickaxe')
-          .tagBlock(harvest_level_tag)
-          .requiresTool(true);
-      } else {
-        event.create(registry_name)
-          .texture('layer0', `${textureNamespaces.base}:block/${base_texture_name}`)
-          .color(0, color)
-          .displayName(display_name)
-          .material(material_type)
-          .hardness(hardness)
-          .resistance(resistance)
-          .tagBoth(`forge:${type_tag}`)
-          .tagBoth(`forge:${type_tag}/${material_tag}`)
-          .tagBlock('minecraft:mineable/pickaxe')
-          .tagBlock(harvest_level_tag)
-          .requiresTool(true);
-      }
-    } else {
-      if (overlay_texture_name != null) {
-        event.create(registry_name)
-          .texture('layer0', `${textureNamespaces.base}:block/${base_texture_name}`)
-          .texture('layer1', `${textureNamespaces.overlay ?? textureNamespaces.base}:block/${overlay_texture_name}`)
-          .color(1, color)
-          .displayName(display_name)
-          .material(material_type)
-          .hardness(hardness)
-          .resistance(resistance)
-          .tagBoth(`forge:${type_tag}`)
-          .tagBoth(`forge:${type_tag}/${material_tag}`)
-          .tagBlock('minecraft:mineable/pickaxe')
-          .requiresTool(true);
-      } else {
-        event.create(registry_name)
-          .texture('layer0', `${textureNamespaces.base}:block/${base_texture_name}`)
-          .color(0, color)
-          .displayName(display_name)
-          .material(material_type)
-          .hardness(hardness)
-          .resistance(resistance)
-          .tagBoth(`forge:${type_tag}`)
-          .tagBoth(`forge:${type_tag}/${material_tag}`)
-          .tagBlock('minecraft:mineable/pickaxe')
-          .requiresTool(true);
-      }
-    }
-
-    /*
-    if (harvest_level_tag != null) {
-      event.create(`${material}_${registry_name}`)
-        .texture('layer0', `${textureNamespace}:block/${registry_name}`)
+      event.create(registry_name)
+        .texture('layer0', `${textureNamespace}:block/${base_texture_name}`)
         .color(0, color)
+        .displayName(display_name)
         .material(material_type)
         .hardness(hardness)
         .resistance(resistance)
+        .tagBoth(`forge:${type_tag}`)
+        .tagBoth(`forge:${type_tag}/${material_tag}`)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock(harvest_level_tag)
-        .tagBoth(`forge:${type}s`)
-        .tagBoth(`forge:${type}s/${material}`)
         .requiresTool(true);
     } else {
-      event.create(`${material}_${registry_name}`)
-        .texture('layer0', `${textureNamespace}:block/${registry_name}`)
+      event.create(registry_name)
+        .texture('layer0', `${textureNamespace}:block/${base_texture_name}`)
         .color(0, color)
+        .displayName(display_name)
         .material(material_type)
         .hardness(hardness)
         .resistance(resistance)
+        .tagBoth(`forge:${type_tag}`)
+        .tagBoth(`forge:${type_tag}/${material_tag}`)
         .tagBlock('minecraft:mineable/pickaxe')
-        .tagBoth(`forge:${type}s`)
-        .tagBoth(`forge:${type}s/${material}`)
         .requiresTool(true);
     }
-    */
   }
 
   /*
@@ -238,8 +138,6 @@ StartupEvents.registry('block', event => {
     .requiresTool(true);
   */
   makeBlock({base: 'kubejs'}, 'storage_block_raw', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
-  makeBlock({base: 'kubejs', overlay: 'kubejs'}, 'ore', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
-  /*
   event.create('end_mythril_ore')
     .displayName('End Mythril Ore')
     .material('stone')
@@ -247,7 +145,6 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
     .requiresTool(true);
-  */
   makeBlock({base: 'kubejs'}, 'storage_block_raw', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
   /*
   event.create('raw_mythril_block')

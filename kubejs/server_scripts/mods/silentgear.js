@@ -7,6 +7,17 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'silentgear:metal_press' })
   event.remove({ id: 'silentgear:recrystallizer' })
   event.remove({ id: 'silentgear:refabricator' })
-  event.remove({ id: 'silentgear:starlight_charger' })
   event.remove({ id: 'silentgear:starmetal_dust' })
+
+  global.replaceShaped(event, [
+    'QGQ',
+    'PDP',
+    'PBP'
+  ], {
+    Q: '#forge:storage_blocks/quartz',
+    G: '#forge:glass/colorless',
+    P: 'minecraft:polished_blackstone',
+    D: 'kubejs:dark_matter',
+    B: '#forge:storage_blocks/blaze_gold'
+  }, 'silentgear', 'starlight_charger');
 })

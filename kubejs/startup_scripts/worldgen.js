@@ -34,6 +34,36 @@ WorldgenEvents.add(event => {
   })
   */
   event.addOre((ore) => {
+    ore.id = "kubejs:end_adamantite"
+    ore.biomes = ['minecraft:end_highlands', 'minecraft:end_midlands', 'minecraft:end_barrens']
+    ore.addTarget('minecraft:end_stone', 'kubejs:end_adamantite_ore')
+    ore.size(3)
+    ore.count([1,3])
+        .squared()
+        .triangleHeight(				      // generate the ore with a triangular distribution, this means it will be more likely to be placed closer to the center of the anchors
+            anchors.aboveBottom(8),    // the lower bound should be 32 blocks above the bottom of the world, so in this case, Y = -32 since minY = -64
+            anchors.absolute(96)	      // the upper bound, meanwhile is set to be just exactly at Y = 96
+        )
+    ore.noSurface = 1.0
+    ore.worldgenLayer = 'underground_ores'
+    ore.chance = 3
+  })
+  event.addOre((ore) => {
+    ore.id = "kubejs:end_mythril"
+    ore.biomes = ['minecraft:end_highlands', 'minecraft:end_midlands', 'minecraft:end_barrens']
+    ore.addTarget('minecraft:end_stone', 'kubejs:end_mythril_ore')
+    ore.size(3)
+    ore.count([1,3])
+        .squared()
+        .triangleHeight(				      // generate the ore with a triangular distribution, this means it will be more likely to be placed closer to the center of the anchors
+            anchors.aboveBottom(8),    // the lower bound should be 32 blocks above the bottom of the world, so in this case, Y = -32 since minY = -64
+            anchors.absolute(96)	      // the upper bound, meanwhile is set to be just exactly at Y = 96
+        )
+    ore.noSurface = 1.0
+    ore.worldgenLayer = 'underground_ores'
+    ore.chance = 3
+  })
+  event.addOre((ore) => {
     ore.id = "kubejs:mining_thermal_apatite"
     ore.biomes = ['allthemodium:mining']
     ore.addTarget('minecraft:stone', 'thermal:apatite_ore')
