@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
   event.remove({ id: 'rftoolsbase:dimensionalshard' })
-
-  global.replaceShaped(event, [
+  event.shaped('4x rftoolsbase:dimensionalshard', [
     'deg',
     'irX',
     'qCc'
@@ -15,5 +14,8 @@ ServerEvents.recipes(event => {
     q: '#forge:gems/quartz',
     C: 'minecraft:prismarine_shard',
     c: '#forge:gems/certus_quartz',
-  }, 'rftoolsbase', 'dimensionalshard');
+  }).id('meatsalad:dimensional_shard');
+
+  event.remove({ id: 'rftoolsbase:infused_diamond' })
+  event.remove({ id: 'rftoolsbase:infused_enderpearl' })
 })

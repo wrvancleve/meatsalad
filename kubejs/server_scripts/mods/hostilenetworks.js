@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     E: '#forge:storage_blocks/emerald',
     G: '#forge:ingots/blaze_gold',
     C: '#forge:circuits/ultimate',
-    I: 'rftoolsbase:infused_enderpearl'
+    I: 'kubejs:infused_ender_pearl'
   }, 'hostilenetworks', 'loot_fabricator');
 
   global.replaceShaped(event, [
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
   ], {
     O: '#forge:obsidian',
     T: 'mekanism:teleportation_core',
-    I: 'rftoolsbase:infused_enderpearl',
+    I: 'kubejs:infused_ender_pearl',
     C: '#forge:circuits/ultimate'
   }, 'hostilenetworks', 'sim_chamber');
 })

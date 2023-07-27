@@ -106,6 +106,8 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
+    .tagBoth('forge:storage_blocks/starmetal')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('shellite_block')
     .displayName('Block of Shellite')
@@ -113,6 +115,8 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
+    .tagBoth('forge:storage_blocks/shellite')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('dragonsteel_block')
     .displayName('Block of Dragonsteel')
@@ -120,6 +124,8 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
+    .tagBoth('forge:storage_blocks/dragonsteel')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('end_adamantite_ore')
     .displayName('End Adamantite Ore')
@@ -127,6 +133,8 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/adamantite')
+    .tagBoth('forge:ores')
     .requiresTool(true);
   /*
   event.create('raw_adamantite_block')
@@ -144,6 +152,8 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/mythril')
+    .tagBoth('forge:ores')
     .requiresTool(true);
   makeBlock({base: 'kubejs'}, 'storage_block_raw', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
   /*
@@ -180,6 +190,8 @@ StartupEvents.registry('block', event => {
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:storage_blocks/vibranium_tyrian_steel')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('unobtainium_tyrian_steel_block')
     .displayName('Block of Unobtainium-Tyrian Steel')
@@ -188,6 +200,8 @@ StartupEvents.registry('block', event => {
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:storage_blocks/unobtainium_tyrian_steel')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('ultima_block')
     .displayName('Block of Ultima')
@@ -196,6 +210,8 @@ StartupEvents.registry('block', event => {
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:storage_blocks/ultimate')
+    .tagBoth('forge:storage_blocks')
     .requiresTool(true);
 })
 
@@ -253,18 +269,26 @@ StartupEvents.registry('item', event => {
   event.create('neutronium_plate').displayName('Neutronium Plate').rarity('epic');
   */
 
-  event.create('amethyst_dust').displayName('Amethyst Dust');
+  event.create('amethyst_dust').displayName('Amethyst Dust').tag('forge:dusts/amethyst').tag('forge:dusts');
 
-  event.create('starmetal_ingot').displayName('Starmetal Ingot').rarity('rare');
-  event.create('starmetal_nugget').displayName('Starmetal Nugget').rarity('rare');
+  event.create('dimensional_shard_dust').displayName('Dimensional Shard Dust');
+  event.create('infused_dimensional_shard').displayName('Infused Dimensional Shard').glow(true);
+  event.create('draconic_infused_dimensional_shard').displayName('Draconic Infused Dimensional Shard').glow(true);
+  event.create('infused_diamond').displayName('Infused Diamond').glow(true);
+  event.create('draconic_infused_diamond').displayName('Draconic Infused Diamond').glow(true);
+  event.create('infused_ender_pearl').displayName('Infused Ender Pearl').glow(true);
+  event.create('draconic_infused_ender_pearl').displayName('Draconic Infused Ender Pearl').glow(true);
 
-  event.create('shellite_dust').displayName('Shellite Dust');
-  event.create('shellite_ingot').displayName('Shellite Ingot');
-  event.create('shellite_nugget').displayName('Shellite Nugget');
+  event.create('starmetal_ingot').displayName('Starmetal Ingot').tag('forge:ingots/starmetal').tag('forge:ingots').rarity('rare');
+  event.create('starmetal_nugget').displayName('Starmetal Nugget').tag('forge:nuggets/starmetal').tag('forge:nuggets').rarity('rare');
 
-  event.create('dragonsteel_dust').displayName('Dragonsteel Dust').rarity('uncommon');
-  event.create('dragonsteel_ingot').displayName('Dragonsteel Ingot').rarity('uncommon');
-  event.create('dragonsteel_nugget').displayName('Dragonsteel Nugget').rarity('uncommon');
+  event.create('shellite_dust').displayName('Shellite Dust').tag('forge:dusts/shellite').tag('forge:dusts');
+  event.create('shellite_ingot').displayName('Shellite Ingot').tag('forge:ingots/shellite').tag('forge:ingots');
+  event.create('shellite_nugget').displayName('Shellite Nugget').tag('forge:nuggets/shellite').tag('forge:nuggets');
+
+  event.create('dragonsteel_dust').displayName('Dragonsteel Dust').tag('forge:dusts/dragonsteel').tag('forge:dusts').rarity('uncommon');
+  event.create('dragonsteel_ingot').displayName('Dragonsteel Ingot').tag('forge:ingots/dragonsteel').tag('forge:ingots').rarity('uncommon');
+  event.create('dragonsteel_nugget').displayName('Dragonsteel Nugget').tag('forge:nuggets/dragonsteel').tag('forge:nuggets').rarity('uncommon');
 
   global.mekStackAdditions.forEach(entry => {
     makeItem('mekanism', 'mekanism', 'shard', entry.material, entry.color);
@@ -308,16 +332,25 @@ StartupEvents.registry('item', event => {
   //event.create('mythril_gear').displayName('Mythril Gear');
   //event.create('mythril_plate').displayName('Mythril Plate');
 
-  event.create('vibranium_tyrian_steel_ingot').displayName('Vibranium-Tyrian Steel Ingot').rarity('uncommon');
-  event.create('unobtainium_tyrian_steel_ingot').displayName('Unobtainium-Tyrian Steel Ingot').rarity('uncommon');
+  event.create('vibranium_tyrian_steel_ingot').displayName('Vibranium-Tyrian Steel Ingot').tag("forge:ingots/vibranium_tyrian_steel").tag("forge:ingots").rarity('uncommon');
+  event.create('unobtainium_tyrian_steel_ingot').displayName('Unobtainium-Tyrian Steel Ingot').tag("forge:ingots/unobtainium_tyrian_steel").tag("forge:ingots").rarity('uncommon');
 
   event.create('oblivion_shard').displayName('Oblivion Shard').rarity('uncommon');
-  event.create('dark_matter').displayName('Dark Matter').rarity('rare').glow(true);
+  event.create('draconic_infused_oblivion_shard').displayName('Draconic Infused Oblivion Shard').rarity('uncommon').glow(true);
+  event.create('dark_matter').displayName('Dark Matter').rarity('rare');
+  event.create('draconic_infused_dark_matter').displayName('Draconic Infused Dark Matter').rarity('rare').glow(true);
 
-  event.create('ancient_powder').displayName('Ancient Powder').rarity('rare').glow(true);
-  event.create('ancient_chorus_chunk').displayName('Ancient Chorus Chunk').rarity('rare').glow(true);
+  event.create('crystalline_powder').displayName('Crystalline Powder').rarity('rare');
+  event.create('eternal_crystal').displayName('Eternal Crystal').rarity('epic');
+  event.create('draconic_infused_eternal_crystal').displayName('Draconic Infused Eternal Crystal').rarity('epic').glow(true);
 
-  event.create('heart_of_the_deep').displayName('Heart of the Deep').rarity('rare');
+  event.create('nether_core').displayName('Nether Core').rarity('rare').glow(true);
+  event.create('ender_core').displayName('Ender Core').rarity('epic').glow(true);
+  event.create('chaos_core').displayName('Chaos Core').rarity('epic').glow(true);
+
+  event.create('uru_ingot').displayName('Uru Ingot').tag("forge:ingots/uru").tag("forge:ingots").rarity('epic').glow(true);
+  event.create('uru_nugget').displayName('Uru Nugget').tag("forge:nuggets/uru").tag("forge:nuggets").rarity('epic').glow(true);
+
   event.create('manifest_illusion').displayName('Manifest Illusion').rarity('rare').glow(true);
   event.create('ender_star').displayName('Ender Star').rarity('rare').glow(true);
   event.create('ender_star_fragment').displayName('Ender Star Fragment').rarity('rare');
@@ -328,8 +361,8 @@ StartupEvents.registry('item', event => {
   event.create('cosmic_shelling').displayName('Cosmic Shelling').rarity('epic').glow(true);
   event.create('chaos_crystal').displayName('Chaos Crystal').rarity('epic').glow(true);
   event.create('chaos_shard').displayName('Chaos Shard').rarity('epic').glow(true);
-  event.create('ultima_ingot').displayName('Ultima Ingot').rarity('epic').glow(true);
-  event.create('ultima_nugget').displayName('Ultima Nugget').rarity('epic').glow(true);
+  event.create('ultima_ingot').displayName('Ultima Ingot').tag("forge:ingots/ultimate").tag("forge:ingots").rarity('epic').glow(true);
+  event.create('ultima_nugget').displayName('Ultima Nugget').tag("forge:nuggets/ultimate").tag("forge:nuggets").rarity('epic').glow(true);
   event.create('infinity_fabric').displayName('Infinity Fabric').rarity('epic').glow(true);
   event.create('infinity_fiber').displayName('Infinity Fiber').rarity('epic').glow(true);
 })

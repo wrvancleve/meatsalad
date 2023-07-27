@@ -1,3 +1,4 @@
+//priority: 1
 ServerEvents.recipes(event => {
   function createReplicationRecipes(mod, itemId, itemNbt, itemNbtRegistryName) {
     let registryName = mod + ":" + itemId;

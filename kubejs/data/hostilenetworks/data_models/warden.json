@@ -19,7 +19,7 @@
   "trivia": "hostilenetworks.trivia.warden",
   "fabricator_drops": [
     {
-      "item": "kubejs:heart_of_the_deep",
+      "item": "apotheosis:warden_tendril",
       "count": 1
     },
     {

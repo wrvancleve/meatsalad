@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     P: '#forge:plastic',
     N: 'minecraft:netherite_pickaxe',
     I: '#forge:ores/iron',
-    M: 'industrialforegoing:machine_frame/advanced',
+    M: '#industrialforegoing:machine_frame/advanced',
     V: '#forge:gears/vibranium',
     R: '#forge:dusts/redstone'
   }, 'industrialforegoing', 'ore_laser_base');

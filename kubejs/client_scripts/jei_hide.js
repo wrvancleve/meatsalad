@@ -118,15 +118,6 @@ JEIEvents.hideItems(event => {
     'cyclic:emerald_hoe',
     'cyclic:emerald_shovel',
     'cyclic:emerald_sword',
-    'cyclic:crystal_boots',
-    'cyclic:crystal_chestplate',
-    'cyclic:crystal_leggings',
-    'cyclic:crystal_helmet',
-    'cyclic:crystal_pickaxe',
-    'cyclic:crystal_axe',
-    'cyclic:crystal_hoe',
-    'cyclic:crystal_shovel',
-    'cyclic:crystal_sword',
     'cyclic:antigravity',
     'cyclic:charm_starvation',
     'cyclic:charm_torch',
@@ -151,9 +142,14 @@ JEIEvents.hideItems(event => {
     'progressivebosses:nether_star_shard'
   ])
 
+  // Hide rftoolsbase extras
+  event.hide([
+    'rftoolsbase:infused_diamond',
+    'rftoolsbase:infused_enderpearl'
+  ])
+
   // Hide silentgear extras
   event.hide([
-    'silentgear:crushed_shulker_shell',
     'silentgear:custom_gem',
     'silentgear:custom_ingot',
     'silentgear:refabricator',

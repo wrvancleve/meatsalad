@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     'beb',
     ' b '
   ], {
-    e: 'rftoolsbase:infused_enderpearl',
+    e: 'kubejs:infused_ender_pearl',
     b: '#forge:ingots/blaze_gold'
   }, 'allthemodium', 'teleport_pad')
 })

@@ -68,39 +68,6 @@ ServerEvents.tags('item', event => {
   //event.add('minecraft:logs', [/allthemodium:stripped_\w+_log/])
   //event.add('forge:stripped_logs', [/allthemodium:stripped_\w+_log/])
 
-  // Amethyst
-  addForge('dust', 'amethyst', 'kubejs:amethyst_dust');
-
-  // Dragonsteel
-  addForge('dust', 'dragonsteel', 'kubejs:dragonsteel_dust');
-  addForge('ingot', 'dragonsteel', 'kubejs:dragonsteel_ingot');
-  addForge('nugget', 'dragonsteel', 'kubejs:dragonsteel_nugget');
-  addForge('storage_block', 'dragonsteel', 'kubejs:dragonsteel_block');
-
-  // Shellite
-  addForge('dust', 'shellite', 'kubejs:shellite_dust');
-  addForge('ingot', 'shellite', 'kubejs:shellite_ingot');
-  addForge('nugget', 'shellite', 'kubejs:shellite_nugget');
-  addForge('storage_block', 'shellite', 'kubejs:shellite_block');
-
-  // Starmetal
-  addForge('ingot', 'starmetal', 'kubejs:starmetal_ingot');
-  addForge('nugget', 'starmetal', 'kubejs:starmetal_nugget');
-  addForge('storage_block', 'starmetal', 'kubejs:starmetal_block');
-
-  // Ultima
-  addForge('ingot', 'ultimate', 'kubejs:ultima_ingot');
-  addForge('nugget', 'ultimate', 'kubejs:ultima_nugget');
-  addForge('storage_block', 'ultimate', 'kubejs:ultima_block');
-
-  // Unobtainium Tyrian Steel
-  addForge('ingot', 'unobtainium_tyrian_steel', 'kubejs:unobtainium_tyrian_steel_ingot');
-  addForge('storage_block', 'unobtainium_tyrian_steel', 'kubejs:unobtainium_tyrian_steel_block');
-
-  // Vibranium Tyrian Steel
-  addForge('ingot', 'vibranium_tyrian_steel', 'kubejs:vibranium_tyrian_steel_ingot');
-  addForge('storage_block', 'vibranium_tyrian_steel', 'kubejs:vibranium_tyrian_steel_block');
-
   // Harvest Levels
   /*
   event.add('forge:harvest_level_five', '#forge:ingots/vibranium');
@@ -120,11 +87,6 @@ ServerEvents.tags('item', event => {
   event.add('forge:ingots/unobtainium_tyrian_steel', '#forge:harvest_level_six');
 
   const mysteryGooReplications = [
-    'kubejs:cosmic_shelling',
-    'kubejs:warden_heart',
-    'kubejs:oblivion_shard',
-    'kubejs:dragon_soul',
-    'kubejs:ancient_chorus_chunk',
     'industrialforegoing:laser_lens0',
     'industrialforegoing:laser_lens1',
     'industrialforegoing:laser_lens2',
