@@ -21,6 +21,13 @@
           "quality": 1
         },
         {
+          "type": "apotheosis:random_affix_item",
+          "weight": 1,
+          "quality": 1,
+          "min_rarity": "epic",
+          "max_rarity": "epic"
+        },
+        {
           "type": "apotheosis:random_gem",
 		      "weight": 1,
           "quality": 1

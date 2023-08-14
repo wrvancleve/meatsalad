@@ -16,11 +16,16 @@ ServerEvents.recipes(event => {
   })
   */
 
-  fullRemove('cataclysm:ignitium_ingot')
-  fullRemove('cataclysm:ignitium_block')
-  fullRemove('cataclysm:bulwark_of_the_flame')
-  fullRemove('cataclysm:the_incinerator')
-  fullRemove('cataclysm:witherite_block')
-  fullRemove('cataclysm:witherite_ingot')
-  fullRemove('cataclysm:mechanical_fusion_anvil')
+  fullRemove('cataclysm:ignitium_ingot');
+  fullRemove('cataclysm:ignitium_block');
+  fullRemove('cataclysm:bulwark_of_the_flame');
+  fullRemove('cataclysm:the_incinerator');
+  fullRemove('cataclysm:witherite_block');
+  fullRemove('cataclysm:witherite_ingot');
+  fullRemove('cataclysm:mechanical_fusion_anvil');
+  event.remove({ id: 'cataclysm:abyss_eye' });
+  event.remove({ id: 'cataclysm:flame_eye' });
+  event.remove({ id: 'cataclysm:mech_eye' });
+  event.remove({ id: 'cataclysm:monstrous_eye' });
+  event.remove({ id: 'cataclysm:void_eye' });
 })

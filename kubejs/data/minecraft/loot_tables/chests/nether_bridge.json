@@ -120,14 +120,9 @@
           "weight": 2
         },
         {
-          "type": "minecraft:item",
-          "name": "naturescompass:naturescompass",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "explorerscompass:explorerscompass",
-          "weight": 10
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_nether/uniques",
+          "weight": 5
         }
       ],
       "rolls": {

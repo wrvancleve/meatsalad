@@ -51,4 +51,21 @@ global['ingredientCheck'] = function(itemstack, json) {
 
 ServerEvents.recipes(event => {
     global.auTags = AlmostUnified.getTags()
+
+    let pack = (input, inputAlias, outputMod, outputItem) => {
+        event.shaped(`${outputMod}:${outputItem}`, ['NNN', 'NNN', 'NNN'], {
+            N: input
+        }).id(`meatsalad:${outputItem}_from_${inputAlias}s`)
+    }
+    let unpack = (input, inputAlias, outputMod, outputItem) => {
+        event.shapeless(Item.of(`${outputMod}:${outputItem}`).withCount(9).toJson(), input).id(`meatsalad:${outputItem}s_from_${inputAlias}`)
+    }
+
+    // Misc recipes
+    pack('kubejs:chaos_shard', 'shard', 'kubejs', 'chaos_crystal')
+    unpack('kubejs:chaos_crystal', 'crystal', 'kubejs', 'chaos_shard')
+    pack('kubejs:ender_star_fragment', 'fragment', 'kubejs', 'ender_star')
+    unpack('kubejs:ender_star', 'star', 'kubejs', 'ender_star_fragment')
+    pack('kubejs:infinity_fiber', 'fiber', 'kubejs', 'infinity_fabric')
+    unpack('kubejs:infinity_fabric', 'fabric', 'kubejs', 'infinity_fiber')
 })

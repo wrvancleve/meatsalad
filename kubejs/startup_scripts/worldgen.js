@@ -11,7 +11,6 @@ WorldgenEvents.remove(event => {
     "thermal:sulfur_ore",
     "thermal:tin_ore",
   ])
-  event.printFeatures()
 })
 
 WorldgenEvents.add(event => {
@@ -35,33 +34,35 @@ WorldgenEvents.add(event => {
   */
   event.addOre((ore) => {
     ore.id = "kubejs:end_adamantite"
-    ore.biomes = ['minecraft:end_highlands', 'minecraft:end_midlands', 'minecraft:end_barrens']
-    ore.addTarget('minecraft:end_stone', 'kubejs:end_adamantite_ore')
+    ore.biomes = ['nullscape:void_barrens']
+    ore.addTarget('minecraft:basalt', 'kubejs:adamantite_basalt_ore')
+    ore.addTarget('minecraft:blackstone', 'kubejs:adamantite_blackstone_ore')
     ore.size(3)
     ore.count([1,3])
         .squared()
-        .triangleHeight(				      // generate the ore with a triangular distribution, this means it will be more likely to be placed closer to the center of the anchors
-            anchors.aboveBottom(8),    // the lower bound should be 32 blocks above the bottom of the world, so in this case, Y = -32 since minY = -64
-            anchors.absolute(96)	      // the upper bound, meanwhile is set to be just exactly at Y = 96
+        .triangleHeight(
+            anchors.aboveBottom(8),
+            anchors.belowTop(8)
         )
     ore.noSurface = 1.0
     ore.worldgenLayer = 'underground_ores'
-    ore.chance = 3
+    //ore.chance = 3
   })
   event.addOre((ore) => {
     ore.id = "kubejs:end_mythril"
-    ore.biomes = ['minecraft:end_highlands', 'minecraft:end_midlands', 'minecraft:end_barrens']
-    ore.addTarget('minecraft:end_stone', 'kubejs:end_mythril_ore')
+    ore.biomes = ['nullscape:void_barrens']
+    ore.addTarget('minecraft:basalt', 'kubejs:mythril_basalt_ore')
+    ore.addTarget('minecraft:blackstone', 'kubejs:mythril_blackstone_ore')
     ore.size(3)
     ore.count([1,3])
         .squared()
-        .triangleHeight(				      // generate the ore with a triangular distribution, this means it will be more likely to be placed closer to the center of the anchors
-            anchors.aboveBottom(8),    // the lower bound should be 32 blocks above the bottom of the world, so in this case, Y = -32 since minY = -64
-            anchors.absolute(96)	      // the upper bound, meanwhile is set to be just exactly at Y = 96
+        .triangleHeight(
+            anchors.aboveBottom(8),
+            anchors.belowTop(8)
         )
     ore.noSurface = 1.0
     ore.worldgenLayer = 'underground_ores'
-    ore.chance = 3
+    //ore.chance = 3
   })
   event.addOre((ore) => {
     ore.id = "kubejs:mining_thermal_apatite"
@@ -71,7 +72,7 @@ WorldgenEvents.add(event => {
     ore.size(9)
     ore.count(3)
     ore.squared()
-    ore.uniformHeight(64, 254)
+    ore.uniformHeight(65, 254)
   })
   event.addOre((ore) => {
     ore.id = "kubejs:mining_thermal_cinnabar"
@@ -81,7 +82,7 @@ WorldgenEvents.add(event => {
     ore.size(5)
     ore.count(1)
     ore.squared()
-    ore.uniformHeight(64, 254)
+    ore.uniformHeight(65, 254)
   })
   event.addOre((ore) => {
     ore.id = "kubejs:mining_thermal_niter"
@@ -91,7 +92,7 @@ WorldgenEvents.add(event => {
     ore.size(7)
     ore.count(2)
     ore.squared()
-    ore.uniformHeight(64, 254)
+    ore.uniformHeight(65, 254)
   })
   event.addOre((ore) => {
     ore.id = "kubejs:mining_thermal_sulfur"
@@ -101,26 +102,59 @@ WorldgenEvents.add(event => {
     ore.size(7)
     ore.count(2)
     ore.squared()
-    ore.uniformHeight(64, 254)
+    ore.uniformHeight(65, 254)
   })
   event.addOre((ore) => {
-    ore.id = "kubejs:mining_silentgear_crimson_iron"
+    ore.id = "kubejs:mining_crimson_iron"
     ore.biomes = ['allthemodium:mining']
     ore.addTarget('minecraft:netherrack', 'silentgear:crimson_iron_ore')
     ore.size(7)
     ore.count(3)
     ore.squared()
-    ore.uniformHeight(0, 65)
+    ore.uniformHeight(0, 64)
   })
   event.addOre((ore) => {
-    ore.id = "kubejs:mining_silentgear_azure_silver"
+    ore.id = "kubejs:mining_azure_silver"
     ore.biomes = ['allthemodium:mining']
     ore.addTarget('minecraft:end_stone', 'silentgear:azure_silver_ore')
     ore.size(7)
     ore.count(3)
     ore.squared()
-    ore.uniformHeight(-64, 1)
+    ore.uniformHeight(-64, 0)
   })
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_unobtainium"
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:end_stone', 'allthemodium:unobtainium_ore')
+    ore.size(3)
+    ore.count([1, 3])
+    ore.squared()
+    ore.uniformHeight(-64, 0)
+    ore.chance = 3
+  })
+  /*
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_adamantite"
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:end_stone', 'kubejs:end_adamantite_ore')
+    ore.size(3)
+    ore.count([1, 3])
+    ore.squared()
+    ore.uniformHeight(-64, 0)
+    ore.chance = 3
+  })
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_mythril"
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:end_stone', 'kubejs:end_mythril_ore')
+    ore.size(3)
+    ore.count([1, 3])
+    ore.squared()
+    ore.uniformHeight(-64, 0)
+    ore.chance = 3
+  })
+  */
+  /*
   event.addOre((ore) => {
     ore.id = "kubejs:mining_ato_iridium"
     ore.biomes = ['allthemodium:mining']
@@ -131,4 +165,5 @@ WorldgenEvents.add(event => {
     ore.squared()
     ore.uniformHeight(-64, 254)
   })
+  */
 })

@@ -159,14 +159,31 @@
         {
           "type": "minecraft:item",
           "name": "endrem:nether_eye",
-          "weight": 30,
+          "weight": 5,
           "functions": [{"function": "set_count", "count": 1}]
         },
         {
-          "type": "empty", "weight": 70
+          "type": "empty", "weight": 95
         }
       ],
       "bonus_rolls": 0.0
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+		      "weight": 30,
+          "quality": 2,
+          "min_rarity": "uncommon",
+          "max_rarity": "rare"
+        }
+      ]
     }
   ]
 }

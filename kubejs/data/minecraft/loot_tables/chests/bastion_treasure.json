@@ -185,6 +185,23 @@
         "max": 4.0,
         "min": 3.0
       }
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+		      "weight": 30,
+          "quality": 2,
+          "min_rarity": "uncommon",
+          "max_rarity": "rare"
+        }
+      ]
     }
   ]
 }

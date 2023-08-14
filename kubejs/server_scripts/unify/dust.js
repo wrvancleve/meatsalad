@@ -1,5 +1,27 @@
 //priority: 200
 ServerEvents.recipes(event => {
+  let process = (input, output, id) => {
+    event.custom({
+      type: "thermal:pulverizer",
+      ingredient: Ingredient.of(input).toJson(),
+      result: [Item.of(output).withCount(1).toJson()]
+    }).id(`meatsalad:pulverizer/${id}`);
+    event.custom({
+      type: "mekanism:crushing",
+      input: {
+        ingredient: Ingredient.of(input).toJson()
+      },
+      output: Item.of(output).withCount(1).toJson()
+    }).id(`meatsalad:crushing/${id}`);
+    event.shapeless(
+      output,
+      [ 
+        input,
+        'thermal:earth_charge'
+      ]
+    ).id(`meatsalad:earth_charge/${id}`);
+  }
+
   let dustTags = global.auTags.filter(function (val) {
     return /forge:dusts/.test(val)
   })
@@ -111,12 +133,13 @@ ServerEvents.recipes(event => {
   });
 
   // Need ruby, etc... from ore
-  [
+  const gemsNeedingDust = [
     'amethyst',
     'ruby',
     'sapphire',
     'peridot',
-  ].forEach(gemMaterial => {
+  ]
+  gemsNeedingDust.forEach(gemMaterial => {
     let dust = AlmostUnified.getPreferredItemForTag(`forge:dusts/${gemMaterial}`)
     event.custom({
       type: "thermal:pulverizer",
@@ -138,15 +161,6 @@ ServerEvents.recipes(event => {
       ]
     ).id(`meatsalad:earth_charge/${gemMaterial}_dust_from_gem`);
   })
-  /*
-    if (crushingTypes.includes('thermal:earth_charge') && materialType == 'gem') {
-      event.shapeless(
-        resultId,
-        [ 
-          `#forge:${materialType}s/${material}`,
-          'thermal:earth_charge'
-        ]
-      ).id(`meatsalad:earth_charge/${material}_dust_from_${materialType}`);
-    }
-    */
+
+  process('rftoolsbase:dimensionalshard', 'kubejs:dimensional_shard_dust', 'dimensional_shard_dust_from_shard')
 })

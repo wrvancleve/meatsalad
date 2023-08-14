@@ -40,4 +40,18 @@ ServerEvents.recipes(event => {
       }
     }
   });
+
+  const nuggetsFrom = [
+    'dragonsteel',
+    'shellite',
+    'starmetal',
+    'mythril',
+    'adamantite',
+    'ultimate',
+    'neutronium'
+  ]
+  nuggetsFrom.forEach(material => {
+    let nugget = AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`);
+    event.shapeless(nugget.withCount(9).toJson(), `#forge:ingots/${material}`).id(`meatsalad:${material}_nuggets_from_ingot`)
+  })
 })

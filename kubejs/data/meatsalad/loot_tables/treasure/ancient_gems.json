@@ -12,7 +12,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/ballast\", rarity: \"ancient\", facets: 10.0d, uuids: [[I;-1097102598, 2083013548, -1444988230, 2055300414]]}"
+            "nbt": "{gem: \"apotheosis:core/ballast\", rarity: \"ancient\"}"
           }
         },
         {
@@ -23,7 +23,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/brawlers\", rarity: \"ancient\", facets: 5.0d, uuids: [[I;-352108387, -1140306020, -1782652032, 197553819]]}"
+            "nbt": "{gem: \"apotheosis:core/brawlers\", rarity: \"ancient\"}"
           }
         },
         {
@@ -34,7 +34,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/breach\", rarity: \"ancient\", facets: 5.0d, uuids: [[I;-1027575378, -1047640932, -1875051954, 535429095]]}"
+            "nbt": "{gem: \"apotheosis:core/breach\", rarity: \"ancient\"}"
           }
         },
         {
@@ -45,7 +45,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/combatant\", rarity: \"ancient\", facets: 10.0d, uuids: [[I;-1057599571, 425348410, -2042778881, 1105533700]]}"
+            "nbt": "{gem: \"apotheosis:core/combatant\", rarity: \"ancient\"}"
           }
         },
         {
@@ -56,7 +56,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/guardian\", rarity: \"ancient\", facets: 10.0d, uuids: [[I;-1289871235, -561823676, -2006203952, -43260085]]}"
+            "nbt": "{gem: \"apotheosis:core/guardian\", rarity: \"ancient\"}"
           }
         },
         {
@@ -67,7 +67,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/lightning\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;1192352281, 770395575, -1535778515, 336200372]]}"
+            "nbt": "{gem: \"apotheosis:core/lightning\", rarity: \"ancient\"}"
           }
         },
         {
@@ -78,7 +78,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/lunar\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;1679301214, 1786529238, -2002308808, 1403764647]]}"
+            "nbt": "{gem: \"apotheosis:core/lunar\", rarity: \"ancient\"}"
           }
         },
         {
@@ -89,7 +89,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/samurai\", rarity: \"ancient\", facets: 5.0d, uuids: [[I;807086331, 17845032, -1160304970, -1604927754]]}"
+            "nbt": "{gem: \"apotheosis:core/samurai\", rarity: \"ancient\"}"
           }
         },
         {
@@ -100,7 +100,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/slipstream\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;1216923413, 676480845, -1617702695, -806397752]]}"
+            "nbt": "{gem: \"apotheosis:core/slipstream\", rarity: \"ancient\"}"
           }
         },
         {
@@ -111,7 +111,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/solar\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;-1365280117, -1672920386, -1583857501, 413662594]]}"
+            "nbt": "{gem: \"apotheosis:core/solar\", rarity: \"ancient\"}"
           }
         },
         {
@@ -122,7 +122,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/splendor\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;-923259735, 1871923526, -1941517103, -532532112]]}"
+            "nbt": "{gem: \"apotheosis:core/splendor\", rarity: \"ancient\"}"
           }
         },
         {
@@ -133,7 +133,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/tyrannical\", rarity: \"ancient\", facets: 10.0d, uuids: [[I;-588066371, -1983952995, -1222840323, 2100676405]]}"
+            "nbt": "{gem: \"apotheosis:core/tyrannical\", rarity: \"ancient\"}"
           }
         },
         {
@@ -144,7 +144,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/warlord\", rarity: \"ancient\", facets: 5.0d, uuids: [[I;-1162183637, -1770109248, -1348871067, -1967990831]]}"
+            "nbt": "{gem: \"apotheosis:core/warlord\", rarity: \"ancient\"}"
           }
         },
         {
@@ -155,7 +155,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:overworld/earth\", rarity: \"ancient\", facets: 3.0d}"
+            "nbt": "{gem: \"apotheosis:overworld/earth\", rarity: \"ancient\"}"
           }
         },
         {
@@ -166,7 +166,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_end/endersurge\", rarity: \"ancient\", facets: 3.0d}"
+            "nbt": "{gem: \"apotheosis:overworld/royalty\", rarity: \"ancient\"}"
           }
         },
         {
@@ -177,7 +177,40 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_nether/inferno\", rarity: \"ancient\", facets: 6.0d, uuids: [[I;1216638201, -540062794, -2131098752, -925863801]]}"
+            "nbt": "{gem: \"apotheosis:the_nether/blood_lord\", rarity: \"ancient\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_nether/inferno\", rarity: \"ancient\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_end/mageslayer\", rarity: \"ancient\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_end/endersurge\", rarity: \"ancient\"}"
           }
         }
       ]

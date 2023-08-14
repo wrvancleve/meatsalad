@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     [ 
       'minecraft:blue_dye',
       '#forge:storage_blocks/diamond',
-      'kubejs:uu_matter'
+      'alexsmobs:mimicream'
     ]
   ).id('meatsalad:herobrine_blue');
 
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     [ 
       'minecraft:cyan_dye',
       '#forge:storage_blocks/diamond',
-      'kubejs:uu_matter'
+      'alexsmobs:mimicream'
     ]
   ).id('meatsalad:herobrine_cyan');
 })

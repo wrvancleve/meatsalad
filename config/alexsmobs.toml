@@ -110,7 +110,7 @@
 	#List of items that cannot be put in a Transmuting Table.
 	transmutationBlacklist = ["minecraft:beacon"]
 	#True if transmutation tables should not have the ability to pick up new items to transmute, and only give options from the loot tables.
-	limitTransmutingToLootTables = false
+	limitTransmutingToLootTables = true
 	#True if transmutation tables can explode when broken.
 	transmutingTableExplodes = false
 	#The experience, in levels, that each transmutation of a stack takes in the transmuting table.
@@ -461,7 +461,7 @@
 		laviathanSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		cosmawSpawnWeight = 90
+		cosmawSpawnWeight = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		cosmawSpawnRolls = 0
@@ -479,7 +479,7 @@
 		manedWolfSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		anacondaSpawnWeight = 12
+		anacondaSpawnWeight = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		anacondaSpawnRolls = 0
@@ -605,10 +605,10 @@
 		sugarGliderSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		farseerSpawnWeight = 30
+		farseerSpawnWeight = 15
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		farseerSpawnRolls = 0
+		farseerSpawnRolls = 3
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
 		skreecherSpawnWeight = 10
@@ -623,10 +623,10 @@
 		underminerSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		murmurSpawnWeight = 5
+		murmurSpawnWeight = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		murmurSpawnRolls = 1
+		murmurSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
 		skunkSpawnWeight = 0

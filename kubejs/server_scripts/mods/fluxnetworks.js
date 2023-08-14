@@ -7,6 +7,6 @@ ServerEvents.recipes(event => {
   ], {
     f: 'fluxnetworks:flux_dust',
     o: 'minecraft:obsidian',
-    e: 'kubejs:infused_ender_pearl',
+    e: 'rftoolsbase:infused_enderpearl',
   }).id('meatsalad:flux_core');
 })

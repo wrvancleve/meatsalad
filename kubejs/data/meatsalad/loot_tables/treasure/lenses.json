@@ -61,6 +61,17 @@
         },
         {
           "type": "placebo:stack_entry",
+          "weight": 6,
+          "quality": 2,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "industrialforegoing:laser_lens14",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
           "weight": 4,
           "quality": 2,
           "min": 1,
@@ -111,17 +122,6 @@
           "max": 1,
           "stack": {
             "item": "industrialforegoing:laser_lens8",
-            "count": 1
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 2,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "industrialforegoing:laser_lens14",
             "count": 1
           }
         },

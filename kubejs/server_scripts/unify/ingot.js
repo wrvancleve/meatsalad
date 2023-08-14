@@ -35,8 +35,8 @@ ServerEvents.recipes(event => {
         }
       }
       
-      let nuggetTag = Ingredient.of(`#forge:nuggets/${materialType}`)
-      if (!AlmostUnified.getPreferredItemForTag(`forge:nuggets/${materialType}`).isEmpty()) {
+      let nuggetsTagString = `forge:nuggets/${materialType}`;
+      if (!AlmostUnified.getPreferredItemForTag(nuggetsTagString).isEmpty()) {
         if (global.loaded.Thermal_Loaded) {
           // Check if thermal multiservo press recipe exists and add it if not
           let count = 0
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             event.custom({
               type: 'thermal:press',
               ingredients: [
-                nuggetTag.withCount(9).toJson(),
+                {tag: nuggetsTagString, count: 9},
                 Ingredient.of('thermal:press_packing_3x3_die').toJson(),
               ],
               result: [ingot.toJson()],
@@ -62,4 +62,32 @@ ServerEvents.recipes(event => {
       }
     }
   });
+
+  const dustSmeltings = [
+    'starmetal',
+    'mythril',
+    'adamantite',
+  ]
+  dustSmeltings.forEach(material => {
+    let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);
+    event.smelting(ingot.toJson(), `#forge:dusts/${material}`).xp(1.0).id(`meatsalad:smelting/${material}_ingot_from_dust`)
+    event.blasting(ingot.toJson(), `#forge:dusts/${material}`).xp(1.0).id(`meatsalad:blasting/${material}_ingot_from_dust`)
+  })
+
+  const ingotsFrom = [
+    'dragonsteel',
+    'shellite',
+    'starmetal',
+    'mythril',
+    'adamantite',
+    'ultimate',
+    'neutronium'
+  ]
+  ingotsFrom.forEach(material => {
+    let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);
+    event.shapeless(ingot.withCount(9).toJson(), `#forge:storage_blocks/${material}`).id(`meatsalad:${material}_ingots_from_block`)
+    event.shaped(ingot.toJson(), ['NNN', 'NNN', 'NNN'], {
+      N: `#forge:nuggets/${material}`
+    }).id(`meatsalad:${material}_ingot_from_nuggets`)
+  })
 })

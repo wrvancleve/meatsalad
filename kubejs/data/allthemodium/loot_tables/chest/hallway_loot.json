@@ -40,6 +40,24 @@
           "quality": 2
         }
       ]
+    },
+    {
+      "name": "hallway_loot_affix_pool",
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+		      "weight": 30,
+          "quality": 2,
+          "min_rarity": "rare",
+          "max_rarity": "epic"
+        }
+      ]
     }
   ]
 }

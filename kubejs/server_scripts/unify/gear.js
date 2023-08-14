@@ -15,7 +15,6 @@ ServerEvents.recipes(event => {
       ingotTagString = `forge:gems/${material}`
     }
     if (!AlmostUnified.getPreferredItemForTag(ingotTagString).isEmpty()) {
-      let ingotTag = Ingredient.of(`#${ingotTagString}`)
       if (global.loaded.Thermal_Loaded) {
         // Check if thermal multiservo press recipe exists and add it if not
         let count = 0
@@ -31,7 +30,7 @@ ServerEvents.recipes(event => {
           event.custom({
             type: 'thermal:press',
             ingredients: [
-              ingotTag.withCount(4).toJson(),
+              {tag: ingotTagString, count: 4},
               Ingredient.of('thermal:press_gear_die').toJson(),
             ],
             result: [gear.toJson()],
@@ -39,5 +38,18 @@ ServerEvents.recipes(event => {
         }
       }
     }
+  })
+
+  const gearFrom = [
+    'mythril',
+    'adamantite',
+    'neutronium'
+  ]
+  gearFrom.forEach(material => {
+    let gear = AlmostUnified.getPreferredItemForTag(`forge:gears/${material}`);
+    event.shaped(gear.toJson(), [' I ', 'INI', ' I '], {
+      I: `#forge:ingots/${material}`,
+      N: '#forge:nuggets/iron'
+    }).id(`meatsalad:${material}_gear_from_ingots`)
   })
 })

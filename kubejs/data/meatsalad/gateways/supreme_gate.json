@@ -1,9 +1,115 @@
 {
   "size": "large",
   "color": "#6C1CE1",
+  "leash_range": 64,
   "waves": [
     {
       "entities": [
+        {
+          "entity": "minecraft:vindicator"
+        },
+        {
+          "entity": "minecraft:vindicator"
+        },
+        {
+          "entity": "minecraft:vindicator"
+        },
+        {
+          "entity": "minecraft:vindicator"
+        },
+        {
+          "entity": "minecraft:vindicator"
+        },
+        {
+          "entity": "minecraft:evoker"
+        },
+        {
+          "entity": "minecraft:evoker"
+        },
+        {
+          "entity": "minecraft:evoker"
+        },
+        {
+          "entity": "minecraft:ravager"
+        },
+        {
+          "entity": "minecraft:ravager"
+        },
+        {
+          "entity": "minecraft:vex"
+        },
+        {
+          "entity": "minecraft:vex"
+        },
+        {
+          "entity": "minecraft:illusioner"
+        },
+        {
+          "entity": "minecraft:illusioner"
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.66
+        },
+        {
+          "attribute": "generic.armor",
+          "operation": "ADDITION",
+          "value": 4
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.5
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.10
+        },
+        {
+          "attribute": "generic.movement_speed",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.10
+        }
+      ],
+      "max_wave_time": 750,
+      "setup_time": 150
+    },
+    {
+      "entities": [
+        {
+          "entity": "minecraft:piglin_brute"
+        },
+        {
+          "entity": "minecraft:piglin_brute"
+        },
+        {
+          "entity": "minecraft:piglin_brute"
+        },
+        {
+          "entity": "minecraft:piglin_brute"
+        },
+        {
+          "entity": "minecraft:piglin_brute"
+        },
+        {
+          "entity": "minecraft:wither_skeleton"
+        },
+        {
+          "entity": "minecraft:wither_skeleton"
+        },
+        {
+          "entity": "minecraft:wither_skeleton"
+        },
+        {
+          "entity": "minecraft:zoglin"
+        },
+        {
+          "entity": "minecraft:zoglin"
+        },
         {
           "entity": "thermal:basalz"
         },
@@ -15,6 +121,114 @@
         },
         {
           "entity": "minecraft:blaze"
+        },
+        {
+          "entity": "thermal:basalz"
+        },
+        {
+          "entity": "thermal:blitz"
+        },
+        {
+          "entity": "thermal:blizz"
+        },
+        {
+          "entity": "minecraft:blaze"
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.85
+        },
+        {
+          "attribute": "generic.armor",
+          "operation": "ADDITION",
+          "value": 5
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.66
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.15
+        },
+        {
+          "attribute": "generic.movement_speed",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.15
+        }
+      ],
+      "max_wave_time": 750,
+      "setup_time": 150
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_priest"
+        },
+        {
+          "entity": "cataclysm:deepling_priest"
+        },
+        {
+          "entity": "cataclysm:deepling_priest"
+        },
+        {
+          "entity": "cataclysm:ignited_revenant"
+        },
+        {
+          "entity": "cataclysm:ignited_revenant"
+        },
+        {
+          "entity": "cataclysm:ignited_revenant"
+        },
+        {
+          "entity": "cataclysm:nameless_sorcerer"
+        },
+        {
+          "entity": "cataclysm:nameless_sorcerer"
+        },
+        {
+          "entity": "alexsmobs:farseer"
+        },
+        {
+          "entity": "alexsmobs:farseer"
+        },
+        {
+          "entity": "alexsmobs:farseer"
+        },
+        {
+          "entity": "alexsmobs:farseer"
         }
       ],
       "modifiers": [
@@ -44,7 +258,7 @@
           "value": 0.20
         }
       ],
-      "max_wave_time": 750,
+      "max_wave_time": 1000,
       "setup_time": 150
     }
   ],

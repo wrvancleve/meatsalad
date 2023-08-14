@@ -234,12 +234,8 @@
           "name": "minecraft:golden_axe"
         },
         {
-          "type": "minecraft:item",
-          "name": "naturescompass:naturescompass"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "explorerscompass:explorerscompass"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_nether/uniques"
         }
       ],
       "rolls": {

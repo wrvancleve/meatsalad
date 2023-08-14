@@ -12,6 +12,13 @@ global.mekStackAdditions = [
   { material: 'mythril', color: global.materialProperties.mythril.color }
 ]
 
+function snakeCaseToUpperCase(input) {
+  return String(input)
+    .split("_")
+    .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
+    .join(" ");
+}
+
 const $MekanismAPI = Java.loadClass('mekanism.api.MekanismAPI')
 const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
 const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
@@ -92,14 +99,17 @@ StartupEvents.registry('block', event => {
       .tagBlock('minecraft:mineable/pickaxe')
       .tagBlock('forge:needs_harvest_level_five_tool')
       .requiresTool(true);
+  */
   event.create('neutronium_block')
       .displayName('Block of Neutronium')
       .material('metal')
       .hardness(5.0)
       .resistance(6.0)
       .tagBlock('minecraft:mineable/pickaxe')
+      .tagBoth('forge:storage_blocks/neutronium')
+      .tagBoth('forge:storage_blocks')
       .requiresTool(true);
-  */
+  
   event.create('starmetal_block')
     .displayName('Block of Starmetal')
     .material('metal')
@@ -127,8 +137,30 @@ StartupEvents.registry('block', event => {
     .tagBoth('forge:storage_blocks/dragonsteel')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);
+  /*
   event.create('end_adamantite_ore')
     .displayName('End Adamantite Ore')
+    .material('stone')
+    .hardness(5.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/adamantite')
+    .tagBoth('forge:ores')
+    .requiresTool(true);
+  */
+  event.create('adamantite_basalt_ore')
+    .displayName('Basalt Adamantite Ore')
+    .model('kubejs:block/adamantite_basalt_ore')
+    .material('stone')
+    .hardness(5.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/adamantite')
+    .tagBoth('forge:ores')
+    .requiresTool(true);
+  event.create('adamantite_blackstone_ore')
+    .displayName('Blackstone Adamantite Ore')
+    .model('kubejs:block/adamantite_blackstone_ore')
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
@@ -146,8 +178,30 @@ StartupEvents.registry('block', event => {
     .requiresTool(true);
   */
   makeBlock({base: 'kubejs'}, 'storage_block_raw', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
+  /*
   event.create('end_mythril_ore')
     .displayName('End Mythril Ore')
+    .material('stone')
+    .hardness(5.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/mythril')
+    .tagBoth('forge:ores')
+    .requiresTool(true);
+  */
+  event.create('mythril_basalt_ore')
+    .displayName('Basalt Mythril Ore')
+    .model('kubejs:block/mythril_basalt_ore')
+    .material('stone')
+    .hardness(5.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBoth('forge:ores/mythril')
+    .tagBoth('forge:ores')
+    .requiresTool(true);
+  event.create('mythril_blackstone_ore')
+    .displayName('Blackstone Mythril Ore')
+    .model('kubejs:block/mythril_blackstone_ore')
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
@@ -183,31 +237,21 @@ StartupEvents.registry('block', event => {
   */
   makeBlock({base: 'kubejs'}, 'storage_block', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
   makeBlock({base: 'kubejs'}, 'storage_block', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
-  event.create('vibranium_tyrian_steel_block')
-    .displayName('Block of Vibranium-Tyrian Steel')
+  event.create('uru_block')
+    .displayName('Block of Uru')
     .material('metal')
-    .hardness(5.0)
-    .resistance(6.0)
+    .hardness(70.0)
+    .resistance(1200.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
-    .tagBoth('forge:storage_blocks/vibranium_tyrian_steel')
-    .tagBoth('forge:storage_blocks')
-    .requiresTool(true);
-  event.create('unobtainium_tyrian_steel_block')
-    .displayName('Block of Unobtainium-Tyrian Steel')
-    .material('metal')
-    .hardness(5.0)
-    .resistance(6.0)
-    .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
-    .tagBoth('forge:storage_blocks/unobtainium_tyrian_steel')
+    .tagBoth('forge:storage_blocks/uru')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('ultima_block')
     .displayName('Block of Ultima')
     .material('metal')
-    .hardness(5.0)
-    .resistance(6.0)
+    .hardness(70.0)
+    .resistance(1200.0)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_harvest_level_five_tool')
     .tagBoth('forge:storage_blocks/ultimate')
@@ -231,7 +275,31 @@ StartupEvents.registry('item', event => {
     }
   }
 
-  function makeItem(textureNamespace, tagNamespace, type, material, color) {
+  function makeItem(material, type, material_tag, rarity, glow) {
+    if (material_tag == null) {
+      material_tag = material;
+    }
+    if (rarity == null) {
+      rarity = 'common'
+    }
+    if (glow == null) {
+      glow = false
+    }
+
+    event.create(`${material}_${type}`)
+      .displayName(getDisplayName(type, material))
+      .tag(`forge:${type}s`)
+      .tag(`forge:${type}s/${material_tag}`)
+      .rarity(rarity).glow(glow)
+  }
+
+  function makeTexturedItem(textureNamespace, tagNamespace, type, material, color, rarity, glow) {
+    if (rarity == null) {
+      rarity = 'common'
+    }
+    if (glow == null) {
+      glow = false
+    }
     if (OVERLAY_TYPES.includes(type)) {
       event.create(`${material}_${type}`)
         .texture('layer0', `mekanism:item/empty`)
@@ -241,6 +309,7 @@ StartupEvents.registry('item', event => {
         .displayName(getDisplayName(type, material))
         .tag(`${tagNamespace}:${type}s`)
         .tag(`${tagNamespace}:${type}s/${material}`)
+        .rarity(rarity).glow(glow)
     } else {
       event.create(`${material}_${type}`)
         .texture('layer0', `mekanism:item/empty`)
@@ -249,6 +318,7 @@ StartupEvents.registry('item', event => {
         .displayName(getDisplayName(type, material))
         .tag(`${tagNamespace}:${type}s`)
         .tag(`${tagNamespace}:${type}s/${material}`)
+        .rarity(rarity).glow(glow)
     }
   }
 
@@ -270,15 +340,38 @@ StartupEvents.registry('item', event => {
   */
 
   event.create('amethyst_dust').displayName('Amethyst Dust').tag('forge:dusts/amethyst').tag('forge:dusts');
+  
+  const $EventBuses = Java.loadClass('dev.architectury.platform.forge.EventBuses')
+  const $InfuseTypeDeferredRegister = Java.loadClass('mekanism.common.registration.impl.InfuseTypeDeferredRegister')
+  const INFUSETYPE = new $InfuseTypeDeferredRegister('kubejs')
+  const $SlurryDeferredRegister = Java.loadClass('mekanism.common.registration.impl.SlurryDeferredRegister')
+  const SLURRY = new $SlurryDeferredRegister('kubejs')
+  
+  INFUSETYPE.register('dimensional_shard', 0xBCF2F0)
+  INFUSETYPE.register($EventBuses.getModEventBus('kubejs').get())
 
   event.create('dimensional_shard_dust').displayName('Dimensional Shard Dust');
-  event.create('infused_dimensional_shard').displayName('Infused Dimensional Shard').glow(true);
-  event.create('draconic_infused_dimensional_shard').displayName('Draconic Infused Dimensional Shard').glow(true);
-  event.create('infused_diamond').displayName('Infused Diamond').glow(true);
-  event.create('draconic_infused_diamond').displayName('Draconic Infused Diamond').glow(true);
-  event.create('infused_ender_pearl').displayName('Infused Ender Pearl').glow(true);
-  event.create('draconic_infused_ender_pearl').displayName('Draconic Infused Ender Pearl').glow(true);
 
+  const manualMaterials = [
+    {name: 'enhanced_alloy'},
+    {name: 'shiny_alloy'},
+    {name: 'iridium_alloy'},
+    {name: 'starmetal', rarity: 'rare'},
+    {name: 'shellite'},
+    {name: 'dragonsteel', rarity: 'uncommon'},
+  ]
+  manualMaterials.forEach(material => {
+    let material_name = material.name;
+    let material_tag = material.material_tag ?? material_name;
+    let types = material.types ?? ['ingot', 'nugget'];
+    let rarity = material.rarity;
+    let glow = material.glow;
+    types.forEach(type => {
+      makeItem(material_name, type, material_tag, rarity, glow)
+    })
+  });
+
+  /*
   event.create('starmetal_ingot').displayName('Starmetal Ingot').tag('forge:ingots/starmetal').tag('forge:ingots').rarity('rare');
   event.create('starmetal_nugget').displayName('Starmetal Nugget').tag('forge:nuggets/starmetal').tag('forge:nuggets').rarity('rare');
 
@@ -289,22 +382,38 @@ StartupEvents.registry('item', event => {
   event.create('dragonsteel_dust').displayName('Dragonsteel Dust').tag('forge:dusts/dragonsteel').tag('forge:dusts').rarity('uncommon');
   event.create('dragonsteel_ingot').displayName('Dragonsteel Ingot').tag('forge:ingots/dragonsteel').tag('forge:ingots').rarity('uncommon');
   event.create('dragonsteel_nugget').displayName('Dragonsteel Nugget').tag('forge:nuggets/dragonsteel').tag('forge:nuggets').rarity('uncommon');
+  */
 
   global.mekStackAdditions.forEach(entry => {
-    makeItem('mekanism', 'mekanism', 'shard', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'dust', entry.material, entry.color);
-    makeItem('mekanism', 'mekanism', 'dirty_dust', entry.material, entry.color);
-    makeItem('mekanism', 'mekanism', 'clump', entry.material, entry.color);
-    makeItem('mekanism', 'mekanism', 'crystal', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'raw_material', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'ingot', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'nugget', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'gear', entry.material, entry.color);
-    makeItem('kubejs', 'forge', 'plate', entry.material, entry.color);
-    const SlurryRegistry = $MekanismAPI.slurryRegistry()
-    SlurryRegistry['register(java.lang.String,java.lang.Object)'](`clean_${entry.material}`, $Slurry($SlurryBuilder.clean().ore(`forge:ores/${entry.material}`).color(Color.of(entry.color).getRgbJS())))
-    SlurryRegistry['register(java.lang.String,java.lang.Object)'](`dirty_${entry.material}`, $Slurry($SlurryBuilder.dirty().ore(`forge:ores/${entry.material}`).color(Color.of(entry.color).getRgbJS())))
+    makeTexturedItem('mekanism', 'mekanism', 'shard', entry.material, entry.color);
+    event.create(`${entry.material}_dust`)
+      .displayName(getDisplayName('dust', entry.material))
+      .tag('forge:dusts')
+      .tag(`forge:dusts/${entry.material}`)
+    makeTexturedItem('mekanism', 'mekanism', 'dirty_dust', entry.material, entry.color);
+    makeTexturedItem('mekanism', 'mekanism', 'clump', entry.material, entry.color);
+    makeTexturedItem('mekanism', 'mekanism', 'crystal', entry.material, entry.color);
+    event.create(`raw_${entry.material}`)
+      .displayName(getDisplayName('raw_material', entry.material))
+      .tag('forge:raw_materials')
+      .tag(`forge:raw_materials/${entry.material}`)
+    event.create(`${entry.material}_ingot`)
+      .displayName(getDisplayName('ingot', entry.material))
+      .tag('forge:ingots')
+      .tag(`forge:ingots/${entry.material}`)
+    event.create(`${entry.material}_nugget`)
+      .displayName(getDisplayName('nugget', entry.material))
+      .tag('forge:nuggets')
+      .tag(`forge:nuggets/${entry.material}`)
+    makeTexturedItem('kubejs', 'forge', 'gear', entry.material, entry.color);
+    makeTexturedItem('kubejs', 'forge', 'plate', entry.material, entry.color);
+
+    SLURRY.register(entry.material, (slurryBuilder) => slurryBuilder.ore(`forge:ores/${entry.material}`).color(Color.of(entry.color).getRgbJS()))
+    //SLURRY.register(`clean_${entry.material}`, $Slurry($SlurryBuilder.clean().ore(`forge:ores/${entry.material}`).color(Color.of(entry.color).getRgbJS())))
+    //SLURRY.register(`dirty_${entry.material}`, $Slurry($SlurryBuilder.dirty().ore(`forge:ores/${entry.material}`).color(Color.of(entry.color).getRgbJS())))
   })
+  SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
+  //SLURRY.register($EventBuses.getModEventBus('kubejs').get())
 
   /*
   event.create('adamantite_shard').displayName('Adamantite Shard');
@@ -328,28 +437,48 @@ StartupEvents.registry('item', event => {
   event.create('raw_mythril').displayName('Raw Mythril');
   event.create('mythril_ingot').displayName('Mythril Ingot');
   event.create('mythril_nugget').displayName('Mythril Nugget');
-  */
-  //event.create('mythril_gear').displayName('Mythril Gear');
-  //event.create('mythril_plate').displayName('Mythril Plate');
+  
+  event.create('mythril_gear').displayName('Mythril Gear');
+  event.create('mythril_plate').displayName('Mythril Plate');
 
   event.create('vibranium_tyrian_steel_ingot').displayName('Vibranium-Tyrian Steel Ingot').tag("forge:ingots/vibranium_tyrian_steel").tag("forge:ingots").rarity('uncommon');
   event.create('unobtainium_tyrian_steel_ingot').displayName('Unobtainium-Tyrian Steel Ingot').tag("forge:ingots/unobtainium_tyrian_steel").tag("forge:ingots").rarity('uncommon');
+  */
 
   event.create('oblivion_shard').displayName('Oblivion Shard').rarity('uncommon');
-  event.create('draconic_infused_oblivion_shard').displayName('Draconic Infused Oblivion Shard').rarity('uncommon').glow(true);
   event.create('dark_matter').displayName('Dark Matter').rarity('rare');
+  event.create('infused_dark_matter').displayName('Infused Dark Matter').rarity('rare');
   event.create('draconic_infused_dark_matter').displayName('Draconic Infused Dark Matter').rarity('rare').glow(true);
 
   event.create('crystalline_powder').displayName('Crystalline Powder').rarity('rare');
   event.create('eternal_crystal').displayName('Eternal Crystal').rarity('epic');
+  event.create('infused_eternal_crystal').displayName('Infused Eternal Crystal').rarity('epic');
   event.create('draconic_infused_eternal_crystal').displayName('Draconic Infused Eternal Crystal').rarity('epic').glow(true);
 
   event.create('nether_core').displayName('Nether Core').rarity('rare').glow(true);
   event.create('ender_core').displayName('Ender Core').rarity('epic').glow(true);
   event.create('chaos_core').displayName('Chaos Core').rarity('epic').glow(true);
 
+  const manualEpicMaterials = [
+    {name: 'uru'},
+    {name: 'neutronium', types: ['ingot', 'nugget', 'gear', 'plate']},
+    {name: 'ultima', material_tag: 'ultimate'},
+  ]
+  manualEpicMaterials.forEach(epicMaterial => {
+    let material_name = epicMaterial.name;
+    let material_tag = epicMaterial.material_tag ?? material_name;
+    let types = epicMaterial.types ?? ['ingot', 'nugget'];
+    let rarity = 'rare';
+    let glow = false;
+    types.forEach(type => {
+      makeItem(material_name, type, material_tag, rarity, glow)
+    })
+  })
+
+  /*
   event.create('uru_ingot').displayName('Uru Ingot').tag("forge:ingots/uru").tag("forge:ingots").rarity('epic').glow(true);
   event.create('uru_nugget').displayName('Uru Nugget').tag("forge:nuggets/uru").tag("forge:nuggets").rarity('epic').glow(true);
+  */
 
   event.create('manifest_illusion').displayName('Manifest Illusion').rarity('rare').glow(true);
   event.create('ender_star').displayName('Ender Star').rarity('rare').glow(true);
@@ -361,8 +490,12 @@ StartupEvents.registry('item', event => {
   event.create('cosmic_shelling').displayName('Cosmic Shelling').rarity('epic').glow(true);
   event.create('chaos_crystal').displayName('Chaos Crystal').rarity('epic').glow(true);
   event.create('chaos_shard').displayName('Chaos Shard').rarity('epic').glow(true);
+
+  /*
   event.create('ultima_ingot').displayName('Ultima Ingot').tag("forge:ingots/ultimate").tag("forge:ingots").rarity('epic').glow(true);
   event.create('ultima_nugget').displayName('Ultima Nugget').tag("forge:nuggets/ultimate").tag("forge:nuggets").rarity('epic').glow(true);
+  */  
+
   event.create('infinity_fabric').displayName('Infinity Fabric').rarity('epic').glow(true);
   event.create('infinity_fiber').displayName('Infinity Fiber').rarity('epic').glow(true);
 })

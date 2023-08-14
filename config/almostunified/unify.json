@@ -34,6 +34,7 @@
     "forge:storage_blocks/raw_{material}"
   ],
   "materials": [
+    "adamantite",
     "aeternium",
     "aluminum",
     "amber",
@@ -71,7 +72,9 @@
     "lead",
     "lumium",
     "mithril",
+    "mythril",
     "netherite",
+    "neutronium",
     "nickel",
     "obsidian",
     "osmium",
