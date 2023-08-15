@@ -105,6 +105,16 @@ WorldgenEvents.add(event => {
     ore.uniformHeight(65, 254)
   })
   event.addOre((ore) => {
+    ore.id = "kubejs:mining_bort"
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:stone', 'silentgear:bort_ore')
+    ore.addTarget('minecraft:deepslate', 'silentgear:deepslate_bort_ore')
+    ore.size(3)
+    ore.count(3)
+    ore.squared()
+    ore.uniformHeight(65, 254)
+  })
+  event.addOre((ore) => {
     ore.id = "kubejs:mining_crimson_iron"
     ore.biomes = ['allthemodium:mining']
     ore.addTarget('minecraft:netherrack', 'silentgear:crimson_iron_ore')
@@ -121,16 +131,6 @@ WorldgenEvents.add(event => {
     ore.count(3)
     ore.squared()
     ore.uniformHeight(-64, 0)
-  })
-  event.addOre((ore) => {
-    ore.id = "kubejs:mining_unobtainium"
-    ore.biomes = ['allthemodium:mining']
-    ore.addTarget('minecraft:end_stone', 'allthemodium:unobtainium_ore')
-    ore.size(3)
-    ore.count([1, 3])
-    ore.squared()
-    ore.uniformHeight(-64, 0)
-    ore.chance = 3
   })
   /*
   event.addOre((ore) => {

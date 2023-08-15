@@ -37,7 +37,7 @@
             "blacklist": {},
             "depth_min": 0,
             "depth_max": 40,
-            "weight": 9
+            "weight": 5
           }
         ]
       }

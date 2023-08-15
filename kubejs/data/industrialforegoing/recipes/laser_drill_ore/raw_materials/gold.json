@@ -12,6 +12,19 @@
       "whitelist": {
         "type": "minecraft:worldgen/biome",
         "values": [
+          "minecraft:badlands",
+          "minecraft:eroded_badlands"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 32,
+      "depth_max": 256,
+      "weight": 10
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
           "allthemodium:soul_sand_valley",
           "allthemodium:desert_hills",
           "allthemodium:desert",
@@ -34,7 +47,7 @@
         ]
       },
       "blacklist": {},
-      "depth_min": 65,
+      "depth_min": 1,
       "depth_max": 247,
       "weight": 6
     },
@@ -50,8 +63,8 @@
         ]
       },
       "blacklist": {},
-      "depth_min": 10,
-      "depth_max": 117,
+      "depth_min": 7,
+      "depth_max": 245,
       "weight": 5
     },
     {
@@ -84,6 +97,39 @@
         ]
       },
       "depth_min": -63,
+      "depth_max": -48,
+      "weight": 4
+    },
+    {
+      "whitelist": {},
+      "blacklist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "minecraft:nether_wastes",
+          "minecraft:basalt_deltas",
+          "minecraft:warped_forest",
+          "minecraft:crimson_forest",
+          "minecraft:soul_sand_valley",
+          "allthemodium:mining",
+          "allthemodium:soul_sand_valley",
+          "allthemodium:desert_hills",
+          "allthemodium:desert",
+          "allthemodium:warped_forest",
+          "allthemodium:crimson_forest",
+          "allthemodium:the_other",
+          "allthemodium:basalt_deltas",
+          "minecraft:the_end",
+          "minecraft:the_void",
+          "minecraft:small_end_islands",
+          "minecraft:end_barrens",
+          "minecraft:end_highlands",
+          "minecraft:end_midlands",
+          "nullscape:void_barrens",
+          "nullscape:shadowlands",
+          "nullscape:crystal_peaks"
+        ]
+      },
+      "depth_min": -47,
       "depth_max": 32,
       "weight": 3
     }

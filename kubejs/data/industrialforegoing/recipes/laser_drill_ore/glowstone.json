@@ -9,10 +9,6 @@
   "pointer": 0,
   "rarity": [
     {
-      "blacklist": {},
-      "depth_max": 117,
-      "depth_min": 7,
-      "weight": 8,
       "whitelist": {
         "type": "minecraft:worldgen/biome",
         "values": [
@@ -22,24 +18,27 @@
           "minecraft:crimson_forest",
           "minecraft:soul_sand_valley"
         ]
-      }
+      },
+      "blacklist": {},
+      "depth_min": 242,
+      "depth_max": 245,
+      "weight": 6
     },
     {
-      "blacklist": {
+      "whitelist": {
         "type": "minecraft:worldgen/biome",
         "values": [
-          "minecraft:the_end",
-          "minecraft:the_void",
-          "minecraft:small_end_islands",
-          "minecraft:end_barrens",
-          "minecraft:end_highlands",
-          "minecraft:end_midlands"
+          "minecraft:nether_wastes",
+          "minecraft:basalt_deltas",
+          "minecraft:warped_forest",
+          "minecraft:crimson_forest",
+          "minecraft:soul_sand_valley"
         ]
       },
-      "depth_max": 255,
-      "depth_min": 0,
-      "weight": 1,
-      "whitelist": {}
+      "blacklist": {},
+      "depth_min": 7,
+      "depth_max": 241,
+      "weight": 1
     }
   ]
 }

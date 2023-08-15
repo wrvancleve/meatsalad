@@ -20,8 +20,52 @@
         ]
       },
       "blacklist": {},
+      "depth_min": 14,
+      "depth_max": 18,
+      "weight": 2
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "minecraft:nether_wastes",
+          "minecraft:basalt_deltas",
+          "minecraft:warped_forest",
+          "minecraft:crimson_forest",
+          "minecraft:soul_sand_valley"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 19,
+      "depth_max": 24,
+      "weight": 1
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "minecraft:nether_wastes",
+          "minecraft:basalt_deltas",
+          "minecraft:warped_forest",
+          "minecraft:crimson_forest",
+          "minecraft:soul_sand_valley"
+        ]
+      },
+      "blacklist": {},
       "depth_min": 8,
-      "depth_max": 22,
+      "depth_max": 13,
+      "weight": 1
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "allthemodium:mining"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 1,
+      "depth_max": 64,
       "weight": 1
     }
   ]

@@ -152,17 +152,19 @@ ItemEvents.tooltip(event => {
   ]);
 
   addOreTooltip('cinnabar', [
-    Text.of('Overworld: Any Biome (Y: -16 to 48)').gold(),
     Text.of('Mining Dimension: (Y: 65 to 247)').gold()
   ]);
 
   addOreTooltip('niter', [
-    Text.of('Overworld: Any Biome (Y: -16 to 64)').gold(),
     Text.of('Mining Dimension: (Y: 65 to 247)').gold()
   ]);
 
   addOreTooltip('sulfur', [
-    Text.of('Overworld: Any Biome (Y: -16 to 32)').gold(),
+    Text.of('Mining Dimension: (Y: 65 to 247)').gold()
+  ]);
+
+  addOreTooltip('bort', [
+    Text.of('Overworld: Any Biome (Y: -60 to 10)').gold(),
     Text.of('Mining Dimension: (Y: 65 to 247)').gold()
   ]);
 
@@ -179,17 +181,14 @@ ItemEvents.tooltip(event => {
   */
 
   addOreTooltip('azure_silver', [
-    Text.of('The End: Any Biome (Y: 16 to 92)').gold(),
-    Text.of('Mining Dimension: (Y: -63 to 0)').gold()
+    Text.of('The End: Any Biome (Y: 8 to 376)').gold()
   ]);
 
   addOreTooltip('adamantite', [
-    Text.of('The End: Any Biome (Y: 0 to 96)').gold(),
-    Text.of('Mining Dimension: (Y: -63 to 0)').gold()
+    Text.of('The End: Void Barrens Biomes (Y: 8 to 376)').gold()
   ]);
 
   addOreTooltip('mythril', [
-    Text.of('The End: Any Biome (Y: 0 to 96)').gold(),
-    Text.of('Mining Dimension: (Y: -63 to 0)').gold()
+    Text.of('The End: Void Barrens Biomes (Y: 8 to 376)').gold()
   ]);
 })

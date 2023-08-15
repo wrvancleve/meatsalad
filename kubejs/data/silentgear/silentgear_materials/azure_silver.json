@@ -2,7 +2,7 @@
   "type": "silentgear:standard",
   "simple": true,
   "availability": {
-    "tier": 5,
+    "tier": 3,
     "categories": [
       "metal"
     ],
@@ -20,16 +20,16 @@
   },
   "stats": {
     "main": {
-      "durability": 197.0,
+      "durability": 192.0,
       "armor_durability": 17.0,
-      "enchantment_value": 29.0,
+      "enchantment_value": 20.0,
       "rarity": 83.0,
       "charging_value": 1.4,
       "repair_value": 0.5,
-      "harvest_level": 6.0,
-      "harvest_speed": 19.0,
-      "melee_damage": 5.0,
-      "magic_damage": 7.0,
+      "harvest_level": 5.0,
+      "harvest_speed": 12.0,
+      "melee_damage": 3.0,
+      "magic_damage": 3.0,
       "attack_speed": 0.0,
       "ranged_damage": 2.0,
       "ranged_speed": 0.0,
@@ -40,14 +40,11 @@
       "armor/chestplate": 5.0,
       "armor/leggings": 4.0,
       "armor/boots": 2.0,
-      "magic_armor": 13.0
+      "magic_armor": 3.0
     },
     "rod": {
       "durability": {
         "mul2": -0.2
-      },
-      "harvest_speed": {
-        "add": 3.0
       }
     },
     "tip": {
@@ -58,13 +55,10 @@
         "add": 3.0
       },
       "harvest_speed": {
-        "add": 3.0
-      },
-      "magic_damage": {
-        "add": 2.0
+        "add": 0.5
       },
       "attack_speed": {
-        "add": 0.2
+        "add": 0.3
       },
       "rarity": {
         "add": 31.0

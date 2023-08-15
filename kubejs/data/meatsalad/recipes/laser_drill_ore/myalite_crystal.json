@@ -12,13 +12,16 @@
       "whitelist": {
         "type": "minecraft:worldgen/biome",
         "values": [
-          "nullscape:crystal_peaks"
+          "minecraft:small_end_islands",
+          "minecraft:end_barrens",
+          "minecraft:end_highlands",
+          "minecraft:end_midlands"
         ]
       },
       "blacklist": {},
-      "depth_min": 0,
-      "depth_max": 255,
-      "weight": 9
+      "depth_min": 96,
+      "depth_max": 376,
+      "weight": 2
     }
   ]
 }

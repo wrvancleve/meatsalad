@@ -22,7 +22,7 @@
   "allthemodium.loc": "Found in Deep Dark biomes in cave walls and ceilings(uniformly)",
   "vibranium.loc": "The Other: Any Biome (Y: 0 to 40)",
   "vibranium.other.loc": "The Other: Any Biome (Y: 0 to 40)",
-  "unobtainium.loc": "The End: End Highlands Biome (Y: 0 to 128)",
+  "unobtainium.loc": "The End: End Highlands Biome (Y: 8 to 376)",
   "allthemodium.mine": "PLAYER MINEABLE ONLY. NOT QUARRYABLE",
   "entity.allthemodium.piglich": "Piglich",
   "biome.allthemodium.mining": "ATM Mining Dim",

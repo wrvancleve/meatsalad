@@ -5,7 +5,7 @@
 			"modid": "cyclic"
 		}
 	],
-	"weight": 70,
+	"weight": 60,
 	"mainhands": [{
 			"weight": 3,
 			"stack": {
