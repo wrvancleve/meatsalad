@@ -15,7 +15,8 @@ JEIEvents.hideItems(event => {
     'cataclysm:monstrous_helm',
     'cataclysm:witherite_ingot',
     'cataclysm:witherite_block',
-    'cataclysm:mechanical_fusion_anvil'
+    'cataclysm:mechanical_fusion_anvil',
+    'cataclysm:athame'
   ])
 })
 

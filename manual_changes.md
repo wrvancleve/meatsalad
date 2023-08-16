@@ -22,7 +22,7 @@
 - Updates
 
 ## GatewaysToEternity
-- Remove gateway recipes
+- Remove data\gateways\recipes
 
 ## Industrial Foregoing
 - Remove laser lens dissolution_chamber recipes

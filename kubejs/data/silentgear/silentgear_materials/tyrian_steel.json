@@ -20,27 +20,27 @@
   },
   "stats": {
     "main": {
-      "durability": 2560.0,
-      "armor_durability": 42.0,
+      "durability": 3652.0,
+      "armor_durability": 81.0,
       "enchantment_value": 16.0,
       "rarity": 100.0,
       "charging_value": 1.1,
-      "harvest_level": 6.0,
-      "harvest_speed": 10.0,
-      "melee_damage": 6.0,
-      "magic_damage": 4.0,
+      "harvest_level": 5.0,
+      "harvest_speed": 18.0,
+      "melee_damage": 8.0,
+      "magic_damage": 6.0,
       "attack_speed": 0.0,
       "ranged_damage": 4.0,
       "ranged_speed": 0.0,
       "projectile_speed": 1.1,
       "projectile_accuracy": 1.1,
       "armor": 25.0,
-      "armor/helmet": 4.0,
-      "armor/chestplate": 10.0,
+      "armor/helmet": 5.0,
+      "armor/chestplate": 9.0,
       "armor/leggings": 7.0,
       "armor/boots": 4.0,
-      "armor_toughness": 5.0,
-      "magic_armor": 4.0
+      "armor_toughness": 12.0,
+      "magic_armor": 12.0
     },
     "rod": {
       "harvest_speed": {

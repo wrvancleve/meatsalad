@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     'SDAVXUMDS',
     'SDAVGUMDS',
     'SDAVXUMDS',
-  */
+  
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
@@ -116,6 +116,25 @@ ServerEvents.recipes(event => {
       count: 1
     }
   }).id('meatsalad:ultima_ingot')
+  */
+  event.custom({
+    type: 'summoningrituals:altar',
+    catalyst: { item: 'kubejs:uu_matter' },
+    outputs: [
+      { item: "kubejs:ultima_ingot", count: 1 }
+    ],
+    inputs: [
+      { tag: "forge:ingots/starmetal" },
+      { tag: "forge:ingots/adamantite" },
+      { tag: "forge:ingots/vibranium" },
+      { tag: "forge:ingots/unobtainium" },
+      { tag: "forge:ingots/mythril" },
+      { tag: "forge:ingots/dragonsteel" },
+      { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 }
+    ],
+    recipe_time: 200,
+    block_below: { block: 'extendedcrafting:nether_star_block' }
+  }).id('meatsalad:summoning/ultima_ingot');
 
   event.custom({
     type: 'extendedcrafting:shaped_table',

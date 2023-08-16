@@ -38,4 +38,6 @@ JEIEvents.information(event => {
     event.addItem('industrialforegoing:laser_lens13', Text.of('Obtained in The Other and End loot chests'));
     event.addItem('industrialforegoing:laser_lens14', Text.of('Obtained in The End loot chests'));
     event.addItem('industrialforegoing:laser_lens15', Text.of('Obtained in The Nether, The Other and The End loot chests'));
+
+    event.addItem('summoningrituals:altar', Text.of('Obtained in End loot chests'));
 })

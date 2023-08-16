@@ -1,5 +1,5 @@
 JEIEvents.hideItems(event => {
   event.hide([
-    /theoneprobe:.+/,
+    'summoningrituals:indestructible_altar'
   ])
 })

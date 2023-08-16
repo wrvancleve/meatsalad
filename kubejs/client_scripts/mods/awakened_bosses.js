@@ -1,3 +1,12 @@
+ItemEvents.tooltip(event => {
+  event.add('awakened_bosses:herobrine_blue', [
+    Text.of('Used to summon Herobrine').gold()
+  ])
+  event.add('awakened_bosses:herobrine_cyan', [
+    Text.of('Used to summon Herobrine').gold()
+  ])
+})
+
 JEIEvents.hideItems(event => {
   event.hide([
     'awakened_bosses:herobrine_block',

@@ -24,7 +24,7 @@ const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
 const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
 
 StartupEvents.registry('block', event => {
-  const HARVEST_LEVEL_FIVE_TAG = 'forge:needs_harvest_level_five_tool';
+  const HARVEST_LEVEL_NETHERITE_TAG = 'forge:needs_netherite_tool';
 
   const TYPE_PROPERTIES = {
     storage_block: { 
@@ -97,7 +97,7 @@ StartupEvents.registry('block', event => {
       .material('stone')
       .hardness(3.0)
       .tagBlock('minecraft:mineable/pickaxe')
-      .tagBlock('forge:needs_harvest_level_five_tool')
+      .tagBlock('forge:needs_netherite_tool')
       .requiresTool(true);
   */
   event.create('neutronium_block')
@@ -143,7 +143,7 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/adamantite')
     .tagBoth('forge:ores')
     .requiresTool(true);
@@ -154,7 +154,7 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/adamantite')
     .tagBoth('forge:ores')
     .requiresTool(true);
@@ -164,7 +164,7 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/adamantite')
     .tagBoth('forge:ores')
     .requiresTool(true);
@@ -174,17 +174,17 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .requiresTool(true);
   */
-  makeBlock({base: 'kubejs'}, 'storage_block_raw', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
+  makeBlock({base: 'kubejs'}, 'storage_block_raw', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
   /*
   event.create('end_mythril_ore')
     .displayName('End Mythril Ore')
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/mythril')
     .tagBoth('forge:ores')
     .requiresTool(true);
@@ -195,7 +195,7 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/mythril')
     .tagBoth('forge:ores')
     .requiresTool(true);
@@ -205,18 +205,18 @@ StartupEvents.registry('block', event => {
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:ores/mythril')
     .tagBoth('forge:ores')
     .requiresTool(true);
-  makeBlock({base: 'kubejs'}, 'storage_block_raw', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
+  makeBlock({base: 'kubejs'}, 'storage_block_raw', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
   /*
   event.create('raw_mythril_block')
     .displayName('Block of Raw Mythril')
     .material('stone')
     .hardness(5.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .requiresTool(true);
   event.create('adamantite_block')
     .displayName('Block of Adamantite')
@@ -224,7 +224,7 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .requiresTool(true);
   event.create('mythril_block')
     .displayName('Block of Mythril')
@@ -232,18 +232,18 @@ StartupEvents.registry('block', event => {
     .hardness(5.0)
     .resistance(6.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .requiresTool(true);
   */
-  makeBlock({base: 'kubejs'}, 'storage_block', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
-  makeBlock({base: 'kubejs'}, 'storage_block', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_FIVE_TAG);
+  makeBlock({base: 'kubejs'}, 'storage_block', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
+  makeBlock({base: 'kubejs'}, 'storage_block', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
   event.create('uru_block')
     .displayName('Block of Uru')
     .material('metal')
     .hardness(70.0)
     .resistance(1200.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:storage_blocks/uru')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);
@@ -253,7 +253,7 @@ StartupEvents.registry('block', event => {
     .hardness(70.0)
     .resistance(1200.0)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_harvest_level_five_tool')
+    .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:storage_blocks/ultimate')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);

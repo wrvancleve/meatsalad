@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
     createReplicationRecipes(idSplit[0], idSplit[1]);
   })
 
+  /*
   const gateways = [
     'zombie_gate',
     'spider_gate',
@@ -73,6 +74,7 @@ ServerEvents.recipes(event => {
     createReplicationRecipes('gateways', 'gate_pearl', `{gateway:"gateways:${gateway}"}`, gateway);
   }
   createReplicationRecipes('gateways', 'gate_pearl', '{gateway:"meatsalad:supreme_gate"}', 'supreme_gate');
+  */
 
   const gems = [
     { id: 'apotheosis:core/ballast', name: 'ballast' },

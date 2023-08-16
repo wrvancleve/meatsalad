@@ -5,17 +5,6 @@ ServerEvents.tags('block', event => {
     event.add(`forge:${blockType}s`, itemId);
     //event.add(`forge:${blockType}s/${material}`, `#forge:${blockType}s`);
   }
-
-  // Harvest Levels
-  /*
-  event.add('forge:needs_netherite_tool', '#forge:ores/vibranium');
-  event.add('forge:needs_harvest_level_five_tool', '#forge:ores/azure_silver');
-  event.add('forge:needs_harvest_level_five_tool', '#forge:ores/unobtainium');
-  
-  event.add('forge:ores/vibranium', '#forge:needs_netherite_tool');
-  event.add('forge:ores/azure_silver', '#forge:needs_harvest_level_five_tool');
-  event.add('forge:ores/unobtainium', '#forge:needs_harvest_level_five_tool');
-  */
 })
 
 ServerEvents.tags('item', event => {
@@ -61,22 +50,6 @@ ServerEvents.tags('item', event => {
 
   //event.add('minecraft:logs', [/allthemodium:stripped_\w+_log/])
   //event.add('forge:stripped_logs', [/allthemodium:stripped_\w+_log/])
-
-  // Harvest Levels
-  /*
-  event.add('forge:harvest_level_five', '#forge:ingots/vibranium');
-  event.add('forge:harvest_level_six', '#forge:ingots/unobtainium');
-  event.add('forge:harvest_level_six', '#forge:ingots/azure_silver');
-  event.add('forge:harvest_level_six', '#forge:ingots/azure_electrum');
-  event.add('forge:harvest_level_six', '#forge:ingots/tyrian_steel');
-  event.add('forge:harvest_level_six', '#forge:ingots/vibranium_tyrian_steel');
-  event.add('forge:harvest_level_six', '#forge:ingots/unobtainium_tyrian_steel');
-  */
-  event.add('forge:ingots/vibranium', '#forge:harvest_level_five');
-  event.add('forge:ingots/unobtainium', '#forge:harvest_level_six');
-  event.add('forge:ingots/azure_silver', '#forge:harvest_level_six');
-  event.add('forge:ingots/azure_electrum', '#forge:harvest_level_six');
-  event.add('forge:ingots/tyrian_steel', '#forge:harvest_level_six');
 
   const mysteryGooReplications = [
     'industrialforegoing:laser_lens0',

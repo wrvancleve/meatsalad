@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "allthemodium:other_vibranium_ore"
+    "allthemodium:other_vibranium_ore",
+    "allthemodium:unobtainium_ore",
+    "silentgear:azure_silver_ore"
   ]
 }
