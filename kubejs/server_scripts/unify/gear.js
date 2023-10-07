@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
     }
   })
 
+  /*
   const gearFrom = [
     'mythril',
     'adamantite',
@@ -52,4 +53,5 @@ ServerEvents.recipes(event => {
       N: '#forge:nuggets/iron'
     }).id(`meatsalad:${material}_gear_from_ingots`)
   })
+  */
 })

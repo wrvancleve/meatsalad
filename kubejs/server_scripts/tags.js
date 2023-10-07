@@ -67,8 +67,7 @@ ServerEvents.tags('item', event => {
     'industrialforegoing:laser_lens12',
     'industrialforegoing:laser_lens13',
     'industrialforegoing:laser_lens14',
-    'industrialforegoing:laser_lens15',
-    'cyclic:heart'
+    'industrialforegoing:laser_lens15'
   ];
   for (let mysteryGooReplication of mysteryGooReplications) {
     event.add('meatsalad:mystery_goo_replication', mysteryGooReplication);
@@ -76,65 +75,219 @@ ServerEvents.tags('item', event => {
 
   event.remove('balm:ingots', 'allthemodium:allthemodium_ingot')
 
+  event.remove('curios:angelring', 'angelring:angel_ring')
+  event.add('curios:ring', 'angelring:angel_ring')
+
+  event.remove('curios:heartamulet', 'bhc:heart_amulet')
+  event.add('curios:necklace', 'bhc:heart_amulet')
+  
+  event.remove('curios:heartamulet', 'bhc:soul_heart_amulet')
+  event.add('curios:necklace', 'bhc:soul_heart_amulet')
+
+  event.remove('curios:belt', 'thermal:satchel')
+
+  event.remove('curios:head', 'industrialforegoing:meat_feeder')
+
   // Silent Gear Main Materials
   const silentGearMainMaterials = [
-    'minecraft:amethyst_shard',
     '#forge:ingots/aluminum',
-    '#forge:ingots/iron',
-    '#forge:ingots/platinum',
-    '#forge:gems/diamond',
-    'minecraft:phantom_membrane',
+    'minecraft:amethyst_shard',
     '#forge:ingots/azure_electrum',
     '#forge:ingots/azure_silver',
-    //'minecraft:barrier',
+    'minecraft:basalt',
+    'minecraft:blackstone',
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/brass',
+    '#forge:ingots/bronze',
+    '#forge:ingots/copper',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:ingots/electrum',
+    '#forge:gems/emerald',
+    '#forge:end_stones',
+    '#forge:ingots/enderium',
+    'silentgear:fine_silk_cloth',
+    'minecraft:flint',
+    '#forge:ingots/gold',
+    '#forge:ingots/invar',
+    '#forge:ingots/iron',
+    '#forge:gems/lapis',
+    '#forge:ingots/lead',
+    '#forge:leather',
+    '#forge:ingots/lumium',
+    '#forge:netherrack',
+    'silentgear:netherwood_planks',
+    '#forge:ingots/nickel',
+    '#forge:obsidian',
+    '#forge:ingots/osmium',
+    'minecraft:phantom_membrane',
+    '#forge:ingots/platinum',
+    '#forge:gems/quartz',
+    '#forge:ingots/refined_glowstone',
+    '#forge:ingots/refined_iron',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/signalum',
+    '#forge:ingots/silver',
+    '#forge:ingots/steel',
+    '#forge:cobblestone',
+    'minecraft:terracotta',
+    '#forge:ingots/tin',
+    '#forge:ingots/tyrian_steel',
+    '#forge:ingots/uranium',
+    '#forge:ingots/zinc',
+
+    '#forge:ingots/adamantite',
+    '#forge:ingots/mythril',
+    '#forge:ingots/ultimate',
+    '#forge:ingots/unobtainium',
+    '#forge:ingots/vibranium',
+    '#forge:ingots/awakened_adamantite',
+    '#forge:ingots/awakened_mythril',
+    '#forge:ingots/awakened_unobtainium',
+    '#forge:ingots/awakened_vibranium',
   ]
-  silentGearMainMaterials.forEach(silentGearMainMaterial => event.add(`silentgear:parts/main`, silentGearMainMaterial));
+  silentGearMainMaterials.forEach(silentGearMainMaterial => event.add(`silentgear:materials/main`, silentGearMainMaterial));
 
   // Silent Gear Rod Materials
   [
     '#forge:ingots/aluminum',
-    '#forge:ingots/iron',
-    '#forge:ingots/platinum',
-    '#forge:gems/diamond',
     '#forge:ingots/azure_electrum',
     '#forge:ingots/azure_silver',
     'minecraft:bamboo',
-  ].forEach(silentGearRodMaterial => event.add(`silentgear:parts/rod`, silentGearRodMaterial));
+    'minecraft:basalt',
+    'minecraft:blackstone',
+    '#forge:ingots/blaze_gold',
+    '#forge:rods/blaze',
+    'minecraft:bone_block',
+    '#forge:ingots/brass',
+    '#forge:ingots/bronze',
+    '#forge:ingots/copper',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:ingots/electrum',
+    '#forge:gems/emerald',
+    'minecraft:end_rod',
+    '#forge:end_stones',
+    '#forge:ingots/enderium',
+    'minecraft:flint',
+    '#forge:ingots/gold',
+    '#forge:ingots/invar',
+    '#forge:ingots/iron',
+    '#forge:ingots/lead',
+    '#forge:ingots/lumium',
+    '#forge:netherrack',
+    'silentgear:netherwood_planks',
+    '#forge:ingots/nickel',
+    '#forge:obsidian',
+    '#forge:ingots/osmium',
+    '#forge:ingots/platinum',
+    '#forge:gems/quartz',
+    '#forge:ingots/refined_glowstone',
+    '#forge:ingots/refined_iron',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/signalum',
+    '#forge:ingots/silver',
+    '#forge:ingots/steel',
+    '#forge:cobblestone',
+    'minecraft:terracotta',
+    '#forge:ingots/tin',
+    '#forge:ingots/tyrian_steel',
+    '#forge:ingots/uranium',
+  ].forEach(silentGearRodMaterial => event.add(`silentgear:materials/rod`, silentGearRodMaterial));
 
   // Silent Gear Tip Materials
   [
     'minecraft:amethyst_shard',
-    '#forge:ingots/iron',
-    '#forge:gems/diamond',
     '#forge:ingots/azure_electrum',
     '#forge:ingots/azure_silver',
-  ].forEach(silentGearTipMaterial => event.add(`silentgear:parts/tip`, silentGearTipMaterial));
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:gems/emerald',
+    '#forge:dusts/glowstone',
+    '#forge:ingots/gold',
+    '#forge:ingots/iron',
+    '#forge:gems/lapis',
+    '#forge:gems/quartz',
+    '#forge:dusts/redstone',
+    '#forge:ingots/refined_glowstone',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/tyrian_steel',
+    
+    '#forge:ingots/adamantite',
+    '#forge:ingots/mythril',
+    '#forge:ingots/unobtainium',
+    '#forge:ingots/vibranium',
+  ].forEach(silentGearTipMaterial => event.add(`silentgear:materials/tip`, silentGearTipMaterial));
 
   // Silent Gear Grip Materials
   [
+    'silentgear:fine_silk_cloth',
+    '#forge:leather',
     'minecraft:phantom_membrane',
-  ].forEach(silentGearGripMaterial => event.add(`silentgear:parts/grip`, silentGearGripMaterial));
+  ].forEach(silentGearGripMaterial => event.add(`silentgear:materials/grip`, silentGearGripMaterial));
 
   // Silent Gear Adornment Materials
   [
     'minecraft:amethyst_shard',
     '#forge:gems/diamond',
-  ].forEach(silentGearAdornmentMaterial => event.add(`silentgear:parts/adornment`, silentGearAdornmentMaterial));
+    '#forge:gems/emerald',
+    'minecraft:flint',
+    '#forge:gems/lapis',
+    '#forge:gems/prismarine',
+    '#forge:gems/quartz',
+    '#forge:gems/ruby',
+    '#forge:gems/sapphire',
+    '#forge:gems/peridot',
+  ].forEach(silentGearAdornmentMaterial => event.add(`silentgear:materials/adornment`, silentGearAdornmentMaterial));
 
   // Silent Gear Lining Materials
   [
+    'silentgear:fine_silk_cloth',
+    '#forge:leather',
     'minecraft:phantom_membrane',
-  ].forEach(silentGearLiningMaterial => event.add(`silentgear:parts/lining`, silentGearLiningMaterial));
+    'minecraft:slime_block',
+  ].forEach(silentGearLiningMaterial => event.add(`silentgear:materials/lining`, silentGearLiningMaterial));
 
   // Silent Gear Binding Materials
   [
+    'silentgear:fine_silk',
+    'silentgear:flax_string',
+    'silentgear:fluffy_string',
     'silentgear:sinew_fiber',
-  ].forEach(silentGearBindingMaterial => event.add(`silentgear:parts/binding`, silentGearBindingMaterial));
+    'minecraft:vine',
+  ].forEach(silentGearBindingMaterial => event.add(`silentgear:materials/binding`, silentGearBindingMaterial));
 
+  // Silent Gear Coating Materials
+  [
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/gold',
+    'minecraft:netherite_ingot',
+    '#forge:gems/prismarine',
+
+    'quark:dragon_scale',
+    'kubejs:infinity_fabric',
+  ].forEach(silentGearCoatingMaterial => event.add(`silentgear:materials/coating`, silentGearCoatingMaterial));
+  
   // Silent Gear Cord Materials
   [
+    'silentgear:fine_silk',
+    'silentgear:flax_string',
+    'silentgear:fluffy_string',
     'silentgear:sinew_fiber',
-  ].forEach(silentGearCordMaterial => event.add(`silentgear:parts/cord`, silentGearCordMaterial));
+  ].forEach(silentGearCordMaterial => event.add(`silentgear:materials/cord`, silentGearCordMaterial));
+
+  // Silent Gear Fletching Materials
+  [
+    '#forge:feathers',
+    '#minecraft:leaves',
+    '#forge:paper',
+
+    'quark:dragon_scale',
+  ].forEach(silentGearFletchingMaterial => event.add(`silentgear:materials/fletching`, silentGearFletchingMaterial));
 })
 
 ServerEvents.tags('entity_type', event => {

@@ -25,7 +25,7 @@
   },
   "stats": {
     "main": {
-      "durability": 250.0,
+      "durability": 256.0,
       "armor_durability": 15.0,
       "enchantment_value": 14.0,
       "rarity": 20.0,

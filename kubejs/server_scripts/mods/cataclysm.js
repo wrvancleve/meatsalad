@@ -33,34 +33,4 @@ ServerEvents.recipes(event => {
     recipe_time: 200,
     block_below: { block: 'cataclysm:void_stone' }
   }).id('meatsalad:summoning/ender_guardian');
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'alexsmobs:mimicream' },
-    outputs: [
-      {
-        mob: 'cataclysm:ignis',
-        //"data": "{Attributes:[{Base:50.0d,Name:\"generic.max_health\"}],Health:50.0d}",
-      }
-    ],
-    inputs: [
-      { ingredient: { item: 'cataclysm:burning_ashes' }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'minecraft:red_nether_bricks' }
-  }).id('meatsalad:summoning/ignis');
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'alexsmobs:mimicream' },
-    outputs: [
-      {
-        mob: 'cataclysm:the_leviathan',
-        //"data": "{Attributes:[{Base:50.0d,Name:\"generic.max_health\"}],Health:50.0d}",
-      }
-    ],
-    inputs: [
-      { ingredient: { item: 'cataclysm:abyssal_sacrifice' }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'cataclysm:stone_pillar' }
-  }).id('meatsalad:summoning/the_leviathan');
 })

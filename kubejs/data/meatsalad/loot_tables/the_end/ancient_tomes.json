@@ -204,30 +204,6 @@
         },
         {
           "type": "placebo:stack_entry",
-          "weight": 4,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:experience_boost', lvl: 3s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 4,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:quickshot', lvl: 3s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
           "weight": 2,
           "quality": 1,
           "min": 1,
@@ -444,30 +420,6 @@
         },
         {
           "type": "placebo:stack_entry",
-          "weight": 2,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:excavate', lvl: 5s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 2,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:launch', lvl: 3s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
           "weight": 1,
           "quality": 1,
           "min": 1,
@@ -476,18 +428,6 @@
             "item": "quark:ancient_tome",
             "count": 1,
             "nbt": "{StoredEnchantments: [{id: 'minecraft:thorns', lvl: 3s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:beheading', lvl: 3s}]}"
           }
         },
         {
@@ -560,30 +500,6 @@
             "item": "quark:ancient_tome",
             "count": 1,
             "nbt": "{StoredEnchantments: [{id: 'apotheosis:capturing', lvl: 5s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:venom', lvl: 2s}]}"
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "quality": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "quark:ancient_tome",
-            "count": 1,
-            "nbt": "{StoredEnchantments: [{id: 'cyclic:laststand', lvl: 2s}]}"
           }
         }
       ]

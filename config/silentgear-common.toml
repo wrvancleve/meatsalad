@@ -192,12 +192,12 @@
 		#This might help track down more obscure issues.
 		extraPartAndTraitInfo = false
 		#Log stat calculations in the debug.log every time gear stats are recalculated
-		stats = true
+		stats = false
 		#Log information on construction of gear and part models, as well as textures they attempt to load.
 		#This is intended to help find and fix rare issues that some users are experiencing.
 		modelAndTexture = false
 		#Log details about certain features being adding to biomes and other world generator details
-		worldGen = true
+		worldGen = false
 
 [other]
 	#Shows a "WIP" (work in progress) label in the tooltip of certain unfinished, but usable blocks and items

@@ -1,0 +1,160 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/mythril"
+    }
+  },
+  "name": {
+    "text": "Mythril"
+  },
+  "stats": {
+    "main": {
+      "durability": 1664.0,
+      "armor_durability": 36.0,
+      "enchantment_value": 35.0,
+      "rarity": 120.0,
+      "charging_value": 1.4,
+      "harvest_level": 6.0,
+      "harvest_speed": 19.0,
+      "melee_damage": 8.0,
+      "magic_damage": 10.0,
+      "attack_speed": 0.3,
+      "ranged_damage": 3.0,
+      "ranged_speed": 2.0,
+      "projectile_speed": 3.0,
+      "projectile_accuracy": 3.0,
+      "armor": 28.0,
+      "armor/helmet": 5.0,
+      "armor/chestplate": 11.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 5.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 14.0
+    },
+    "tip": {
+      "harvest_speed": {
+        "add": 8.0
+      },
+      "attack_speed": {
+        "add": 0.75
+      },
+      "harvest_level": {
+        "max": 6.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:accelerate",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:light",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 3,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:swift_swim",
+        "level": 4,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:accelerate",
+        "level": 5
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 5
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#64EAFB"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#64EAFB"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#64EAFB"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#64EAFB"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}

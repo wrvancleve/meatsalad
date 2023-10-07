@@ -1,6 +1,27 @@
 JEIEvents.information(event => {
     event.addItem('alexsmobs:mysterious_worm', Text.of('Obtained in End loot chests'));
 
+    event.addItem('bhc:wither_bone', Text.of('Obtained by killing Wither Skeletons'));
+    event.addItem('bhc:red_heart', [
+        Text.of('Obtained by killing any of the following:'),
+        Text.of('    Elder Guardian'),
+        Text.of('    The Harbinger'),
+        Text.of('    Netherite Monstrosity'),
+        Text.of('    The Wither'),
+        Text.of('    Ender Dragon'),
+        Text.of('    Ender Golem')
+    ]);
+    event.addItem('bhc:green_heart', [
+        Text.of('Obtained by killing any of the following:'),
+        Text.of('    Void Worm'),
+        Text.of('    The Leviathan'),
+        Text.of('    Ignis'),
+        Text.of('    Ender Guardian'),
+        Text.of('    Herobrine')
+    ]);
+    event.addItem('bhc:blue_heart', Text.of('Obtained by killing the Warden'));
+    event.addItem('bhc:yellow_heart', Text.of('Obtained in Other and End loot chests'));
+
     event.addItem('cataclysm:mech_eye', Text.of('Obtained in Nether loot chests'));
     event.addItem('cataclysm:flame_eye', Text.of('Obtained in End loot chests'));
     event.addItem('cataclysm:void_eye', Text.of('Obtained in End loot chests'));

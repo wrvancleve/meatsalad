@@ -20,12 +20,12 @@
   },
   "stats": {
     "main": {
-      "durability": 900.0,
+      "durability": 768.0,
       "armor_durability": 21.0,
       "enchantment_value": 14.0,
       "harvest_level": 3.0,
       "harvest_speed": 12.0,
-      "melee_damage": 4.0,
+      "melee_damage": 3.0,
       "magic_damage": 4.0,
       "attack_speed": 0.0,
       "armor": 18.0,

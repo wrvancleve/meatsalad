@@ -1,0 +1,73 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:lootcrate"
+		tag: {
+			type: "rare_loot_chest"
+		}
+	}
+	id: "2B50123F05FE91CF"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "sophisticatedbackpacks:everlasting_upgrade" }
+		{ item: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_2", weight: 2.0f }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_2", weight: 2.0f }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_3" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_3" }
+		{ count: 2, item: "mekanism:alloy_infused", random_bonus: 2, weight: 3.0f }
+		{ count: 2, item: "mekanism:basic_control_circuit", random_bonus: 2, weight: 3.0f }
+		{ item: "mekanism:basic_tier_installer", weight: 3.0f }
+		{ item: "mekanism:upgrade_speed", weight: 3.0f }
+		{ item: "mekanism:upgrade_energy", weight: 3.0f }
+		{ item: "mekanism:advanced_control_circuit", random_bonus: 1, weight: 2.0f }
+		{
+			item: {
+				Count: 1b
+				id: "mekanism:advanced_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+			weight: 2.0f
+		}
+		{ item: "mekanism:alloy_reinforced", random_bonus: 1 }
+		{ item: "mekanism:elite_tier_installer" }
+		{
+			item: {
+				Count: 1b
+				id: "mekanism:elite_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "64000000"
+						}]
+					}
+				}
+			}
+		}
+		{ item: "thermal:upgrade_augment_2", weight: 2.0f }
+		{ item: "thermal:machine_speed_augment", weight: 2.0f }
+		{ item: "pipez:advanced_upgrade", random_bonus: 2, weight: 2.0f }
+		{ item: "minecraft:diamond_block", random_bonus: 2, weight: 2.0f }
+		{ item: "minecraft:emerald_block", random_bonus: 1 }
+		{ item: "alltheores:enderium_ingot", random_bonus: 3 }
+		{ item: "alltheores:invar_ingot", random_bonus: 3, weight: 2.0f }
+		{ count: 4, item: "alltheores:osmium_ingot", random_bonus: 2, weight: 2.0f }
+		{ count: 8, item: "minecraft:obsidian", random_bonus: 8, weight: 2.0f }
+		{ item: "minecraft:ghast_tear", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:budding_amethyst", random_bonus: 2 }
+		{ item: "ae2:flawless_budding_quartz" }
+		{ item: "waystones:waystone" }
+		{ count: 2, item: "apotheosis:rare_material", random_bonus: 4 }
+	]
+	title: "&9Rare Reward"
+	use_title: true
+}

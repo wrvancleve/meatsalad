@@ -33,4 +33,29 @@ ItemEvents.modification(event => {
   modifyItem('industrialforegoing:laser_lens13', RARE, 64);
   modifyItem('industrialforegoing:laser_lens14', UNCOMMON, 64);
   modifyItem('industrialforegoing:laser_lens15', UNCOMMON, 64);
+
+  event.modify('awakened_bosses:herobrine_a_helmet', item => {
+    item.armorProtection = 20
+    item.armorToughness = 13.0
+    item.armorKnockbackResistance = 0.75
+  })
+  event.modify('awakened_bosses:herobrine_a_chestplate', item => {
+    item.armorProtection = 35
+    item.armorToughness = 13.0
+    item.armorKnockbackResistance = 0.75
+  })
+  event.modify('awakened_bosses:herobrine_a_leggings', item => {
+    item.armorProtection = 25
+    item.armorToughness = 13.0
+    item.armorKnockbackResistance = 0.75
+  })
+  event.modify('awakened_bosses:herobrine_a_boots', item => {
+    item.armorProtection = 20
+    item.armorToughness = 13.0
+    item.armorKnockbackResistance = 0.75
+  })
+  event.modify('awakened_bosses:herobrine_sword', item => {
+    item.attackDamage = 47
+    item.attackSpeed = 5.5
+  })
 })

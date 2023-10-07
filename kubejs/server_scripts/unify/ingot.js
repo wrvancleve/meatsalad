@@ -75,13 +75,13 @@ ServerEvents.recipes(event => {
   })
 
   const ingotsFrom = [
-    'dragonsteel',
     'shellite',
     'starmetal',
     'mythril',
     'adamantite',
     'ultimate',
-    'neutronium'
+    'neutronium',
+    'uru'
   ]
   ingotsFrom.forEach(material => {
     let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);

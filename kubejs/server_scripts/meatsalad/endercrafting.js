@@ -100,14 +100,14 @@ ServerEvents.recipes(event => {
 
   enderCrafting([
     'VCM',
-    'NDE',
+    'NSE',
     'ACU'
   ], {
     V: Ingredient.of('#forge:storage_blocks/vibranium'),
     C: Item.of('kubejs:chaos_shard'),
     M: Ingredient.of('#forge:storage_blocks/mythril'),
     N: Item.of('kubejs:nether_core'),
-    D: Item.of('kubejs:draconic_infused_dark_matter'),
+    S: Item.of('ae2:quantum_entangled_singularity'),
     E: Item.of('kubejs:ender_core'),
     A: Ingredient.of('#forge:storage_blocks/adamantite'),
     U: Ingredient.of('#forge:storage_blocks/unobtainium')

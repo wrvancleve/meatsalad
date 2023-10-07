@@ -1,4 +1,24 @@
 ServerEvents.recipes(event => {
+  let awakening = (material) => {
+    event.custom({
+      type: 'summoningrituals:altar',
+      catalyst: { item: 'alexsmobs:mimicream' },
+      outputs: [
+        { item: `kubejs:awakened_${material}_ingot`, count: 1 }
+      ],
+      inputs: [
+        { ingredient: { tag: `forge:ingots/${material}` }, count: 2 },
+        { tag: "forge:ingots/uru" },
+        { tag: "forge:ingots/iridium" },
+        { tag: "forge:ingots/neutronium" },
+        { tag: "forge:ingots/starmetal" },
+        { tag: "forge:ingots/refined_obsidian" }
+      ],
+      recipe_time: 200,
+      block_below: { block: 'extendedcrafting:nether_star_block' }
+    }).id(`meatsalad:summoning/awakened_${material}_ingot`);
+  }
+
   event.custom({
     type: 'ae2:transform',
     circumstance: { type: 'explosion' },
@@ -20,6 +40,7 @@ ServerEvents.recipes(event => {
     energy: 16000
   }).id('meatsalad:smelter/shellite_ingot');
 
+  /*
   event.custom({
     type: 'thermal:smelter',
     ingredients: [
@@ -30,6 +51,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('kubejs:dragonsteel_ingot')],
     energy: 32000
   }).id('meatsalad:smelter/dragonsteel_ingot');
+  */
 
   event.custom({
     type: 'thermal:crystallizer',
@@ -88,6 +110,11 @@ ServerEvents.recipes(event => {
     output: Item.of('kubejs:neutronium_ingot')
   }).id('meatsalad:nucleosynthesizing/neutronium_ingot')
 
+  awakening('adamantite');
+  awakening('mythril');
+  awakening('unobtainium');
+  awakening('vibranium');
+
   /*
     'SDAVXUMDS',
     'SDAVGUMDS',
@@ -108,7 +135,6 @@ ServerEvents.recipes(event => {
       X: {item: 'kubejs:draconic_infused_dark_matter'},
       U: {tag: 'forge:ingots/unobtainium'},
       M: {tag: 'forge:ingots/mythril'},
-      D: {tag: 'forge:ingots/dragonsteel'},
       G: {item: 'alexsmobs:mimicream'}
     },
     result: {
@@ -117,6 +143,7 @@ ServerEvents.recipes(event => {
     }
   }).id('meatsalad:ultima_ingot')
   */
+ /*
   event.custom({
     type: 'summoningrituals:altar',
     catalyst: { item: 'kubejs:uu_matter' },
@@ -129,7 +156,27 @@ ServerEvents.recipes(event => {
       { tag: "forge:ingots/vibranium" },
       { tag: "forge:ingots/unobtainium" },
       { tag: "forge:ingots/mythril" },
-      { tag: "forge:ingots/dragonsteel" },
+      { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 }
+    ],
+    recipe_time: 200,
+    block_below: { block: 'extendedcrafting:nether_star_block' }
+  }).id('meatsalad:summoning/ultima_ingot');
+  */
+  event.custom({
+    type: 'summoningrituals:altar',
+    catalyst: { item: 'kubejs:uu_matter' },
+    outputs: [
+      { item: "kubejs:ultima_ingot", count: 1 }
+    ],
+    inputs: [
+      { tag: "forge:ingots/awakened_adamantite" },
+      { tag: "forge:ingots/awakened_vibranium" },
+      { tag: "forge:ingots/awakened_unobtainium" },
+      { tag: "forge:ingots/awakened_mythril" },
+      { tag: "forge:ingots/uru" },
+      { tag: "forge:ingots/iridium" },
+      { tag: "forge:ingots/neutronium" },
+      { tag: "forge:ingots/starmetal" },
       { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 }
     ],
     recipe_time: 200,
@@ -170,4 +217,24 @@ ServerEvents.recipes(event => {
       count: 1
     }
   }).id('meatsalad:infinity_fabric')
+
+  event.shaped('16x pipez:infinity_upgrade', ['ABA', 'BCB', 'ADA'], {
+    A: 'allthemodium:unobtainium_ingot',
+    B: 'minecraft:redstone_block',
+    C: 'pipez:ultimate_upgrade',
+    D: 'kubejs:infinity_fiber'
+  }).id('meatsalad:pipez_infinity_upgrade')
+  event.shaped('thermal:machine_efficiency_creative_augment', ['ABA', 'CDC', 'AEA'], {
+    A: 'allthemodium:unobtainium_ingot',
+    B: 'thermal:lightning_charge',
+    C: 'thermal:energy_cell',
+    D: 'thermal:upgrade_augment_3',
+    E: 'kubejs:infinity_fiber'
+  }).id('meatsalad:thermal_machine_efficiency_creative_augment')
+  event.shaped('mekanism:creative_energy_cube', ['ATA', 'UCU', 'ATA'], {
+    A: 'mekanism:alloy_atomic',
+    T: 'mekanism:energy_tablet',
+    U: 'allthemodium:unobtainium_block',
+    C: 'mekanism:ultimate_energy_cube'
+  }).id('meatsalad:mekanism_creative_energy_cube')
 })

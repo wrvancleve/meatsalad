@@ -1,0 +1,105 @@
+{
+	icon: "lootr:lootr_chest"
+	id: "02A3FDF19EB821EE"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
+		{ count: 2, item: "fluxnetworks:flux_core", random_bonus: 2 }
+		{ count: 4, item: "rftoolsbase:dimensionalshard", random_bonus: 2 }
+		{ item: "pipez:ultimate_upgrade", random_bonus: 2 }
+		{ item: "thermal:upgrade_augment_3" }
+		{ item: "mekanism:ingot_refined_obsidian", random_bonus: 3 }
+		{ item: "mekanism:alloy_atomic", random_bonus: 2 }
+		{ count: 4, item: "mekanism:ultimate_universal_cable", random_bonus: 4 }
+		{ count: 4, item: "mekanism:ultimate_mechanical_pipe", random_bonus: 4 }
+		{ count: 4, item: "mekanism:ultimate_pressurized_tube", random_bonus: 4 }
+		{ item: "mekanism:ultimate_tier_installer" }
+		{
+			item: {
+				Count: 1b
+				id: "mekanism:ultimate_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "256000000"
+						}]
+					}
+				}
+			}
+		}
+		{ item: "allthemodium:vibranium_ingot", random_bonus: 4 }
+		{ item: "allthemodium:unobtainium_ingot", random_bonus: 2 }
+		{ item: "kubejs:adamantite_ingot", random_bonus: 2 }
+		{ item: "kubejs:mythril_ingot", random_bonus: 2 }
+		{ item: "silentgear:tyrian_steel_ingot", random_bonus: 4 }
+		{ item: "alltheores:iridium_ingot", random_bonus: 2 }
+		{ item: "mekanism:quantum_entangloporter" }
+		{ item: "apotheosis:sigil_of_socketing" }
+		{ count: 2, item: "apotheosis:epic_material", random_bonus: 4 }
+		{
+			item: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:sharpness"
+						lvl: 5s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 5s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:power"
+						lvl: 5s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:piercing"
+						lvl: 4s
+					}]
+				}
+			}
+		}
+	]
+	title: "&dEpic Reward"
+	use_title: true
+}

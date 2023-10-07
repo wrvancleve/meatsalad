@@ -1,3 +1,62 @@
-#List of curio slot type settings
-curiosSettings = []
 
+#List of curio slot type settings
+[[curiosSettings]]
+	identifier = "head"
+	size = 0
+	visible = false
+	override = true
+
+[[curiosSettings]]
+	identifier = "necklace"
+	size = 1
+	override = true
+
+[[curiosSettings]]
+	identifier = "back"
+	size = 1
+	override = true
+
+[[curiosSettings]]
+	identifier = "bracelet"
+	size = 1
+	override = true
+
+[[curiosSettings]]
+	identifier = "ring"
+	size = 1
+	override = true
+
+[[curiosSettings]]
+	identifier = "charm"
+	size = 3
+	override = true
+    
+[[curiosSettings]]
+	identifier = "angelring"
+	size = 0
+    visible = false
+	override = true
+
+[[curiosSettings]]
+	identifier = "belt"
+	size = 0
+    visible = false
+	override = true
+
+[[curiosSettings]]
+	identifier = "feet"
+	size = 0
+    visible = false
+	override = true
+
+[[curiosSettings]]
+	identifier = "heartamulet"
+	size = 0
+    visible = false
+	override = true
+
+[[curiosSettings]]
+	identifier = "body"
+	size = 0
+    visible = false
+	override = true

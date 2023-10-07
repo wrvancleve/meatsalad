@@ -24,48 +24,40 @@
       "projectile_accuracy": 1.3
     },
     "coating": {
-      "durability": [
-        {
-          "mul2": 0.3
-        },
-        {
-          "add": 2.0
-        }
-      ],
+      "durability": {
+        "mul2": 0.5
+      },
       "armor_durability": {
-        "mul2": 0.121212125
+        "mul2": 0.5
       },
       "harvest_speed": {
-        "mul2": 0.125
-      },
-      "harvest_level": {
-        "max": 4.0
+        "mul2": 0.5
       },
       "melee_damage": {
-        "mul2": 0.33333334
+        "mul2": 0.5
       },
       "magic_damage": {
-        "mul2": 0.33333334
+        "mul2": 0.5
       },
       "ranged_damage": {
-        "mul2": 0.33333334
+        "mul2": 0.5
       },
       "armor_toughness": {
-        "add": 5.0
+        "add": 8.0
       },
       "knockback_resistance": {
-        "add": 2.0
+        "add": 4.0
       },
       "enchantment_value": {
-        "add": 5.0
+        "add": 10.0
       }
     }
   },
   "traits": {
     "coating": [
       {
-        "name": "silentgear:fireproof",
-        "level": 1
+        "name": "silentgear:sturdy",
+        "level": 5
       }
     ],
     "fletching": []
@@ -92,7 +84,7 @@
     "coating/all": [
       {
         "texture": "silentgear:main_generic_hc",
-        "color": "#867B86"
+        "color": "#22182b"
       },
       {
         "texture": "silentgear:_highlight"
@@ -101,7 +93,7 @@
     "coating/part": [
       {
         "texture": "silentgear:coating_material",
-        "color": "#867B86"
+        "color": "#22182b"
       },
       {
         "texture": "silentgear:coating_jar"
@@ -109,7 +101,7 @@
     ],
     "coating/armor": [
       {
-        "texture": "minecraft:netherite"
+        "texture": "kubejs:dragon_scale"
       }
     ]
   }

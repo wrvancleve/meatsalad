@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  event.remove({ id: 'angelring:diamond_ring' })
   event.remove({ id: 'angelring:energetic_angel_ring' })
   event.remove({ id: 'angelring:leadstone_angel_ring' })
   event.remove({ id: 'angelring:hardened_angel_ring' })

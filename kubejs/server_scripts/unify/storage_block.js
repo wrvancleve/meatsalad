@@ -49,13 +49,13 @@ ServerEvents.recipes(event => {
   })
 
   const blockFrom = [
-    'dragonsteel',
     'shellite',
     'starmetal',
     'mythril',
     'adamantite',
     'ultimate',
-    'neutronium'
+    'neutronium',
+    'uru'
   ]
   blockFrom.forEach(material => {
     let block = AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/${material}`);

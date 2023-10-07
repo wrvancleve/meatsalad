@@ -1,0 +1,517 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "end_eyes"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "endrem:magical_eye"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "7FB8D01FCF54E313"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Found in buried or shipwreck treasure chests"]
+			id: "7CDE0E4990A47862"
+			rewards: [
+				{
+					id: "1EEE4E91322C902D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5FD00D64E5B94E31"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Black Eye"
+			tasks: [{
+				id: "249CB79AFF035597"
+				item: {
+					Count: 1b
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Black Eye"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["Found in loot chests of Witch Huts"]
+			id: "2DA59DE8765F8C13"
+			rewards: [
+				{
+					id: "30468031E6DAEED6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "396C385A92629338"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Witch Eye"
+			tasks: [{
+				id: "31FD864BC2EEAAF0"
+				item: {
+					Count: 1b
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Witch Eye"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			description: ["Found in loot chests of Pillager Outposts"]
+			id: "702D2E2433677F56"
+			rewards: [
+				{
+					id: "576E10ACBFF413C5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "379BC6DD46D9AFA5"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Corrupted Eye"
+			tasks: [{
+				id: "7671CE8D1F97C4D8"
+				item: {
+					Count: 1b
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Corrupted Eye"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: ["Found in treasure chests of The Lost Castle of the Overworld"]
+			id: "12B9E1F1D5C40C70"
+			rewards: [
+				{
+					id: "64F5B80D930086D2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "777967B85B0913A8"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Lost Eye"
+			tasks: [{
+				id: "6B086588997435CE"
+				item: {
+					Count: 1b
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Lost Eye"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: ["Obtained by killing the Elder Guardian"]
+			id: "64419370C70B7567"
+			rewards: [
+				{
+					id: "2AFAFDB4BFB2B3F8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B2E3B2C7D99F5BB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Guardian Eye"
+			tasks: [{
+				id: "1ED5E30F98F461DA"
+				item: {
+					Count: 1b
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Guardian Eye"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46836674AC71753C"]
+			description: ["Obtained by killing The Harbinger in Ancient Factories of the Overworld"]
+			id: "2CE91A7A76E8DD3B"
+			rewards: [
+				{
+					id: "633B6A00E0E64F49"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C20302031670033"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Undead Eye"
+			tasks: [{
+				id: "0443FBC5AFA4D470"
+				item: {
+					Count: 1b
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Undead Eye"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: ["Found in Nether loot chests"]
+			id: "46836674AC71753C"
+			rewards: [
+				{
+					id: "072B82912DF3273C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00ADDFF4E36579A5"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Mech"
+			tasks: [{
+				id: "0519C00DBB8D100F"
+				item: "cataclysm:mech_eye"
+				type: "item"
+			}]
+			title: "Eye of Mech"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: ["Found in Nether loot chests"]
+			id: "1BF5EF0193A21C7B"
+			rewards: [
+				{
+					id: "0F681816D8AAADD3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BCDBC0CC1AC245C"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Monstrosity"
+			tasks: [{
+				id: "704CD783FEBAE3C2"
+				item: "cataclysm:monstrous_eye"
+				type: "item"
+			}]
+			title: "Eye of Monstrosity"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1BF5EF0193A21C7B"]
+			description: ["Obtained by killing Netherite Monstrosity in Soul Black Smiths of the Nether"]
+			id: "59B4BE881EB41531"
+			rewards: [
+				{
+					id: "0096512AB2D4CACC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "510D791BFC40FB0A"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Evil Eye"
+			tasks: [{
+				id: "50915380722D0F5F"
+				item: {
+					Count: 1b
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Evil Eye"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: ["Found in loot chests of Nether Fortresses"]
+			id: "30C4ECBD79126F23"
+			rewards: [
+				{
+					id: "5B0ABE7D08153C72"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F62C6373BD636EB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Nether Eye"
+			tasks: [{
+				id: "414387971F1C5F4F"
+				item: {
+					Count: 1b
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Nether Eye"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			description: ["Found in treasure chests of Nether Bastions"]
+			id: "6FEDCD787D97941D"
+			rewards: [
+				{
+					id: "27E4D4093F23BE8C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "26B1C8DEAB0B52B9"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Cursed Eye"
+			tasks: [{
+				id: "5AD19B1ABC3DC57B"
+				item: {
+					Count: 1b
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Cursed Eye"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			description: ["Found in Nether or Ancient City loot chests"]
+			id: "1159DD49B9FA955A"
+			rewards: [
+				{
+					id: "614A3CDE189BE415"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5AC7D66683FDD61E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Obtain an Explorer's Compass to better locate structures"
+			tasks: [{
+				id: "2BF5FE97A9A13B61"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Explorer's Compass"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			id: "30356B69CF7818CD"
+			rewards: [
+				{
+					id: "041CA2A2EBAD92DE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "76B0F06C98BEDB0B"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Teleport Pad to enter The Other"
+			tasks: [{
+				id: "184D9A57FF35A149"
+				item: "allthemodium:teleport_pad"
+				type: "item"
+			}]
+			title: "Teleport Pad"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30356B69CF7818CD"]
+			description: ["Found in teasure chests of The Other dimension"]
+			id: "67329A57DB9E749E"
+			rewards: [
+				{
+					id: "4CACE5B772FB23BF"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33988E95D64E8577"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Magical Eye"
+			tasks: [{
+				id: "410002DDEF031505"
+				item: {
+					Count: 1b
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Magical Eye"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			description: ["Found in loot chests of Ancient Cities"]
+			id: "3FD414CBC50208A0"
+			rewards: [
+				{
+					id: "4750E443BE0F1C14"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "170B491FBFD394E6"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Old Eye"
+			tasks: [{
+				id: "7FBA446B8EC89775"
+				item: {
+					Count: 1b
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Old Eye"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			description: ["Obtained by killing the Wither"]
+			id: "503896124F05816B"
+			rewards: [
+				{
+					id: "6AEF2FAA4F3F1231"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CA896DB8CFC7E9E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Wither Eye"
+			tasks: [{
+				id: "6EE79E7F2A98E204"
+				item: {
+					Count: 1b
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Wither Eye"
+			x: 0.5d
+			y: 2.0d
+		}
+	]
+	title: "To The End"
+}

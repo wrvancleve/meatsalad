@@ -1,0 +1,699 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "ultima"
+	group: ""
+	icon: "kubejs:ultima_ingot"
+	id: "03FDBB8210955F87"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A0CCC7DE744DBDE"
+				"29FAEEA3595E37ED"
+				"67591F1C55DB3FA9"
+				"328874F096419139"
+				"0DA3403E64E63089"
+				"597F049F648EC535"
+			]
+			id: "7418100C3C6D274C"
+			rewards: [
+				{
+					id: "5E64674330D08653"
+					item: "kubejs:ultima_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59847E68315D7865"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+				{
+					id: "626B05C10634AC93"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Craft an Ultima Ingot"
+			tasks: [{
+				id: "6C0C5CDF23BB341F"
+				item: "kubejs:ultima_ingot"
+				type: "item"
+			}]
+			title: "Ultima Ingot"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "0DA3403E64E63089"
+			rewards: [
+				{
+					id: "4A7597DF0083430B"
+					item: "kubejs:draconic_infused_dark_matter"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00E9DB5BF2EFB6D1"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "16871E0264E01045"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft a Draconic Infused Dark Matter"
+			tasks: [{
+				id: "7E7F4ADF867C5FA1"
+				item: "kubejs:draconic_infused_dark_matter"
+				type: "item"
+			}]
+			title: "Draconic Infused Dark Matter"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "328874F096419139"
+			rewards: [
+				{
+					id: "45393FC07C253B10"
+					item: "kubejs:awakened_vibranium_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "64FC3E6A6A1E8F28"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "03F78B0579CB149A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Awakened Vibranium Ingot"
+			tasks: [{
+				id: "195159FB090123E4"
+				item: "kubejs:awakened_vibranium_ingot"
+				type: "item"
+			}]
+			title: "Awakened Vibranium Ingot"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "67591F1C55DB3FA9"
+			rewards: [
+				{
+					id: "390A3111BA7A8B57"
+					item: "kubejs:awakened_unobtainium_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F01E810900AC972"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "7ED342B69CA1B1B8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Awakened Unobtainium Ingot"
+			tasks: [{
+				id: "636C2B73F31E4D20"
+				item: "kubejs:awakened_unobtainium_ingot"
+				type: "item"
+			}]
+			title: "Awakened Unobtainium Ingot"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			id: "7A0CCC7DE744DBDE"
+			rewards: [
+				{
+					id: "4844E42220A06231"
+					item: "kubejs:awakened_adamantite_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D4F18B13A227E07"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "67C4DBA8854BA73B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Awakened Adamantite Ingot"
+			tasks: [{
+				id: "5577E7195C568E23"
+				item: "kubejs:awakened_adamantite_ingot"
+				type: "item"
+			}]
+			title: "Awakened Adamantite Ingot"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "29FAEEA3595E37ED"
+			rewards: [
+				{
+					id: "34EE3A4A6CA138CD"
+					item: "kubejs:awakened_mythril_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EAE0D48F265C054"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "3C9FCC41F8AF7A34"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Awakened Mythril Ingot"
+			tasks: [{
+				id: "21075B4FDB2E4CF8"
+				item: "kubejs:awakened_mythril_ingot"
+				type: "item"
+			}]
+			title: "Awakened Mythril Ingot"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "5569CA4D13A50A19"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E19AE101519495C"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "23D87BC7A764CEEE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Obtain a Summoning Alter"
+			tasks: [{
+				id: "35A02E3D10E4BB1B"
+				item: "summoningrituals:altar"
+				type: "item"
+			}]
+			title: "Summoning Alter"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			id: "597F049F648EC535"
+			rewards: [
+				{
+					id: "1F4FB4EC1E4BDDE2"
+					item: "kubejs:uu_matter"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A3133E708BD1EAC"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "33154A9C6023B7BB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an UU-Matter"
+			tasks: [{
+				id: "122FB2424C9E4BC3"
+				item: "kubejs:uu_matter"
+				type: "item"
+			}]
+			title: "UU-Matter"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47AC3BAD4C6A1D26"]
+			id: "37172411ED942FAB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A0AF1309B03D9B3"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "251869DC93842157"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Craft an Antiprotonic Nucleosynthesizer"
+			tasks: [{
+				id: "6A32AE8AF616B34C"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			title: "Antiprotonic Nucleosynthesizer"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FD5F74EDCFE7FFC"]
+			id: "47AC3BAD4C6A1D26"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "059571B8661C330E"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "7141A3782515166E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Antimatter Pellet"
+			tasks: [{
+				id: "74E92C3DC64EEEC5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "Antimatter Pellet"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			id: "7A4B783D24B685DA"
+			rewards: [
+				{
+					id: "2FBDBF18B58654D9"
+					item: "kubejs:uru_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4977BCC91C4C867D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "4F92DEC78EB721AA"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft an Uru Ingot"
+			tasks: [{
+				id: "6D946FC07599CE5E"
+				item: "kubejs:uru_ingot"
+				type: "item"
+			}]
+			title: "Uru Ingot"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			id: "6B7EE261A0537C9E"
+			rewards: [
+				{
+					id: "6876221BCA91B2DE"
+					item: "kubejs:neutronium_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4303FFEFAF622934"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					id: "2FD9DDB852F0A7B7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "Craft a Neutronium Ingot"
+			tasks: [{
+				id: "12D49FB5E043FABC"
+				item: "kubejs:neutronium_ingot"
+				type: "item"
+			}]
+			title: "Neutronium Ingot"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			id: "27EE91A1FEDCB45E"
+			rewards: [
+				{
+					id: "77B0BDF457FD6097"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EBA0463CBB10F4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Casing"
+			tasks: [{
+				id: "105CE6C17D649EC4"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			title: "Fission Reactor Casing"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "1F2346D554622D18"
+			rewards: [
+				{
+					id: "5528F0A1FE94B19F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "116B6DA2C2F0D914"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Port"
+			tasks: [{
+				id: "35A3A0FC76010153"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			title: "Fission Reactor Port"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "2922A4A65832F17F"
+			rewards: [
+				{
+					id: "00F28A1D5C5F77ED"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C0C3DD8EFDAF8CB"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Fuel Assembly"
+			tasks: [{
+				id: "4AD888F9E99323A0"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			title: "Fission Fuel Assembly"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "2F811CADF2CD3136"
+			rewards: [
+				{
+					id: "6A178E962A1E2841"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2175DAFEA50892E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Control Rod Assembly"
+			tasks: [{
+				id: "767B6610B85166A8"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			title: "Control Rod Assembly"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			id: "71E7A1FD612672DE"
+			rewards: [
+				{
+					id: "083699BEC0F63BB6"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C5929C0C9E5CE09"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Logic Adapter"
+			tasks: [{
+				id: "0579B2CAE4632979"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			title: "Fission Reactor Logic Adapter"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2F811CADF2CD3136"
+				"2922A4A65832F17F"
+				"27EE91A1FEDCB45E"
+				"71E7A1FD612672DE"
+				"1F2346D554622D18"
+			]
+			id: "2FD5F74EDCFE7FFC"
+			rewards: [
+				{
+					id: "567D795999AA5824"
+					item: "mekanism:pellet_polonium"
+					type: "item"
+				}
+				{
+					id: "511FAD6A3AE31859"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4755B0C366A40190"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Polonium Pellet"
+			tasks: [{
+				id: "14A0D1C360374523"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "Polonium Pellet"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "59EF276AC2E1A632"
+			rewards: [
+				{
+					id: "7FEC42528F9FA69B"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D6DE2409F0E203E"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Loot Fabricator to generate loot from your data models"
+			tasks: [{
+				id: "2B0BB87FCB20B8FB"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			title: "Loot Fabricator"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			id: "1CB9C84CECDBD755"
+			rewards: [
+				{
+					id: "67E653E1B49D76F9"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "431F8514430E9633"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Simulation Chamber to use your data models"
+			tasks: [{
+				id: "12F3149D21F3DAAE"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "Simulation Chamber"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			id: "168535C035FCBBA5"
+			rewards: [
+				{
+					id: "13655B3F9FAD53D2"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16FDD38B1AA30A9D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Model Framework to train data models"
+			tasks: [{
+				id: "3BD3BAAAD95F3E14"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			title: "Model Framework"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			id: "6A6C48828D916EE5"
+			rewards: [
+				{
+					id: "79EED54D772C3E58"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7301C8148683E653"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Deep Learner to train your data models"
+			tasks: [{
+				id: "097E7B20C53AE941"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
+			title: "Deep Learner"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			id: "187B1F743B3323DF"
+			rewards: [
+				{
+					id: "5FF4C1E5252DF9B1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FE1376BE1315013"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft an Ore Laser Base to automatically mine ores"
+			tasks: [{
+				id: "4B22FF186C370495"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			title: "Ore Laser Base"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "4567CA10CF091158"
+			rewards: [
+				{
+					id: "7B7EBCA31B7B4A36"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A13B15FABC33475"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Laser Drill to power your Ore Laser Base"
+			tasks: [{
+				id: "68971C19AE10124D"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
+			title: "Laser Drill"
+			x: 4.5d
+			y: -4.0d
+		}
+	]
+	title: "Ultima"
+}

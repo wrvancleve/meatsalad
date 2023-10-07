@@ -42,7 +42,6 @@ ServerEvents.recipes(event => {
   });
 
   const nuggetsFrom = [
-    'dragonsteel',
     'shellite',
     'starmetal',
     'mythril',

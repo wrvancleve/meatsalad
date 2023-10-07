@@ -1,8 +1,5 @@
 JEIEvents.removeCategories(event => {
   event.remove('alexsmobs:capsid');
-  event.remove('cyclic:crusher');
-  event.remove('cyclic:generator_fluid');
-  event.remove('cyclic:generator_item');
   event.remove('industrialforegoing:furnace');
   event.remove('industrialforegoing:potion');
   event.remove('industrialforegoing:culinary');
@@ -24,7 +21,6 @@ JEIEvents.removeCategories(event => {
   event.remove('industrialforegoing:stone_work');
   event.remove('industrialforegoing:stone_work_generator');
   event.remove('industrialforegoing:fermenter');
-  //event.remove('twilightforest:uncrafting')
   event.remove('silentgear:compounding/gem')
   event.remove('silentgear:compounding/metal')
 })

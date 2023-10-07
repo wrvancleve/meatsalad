@@ -22,5 +22,8 @@
       "item": "alexsmobs:void_worm_eye",
       "count": 1
     }
-  ]
+  ],
+  "data_per_kill": [
+		3, 16, 75, 150
+	]
 }
