@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
       ], {
         M: 'alexsmobs:mimicream',
         I: Item.of(registryName, itemNbt).strongNBT()
-      }).id('meatsalad:' + itemNbtRegistryName + '_2x_replication')
+      }).id('meatsalad:' + mod + '_' + itemNbtRegistryName + '_2x_replication')
       event.shaped(Item.of(registryName, 4, itemNbt).strongNBT(), [
         'MMM',
         'MIM',
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
       ], {
         M: 'alexsmobs:mimicream',
         I: Item.of(registryName, itemNbt).strongNBT()
-      }).id('meatsalad:' + itemNbtRegistryName + '_4x_replication')
+      }).id('meatsalad:' + mod + '_' + itemNbtRegistryName + '_4x_replication')
     } else {
       event.shaped(Item.of(registryName, 2), [
         ' M ',
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
       ], {
         M: 'alexsmobs:mimicream',
         I: registryName
-      }).id('meatsalad:' + registryName + '_2x_replication')
+      }).id('meatsalad:' + mod + '_' + itemId + '_2x_replication')
       event.shaped(Item.of(registryName, 4), [
         'MMM',
         'MIM',
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
       ], {
         M: 'alexsmobs:mimicream',
         I: registryName
-      }).id('meatsalad:' + registryName + '_4x_replication')
+      }).id('meatsalad:' + mod + '_' + itemId + '_4x_replication')
     }
   }
 
