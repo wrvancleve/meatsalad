@@ -1,0 +1,27 @@
+{
+  "feature": "meatsalad:other_iron_ore",
+  "placement": [
+    {
+      "count": 50,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": -24
+        },
+        "max_inclusive": {
+          "below_top": 0
+        },
+        "type": "minecraft:trapezoid"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:protection', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:sharpness', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:efficiency', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:power', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:piercing', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'cofh_core:holding', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:fire_protection', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:feather_falling', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:projectile_protection', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:smite', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:bane_of_arthropods', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:knockback', lvl: 2s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:unbreaking', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:loyalty', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:quick_charge', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:bane_of_illagers', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 4,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:spearfishing', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:blast_protection', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:respiration', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:depth_strider', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:fire_aspect', lvl: 2s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:looting', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:sweeping', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:fortune', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:punch', lvl: 2s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:luck_of_the_sea', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:lure', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:impaling', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:riptide', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:shield_bash', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:natures_blessing', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:frost_walker', lvl: 2s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:icy_thorns', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:reflective', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 2,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:knowledge', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:thorns', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:soul_speed', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:scavenger', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:berserkers_fury', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:crescendo', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:earths_boon', lvl: 3s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'apotheosis:capturing', lvl: 5s}]}"
+          }
+        }
+      ]
+    }
+  ]
+}

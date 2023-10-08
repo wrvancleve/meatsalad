@@ -1,0 +1,91 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 7,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/awakened_unobtainium"
+    }
+  },
+  "name": {
+    "text": "Awakened Unobtainium"
+  },
+  "stats": {
+    "main": {
+      "durability": 10240.0,
+      "armor_durability": 217.0,
+      "enchantment_value": 40.0,
+      "rarity": 140.0,
+      "charging_value": 1.75,
+      "harvest_level": 7.0,
+      "harvest_speed": 28.0,
+      "melee_damage": 18.0,
+      "magic_damage": 26.0,
+      "attack_speed": 0.3,
+      "ranged_damage": 5.0,
+      "ranged_speed": 3.0,
+      "projectile_speed": 4.0,
+      "projectile_accuracy": 5.0,
+      "armor": 60.0,
+      "armor/helmet": 11.0,
+      "armor/chestplate": 24.0,
+      "armor/leggings": 14.0,
+      "armor/boots": 11.0,
+      "armor_toughness": 28.0,
+      "magic_armor": 28.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:adamant",
+        "level": 5
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      },
+      {
+        "name": "silentgear:bastion",
+        "level": 5
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:lucky",
+        "level": 4
+      },
+      {
+        "name": "silentgear:sturdy",
+        "level": 5
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#6C1CE1"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#6C1CE1"
+      }
+    ]
+  }
+}

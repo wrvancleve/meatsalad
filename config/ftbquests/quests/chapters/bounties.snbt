@@ -1,0 +1,1585 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bounties"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "minecraft:diamond_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "0453DC381C2337DA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "09CD6FE0FC354227"
+			rewards: [
+				{
+					id: "63A73B284BCABD49"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A2BA9DBFF33F85E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "6760084CA653E67E"
+				title: "Kill 100 Skeletons"
+				type: "kill"
+				value: 100L
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "2376C0A75866B1B1"
+			rewards: [
+				{
+					id: "0D67D4AC1D9BCA83"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33A15A29674E5F58"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "78D00F407301F09F"
+				title: "Kill 100 Zombies"
+				type: "kill"
+				value: 100L
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2376C0A75866B1B1"]
+			icon: "minecraft:zombie_head"
+			id: "7FBA72F5C653E74B"
+			rewards: [
+				{
+					id: "6C1AD68A4818907A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "739A5B551B4BF48E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "3B32955C1C88795D"
+				title: "Kill 500 Zombies"
+				type: "kill"
+				value: 500L
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FBA72F5C653E74B"]
+			id: "67145AAC43A91150"
+			rewards: [
+				{
+					id: "1FBEBE446C85E6F8"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59D80C839739E374"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "681A045E96A8A99C"
+				title: "Kill 1000 Zombies"
+				type: "kill"
+				value: 1000L
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C72B608AB9242AD"]
+			id: "1AF595505905649E"
+			rewards: [
+				{
+					id: "5E2D76ACE9DC8CD0"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2813AD7B0B0C1ED6"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:skeleton_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B4A0237B25A485E"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:skeleton_skull"
+				id: "72043D71EE25BC85"
+				title: "Kill 2500 Skeletons"
+				type: "kill"
+				value: 2500L
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67145AAC43A91150"]
+			id: "51B13EE9B8CE0329"
+			rewards: [
+				{
+					id: "1BADA27E12B40393"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "0C5D804F5CC89A1B"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:zombie_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38AC62204DF6C282"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "58513938CDFC56E7"
+				title: "Kill 2500 Zombies"
+				type: "kill"
+				value: 2500L
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09CD6FE0FC354227"]
+			id: "45E9D9A98E02BA4D"
+			rewards: [
+				{
+					id: "49966A6D6F146157"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03263297DCDD8052"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "1B16E9138D568260"
+				title: "Kill 500 Skeletons"
+				type: "kill"
+				value: 500L
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45E9D9A98E02BA4D"]
+			id: "0C72B608AB9242AD"
+			rewards: [
+				{
+					id: "0F1B817A00672A57"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45684350B25FB536"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "2A24399FC3DA8EB2"
+				title: "Kill 1000 Skeletons"
+				type: "kill"
+				value: 1000L
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "665E44FFA45456D7"
+			rewards: [
+				{
+					id: "39682C3DADFE1E99"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0730949034FE37E4"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "6B989AB8493CB499"
+				title: "Kill 100 Creepers"
+				type: "kill"
+				value: 100L
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["665E44FFA45456D7"]
+			id: "44859269762ED3A4"
+			rewards: [
+				{
+					id: "7E22FCED98170057"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E90EDE1267C7B90"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "14F209C749E9BEB4"
+				title: "Kill 500 Creepers"
+				type: "kill"
+				value: 500L
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44859269762ED3A4"]
+			id: "4B4EF0386D53CC08"
+			rewards: [
+				{
+					id: "7AF06F8CABA01D3C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CDAC005F0804B8C"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "753F624573B21423"
+				title: "Kill 1000 Creepers"
+				type: "kill"
+				value: 1000L
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B4EF0386D53CC08"]
+			id: "31915960A8CA280E"
+			rewards: [
+				{
+					id: "65BE9713360D62C4"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "79B22AE796AAC230"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:creeper_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FCC467451BD7D92"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "3939A35DBA6A8F41"
+				title: "Kill 2500 Creepers"
+				type: "kill"
+				value: 2500L
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51B13EE9B8CE0329"]
+			id: "629C27E7F68AB76F"
+			rewards: [
+				{
+					id: "1C32A355575B7223"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "1EF25D775C9CC4D9"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:zombie_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F08CC96D2E25D02"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "4460545D118B91AC"
+				title: "Kill 5000 Zombies"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1AF595505905649E"]
+			id: "5FC5C14EDC60DFA9"
+			rewards: [
+				{
+					id: "485D87B0863A1970"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "7C6D7C0107084C09"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:skeleton_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "009393DE0CB99F2C"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:skeleton_skull"
+				id: "0BDB8A992778B878"
+				title: "Kill 5000 Skeletons"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31915960A8CA280E"]
+			id: "00DFBE008DC6FD87"
+			rewards: [
+				{
+					id: "6C8FC46CB60D1FEB"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "3E9E093E3A02AD17"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:creeper_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30D6407D11556B02"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "79540B2808D525B3"
+				title: "Kill 5000 Creepers"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "6830FA81622C9208"
+			rewards: [
+				{
+					id: "5E5D2198CB3C5FFC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "133AFC760470A769"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "17221DC180F8A76E"
+				title: "Kill 100 Spiders"
+				type: "kill"
+				value: 100L
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6830FA81622C9208"]
+			id: "456439F42A48EDE1"
+			rewards: [
+				{
+					id: "7E1284941CB2F963"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16AC1369EB6BF7A0"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "5D7D715A2FCC5B5E"
+				title: "Kill 500 Spiders"
+				type: "kill"
+				value: 500L
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["456439F42A48EDE1"]
+			id: "458A2E8C5C0941AB"
+			rewards: [
+				{
+					id: "71E6F6D89F429BE0"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3A7A14E2CC2C2F08"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "55DE86EEEFE4C67A"
+				title: "Kill 1000 Spiders"
+				type: "kill"
+				value: 1000L
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["458A2E8C5C0941AB"]
+			id: "13CAEED3F8AA2906"
+			rewards: [
+				{
+					id: "4081EC4F08FB0C82"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "25E87C4EF2BF596F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:spider_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11903D2C1353FAF3"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "060B1FC06E57D422"
+				title: "Kill 2500 Spiders"
+				type: "kill"
+				value: 2500L
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13CAEED3F8AA2906"]
+			id: "555D87903E98A34D"
+			rewards: [
+				{
+					id: "243307D96E3D2E6C"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "117985EEF74C6562"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:spider_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1178EBAC282FCA84"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "6A0973C6F53BCAB5"
+				title: "Kill 5000 Spiders"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "3E8ECCB7DE575852"
+			rewards: [
+				{
+					id: "48483B7C3230282A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50517EF2167D4A96"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "207D8F0C47FCD0DB"
+				title: "Kill 100 Witches"
+				type: "kill"
+				value: 100L
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E8ECCB7DE575852"]
+			id: "5CD03B1D6C0D1AE5"
+			rewards: [
+				{
+					id: "2A0E8AB6D14E8FBF"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2817AFDA8A680703"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "20249203BD965062"
+				title: "Kill 500 Witches"
+				type: "kill"
+				value: 500L
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5CD03B1D6C0D1AE5"]
+			id: "0C6830970D4DAD86"
+			rewards: [
+				{
+					id: "15F1CCB0F2188B3F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22DC077553B3890A"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "30FF5C048F2F56DB"
+				title: "Kill 1000 Witches"
+				type: "kill"
+				value: 1000L
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C6830970D4DAD86"]
+			id: "6AB7AB52F3BA5E72"
+			rewards: [
+				{
+					id: "159E6918D87D09BC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "665C1468B3F7F519"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:witch_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34B40B30AB4F5736"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "5E04FA0740E1E902"
+				title: "Kill 2500 Witches"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6AB7AB52F3BA5E72"]
+			id: "10EA2A2E4B9027F1"
+			rewards: [
+				{
+					id: "7AD1082DBAFA5449"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "045A1AC510F6B0AF"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:witch_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A34537308DD9E30"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:witch"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "58FDFBCDFEF9FA80"
+				title: "Kill 5000 Witches"
+				type: "kill"
+				value: 5000L
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "2A2542F4A4A35660"
+			rewards: [
+				{
+					id: "4BA6EB6B1F6DC23F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14AE47DAD0C139DD"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_rod"
+				id: "7AC6DC6E6652982A"
+				title: "Kill 100 Blazes"
+				type: "kill"
+				value: 100L
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A2542F4A4A35660"]
+			id: "3E4CBEA5D47B6D77"
+			rewards: [
+				{
+					id: "62D55AF8FEB563B2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "623060A07962A7AA"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_rod"
+				id: "55CFA255EC056CC4"
+				title: "Kill 500 Blazes"
+				type: "kill"
+				value: 500L
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E4CBEA5D47B6D77"]
+			id: "759EB3CA41D39713"
+			rewards: [
+				{
+					id: "1FA4EAE6580A0124"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "725B82FE3A7D8F62"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_rod"
+				id: "6DE97BED6787BF61"
+				title: "Kill 1000 Blazes"
+				type: "kill"
+				value: 1000L
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["759EB3CA41D39713"]
+			id: "36D5D86E84398DDA"
+			rewards: [
+				{
+					id: "4E67F7E18BCFB097"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "4E7344A0927B0E7F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:blaze_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39A6B0623E276E1D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_rod"
+				id: "2CEAB64219DB52BB"
+				title: "Kill 2500 Blazes"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["36D5D86E84398DDA"]
+			id: "6ACA1DBBAC4CF0EC"
+			rewards: [
+				{
+					id: "25BA9838943E7F0C"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "632030718DDCFC01"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:blaze_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4081730BA5D5B36F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_rod"
+				id: "3F95468F77CC2E67"
+				title: "Kill 5000 Blazes"
+				type: "kill"
+				value: 5000L
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "136DA52459A22DAF"
+			rewards: [
+				{
+					id: "670EF888FE41E9AC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07D8573076CBCE64"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "285ED7C2FA1F58E6"
+				title: "Kill 100 Wither Skeletons"
+				type: "kill"
+				value: 100L
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["136DA52459A22DAF"]
+			id: "19F7A5F52A342B73"
+			rewards: [
+				{
+					id: "54A30A03D23795C6"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B63D70FDF19E70C"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "6BDA2ED24A400331"
+				title: "Kill 500 Wither Skeletons"
+				type: "kill"
+				value: 500L
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19F7A5F52A342B73"]
+			id: "5A5B7015B7820DC9"
+			rewards: [
+				{
+					id: "79996772C4671577"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70D1B6EBD35ED009"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "1F142D483B9209BF"
+				title: "Kill 1000 Wither Skeletons"
+				type: "kill"
+				value: 1000L
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A5B7015B7820DC9"]
+			id: "300E1EC251B23C5C"
+			rewards: [
+				{
+					id: "7CE5643B69A3524D"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "305D4E85C87AD335"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "meatsalad:wither_skeleton_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "128E69805747A636"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "1E0D9EC9DCC4AB2A"
+				title: "Kill 2500 Wither Skeletons"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["300E1EC251B23C5C"]
+			id: "63514CE4B81888BE"
+			rewards: [
+				{
+					id: "40B80A32BF7BAB82"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "023FAC6DF7F5069C"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "meatsalad:wither_skeleton_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5523E0C6960E6C5D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "27B1A0C6ECEF4117"
+				title: "Kill 5000 Wither Skeletons"
+				type: "kill"
+				value: 5000L
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			id: "5F3E7AA087542200"
+			rewards: [
+				{
+					id: "30244BC5206D77FE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E48892485E68BBC"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "2C5783AE0A59E7F6"
+				title: "Kill 100 Enderman"
+				type: "kill"
+				value: 100L
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F3E7AA087542200"]
+			id: "53E5DE964C2A1009"
+			rewards: [
+				{
+					id: "3D9F323026E72C17"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A3B6978C20CC3D1"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "5DBC973231CEDB3C"
+				title: "Kill 500 Enderman"
+				type: "kill"
+				value: 500L
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53E5DE964C2A1009"]
+			id: "5A2908106A273F10"
+			rewards: [
+				{
+					id: "23D4FD8A69528CA7"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "330A63C606401493"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "390F5BE647CE18FE"
+				title: "Kill 1000 Enderman"
+				type: "kill"
+				value: 1000L
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A2908106A273F10"]
+			id: "1EA293D8D4691D8B"
+			rewards: [
+				{
+					id: "7BC8E543FC3FCFCC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2378F6272D930155"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:enderman_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2655BBE7F0C9AA04"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "2E95913C0BC96ED9"
+				title: "Kill 2500 Enderman"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EA293D8D4691D8B"]
+			id: "001FCFBDDB3CE933"
+			rewards: [
+				{
+					id: "2AD5B6B59C92CD86"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "7338D44E518DB529"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:enderman_gate_large"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2AF5C33CAC67389F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:enderman"
+				icon: "minecraft:ender_pearl"
+				id: "5F9B15EBBA9CA98C"
+				title: "Kill 5000 Enderman"
+				type: "kill"
+				value: 5000L
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			id: "52D76E20A4703B80"
+			rewards: [
+				{
+					id: "232C4D212A1AD6D1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10D3CA03062DB855"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "56BBEEC43DC3D3B8"
+				stat: "minecraft:mob_kills"
+				title: "Kill 1000 Mobs"
+				type: "stat"
+				value: 1000
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["52D76E20A4703B80"]
+			id: "70824A5F4A2F6176"
+			rewards: [
+				{
+					id: "2254DE23D2E7540C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5114AFC5E6BCEA71"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:stone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "36B520CDE958905E"
+				stat: "minecraft:mob_kills"
+				title: "Kill 2500 Mobs"
+				type: "stat"
+				value: 2500
+			}]
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["70824A5F4A2F6176"]
+			id: "16192E3E9EA75E31"
+			rewards: [
+				{
+					id: "41A5DC532F62B873"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C6446FF7012DAC9"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:golden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "1362DFA3DB1E30A0"
+				stat: "minecraft:mob_kills"
+				title: "Kill 5000 Mobs"
+				type: "stat"
+				value: 5000
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["16192E3E9EA75E31"]
+			id: "799543DA7C3E8F95"
+			rewards: [
+				{
+					id: "78037B1386668BA2"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00A532DA7FE088A6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4DD37A1E13815056"
+				stat: "minecraft:mob_kills"
+				title: "Kill 10000 Mobs"
+				type: "stat"
+				value: 10000
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["799543DA7C3E8F95"]
+			id: "42A033AB58774D9E"
+			rewards: [
+				{
+					id: "3C6A5D8C3ABC57EF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "302F490253B1B7E1"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5A22EE5F783C5E7E"
+				stat: "minecraft:mob_kills"
+				title: "Kill 25000 Mobs"
+				type: "stat"
+				value: 25000
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["42A033AB58774D9E"]
+			id: "35245DCE5B5E062C"
+			rewards: [
+				{
+					id: "1F0B9EC455AEDEB3"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6065F373426F9321"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:netherite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "59A22511D38FD54D"
+				stat: "minecraft:mob_kills"
+				title: "Kill 50000 Mobs"
+				type: "stat"
+				value: 50000
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["35245DCE5B5E062C"]
+			id: "5146AB018F99E693"
+			rewards: [
+				{
+					id: "01A6336A28106794"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55A38C94CD041AD5"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "allthemodium:allthemodium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4715C0155406CF26"
+				stat: "minecraft:mob_kills"
+				title: "Kill 100000 Mobs"
+				type: "stat"
+				value: 100000
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5146AB018F99E693"]
+			id: "1A40F55428FDE4BA"
+			rewards: [
+				{
+					id: "5495C8AF390CAC5E"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12175C8D942ECB64"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "awakened_bosses:herobrine_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0BBEF80049AFFEDD"
+				stat: "minecraft:mob_kills"
+				title: "Kill 250000 Mobs"
+				type: "stat"
+				value: 250000
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+	]
+	title: "Bounties"
+}

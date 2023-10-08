@@ -1,0 +1,108 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 5,
+    "categories": [
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "quark:dragon_scale"
+    }
+  },
+  "name": {
+    "text": "Dragon Scale"
+  },
+  "stats": {
+    "fletching": {
+      "projectile_speed": 3.5,
+      "projectile_accuracy": 1.3
+    },
+    "coating": {
+      "durability": {
+        "mul2": 0.5
+      },
+      "armor_durability": {
+        "mul2": 0.5
+      },
+      "harvest_speed": {
+        "mul2": 0.5
+      },
+      "melee_damage": {
+        "mul2": 0.5
+      },
+      "magic_damage": {
+        "mul2": 0.5
+      },
+      "ranged_damage": {
+        "mul2": 0.5
+      },
+      "armor_toughness": {
+        "add": 8.0
+      },
+      "knockback_resistance": {
+        "add": 4.0
+      },
+      "enchantment_value": {
+        "add": 10.0
+      }
+    }
+  },
+  "traits": {
+    "coating": [
+      {
+        "name": "silentgear:sturdy",
+        "level": 5
+      }
+    ],
+    "fletching": []
+  },
+  "model": {
+    "fletching/all": [
+      {
+        "texture": "silentgear:fletching_generic",
+        "color": "#22182b"
+      }
+    ],
+    "fletching/part": [
+      {
+        "texture": "silentgear:fletching",
+        "color": "#22182b"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#22182b"
+      }
+    ],
+    "coating/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#22182b"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/part": [
+      {
+        "texture": "silentgear:coating_material",
+        "color": "#22182b"
+      },
+      {
+        "texture": "silentgear:coating_jar"
+      }
+    ],
+    "coating/armor": [
+      {
+        "texture": "kubejs:dragon_scale"
+      }
+    ]
+  }
+}

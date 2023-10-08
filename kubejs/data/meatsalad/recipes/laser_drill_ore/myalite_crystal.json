@@ -1,0 +1,27 @@
+{
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:laser_lens10"
+  },
+  "output": {
+    "item": "quark:myalite_crystal"
+  },
+  "pointer": 0,
+  "rarity": [
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "minecraft:small_end_islands",
+          "minecraft:end_barrens",
+          "minecraft:end_highlands",
+          "minecraft:end_midlands"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 96,
+      "depth_max": 376,
+      "weight": 2
+    }
+  ]
+}

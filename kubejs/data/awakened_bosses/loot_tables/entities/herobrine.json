@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "name": "herobrine_chaos_crystal",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:chaos_crystal"
+        }
+      ]
+    }
+  ]
+}

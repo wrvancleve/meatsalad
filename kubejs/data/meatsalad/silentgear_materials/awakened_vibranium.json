@@ -1,0 +1,87 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 7,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/awakened_vibranium"
+    }
+  },
+  "name": {
+    "text": "Awakened Vibranium"
+  },
+  "stats": {
+    "main": {
+      "durability": 6144.0,
+      "armor_durability": 130.0,
+      "enchantment_value": 50.0,
+      "rarity": 140.0,
+      "charging_value": 1.75,
+      "harvest_level": 7.0,
+      "harvest_speed": 32.0,
+      "melee_damage": 20.0,
+      "magic_damage": 18.0,
+      "attack_speed": 0.5,
+      "ranged_damage": 6.0,
+      "ranged_speed": 4.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 6.0,
+      "armor": 35.0,
+      "armor/helmet": 6.0,
+      "armor/chestplate": 14.0,
+      "armor/leggings": 9.0,
+      "armor/boots": 6.0,
+      "armor_toughness": 18.0,
+      "magic_armor": 20.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:lucky",
+        "level": 4
+      },
+      {
+        "name": "silentgear:sharp",
+        "level": 5
+      },
+      {
+        "name": "silentgear:sturdy",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#1BB38A"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#1BB38A"
+      }
+    ]
+  }
+}

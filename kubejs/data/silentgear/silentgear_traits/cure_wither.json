@@ -1,0 +1,28 @@
+{
+  "type": "silentgear:cancel_effects",
+  "max_level": 1,
+  "name": {
+    "translate": "trait.silentgear.cure_wither"
+  },
+  "description": {
+    "translate": "trait.silentgear.cure_wither.desc"
+  },
+  "conditions": [
+    {
+      "type": "silentgear:or",
+      "values": [
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "armor"
+        },
+        {
+          "type": "silentgear:gear_type",
+          "gear_type": "adornment"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    "minecraft:wither"
+  ]
+}

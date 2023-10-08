@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"modid": "cataclysm",
+			"type": "forge:mod_loaded"
+		}
+	],
+	"type": "cataclysm:the_leviathan",
+	"name": "entity.cataclysm.the_leviathan",
+	"name_color": "0x6500FF",
+	"gui_scale": 0.125,
+	"gui_x_offset": 0,
+	"gui_y_offset": 6.0,
+	"gui_z_offset": 0,
+	"sim_cost": 16384,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:end_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.the_leviathan",
+	"fabricator_drops": [
+		{
+			"item": "cataclysm:abyssal_egg",
+			"count": 1
+		}
+	],
+	"data_per_kill": [
+		3, 16, 75, 150
+	]
+}

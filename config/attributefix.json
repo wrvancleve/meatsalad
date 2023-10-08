@@ -29,7 +29,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -40,18 +40,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
-        "value": 10000000
-      }
-    },
-    "witherstormmod:evolution_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
+        "default": 2048,
         "value": 10000000
       }
     },
@@ -62,7 +51,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -77,6 +66,28 @@
         "value": 10000000
       }
     },
+    "apotheosis:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10000000
+      }
+    },
+    "apotheosis:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 10000000
+      }
+    },
     "forge:entity_gravity": {
       "enabled": false,
       "min": {
@@ -88,14 +99,14 @@
         "value": 10000000
       }
     },
-    "witherstormmod:target_stationary_flying_speed": {
+    "enhancedai:generic.xray_follow_range": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 2,
+        "default": 256,
         "value": 10000000
       }
     },
@@ -106,7 +117,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 1024,
         "value": 10000000
       }
     },
@@ -117,7 +128,7 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
         "value": 10000000
       }
     },
@@ -128,15 +139,15 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 2048,
         "value": 10000000
       }
     },
     "apotheosis:draw_speed": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 4,
@@ -150,18 +161,7 @@
         "value": -1024
       },
       "max": {
-        "default": 2147483647,
-        "value": 10000000
-      }
-    },
-    "witherstormmod:slow_flying_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
+        "default": 1024,
         "value": 10000000
       }
     },
@@ -172,7 +172,7 @@
         "value": 0
       },
       "max": {
-        "default": 40,
+        "default": 200,
         "value": 10000000
       }
     },
@@ -183,7 +183,7 @@
         "value": 1
       },
       "max": {
-        "default": 1024,
+        "default": 100,
         "value": 10000000
       }
     },
@@ -194,18 +194,40 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
         "value": 10000000
       }
     },
-    "witherstormmod:hunchback_follow_range": {
+    "apotheosis:prot_pierce": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 2048,
+        "default": 34,
+        "value": 10000000
+      }
+    },
+    "apotheosis:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 10000000
+      }
+    },
+    "apotheosis:prot_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
         "value": 10000000
       }
     },
@@ -216,7 +238,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 1024,
         "value": 10000000
       }
     },
@@ -234,11 +256,11 @@
     "apotheosis:life_steal": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -249,7 +271,18 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
+        "value": 10000000
+      }
+    },
+    "apotheosis:experience_gained": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
         "value": 10000000
       }
     },
@@ -260,7 +293,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 1024,
         "value": 10000000
       }
     },
@@ -282,7 +315,18 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 1000,
+        "value": 10000000
+      }
+    },
+    "apotheosis:armor_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
         "value": 10000000
       }
     },
@@ -293,18 +337,7 @@
         "value": 1
       },
       "max": {
-        "default": 2147483647,
-        "value": 10000000
-      }
-    },
-    "apotheosis:piercing": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 2,
+        "default": 1024,
         "value": 10000000
       }
     },
@@ -322,11 +355,11 @@
     "apotheosis:current_hp_damage": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 2,
+        "default": 1,
         "value": 10000000
       }
     },
@@ -337,18 +370,18 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
     "apotheosis:crit_chance": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1024,
+        "default": 10,
         "value": 10000000
       }
     },
@@ -359,7 +392,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 2,
         "value": 10000000
       }
     },
@@ -370,7 +403,7 @@
         "value": 0
       },
       "max": {
-        "default": 2147483647,
+        "default": 5,
         "value": 10000000
       }
     },
@@ -403,7 +436,7 @@
         "value": 0
       },
       "max": {
-        "default": 30,
+        "default": 100,
         "value": 10000000
       }
     }

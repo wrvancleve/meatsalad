@@ -1,0 +1,668 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "end_game"
+	group: ""
+	icon: "kubejs:infinity_fabric"
+	id: "3C09A7725AECFF99"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"25997744933767C0"
+				"4BBCEF18942850A3"
+				"711FA0611D882EE5"
+				"5F12C4BCEBD5B4AF"
+				"4B55E86721A05895"
+				"00EC3EC36645FD74"
+				"03AD037EFD34332E"
+				"20A1BFF256AE6CA1"
+				"41C8A9E44381EFEB"
+				"766CA9AE21F36FDB"
+				"1604A1DC63E753A4"
+				"5B31F25B371910D4"
+			]
+			hide_details_until_startable: false
+			id: "2CA0273F29B2DAC8"
+			rewards: [
+				{
+					id: "3A64C891271BD1CF"
+					item: "kubejs:infinity_fabric"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "623E77D218B44E9E"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+				{
+					id: "60C5B232C0A39D6C"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "Craft an Infinity Fabric"
+			tasks: [{
+				id: "5E4C14184772ACB7"
+				item: "kubejs:infinity_fabric"
+				type: "item"
+			}]
+			title: "Infinity Fabric"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4B55E86721A05895"
+			rewards: [
+				{
+					id: "57B1E8128AAB0A8E"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "610AFF3367ED5A94"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Dragon Soul"
+			tasks: [{
+				id: "2D6FDD44CA05D3E2"
+				item: "kubejs:dragon_soul"
+				type: "item"
+			}]
+			title: "Dragon Soul"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			description: ["Obtained by killing the Elder Guardian"]
+			id: "00EC3EC36645FD74"
+			rewards: [
+				{
+					id: "566C7ED589B6C596"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5954601BB78CF7C8"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Elder Guardian Spike"
+			tasks: [{
+				id: "35B9FDA5117B3E34"
+				item: "progressivebosses:elder_guardian_spike"
+				type: "item"
+			}]
+			title: "Elder Guardian Spike"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			description: ["Obtained by killing a Piglich in The Other"]
+			id: "20A1BFF256AE6CA1"
+			rewards: [
+				{
+					id: "6247778B89301202"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "423C7CF6AB5A54BA"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Piglich Heart"
+			tasks: [{
+				id: "5CBA04A920205019"
+				item: "allthemodium:piglich_heart"
+				type: "item"
+			}]
+			title: "Piglich Heart"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			id: "5F12C4BCEBD5B4AF"
+			rewards: [
+				{
+					id: "625CA2DE08CF880A"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F2EDC0ACF50814D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Draconic Infused Eternal Crystal"
+			tasks: [{
+				id: "5FA7F5FF8094999A"
+				item: "kubejs:draconic_infused_eternal_crystal"
+				type: "item"
+			}]
+			title: "Draconic Infused Eternal Crystal"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "766CA9AE21F36FDB"
+			rewards: [
+				{
+					id: "68C5D55D9900A6C8"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22094EAF873D913D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft an Ultimate Crafting Table"
+			tasks: [{
+				id: "7B4BD06E3B56DCEC"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			title: "Ultimate Crafting Table"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "00928930B10BC6E0"
+			rewards: [
+				{
+					id: "6F25FC28D8A2E130"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13954347B014A93C"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			size: 1.5d
+			subtitle: "Craft an Ender Crafter"
+			tasks: [{
+				id: "0F68830B9F3AB05C"
+				item: "extendedcrafting:ender_crafter"
+				type: "item"
+			}]
+			title: "Ender Crafter"
+			x: -3.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["24DA6E89E42BACEA"]
+			description: ["Obtained by killing the Void Worm in the End"]
+			id: "41C8A9E44381EFEB"
+			rewards: [
+				{
+					id: "0DAB9870EC28CB36"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FE23D943FE50770"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Void Worm Eye"
+			tasks: [{
+				id: "6808DC6E80DBD9EA"
+				item: "alexsmobs:void_worm_eye"
+				type: "item"
+			}]
+			title: "Void Worm Eye"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7AB9702449BC3DBF"]
+			description: ["Obtained by killing Ignis in the Burning Arena of the Nether"]
+			id: "5B31F25B371910D4"
+			rewards: [
+				{
+					id: "2453A98F1215B3E9"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7939B6A333A44750"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Manifest Illusion"
+			tasks: [{
+				id: "3EC55F2A62B8E6E3"
+				item: "kubejs:manifest_illusion"
+				type: "item"
+			}]
+			title: "Manifest Illusion"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7099BF92A37D5844"]
+			description: ["Obtained by killing Leviathan in the Sunken City of the Overworld"]
+			id: "25997744933767C0"
+			rewards: [
+				{
+					id: "7DE0FFCEF250E25D"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06D97BAB3E3C6D8F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Abyssal Egg"
+			tasks: [{
+				id: "30990DD183CE0C29"
+				item: "cataclysm:abyssal_egg"
+				type: "item"
+			}]
+			title: "Abyssal Egg"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "03AD037EFD34332E"
+			rewards: [
+				{
+					id: "4BD6F5743D70B29F"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "591398C2A9917102"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft an Oblivion Shard"
+			tasks: [{
+				id: "09967B7D98D9D8F8"
+				item: "kubejs:oblivion_shard"
+				type: "item"
+			}]
+			title: "Oblivion Shard"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"28A4975DA30E6C1E"
+				"2E918A6295BC6D27"
+				"7536DB56D2DAE549"
+			]
+			id: "4BBCEF18942850A3"
+			rewards: [
+				{
+					id: "15711C9A2F0E1DA7"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EAB51B239CC2127"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Chaos Core"
+			tasks: [{
+				id: "4FD8320CB3A65A01"
+				item: "kubejs:chaos_core"
+				type: "item"
+			}]
+			title: "Chaos Core"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "711FA0611D882EE5"
+			rewards: [
+				{
+					id: "1DC177504BEF089D"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "350CF6C7A9F0EE48"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Cosmic Shelling"
+			tasks: [{
+				id: "39CE86FE64AB2B6D"
+				item: "kubejs:cosmic_shelling"
+				type: "item"
+			}]
+			title: "Cosmic Shelling"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "1604A1DC63E753A4"
+			rewards: [
+				{
+					id: "4E476FF176A36FED"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "508A7A531089F6A0"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Warden Heart"
+			tasks: [{
+				id: "51DC4EB82B91ADE8"
+				item: "kubejs:warden_heart"
+				type: "item"
+			}]
+			title: "Warden Heart"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1D0DB72145C53568"
+				"07B6A5B53A1FD6E1"
+			]
+			description: ["Obtained by killing Herobrine"]
+			id: "28A4975DA30E6C1E"
+			rewards: [
+				{
+					id: "1B0C9DB9DF87AEE3"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B597A5B5043FFDF"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Chaos Crystal"
+			tasks: [{
+				id: "770BC84F6739BC8C"
+				item: "kubejs:chaos_crystal"
+				type: "item"
+			}]
+			title: "Chaos Crystal"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["639CE429599CBC46"]
+			id: "2E918A6295BC6D27"
+			rewards: [
+				{
+					id: "748D0342469FC73F"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30D1D159086719A5"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft an Ender Core"
+			tasks: [{
+				id: "58D55C5D47BF1B57"
+				item: "kubejs:ender_core"
+				type: "item"
+			}]
+			title: "Ender Core"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "7099BF92A37D5844"
+			rewards: [
+				{
+					id: "35554DCCA187D86E"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BCA70AD64A15F16"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Abyss"
+			tasks: [{
+				id: "3ADE348EF087846F"
+				item: "cataclysm:abyss_eye"
+				type: "item"
+			}]
+			title: "Eye of Abyss"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "639CE429599CBC46"
+			rewards: [
+				{
+					id: "20C9EBB0CC428E6D"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C9D5CB9210C4453"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Void"
+			tasks: [{
+				id: "528CAC7F48E2C234"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			title: "Eye of Void"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "7AB9702449BC3DBF"
+			rewards: [
+				{
+					id: "74DB3E6CC4B461D8"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7AC455E0FF5DAA64"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Flame"
+			tasks: [{
+				id: "4341C889BED9C3FC"
+				item: "cataclysm:flame_eye"
+				type: "item"
+			}]
+			title: "Eye of Flame"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "24DA6E89E42BACEA"
+			rewards: [
+				{
+					id: "5D46CAE5D1A6EEC6"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F6A1C6F056DF198"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Mysterious Worm"
+			tasks: [{
+				id: "65582CB56BBCFAA0"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+			title: "Mysterious Worm"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			id: "7536DB56D2DAE549"
+			rewards: [
+				{
+					id: "458616F21307FE5E"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19705031F8D17BE8"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Nether Core"
+			tasks: [{
+				id: "03AB8AAD24E53A56"
+				item: "kubejs:nether_core"
+				type: "item"
+			}]
+			title: "Nether Core"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			description: [""]
+			id: "07B6A5B53A1FD6E1"
+			rewards: [
+				{
+					id: "48429EF7F1F71CAC"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4604BF45A1626991"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Herobrine Cyan"
+			tasks: [{
+				id: "52D209C07C5946EA"
+				item: "awakened_bosses:herobrine_cyan"
+				type: "item"
+			}]
+			title: "Herobrine Cyan"
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			description: [""]
+			id: "1D0DB72145C53568"
+			rewards: [
+				{
+					id: "3CA91667B160C7C2"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "099683A1E3446DB3"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Herobrine Blue"
+			tasks: [{
+				id: "66DA7CF8495580AF"
+				item: "awakened_bosses:herobrine_blue"
+				type: "item"
+			}]
+			title: "Herobrine Blue"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			id: "2A33CCF4F28F4856"
+			rewards: [
+				{
+					id: "5295EFB09A2FF899"
+					item: "extendedcrafting:ender_alternator"
+					type: "item"
+				}
+				{
+					id: "3ECA4FD4218AAF37"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69F29C3460FB2DF6"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			size: 1.5d
+			subtitle: "Craft an Ender Alternator"
+			tasks: [{
+				id: "62BAAAA898B7E111"
+				item: "extendedcrafting:ender_alternator"
+				type: "item"
+			}]
+			title: "Ender Alternator"
+			x: -2.25d
+			y: -4.5d
+		}
+	]
+	title: "End Game"
+}

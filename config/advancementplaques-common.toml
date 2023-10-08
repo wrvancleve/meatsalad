@@ -8,10 +8,7 @@
 		# The distance from the top or bottom of the screen, in pixels.
 		#Range: 8 ~ 256
 		distance = 16
-		# The horizontal offset from the center, in pixels.
-		#Range: -256 ~ 256
-		horizontal_offset = 0
-		# Hide waila/hwyla/jade/wthit popups while plaques are showing.
+		# Hide waila/hwyla/jade popups while plaques are showing.
 		hide_waila = false
 		# If plaques should show for task advancements (normal advancements).
 		tasks = true

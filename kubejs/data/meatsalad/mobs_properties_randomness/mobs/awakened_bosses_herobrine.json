@@ -1,0 +1,278 @@
+{
+    "target": "awakened_bosses:herobrine",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "More Health",
+            "amount": 1.0,
+            "operation": "multiply_base"
+        },
+        {
+            "id": "apotheosis:prot_pierce",
+            "modifier_name": "Protection pierce",
+            "amount": 48.0,
+            "operation": "addition"
+        },
+        {
+            "id": "apotheosis:armor_pierce",
+            "modifier_name": "Armor pierce",
+            "amount": 56.0,
+            "operation": "addition"
+        },
+        {
+            "id": "forge:attack_range",
+            "modifier_name": "More Attack Range",
+            "amount": 1.0,
+            "operation": "multiply_base"
+        },
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "More Damage",
+            "amount": 0.7,
+            "operation": "multiply_base"
+        },
+        {
+            "id": "minecraft:generic.armor",
+            "modifier_name": "More armor",
+            "amount": 900,
+            "operation": "addition"
+        },
+        {
+            "id": "minecraft:generic.armor_toughness",
+            "modifier_name": "More toughness",
+            "amount": 468,
+            "operation": "addition"
+        }
+    ],
+    "potion_effects": [
+        {
+            "id": "minecraft:resistance",
+            "amplifier": 3,
+            "hide_particles": true
+        },
+        {
+            "id": "cofh_core:panacea",
+            "amplifier": 0,
+            "hide_particles": true
+        },
+        {
+            "id": "cofh_core:explosion_resistance",
+            "amplifier": 0,
+            "hide_particles": true
+        },
+        {
+            "id": "cofh_core:lightning_resistance",
+            "amplifier": 0,
+            "hide_particles": true
+        },
+        {
+            "id": "cofh_core:magic_resistance",
+            "amplifier": 0,
+            "hide_particles": true
+        }
+    ],
+    "events": {
+        "on_attacked": [
+            {
+                "target": "other",
+                "health_left": 0.80,
+                "potion_effects": [
+                    {
+                        "id": "minecraft:poison",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "minecraft:slowness",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "minecraft:weakness",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "minecraft:wither",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "alexsmobs:earthquake",
+                        "amplifier": 4,
+                        "duration": 2,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "apotheosis:grievous",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "apotheosis:sundering",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:blazing_brand",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:bone_fracture",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cofh_core:chilled",
+                        "amplifier": 4,
+                        "duration": 2,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cofh_core:shocked",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cofh_core:wrenched",
+                        "amplifier": 4,
+                        "duration": 2,
+                        "chance": 0.05
+                    }                    
+                ]
+            },
+            {
+                "target": "entity",
+                "health_left": 0.4,
+                "potion_effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.5
+                    }
+                ]
+            },
+            {
+                "target": "other",
+                "health_left": 0.4,
+                "potion_effects": [
+                    {
+                        "id": "minecraft:darkness",
+                        "amplifier": 1,
+                        "duration": 10,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "minecraft:levitation",
+                        "amplifier": 2,
+                        "duration": 3,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "alexsmobs:exsanguination",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "alexsmobs:fear",
+                        "amplifier": 1,
+                        "duration": 1,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:abyssal_burn",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:abyssal_curse",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:abyssal_fear",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    }
+                ]
+            }
+        ],
+        "on_attack" : [
+            {
+                "target": "entity",
+                "health_left": 0.4,
+                "potion_effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.5
+                    },
+                    {
+                        "id": "alexsmobs:soulsteal",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.5
+                    }
+                ]
+            },
+            {
+                "target": "other",
+                "health_left": 0.4,
+                "potion_effects": [
+                    {
+                        "id": "minecraft:weakness",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "apotheosis:grievous",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "apotheosis:sundering",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cataclysm:bone_fracture",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "cofh_core:shocked",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    },
+                    {
+                        "id": "alexsmobs:exsanguination",
+                        "amplifier": 4,
+                        "duration": 5,
+                        "chance": 0.05
+                    }
+                ]
+            }
+        ]
+    }
+}

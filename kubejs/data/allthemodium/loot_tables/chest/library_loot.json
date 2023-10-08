@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "name": "library_loot",
+      "rolls": {
+        "min": 2.0,
+        "max": 7.0
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 45,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 55,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 60,
+              "treasure": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "library_loot_tome_pool",
+      "rolls": 1.0,
+      "bonus_rolls": 0.10,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_other/ancient_tomes",
+          "weight": 30,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}

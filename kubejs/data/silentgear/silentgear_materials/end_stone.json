@@ -1,0 +1,54 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 1,
+    "categories": [
+      "rock"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:end_stones"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.end_stone"
+  },
+  "stats": {
+    "rod": {
+      "melee_damage": {
+        "add": 0.25
+      }
+    }
+  },
+  "traits": {
+    "rod": [
+      {
+        "name": "silentgear:malleable",
+        "level": 1
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_hc",
+        "color": "#FFFFCC"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "silentgear:rod",
+        "color": "#FFFFCC"
+      }
+    ]
+  }
+}

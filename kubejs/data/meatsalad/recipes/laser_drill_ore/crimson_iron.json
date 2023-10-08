@@ -1,0 +1,56 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_materials/crimson_iron"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "industrialforegoing:laser_drill_ore",
+        "catalyst": {
+          "item": "industrialforegoing:laser_lens14"
+        },
+        "output": {
+          "tag": "forge:raw_materials/crimson_iron"
+        },
+        "pointer": 0,
+        "rarity": [
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:nether_wastes",
+                "minecraft:basalt_deltas",
+                "minecraft:warped_forest",
+                "minecraft:crimson_forest",
+                "minecraft:soul_sand_valley"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 7,
+            "depth_max": 245,
+            "weight": 8
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 1,
+            "depth_max": 64,
+            "weight": 4
+          }
+        ]
+      }
+    }
+  ]
+}

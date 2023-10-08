@@ -1,0 +1,25 @@
+{
+  "heartEntries": {
+    "red": {
+      "minecraft:elder_guardian": 0.5,
+      "minecraft:ender_dragon": 0.5,
+      "minecraft:wither": 0.5,
+      "cataclysm:ender_golem": 1.0,
+      "cataclysm:netherite_monstrosity": 1.0,
+      "cataclysm:the_harbinger": 1.0      
+    },
+    "green": {
+      "alexsmobs:void_worm": 0.5,
+      "awakened_bosses:herobrine": 0.5,
+      "cataclysm:ender_guardian": 0.5,
+      "cataclysm:ignis": 0.5,
+      "cataclysm:the_leviathan": 0.5      
+    },
+    "blue": {
+      "minecraft:warden": 0.5
+    },
+    "yellow": {
+      "hostile": 0.00
+    }
+  }
+}

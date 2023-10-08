@@ -1,19 +1,19 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jan 16, 2023, 9:45:08 PM
+To refresh this file, delete it and run /reload command again! Last updated: Feb 13, 2023, 8:18:37 PM
 
 #mekanism:dirty
-- mekanism:dirty_iron
-- mekanism:dirty_gold
-- mekanism:dirty_osmium
-- mekanism:dirty_copper
-- mekanism:dirty_tin
-- mekanism:dirty_lead
-- mekanism:dirty_uranium
+- mekanism:dirty_iron (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_gold (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_osmium (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_copper (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_tin (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_lead (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:dirty_uranium (from Mekanism-1.19.2-10.3.8.477.jar)
 
 #mekanism:clean
-- mekanism:clean_iron
-- mekanism:clean_gold
-- mekanism:clean_osmium
-- mekanism:clean_copper
-- mekanism:clean_tin
-- mekanism:clean_lead
-- mekanism:clean_uranium
+- mekanism:clean_iron (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_gold (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_osmium (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_copper (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_tin (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_lead (from Mekanism-1.19.2-10.3.8.477.jar)
+- mekanism:clean_uranium (from Mekanism-1.19.2-10.3.8.477.jar)

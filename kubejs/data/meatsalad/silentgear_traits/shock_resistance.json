@@ -1,0 +1,27 @@
+{
+    "type": "silentgear:wielder_effect",
+    "max_level": 1,
+    "name": {
+      "text": "Shock Resistance"
+    },
+    "description": {
+      "text": "Grants immunity to lightning damage"
+    },
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      }
+    ],
+    "potion_effects": {
+      "armor": [
+        {
+          "type": "full_set_only",
+          "effect": "cofh_core:lightning_resistance",
+          "level": [
+            1
+          ]
+        }
+      ]
+    }
+  }

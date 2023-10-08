@@ -1,0 +1,11 @@
+{
+    "target": "minecraft:warden",
+    "attributes": [
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "Tier Three More Damage",
+            "amount": 0.5,
+            "operation": "multiply_base"
+        }
+    ]
+}
