@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:nether_complexes",
+    "cataclysm:soul_black_smith"
+  ]
+}

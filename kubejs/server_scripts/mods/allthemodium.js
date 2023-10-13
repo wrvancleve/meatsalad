@@ -22,7 +22,6 @@ ServerEvents.recipes(event => {
   fullRemove('#forge:storage_blocks/unobtainium_allthemodium_alloy')
   fullRemove('#forge:storage_blocks/unobtainium_vibranium_alloy')
   fullRemove('#forge:storage_blocks/vibranium_allthemodium_alloy')
-  */
   fullRemove('allthemodium:allthemodium_ore')
   fullRemove('allthemodium:allthemodium_slate_ore')
   fullRemove('allthemodium:raw_allthemodium_block')
@@ -38,6 +37,7 @@ ServerEvents.recipes(event => {
   fullRemove('allthemodium:allthemodium_plate')
   fullRemove('allthemodium:allthemodium_gear')
   fullRemove('allthemodium:allthemodium_rod')
+  */
 
   fullRemove('allthemodium:unobtainium_allthemodium_alloy_dust')
   fullRemove('allthemodium:unobtainium_vibranium_alloy_dust')
@@ -53,6 +53,12 @@ ServerEvents.recipes(event => {
   fullRemove('allthemodium:allthemodium_axe')
   fullRemove('allthemodium:allthemodium_shovel')
   fullRemove('allthemodium:allthemodium_hoe')
+  fullRemove('allthemodium:allthemodium_helmet')
+  fullRemove('allthemodium:allthemodium_chestplate')
+  fullRemove('allthemodium:allthemodium_leggings')
+  fullRemove('allthemodium:allthemodium_boots')
+  fullRemove('allthemodium:allthemodium_apple')
+  fullRemove('allthemodium:allthemodium_carrot')
 
   global.replaceShaped(event, [
     ' b ',
@@ -60,6 +66,6 @@ ServerEvents.recipes(event => {
     ' b '
   ], {
     e: 'rftoolsbase:infused_enderpearl',
-    b: '#forge:ingots/blaze_gold'
+    b: '#forge:nuggets/palladium'
   }, 'allthemodium', 'teleport_pad')
 })

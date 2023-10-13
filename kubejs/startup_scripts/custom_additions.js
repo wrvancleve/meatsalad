@@ -23,6 +23,10 @@ const $MekanismAPI = Java.loadClass('mekanism.api.MekanismAPI')
 const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
 const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
 
+StartupEvents.registry('fluid', event => {
+  event.create('antimatter').thickTexture(0xA464B3).bucketColor(0xA464B3).displayName('Liquid Antimatter')
+})
+
 StartupEvents.registry('block', event => {
   const HARVEST_LEVEL_NETHERITE_TAG = 'forge:needs_netherite_tool';
 
@@ -220,6 +224,7 @@ StartupEvents.registry('block', event => {
   */
   makeBlock({base: 'kubejs'}, 'storage_block', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
   makeBlock({base: 'kubejs'}, 'storage_block', 'mythril', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
+  /*
   event.create('uru_block')
     .displayName('Block of Uru')
     .material('metal')
@@ -228,6 +233,57 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('forge:needs_netherite_tool')
     .tagBoth('forge:storage_blocks/uru')
+    .tagBoth('forge:storage_blocks')
+    .requiresTool(true);
+  */
+  event.create('awakened_palladium_block')
+    .displayName('Block of Awakened Palladium')
+    .material('metal')
+    .hardness(70.0)
+    .resistance(1200.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_netherite_tool')
+    .tagBoth('forge:storage_blocks/awakened_palladium')
+    .tagBoth('forge:storage_blocks')
+    .requiresTool(true);
+  event.create('awakened_vibranium_block')
+    .displayName('Block of Awakened Vibranium')
+    .material('metal')
+    .hardness(70.0)
+    .resistance(1200.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_netherite_tool')
+    .tagBoth('forge:storage_blocks/awakened_vibranium')
+    .tagBoth('forge:storage_blocks')
+    .requiresTool(true);
+  event.create('awakened_unobtainium_block')
+    .displayName('Block of Awakened Unobtainium')
+    .material('metal')
+    .hardness(70.0)
+    .resistance(1200.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_netherite_tool')
+    .tagBoth('forge:storage_blocks/awakened_unobtainium')
+    .tagBoth('forge:storage_blocks')
+    .requiresTool(true);
+  event.create('awakened_adamantite_block')
+    .displayName('Block of Awakened Adamantite')
+    .material('metal')
+    .hardness(70.0)
+    .resistance(1200.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_netherite_tool')
+    .tagBoth('forge:storage_blocks/awakened_adamantite')
+    .tagBoth('forge:storage_blocks')
+    .requiresTool(true);
+  event.create('awakened_mythril_block')
+    .displayName('Block of Awakened Mythril')
+    .material('metal')
+    .hardness(70.0)
+    .resistance(1200.0)
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock('forge:needs_netherite_tool')
+    .tagBoth('forge:storage_blocks/awakened_mythril')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);
   event.create('ultima_block')
@@ -338,7 +394,7 @@ StartupEvents.registry('item', event => {
     {name: 'shiny_alloy'},
     {name: 'iridium_alloy'},
     */
-    {name: 'starmetal', rarity: 'rare'},
+    {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
     {name: 'shellite'}
   ]
   manualMaterials.forEach(material => {
@@ -392,15 +448,18 @@ StartupEvents.registry('item', event => {
   event.create('infused_eternal_crystal').displayName('Infused Eternal Crystal').rarity('epic');
   event.create('draconic_infused_eternal_crystal').displayName('Draconic Infused Eternal Crystal').rarity('epic').glow(true);
 
+  /*
   event.create('nether_core').displayName('Nether Core').rarity('rare').glow(true);
   event.create('ender_core').displayName('Ender Core').rarity('epic').glow(true);
   event.create('chaos_core').displayName('Chaos Core').rarity('epic').glow(true);
+  */
 
   const manualEpicMaterials = [
-    {name: 'uru'},
+    //{name: 'uru'},
     //{name: 'neutronium', types: ['ingot', 'nugget', 'gear', 'plate']},
     {name: 'neutronium'},
     {name: 'awakened_adamantite', types: ['ingot']},
+    {name: 'awakened_palladium', types: ['ingot']},
     {name: 'awakened_mythril', types: ['ingot']},
     {name: 'awakened_unobtainium', types: ['ingot']},
     {name: 'awakened_vibranium', types: ['ingot']},
@@ -417,14 +476,17 @@ StartupEvents.registry('item', event => {
     })
   })
 
-  event.create('manifest_illusion').displayName('Manifest Illusion').rarity('rare').glow(true);
+  event.create('vulcanite').displayName('Vulcanite').rarity('rare').glow(true);
   event.create('ender_star').displayName('Ender Star').rarity('rare').glow(true);
   event.create('ender_star_fragment').displayName('Ender Star Fragment').rarity('rare');
-  event.create('warden_heart').displayName('Warden Heart').rarity('rare').glow(true);
-  event.create('dragon_soul').displayName('Dragon Soul').rarity('epic').glow(true);
+  //event.create('warden_heart').displayName('Warden Heart').rarity('rare').glow(true);
+  //event.create('dragon_soul').displayName('Dragon Soul').rarity('epic').glow(true);
+
+  event.create('lost_illusion').displayName('Lost Illusion').rarity('epic').glow(true);
+  event.create('manifest_illusion').displayName('Manifest Illusion').rarity('epic').glow(true);
 
   event.create('uu_matter').displayName('UU-Matter').rarity('epic').glow(true);
-  event.create('cosmic_shelling').displayName('Cosmic Shelling').rarity('epic').glow(true);
+  //event.create('cosmic_shelling').displayName('Cosmic Shelling').rarity('epic').glow(true);
   event.create('chaos_crystal').displayName('Chaos Crystal').rarity('epic').glow(true);
   event.create('chaos_shard').displayName('Chaos Shard').rarity('epic').glow(true);
 

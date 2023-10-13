@@ -49,7 +49,7 @@ JEIEvents.information(event => {
     event.addItem('industrialforegoing:laser_lens0', Text.of('Obtained in The Nether, The Other and The End loot chests'));
     event.addItem('industrialforegoing:laser_lens1', Text.of('Obtained in The Nether, The Other and The End loot chests'));
     event.addItem('industrialforegoing:laser_lens3', Text.of('Obtained in The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens4', Text.of('Obtained in The Nether, The Other and The End loot chests'));
+    event.addItem('industrialforegoing:laser_lens4', Text.of('Obtained in The Other and End loot chests'));
     event.addItem('industrialforegoing:laser_lens5', Text.of('Obtained in The Nether, The Other and The End loot chests'));
     event.addItem('industrialforegoing:laser_lens7', Text.of('Obtained in The Nether, The Other and The End loot chests'));
     event.addItem('industrialforegoing:laser_lens8', Text.of('Obtained in The Nether, The Other and The End loot chests'));

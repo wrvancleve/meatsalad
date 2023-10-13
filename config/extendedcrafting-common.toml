@@ -47,9 +47,9 @@
 #Settings for the Ender Crafter.
 ["Ender Crafting"]
 	#Should the Ender Crafter be enabled?
-	enabled = true
+	enabled = false
 	#Should the Auto Ender Crafter be enabled?
-	autoCrafterEnabled = true
+	autoCrafterEnabled = false
 	#How long a single Ender Crafter crafting operation should take (in seconds) by default.
 	#Range: > 1
 	defaultTimeRequired = 60

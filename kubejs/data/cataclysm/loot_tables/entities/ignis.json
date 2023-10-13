@@ -2,22 +2,12 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "name": "ignis_manifest_illusion",
+      "name": "ignis_vulcanite",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kubejs:manifest_illusion",
-          "functions": [
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
-              }
-            }
-          ]
+          "name": "kubejs:vulcanite"
         }
       ]
     },

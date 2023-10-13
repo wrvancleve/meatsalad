@@ -21,7 +21,7 @@ ItemEvents.modification(event => {
   modifyItem('industrialforegoing:laser_lens1', UNCOMMON, 64);
   modifyItem('industrialforegoing:laser_lens2', UNCOMMON, 64);
   modifyItem('industrialforegoing:laser_lens3', RARE, 64);
-  modifyItem('industrialforegoing:laser_lens4', UNCOMMON, 64);
+  modifyItem('industrialforegoing:laser_lens4', RARE, 64);
   modifyItem('industrialforegoing:laser_lens5', RARE, 64);
   modifyItem('industrialforegoing:laser_lens6', UNCOMMON, 64);
   modifyItem('industrialforegoing:laser_lens7', UNCOMMON, 64);

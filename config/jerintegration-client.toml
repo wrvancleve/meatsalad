@@ -11,4 +11,6 @@
 	tconstruct = true
 	#Enable / Disable patch for Mekanism
 	mekanism = true
+	#Enable / Disable patch for Mining Master
+	miningmaster = true
 

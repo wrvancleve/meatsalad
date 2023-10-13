@@ -121,12 +121,13 @@ ServerEvents.recipes(event => {
     'extendedcrafting:guide_book',
   ])
 
+  /*
   global.replaceShaped(event, [
     ' Y ',
     ' S ',
     'NNN'
   ], {
-    Y: '#forge:storage_blocks/ender_eye',
+    Y: 'minecraft:ender_eye',
     N: '#forge:storage_blocks/enderium',
     S: 'kubejs:ender_star'
   }, 'extendedcrafting', 'ender_alternator');
@@ -151,6 +152,7 @@ ServerEvents.recipes(event => {
     C: 'extendedcrafting:crystaltine_component',
     E: 'extendedcrafting:ender_crafter'    
   }, 'extendedcrafting', 'auto_ender_crafter');
+  */
 
   event.custom({
     type: 'thermal:smelter',

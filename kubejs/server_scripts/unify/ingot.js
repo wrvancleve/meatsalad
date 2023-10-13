@@ -79,15 +79,23 @@ ServerEvents.recipes(event => {
     'starmetal',
     'mythril',
     'adamantite',
+    'awakened_adamantite',
+    'awakened_mythril',
+    'awakened_palladium',
+    'awakened_vibranium',
+    'awakened_unobtainium',
     'ultimate',
     'neutronium',
-    'uru'
+    //'uru'
   ]
   ingotsFrom.forEach(material => {
     let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);
     event.shapeless(ingot.withCount(9).toJson(), `#forge:storage_blocks/${material}`).id(`meatsalad:${material}_ingots_from_block`)
-    event.shaped(ingot.toJson(), ['NNN', 'NNN', 'NNN'], {
-      N: `#forge:nuggets/${material}`
-    }).id(`meatsalad:${material}_ingot_from_nuggets`)
+    
+    if (!AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`).isEmpty()) {
+      event.shaped(ingot.toJson(), ['NNN', 'NNN', 'NNN'], {
+        N: `#forge:nuggets/${material}`
+      }).id(`meatsalad:${material}_ingot_from_nuggets`)
+    }
   })
 })

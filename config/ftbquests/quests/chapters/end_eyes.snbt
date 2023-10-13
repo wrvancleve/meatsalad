@@ -45,7 +45,7 @@
 			}]
 			title: "Black Eye"
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			description: ["Found in loot chests of Witch Huts"]
@@ -77,7 +77,7 @@
 			}]
 			title: "Witch Eye"
 			x: -1.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			description: ["Found in loot chests of Pillager Outposts"]
@@ -109,7 +109,7 @@
 			}]
 			title: "Corrupted Eye"
 			x: 1.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			description: ["Found in treasure chests of The Lost Castle of the Overworld"]
@@ -141,7 +141,7 @@
 			}]
 			title: "Lost Eye"
 			x: 2.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			description: ["Obtained by killing the Elder Guardian"]
@@ -173,7 +173,7 @@
 			}]
 			title: "Guardian Eye"
 			x: -2.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["46836674AC71753C"]
@@ -205,7 +205,7 @@
 				type: "item"
 			}]
 			title: "Undead Eye"
-			x: -2.5d
+			x: -3.0d
 			y: -0.5d
 		}
 		{
@@ -231,7 +231,7 @@
 				type: "item"
 			}]
 			title: "Eye of Mech"
-			x: -2.5d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -257,7 +257,7 @@
 				type: "item"
 			}]
 			title: "Eye of Monstrosity"
-			x: -3.5d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -290,7 +290,7 @@
 				type: "item"
 			}]
 			title: "Evil Eye"
-			x: -3.5d
+			x: -4.0d
 			y: -0.5d
 		}
 		{
@@ -323,7 +323,7 @@
 			}]
 			title: "Nether Eye"
 			x: -1.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			description: ["Found in treasure chests of Nether Bastions"]
@@ -355,7 +355,7 @@
 			}]
 			title: "Cursed Eye"
 			x: -0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			description: ["Found in Nether or Ancient City loot chests"]
@@ -390,6 +390,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["4AA87F707E4EEBE7"]
 			description: [""]
 			id: "30356B69CF7818CD"
 			rewards: [
@@ -412,8 +413,8 @@
 				type: "item"
 			}]
 			title: "Teleport Pad"
-			x: 2.5d
-			y: 0.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["30356B69CF7818CD"]
@@ -446,7 +447,7 @@
 			}]
 			title: "Magical Eye"
 			x: 3.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			description: ["Found in loot chests of Ancient Cities"]
@@ -478,7 +479,7 @@
 			}]
 			title: "Old Eye"
 			x: 1.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			description: ["Obtained by killing the Wither"]
@@ -510,7 +511,107 @@
 			}]
 			title: "Wither Eye"
 			x: 0.5d
-			y: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"08453199907DD711"
+				"141E487A41169494"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Found in deep dark biomes. Additionally, is a quest reward for killing your first Warden"]
+			id: "4AA87F707E4EEBE7"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "4D7E9BF551C6C1C3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16B2D8F649F89688"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Palladium Ingot"
+			tasks: [{
+				id: "04C837E1E41B11D3"
+				item: "allthemodium:allthemodium_ingot"
+				type: "item"
+			}]
+			title: "Palladium Ingot"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "08453199907DD711"
+			rewards: [
+				{
+					id: "1BE5CFA9385294E0"
+					item: "allthemodium:allthemodium_ingot"
+					type: "item"
+				}
+				{
+					id: "7DF04DA81516D24D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4FBEA5F555671A08"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Kill a Warden"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:sculk_shrieker"
+				id: "4D161BAEA7547B22"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill Warden"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			id: "141E487A41169494"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "1CC9B326E63D5730"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "389C45FAC9B4ECA8"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Palladium Ore"
+			tasks: [{
+				id: "1ABE07A1204F24B5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/palladium"
+					}
+				}
+				title: "Any #forge:ores/palladium"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Palladium Ore"
+			x: 4.0d
+			y: 1.5d
 		}
 	]
 	title: "To The End"

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  /*
   let awakening = (material) => {
     event.custom({
       type: 'summoningrituals:altar',
@@ -17,7 +18,48 @@ ServerEvents.recipes(event => {
       recipe_time: 200,
       block_below: { block: 'extendedcrafting:nether_star_block' }
     }).id(`meatsalad:summoning/awakened_${material}_ingot`);
+  }*/
+  let awakening = (material) => {
+    event.custom({
+      type: 'industrialforegoing:dissolution_chamber',
+      input: [
+        Ingredient.of('#forge:ingots/refined_obsidian'),
+        Ingredient.of(`#forge:ingots/${material}`),
+        Ingredient.of('#forge:ingots/refined_glowstone'),
+        Ingredient.of('#forge:ingots/uranium'),
+        Ingredient.of('#forge:ingots/iridium'),
+        Ingredient.of('#forge:ingots/starmetal'),
+        Ingredient.of(`#forge:ingots/${material}`),
+        Ingredient.of('#forge:ingots/tyrian_steel')
+      ],
+      inputFluid: '{FluidName:"kubejs:antimatter",Amount:50}',
+      processingTime: 400,
+      output: {
+        item: `kubejs:awakened_${material}_ingot`,
+        count: 1
+      }
+    }).id(`meatsalad:dissolution_chamber/awakened_${material}_ingot`);
   }
+
+  event.custom({
+    type: 'mekanism:rotary',
+    fluidInput: {
+      amount: 1,
+      fluid: 'kubejs:antimatter'
+    },
+    fluidOutput: {
+      amount: 1,
+      fluid: 'kubejs:antimatter'
+    },
+    gasInput: {
+      amount: 1,
+      gas: 'mekanism:antimatter'
+    },
+    gasOutput: {
+      amount: 1,
+      gas: 'mekanism:antimatter'
+    }
+  }).id('meatsalad:rotary/antimatter')
 
   event.custom({
     type: 'ae2:transform',
@@ -84,6 +126,7 @@ ServerEvents.recipes(event => {
     output: Item.of('kubejs:uu_matter')
   }).id('meatsalad:nucleosynthesizing/uu_matter')
 
+  /*
   event.custom({
     type: 'mekanism:nucleosynthesizing',
     duration: 1250,
@@ -96,6 +139,7 @@ ServerEvents.recipes(event => {
     },
     output: Item.of('kubejs:uru_ingot')
   }).id('meatsalad:nucleosynthesizing/uru_ingot')
+  */
 
   event.custom({
     type: 'mekanism:nucleosynthesizing',
@@ -111,6 +155,7 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:nucleosynthesizing/neutronium_ingot')
 
   awakening('adamantite');
+  awakening('palladium');
   awakening('mythril');
   awakening('unobtainium');
   awakening('vibranium');
@@ -170,10 +215,11 @@ ServerEvents.recipes(event => {
     ],
     inputs: [
       { tag: "forge:ingots/awakened_adamantite" },
+      { tag: "forge:ingots/awakened_palladium" },
       { tag: "forge:ingots/awakened_vibranium" },
       { tag: "forge:ingots/awakened_unobtainium" },
       { tag: "forge:ingots/awakened_mythril" },
-      { tag: "forge:ingots/uru" },
+      { tag: "forge:ingots/tyrian_steel" },
       { tag: "forge:ingots/iridium" },
       { tag: "forge:ingots/neutronium" },
       { tag: "forge:ingots/starmetal" },
@@ -186,37 +232,117 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
+      'd     d',
+      ' V d P ',
+      '  FNC  ',
+      '  DMI  ',
+      '  d d  '
+    ],
+    key: {
+      d: {item: 'rftoolsbase:infused_diamond'},
+      N: {item: 'minecraft:nether_star'},
+      M: {item: 'kubejs:draconic_infused_dark_matter'},
+      D: {item: 'minecraft:dragon_egg'},
+      I: {item: 'kubejs:vulcanite'},
+      V: {item: 'alexsmobs:void_worm_eye'},
+      P: {item: 'allthemodium:piglich_heart'},
+      F: {item: 'alexsmobs:farseer_arm'},
+      C: {item: 'alexsmobs:dropbear_claw'},
+    },
+    result: {
+      item: 'kubejs:manifest_illusion',
+      count: 1
+    }
+  }).id('meatsalad:manifest_illusion')
+
+  event.custom({
+    type: 'extendedcrafting:shaped_table',
+    pattern: [
+      'd     d',
+      ' D d S ',
+      ' eHEkC ',
+      ' AsMhW ',
+      '   d   '
+    ],
+    key: {
+      d: {item: 'rftoolsbase:infused_diamond'},
+      E: {item: 'kubejs:ender_star'},
+      M: {item: 'kubejs:draconic_infused_dark_matter'},
+      A: {item: 'cataclysm:abyssal_egg'},
+      W: {item: 'apotheosis:warden_tendril'},
+      D: {item: 'quark:dragon_scale'},
+      S: {item: 'progressivebosses:elder_guardian_spike'},
+      e: {item: 'minecraft:echo_shard'},
+      C: {item: 'alexsmobs:mosquito_larva'},
+      H: {item: 'alexsmobs:soul_heart'},
+      k: {item: 'alexsmobs:skreecher_soul'},
+      s: {item: 'alexsmobs:straddlite'},
+      h: {item: 'minecraft:shulker_shell'},
+    },
+    result: {
+      item: 'kubejs:lost_illusion',
+      count: 1
+    }
+  }).id('meatsalad:lost_illusion')
+
+  event.custom({
+    type: 'extendedcrafting:shaped_table',
+    pattern: [
       ' O     O ',
       ' OO   OO ',
       ' OeO OeeO',
-      ' OieOeiO ',
-      'OeNPcENO ',
-      ' ONvCaNO ',
-      'OeUIcWUeO',
-      ' OOeDeOO ',
+      ' OSeOeIO ',
+      'OeNFClNO ',
+      ' ONLUMNO ',
+      'OeIECiSeO',
+      ' OOeQeOO ',
       '   OOO   '
     ],
     key: {
+      U: {item: 'kubejs:uu_matter'},
+      C: {item: 'kubejs:chaos_shard'},
+      L: {item: 'kubejs:lost_illusion'},
+      M: {item: 'kubejs:manifest_illusion'},
+      F: {item: 'minecraft:fire_charge'},
+      l: {item: 'thermal:lightning_charge'},
+      E: {item: 'thermal:earth_charge'},
+      i: {item: 'thermal:ice_charge'},
+      Q: {item: 'ae2:quantum_entangled_singularity'},
       O: {item: 'kubejs:oblivion_shard'},
-      v: {item: 'alexsmobs:void_worm_eye'},
-      a: {item: 'cataclysm:abyssal_egg'},
-      D: {item: 'kubejs:dragon_soul'},
-      c: {item: 'kubejs:chaos_core'},
-      C: {item: 'kubejs:cosmic_shelling'},
-      P: {item: 'allthemodium:piglich_heart'},
-      E: {item: 'progressivebosses:elder_guardian_spike'},
       e: {item: 'kubejs:draconic_infused_eternal_crystal'},
-      W: {item: 'kubejs:warden_heart'},
-      I: {item: 'kubejs:manifest_illusion'},
-      U: {tag: 'forge:storage_blocks/uru'},
+      S: {tag: 'forge:storage_blocks/starmetal'},
       N: {tag: 'forge:storage_blocks/neutronium'},
-      i: {tag: 'forge:storage_blocks/iridium'}
+      I: {tag: 'forge:storage_blocks/iridium'}
     },
     result: {
       item: 'kubejs:infinity_fabric',
       count: 1
     }
   }).id('meatsalad:infinity_fabric')
+
+  event.shaped('8x kubejs:crystalline_powder', [
+    'RDA',
+    'GCG',
+    'PDS'
+  ], {
+    R: '#forge:dusts/ruby',
+    D: 'kubejs:dimensional_shard_dust',
+    A: '#forge:dusts/amethyst',
+    G: 'silentgear:glittery_dust',
+    C: 'silentgear:crushed_shulker_shell',
+    P: '#forge:dusts/peridot',
+    S: '#forge:dusts/sapphire'
+  }).id('kubejs:crystalline_powder');
+
+  event.shaped('kubejs:oblivion_shard', [
+    ' OA',
+    'OMO',
+    'AO '
+  ], {
+    O: 'minecraft:obsidian',
+    A: '#forge:storage_blocks/amethyst',
+    M: 'quark:myalite_crystal'
+  }).id('kubejs:oblivion_shard');
 
   event.shaped('16x pipez:infinity_upgrade', ['ABA', 'BCB', 'ADA'], {
     A: 'allthemodium:unobtainium_ingot',

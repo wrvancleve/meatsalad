@@ -43,7 +43,6 @@ ServerEvents.recipes(event => {
 
   const nuggetsFrom = [
     'shellite',
-    'starmetal',
     'mythril',
     'adamantite',
     'ultimate',

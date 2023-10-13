@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
   ], {
     F: 'minecraft:feather',
     I: 'kubejs:infinity_fabric',
-    G: '#forge:storage_blocks/gold',
+    G: '#forge:storage_blocks/palladium',
     D: 'angelring:diamond_ring',
     N: 'minecraft:nether_star',
   })
