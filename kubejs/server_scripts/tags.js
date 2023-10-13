@@ -67,13 +67,48 @@ ServerEvents.tags('item', event => {
     'industrialforegoing:laser_lens12',
     'industrialforegoing:laser_lens13',
     'industrialforegoing:laser_lens14',
-    'industrialforegoing:laser_lens15'
+    'industrialforegoing:laser_lens15',
+    'cataclysm:abyss_eye',
+    'cataclysm:flame_eye',
+    'cataclysm:mech_eye',
+    'cataclysm:monstrous_eye',
+    'cataclysm:void_eye',
+    'alexsmobs:mysterious_worm'
   ];
   for (let mysteryGooReplication of mysteryGooReplications) {
     event.add('meatsalad:mystery_goo_replication', mysteryGooReplication);
   }
 
-  event.remove('balm:ingots', 'allthemodium:allthemodium_ingot')
+  //event.remove('balm:ingots', 'allthemodium:allthemodium_ingot')
+
+  const allTheModiumItems = [
+    {type: 'ore', item: 'allthemodium:allthemodium_ore'},
+    {type: 'ore', item: 'allthemodium:allthemodium_slate_ore'},
+    {type: 'raw_material', item: 'allthemodium:raw_allthemodium'},
+    {type: 'raw_ore', item: 'allthemodium:raw_allthemodium'},
+    {type: 'ingot', item: 'allthemodium:allthemodium_ingot'},
+    {type: 'storage_block', item: 'allthemodium:allthemodium_block'},
+    {type: 'nugget', item: 'allthemodium:allthemodium_nugget'},
+    {type: 'dust', item: 'allthemodium:allthemodium_dust'},
+    {type: 'dirty_dust', item: 'allthemodium:dirty_allthemodium_dust'},
+    {type: 'clump', item: 'allthemodium:allthemodium_clump'},
+    {type: 'shard', item: 'allthemodium:allthemodium_shard'},
+    {type: 'crystal', item: 'allthemodium:allthemodium_crystal'},
+    {type: 'plate', item: 'allthemodium:allthemodium_plate'},
+    {type: 'gear', item: 'allthemodium:allthemodium_gear'},
+    {type: 'rod', item: 'allthemodium:allthemodium_rod'},
+  ]
+  const mekanismTagTypes = ['dirty_dust', 'clump', 'crystal', 'shard'];
+  for (let allTheModiumItem of allTheModiumItems) {
+    let type = allTheModiumItem.type;
+    let item = allTheModiumItem.item;
+    if (mekanismTagTypes.includes(type)) {
+      event.add(`mekanism:${type}s/palladium`, item)
+    } else {
+      event.add(`forge:${type}s/palladium`, item)
+    }
+  }
+  event.add('forge:storage_blocks/raw_palladium', 'allthemodium:raw_allthemodium_block')
 
   event.remove('curios:angelring', 'angelring:angel_ring')
   event.add('curios:ring', 'angelring:angel_ring')
@@ -87,6 +122,9 @@ ServerEvents.tags('item', event => {
   event.remove('curios:belt', 'thermal:satchel')
 
   event.remove('curios:head', 'industrialforegoing:meat_feeder')
+
+  event.add('forge:rubber', 'thermal:rubber')
+  event.add('forge:rubber', 'industrialforegoing:dryrubber')
 
   // Silent Gear Main Materials
   const silentGearMainMaterials = [
@@ -138,11 +176,13 @@ ServerEvents.tags('item', event => {
     '#forge:ingots/zinc',
 
     '#forge:ingots/adamantite',
+    '#forge:ingots/palladium',
     '#forge:ingots/mythril',
     '#forge:ingots/ultimate',
     '#forge:ingots/unobtainium',
     '#forge:ingots/vibranium',
     '#forge:ingots/awakened_adamantite',
+    '#forge:ingots/awakened_palladium',
     '#forge:ingots/awakened_mythril',
     '#forge:ingots/awakened_unobtainium',
     '#forge:ingots/awakened_vibranium',
@@ -218,6 +258,7 @@ ServerEvents.tags('item', event => {
     '#forge:ingots/tyrian_steel',
     
     '#forge:ingots/adamantite',
+    '#forge:ingots/palladium',
     '#forge:ingots/mythril',
     '#forge:ingots/unobtainium',
     '#forge:ingots/vibranium',

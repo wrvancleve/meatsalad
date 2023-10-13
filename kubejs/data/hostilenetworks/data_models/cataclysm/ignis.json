@@ -22,7 +22,7 @@
 	"trivia": "hostilenetworks.trivia.ignis",
 	"fabricator_drops": [
 		{
-			"item": "kubejs:manifest_illusion",
+			"item": "kubejs:vulcanite",
 			"count": 1
 		}
 	],

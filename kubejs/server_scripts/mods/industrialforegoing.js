@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     'industrialforegoing:gold_gear',
     'industrialforegoing:iron_gear',
     'industrialforegoing:pitiful_generator',
+    'industrialforegoing:plastic',
     //'industrialforegoing:bioreactor',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:mycelial_furnace',
@@ -41,6 +42,16 @@ ServerEvents.recipes(event => {
     'industrialforegoing:dissolution_chamber/infinity_saw',
     'industrialforegoing:dissolution_chamber/infinity_trident'
   ])
+  event.custom({
+    type: 'minecraft:smelting',
+    ingredient: {
+      item: 'thermal:cured_rubber'
+    },
+    result: 'industrialforegoing:plastic',
+    experience: 0.3,
+    cookingtime: 200
+  }).id('meatsalad:plastic');
+
 
   global.replaceShaped(event, [
     'PNP',

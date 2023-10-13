@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes(event => {
   let enderCrafting = (pattern, key, mod, item, count) => {
     if (!count) {
@@ -14,6 +15,7 @@ ServerEvents.recipes(event => {
     }).id(`meatsalad:${item}`);
   }
 
+  
   enderCrafting([
     'ESE',
     'STS',
@@ -23,6 +25,7 @@ ServerEvents.recipes(event => {
     S: Item.of('minecraft:sculk_catalyst'),
     T: Item.of('apotheosis:warden_tendril')
   }, 'kubejs', 'warden_heart');
+  
 
   enderCrafting([
     'RDA',
@@ -48,6 +51,7 @@ ServerEvents.recipes(event => {
     M: Item.of('quark:myalite_crystal')
   }, 'kubejs', 'oblivion_shard');
 
+  /*
   enderCrafting([
     'BBB',
     'SES',
@@ -113,3 +117,4 @@ ServerEvents.recipes(event => {
     U: Ingredient.of('#forge:storage_blocks/unobtainium')
   }, 'kubejs', 'chaos_core');
 })
+*/

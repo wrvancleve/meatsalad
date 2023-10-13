@@ -1,19 +1,4 @@
 {
-  "extendedcrafting": {
-    "ender_crafter": true,
-    "elite_auto_table": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
-  },
   "minecraft": {
     "block_inventory.detailed_amount": 54,
     "furnace": true,
@@ -42,15 +27,15 @@
     "entity_health": true,
     "energy_storage": true,
     "entity_armor.max_for_render": 40,
-    "enchantment_power": true,
     "breaking_progress": true,
+    "enchantment_power": true,
     "tnt_stability": true,
     "villager_profession": true,
     "mob_breeding": true,
     "entity_health.icons_per_line": 10,
     "item_frame": true,
-    "crop_progress": true,
     "fluid.detailed": false,
+    "crop_progress": true,
     "total_enchantment_power": true,
     "potion_effects": true,
     "command_block": true,
@@ -60,6 +45,55 @@
     "entity_health.max_for_render": 40,
     "mob_spawner": true,
     "redstone": true
+  },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": true
+  },
+  "mcjtylib": {
+    "jadeaddons": true
+  },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
+  "lootr": {
+    "info": true
+  },
+  "ae2": {
+    "part_icon": true,
+    "charger": true,
+    "debug": true,
+    "part_tooltip": true,
+    "grid_node_state": true,
+    "pattern_provider": true,
+    "part_mod_name": true,
+    "power_storage": true,
+    "crafting_monitor": true,
+    "part_name": true
+  },
+  "extendedcrafting": {
+    "elite_auto_table": true,
+    "ender_crafter": true,
+    "basic_auto_table": true,
+    "flux_crafter": true,
+    "advanced_table": true,
+    "auto_ender_crafter": true,
+    "ultimate_table": true,
+    "ultimate_auto_table": true,
+    "elite_table": true,
+    "basic_table": true,
+    "crafting_core": true,
+    "advanced_auto_table": true,
+    "compressor": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
   },
   "mekanism": {
     "infuse_type": true,
@@ -74,35 +108,21 @@
   "pipez": {
     "pipe": true
   },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": true
-  },
-  "apotheosis": {
-    "adventure": true,
-    "ench": true,
-    "spawner": true
+  "create": {
+    "filter": true,
+    "goggles.requires_goggles": true,
+    "goggles": true,
+    "copper_backtank": true,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "waystones": {
     "waystone": true
   },
   "gravestone": {
     "grave": true
-  },
-  "ae2": {
-    "part_icon": true,
-    "charger": true,
-    "debug": true,
-    "part_tooltip": true,
-    "grid_node_state": true,
-    "pattern_provider": true,
-    "part_mod_name": true,
-    "power_storage": true,
-    "crafting_monitor": true,
-    "part_name": true
   }
 }

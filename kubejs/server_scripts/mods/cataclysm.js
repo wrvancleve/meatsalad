@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
       }
     ],
     inputs: [
-      { ingredient: { item: 'cataclysm:void_core' }, count: 1 }
+      { ingredient: { item: 'cataclysm:void_eye' }, count: 1 }
     ],
     recipe_time: 200,
     block_below: { block: 'cataclysm:void_stone' }

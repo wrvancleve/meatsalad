@@ -1,7 +1,11 @@
 WorldgenEvents.remove(event => {
   event.removeFeatureById('underground_ores', [
-    "allthemodium:allthemodium_ore",
+    //"allthemodium:allthemodium_ore",
     "allthemodium:vibranium_ore",
+    "rftoolsbase:dimshard_dimensions",
+    "rftoolsbase:dimshard_end",
+    "rftoolsbase:dimshard_nether",
+    "rftoolsbase:dimshard_overworld",
     "thermal:apatite_ore",
     "thermal:cinnabar_ore",
     "thermal:lead_ore",

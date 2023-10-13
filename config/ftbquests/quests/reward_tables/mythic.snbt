@@ -6,7 +6,7 @@
 	rewards: [
 		{ item: "mekanism:pellet_antimatter", weight: 5.0f }
 		{ item: "apotheosis:mythic_material", random_bonus: 5, weight: 40.0f }
-		{ item: "apotheosis:superior_sigil_of_socketing", random_bonus: 2, weight: 5.0f }
+		{ item: "apotheosis:sigil_of_socketing", random_bonus: 2, weight: 5.0f }
 		{ item: "apotheosis:boss_summoner", weight: 5.0f }
 		{ item: "kubejs:dark_matter", weight: 25.0f }
 		{

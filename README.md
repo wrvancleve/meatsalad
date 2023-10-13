@@ -40,6 +40,9 @@
 - Remove laser lens dissolution_chamber recipes
 - Remove laser lens recolor recipes
 
+### Mekanism
+- Remove data\mekanism\forge\biome_modifier\mekanism\*.json (except fluorite & salt)
+
 ### Silent Gear
 - Remove data\silentgear\silentgear_materials\sandstone
 - Remove data\silentgear\silentgear_materials\terracotta
