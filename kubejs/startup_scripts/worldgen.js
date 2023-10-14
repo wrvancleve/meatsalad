@@ -42,7 +42,7 @@ WorldgenEvents.add(event => {
     ore.addTarget('minecraft:basalt', 'kubejs:adamantite_basalt_ore')
     ore.addTarget('minecraft:blackstone', 'kubejs:adamantite_blackstone_ore')
     ore.size(3)
-    ore.count([1,3])
+    ore.count([3,5])
         .squared()
         .triangleHeight(
             anchors.aboveBottom(8),
@@ -58,7 +58,7 @@ WorldgenEvents.add(event => {
     ore.addTarget('minecraft:basalt', 'kubejs:mythril_basalt_ore')
     ore.addTarget('minecraft:blackstone', 'kubejs:mythril_blackstone_ore')
     ore.size(3)
-    ore.count([1,3])
+    ore.count([3,5])
         .squared()
         .triangleHeight(
             anchors.aboveBottom(8),

@@ -1340,7 +1340,7 @@
 	Toretoise = false
 	Stonelings = false
 	Shiba = true
-	Foxhound = true
+	Foxhound = false
 	Forgotten = true
 	Crabs = false
 

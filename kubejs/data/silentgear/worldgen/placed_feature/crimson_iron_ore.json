@@ -1,5 +1,5 @@
 {
-  "feature": "silentgear:azure_silver_ore",
+  "feature": "silentgear:crimson_iron_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 8
+          "below_top": 10
         },
         "min_inclusive": {
-          "above_bottom": 8
+          "above_bottom": 10
         }
       }
     },

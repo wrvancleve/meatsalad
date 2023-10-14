@@ -1,12 +1,12 @@
 {
-  "feature": "meatsalad:other_iridium_ore",
+  "feature": "meatsalad:other_sapphire_ore",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
       "chance": 2
     },
     {
-      "count": 4,
+      "count": 3,
       "type": "minecraft:count"
     },
     {
@@ -15,10 +15,10 @@
     {
       "height": {
         "min_inclusive": {
-          "above_bottom": 0
+          "absolute": -64
         },
         "max_inclusive": {
-          "absolute": 129
+          "absolute": 296
         },
         "type": "minecraft:trapezoid"
       },
