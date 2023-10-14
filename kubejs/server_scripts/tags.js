@@ -51,6 +51,48 @@ ServerEvents.tags('item', event => {
   //event.add('minecraft:logs', [/allthemodium:stripped_\w+_log/])
   //event.add('forge:stripped_logs', [/allthemodium:stripped_\w+_log/])
 
+  function removeOreTag(ore, item) {
+    event.remove(`forge:ores/${ore}`, item)
+    event.remove('forge:ores', item)
+    event.remove('balm:ores', item)
+    event.remove('forge:ores_in_ground/stone', item)
+    event.remove('forge:ores_in_ground/deepslate', item)
+    event.remove('forge:ores_in_ground/netherrack', item)
+    event.remove('forge:ores_in_ground/end_stone', item)
+    event.remove('alexsmobs:underminer_ores', item)
+    event.remove('forge:ore_rates/singular', item)
+  }
+
+  const atoExtraOres = [
+    'aluminum',
+    'iridium',
+    'lead',
+    'nickel',
+    'osmium',
+    'platinum',
+    'silver',
+    'tin',
+    'uranium',
+    'zinc',
+  ]
+  for (let atoExtraOre of atoExtraOres) {
+    removeOreTag(atoExtraOre, `alltheores:nether_${atoExtraOre}_ore`)
+    removeOreTag(atoExtraOre, `alltheores:end_${atoExtraOre}_ore`)
+  }
+
+  removeOreTag('uranium', 'mekanism:uranium_ore')
+  removeOreTag('uranium', 'mekanism:deepslate_uranium_ore')
+  removeOreTag('uraninite', 'powah:deepslate_uraninite_ore_poor')
+  removeOreTag('uraninite', 'powah:deepslate_uraninite_ore')
+  removeOreTag('uraninite', 'powah:deepslate_uraninite_ore_dense')
+  removeOreTag('uraninite', 'powah:uraninite_ore_poor')
+  removeOreTag('uraninite', 'powah:uraninite_ore')
+  removeOreTag('uraninite', 'powah:uraninite_ore_dense')
+  event.remove('forge:raw_materials/uranium', 'mekanism:raw_uranium')
+  event.remove('forge:raw_materials', 'mekanism:raw_uranium')
+  event.remove('forge:storage_blocks/raw_uranium', 'mekanism:block_raw_uranium')
+  event.remove('forge:storage_blocks', 'mekanism:block_raw_uranium')
+
   const mysteryGooReplications = [
     'industrialforegoing:laser_lens0',
     'industrialforegoing:laser_lens1',

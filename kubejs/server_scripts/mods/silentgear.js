@@ -21,12 +21,24 @@ ServerEvents.recipes(event => {
       },
       {
         item: 'minecraft:blaze_powder',
-        count: 4
+        count: 2
       }
     ],
     result: [Item.of('silentgear:blaze_gold_ingot')],
     energy: 16000
   }).id('meatsalad:smelter/blaze_gold_ingot');
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      {tag: 'forge:ingots/gold'},
+      {item: 'minecraft:blaze_powder'},
+      {item: 'minecraft:blaze_powder'}
+    ],
+    energy: 16000,
+    result: {
+      item: 'silentgear:blaze_gold_ingot'
+    }
+  }).id('meatsalad:energizing/blaze_gold_ingot');
 
   event.custom({
     type: 'thermal:smelter',
@@ -48,8 +60,21 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('silentgear:crimson_steel_ingot')],
-    energy: 16000
+    energy: 120000
   }).id('meatsalad:smelter/crimson_steel_ingot');
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      {tag: 'forge:ingots/crimson_iron'},
+      {tag: 'forge:ingots/crimson_iron'},
+      {tag: 'forge:rods/blaze'},
+      {item: 'minecraft:magma_cream'}
+    ],
+    energy: 120000,
+    result: {
+      item: 'silentgear:crimson_steel_ingot'
+    }
+  }).id('meatsalad:energizing/crimson_steel_ingot');
 
   event.custom({
     type: 'thermal:smelter',
@@ -77,34 +102,35 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('silentgear:azure_electrum_ingot')],
-    energy: 16000
+    energy: 300000
   }).id('meatsalad:smelter/azure_electrum_ingot');
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      {tag: 'forge:ingots/azure_silver'},
+      {tag: 'forge:ingots/azure_silver'},
+      {tag: 'forge:ingots/gold'},
+      {tag: 'forge:ender_pearls'}
+    ],
+    energy: 300000,
+    result: {
+      item: 'silentgear:azure_electrum_ingot'
+    }
+  }).id('meatsalad:energizing/azure_electrum_ingot');
 
   event.custom({
-    type: 'thermal:smelter',
+    type: 'powah:energizing',
     ingredients: [
-      {
-        value: [
-          { tag: 'forge:ingots/crimson_steel' },
-          { tag: 'forge:dusts/crimson_steel' },
-        ],
-        count: 1
-      },
-      {
-        value: [
-          { tag: 'forge:ingots/azure_electrum' },
-          { tag: 'forge:dusts/azure_electrum' },
-        ],
-        count: 1
-      },
-      {
-        tag: 'forge:ingots/shellite',
-        count: 1
-      }
+      {tag: 'forge:ingots/crimson_steel'},
+      {tag: 'forge:ingots/azure_electrum'},
+      {item: 'silentgear:crushed_shulker_shell'},
+      {item: 'minecraft:netherite_scrap'},
     ],
-    result: [Item.of('silentgear:tyrian_steel_ingot')],
-    energy: 16000
-  }).id('meatsalad:smelter/tyrian_steel_ingot');
+    energy: 1000000,
+    result: {
+      item: 'silentgear:tyrian_steel_ingot'
+    }
+  }).id('meatsalad:energizing/tyrian_steel_ingot');
 
   global.replaceShaped(event, [
     "NII",

@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
   })
 
   const ingotsFrom = [
-    'shellite',
+    //'shellite',
     'starmetal',
     'mythril',
     'adamantite',

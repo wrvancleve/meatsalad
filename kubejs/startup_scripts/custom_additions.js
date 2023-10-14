@@ -23,9 +23,11 @@ const $MekanismAPI = Java.loadClass('mekanism.api.MekanismAPI')
 const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
 const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
 
+/*
 StartupEvents.registry('fluid', event => {
   event.create('antimatter').thickTexture(0xA464B3).bucketColor(0xA464B3).displayName('Liquid Antimatter')
 })
+*/
 
 StartupEvents.registry('block', event => {
   const HARVEST_LEVEL_NETHERITE_TAG = 'forge:needs_netherite_tool';
@@ -115,6 +117,7 @@ StartupEvents.registry('block', event => {
     .tagBoth('forge:storage_blocks/starmetal')
     .tagBoth('forge:storage_blocks')
     .requiresTool(true);
+  /*
   event.create('shellite_block')
     .displayName('Block of Shellite')
     .material('metal')
@@ -123,16 +126,6 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBoth('forge:storage_blocks/shellite')
     .tagBoth('forge:storage_blocks')
-    .requiresTool(true);
-  /*
-  event.create('end_adamantite_ore')
-    .displayName('End Adamantite Ore')
-    .material('stone')
-    .hardness(5.0)
-    .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_netherite_tool')
-    .tagBoth('forge:ores/adamantite')
-    .tagBoth('forge:ores')
     .requiresTool(true);
   */
   event.create('adamantite_basalt_ore')
@@ -165,17 +158,6 @@ StartupEvents.registry('block', event => {
     .requiresTool(true);
   */
   makeBlock({base: 'kubejs'}, 'storage_block_raw', 'adamantite', 70.0, 1200.0, HARVEST_LEVEL_NETHERITE_TAG);
-  /*
-  event.create('end_mythril_ore')
-    .displayName('End Mythril Ore')
-    .material('stone')
-    .hardness(5.0)
-    .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('forge:needs_netherite_tool')
-    .tagBoth('forge:ores/mythril')
-    .tagBoth('forge:ores')
-    .requiresTool(true);
-  */
   event.create('mythril_basalt_ore')
     .displayName('Basalt Mythril Ore')
     .model('kubejs:block/mythril_basalt_ore')
@@ -395,7 +377,7 @@ StartupEvents.registry('item', event => {
     {name: 'iridium_alloy'},
     */
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
-    {name: 'shellite'}
+    //{name: 'shellite'}
   ]
   manualMaterials.forEach(material => {
     let material_name = material.name;
