@@ -19,10 +19,10 @@ banned-ips.json
 banned-players.json
 build_release.sh
 eula.txt
-fetch_updates.sh
 ops.json
 patchouli_data.json
 rhino.local.properties
+sync_updates.sh
 usercache.json
 usernamecache.json
 whitelist.json

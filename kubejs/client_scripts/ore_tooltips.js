@@ -111,7 +111,8 @@ ItemEvents.tooltip(event => {
 
   addOreTooltip('uranium', [
     Text.of('Overworld: Any Biome (Y: -63 to 196)').gold(),
-    Text.of('Mining Dimension: (Y: 65 to 247)').gold()
+    Text.of('Mining Dimension: (Y: 65 to 247)').gold(),
+    Text.of('The Other: Any Biome (Y: -63 to 196)').gold()
   ]);
 
   addOreTooltip('zinc', [
@@ -121,24 +122,27 @@ ItemEvents.tooltip(event => {
   ]);
 
   addOreTooltip('iridium', [
-    Text.of('Overworld: Any Biome (Y: 5 to 69)').gold(),
+    Text.of('Overworld: Mountain Biomes (Y: 5 to 69)').gold(),
     Text.of('Mining Dimension: (Y: 65 to 247)').gold(),
     Text.of('The Other: Any Biome (Y: -63 to 129)').gold()
   ]);
 
   addOreTooltip('ruby', [
-    Text.of('Overworld: Any Biome (Y: -63 to 228)').gold(),
-    Text.of('Mining Dimension: (Y: 65 to 247)').gold()
+    Text.of('Overworld: Mountain Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 65 to 247)').gold(),
+    Text.of('The Other: Any Biome (Y: -63 to 228)').gold()
   ]);
 
   addOreTooltip('sapphire', [
-    Text.of('Overworld: Any Biome (Y: -63 to 296)').gold(),
-    Text.of('Mining Dimension: (Y: 65 to 247)').gold()
+    Text.of('Overworld: Mountain Biomes (Y: -63 to 296)').gold(),
+    Text.of('Mining Dimension: (Y: 65 to 247)').gold(),
+    Text.of('The Other: Any Biome (Y: -63 to 296)').gold()
   ]);
 
   addOreTooltip('peridot', [
-    Text.of('Overworld: Any Biome (Y: -63 to 196)').gold(),
-    Text.of('Mining Dimension: (Y: 65 to 247)').gold()
+    Text.of('Overworld: Mountain Biomes (Y: -63 to 196)').gold(),
+    Text.of('Mining Dimension: (Y: 65 to 247)').gold(),
+    Text.of('The Other: Any Biome (Y: -63 to 196)').gold()
   ]);
 
   addOreTooltip('fluorite', [

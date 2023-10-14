@@ -54,11 +54,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
           "functions": [
             {
               "add": false,
@@ -354,10 +349,6 @@
             }
           ],
           "name": "minecraft:glass_bottle"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_horse_armor"
         },
         {
           "type": "minecraft:item",
