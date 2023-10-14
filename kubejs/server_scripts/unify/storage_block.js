@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
   })
 
   const blockFrom = [
-    'shellite',
+    //'shellite',
     'starmetal',
     'mythril',
     'adamantite',

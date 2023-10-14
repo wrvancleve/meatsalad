@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
       recipe_time: 200,
       block_below: { block: 'extendedcrafting:nether_star_block' }
     }).id(`meatsalad:summoning/awakened_${material}_ingot`);
-  }*/
+  }
   let awakening = (material) => {
     event.custom({
       type: 'industrialforegoing:dissolution_chamber',
@@ -40,7 +40,296 @@ ServerEvents.recipes(event => {
       }
     }).id(`meatsalad:dissolution_chamber/awakened_${material}_ingot`);
   }
+  */
+  let awakening = (material) => {
+    event.custom({
+      type: 'powah:energizing',
+      ingredients: [
+        {tag: `forge:ingots/${material}`},
+        {tag: `forge:ingots/${material}`},
+        {tag: 'forge:ingots/neutronium'},
+        {tag: 'forge:ingots/iridium'},
+        {tag: 'forge:ingots/tyrian_steel'},
+        {tag: 'forge:ingots/starmetal'},
+      ],
+      energy: 20000000,
+      result: {
+        item: `kubejs:awakened_${material}_ingot`
+      }
+    }).id(`meatsalad:energizing/awakened_${material}_ingot`);
+  }
 
+  let processing = (material) => {
+    event.custom({
+      type: 'mekanism:purifying',
+      chemicalInput: {
+          amount: 1,
+          gas: 'mekanism:oxygen'
+      },
+      itemInput: {
+          ingredient: {
+              tag: `forge:ores/${material}`
+          }
+      },
+      output: {
+          count: 3,
+          item: `kubejs:${material}_clump`
+      }
+    }).id(`meatsalad:processing/${material}/clump/from_raw_block`);
+    event.custom({
+      type: 'mekanism:purifying',
+      chemicalInput: {
+          amount: 2,
+          gas: 'mekanism:oxygen'
+      },
+      itemInput: {
+          ingredient: {
+              tag: `forge:storage_blocks/raw_${material}`
+          }
+      },
+      output: {
+          count: 18,
+          item: `kubejs:${material}_clump`
+      }
+    }).id(`meatsalad:processing/${material}/clump/from_raw_block`);
+    event.custom({
+      type: 'mekanism:purifying',
+      chemicalInput: {
+          amount: 1,
+          gas: 'mekanism:oxygen'
+      },
+      itemInput: {
+          ingredient: {
+              tag: `forge:raw_materials/${material}`
+          }
+      },
+      output: {
+          count: 2,
+          item: `kubejs:${material}_clump`
+      }
+    }).id(`meatsalad:processing/${material}/clump/from_raw_ore`);
+    event.custom({
+      type: 'mekanism:purifying',
+      chemicalInput: {
+          amount: 1,
+          gas: 'mekanism:oxygen'
+      },
+      itemInput: {
+          ingredient: {
+              tag: `mekanism:shards/${material}`
+          }
+      },
+      output: {
+          item: `kubejs:${material}_clump`
+      }
+    }).id(`meatsalad:processing/${material}/clump/from_shard`);
+    event.custom({
+      type: 'mekanism:crystallizing',
+      chemicalType: 'slurry',
+      input: {
+        amount: 200,
+        slurry: `kubejs:clean_${material}`
+      },
+      output: {
+          item: `kubejs:${material}_crystal`
+      }
+    }).id(`meatsalad:processing/${material}/crystal/from_slurry`);
+    event.custom({
+      type: 'mekanism:crushing',
+      input: {
+        ingredient: {
+          tag: `mekanism:clumps/${material}`
+        }
+      },
+      output: {
+        item: `kubejs:${material}_dirty_dust`
+      }
+    }).id(`meatsalad:processing/${material}/dirty_dust/from_clump`);
+    event.custom({
+      type: 'mekanism:enriching',
+      input: {
+        ingredient: {
+          tag: `mekanism:dirty_dusts/${material}`
+        }
+      },
+      output: {
+        item: `kubejs:${material}_dust`
+      }
+    }).id(`meatsalad:processing/${material}/dust/from_dirty_dust`);
+    event.custom({
+      type: 'mekanism:enriching',
+      input: {
+        ingredient: {
+          tag: `forge:ores/${material}`
+        }
+      },
+      output: {
+        count: 2,
+        item: `kubejs:${material}_dust`
+      }
+    }).id(`meatsalad:processing/${material}/dust/from_ore`);
+    event.custom({
+      type: 'mekanism:enriching',
+      input: {
+        ingredient: {
+          tag: `forge:storage_blocks/raw_${material}`
+        }
+      },
+      output: {
+        count: 12,
+        item: `kubejs:${material}_dust`
+      }
+    }).id(`meatsalad:processing/${material}/dust/from_raw_block`);
+    event.custom({
+      type: 'mekanism:enriching',
+      input: {
+        amount: 3,
+        ingredient: {
+          tag: `forge:raw_materials/${material}`
+        }
+      },
+      output: {
+        count: 4,
+        item: `kubejs:${material}_dust`
+      }
+    }).id(`meatsalad:processing/${material}/dust/from_raw_ore`);
+    event.custom({
+      type: 'mekanism:injecting',
+      chemicalInput: {
+        amount: 1,
+        gas: 'mekanism:hydrogen_chloride'
+      },
+      itemInput: {
+        ingredient: {
+          tag: `mekanism:crystals/${material}`
+        }
+      },
+      output: {
+        item: `kubejs:${material}_shard`
+      }
+    }).id(`meatsalad:processing/${material}/shard/from_crystal`);
+    event.custom({
+      type: 'mekanism:injecting',
+      chemicalInput: {
+        amount: 1,
+        gas: 'mekanism:hydrogen_chloride'
+      },
+      itemInput: {
+        ingredient: {
+          tag: `forge:ores/${material}`
+        }
+      },
+      output: {
+        count: 4,
+        item: `kubejs:${material}_shard`
+      }
+    }).id(`meatsalad:processing/${material}/shard/from_ore`);
+    event.custom({
+      type: 'mekanism:injecting',
+      chemicalInput: {
+        amount: 2,
+        gas: 'mekanism:hydrogen_chloride'
+      },
+      itemInput: {
+        ingredient: {
+          tag: `forge:storage_blocks/raw_${material}`
+        }
+      },
+      output: {
+        count: 24,
+        item: `kubejs:${material}_shard`
+      }
+    }).id(`meatsalad:processing/${material}/shard/from_raw_block`);
+    event.custom({
+      type: 'mekanism:injecting',
+      chemicalInput: {
+        amount: 1,
+        gas: 'mekanism:hydrogen_chloride'
+      },
+      itemInput: {
+        amount: 3,
+        ingredient: {
+          tag: `forge:raw_materials/${material}`
+        }
+      },
+      output: {
+        count: 8,
+        item: `kubejs:${material}_shard`
+      }
+    }).id(`meatsalad:processing/${material}/shard/from_raw_ore`);
+    event.custom({
+      type: 'mekanism:washing',
+      fluidInput: {
+        amount: 5,
+        tag: 'minecraft:water'
+      },
+      output: {
+        amount: 1,
+        slurry: `kubejs:clean_${material}`
+      },
+      slurryInput: {
+        amount: 1,
+        slurry: `kubejs:dirty_${material}`
+      }
+    }).id(`meatsalad:processing/${material}/slurry/clean`);
+    event.custom({
+      type: 'mekanism:dissolution',
+      gasInput: {
+        amount: 1,
+        gas: 'mekanism:sulfuric_acid'
+      },
+      itemInput: {
+        ingredient: {
+          tag: `forge:ores/${material}`
+        }
+      },
+      output: {
+        amount: 1000,
+        chemicalType: 'slurry',
+        slurry: `kubejs:dirty_${material}`
+      }
+    }).id(`meatsalad:processing/${material}/slurry/dirty/from_ore`);
+    event.custom({
+      type: 'mekanism:dissolution',
+      gasInput: {
+        amount: 2,
+        gas: 'mekanism:sulfuric_acid'
+      },
+      itemInput: {
+        ingredient: {
+          tag: `forge:storage_blocks/raw_${material}`
+        }
+      },
+      output: {
+        amount: 6000,
+        chemicalType: 'slurry',
+        slurry: `kubejs:dirty_${material}`
+      }
+    }).id(`meatsalad:processing/${material}/slurry/dirty/from_raw_block`);
+    event.custom({
+      type: 'mekanism:dissolution',
+      gasInput: {
+        amount: 1,
+        gas: 'mekanism:sulfuric_acid'
+      },
+      itemInput: {
+        amount: 3,
+        ingredient: {
+          tag: `forge:raw_materials/${material}`
+        }
+      },
+      output: {
+        amount: 2000,
+        chemicalType: 'slurry',
+        slurry: `kubejs:dirty_${material}`
+      }
+    }).id(`meatsalad:processing/${material}/slurry/dirty/from_raw_ore`);
+  }
+
+  processing('adamantite')
+  processing('mythril')
+
+  /*
   event.custom({
     type: 'mekanism:rotary',
     fluidInput: {
@@ -60,6 +349,7 @@ ServerEvents.recipes(event => {
       gas: 'mekanism:antimatter'
     }
   }).id('meatsalad:rotary/antimatter')
+  */
 
   event.custom({
     type: 'ae2:transform',
@@ -71,6 +361,7 @@ ServerEvents.recipes(event => {
     result: Item.of('ae2:quantum_entangled_singularity').withCount(2)
   }).id('meatsalad:transform/entangled_singularity')
 
+  /*
   event.custom({
     type: 'thermal:smelter',
     ingredients: [
@@ -82,7 +373,7 @@ ServerEvents.recipes(event => {
     energy: 16000
   }).id('meatsalad:smelter/shellite_ingot');
 
-  /*
+  
   event.custom({
     type: 'thermal:smelter',
     ingredients: [
@@ -357,10 +648,10 @@ ServerEvents.recipes(event => {
     D: 'thermal:upgrade_augment_3',
     E: 'kubejs:infinity_fiber'
   }).id('meatsalad:thermal_machine_efficiency_creative_augment')
-  event.shaped('mekanism:creative_energy_cube', ['ATA', 'UCU', 'ATA'], {
-    A: 'mekanism:alloy_atomic',
-    T: 'mekanism:energy_tablet',
+  event.shaped('powah:energy_cell_creative', ['UIU', 'CDC', 'UIU'], {
     U: 'allthemodium:unobtainium_block',
-    C: 'mekanism:ultimate_energy_cube'
-  }).id('meatsalad:mekanism_creative_energy_cube')
+    I: 'kubejs:infinity_fiber',
+    C: 'powah:energy_cell_nitro',
+    D: 'powah:dielectric_casing'
+  }).id('meatsalad:powah_energy_cell_creative')
 })

@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
   });
 
   const nuggetsFrom = [
-    'shellite',
+    //'shellite',
     'mythril',
     'adamantite',
     'ultimate',
