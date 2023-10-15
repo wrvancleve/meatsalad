@@ -40,7 +40,7 @@
 	# !! Has to be lower than the spacing! !!
 	#
 	#Range: 8 ~ 4095
-	separation = 16
+	separation = 20
 
 ["Dungeon Settings"]
 	#----------------------------------------------------------------------------------------------------+
