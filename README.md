@@ -82,6 +82,9 @@
 - Remove data\silentgear\silentgear_materials\uranium.json
 - Remove data\silentgear\silentgear_materials\zinc.json
 
+### Terralith
+- Remove data\minecraft\worldgen\structure_set\villages.json
+- Remove data\terralith\worldgen\structure_set\rare_village.json
 
 ## Server Startup
 1. `wget <forgeInstallerURL>`

@@ -1,0 +1,34 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:aviary",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:bandit_towers",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:foundry",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:heavenly_challenger",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:mining_system",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:plague_asylum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 29188132,
+    "spacing": 120,
+    "separation": 100,
+    "type": "minecraft:random_spread"
+  }
+}
