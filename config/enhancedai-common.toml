@@ -389,29 +389,29 @@
 
 [Creepers]
 	#Various changes to Creepers exploding. Ignoring Walls, Walking Fuse and smarter exploding based off explosion size
-	"Enable Creeper Swell" = true
+	"Enable Creeper Swell" = false
 
 	#Various changes to Creepers exploding. Ignoring Walls, Walking Fuse and smarter exploding based off explosion size
 	[Creepers."Creeper Swell"]
 		#Percentage chance for a Creeper to keep walking while exploding.
 		#Range: 0.0 ~ 1.0
-		"Walking Fuse Chance" = 0.1
+		"Walking Fuse Chance" = 0.0
 		#Percentage chance for a Creeper to ignore walls while targeting a player. This means that a creeper will be able to explode if it's in the correct range from a player even if there's a wall between.
 		#Range: 0.0 ~ 1.0
-		"Ignore Walls Chance" = 0.1
+		"Ignore Walls Chance" = 0.0
 		#Launching creepers will try ignite and throw themselves at the player.
 		#Range: 0.0 ~ 1.0
-		"Launch Chance" = 0.05
+		"Launch Chance" = 0.0
 		#Breaching creepers will try to open an hole in the wall to let mobs in.
 		#Range: 0.0 ~ 1.0
-		"Breach Chance" = 0.075
+		"Breach Chance" = 0.0
 		#If true creepers will ignite if damaged by an explosion.
 		"TNT Like" = false
 
 		[Creepers."Creeper Swell".Cena]
 			#AND HIS NAME IS ...
 			#Range: 0.0 ~ 1.0
-			Chance = 0.02
+			Chance = 0.0
 			#If true, Creeper Cena explosion will generate fire
 			"Generates fire" = false
 			#Explosion power of Creeper Cena
@@ -559,14 +559,14 @@
 
 [Animals]
 	#Make animals fight back and no longer flee when attacked
-	"Enable Animal Attacking" = true
+	"Enable Animal Attacking" = false
 
 	#Make animals fight back and no longer flee when attacked
 	[Animals."Animal Attacking"]
 		#If true, when attacked, animals will call other animals for help and attack back. Animals have a slightly bigger range to attack. Attack damage can't be changed via config due to limitation so use mods like Mobs Properties Randomness to change the damage. Base damage is 4
-		"Animals Fight back" = true
+		"Animals Fight back" = false
 		#If true, when attacked, animals will no longer flee.
-		"Animals No Longer Flee" = true
+		"Animals No Longer Flee" = false
 		#Movement speed multiplier when aggroed.
 		#Range: 0.0 ~ 4.0
 		"Movement Speed Multiplier" = 1.35

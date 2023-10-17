@@ -570,7 +570,6 @@
 				entity: "minecraft:warden"
 				icon: "minecraft:sculk_shrieker"
 				id: "4D161BAEA7547B22"
-				optional_task: true
 				type: "kill"
 				value: 1L
 			}]
