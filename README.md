@@ -92,6 +92,7 @@
 3. Delete client side mods
     - Entity Culling
     - Legendary Tooltips
+    - Loot Beams
     - Oculus
     - Rubidium
     - Rubidium Extras
