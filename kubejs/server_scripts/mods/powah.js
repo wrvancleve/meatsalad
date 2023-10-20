@@ -17,6 +17,17 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'powah:energizing',
     ingredients: [
+      { tag: 'forge:raw_materials/uranium' }
+    ],
+    energy: 2000,
+    result: {
+      item: 'powah:uraninite',
+      count: 2
+    }
+  }).id('meatsalad:energizing/uraninite_from_raw')
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
       { tag: 'forge:ores/uranium' }
     ],
     energy: 50000,

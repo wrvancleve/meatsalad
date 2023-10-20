@@ -63,6 +63,7 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ore_rates/singular', item)
   }
 
+  /*
   const atoExtraOres = [
     'aluminum',
     'iridium',
@@ -79,6 +80,7 @@ ServerEvents.tags('item', event => {
     removeOreTag(atoExtraOre, `alltheores:nether_${atoExtraOre}_ore`)
     removeOreTag(atoExtraOre, `alltheores:end_${atoExtraOre}_ore`)
   }
+  */
 
   removeOreTag('uranium', 'mekanism:uranium_ore')
   removeOreTag('uranium', 'mekanism:deepslate_uranium_ore')
