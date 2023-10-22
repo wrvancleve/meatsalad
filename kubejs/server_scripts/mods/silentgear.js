@@ -119,6 +119,88 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:energizing/azure_electrum_ingot');
 
   event.custom({
+    type: "thermal:pulverizer",
+    ingredient: Item.of('minecraft:shulker_shell').toJson(),
+    result: [Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()]
+  }).id('meatsalad:pulverizer/crushed_shulker_shell');
+  event.custom({
+    type: "mekanism:crushing",
+    input: {
+      ingredient: Item.of('minecraft:shulker_shell').toJson()
+    },
+    output: Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()
+  }).id('meatsalad:crushing/crushed_shulker_shell');
+
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_pickaxe').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
+      Item.of('minecraft:stick').withCount(2).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_pickaxe');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_sword').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
+      Item.of('minecraft:stick').toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_sword');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_axe').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
+      Item.of('minecraft:stick').withCount(2).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_axe');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_hoe').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
+      Item.of('minecraft:stick').withCount(2).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_hoe');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_shovel').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(1).toJson(),
+      Item.of('minecraft:stick').withCount(2).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_shovel');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_helmet').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(5).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_helmet');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_chestplate').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(8).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_chestplate');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_leggings').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(7).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_leggings');
+  event.custom({
+    type: "silentgear:salvaging",
+    ingredient: Item.of('allthemodium:allthemodium_boots').toJson(),
+    results: [
+      Item.of('allthemodium:allthemodium_ingot').withCount(4).toJson()
+    ]
+  }).id('meatsalad:salvaging/allthemodium_boots');
+
+  event.custom({
     type: 'powah:energizing',
     ingredients: [
       {tag: 'forge:ingots/crimson_steel'},

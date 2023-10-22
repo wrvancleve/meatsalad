@@ -6,7 +6,7 @@ renderBlacklist = []
 timeout = 300
 #The amount of milliseconds to wait before showing a 'fetch from server' info on the client (if the server is slow to respond) (-1 to disable this feature)
 #Range: -1 ~ 100000
-waitingForServerTimeout = 2000
+waitingForServerTimeout = 5000
 #The maximum packet size to send an itemstack from client to server. Reduce this if you have issues with network lag caused by TOP
 #Range: -1 ~ 32768
 maxPacketToServer = 20000

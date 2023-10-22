@@ -295,6 +295,7 @@ ServerEvents.tags('item', event => {
     '#forge:ingots/gold',
     '#forge:ingots/iron',
     '#forge:gems/lapis',
+    '#forge:ingots/platinum',
     '#forge:gems/quartz',
     '#forge:dusts/redstone',
     '#forge:ingots/refined_glowstone',

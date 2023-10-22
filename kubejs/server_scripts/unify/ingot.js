@@ -63,6 +63,29 @@ ServerEvents.recipes(event => {
     }
   });
 
+  const gemsToOres = [
+    'peridot',
+    'ruby',
+    'sapphire'
+  ]
+  gemsToOres.forEach(material => {
+    let gem = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`);
+    event.smelting(gem.toJson(), `#forge:ores/${material}`).xp(1.0).id(`meatsalad:smelting/${material}_from_ore`)
+    event.blasting(gem.toJson(), `#forge:ores/${material}`).xp(1.0).id(`meatsalad:blasting/${material}_from_ore`)
+    event.custom({
+      type: "thermal:pulverizer",
+      ingredient: Ingredient.of(`#forge:ores/${material}`).toJson(),
+      result: [gem.withCount(2).toJson()]
+    }).id(`meatsalad:pulverizer/${material}_from_ore`)
+    event.custom({
+      type: "mekanism:crushing",
+      input: {
+        ingredient: Ingredient.of(`#forge:ores/${material}`).toJson()
+      },
+      output: gem.withCount(2).toJson()
+    }).id(`meatsalad:crushing/${material}_from_ore`)
+  })
+
   const dustSmeltings = [
     'starmetal',
     'mythril',
