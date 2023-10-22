@@ -75,15 +75,24 @@ ServerEvents.recipes(event => {
     event.custom({
       type: "thermal:pulverizer",
       ingredient: Ingredient.of(`#forge:ores/${material}`).toJson(),
-      result: [gem.withCount(2).toJson()]
+      result: [
+        {
+          item: `alltheores:${material}`,
+          chance: 2.5
+        },
+        {
+          item: 'minecraft:gravel',
+          chance: 0.2
+        }
+      ]
     }).id(`meatsalad:pulverizer/${material}_from_ore`)
     event.custom({
-      type: "mekanism:crushing",
+      type: "mekanism:enriching",
       input: {
         ingredient: Ingredient.of(`#forge:ores/${material}`).toJson()
       },
       output: gem.withCount(2).toJson()
-    }).id(`meatsalad:crushing/${material}_from_ore`)
+    }).id(`meatsalad:enriching/${material}_from_ore`)
   })
 
   const dustSmeltings = [

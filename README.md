@@ -43,6 +43,9 @@
 ### Mekanism
 - Remove data\mekanism\forge\biome_modifier\mekanism\*.json (except fluorite & salt)
 
+### Nullscape
+- Remove data\minecraft\loot_tables\blocks\amethyst_block.json
+
 ### Silent Gear
 - Remove data\silentgear\silentgear_materials\sandstone
 - Remove data\silentgear\silentgear_materials\terracotta
