@@ -1,0 +1,546 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abiding_alloy"
+	group: "011F1A00FBBC8153"
+	icon: "kubejs:abiding_alloy_ingot"
+	id: "72C195574E7B5951"
+	order_index: 0
+	quest_links: [{
+		id: "1257DBCC3C9AD617"
+		linked_quest: "2036EB7955BF42EC"
+		x: 5.0d
+		y: -2.0d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"76F851126A285D25"
+				"631C087D76C96115"
+				"0E3800093D05C350"
+				"2D1B6A902D81893B"
+				"542EE0FF5FEA8AC4"
+			]
+			id: "20E07EE7BBA393B3"
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "7F9C8B1D70987E2E"
+				item: "kubejs:abiding_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F1245E48D130030"]
+			description: [""]
+			id: "2D1B6A902D81893B"
+			rewards: [
+				{
+					id: "7FAA2111F7D18687"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2962DEFF75E78A01"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "481412CE97987A8D"
+					item: "kubejs:starmetal_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a Starmetal Ingot"
+			tasks: [{
+				id: "390A7481C1AFAA9A"
+				item: "kubejs:starmetal_ingot"
+				type: "item"
+			}]
+			title: "Starmetal Ingot"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			description: [""]
+			id: "0E3800093D05C350"
+			rewards: [
+				{
+					id: "5E4B4C10F2DDFD97"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CDE982968CFAFDD"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "0AD3D17E8DE616DC"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a Refined Obsidian Ingot"
+			tasks: [{
+				id: "1A1B9A79EC64D206"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			title: "Refined Obsidian Ingot"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			description: [""]
+			id: "631C087D76C96115"
+			rewards: [
+				{
+					id: "2F99498C0A4D3584"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "322C9A723DB5CE5F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "498F6149C5EF29D1"
+					item: "alltheores:iridium_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Craft an Iridium Ingot"
+			tasks: [{
+				id: "2322CC01BF598C0F"
+				item: "alltheores:iridium_ingot"
+				type: "item"
+			}]
+			title: "Iridium Ingot"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [""]
+			id: "76F851126A285D25"
+			rewards: [
+				{
+					id: "0F93BC263B73A9BF"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D3BD622FE934972"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "18A4A0FB93E79790"
+					item: "silentgear:tyrian_steel_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a Tyrian Steel Ingot"
+			tasks: [{
+				id: "553D259EE64F9E9A"
+				item: "silentgear:tyrian_steel_ingot"
+				type: "item"
+			}]
+			title: "Tyrian Steel Ingot"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			description: [""]
+			id: "542EE0FF5FEA8AC4"
+			rewards: [
+				{
+					id: "6CC149BE3FB10465"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04A4CC220DD7F76C"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "1430B8C8D500EA97"
+					item: "kubejs:neutronium_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a Neutronium Ingot"
+			tasks: [{
+				id: "5F7D5E2D52D6D0F3"
+				item: "kubejs:neutronium_ingot"
+				type: "item"
+			}]
+			title: "Neutronium Ingot"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["47AC3BAD4C6A1D26"]
+			id: "37172411ED942FAB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A0AF1309B03D9B3"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "251869DC93842157"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Craft an Antiprotonic Nucleosynthesizer"
+			tasks: [{
+				id: "6A32AE8AF616B34C"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			title: "Antiprotonic Nucleosynthesizer"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FD5F74EDCFE7FFC"]
+			id: "47AC3BAD4C6A1D26"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "059571B8661C330E"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "7141A3782515166E"
+					type: "xp"
+					xp: 250
+				}
+			]
+			subtitle: "Craft an Antimatter Pellet"
+			tasks: [{
+				id: "74E92C3DC64EEEC5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "Antimatter Pellet"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2F811CADF2CD3136"
+				"2922A4A65832F17F"
+				"27EE91A1FEDCB45E"
+				"71E7A1FD612672DE"
+				"1F2346D554622D18"
+			]
+			id: "2FD5F74EDCFE7FFC"
+			rewards: [
+				{
+					id: "567D795999AA5824"
+					item: "mekanism:pellet_polonium"
+					type: "item"
+				}
+				{
+					id: "511FAD6A3AE31859"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4755B0C366A40190"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Polonium Pellet"
+			tasks: [{
+				id: "14A0D1C360374523"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "Polonium Pellet"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			id: "27EE91A1FEDCB45E"
+			rewards: [
+				{
+					id: "77B0BDF457FD6097"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EBA0463CBB10F4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Casing"
+			tasks: [{
+				id: "105CE6C17D649EC4"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			title: "Fission Reactor Casing"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			id: "1F2346D554622D18"
+			rewards: [
+				{
+					id: "5528F0A1FE94B19F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "116B6DA2C2F0D914"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Port"
+			tasks: [{
+				id: "35A3A0FC76010153"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			title: "Fission Reactor Port"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			id: "71E7A1FD612672DE"
+			rewards: [
+				{
+					id: "083699BEC0F63BB6"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C5929C0C9E5CE09"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Reactor Logic Adapter"
+			tasks: [{
+				id: "0579B2CAE4632979"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			title: "Fission Reactor Logic Adapter"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			id: "2922A4A65832F17F"
+			rewards: [
+				{
+					id: "00F28A1D5C5F77ED"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C0C3DD8EFDAF8CB"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Fission Fuel Assembly"
+			tasks: [{
+				id: "4AD888F9E99323A0"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			title: "Fission Fuel Assembly"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			id: "2F811CADF2CD3136"
+			rewards: [
+				{
+					id: "6A178E962A1E2841"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2175DAFEA50892E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Control Rod Assembly"
+			tasks: [{
+				id: "767B6610B85166A8"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			title: "Control Rod Assembly"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"61D4EA2C30CD1CBC"
+				"2036EB7955BF42EC"
+			]
+			id: "7F1245E48D130030"
+			rewards: [
+				{
+					id: "5563D9DE5DC8DFAC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F590002A88B7381"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Craft a Starmetal Dust"
+			tasks: [{
+				id: "18430FD38C27DB43"
+				item: "silentgear:starmetal_dust"
+				type: "item"
+			}]
+			title: "Starmetal Dust"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["639CE429599CBC46"]
+			description: ["Obtained by killing the Ender Guardian in the Ruined Citadel of the End"]
+			id: "61D4EA2C30CD1CBC"
+			rewards: [
+				{
+					id: "23EA688E407DB699"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5466DFC7EDA7FA31"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Ender Star"
+			tasks: [{
+				id: "7EE4951EBD6C779A"
+				item: "kubejs:ender_star"
+				type: "item"
+			}]
+			title: "Ender Star"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			description: ["Found in End loot chests"]
+			id: "639CE429599CBC46"
+			rewards: [
+				{
+					id: "20C9EBB0CC428E6D"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C9D5CB9210C4453"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Eye of Void"
+			tasks: [{
+				id: "528CAC7F48E2C234"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			title: "Eye of Void"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			id: "4567CA10CF091158"
+			rewards: [
+				{
+					id: "7B7EBCA31B7B4A36"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A13B15FABC33475"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Laser Drill to power your Ore Laser Base"
+			tasks: [{
+				id: "68971C19AE10124D"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
+			title: "Laser Drill"
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			id: "187B1F743B3323DF"
+			rewards: [
+				{
+					id: "5FF4C1E5252DF9B1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FE1376BE1315013"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft an Ore Laser Base to automatically mine ores"
+			tasks: [{
+				id: "4B22FF186C370495"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			title: "Ore Laser Base"
+			x: -6.0d
+			y: -3.5d
+		}
+	]
+	title: "Abiding Alloy"
+}

@@ -7,7 +7,7 @@
 		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
 		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
 		{ count: 2, item: "fluxnetworks:flux_core", random_bonus: 2 }
-		{ count: 4, item: "rftoolsbase:dimensionalshard", random_bonus: 2 }
+		{ count: 4, item: "kubejs:dimensional_shard", random_bonus: 2 }
 		{ item: "pipez:ultimate_upgrade", random_bonus: 2 }
 		{ item: "thermal:upgrade_augment_3" }
 		{ item: "mekanism:ingot_refined_obsidian", random_bonus: 3 }
@@ -30,6 +30,7 @@
 				}
 			}
 		}
+		{ item: "allthemodium:allthemodium_ingot", random_bonus: 4 }
 		{ item: "allthemodium:vibranium_ingot", random_bonus: 4 }
 		{ item: "allthemodium:unobtainium_ingot", random_bonus: 2 }
 		{ item: "kubejs:adamantite_ingot", random_bonus: 2 }
@@ -39,6 +40,11 @@
 		{ item: "mekanism:quantum_entangloporter" }
 		{ item: "apotheosis:sigil_of_socketing" }
 		{ count: 2, item: "apotheosis:epic_material", random_bonus: 4 }
+		{ count: 2, item: "apotheosis:mythic_material", random_bonus: 4 }
+		{ item: "kubejs:dark_matter", random_bonus: 2 }
+		{ item: "irons_spellbooks:epic_ink", random_bonus: 2 }
+		{ item: "irons_spellbooks:legendary_ink", random_bonus: 2 }
+		{ item: "irons_spellbooks:ancient_knowledge_fragment", random_bonus: 1 }
 		{
 			item: {
 				Count: 1b

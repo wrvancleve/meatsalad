@@ -1,0 +1,27 @@
+{
+  "replace": true,
+  "values": [
+    "alltheores:deepslate_aluminum_ore",
+    "alltheores:deepslate_lead_ore",
+    "alltheores:deepslate_osmium_ore",
+    "alltheores:deepslate_nickel_ore",
+    "alltheores:deepslate_platinum_ore",
+    "alltheores:deepslate_silver_ore",
+    "alltheores:deepslate_tin_ore",
+    "alltheores:deepslate_uranium_ore",
+    "alltheores:deepslate_zinc_ore",
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_diamond_ore",
+    "mekanism:deepslate_fluorite_ore",
+    "silentgear:deepslate_bort_ore",
+    "thermal:deepslate_cinnabar_ore",
+    "thermal:deepslate_niter_ore",
+    "thermal:deepslate_sulfur_ore"
+  ]
+}

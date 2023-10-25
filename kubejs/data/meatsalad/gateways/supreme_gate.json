@@ -75,7 +75,7 @@
           "value": 0.10
         }
       ],
-      "max_wave_time": 750,
+      "max_wave_time": 1000,
       "setup_time": 150
     },
     {
@@ -133,6 +133,12 @@
         },
         {
           "entity": "minecraft:blaze"
+        },
+        {
+          "entity": "irons_spellbooks:citadel_keeper"
+        },
+        {
+          "entity": "irons_spellbooks:citadel_keeper"
         }
       ],
       "modifiers": [
@@ -162,7 +168,7 @@
           "value": 0.15
         }
       ],
-      "max_wave_time": 750,
+      "max_wave_time": 1000,
       "setup_time": 150
     },
     {
@@ -213,13 +219,16 @@
           "entity": "cataclysm:ignited_revenant"
         },
         {
-          "entity": "cataclysm:nameless_sorcerer"
+          "entity": "cataclysm:the_watcher"
+        },
+        {
+          "entity": "cataclysm:the_watcher"
         },
         {
           "entity": "cataclysm:nameless_sorcerer"
         },
         {
-          "entity": "alexsmobs:farseer"
+          "entity": "cataclysm:nameless_sorcerer"
         },
         {
           "entity": "alexsmobs:farseer"
@@ -229,6 +238,21 @@
         },
         {
           "entity": "alexsmobs:farseer"
+        },
+        {
+          "entity": "alexsmobs:farseer"
+        },
+        {
+          "entity": "irons_spellbooks:archevoker"
+        },
+        {
+          "entity": "irons_spellbooks:cryomancer"
+        },
+        {
+          "entity": "irons_spellbooks:necromancer"
+        },
+        {
+          "entity": "irons_spellbooks:pyromancer"
         }
       ],
       "modifiers": [
@@ -258,7 +282,7 @@
           "value": 0.20
         }
       ],
-      "max_wave_time": 1000,
+      "max_wave_time": 1200,
       "setup_time": 150
     }
   ],
@@ -267,7 +291,7 @@
       "type": "loot_table",
       "loot_table": "meatsalad:supreme_gate",
       "rolls": 1,
-      "desc": "Supreme Loot"
+      "desc": "§kSupreme Loot§r"
     }
   ],
   "completion_xp": 1250,

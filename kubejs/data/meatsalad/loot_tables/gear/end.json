@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/diamond/random",
+          "weight": 60,
+          "quality": 2.5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/netherite/random",
+          "weight": 15,
+          "quality": 3.5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/other/random",
+          "weight": 20,
+          "quality": 1.0
+        }
+      ]
+    }
+  ]
+}

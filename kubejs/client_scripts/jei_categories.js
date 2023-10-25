@@ -1,5 +1,7 @@
 JEIEvents.removeCategories(event => {
   event.remove('alexsmobs:capsid');
+  event.remove('apotheosis:gem_cutting');
+  event.remove('irons_spellbooks:alchemist_cauldron');
   event.remove('industrialforegoing:furnace');
   event.remove('industrialforegoing:potion');
   event.remove('industrialforegoing:culinary');

@@ -67,6 +67,7 @@
 		{ item: "ae2:flawless_budding_quartz" }
 		{ item: "waystones:waystone" }
 		{ count: 2, item: "apotheosis:rare_material", random_bonus: 4 }
+		{ item: "irons_spellbooks:rare_ink", random_bonus: 2 }
 	]
 	title: "&9Rare Reward"
 	use_title: true

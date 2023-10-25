@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/common",
+          "weight": 600,
+          "quality": 0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/uncommon",
+          "weight": 250,
+          "quality": 1.5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/rare",
+          "weight": 100,
+          "quality": 2.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/very_rare",
+          "weight": 50,
+          "quality": 2.5
+        }
+      ]
+    }
+  ]
+}

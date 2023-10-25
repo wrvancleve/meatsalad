@@ -1,0 +1,53 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "gem"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:gems/peridot"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.peridot"
+  },
+  "stats": {
+    "adornment": {}
+  },
+  "traits": {
+    "adornment": [
+      {
+        "name": "meatsalad:hearty",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "adornment/all": [
+      {
+        "texture": "silentgear:adornment_generic",
+        "color": "#FF29DB18"
+      },
+      {
+        "texture": "silentgear:adornment_highlight",
+        "color": "#FF29DB18"
+      }
+    ],
+    "adornment/part": [
+      {
+        "texture": "silentgear:adornment",
+        "color": "#FF29DB18"
+      },
+      {
+        "texture": "silentgear:adornment_highlight"
+      }
+    ]
+  }
+}

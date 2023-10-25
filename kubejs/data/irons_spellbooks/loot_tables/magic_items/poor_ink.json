@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 39,
+          "name": "irons_spellbooks:common_ink",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "irons_spellbooks:irons_spellbooks/spell_book_iron": true,
+                    "irons_spellbooks:irons_spellbooks/spell_book_blaze": false,
+                    "irons_spellbooks:irons_spellbooks/spell_book_diamond": false,
+                    "irons_spellbooks:irons_spellbooks/spell_book_druidic": false,
+                    "irons_spellbooks:irons_spellbooks/spell_book_villager": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "irons_spellbooks:uncommon_ink",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "irons_spellbooks:irons_spellbooks/spell_book_iron": true,
+                    "irons_spellbooks:irons_spellbooks/spell_book_dragon": false,
+                    "irons_spellbooks:irons_spellbooks/spell_book_netherite": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "irons_spellbooks:rare_ink",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "irons_spellbooks:irons_spellbooks/spell_book_gold": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 0,
+          "name": "irons_spellbooks:epic_ink"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 0,
+          "name": "irons_spellbooks:legendary_ink"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}

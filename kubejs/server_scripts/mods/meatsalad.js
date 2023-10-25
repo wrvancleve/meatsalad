@@ -1,64 +1,4 @@
 ServerEvents.recipes(event => {
-  /*
-  let awakening = (material) => {
-    event.custom({
-      type: 'summoningrituals:altar',
-      catalyst: { item: 'alexsmobs:mimicream' },
-      outputs: [
-        { item: `kubejs:awakened_${material}_ingot`, count: 1 }
-      ],
-      inputs: [
-        { ingredient: { tag: `forge:ingots/${material}` }, count: 2 },
-        { tag: "forge:ingots/uru" },
-        { tag: "forge:ingots/iridium" },
-        { tag: "forge:ingots/neutronium" },
-        { tag: "forge:ingots/starmetal" },
-        { tag: "forge:ingots/refined_obsidian" }
-      ],
-      recipe_time: 200,
-      block_below: { block: 'extendedcrafting:nether_star_block' }
-    }).id(`meatsalad:summoning/awakened_${material}_ingot`);
-  }
-  let awakening = (material) => {
-    event.custom({
-      type: 'industrialforegoing:dissolution_chamber',
-      input: [
-        Ingredient.of('#forge:ingots/refined_obsidian'),
-        Ingredient.of(`#forge:ingots/${material}`),
-        Ingredient.of('#forge:ingots/refined_glowstone'),
-        Ingredient.of('#forge:ingots/uranium'),
-        Ingredient.of('#forge:ingots/iridium'),
-        Ingredient.of('#forge:ingots/starmetal'),
-        Ingredient.of(`#forge:ingots/${material}`),
-        Ingredient.of('#forge:ingots/tyrian_steel')
-      ],
-      inputFluid: '{FluidName:"kubejs:antimatter",Amount:50}',
-      processingTime: 400,
-      output: {
-        item: `kubejs:awakened_${material}_ingot`,
-        count: 1
-      }
-    }).id(`meatsalad:dissolution_chamber/awakened_${material}_ingot`);
-  }
-  */
-  let awakening = (material) => {
-    event.custom({
-      type: 'powah:energizing',
-      ingredients: [
-        {tag: `forge:ingots/${material}`},
-        {tag: `forge:ingots/${material}`},
-        {tag: 'forge:ingots/neutronium'},
-        {tag: 'forge:ingots/iridium'},
-        {tag: 'forge:ingots/tyrian_steel'},
-        {tag: 'forge:ingots/starmetal'},
-      ],
-      energy: 20000000,
-      result: {
-        item: `kubejs:awakened_${material}_ingot`
-      }
-    }).id(`meatsalad:energizing/awakened_${material}_ingot`);
-  }
-
   let processing = (material) => {
     event.custom({
       type: 'mekanism:purifying',
@@ -351,6 +291,7 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:rotary/antimatter')
   */
 
+  /*
   event.custom({
     type: 'ae2:transform',
     circumstance: { type: 'explosion' },
@@ -360,6 +301,7 @@ ServerEvents.recipes(event => {
     ],
     result: Item.of('ae2:quantum_entangled_singularity').withCount(2)
   }).id('meatsalad:transform/entangled_singularity')
+  */
 
   /*
   event.custom({
@@ -385,6 +327,38 @@ ServerEvents.recipes(event => {
     energy: 32000
   }).id('meatsalad:smelter/dragonsteel_ingot');
   */
+
+  event.shaped('4x kubejs:dimensional_shard', [
+    'deg',
+    'irX',
+    'qCc'
+  ], {
+    d: '#forge:gems/diamond',
+    e: '#forge:gems/emerald',
+    g: '#forge:ingots/gold',
+    i: '#forge:ingots/iron',
+    r: 'minecraft:redstone',
+    X: 'minecraft:glowstone_dust',
+    q: '#forge:gems/quartz',
+    C: 'minecraft:prismarine_shard',
+    c: '#forge:gems/certus_quartz',
+  }).id('meatsalad:dimensional_shard');
+
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      {tag: 'forge:ingots/tyrian_steel'},
+      {tag: 'forge:ingots/refined_obsidian'},
+      {tag: 'forge:ingots/starmetal'},
+      {tag: 'forge:ingots/refined_glowstone'},
+      {tag: 'forge:ingots/iridium'},
+      {tag: 'forge:ingots/neutronium'}
+    ],
+    energy: 20000000,
+    result: {
+      item: 'kubejs:abiding_alloy_ingot'
+    }
+  }).id('meatsalad:energizing/abiding_alloy_ingot');
 
   event.custom({
     type: 'thermal:crystallizer',
@@ -417,21 +391,6 @@ ServerEvents.recipes(event => {
     output: Item.of('kubejs:uu_matter')
   }).id('meatsalad:nucleosynthesizing/uu_matter')
 
-  /*
-  event.custom({
-    type: 'mekanism:nucleosynthesizing',
-    duration: 1250,
-    gasInput: {
-      amount: 5,
-      gas: 'mekanism:antimatter'
-    },
-    itemInput: {
-      ingredient: Ingredient.of('#forge:ingots/tyrian_steel')
-    },
-    output: Item.of('kubejs:uru_ingot')
-  }).id('meatsalad:nucleosynthesizing/uru_ingot')
-  */
-
   event.custom({
     type: 'mekanism:nucleosynthesizing',
     duration: 1250,
@@ -445,33 +404,26 @@ ServerEvents.recipes(event => {
     output: Item.of('kubejs:neutronium_ingot')
   }).id('meatsalad:nucleosynthesizing/neutronium_ingot')
 
-  awakening('adamantite');
-  awakening('palladium');
-  awakening('mythril');
-  awakening('unobtainium');
-  awakening('vibranium');
-
   /*
-    'SDAVXUMDS',
-    'SDAVGUMDS',
-    'SDAVXUMDS',
-  
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
-      'SAVXUMS',
-      'DAVGUMD',
-      'DAVGUMD',
-      'SAVXUMS',
+      'pamtdtmap',
+      'uvcrArcvu',
+      'uvcrArcvu',
+      'pamtdtmap',
     ],
     key: {
-      S: {tag: 'forge:ingots/starmetal'},
-      A: {tag: 'forge:ingots/adamantite'},
-      V: {tag: 'forge:ingots/vibranium'},
-      X: {item: 'kubejs:draconic_infused_dark_matter'},
-      U: {tag: 'forge:ingots/unobtainium'},
-      M: {tag: 'forge:ingots/mythril'},
-      G: {item: 'alexsmobs:mimicream'}
+      p: {tag: 'forge:ingots/palladium'},
+      a: {tag: 'forge:ingots/adamantite'},
+      m: {tag: 'forge:ingots/mythril'},
+      t: {tag: 'forge:ingots/titanium'},
+      d: {item: 'kubejs:infused_diamond'},
+      u: {tag: 'forge:ingots/unobtainium'},
+      v: {tag: 'forge:ingots/vibranium'},
+      c: {tag: 'forge:ingots/cobalt'},
+      r: {tag: 'forge:ingots/uru'},
+      A: {tag: 'forge:ingots/abiding_alloy'}
     },
     result: {
       item: 'kubejs:ultima_ingot',
@@ -479,46 +431,6 @@ ServerEvents.recipes(event => {
     }
   }).id('meatsalad:ultima_ingot')
   */
- /*
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'kubejs:uu_matter' },
-    outputs: [
-      { item: "kubejs:ultima_ingot", count: 1 }
-    ],
-    inputs: [
-      { tag: "forge:ingots/starmetal" },
-      { tag: "forge:ingots/adamantite" },
-      { tag: "forge:ingots/vibranium" },
-      { tag: "forge:ingots/unobtainium" },
-      { tag: "forge:ingots/mythril" },
-      { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'extendedcrafting:nether_star_block' }
-  }).id('meatsalad:summoning/ultima_ingot');
-  */
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'kubejs:uu_matter' },
-    outputs: [
-      { item: "kubejs:ultima_ingot", count: 1 }
-    ],
-    inputs: [
-      { tag: "forge:ingots/awakened_adamantite" },
-      { tag: "forge:ingots/awakened_palladium" },
-      { tag: "forge:ingots/awakened_vibranium" },
-      { tag: "forge:ingots/awakened_unobtainium" },
-      { tag: "forge:ingots/awakened_mythril" },
-      { tag: "forge:ingots/tyrian_steel" },
-      { tag: "forge:ingots/iridium" },
-      { tag: "forge:ingots/neutronium" },
-      { tag: "forge:ingots/starmetal" },
-      { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'extendedcrafting:nether_star_block' }
-  }).id('meatsalad:summoning/ultima_ingot');
 
   event.custom({
     type: 'extendedcrafting:shaped_table',
@@ -530,7 +442,7 @@ ServerEvents.recipes(event => {
       '  d d  '
     ],
     key: {
-      d: {item: 'rftoolsbase:infused_diamond'},
+      d: {item: 'kubejs:infused_diamond'},
       N: {item: 'minecraft:nether_star'},
       M: {item: 'kubejs:draconic_infused_dark_matter'},
       D: {item: 'minecraft:dragon_egg'},
@@ -556,7 +468,7 @@ ServerEvents.recipes(event => {
       '   d   '
     ],
     key: {
-      d: {item: 'rftoolsbase:infused_diamond'},
+      d: {item: 'kubejs:infused_diamond'},
       E: {item: 'kubejs:ender_star'},
       M: {item: 'kubejs:draconic_infused_dark_matter'},
       A: {item: 'cataclysm:abyssal_egg'},
@@ -582,28 +494,27 @@ ServerEvents.recipes(event => {
       ' O     O ',
       ' OO   OO ',
       ' OeO OeeO',
-      ' OSeOeIO ',
-      'OeNFClNO ',
-      ' ONLUMNO ',
-      'OeIECiSeO',
-      ' OOeQeOO ',
+      ' OaeOevO ',
+      'OeDACADO ',
+      ' ODLSMDO ',
+      'OeuACAmeO',
+      ' OOepeOO ',
       '   OOO   '
     ],
     key: {
-      U: {item: 'kubejs:uu_matter'},
+      S: {item: 'kubejs:cosmic_shelling'},
       C: {item: 'kubejs:chaos_shard'},
       L: {item: 'kubejs:lost_illusion'},
       M: {item: 'kubejs:manifest_illusion'},
-      F: {item: 'minecraft:fire_charge'},
-      l: {item: 'thermal:lightning_charge'},
-      E: {item: 'thermal:earth_charge'},
-      i: {item: 'thermal:ice_charge'},
-      Q: {item: 'ae2:quantum_entangled_singularity'},
+      a: {tag: 'forge:storage_blocks/adamantite'},
+      m: {tag: 'forge:storage_blocks/mythril'},
+      v: {tag: 'forge:storage_blocks/vibranium'},
+      u: {tag: 'forge:storage_blocks/unobtainium'},
+      p: {tag: 'forge:storage_blocks/palladium'},
+      A: {tag: 'forge:storage_blocks/abiding_alloy'},
+      D: {item: 'kubejs:draconic_infused_dark_matter'},
       O: {item: 'kubejs:oblivion_shard'},
-      e: {item: 'kubejs:draconic_infused_eternal_crystal'},
-      S: {tag: 'forge:storage_blocks/starmetal'},
-      N: {tag: 'forge:storage_blocks/neutronium'},
-      I: {tag: 'forge:storage_blocks/iridium'}
+      e: {item: 'kubejs:draconic_infused_eternal_crystal'}
     },
     result: {
       item: 'kubejs:infinity_fabric',
@@ -613,17 +524,18 @@ ServerEvents.recipes(event => {
 
   event.shaped('8x kubejs:crystalline_powder', [
     'RDA',
-    'GCG',
+    'aUc',
     'PDS'
   ], {
     R: '#forge:dusts/ruby',
     D: 'kubejs:dimensional_shard_dust',
     A: '#forge:dusts/amethyst',
-    G: 'silentgear:glittery_dust',
-    C: 'silentgear:crushed_shulker_shell',
+    a: '#forge:dusts/apatite',
+    U: 'kubejs:uu_matter',
+    c: '#forge:dusts/cinnabar',
     P: '#forge:dusts/peridot',
-    S: '#forge:dusts/sapphire'
-  }).id('kubejs:crystalline_powder');
+    S: '#forge:dusts/sapphire',
+  }).id('meatsalad:crystalline_powder');
 
   event.shaped('kubejs:oblivion_shard', [
     ' OA',
@@ -633,25 +545,68 @@ ServerEvents.recipes(event => {
     O: 'minecraft:obsidian',
     A: '#forge:storage_blocks/amethyst',
     M: 'quark:myalite_crystal'
-  }).id('kubejs:oblivion_shard');
+  }).id('meatsalad:oblivion_shard');
 
-  event.shaped('16x pipez:infinity_upgrade', ['ABA', 'BCB', 'ADA'], {
+  event.shaped('kubejs:cosmic_shelling', [
+    'FAL',
+    'AUA',
+    'EAI'
+  ], {
+    U: 'kubejs:uu_matter',
+    F: 'minecraft:fire_charge',
+    L: 'thermal:lightning_charge',
+    E: 'thermal:earth_charge',
+    I: 'thermal:ice_charge',
+    A: '#forge:ingots/abiding_alloy'
+  }).id('meatsalad:cosmic_shelling');
+
+  event.shaped('16x pipez:infinity_upgrade', [
+    'ABA',
+    'BCB',
+    'ADA'
+  ], {
     A: 'allthemodium:unobtainium_ingot',
     B: 'minecraft:redstone_block',
     C: 'pipez:ultimate_upgrade',
     D: 'kubejs:infinity_fiber'
   }).id('meatsalad:pipez_infinity_upgrade')
-  event.shaped('thermal:machine_efficiency_creative_augment', ['ABA', 'CDC', 'AEA'], {
+  event.shaped('thermal:machine_efficiency_creative_augment', [
+    'ABA',
+    'CDC',
+    'AEA'
+  ], {
     A: 'allthemodium:unobtainium_ingot',
     B: 'thermal:lightning_charge',
     C: 'thermal:energy_cell',
     D: 'thermal:upgrade_augment_3',
     E: 'kubejs:infinity_fiber'
   }).id('meatsalad:thermal_machine_efficiency_creative_augment')
-  event.shaped('powah:energy_cell_creative', ['UIU', 'CDC', 'UIU'], {
+  event.shaped('powah:energy_cell_creative', [
+    'UIU',
+    'CDC',
+    'UIU'
+  ], {
     U: 'allthemodium:unobtainium_block',
     I: 'kubejs:infinity_fiber',
     C: 'powah:energy_cell_nitro',
     D: 'powah:dielectric_casing'
   }).id('meatsalad:powah_energy_cell_creative')
+  event.shaped('mekanism:creative_fluid_tank', [
+    'ISI',
+    'SUS',
+    'ISI'
+  ], {
+    I: 'kubejs:infinity_fiber',
+    S: '#forge:ingots/iron',
+    U: 'mekanism:ultimate_fluid_tank'
+  }).id('meatsalad:mekanism_creative_fluid_tank')
+  event.shaped('mekanism:creative_chemical_tank', [
+    'ISI',
+    'SUS',
+    'ISI'
+  ], {
+    I: 'kubejs:infinity_fiber',
+    S: '#forge:ingots/osmium',
+    U: 'mekanism:ultimate_chemical_tank'
+  }).id('meatsalad:mekanism_creative_chemical_tank')
 })

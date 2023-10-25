@@ -169,22 +169,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 25.0,
-                "min": 18.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
@@ -412,39 +396,65 @@
       "name": "stage four chest",
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 10.0,
-        "min": 7.0
+        "max": 8.0,
+        "min": 5.0
       }
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 90
-        },
-        {
-          "type": "apotheosis:random_gem",
-		      "weight": 10,
-          "quality": 2
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:overworld/materials"
         }
       ]
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 80
+          "weight": 70
         },
         {
-          "type": "apotheosis:random_affix_item",
-		      "weight": 20,
-          "quality": 2,
-          "min_rarity": "common",
-          "max_rarity": "uncommon"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/random",
+          "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_item/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
         }
       ]
     }

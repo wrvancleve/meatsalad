@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/bow/random",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/crossbow/random",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/shield/random",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/trident/random",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

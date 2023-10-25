@@ -1,0 +1,71 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "silentgear:fine_silk_cloth"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.fine_silk_cloth"
+  },
+  "stats": {
+    "grip": {
+      "repair_efficiency": {
+        "mul1": 0.1
+      },
+      "harvest_speed": {
+        "mul1": 0.15
+      }
+    },
+    "lining": {
+      "magic_armor": {
+        "add": 2.0
+      }
+    }
+  },
+  "traits": {
+    "grip": [
+      {
+        "name": "silentgear:accelerate",
+        "level": 1
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:flexible",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#C3B9A1"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#C3B9A1"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#C3B9A1"
+      }
+    ]
+  }
+}

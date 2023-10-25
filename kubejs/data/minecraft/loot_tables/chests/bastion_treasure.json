@@ -2,46 +2,6 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 2.0,
-        "max": 7.0        
-      },
-      "bonus_rolls": 0.25,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/materials",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/treasure_gear",
-          "weight": 6
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/misc",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.10,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "apotheosis:random_gem",
-		      "weight": 20,
-          "quality": 2
-        }
-      ]
-    },
-    {
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -187,19 +147,78 @@
       }
     },
     {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_nether/materials_treasure"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/random_treasure"
+        }
+      ]
+    },
+    {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:empty",
           "weight": 70
         },
         {
-          "type": "apotheosis:random_affix_item",
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_item/random_treasure",
 		      "weight": 30,
-          "quality": 2,
-          "min_rarity": "uncommon",
-          "max_rarity": "rare"
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_nether/misc_all",
+		      "weight": 20,
+          "quality": 0.5
         }
       ]
     }

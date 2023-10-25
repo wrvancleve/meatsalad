@@ -8,9 +8,13 @@
 		"weight": 1
 	}],
 	"placement": {
-		"type": "minecraft:random_spread",
+		"type": "yungsapi:enhanced_random_spread",
 		"spacing": 50,
 		"separation": 25,
-		"salt": 15192020
+		"salt": 15192020,
+		"enhanced_exclusion_zone": {
+			"other_set": "#apotheosis:tower_sand_avoid",
+			"chunk_count": 7
+		}
 	}
 }

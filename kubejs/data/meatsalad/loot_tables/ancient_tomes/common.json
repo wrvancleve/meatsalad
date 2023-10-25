@@ -1,0 +1,98 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:protection', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:sharpness', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:efficiency', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:power', lvl: 5s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'minecraft:piercing', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'cofh_core:holding', lvl: 4s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'alexsmobs:straddle_jump', lvl: 9s}]}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "quark:ancient_tome",
+            "count": 1,
+            "nbt": "{StoredEnchantments: [{id: 'domesticationinnovation:health_boost', lvl: 4s}]}"
+          }
+        }
+      ]
+    }
+  ]
+}

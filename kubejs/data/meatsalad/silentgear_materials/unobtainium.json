@@ -16,7 +16,7 @@
     }
   },
   "name": {
-    "text": "Unobtainium"
+    "translate": "material.silentgear.unobtainium"
   },
   "stats": {
     "main": {
@@ -24,16 +24,16 @@
       "armor_durability": 87.0,
       "enchantment_value": 30.0,
       "rarity": 110.0,
-      "charging_value": 1.3,
-      "harvest_level": 6.0,
+      "charging_value": 1.5,
+      "harvest_level": 5.0,
       "harvest_speed": 14.0,
-      "melee_damage": 9.0,
-      "magic_damage": 12.0,
+      "melee_damage": 7.0,
+      "magic_damage": 9.0,
       "attack_speed": 0.0,
-      "ranged_damage": 2.0,
-      "ranged_speed": 0.5,
-      "projectile_speed": 1.5,
-      "projectile_accuracy": 2.0,
+      "ranged_damage": 4.0,
+      "ranged_speed": 0.0,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 1.3,
       "armor": 30.0,
       "armor/helmet": 5.0,
       "armor/chestplate": 12.0,
@@ -41,14 +41,6 @@
       "armor/boots": 5.0,
       "armor_toughness": 16.0,
       "magic_armor": 16.0
-    },
-    "tip": {
-      "durability": {
-        "add": 768.0
-      },
-      "harvest_level": {
-        "max": 6.0
-      }
     }
   },
   "traits": {
@@ -83,16 +75,6 @@
           }
         ]
       }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:adamant",
-        "level": 4
-      },
-      {
-        "name": "silentgear:sturdy",
-        "level": 4
-      }
     ]
   },
   "model": {
@@ -109,24 +91,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#A82CE3"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#A82CE3"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#A82CE3"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

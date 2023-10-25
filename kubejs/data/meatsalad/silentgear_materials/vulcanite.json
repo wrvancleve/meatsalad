@@ -1,0 +1,92 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "kubejs:vulcanite"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.vulcanite"
+  },
+  "name_prefix": {
+    "translate": "material.silentgear.vulcanite"
+  },
+  "stats": {
+    "coating": {
+      "durability": {
+        "mul2": 0.15
+      },
+      "armor_durability": {
+        "mul2": 0.0606060625
+      },
+      "harvest_speed": {
+        "mul2": 0.25
+      },
+      "melee_damage": {
+        "mul2": 0.5
+      },
+      "magic_damage": {
+        "mul2": 0.5
+      },
+      "ranged_damage": {
+        "mul2": 0.25
+      },
+      "armor_toughness": {
+        "add": 2.0
+      },
+      "knockback_resistance": {
+        "add": 0.5
+      },
+      "enchantment_value": {
+        "add": 10.0
+      }
+    }
+  },
+  "traits": {
+    "coating": [
+      {
+        "name": "silentgear:brilliant",
+        "level": 1
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "coating/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#ff8f00"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/part": [
+      {
+        "texture": "silentgear:coating_material",
+        "color": "#ff8f00"
+      },
+      {
+        "texture": "silentgear:coating_jar"
+      }
+    ],
+    "coating/armor": [
+      {
+        "texture": "kubejs:vulcanite"
+      }
+    ]
+  }
+}

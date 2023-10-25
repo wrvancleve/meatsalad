@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:desert_pyramid",
+    "betterdeserttemples:desert_temples"
+  ]
+}

@@ -42,11 +42,15 @@ ServerEvents.recipes(event => {
   });
 
   const nuggetsFrom = [
-    //'shellite',
-    'mythril',
+    /*
+    'titanium',
+    'cobalt',
+    'uru',
+    */
     'adamantite',
-    'ultimate',
-    'neutronium'
+    'mythril',
+    'neutronium',
+    //'ultimate'
   ]
   nuggetsFrom.forEach(material => {
     let nugget = AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`);

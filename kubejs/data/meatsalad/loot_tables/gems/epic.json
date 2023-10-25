@@ -1,0 +1,438 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/ballast\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/brawlers\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/breach\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/combatant\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/guardian\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/lightning\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/lunar\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/samurai\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/slipstream\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/solar\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/splendor\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/tyrannical\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:core/warlord\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:overworld/earth\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:overworld/royalty\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_nether/blood_lord\", rarity: \"epic\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:nether/find_fortress": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_nether/inferno\", rarity: \"epic\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:nether/find_fortress": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_end/mageslayer\", rarity: \"epic\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:end/kill_dragon": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"apotheosis:the_end/endersurge\", rarity: \"epic\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:end/kill_dragon": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:blood\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:cast_time\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:cooldown\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:evocation\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:fire\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:holy\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:ice\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:intelligent\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:lightning\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:nature\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:spell_resist\", rarity: \"epic\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 1.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:gem",
+            "count": 1,
+            "nbt": "{gem: \"irons_spellbooks:summoning\", rarity: \"epic\"}"
+          }
+        }
+      ]
+    }
+  ]
+}

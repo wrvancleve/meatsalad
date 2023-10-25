@@ -1,35 +1,4 @@
 ServerEvents.recipes(event => {
-  let gateSummoning = (gateMod, gateName, gateItem) => {
-    event.custom({
-      type: 'summoningrituals:altar',
-      catalyst: { item: 'alexsmobs:mimicream' },
-      outputs: [
-        { item: 'gateways:gate_pearl', count: 1, nbt: `{gateway:"${gateMod}:${gateName}"}` }
-      ],
-      inputs: [
-        { ingredient: { item: 'rftoolsbase:infused_enderpearl' }, count: 1 },
-        { ingredient: { item: gateItem }, count: 4 }
-      ],
-      recipe_time: 200,
-      block_below: { block: 'extendedcrafting:nether_star_block' }
-    }).id(`meatsalad:summoning/${gateName}`);
-  };
-  let largeGateSummoning = (gateMod, gateName, gateItem) => {
-    event.custom({
-      type: 'summoningrituals:altar',
-      catalyst: { item: 'alexsmobs:mimicream' },
-      outputs: [
-        { item: 'gateways:gate_pearl', count: 1, nbt: `{gateway:"${gateMod}:${gateName}"}` }
-      ],
-      inputs: [
-        { ingredient: { item: 'kubejs:draconic_infused_dark_matter' }, count: 1 },
-        { ingredient: { item: gateItem }, count: 8 }
-      ],
-      recipe_time: 200,
-      block_below: { block: 'extendedcrafting:nether_star_block' }
-    }).id(`meatsalad:summoning/${gateName}`);
-  };
-
   const gates = [
     { name: 'blaze_gate', item: 'minecraft:blaze_rod' },
     { name: 'creeper_gate', item: 'minecraft:gunpowder' },
@@ -49,23 +18,33 @@ ServerEvents.recipes(event => {
   ]
   gates.forEach(gate => {
     let gateMod = gate.mod ?? 'gateways';
-    gateSummoning(gateMod, gate.name, gate.item);
-    largeGateSummoning(gateMod, `${gate.name}_large`, gate.item);
-  })
 
-  // Unique Gates
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'kubejs:uu_matter' },
-    outputs: [
-      { item: 'gateways:gate_pearl', count: 1, nbt: '{gateway:"meatsalad:supreme_gate"}' }
-    ],
-    inputs: [
-      { ingredient: { item: "kubejs:draconic_infused_dark_matter" }, count: 1 },
-      { ingredient: { item: "kubejs:draconic_infused_eternal_crystal" }, count: 1 },
-      { ingredient: { item: "kubejs:chaos_shard" }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'extendedcrafting:nether_star_block' }
-  }).id('meatsalad:summoning/supreme_gate');
+    // Create gate
+    event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+      .itemOutput(Item.of('gateways:gate_pearl', 1, { gateway: `${gateMod}:${gate.name}` }))
+      .input('kubejs:infused_ender_pearl')
+      .input(`4x ${gate.item}`)
+      .recipeTime(200)
+      .id(`meatsalad:summoning/${gate.name}`);
+
+    // Upgrade to large gate
+    event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+      .itemOutput(Item.of('gateways:gate_pearl', 1, { gateway: `${gateMod}:${gate.name}_large` }))
+      .input(Item.of('gateways:gate_pearl', 1, { gateway: `${gateMod}:${gate.name}` }).strongNBT())
+      .input('kubejs:draconic_infused_dark_matter')
+      .input(`4x ${gate.item}`)
+      .recipeTime(200)
+      .id(`meatsalad:summoning/${gate.name}_large`);
+
+    // Upgrade to supreme gate
+    event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+      .itemOutput(Item.of('gateways:gate_pearl', 1, { gateway: 'meatsalad:supreme_gate' }))
+      .input(Item.of('gateways:gate_pearl', 1, { gateway: `${gateMod}:${gate.name}_large` }).strongNBT())
+      .input('kubejs:draconic_infused_dark_matter')
+      .input('minecraft:nether_star')
+      .input('kubejs:ender_star')
+      //.input(Ingredient.of('#forge:glass'))
+      .recipeTime(200)
+      .id(`meatsalad:summoning/supreme_gate_from_${gate.name}_large`);
+  })
 })

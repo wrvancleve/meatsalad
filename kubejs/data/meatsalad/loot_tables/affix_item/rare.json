@@ -1,0 +1,74 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "rare",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 40,
+              "treasure": false
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "rare",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "apotheosis:enchanting/hellshelf": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "rare",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 60,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "apotheosis:enchanting/deepshelf": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

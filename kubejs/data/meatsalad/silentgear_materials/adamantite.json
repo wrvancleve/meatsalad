@@ -16,39 +16,31 @@
     }
   },
   "name": {
-    "text": "Adamantite"
+    "translate": "material.silentgear.adamantite"
   },
   "stats": {
     "main": {
-      "durability": 3072.0,
-      "armor_durability": 65.0,
-      "enchantment_value": 32.0,
+      "durability": 3840.0,
+      "armor_durability": 82.0,
+      "enchantment_value": 20.0,
       "rarity": 120.0,
-      "charging_value": 1.4,
-      "harvest_level": 6.0,
+      "charging_value": 1.3,
+      "harvest_level": 5.0,
       "harvest_speed": 16.0,
-      "melee_damage": 12.0,
-      "magic_damage": 9.0,
+      "melee_damage": 10.0,
+      "magic_damage": 8.0,
       "attack_speed": 0.1,
       "ranged_damage": 5.0,
-      "ranged_speed": 0.75,
-      "projectile_speed": 1.75,
-      "projectile_accuracy": 2.5,
-      "armor": 26.0,
+      "ranged_speed": -0.2,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 1.5,
+      "armor": 30.0,
       "armor/helmet": 5.0,
-      "armor/chestplate": 9.0,
-      "armor/leggings": 7.0,
+      "armor/chestplate": 12.0,
+      "armor/leggings": 8.0,
       "armor/boots": 5.0,
-      "armor_toughness": 12.0,
+      "armor_toughness": 16.0,
       "magic_armor": 12.0
-    },
-    "tip": {
-      "melee_damage": {
-        "add": 3.0
-      },
-      "harvest_level": {
-        "max": 6.0
-      }
     }
   },
   "traits": {
@@ -93,20 +85,6 @@
           }
         ]
       }      
-    ],
-    "tip": [
-      {
-        "name": "silentgear:adamant",
-        "level": 3
-      },
-      {
-        "name": "silentgear:malleable",
-        "level": 3
-      },
-      {
-        "name": "silentgear:mighty",
-        "level": 4
-      }
     ]
   },
   "model": {
@@ -123,24 +101,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#EC1321"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#EC1321"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#EC1321"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

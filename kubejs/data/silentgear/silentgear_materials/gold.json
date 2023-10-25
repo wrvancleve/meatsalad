@@ -43,8 +43,14 @@
       "magic_armor": 8.0
     },
     "rod": {
+      "durability": {
+        "mul2": -0.25
+      },
       "harvest_speed": {
-        "add": 3.0
+        "mul2": 0.05
+      },
+      "ranged_speed": {
+        "mul2": 0.05
       }
     },
     "tip": {
@@ -55,7 +61,7 @@
         "add": 1.0
       },
       "harvest_speed": {
-        "add": 6.0
+        "add": 3.0
       },
       "magic_damage": {
         "add": 2.0

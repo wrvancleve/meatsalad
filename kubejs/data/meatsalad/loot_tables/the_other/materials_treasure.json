@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 150,
+          "quality": 1.0,
+          "min": 25,
+          "max": 50,
+          "stack": {
+            "item": "minecraft:gold_ingot",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 100,
+          "quality": 1.5,
+          "min": 25,
+          "max": 50,
+          "stack": {
+            "item": "minecraft:diamond",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 50,
+          "quality": 1.5,
+          "min": 10,
+          "max": 40,
+          "stack": {
+            "item": "minecraft:emerald",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 25,
+          "quality": 1.5,
+          "min": 5,
+          "max": 20,
+          "stack": {
+            "item": "allthemodium:allthemodium_nugget",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10,
+          "quality": 1.5,
+          "min": 4,
+          "max": 14,
+          "stack": {
+            "item": "allthemodium:vibranium_nugget",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

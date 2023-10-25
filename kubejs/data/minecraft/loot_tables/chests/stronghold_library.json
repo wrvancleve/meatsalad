@@ -45,15 +45,8 @@
           "name": "minecraft:compass"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book",
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:enchanted_books/random_treasure",
           "weight": 10
         }
       ],
@@ -65,16 +58,16 @@
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 70
+          "weight": 50
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/ancient_tomes",
-          "weight": 30,
+          "name": "meatsalad:ancient_tomes/random",
+          "weight": 50,
           "quality": 2
         }
       ]

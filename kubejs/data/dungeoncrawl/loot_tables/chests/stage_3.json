@@ -184,22 +184,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 20.0,
-                "min": 15.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
@@ -427,9 +411,25 @@
       "name": "stage three chest",
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 9.0,
-        "min": 6.0
+        "max": 8.0,
+        "min": 5.0
       }
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 75
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/random",
+		      "weight": 25,
+          "quality": 1
+        }
+      ]
     }
   ]
 }

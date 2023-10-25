@@ -1,0 +1,87 @@
+{
+  "type": "irons_spellbooks:append_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/tomb"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/storage"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/library"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/tombstone"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterwitchhuts:chests/hut_0"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "structory:library/high"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "structory:library/low"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "structory:ruin/taiga/illager_treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "idas:chests/wizardtower/wizardtower_top"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "idas:chests/tinkers_workshop/tinkers_workshop_vault"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "allthemodium:chest/hallway_loot"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "allthemodium:chest/library_loot"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betteroceanmonuments:chests/upper_side_chamber"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_elite"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_library"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "tlc:chests/throne"
+        }
+      ]
+    }
+  ],
+  "key": "irons_spellbooks:chests/additional_good_loot"
+}

@@ -44,11 +44,7 @@
       "armor_toughness": 4.0,
       "magic_armor": 6.0
     },
-    "rod": {
-      "harvest_speed": {
-        "mul2": 0.3
-      }
-    },
+    "rod": {},
     "tip": {
       "durability": {
         "add": 512.0
@@ -60,16 +56,16 @@
         "max": 2.0
       },
       "harvest_speed": {
-        "add": 2.0
+        "add": 1.0
       },
       "melee_damage": {
-        "add": 1.0
+        "add": 0.5
       },
       "magic_damage": {
         "add": 2.0
       },
       "ranged_damage": {
-        "add": 1.0
+        "add": 0.5
       },
       "rarity": {
         "add": 20.0

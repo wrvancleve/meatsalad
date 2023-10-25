@@ -12,12 +12,13 @@
       ]
     },
     {
-      "name": "ignis_gem",
-      "rolls": 1,
+      "name": "ignis_treasure",
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:treasure/ancient_gems"
+          "name": "meatsalad:treasure/misc_all"
         }
       ]
     }

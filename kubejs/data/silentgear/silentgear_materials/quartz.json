@@ -19,35 +19,7 @@
     "translate": "material.silentgear.quartz"
   },
   "stats": {
-    "main": {
-      "durability": 330.0,
-      "armor_durability": 13.0,
-      "enchantment_value": 10.0,
-      "rarity": 40.0,
-      "charging_value": 1.2,
-      "harvest_level": 2.0,
-      "harvest_speed": 7.0,
-      "melee_damage": 2.0,
-      "attack_speed": 0.1,
-      "ranged_damage": 0.0,
-      "ranged_speed": 0.1,
-      "projectile_speed": 1.0,
-      "projectile_accuracy": 1.0,
-      "armor": 14.0,
-      "armor/helmet": 3.0,
-      "armor/chestplate": 5.0,
-      "armor/leggings": 4.0,
-      "armor/boots": 2.0,
-      "magic_armor": 4.0
-    },
-    "rod": {
-      "harvest_speed": {
-        "mul2": 0.2
-      },
-      "melee_damage": {
-        "mul2": 0.1
-      }
-    },
+    "rod": {},
     "tip": {
       "durability": {
         "add": 64.0
@@ -59,13 +31,13 @@
         "max": 2.0
       },
       "harvest_speed": {
-        "add": 2.0
+        "add": 1.0
       },
       "melee_damage": {
-        "add": 4.0
+        "add": 1.5
       },
       "ranged_damage": {
-        "add": 1.5
+        "add": 0.25
       },
       "rarity": {
         "add": 20.0
@@ -74,16 +46,6 @@
     "adornment": {}
   },
   "traits": {
-    "main": [
-      {
-        "name": "silentgear:crushing",
-        "level": 3
-      },
-      {
-        "name": "silentgear:jagged",
-        "level": 2
-      }
-    ],
     "rod": [
       {
         "name": "silentgear:brittle",
@@ -114,21 +76,6 @@
     ]
   },
   "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#D4CABA"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#D4CABA"
-      }
-    ],
     "rod/all": [
       {
         "texture": "silentgear:rod_generic_lc",

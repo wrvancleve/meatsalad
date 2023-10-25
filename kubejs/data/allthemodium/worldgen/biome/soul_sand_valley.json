@@ -80,6 +80,30 @@
         "weight": 10,
         "minCount": 1,
         "maxCount": 2
+      },
+      {
+        "type": "irons_spellbooks:archevoker",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "irons_spellbooks:cryomancer",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "irons_spellbooks:necromancer",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "irons_spellbooks:pyromancer",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "creature": [

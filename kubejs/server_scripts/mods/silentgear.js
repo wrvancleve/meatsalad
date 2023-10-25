@@ -1,13 +1,75 @@
 ServerEvents.recipes(event => {
+  let removeRecipes = (ids) => {
+    ids.forEach(id => {
+      event.remove({ id: id });
+    })
+  }
+
   event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
-  event.remove({ id: 'silentgear:azure_electrum_ingot' })
-  event.remove({ id: 'silentgear:blaze_gold_ingot' })
-  event.remove({ id: 'silentgear:crimson_steel_ingot' })
-  event.remove({ id: 'silentgear:crushed_shulker_shell' })
-  event.remove({ id: 'silentgear:metal_alloyer' })
-  event.remove({ id: 'silentgear:metal_press' })
-  event.remove({ id: 'silentgear:recrystallizer' })
-  event.remove({ id: 'silentgear:refabricator' })
+  removeRecipes([
+    'silentgear:azure_electrum_ingot',
+    'silentgear:blaze_gold_ingot',
+    'silentgear:crimson_steel_ingot',
+    'silentgear:crushed_shulker_shell',
+    'silentgear:metal_alloyer',
+    'silentgear:metal_press',
+    'silentgear:recrystallizer',
+    'silentgear:refabricator',
+    'silentgear:claymore_template',
+    'silentgear:claymore_blueprint',
+    'silentgear:greatsword_template',
+    'silentgear:greatsword_blueprint',
+    'silentgear:scimitar_template',
+    'silentgear:scimitar_blueprint',
+
+    'silentgear:tip_template',
+    'silentgear:coating_template',
+    'silentgear:grip_template',
+    'silentgear:binding_template',
+    'silentgear:lining_template',
+    'silentgear:katana_template',
+    'silentgear:machete_template',
+    'silentgear:spear_template',
+    'silentgear:trident_template',
+    'silentgear:knife_template',
+    'silentgear:dagger_template',
+    'silentgear:paxel_template',
+    'silentgear:hammer_template',
+    'silentgear:excavator_template',
+    'silentgear:saw_template',
+    'silentgear:mattock_template',
+    'silentgear:prospector_hammer_template',
+    'silentgear:sickle_template',
+    'silentgear:slingshot_template',
+    'silentgear:elytra_template',
+    'silentgear:ring_template',
+    'silentgear:bracelet_template',
+
+    'silentgear:tip_blueprint',
+    'silentgear:coating_blueprint',
+    'silentgear:grip_blueprint',
+    'silentgear:binding_blueprint',
+    'silentgear:lining_blueprint',
+    'silentgear:katana_blueprint',
+    'silentgear:machete_blueprint',
+    'silentgear:spear_blueprint',
+    'silentgear:trident_blueprint',
+    'silentgear:knife_blueprint',
+    'silentgear:dagger_blueprint',
+    'silentgear:paxel_blueprint',
+    'silentgear:hammer_blueprint',
+    'silentgear:excavator_blueprint',
+    'silentgear:saw_blueprint',
+    'silentgear:mattock_blueprint',
+    'silentgear:prospector_hammer_blueprint',
+    'silentgear:sickle_blueprint',
+    'silentgear:slingshot_blueprint',
+    'silentgear:elytra_blueprint',
+    'silentgear:ring_blueprint',
+    'silentgear:bracelet_blueprint',
+    'silentgear:blueprint_paper',
+  ])
+  
 
   event.custom({
     type: 'thermal:smelter',

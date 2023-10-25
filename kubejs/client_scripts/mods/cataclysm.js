@@ -24,6 +24,9 @@ ItemEvents.tooltip(event => {
   event.add('cataclysm:mech_eye', [
     Text.of('Locates the Harbinger Boss Fight in the Overworld').gold()
   ]);
+  event.add('cataclysm:desert_eye', [
+    Text.of('Locates the Ancient Remnant Boss Fight in the Overworld').gold()
+  ]);
   event.add('cataclysm:flame_eye', [
     Text.of('Locates the Ignis Boss Fight in the Nether').gold()
   ]);

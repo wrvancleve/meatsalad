@@ -87,32 +87,6 @@
               "add": false,
               "count": 1.0,
               "function": "minecraft:set_count"
-            },
-            {
-              "add": false,
-              "damage": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.8
-              },
-              "function": "minecraft:set_damage"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:diamond_hoe",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:lead",
@@ -150,18 +124,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_cat",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:diamond_leggings",
           "weight": 2
         },
         {
@@ -274,16 +236,9 @@
           "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:iron_leggings",
-          "weight": 3
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/diamond/random_treasure",
+		      "weight": 7
         },
         {
           "type": "minecraft:item",
@@ -338,16 +293,9 @@
           "weight": 5
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:enchanted_books/random_treasure",
+		      "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -421,23 +369,40 @@
       }
     },
     {
-      "name": "gem",
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 70
         },
         {
-          "type": "apotheosis:random_gem",
-		      "weight": 15,
-          "quality": 2
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_item/random_treasure",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
         }
       ]
     },
     {
       "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "item",
@@ -455,22 +420,18 @@
           "weight": 70
         }
       ],
-      "bonus_rolls": 0.0
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.10,
-      "entries": [
+      "conditions": [
         {
-          "type": "minecraft:empty",
-          "weight": 75
-        },
-        {
-          "type": "apotheosis:random_affix_item",
-		      "weight": 25,
-          "quality": 2,
-          "min_rarity": "uncommon",
-          "max_rarity": "rare"
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "endrem:main/old_eye": false
+              }
+            }
+          }
         }
       ]
     }

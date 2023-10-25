@@ -8,6 +8,7 @@ JEIEvents.hideItems(event => {
     Item.of('minecraft:enchanted_book').enchant('apotheosis:life_mending', 1),
     Item.of('minecraft:enchanted_book').enchant('apotheosis:life_mending', 2),
     Item.of('minecraft:enchanted_book').enchant('apotheosis:life_mending', 3),
-    'apotheosis:ender_lead'
+    'apotheosis:ender_lead',
+    'apotheosis:gem_cutting_table'
   ])
 })

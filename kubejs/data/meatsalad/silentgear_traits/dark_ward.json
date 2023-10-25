@@ -1,0 +1,19 @@
+{
+  "type": "silentgear:cancel_effects",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
+  "name": {
+    "text": "Dark Ward"
+  },
+  "description": {
+    "text": "Prevents Darkness effect"
+  },
+  "effects": [
+    "minecraft:darkness"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/misc_common",
+          "weight": 250,
+          "quality": 1.5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/misc_rare",
+          "weight": 100,
+          "quality": 2.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/misc_epic",
+          "weight": 50,
+          "quality": 2.5
+        }
+      ]
+    }
+  ]
+}
