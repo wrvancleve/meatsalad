@@ -7,6 +7,7 @@
         "max": 10.0,
         "type": "minecraft:uniform"
       },
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:item",
@@ -47,46 +48,19 @@
           "name": "minecraft:compass"
         },
         {
-          "type": "minecraft:item",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 10,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 20,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:enchanted_books/random",
+		      "weight": 9
         }
       ]
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:empty",
@@ -94,9 +68,9 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/ancient_tomes",
+          "name": "meatsalad:ancient_tomes/random",
           "weight": 30,
-          "quality": 2
+          "quality": 1
         }
       ]
     }

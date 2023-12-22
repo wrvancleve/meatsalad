@@ -36,35 +36,6 @@
       },
       {
         "target": {
-          "predicate_type": "minecraft:random_block_match",
-          "block": "minecraft:end_stone",
-          "probability": 0.1
-        },
-        "state": {
-          "Name": "alltheores:raw_uranium_block"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "allthemodium:ancient_stone",
-          "probability": 0.2
-        },
-        "state": {
-          "Name": "alltheores:raw_uranium_block"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "allthemodium:ancient_stone"
-        },
-        "state": {
-          "Name": "alltheores:other_uranium_ore"
-        }
-      },
-      {
-        "target": {
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:stone_ore_replaceables"
         },
@@ -88,15 +59,6 @@
         },
         "state": {
           "Name": "alltheores:nether_uranium_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:block_match",
-          "block": "minecraft:end_stone"
-        },
-        "state": {
-          "Name": "alltheores:end_uranium_ore"
         }
       }
     ]

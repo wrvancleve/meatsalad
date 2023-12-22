@@ -6,9 +6,10 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 6,
+          "weight": 150,
+          "quality": 1.0,
           "min": 2,
-          "max": 10,
+          "max": 7,
           "stack": {
             "item": "minecraft:gold_ingot",
             "count": 1
@@ -16,21 +17,23 @@
         },
         {
           "type": "placebo:stack_entry",
-          "weight": 2,
-          "min": 2,
-          "max": 7,
+          "weight": 100,
+          "quality": 1.0,
+          "min": 4,
+          "max": 14,
           "stack": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:quartz",
             "count": 1
           }
         },
         {
           "type": "placebo:stack_entry",
-          "weight": 1,
+          "weight": 50,
+          "quality": 2.5,
           "min": 2,
-          "max": 6,
+          "max": 7,
           "stack": {
-            "item": "minecraft:emerald",
+            "item": "minecraft:diamond",
             "count": 1
           }
         }

@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:treasure/misc_common",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/ancient",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/netherite/level_100_treasure",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/random_reversed",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

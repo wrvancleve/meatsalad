@@ -1,0 +1,126 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 5,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/vibranium"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.vibranium"
+  },
+  "stats": {
+    "main": {
+      "durability": 2560.0,
+      "armor_durability": 53.0,
+      "enchantment_value": 40.0,
+      "rarity": 100.0,
+      "charging_value": 1.5,
+      "harvest_level": 5.0,
+      "harvest_speed": 15.0,
+      "melee_damage": 8.0,
+      "magic_damage": 9.0,
+      "attack_speed": 0.2,
+      "ranged_damage": 3.0,
+      "ranged_speed": 1.0,
+      "projectile_speed": 2.0,
+      "projectile_accuracy": 4.0,
+      "armor": 24.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 9.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 4.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 14.0
+    },
+    "tip": {
+      "harvest_speed": {
+        "add": 6.0
+      },
+      "melee_damage": {
+        "add": 2.0
+      },
+      "harvest_level": {
+        "max": 5.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:sharp",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+      {
+        "name": "silentgear:sharp",
+        "level": 5
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#26DE88"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#26DE88"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#26DE88"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#26DE88"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }
+}

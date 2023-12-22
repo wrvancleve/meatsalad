@@ -61,3 +61,9 @@
 	visible = false
 	override = true
 
+[[curiosSettings]]
+	identifier = "hands"
+	size = 0
+	visible = false
+	override = true
+

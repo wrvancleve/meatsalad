@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "ctov:villages",
+    "ctov:pillager_outposts",
+    "minecraft:villages",
+    "minecraft:pillager_outposts"
+  ]
+}

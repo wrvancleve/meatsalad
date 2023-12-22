@@ -12,25 +12,18 @@ ServerEvents.recipes(event => {
   fullRemove('cataclysm:witherite_ingot');
   fullRemove('cataclysm:mechanical_fusion_anvil');
   event.remove({ id: 'cataclysm:abyss_eye' });
+  event.remove({ id: 'cataclysm:desert_eye' });
   event.remove({ id: 'cataclysm:flame_eye' });
   event.remove({ id: 'cataclysm:mech_eye' });
   event.remove({ id: 'cataclysm:monstrous_eye' });
   event.remove({ id: 'cataclysm:void_eye' });
+  event.remove({ id: 'cataclysm:desert_eye' });
   event.remove({ id: 'cataclysm:abyssal_sacrifice' });
 
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'alexsmobs:mimicream' },
-    outputs: [
-      {
-        mob: 'cataclysm:ender_guardian',
-        //"data": "{Attributes:[{Base:50.0d,Name:\"generic.max_health\"}],Health:50.0d}",
-      }
-    ],
-    inputs: [
-      { ingredient: { item: 'cataclysm:void_eye' }, count: 1 }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'cataclysm:void_stone' }
-  }).id('meatsalad:summoning/ender_guardian');
+  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+    .mobOutput('cataclysm:ender_guardian')
+    .input('cataclysm:void_eye')
+    .recipeTime(200)
+    .blockBelow('cataclysm:void_stone')
+    .id(`meatsalad:summoning/ender_guardian`);
 })

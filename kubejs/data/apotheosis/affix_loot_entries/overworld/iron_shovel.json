@@ -1,6 +1,6 @@
 {
-  "weight": 85,
-  "quality": 4.0,
+  "weight": 100,
+  "quality": 1.0,
   "stack": {
     "item": "minecraft:iron_shovel",
     "count": 1,

@@ -17,8 +17,37 @@
       },
       "blacklist": {},
       "depth_min": 160,
-      "depth_max": 376,
+      "depth_max": 255,
+      "weight": 8
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "nullscape:crystal_peaks"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 8,
+      "depth_max": 159,
       "weight": 6
+    },
+    {
+      "whitelist": {
+        "type": "minecraft:worldgen/biome",
+        "values": [
+          "minecraft:small_end_islands",
+          "minecraft:end_barrens",
+          "minecraft:end_highlands",
+          "minecraft:end_midlands",
+          "nullscape:void_barrens",
+          "nullscape:shadowlands"
+        ]
+      },
+      "blacklist": {},
+      "depth_min": 8,
+      "depth_max": 255,
+      "weight": 3
     }
   ]
 }

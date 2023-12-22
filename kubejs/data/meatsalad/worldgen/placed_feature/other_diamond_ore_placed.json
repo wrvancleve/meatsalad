@@ -2,7 +2,7 @@
   "feature": "meatsalad:other_diamond_ore",
   "placement": [
     {
-      "count": 14,
+      "count": 10,
       "type": "minecraft:count"
     },
     {

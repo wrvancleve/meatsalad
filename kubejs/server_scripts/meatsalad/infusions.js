@@ -36,12 +36,12 @@ ServerEvents.recipes(event => {
 
   event.custom({
     type: 'mekanism:infusion_conversion',
-    input: { ingredient: [{ item: 'rftoolsbase:dimensionalshard' }] },
+    input: { ingredient: [{ item: 'kubejs:dimensional_shard' }] },
     output: { amount: 10, infuse_type: 'kubejs:dimensional_shard' }
   }).id('meatsalad:infusion_conversion/dimensional_shard/from_shard')
 
-  infusion('#forge:gems/diamond', 'rftoolsbase', 'infused_diamond');
-  infusion('minecraft:ender_pearl', 'rftoolsbase', 'infused_enderpearl');
+  infusion('#forge:gems/diamond', 'kubejs', 'infused_diamond');
+  infusion('minecraft:ender_pearl', 'kubejs', 'infused_ender_pearl');
   infusion('kubejs:dark_matter', 'kubejs', 'infused_dark_matter')
   infusion('kubejs:eternal_crystal', 'kubejs', 'infused_eternal_crystal')
   draconicInfusion('kubejs', 'infused_dark_matter')

@@ -22,19 +22,8 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:crossbow"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/crossbow/random"
         },
         {
           "type": "minecraft:item",
@@ -123,119 +112,13 @@
           "name": "minecraft:iron_ingot"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:golden_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:golden_chestplate"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:golden_helmet"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:golden_leggings"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:golden_boots"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20.0,
-                "max": 30.0
-              },
-              "treasure": false
-            }
-          ],
-          "name": "minecraft:golden_axe"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/gold/random",
+          "weight": 6
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/uniques"
+          "name": "meatsalad:the_nether/artifacts"
         }
       ],
       "rolls": {
@@ -328,6 +211,38 @@
         "max": 4.0,
         "min": 2.0
       }
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_item/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
     }
   ]
 }

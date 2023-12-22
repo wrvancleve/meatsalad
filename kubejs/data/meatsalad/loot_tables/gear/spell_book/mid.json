@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "quality": 0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:gold_spell_book",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

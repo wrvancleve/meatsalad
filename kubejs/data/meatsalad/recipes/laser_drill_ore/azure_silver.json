@@ -7,7 +7,7 @@
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:raw_materials/azure_silver"
+            "tag": "forge:ores/azure_silver"
           }
         }
       ],
@@ -17,7 +17,7 @@
           "item": "industrialforegoing:laser_lens10"
         },
         "output": {
-          "tag": "forge:raw_materials/azure_silver"
+          "tag": "forge:ores/azure_silver"
         },
         "pointer": 0,
         "rarity": [
@@ -37,20 +37,8 @@
             },
             "blacklist": {},
             "depth_min": 8,
-            "depth_max": 376,
-            "weight": 3
-          },
-          {
-            "whitelist": {
-              "type": "minecraft:worldgen/biome",
-              "values": [
-                "allthemodium:mining"
-              ]
-            },
-            "blacklist": {},
-            "depth_min": -63,
-            "depth_max": 0,
-            "weight": 3
+            "depth_max": 255,
+            "weight": 6
           }
         ]
       }

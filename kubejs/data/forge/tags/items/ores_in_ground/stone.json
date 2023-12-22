@@ -1,0 +1,28 @@
+{
+  "replace": true,
+  "values": [
+    "alltheores:aluminum_ore",
+    "alltheores:lead_ore",
+    "alltheores:osmium_ore",
+    "alltheores:nickel_ore",
+    "alltheores:platinum_ore",
+    "alltheores:silver_ore",
+    "alltheores:tin_ore",
+    "alltheores:uranium_ore",
+    "alltheores:zinc_ore",
+    "minecraft:coal_ore",
+    "minecraft:iron_ore",
+    "minecraft:copper_ore",
+    "minecraft:gold_ore",
+    "minecraft:redstone_ore",
+    "minecraft:emerald_ore",
+    "minecraft:lapis_ore",
+    "minecraft:diamond_ore",
+    "mekanism:fluorite_ore",
+    "silentgear:bort_ore",
+    "thermal:apatite_ore",
+    "thermal:cinnabar_ore",
+    "thermal:niter_ore",
+    "thermal:sulfur_ore"
+  ]
+}

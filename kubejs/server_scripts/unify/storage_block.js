@@ -49,18 +49,17 @@ ServerEvents.recipes(event => {
   })
 
   const blockFrom = [
-    //'shellite',
-    'starmetal',
-    'mythril',
+    /*
+    'titanium',
+    'cobalt',
+    'uru',
+    */
     'adamantite',
-    'awakened_adamantite',
-    'awakened_mythril',
-    'awakened_palladium',
-    'awakened_vibranium',
-    'awakened_unobtainium',
-    'ultimate',
+    'mythril',
+    'starmetal',
     'neutronium',
-    //'uru'
+    'abiding_alloy',
+    //'ultimate',
   ]
   blockFrom.forEach(material => {
     let block = AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/${material}`);

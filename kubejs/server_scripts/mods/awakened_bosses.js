@@ -18,32 +18,20 @@ ServerEvents.recipes(event => {
   fullRemove('awakened_bosses:herobrine_hoe')
 
   event.remove({ id: 'awakened_bosses:herobrine_blue_recipe' })
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'kubejs:uu_matter' },
-    outputs: [
-      { item: "awakened_bosses:herobrine_blue", count: 1 }
-    ],
-    inputs: [
-      { tag: "forge:dyes/blue" },
-      { tag: "forge:storage_blocks/diamond" }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'extendedcrafting:nether_star_block' }
-  }).id('meatsalad:summoning/herobrine_blue');
+  event.recipes.summoningrituals.altar('kubejs:uu_matter')
+    .itemOutput('awakened_bosses:herobrine_blue')
+    .input(Ingredient.of('#forge:dyes/blue'))
+    .input(Ingredient.of('#forge:storage_blocks/diamond'))
+    .recipeTime(200)
+    .blockBelow('extendedcrafting:nether_star_block')
+    .id(`meatsalad:summoning/herobrine_blue`);
 
   event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' });
-  event.custom({
-    type: 'summoningrituals:altar',
-    catalyst: { item: 'kubejs:uu_matter' },
-    outputs: [
-      { item: "awakened_bosses:herobrine_cyan", count: 1 }
-    ],
-    inputs: [
-      { tag: "forge:dyes/cyan" },
-      { tag: "forge:storage_blocks/diamond" }
-    ],
-    recipe_time: 200,
-    block_below: { block: 'extendedcrafting:nether_star_block' }
-  }).id('meatsalad:summoning/herobrine_cyan');
+  event.recipes.summoningrituals.altar('kubejs:uu_matter')
+    .itemOutput('awakened_bosses:herobrine_cyan')
+    .input(Ingredient.of('#forge:dyes/cyan'))
+    .input(Ingredient.of('#forge:storage_blocks/diamond'))
+    .recipeTime(200)
+    .blockBelow('extendedcrafting:nether_star_block')
+    .id(`meatsalad:summoning/herobrine_cyan`);
 })

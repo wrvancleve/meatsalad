@@ -243,4 +243,31 @@ Lapis:
    PlacedFeature ORE_COPPER = PlacementUtils.register("ore_copper", OreFeatures.ORE_COPPPER_SMALL, commonOrePlacement(16, HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(112))));
    PlacedFeature ORE_COPPER_LARGE = PlacementUtils.register("ore_copper_large", OreFeatures.ORE_COPPER_LARGE, commonOrePlacement(16, HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(112))));
    
-   
+
+Mining:
+188 Grass
+187 Dirt
+184 Dirt
+183 Stone
+65 Stone
+64 Deepslate
+1 Deepslate
+0 Netherrack
+-63 Netherrack
+-64 Bedrock
+
+
+Quartz:
+    (12) -63 - 0
+    
+Crimson Iron:
+    (8) -63 - 0
+    
+Gold:
+    (6) -63 - 0
+    
+Uranium:
+    (?) ? - ?
+    
+Ancient Debris:
+    (1) ? - ?

@@ -6,7 +6,21 @@
       {
         "type": "item",
         "name": "endrem:guardian_eye",
-        "functions": [{ "function": "set_count", "count": 1 }]
+        "functions": [{ "function": "set_count", "count": 1 }],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "endrem:main/guardian_eye": false
+                }
+              }
+            }
+          }
+        ]
       }
     ]
   }]

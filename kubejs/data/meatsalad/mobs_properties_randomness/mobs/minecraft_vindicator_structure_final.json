@@ -1,0 +1,397 @@
+{
+  "target": "minecraft:vindicator",
+  "equipment": {
+    "head": {
+      "override": true,
+      "items": [
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 10,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 7,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 6,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 5,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "weight": 5,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "weight": 3,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "weight": 2,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "weight": 1,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        }
+      ]
+    },
+    "chest": {
+      "override": true,
+      "items": [
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 10,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 7,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 6,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 5,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "weight": 5,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "weight": 3,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "weight": 2,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_chestplate",
+          "weight": 1,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        }
+      ]
+    },
+    "legs": {
+      "override": true,
+      "items": [
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 10,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 7,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 6,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 5,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "weight": 5,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "weight": 3,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "weight": 2,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_leggings",
+          "weight": 1,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        }
+      ]
+    },
+    "feet": {
+      "override": true,
+      "items": [
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 10,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 7,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 6,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 5,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "weight": 5,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "weight": 3,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "weight": 2,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "weight": 1,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        }
+      ]
+    },
+    "main_hand": {
+      "override": true,
+      "items": [
+        {
+          "id": "minecraft:diamond_axe",
+          "weight": 10,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:diamond_axe",
+          "weight": 7,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_axe",
+          "weight": 6,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:diamond_axe",
+          "weight": 5,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "weight": 5,
+          "drop_chance": 0.0
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "weight": 3,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 20
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "weight": 2,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 40
+            }
+          ]
+        },
+        {
+          "id": "minecraft:netherite_axe",
+          "weight": 1,
+          "drop_chance": 0.0,
+          "enchantments": [
+            {
+              "with_levels": 60
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "world": {
+      "dimensions": [
+        "allthemodium:the_other",
+        "minecraft:the_end"
+      ]
+    },
+    "spawner_behaviour": "spawner_only",
+    "advancements_done": [
+      {
+        "advancements": [
+          "minecraft:end/kill_dragon"
+        ],
+        "player_mode": "any"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 4,
+    "categories": [
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.echo"
+  },
+  "name_prefix": {
+    "translate": "material.silentgear.echo"
+  },
+  "stats": {
+    "coating": {}
+  },
+  "traits": {
+    "coating": [
+      {
+        "name": "silentgear:ancient",
+        "level": 3
+      },
+      {
+        "name": "silentgear:renew",
+        "level": 5
+      },
+      {
+        "name": "meatsalad:dark_ward",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "coating/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#03404f"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/part": [
+      {
+        "texture": "silentgear:coating_material",
+        "color": "#03404f"
+      },
+      {
+        "texture": "silentgear:coating_jar"
+      }
+    ],
+    "coating/armor": [
+      {
+        "texture": "kubejs:echo"
+      }
+    ]
+  }
+}

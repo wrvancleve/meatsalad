@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/common",
+          "weight": 620,
+          "quality": 0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/rare",
+          "weight": 250,
+          "quality": 1.5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/epic",
+          "weight": 100,
+          "quality": 2.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/mythic",
+          "weight": 25,
+          "quality": 2.5,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/legendary",
+          "weight": 5,
+          "quality": 3.0,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:end/kill_dragon": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

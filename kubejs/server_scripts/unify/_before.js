@@ -5,7 +5,7 @@ global['auTags'] = [];
 global['loaded'] = {
     Mek_Loaded: Platform.isLoaded('mekanism'),
     Thermal_Loaded: Platform.isLoaded('thermal'),
-    ATO_Loaded: Platform.isLoaded('alltheores')
+    ATO_Loaded: Platform.isLoaded('alltheores'),
 }
 
 global['alloys'] = [
@@ -68,4 +68,27 @@ ServerEvents.recipes(event => {
     unpack('kubejs:ender_star', 'star', 'kubejs', 'ender_star_fragment')
     pack('kubejs:infinity_fiber', 'fiber', 'kubejs', 'infinity_fabric')
     unpack('kubejs:infinity_fabric', 'fabric', 'kubejs', 'infinity_fiber')
+
+    event.custom({
+        type: "mekanism:enriching",
+        input: {
+            ingredient: Ingredient.of('irons_spellbooks:arcane_debris').toJson()
+        },
+        output: Item.of('irons_spellbooks:arcane_salvage').withCount(2).toJson()
+    }).id('meatsalad:enriching/arcane_salvage_from_debris')
+    event.custom({
+        type: 'thermal:smelter',
+        ingredient: Item.of('irons_spellbooks:arcane_debris').toJson(),
+        result: [
+            {
+                item: 'irons_spellbooks:arcane_salvage',
+                count: 2
+            },
+            {
+                item: 'thermal:rich_slag',
+                chance: 0.2,
+                locked: true
+            }
+        ]
+    }).id('meatsalad:smelter/arcane_debris')
 })

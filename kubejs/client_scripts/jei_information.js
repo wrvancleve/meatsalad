@@ -22,6 +22,7 @@ JEIEvents.information(event => {
     event.addItem('bhc:blue_heart', Text.of('Obtained by killing the Warden'));
     event.addItem('bhc:yellow_heart', Text.of('Obtained in Other and End loot chests'));
 
+    event.addItem('cataclysm:desert_eye', Text.of('Obtained in Nether loot chests'));
     event.addItem('cataclysm:mech_eye', Text.of('Obtained in Nether loot chests'));
     event.addItem('cataclysm:flame_eye', Text.of('Obtained in End loot chests'));
     event.addItem('cataclysm:void_eye', Text.of('Obtained in End loot chests'));

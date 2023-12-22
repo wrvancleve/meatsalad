@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:illager_campsite",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:illager_fort",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:mushroom_mines",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 88371663,
+    "spacing": 50,
+    "separation": 35,
+    "type": "yungsapi:enhanced_random_spread",
+    "enhanced_exclusion_zone": {
+      "other_set": "#dungeons_arise:minor_structures_avoid",
+      "chunk_count": 7
+    }
+  }
+}

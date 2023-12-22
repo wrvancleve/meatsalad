@@ -1,0 +1,110 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"gateways:shulker_gate_large\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "minecraft:end/kill_dragon": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"meatsalad:basalz_gate_large\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"meatsalad:blitz_gate_large\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "count": 1,
+            "nbt": "{gateway: \"meatsalad:blizz_gate_large\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,34 @@
 {
   "pools": [
     {
+      "name": "cataclysm_netherite_monstrosity_eye_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "endrem:evil_eye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gem",
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random"
+        }
+      ]
+    },
+    {
       "name": "disc",
       "conditions": [
         {
@@ -15,23 +43,6 @@
           "type": "item",
           "name": "cataclysm:music_disc_netherite_monstrosity",
           "weight": 1
-        }
-      ]
-    },
-    {
-      "name": "cataclysm_netherite_monstrosity_eye_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "endrem:evil_eye",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
         }
       ]
     }

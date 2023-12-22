@@ -1,0 +1,15 @@
+{
+  "weight": 85,
+  "quality": 4.0,
+  "stack": {
+    "item": "minecraft:golden_shovel",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "type": "BREAKER",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+	"min_rarity": "common",
+	"max_rarity": "uncommon"
+}

@@ -247,70 +247,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 30.0,
-                "min": 20.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:golden_helmet",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 30.0,
-                "min": 20.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:golden_chestplate",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 30.0,
-                "min": 20.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:golden_leggings",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 30.0,
-                "min": 20.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:golden_boots",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
@@ -342,22 +278,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "max": 30.0,
-                "min": 20.0
-              },
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "function": "dungeoncrawl:random_potion",
               "loot_level": 4
             }
@@ -375,33 +295,53 @@
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 85
-        },
-        {
-          "type": "apotheosis:random_gem",
-		      "weight": 15,
-          "quality": 2
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:overworld/materials_treasure"
         }
       ]
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/random_treasure"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 75
+          "weight": 70
         },
         {
-          "type": "apotheosis:random_affix_item",
-		      "weight": 25,
-          "quality": 2,
-          "min_rarity": "common",
-          "max_rarity": "uncommon"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_item/random_treasure",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
         }
       ]
     }

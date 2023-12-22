@@ -1,0 +1,74 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.phantom_membrane"
+  },
+  "stats": {
+    "grip": {
+      "repair_efficiency": {
+        "mul1": 0.15
+      },
+      "harvest_speed": {
+        "mul1": 0.1
+      },
+      "attack_speed": {
+        "add": 0.2
+      }
+    },
+    "lining": {}
+  },
+  "traits": {
+    "grip": [
+      {
+        "name": "silentgear:ancient",
+        "level": 2
+      }
+    ],
+    "lining": [
+      {
+        "name": "silentgear:light",
+        "level": 2
+      },
+      {
+        "name": "silentgear:flexible",
+        "level": 3
+      }
+    ]
+  },
+  "model": {
+    "grip/all": [
+      {
+        "texture": "silentgear:grip_wool",
+        "color": "#C3B9A1"
+      }
+    ],
+    "grip/part": [
+      {
+        "texture": "silentgear:grip",
+        "color": "#C3B9A1"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#C3B9A1"
+      }
+    ]
+  }
+}

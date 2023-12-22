@@ -4,49 +4,88 @@
     {
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 12.0,
-        "min": 4.0
+        "min": 3.0,
+        "max": 4.0
       },
-      "bonus_rolls": 0.25,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/treasure_gear",
-          "weight": 6
+          "name": "meatsalad:the_end/materials"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/random_treasure"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/materials",
-          "weight": 4,
-          "quality": 1
-        },
-        {
-          "type": "apotheosis:random_gem",
-		      "weight": 1,
-          "quality": 1
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/misc",
-          "weight": 1,
+          "name": "meatsalad:affix_item/random_treasure",
+		      "weight": 30,
           "quality": 1
         }
       ]
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.10,
+      "bonus_rolls": 0.05,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 65
+          "weight": 70
         },
         {
-          "type": "apotheosis:random_affix_item",
-		      "weight": 35,
-          "quality": 2,
-          "min_rarity": "epic",
-          "max_rarity": "epic"
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:ancient_tomes/random",
+		      "weight": 30,
+          "quality": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:the_end/misc_all",
+		      "weight": 20,
+          "quality": 0.5
         }
       ]
     }

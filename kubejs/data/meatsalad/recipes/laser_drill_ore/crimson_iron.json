@@ -7,7 +7,7 @@
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:raw_materials/crimson_iron"
+            "tag": "forge:ores/crimson_iron"
           }
         }
       ],
@@ -17,7 +17,7 @@
           "item": "industrialforegoing:laser_lens14"
         },
         "output": {
-          "tag": "forge:raw_materials/crimson_iron"
+          "tag": "forge:ores/crimson_iron"
         },
         "pointer": 0,
         "rarity": [
@@ -33,8 +33,8 @@
               ]
             },
             "blacklist": {},
-            "depth_min": 7,
-            "depth_max": 245,
+            "depth_min": 10,
+            "depth_max": 117,
             "weight": 8
           },
           {
@@ -45,8 +45,8 @@
               ]
             },
             "blacklist": {},
-            "depth_min": 1,
-            "depth_max": 64,
+            "depth_min": -63,
+            "depth_max": 0,
             "weight": 4
           }
         ]

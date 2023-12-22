@@ -7,22 +7,15 @@
         "min": 3.0,
         "max": 8.0
       },
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0.10,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:enchanted_books/random_treasure"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/ancient_tomes"
+          "name": "meatsalad:ancient_tomes/random"
         }
       ]
     }
