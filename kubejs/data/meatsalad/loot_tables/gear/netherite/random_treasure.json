@@ -9,18 +9,8 @@
           "name": "meatsalad:gear/netherite/level_40_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -29,18 +19,8 @@
           "name": "meatsalad:gear/netherite/level_50_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -49,16 +29,8 @@
           "name": "meatsalad:gear/netherite/level_60_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -67,17 +39,8 @@
           "name": "meatsalad:gear/netherite/level_70_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true,
-                    "minecraft:end/kill_dragon": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -86,17 +49,8 @@
           "name": "meatsalad:gear/netherite/level_80_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "endshelf"
             }
           ]
         }

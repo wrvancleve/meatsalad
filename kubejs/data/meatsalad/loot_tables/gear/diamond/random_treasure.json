@@ -9,16 +9,8 @@
           "name": "meatsalad:gear/diamond/level_20_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -27,16 +19,8 @@
           "name": "meatsalad:gear/diamond/level_30_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -45,18 +29,8 @@
           "name": "meatsalad:gear/diamond/level_40_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -65,19 +39,8 @@
           "name": "meatsalad:gear/diamond/level_50_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -86,17 +49,8 @@
           "name": "meatsalad:gear/diamond/level_60_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -105,18 +59,8 @@
           "name": "meatsalad:gear/diamond/level_70_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true,
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -125,17 +69,8 @@
           "name": "meatsalad:gear/diamond/level_80_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "endshelf"
             }
           ]
         }

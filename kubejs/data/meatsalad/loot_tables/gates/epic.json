@@ -16,16 +16,8 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
             }
           ]
         },
@@ -41,16 +33,17 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_end"
                 }
-              }
+              ]
             }
           ]
         },
@@ -66,16 +59,17 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_end"
                 }
-              }
+              ]
             }
           ]
         },
@@ -91,16 +85,17 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_end"
                 }
-              }
+              ]
             }
           ]
         },

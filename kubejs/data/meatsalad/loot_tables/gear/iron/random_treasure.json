@@ -6,24 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/iron/level_20_treasure"
+          "name": "meatsalad:gear/iron/level_20_treasure",
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:gear/iron/level_30_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/enchanter": true,
-                    "apotheosis:enchanting/bookshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -32,16 +29,8 @@
           "name": "meatsalad:gear/iron/level_40_treasure",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         }

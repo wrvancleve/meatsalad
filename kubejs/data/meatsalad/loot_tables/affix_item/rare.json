@@ -29,16 +29,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -55,16 +47,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         }

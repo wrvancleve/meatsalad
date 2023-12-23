@@ -23,16 +23,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -55,16 +47,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -87,18 +71,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -121,19 +95,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -156,17 +119,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -189,18 +143,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true,
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -223,17 +167,8 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "endshelf"
             }
           ]
         }

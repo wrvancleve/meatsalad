@@ -10,17 +10,17 @@
           "weight": 21,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": false,
-                    "minecraft:end/kill_dragon": false
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "overworld"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
                 }
-              }
+              ]
             }
           ]
         },
@@ -30,17 +30,8 @@
           "weight": 2,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "the_other"
             }
           ]
         },
@@ -50,16 +41,17 @@
           "weight": 21,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_end"
                 }
-              }
+              ]
             }
           ]
         },
@@ -69,16 +61,8 @@
           "weight": 3,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
             }
           ]
         }

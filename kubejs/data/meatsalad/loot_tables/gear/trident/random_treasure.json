@@ -18,21 +18,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 20,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -50,21 +42,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "shelf"
             }
           ]
         },
@@ -82,23 +66,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 40,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -116,24 +90,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 50,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/hellshelf": true,
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": false,
-                    "minecraft:end/kill_dragon": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
             }
           ]
         },
@@ -151,22 +114,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 60,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true,
-                    "apotheosis:enchanting/deepshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -184,23 +138,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 70,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "apotheosis:enchanting/deepshelf": true,
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
             }
           ]
         },
@@ -218,22 +162,13 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 80,
-              "treasure": false
+              "treasure": true
             }
           ],
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true,
-                    "apotheosis:enchanting/endshelf": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "endshelf"
             }
           ]
         }

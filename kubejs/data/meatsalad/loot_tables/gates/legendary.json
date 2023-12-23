@@ -16,16 +16,8 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "cataclysm:kill_ender_guardian": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "kill_ender_guardian"
             }
           ]
         },
@@ -38,7 +30,13 @@
             "item": "gateways:gate_pearl",
             "count": 1,
             "nbt": "{gateway: \"meatsalad:supreme_gate\"}"
-          }
+          },
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
+            }
+          ]
         },
         {
           "type": "placebo:stack_entry",
@@ -52,16 +50,8 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "cataclysm:kill_ignis": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "kill_ignis"
             }
           ]
         }

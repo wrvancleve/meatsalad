@@ -9,20 +9,17 @@
           "name": "irons_spellbooks:common_ink",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "irons_spellbooks:irons_spellbooks/spell_book_iron": true,
-                    "irons_spellbooks:irons_spellbooks/spell_book_blaze": false,
-                    "irons_spellbooks:irons_spellbooks/spell_book_diamond": false,
-                    "irons_spellbooks:irons_spellbooks/spell_book_druidic": false,
-                    "irons_spellbooks:irons_spellbooks/spell_book_villager": false
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "common_ink"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "uncommon_ink"
                 }
-              }
+              ]
             }
           ]
         },
@@ -32,18 +29,17 @@
           "name": "irons_spellbooks:uncommon_ink",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "irons_spellbooks:irons_spellbooks/spell_book_iron": true,
-                    "irons_spellbooks:irons_spellbooks/spell_book_dragon": false,
-                    "irons_spellbooks:irons_spellbooks/spell_book_netherite": false
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "uncommon_ink"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "rare_ink"
                 }
-              }
+              ]
             }
           ]
         },
@@ -53,16 +49,17 @@
           "name": "irons_spellbooks:rare_ink",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "irons_spellbooks:irons_spellbooks/spell_book_gold": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "rare_ink"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "epic_ink"
                 }
-              }
+              ]
             }
           ]
         },

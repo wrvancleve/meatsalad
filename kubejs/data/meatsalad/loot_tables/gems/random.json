@@ -11,16 +11,8 @@
           "quality": 0,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:nether/find_fortress": false
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "overworld"
             }
           ]
         },
@@ -31,16 +23,17 @@
           "quality": 1.5,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": false
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "overworld"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
                 }
-              }
+              ]
             }
           ]
         },
@@ -51,17 +44,17 @@
           "quality": 3,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:nether/find_fortress": true,
-                    "minecraft:end/kill_dragon": false
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
                 }
-              }
+              ]
             }
           ]
         },
@@ -72,16 +65,17 @@
           "quality": 4.5,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "meatsalad:the_other": true
-                  }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_end"
                 }
-              }
+              ]
             }
           ]
         },
@@ -92,16 +86,8 @@
           "quality": 6,
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "minecraft:end/kill_dragon": true
-                  }
-                }
-              }
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
             }
           ]
         }
