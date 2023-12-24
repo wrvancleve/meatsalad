@@ -23,8 +23,25 @@
           ],
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "shelf"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "hellshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "endshelf"
+              }
             }
           ]
         },
@@ -47,8 +64,25 @@
           ],
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "shelf"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "hellshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "endshelf"
+              }
             }
           ]
         },
@@ -73,6 +107,20 @@
             {
               "condition": "gamestageconditions:stage",
               "stage": "hellshelf"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "endshelf"
+              }
             }
           ]
         },
@@ -97,6 +145,20 @@
             {
               "condition": "gamestageconditions:stage",
               "stage": "hellshelf"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "endshelf"
+              }
             }
           ]
         },

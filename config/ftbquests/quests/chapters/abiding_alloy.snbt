@@ -452,6 +452,15 @@
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p kill_ender_guardian true"
+					id: "23AE53B196DA9EA5"
+					silent: true
+					team_reward: true
+					title: "Advance to Kill Ender Guardian Stage"
+					type: "command"
+				}
 			]
 			subtitle: "Obtain an Ender Star"
 			tasks: [{
@@ -464,6 +473,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["45A9D19462AB5258"]
 			description: ["Found in End loot chests"]
 			id: "639CE429599CBC46"
 			rewards: [
@@ -539,6 +549,44 @@
 			}]
 			title: "Ore Laser Base"
 			x: -6.0d
+			y: -3.5d
+		}
+		{
+			disable_toast: true
+			id: "45A9D19462AB5258"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "00961FD4A83D34DC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p the_end true"
+					id: "1702A5E1A9E1C481"
+					silent: true
+					team_reward: true
+					title: "Advance to The End Stage"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04202526B796633F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Place all 12 eyes in The End Portal and jump in the portal"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				disable_toast: true
+				id: "28526744A7C3F644"
+				type: "advancement"
+			}]
+			title: "Enter The End"
+			x: 6.5d
 			y: -3.5d
 		}
 	]

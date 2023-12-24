@@ -9,8 +9,25 @@
           "name": "meatsalad:enchanted_books/early",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "overworld"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_nether"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -21,6 +38,20 @@
             {
               "condition": "gamestageconditions:stage",
               "stage": "the_nether"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -31,6 +62,13 @@
             {
               "condition": "gamestageconditions:stage",
               "stage": "the_other"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },

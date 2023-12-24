@@ -9,17 +9,29 @@
           "name": "irons_spellbooks:common_ink",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "common_ink"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "uncommon_ink"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "uncommon_ink"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "rare_ink"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "epic_ink"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "legendary_ink"
+              }
             }
           ]
         },
@@ -29,17 +41,22 @@
           "name": "irons_spellbooks:uncommon_ink",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "uncommon_ink"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "rare_ink"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "uncommon_ink"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "epic_ink"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "legendary_ink"
+              }
             }
           ]
         },
@@ -49,17 +66,15 @@
           "name": "irons_spellbooks:rare_ink",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "rare_ink"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "epic_ink"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "rare_ink"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "legendary_ink"
+              }
             }
           ]
         },
@@ -69,17 +84,8 @@
           "name": "irons_spellbooks:epic_ink",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "epic_ink"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "legendary_ink"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "epic_ink"
             }
           ]
         },

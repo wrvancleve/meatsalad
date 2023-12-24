@@ -848,6 +848,15 @@
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p kill_ignis true"
+					id: "5B250AFD30D58D5A"
+					silent: true
+					team_reward: true
+					title: "Advance to Kill Ignis Stage"
+					type: "command"
+				}
 			]
 			subtitle: "Obtain Vulcanite"
 			tasks: [{

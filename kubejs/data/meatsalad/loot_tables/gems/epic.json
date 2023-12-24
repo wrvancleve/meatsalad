@@ -197,21 +197,8 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_nether"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_other"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_end"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_nether"
             }
           ]
         },
@@ -228,21 +215,8 @@
           },
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_nether"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_other"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_end"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_nether"
             }
           ]
         },

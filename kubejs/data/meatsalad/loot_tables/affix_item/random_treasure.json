@@ -9,8 +9,25 @@
           "name": "meatsalad:affix_item/common_treasure",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "overworld"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_nether"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -19,17 +36,22 @@
           "name": "meatsalad:affix_item/uncommon_treasure",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "overworld"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_nether"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_nether"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -38,17 +60,15 @@
           "name": "meatsalad:affix_item/rare_treasure",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_nether"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_other"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_other"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -57,17 +77,8 @@
           "name": "meatsalad:affix_item/epic_treasure",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_other"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_end"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
             }
           ]
         }

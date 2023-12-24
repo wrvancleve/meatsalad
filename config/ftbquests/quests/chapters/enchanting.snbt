@@ -1,0 +1,288 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "enchanting"
+	group: ""
+	icon: "minecraft:enchanting_table"
+	id: "727016A99C5B8101"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			id: "0F1C440DC0F5B1DF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2238F0A3798DE5CD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "316453B591A67CFE"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain an Enchanting Table, and begin to unveil the mystery"
+			tasks: [{
+				advancement: "apotheosis:enchanting/enchanter"
+				criterion: ""
+				disable_toast: true
+				id: "7B5363D80A46C03C"
+				title: "Obtain an Enchanting Table"
+				type: "advancement"
+			}]
+			title: "The Secrets of Enchanting"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F1C440DC0F5B1DF"]
+			disable_toast: true
+			id: "19FFE1CBDB304F21"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "098B0F09E82EFFB5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BB2F59C74C78B7E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Obtain a Bookshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/bookshelf"
+				criterion: ""
+				disable_toast: true
+				id: "124142121F0FB0F8"
+				title: "Obtain a Bookshelf"
+				type: "advancement"
+			}]
+			title: "Local Librarian"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19FFE1CBDB304F21"]
+			disable_toast: true
+			id: "3DD19287DAC49D58"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "29F2632A8D80AA1E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p hellshelf true"
+					id: "5EAFC8049CFE9A91"
+					silent: true
+					team_reward: true
+					title: "Advance to Hellshelf Stage"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B17E695CC59A805"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Create a Hellshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/hellshelf"
+				criterion: ""
+				disable_toast: true
+				id: "7144858D6161D9CD"
+				title: "Create a Hellshelf"
+				type: "advancement"
+			}]
+			title: "The Chaos of Hell"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DD19287DAC49D58"]
+			disable_toast: true
+			id: "19974778968F215E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "315C9DDA04C414EE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78E76391013C79D8"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			subtitle: "Upgrade an Infused Hellshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/upgrade_hellshelf"
+				criterion: ""
+				disable_toast: true
+				id: "1EAE7ABD61A66508"
+				title: "Upgrade an Infused Hellshelf"
+				type: "advancement"
+			}]
+			title: "Mastering the Inferno"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19974778968F215E"]
+			disable_toast: true
+			id: "15CCE06A43644D7E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "08FFDAAE917BF378"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p deepshelf true"
+					id: "04AD1AE47FC2CF6E"
+					silent: true
+					team_reward: true
+					title: "Advance to Deepshelf Stage"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E440C0DD9DD9805"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Active a Dormant Deepshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/deepshelf"
+				criterion: ""
+				disable_toast: true
+				id: "7FD71187C75C09E5"
+				title: "Active a Dormant Deepshelf"
+				type: "advancement"
+			}]
+			title: "Delving Into Darkness"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15CCE06A43644D7E"]
+			disable_toast: true
+			id: "5AC8E6D08668D654"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "50E3A5C46D922CF2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22EF6189BA0F9201"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Create a Sculkshelf using a Warden Tendril"
+			tasks: [{
+				advancement: "apotheosis:enchanting/sculkshelf"
+				criterion: ""
+				disable_toast: true
+				id: "562B94F53F1F756C"
+				title: "Create a Sculkshelf"
+				type: "advancement"
+			}]
+			title: "Embracing the Sculk"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC8E6D08668D654"]
+			disable_toast: true
+			id: "6C369C2A61840810"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "59988D5181CF480E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p endshelf true"
+					id: "49D0E332D8B680C2"
+					silent: true
+					team_reward: true
+					title: "Advance to Endshelf Stage"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3175D05F551B6C3B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			subtitle: "Acquire Infused Dragon's Breath, and create an Endshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/endshelf"
+				criterion: ""
+				disable_toast: true
+				id: "7CE99FFA0A0EB548"
+				title: "Create an Endshelf"
+				type: "advancement"
+			}]
+			title: "Dragon-Slaying Enchanter"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C369C2A61840810"]
+			disable_toast: true
+			id: "028861B69034519C"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "009451B2CD6B43AF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B4B06B359C5334F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			subtitle: "Upgrade an Endshelf into a Draconic Endshelf"
+			tasks: [{
+				advancement: "apotheosis:enchanting/upgrade_endshelf"
+				criterion: ""
+				disable_toast: true
+				id: "743D46F08F5B3B93"
+				title: "Upgrade an Endshelf into a Draconic Endshelf"
+				type: "advancement"
+			}]
+			title: "The Final Bookshelf"
+			x: 3.5d
+			y: 0.0d
+		}
+	]
+	title: "The Secrets of Enchanting"
+}

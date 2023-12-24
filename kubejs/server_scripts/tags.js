@@ -178,6 +178,23 @@ ServerEvents.tags('item', event => {
   event.add('forge:rubber', 'thermal:rubber')
   event.add('forge:rubber', 'industrialforegoing:dryrubber')
 
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:iron_spell_book')
+  event.add('irons_spellbooks:spellbook/uncommon', 'irons_spellbooks:iron_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:gold_spell_book')
+  event.add('irons_spellbooks:spellbook/rare', 'irons_spellbooks:gold_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:diamond_spell_book')
+  event.add('irons_spellbooks:spellbook/epic', 'irons_spellbooks:diamond_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:druidic_spell_book')
+  event.add('irons_spellbooks:spellbook/epic', 'irons_spellbooks:druidic_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:blaze_spell_book')
+  event.add('irons_spellbooks:spellbook/epic', 'irons_spellbooks:blaze_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:villager_spell_book')
+  event.add('irons_spellbooks:spellbook/epic', 'irons_spellbooks:villager_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:netherite_spell_book')
+  event.add('irons_spellbooks:spellbook/legendary', 'irons_spellbooks:netherite_spell_book')
+  event.add('irons_spellbooks:spellbook', 'irons_spellbooks:dragonskin_spell_book')
+  event.add('irons_spellbooks:spellbook/legendary', 'irons_spellbooks:dragonskin_spell_book')
+
   // Silent Gear Main Materials
   const silentGearMainMaterials = [
     '#forge:ingots/azure_electrum',

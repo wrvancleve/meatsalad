@@ -10,17 +10,18 @@
           "weight": 21,
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "overworld"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_nether"
-                }
-              ]
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -32,6 +33,13 @@
             {
               "condition": "gamestageconditions:stage",
               "stage": "the_other"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
             }
           ]
         },
@@ -41,17 +49,8 @@
           "weight": 21,
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_other"
-                },
-                {
-                  "condition": "gamestageconditions:stage",
-                  "stage": "the_end"
-                }
-              ]
+              "condition": "gamestageconditions:stage",
+              "stage": "the_other"
             }
           ]
         },

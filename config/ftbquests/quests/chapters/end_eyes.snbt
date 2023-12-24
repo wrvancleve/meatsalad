@@ -12,7 +12,7 @@
 		}
 	}
 	id: "7FB8D01FCF54E313"
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -294,6 +294,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["554D0321566294B6"]
 			description: ["Found in loot chests of Nether Fortresses"]
 			id: "30C4ECBD79126F23"
 			rewards: [
@@ -326,6 +327,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["554D0321566294B6"]
 			description: ["Found in treasure chests of Nether Bastions"]
 			id: "6FEDCD787D97941D"
 			rewards: [
@@ -392,6 +394,7 @@
 		{
 			dependencies: ["4AA87F707E4EEBE7"]
 			description: [""]
+			disable_toast: true
 			id: "30356B69CF7818CD"
 			rewards: [
 				{
@@ -405,14 +408,24 @@
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p the_other true"
+					id: "5393A20DD5E1550D"
+					silent: true
+					team_reward: true
+					title: "Advance to The Other Stage"
+					type: "command"
+				}
 			]
 			subtitle: "Craft a Teleport Pad to enter The Other"
 			tasks: [{
-				id: "184D9A57FF35A149"
-				item: "allthemodium:teleport_pad"
-				type: "item"
+				advancement: "meatsalad:the_other"
+				criterion: ""
+				id: "648D84D175F30152"
+				type: "advancement"
 			}]
-			title: "Teleport Pad"
+			title: "Enter The Other"
 			x: 3.5d
 			y: -0.5d
 		}
@@ -611,6 +624,42 @@
 			title: "Palladium Ore"
 			x: 4.0d
 			y: 1.5d
+		}
+		{
+			disable_toast: true
+			id: "554D0321566294B6"
+			rewards: [
+				{
+					id: "6A6E705E8D9A240C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "584852BE22B982FC"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					command: "/gamestage addTeam @p the_nether true"
+					id: "6A61B756E1CB565E"
+					silent: true
+					team_reward: true
+					title: "Advance to The Nether Stage"
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				icon: "minecraft:nether_bricks"
+				id: "5AE329D6F3FCDEA1"
+				type: "advancement"
+			}]
+			title: "Enter The Nether"
+			x: -1.0d
+			y: 3.5d
 		}
 	]
 	title: "To The End"

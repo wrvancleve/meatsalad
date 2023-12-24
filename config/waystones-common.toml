@@ -79,7 +79,7 @@
 	warpPlateUseTime = 10
 	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
 	#Range: > -2147483648
-	scrollUseTime = 1
+	scrollUseTime = 32
 	#The cooldown between usages of the inventory button in seconds.
 	#Range: > -2147483648
 	inventoryButtonCooldown = 300

@@ -26,12 +26,6 @@
               "levels": 30,
               "treasure": true
             }
-          ],
-          "conditions": [
-            {
-              "condition": "gamestageconditions:stage",
-              "stage": "shelf"
-            }
           ]
         },
         {

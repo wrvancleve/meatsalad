@@ -9,8 +9,11 @@
           "name": "meatsalad:gear/iron/level_20_treasure",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "shelf"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "hellshelf"
+              }
             }
           ]
         },
@@ -19,8 +22,11 @@
           "name": "meatsalad:gear/iron/level_30_treasure",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "shelf"
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "hellshelf"
+              }
             }
           ]
         },
