@@ -5,6 +5,22 @@ ServerEvents.recipes(event => {
     })
   }
 
+  let salvage = (mod, item, results) => {
+    event.custom({
+      type: "silentgear:salvaging",
+      ingredient: Item.of(`${mod}:${item}`).toJson(),
+      results: results
+    }).id(`meatsalad:salvaging/${item}`);
+  }
+  let blueprintSalvage = (part, resultCount) => {
+    salvage('silentgear', `${part}_template`, [
+      Item.of('silentgear:template_board').withCount(resultCount).toJson()
+    ])
+    salvage('silentgear', `${part}_blueprint`, [
+      Item.of('silentgear:blueprint_paper').withCount(resultCount).toJson()
+    ])
+  }
+
   event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
   removeRecipes([
     'silentgear:azure_electrum_ingot',
@@ -21,52 +37,7 @@ ServerEvents.recipes(event => {
     'silentgear:greatsword_blueprint',
     'silentgear:scimitar_template',
     'silentgear:scimitar_blueprint',
-
-    'silentgear:tip_template',
-    'silentgear:coating_template',
-    'silentgear:grip_template',
-    'silentgear:binding_template',
-    'silentgear:lining_template',
-    'silentgear:katana_template',
-    'silentgear:machete_template',
-    'silentgear:spear_template',
-    'silentgear:trident_template',
-    'silentgear:knife_template',
-    'silentgear:dagger_template',
-    'silentgear:paxel_template',
-    'silentgear:hammer_template',
-    'silentgear:excavator_template',
-    'silentgear:saw_template',
-    'silentgear:mattock_template',
-    'silentgear:prospector_hammer_template',
-    'silentgear:sickle_template',
-    'silentgear:slingshot_template',
-    'silentgear:elytra_template',
-    'silentgear:ring_template',
-    'silentgear:bracelet_template',
-
-    'silentgear:tip_blueprint',
-    'silentgear:coating_blueprint',
-    'silentgear:grip_blueprint',
-    'silentgear:binding_blueprint',
-    'silentgear:lining_blueprint',
-    'silentgear:katana_blueprint',
-    'silentgear:machete_blueprint',
-    'silentgear:spear_blueprint',
-    'silentgear:trident_blueprint',
-    'silentgear:knife_blueprint',
-    'silentgear:dagger_blueprint',
-    'silentgear:paxel_blueprint',
-    'silentgear:hammer_blueprint',
-    'silentgear:excavator_blueprint',
-    'silentgear:saw_blueprint',
-    'silentgear:mattock_blueprint',
-    'silentgear:prospector_hammer_blueprint',
-    'silentgear:sickle_blueprint',
-    'silentgear:slingshot_blueprint',
-    'silentgear:elytra_blueprint',
-    'silentgear:ring_blueprint',
-    'silentgear:bracelet_blueprint',
+    'silentgear:template_board',
     'silentgear:blueprint_paper',
   ])
   
@@ -193,74 +164,87 @@ ServerEvents.recipes(event => {
     output: Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()
   }).id('meatsalad:crushing/crushed_shulker_shell');
 
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_pickaxe').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
-      Item.of('minecraft:stick').withCount(2).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_pickaxe');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_sword').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
-      Item.of('minecraft:stick').toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_sword');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_axe').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
-      Item.of('minecraft:stick').withCount(2).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_axe');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_hoe').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
-      Item.of('minecraft:stick').withCount(2).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_hoe');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_shovel').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(1).toJson(),
-      Item.of('minecraft:stick').withCount(2).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_shovel');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_helmet').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(5).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_helmet');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_chestplate').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(8).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_chestplate');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_leggings').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(7).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_leggings');
-  event.custom({
-    type: "silentgear:salvaging",
-    ingredient: Item.of('allthemodium:allthemodium_boots').toJson(),
-    results: [
-      Item.of('allthemodium:allthemodium_ingot').withCount(4).toJson()
-    ]
-  }).id('meatsalad:salvaging/allthemodium_boots');
+  // Blueprint Salvaging
+  [
+    {part: 'tip', resultCount: 2},
+    {part: 'coating', resultCount: 4},
+    {part: 'grip', resultCount: 2},
+    {part: 'binding', resultCount: 1},
+    {part: 'lining', resultCount: 3},
+    {part: 'katana', resultCount: 3},
+    {part: 'machete', resultCount: 3},
+    {part: 'spear', resultCount: 1},
+    {part: 'trident', resultCount: 2},
+    {part: 'knife', resultCount: 1},
+    {part: 'dagger', resultCount: 1},
+    {part: 'paxel', resultCount: 6},
+    {part: 'hammer', resultCount: 6},
+    {part: 'excavator', resultCount: 5},
+    {part: 'saw', resultCount: 5},
+    {part: 'mattock', resultCount: 4},
+    {part: 'prospector_hammer', resultCount: 2},
+    {part: 'sickle', resultCount: 3},
+    {part: 'slingshot', resultCount: 2},
+    {part: 'elytra', resultCount: 1},
+    {part: 'ring', resultCount: 4},
+    {part: 'bracelet', resultCount: 6},
+    {part: 'claymore', resultCount: 5},
+    {part: 'scimitar', resultCount: 3},
+    {part: 'greatsword', resultCount: 3},
+    {part: 'rod', resultCount: 2},
+    {part: 'cord', resultCount: 3},
+    {part: 'sword', resultCount: 2},
+    {part: 'pickaxe', resultCount: 3},
+    {part: 'shovel', resultCount: 1},
+    {part: 'axe', resultCount: 3},
+    {part: 'hoe', resultCount: 2},
+    {part: 'shears', resultCount: 2},
+    {part: 'fishing_rod', resultCount: 2},
+    {part: 'bow', resultCount: 3},
+    {part: 'crossbow', resultCount: 4},
+    {part: 'arrow', resultCount: 1},
+    {part: 'shield', resultCount: 3},
+    {part: 'helmet', resultCount: 5},
+    {part: 'chestplate', resultCount: 8},
+    {part: 'leggings', resultCount: 7},
+    {part: 'boots', resultCount: 4},
+  ].forEach(blueprintSalvageRecipe => {
+    blueprintSalvage(blueprintSalvageRecipe.part, blueprintSalvageRecipe.resultCount);
+  });
+
+  // allthemodium Salvaging
+  salvage('allthemodium', 'allthemodium_pickaxe', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
+    Item.of('minecraft:stick').withCount(2).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_sword', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
+    Item.of('minecraft:stick').toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_axe', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
+    Item.of('minecraft:stick').withCount(2).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_hoe', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
+    Item.of('minecraft:stick').withCount(2).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_shovel', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(1).toJson(),
+    Item.of('minecraft:stick').withCount(2).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_helmet', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(5).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_chestplate', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(8).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_leggings', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(7).toJson()
+  ]);
+  salvage('allthemodium', 'allthemodium_boots', [
+    Item.of('allthemodium:allthemodium_ingot').withCount(4).toJson()
+  ]);
 
   event.custom({
     type: 'powah:energizing',

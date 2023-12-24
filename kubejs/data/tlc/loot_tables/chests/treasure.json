@@ -67,6 +67,22 @@
       ]
     },
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:overworld/misc",
+		      "weight": 20,
+          "quality": 0.5
+        }
+      ]
+    },
+    {
       "name": "eye",
       "rolls": 1,
       "bonus_rolls": 0.0,

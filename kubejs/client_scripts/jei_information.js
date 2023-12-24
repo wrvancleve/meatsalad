@@ -62,4 +62,7 @@ JEIEvents.information(event => {
     event.addItem('industrialforegoing:laser_lens15', Text.of('Obtained in The Nether, The Other and The End loot chests'));
 
     event.addItem('summoningrituals:altar', Text.of('Obtained in End loot chests'));
+
+    event.addItem('silentgear:template_board', Text.of('Obtain templates from loot chests and salvage them for their template boards'));
+    event.addItem('silentgear:blueprint_paper', Text.of('Obtain blueprints from loot chests and salvage them for their blueprint papers'));
 })

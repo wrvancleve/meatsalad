@@ -7,7 +7,7 @@
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:blueprint/early_templates",
-          "weight": 21,
+          "weight": 38,
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -46,7 +46,7 @@
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:blueprint/early_blueprints",
-          "weight": 21,
+          "weight": 38,
           "conditions": [
             {
               "condition": "gamestageconditions:stage",
