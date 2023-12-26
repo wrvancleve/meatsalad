@@ -117,6 +117,7 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'meatsalad.blitz_gate_large', 'Large Blitz Gate')
   event.add('meatsalad', 'meatsalad.blizz_gate', 'Blizz Gate')
   event.add('meatsalad', 'meatsalad.blizz_gate_large', 'Large Blizz Gate')
+  event.add('meatsalad', 'meatsalad.nether_gate', 'Nether Gate')
   event.add('meatsalad', 'meatsalad.supreme_ender_guardian_gate', '§kSupreme§r Gate')
   event.add('meatsalad', 'meatsalad.supreme_gate', '§kSupreme§r Gate')
   event.add('meatsalad', 'meatsalad.supreme_ignis_gate', '§kSupreme§r Gate')

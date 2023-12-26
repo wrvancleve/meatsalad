@@ -6,21 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/misc_common",
-          "weight": 250,
-          "quality": 1.5
+          "name": "meatsalad:the_end/artifacts",
+          "weight": 90,
+          "quality": 1.0
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/misc_rare",
-          "weight": 100,
+          "name": "meatsalad:blueprint/random",
+          "weight": 70,
           "quality": 2.0
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_end/misc_epic",
-          "weight": 50,
-          "quality": 2.5
+          "name": "meatsalad:gates/random",
+          "weight": 40,
+          "quality": 4.0
         }
       ]
     }

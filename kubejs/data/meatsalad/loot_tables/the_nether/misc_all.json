@@ -6,15 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/misc_common",
-          "weight": 350,
+          "name": "meatsalad:the_nether/artifacts",
+          "weight": 90,
           "quality": 1.0
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:the_nether/misc_epic",
-          "weight": 50,
-          "quality": 1.5
+          "name": "meatsalad:blueprint/random",
+          "weight": 70,
+          "quality": 2.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/random",
+          "weight": 40,
+          "quality": 4.0
         }
       ]
     }
