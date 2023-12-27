@@ -58,7 +58,7 @@
         "add": 1.0
       },
       "melee_damage": {
-        "add": 1.0
+        "add": 2.0
       },
       "rarity": {
         "add": 10.0

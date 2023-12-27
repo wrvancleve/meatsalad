@@ -7,7 +7,7 @@
 	#Show hearths instead of damage dealt? (1 hearth = two damage)
 	show_hearths = false
 	#Show damage numbers on entity
-	damage_numbers = false
+	damage_numbers = true
 	#Display particles fullbright
 	full_bright_damage_numbers = true
 	#Skin used by the dummy

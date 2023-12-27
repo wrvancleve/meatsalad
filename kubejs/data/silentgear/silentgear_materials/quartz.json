@@ -34,7 +34,7 @@
         "add": 1.0
       },
       "melee_damage": {
-        "add": 1.5
+        "add": 1.0
       },
       "ranged_damage": {
         "add": 0.25

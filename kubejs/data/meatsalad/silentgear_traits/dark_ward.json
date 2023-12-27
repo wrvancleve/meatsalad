@@ -11,9 +11,10 @@
     "text": "Dark Ward"
   },
   "description": {
-    "text": "Prevents Darkness effect"
+    "text": "Prevents Darkness & Blindness effects"
   },
   "effects": [
+    "minecraft:blindness",
     "minecraft:darkness"
   ]
 }

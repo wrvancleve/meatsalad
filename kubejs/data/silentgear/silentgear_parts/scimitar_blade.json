@@ -1,0 +1,20 @@
+{
+  "type": "silentgear:compound_part",
+  "gear_type": "scimitar",
+  "part_type": "silentgear:main",
+  "crafting_item": {
+    "item": "silentgear:scimitar_blade"
+  },
+  "name": {
+    "translate": "part.silentgear.scimitar_blade"
+  },
+  "stats": {
+    "melee_damage": {
+      "add": 6.0
+    },
+    "attack_speed": {
+      "add": -2.4
+    },
+    "repair_efficiency": 1.0
+  }
+}

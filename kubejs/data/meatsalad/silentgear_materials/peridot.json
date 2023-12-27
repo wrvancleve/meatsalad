@@ -45,7 +45,7 @@
         "add": 1.0
       },
       "melee_damage": {
-        "add": 0.5
+        "add": 1.0
       },
       "magic_damage": {
         "add": 1.0

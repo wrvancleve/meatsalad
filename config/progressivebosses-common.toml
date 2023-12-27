@@ -71,7 +71,7 @@
 			Chance = 0.1
 			#Base damage of the charge attack. Increased by 'Increased Damage' config option.
 			#Range: 0.0 ~ 50.0
-			"Base Damage" = 16.0
+			"Base Damage" = 15.0
 
 		[Wither.Attack."Barrage Attack"]
 			#Chance (at max difficulty) every time the Wither takes damage to start a barrage attack. More damage taken increases the chance.
@@ -168,10 +168,10 @@
 	[Wither."Difficulty Settings"]
 		#The Maximum difficulty (times spawned) reachable by Wither.
 		#Range: > 1
-		"Max Difficulty" = 10
+		"Max Difficulty" = 9
 		#How much difficulty will players start with when joining a world? Note that this will apply when the first Wither is spawned so if the player has already spawned one this will not apply.
 		#Range: > 0
-		"Starting Difficulty" = 10
+		"Starting Difficulty" = 9
 		#How much blocks from wither will be scanned for players to check for difficulty
 		#Range: > 16
 		"Spawn Radius Player Check" = 128

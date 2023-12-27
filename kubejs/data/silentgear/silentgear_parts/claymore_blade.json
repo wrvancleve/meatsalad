@@ -1,0 +1,20 @@
+{
+  "type": "silentgear:compound_part",
+  "gear_type": "claymore",
+  "part_type": "silentgear:main",
+  "crafting_item": {
+    "item": "silentgear:claymore_blade"
+  },
+  "name": {
+    "translate": "part.silentgear.claymore_blade"
+  },
+  "stats": {
+    "melee_damage": {
+      "add": 9.0
+    },
+    "attack_speed": {
+      "add": -3.0
+    },
+    "repair_efficiency": 1.0
+  }
+}

@@ -111,6 +111,8 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'affix.meatsalad:spellbook/attribute/power_holy.suffix', 'of Radiance')
   event.add('meatsalad', 'affix.meatsalad:spellbook/attribute/power_ice', 'Cryomancer\'s')
   event.add('meatsalad', 'affix.meatsalad:spellbook/attribute/power_ice.suffix', 'of The Arctic')
+  event.add('meatsalad', 'affix.meatsalad:spellbook/mob_effect/elusive', 'Elusive')
+  event.add('meatsalad', 'affix.meatsalad:spellbook/mob_effect/elusive.suffix', 'of Evasion')
   event.add('meatsalad', 'meatsalad.basalz_gate', 'Basalz Gate')
   event.add('meatsalad', 'meatsalad.basalz_gate_large', 'Large Basalz Gate')
   event.add('meatsalad', 'meatsalad.blitz_gate', 'Blitz Gate')
