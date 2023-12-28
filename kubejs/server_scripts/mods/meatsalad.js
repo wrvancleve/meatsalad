@@ -531,7 +531,7 @@ ServerEvents.recipes(event => {
     D: 'kubejs:dimensional_shard_dust',
     A: '#forge:dusts/amethyst',
     a: '#forge:dusts/apatite',
-    U: 'kubejs:uu_matter',
+    U: 'allthemodium:ancient_soulberries',
     c: '#forge:dusts/cinnabar',
     P: '#forge:dusts/peridot',
     S: '#forge:dusts/sapphire',

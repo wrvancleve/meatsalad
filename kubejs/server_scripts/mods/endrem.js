@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: id })
   }
 
-  fullRemove('endrem:witch_pupil')
   fullRemove('endrem:exotic_eye')
   fullRemove('endrem:cold_eye')
   fullRemove('endrem:cryptic_eye')

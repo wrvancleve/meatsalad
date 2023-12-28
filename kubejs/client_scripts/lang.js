@@ -3,8 +3,9 @@ ClientEvents.lang('en_us', event => {
   event.add('alexsmobs', 'item.alexsmobs.mimicream', 'Mystery Goo')
 
   // allthemodium
-  //event.add('allthemodium', 'vibranium.other.loc', 'The Other: Any Biome (Y: 0 to 40)')
-  //event.add('allthemodium', 'unobtainium.loc', 'The End: End Highlands Biome (Y: 8 to 376)')
+  event.add('allthemodium', 'vibranium.loc', 'The Other: Any Biome (Y: 0 to 40)')
+  event.add('allthemodium', 'vibranium.other.loc', 'The Other: Any Biome (Y: 0 to 40)')
+  event.add('allthemodium', 'unobtainium.loc', 'The End: End Highlands Biome (Y: 8 to 376)')
   event.add('allthemodium', 'allthemodium.description', 'Palladium Nugget! The first step!(of many!)')
   event.add('allthemodium', 'material.allthemodium.allthemodium', 'Palladium')
   event.add('allthemodium', 'material.silentgear.allthemodium', 'Palladium')

@@ -4,8 +4,28 @@
     "rolls": 1,
     "entries": [
       {
+        "type": "minecraft:item",
+        "name": "endrem:witch_pupil",
+        "weight": 10,
+        "functions": [{ "function": "set_count", "count": 1 }],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "endrem:main/witch_eye": false
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
         "type": "empty",
-        "weight": 100
+        "weight": 90
       }
     ]
   }]

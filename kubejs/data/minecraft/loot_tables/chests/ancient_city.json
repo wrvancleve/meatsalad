@@ -405,7 +405,7 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "endrem:old_eye",
           "weight": 30,
           "functions": [

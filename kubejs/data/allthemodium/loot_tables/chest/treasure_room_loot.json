@@ -93,7 +93,7 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "endrem:magical_eye",
           "weight": 30,
           "functions": [

@@ -462,7 +462,7 @@
 		School = "irons_spellbooks:ender"
 		MaxLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
+		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 2.0
 		CooldownInSeconds = 3.0
