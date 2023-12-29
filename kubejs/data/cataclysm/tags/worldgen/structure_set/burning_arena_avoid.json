@@ -2,6 +2,7 @@
   "replace": true,
   "values": [
     "minecraft:nether_complexes",
+    "betterfortresses:fortress",
     "cataclysm:soul_black_smith"
   ]
 }

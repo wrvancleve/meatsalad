@@ -45,10 +45,6 @@
     "salt": 29188132,
     "spacing": 120,
     "separation": 100,
-    "type": "yungsapi:enhanced_random_spread",
-    "enhanced_exclusion_zone": {
-      "other_set": "#dungeons_arise:major_structures_avoid",
-      "chunk_count": 7
-    }
+    "type": "minecraft:random_spread"
   }
 }

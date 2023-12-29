@@ -9,7 +9,7 @@
     "type": "yungsapi:enhanced_random_spread",
     "enhanced_exclusion_zone": {
       "other_set": "#cataclysm:ruined_citadel_avoid",
-      "chunk_count": 10
+      "chunk_count": 5
     },
     "salt": 367895146,
     "spacing": 50,

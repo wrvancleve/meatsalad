@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:ocean_monuments",
+    "betteroceanmonuments:ocean_monument"
+  ]
+}

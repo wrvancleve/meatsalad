@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
+    "minecraft:end_city",
     "minecraft:end_cities",
     "awesomedungeonend:aws_end_structure"
   ]

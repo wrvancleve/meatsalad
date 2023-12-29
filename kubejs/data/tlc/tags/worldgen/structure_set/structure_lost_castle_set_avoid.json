@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "ctov:villages",
-    "ctov:pillager_outposts",
-    "minecraft:villages",
-    "minecraft:pillager_outposts"
+    "minecraft:villages"
   ]
 }
