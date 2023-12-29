@@ -76,20 +76,6 @@
       ]
     },
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 95
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:netherite_sword"
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 4,
         "max": 8

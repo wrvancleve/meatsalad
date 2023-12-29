@@ -36,28 +36,6 @@
             "item": "minecraft:emerald",
             "count": 1
           }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 25,
-          "quality": 1.5,
-          "min": 5,
-          "max": 20,
-          "stack": {
-            "item": "allthemodium:allthemodium_nugget",
-            "count": 1
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 10,
-          "quality": 1.5,
-          "min": 4,
-          "max": 14,
-          "stack": {
-            "item": "allthemodium:vibranium_nugget",
-            "count": 1
-          }
         }
       ]
     }

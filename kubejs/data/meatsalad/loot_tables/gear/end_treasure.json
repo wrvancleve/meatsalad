@@ -12,12 +12,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/netherite/random_treasure",
-          "weight": 15,
-          "quality": 3.5
-        },
-        {
-          "type": "minecraft:loot_table",
           "name": "meatsalad:gear/other/random_treasure",
           "weight": 20,
           "quality": 1.0

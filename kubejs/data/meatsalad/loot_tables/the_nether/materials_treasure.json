@@ -25,17 +25,6 @@
             "item": "minecraft:diamond",
             "count": 1
           }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 25,
-          "quality": 1.5,
-          "min": 1,
-          "max": 4,
-          "stack": {
-            "item": "minecraft:netherite_scrap",
-            "count": 1
-          }
         }
       ]
     }

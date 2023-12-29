@@ -30,25 +30,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:netherite_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:netherite_scrap",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:diamond",
           "functions": [
@@ -134,7 +115,7 @@
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.05,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:empty",
@@ -150,7 +131,7 @@
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.05,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:empty",
