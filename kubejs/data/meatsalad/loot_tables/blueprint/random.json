@@ -5,9 +5,15 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprint/early_templates",
+          "type": "placebo:stack_entry",
           "weight": 38,
+          "quality": 0,
+          "min": 1,
+          "max": 9,
+          "stack": {
+            "item": "silentgear:template_board",
+            "count": 1
+          },
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -44,9 +50,15 @@
           ]
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprint/early_blueprints",
+          "type": "placebo:stack_entry",
           "weight": 38,
+          "quality": 0,
+          "min": 1,
+          "max": 9,
+          "stack": {
+            "item": "silentgear:blueprint_paper",
+            "count": 1
+          },
           "conditions": [
             {
               "condition": "gamestageconditions:stage",

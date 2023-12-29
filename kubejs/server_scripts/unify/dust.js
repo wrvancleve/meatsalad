@@ -168,5 +168,54 @@ ServerEvents.recipes(event => {
     }
   })
 
+  const dustsNeedingCrushing = [
+    {input: 'minecraft:ender_pearl', mod: 'thermal', item: 'ender_pearl_dust'},
+    {input: 'thermal:niter', mod: 'thermal', item: 'niter_dust'},
+    {input: 'thermal:sulfur', mod: 'thermal', item: 'sulfur_dust'}
+  ]
+  dustsNeedingCrushing.forEach(dustCrushing => {
+    event.custom({
+      type: "mekanism:crushing",
+      input: {
+        ingredient: Ingredient.of(dustCrushing.input).toJson()
+      },
+      output: Item.of(`${dustCrushing.mod}:${dustCrushing.item}`).withCount(1).toJson()
+    }).id(`meatsalad:crushing/${dustCrushing.item}`);
+  })
+
+  const dustsNeedingPulverizing = [
+    {input: '#forge:gems/certus_quartz', mod: 'ae2', item: 'certus_quartz_dust'},
+    {input: '#forge:gems/fluix', mod: 'ae2', item: 'fluix_dust'},
+    {input: 'ae2:sky_stone_block', mod: 'ae2', item: 'sky_dust'},
+  ]
+  dustsNeedingPulverizing.forEach(dustPulverizing => {
+    event.custom({
+      type: "thermal:pulverizer",
+      ingredient: Ingredient.of(dustPulverizing.input).toJson(),
+      result: [Item.of(`${dustPulverizing.mod}:${dustPulverizing.item}`).withCount(1)]
+    }).id(`meatsalad:pulverizer/${dustPulverizing.item}`);
+  })
+
+  // Add missing amethyst processing
+  event.shapeless(
+    '4x minecraft:amethyst_shard',
+    [ 
+      '#forge:storage_blocks/amethyst',
+      'thermal:earth_charge'
+    ]
+  ).id('meatsalad:earth_charge/amethyst_shard');
+  event.custom({
+    type: "thermal:pulverizer",
+    ingredient: Ingredient.of('#forge:storage_blocks/amethyst').toJson(),
+    result: [Item.of('minecraft:amethyst_shard').withCount(4)]
+  }).id('meatsalad:pulverizer/amethyst_shard');
+  event.custom({
+    type: "mekanism:enriching",
+    input: {
+      ingredient: Ingredient.of('#forge:storage_blocks/amethyst').toJson()
+    },
+    output: Item.of('minecraft:amethyst_shard').withCount(4).toJson()
+  }).id('meatsalad:enriching/amethyst_shard')
+  
   process('kubejs:dimensional_shard', 'kubejs:dimensional_shard_dust', 'dimensional_shard_dust_from_shard')
 })

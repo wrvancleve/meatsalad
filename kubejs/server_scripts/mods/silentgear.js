@@ -12,14 +12,6 @@ ServerEvents.recipes(event => {
       results: results
     }).id(`meatsalad:salvaging/${item}`);
   }
-  let blueprintSalvage = (part, resultCount) => {
-    salvage('silentgear', `${part}_template`, [
-      Item.of('silentgear:template_board').withCount(resultCount).toJson()
-    ])
-    salvage('silentgear', `${part}_blueprint`, [
-      Item.of('silentgear:blueprint_paper').withCount(resultCount).toJson()
-    ])
-  }
 
   event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
   removeRecipes([
@@ -40,7 +32,6 @@ ServerEvents.recipes(event => {
     'silentgear:template_board',
     'silentgear:blueprint_paper',
   ])
-  
 
   event.custom({
     type: 'thermal:smelter',
@@ -163,54 +154,6 @@ ServerEvents.recipes(event => {
     },
     output: Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()
   }).id('meatsalad:crushing/crushed_shulker_shell');
-
-  // Blueprint Salvaging
-  [
-    {part: 'tip', resultCount: 2},
-    {part: 'coating', resultCount: 4},
-    {part: 'grip', resultCount: 2},
-    {part: 'binding', resultCount: 1},
-    {part: 'lining', resultCount: 3},
-    {part: 'katana', resultCount: 3},
-    {part: 'machete', resultCount: 3},
-    {part: 'spear', resultCount: 1},
-    {part: 'trident', resultCount: 2},
-    {part: 'knife', resultCount: 1},
-    {part: 'dagger', resultCount: 1},
-    {part: 'paxel', resultCount: 6},
-    {part: 'hammer', resultCount: 6},
-    {part: 'excavator', resultCount: 5},
-    {part: 'saw', resultCount: 5},
-    {part: 'mattock', resultCount: 4},
-    {part: 'prospector_hammer', resultCount: 2},
-    {part: 'sickle', resultCount: 3},
-    {part: 'slingshot', resultCount: 2},
-    {part: 'elytra', resultCount: 1},
-    {part: 'ring', resultCount: 4},
-    {part: 'bracelet', resultCount: 6},
-    {part: 'claymore', resultCount: 5},
-    {part: 'scimitar', resultCount: 3},
-    {part: 'greatsword', resultCount: 3},
-    {part: 'rod', resultCount: 2},
-    {part: 'cord', resultCount: 3},
-    {part: 'sword', resultCount: 2},
-    {part: 'pickaxe', resultCount: 3},
-    {part: 'shovel', resultCount: 1},
-    {part: 'axe', resultCount: 3},
-    {part: 'hoe', resultCount: 2},
-    {part: 'shears', resultCount: 2},
-    {part: 'fishing_rod', resultCount: 2},
-    {part: 'bow', resultCount: 3},
-    {part: 'crossbow', resultCount: 4},
-    {part: 'arrow', resultCount: 1},
-    {part: 'shield', resultCount: 3},
-    {part: 'helmet', resultCount: 5},
-    {part: 'chestplate', resultCount: 8},
-    {part: 'leggings', resultCount: 7},
-    {part: 'boots', resultCount: 4},
-  ].forEach(blueprintSalvageRecipe => {
-    blueprintSalvage(blueprintSalvageRecipe.part, blueprintSalvageRecipe.resultCount);
-  });
 
   // allthemodium Salvaging
   salvage('allthemodium', 'allthemodium_pickaxe', [

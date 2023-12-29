@@ -99,22 +99,6 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores', 'irons_spellbooks:arcane_debris')
 
   const mysteryGooReplications = [
-    'industrialforegoing:laser_lens0',
-    'industrialforegoing:laser_lens1',
-    'industrialforegoing:laser_lens2',
-    'industrialforegoing:laser_lens3',
-    'industrialforegoing:laser_lens4',
-    'industrialforegoing:laser_lens5',
-    'industrialforegoing:laser_lens6',
-    'industrialforegoing:laser_lens7',
-    'industrialforegoing:laser_lens8',
-    'industrialforegoing:laser_lens9',
-    'industrialforegoing:laser_lens10',
-    'industrialforegoing:laser_lens11',
-    'industrialforegoing:laser_lens12',
-    'industrialforegoing:laser_lens13',
-    'industrialforegoing:laser_lens14',
-    'industrialforegoing:laser_lens15',
     'cataclysm:abyss_eye',
     'cataclysm:flame_eye',
     'cataclysm:mech_eye',

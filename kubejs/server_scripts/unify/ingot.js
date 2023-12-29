@@ -66,7 +66,8 @@ ServerEvents.recipes(event => {
   const gemsToOres = [
     'peridot',
     'ruby',
-    'sapphire'
+    'sapphire',
+    'bort'
   ]
   gemsToOres.forEach(material => {
     let gem = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`);
@@ -77,7 +78,7 @@ ServerEvents.recipes(event => {
       ingredient: Ingredient.of(`#forge:ores/${material}`).toJson(),
       result: [
         {
-          item: `alltheores:${material}`,
+          item: gem.toItemString().slice(1, -1),
           chance: 2.5
         },
         {

@@ -63,6 +63,6 @@ JEIEvents.information(event => {
 
     event.addItem('summoningrituals:altar', Text.of('Obtained in End loot chests'));
 
-    event.addItem('silentgear:template_board', Text.of('Obtain templates from loot chests and salvage them for their template boards'));
-    event.addItem('silentgear:blueprint_paper', Text.of('Obtain blueprints from loot chests and salvage them for their blueprint papers'));
+    event.addItem('silentgear:template_board', Text.of('Obtained from loot chests'));
+    event.addItem('silentgear:blueprint_paper', Text.of('Obtained from loot chests'));
 })

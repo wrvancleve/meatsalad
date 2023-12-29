@@ -1,44 +1,87 @@
 ServerEvents.recipes(event => {
   global.replaceShaped(event, [
-    "AIA",
-    "PEP",
-    "AIA"
+    "GWG",
+    "PPP"
   ], {
-    A: 'minecraft:amethyst_shard',
-    P: '#forge:paper',
-    I: '#forge:nuggets/iron',
-    E: 'kubejs:infused_ender_pearl'
+    G: '#forge:nuggets/gold',
+    W: 'waystones:warp_dust',
+    P: '#forge:paper'
   }, 'waystones', 'return_scroll');
 
   global.replaceShaped(event, [
-    "AGA",
-    "PEP",
-    "AGA"
+    "GWG",
+    "GEG",
+    "PPP"
   ], {
-    A: 'minecraft:amethyst_shard',
-    P: '#forge:paper',
     G: '#forge:nuggets/gold',
-    E: 'kubejs:infused_ender_pearl'
+    W: 'waystones:warp_dust',
+    E: 'kubejs:infused_ender_pearl',
+    P: '#forge:paper'
   }, 'waystones', 'bound_scroll');
 
   global.replaceShaped(event, [
-    "ADA",
-    "PEP",
-    "ADA"
+    "WWW",
+    "GEG",
+    "PPP"
   ], {
-    A: 'minecraft:amethyst_shard',
-    P: '#forge:paper',
-    D: '#forge:nuggets/diamond',
-    E: 'kubejs:infused_ender_pearl'
+    W: 'waystones:warp_dust',
+    G: '#forge:nuggets/gold',
+    E: 'kubejs:infused_ender_pearl',
+    P: '#forge:paper'
   }, 'waystones', 'warp_scroll');
 
   global.replaceShaped(event, [
-    "AEA",
-    "EDE",
-    "AEA"
+    "SWS",
+    "WEW",
+    "SWS"
   ], {
-    A: 'minecraft:amethyst_shard',
+    S: 'minecraft:stone_bricks',
+    W: 'waystones:warp_dust',
+    E: 'kubejs:infused_ender_pearl'
+  }, 'waystones', 'warp_plate');
+  
+  global.replaceShaped(event, [
+    "WEW",
+    "EDE",
+    "WEW"
+  ], {
+    W: 'waystones:warp_dust',
     E: '#balm:emeralds',
-    D: 'kubejs:dark_matter'
+    D: 'kubejs:infused_dark_matter'
   }, 'waystones', 'warp_stone');
+
+  event.remove({ id: 'waystones:warp_dust' });
+
+  event.custom({
+    type: 'thermal:smelter',
+    ingredients: [
+      {
+        value: [
+          { tag: 'forge:ender_pearls' },
+          { tag: 'forge:dusts/ender_pearl' },
+        ],
+        count: 1
+      },
+      {
+        value: [
+          { tag: 'forge:gems/amethyst' },
+          { tag: 'forge:dusts/amethyst' },
+        ],
+        count: 1
+      }
+    ],
+    result: [Item.of('waystones:warp_dust')],
+    energy: 8000
+  }).id('meatsalad:smelter/warp_dust');
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      {tag: 'forge:ender_pearls'},
+      {tag: 'forge:gems/amethyst'}
+    ],
+    energy: 8000,
+    result: {
+      item: 'waystones:warp_dust'
+    }
+  }).id('meatsalad:energizing/warp_dust');
 })

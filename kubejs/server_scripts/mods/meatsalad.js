@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
           count: 3,
           item: `kubejs:${material}_clump`
       }
-    }).id(`meatsalad:processing/${material}/clump/from_raw_block`);
+    }).id(`meatsalad:processing/${material}/clump/from_ore`);
     event.custom({
       type: 'mekanism:purifying',
       chemicalInput: {
