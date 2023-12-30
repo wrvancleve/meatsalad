@@ -13,7 +13,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/ballast\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/ballast\", rarity: \"epic\"}"
           }
         },
         {
@@ -25,7 +25,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/brawlers\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/brawlers\", rarity: \"epic\"}"
           }
         },
         {
@@ -37,7 +37,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/breach\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/breach\", rarity: \"epic\"}"
           }
         },
         {
@@ -49,7 +49,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/combatant\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/combatant\", rarity: \"epic\"}"
           }
         },
         {
@@ -61,7 +61,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/guardian\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/guardian\", rarity: \"epic\"}"
           }
         },
         {
@@ -73,7 +73,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/lightning\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/lightning\", rarity: \"epic\"}"
           }
         },
         {
@@ -85,7 +85,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/lunar\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/lunar\", rarity: \"epic\"}"
           }
         },
         {
@@ -97,7 +97,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/samurai\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/samurai\", rarity: \"epic\"}"
           }
         },
         {
@@ -109,7 +109,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/slipstream\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/slipstream\", rarity: \"epic\"}"
           }
         },
         {
@@ -121,7 +121,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/solar\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/solar\", rarity: \"epic\"}"
           }
         },
         {
@@ -133,7 +133,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/splendor\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/splendor\", rarity: \"epic\"}"
           }
         },
         {
@@ -145,7 +145,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/tyrannical\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/tyrannical\", rarity: \"epic\"}"
           }
         },
         {
@@ -157,7 +157,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:core/warlord\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:core/warlord\", rarity: \"epic\"}"
           }
         },
         {
@@ -169,7 +169,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:overworld/earth\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:overworld/earth\", rarity: \"epic\"}"
           }
         },
         {
@@ -181,7 +181,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:overworld/royalty\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:overworld/royalty\", rarity: \"epic\"}"
           }
         },
         {
@@ -193,7 +193,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_nether/blood_lord\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:the_nether/blood_lord\", rarity: \"epic\"}"
           },
           "conditions": [
             {
@@ -211,7 +211,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_nether/inferno\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:the_nether/inferno\", rarity: \"epic\"}"
           },
           "conditions": [
             {
@@ -229,7 +229,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_end/mageslayer\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:the_end/mageslayer\", rarity: \"epic\"}"
           },
           "conditions": [
             {
@@ -247,7 +247,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"apotheosis:the_end/endersurge\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"apotheosis:the_end/endersurge\", rarity: \"epic\"}"
           },
           "conditions": [
             {
@@ -265,7 +265,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:blood\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:blood\", rarity: \"epic\"}"
           }
         },
         {
@@ -277,7 +277,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:cast_time\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:cast_time\", rarity: \"epic\"}"
           }
         },
         {
@@ -289,7 +289,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:cooldown\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:cooldown\", rarity: \"epic\"}"
           }
         },
         {
@@ -301,7 +301,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:evocation\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:evocation\", rarity: \"epic\"}"
           }
         },
         {
@@ -313,7 +313,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:fire\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:fire\", rarity: \"epic\"}"
           }
         },
         {
@@ -325,7 +325,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:holy\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:holy\", rarity: \"epic\"}"
           }
         },
         {
@@ -337,7 +337,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:ice\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:ice\", rarity: \"epic\"}"
           }
         },
         {
@@ -349,7 +349,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:intelligent\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:intelligent\", rarity: \"epic\"}"
           }
         },
         {
@@ -361,7 +361,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:lightning\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:lightning\", rarity: \"epic\"}"
           }
         },
         {
@@ -373,7 +373,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:nature\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:nature\", rarity: \"epic\"}"
           }
         },
         {
@@ -385,7 +385,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:spell_resist\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:spell_resist\", rarity: \"epic\"}"
           }
         },
         {
@@ -397,7 +397,7 @@
           "stack": {
             "item": "apotheosis:gem",
             "count": 1,
-            "nbt": "{gem: \"irons_spellbooks:summoning\", rarity: \"mythic\"}"
+            "nbt": "{gem: \"irons_spellbooks:summoning\", rarity: \"epic\"}"
           }
         }
       ]
