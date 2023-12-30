@@ -7,7 +7,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -19,7 +19,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -31,7 +31,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -43,7 +43,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -55,7 +55,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -67,7 +67,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -79,7 +79,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -91,7 +91,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -103,7 +103,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -115,7 +115,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -127,7 +127,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -139,7 +139,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -151,7 +151,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 12,
-          "quality": 0,
+          "quality": 1.0,
           "min": 1,
           "max": 1,
           "stack": {
@@ -163,7 +163,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -175,7 +175,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -187,7 +187,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -199,7 +199,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -211,7 +211,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -223,7 +223,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -235,7 +235,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -247,7 +247,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -259,7 +259,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -271,7 +271,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -283,7 +283,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {
@@ -295,7 +295,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 1,
-          "quality": 1.5,
+          "quality": 1.25,
           "min": 1,
           "max": 1,
           "stack": {

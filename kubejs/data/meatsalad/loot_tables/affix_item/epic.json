@@ -7,7 +7,7 @@
         {
           "type": "apotheosis:random_affix_item",
           "min_rarity": "epic",
-          "max_rarity": "epic",
+          "max_rarity": "mythic",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -19,7 +19,7 @@
         {
           "type": "apotheosis:random_affix_item",
           "min_rarity": "epic",
-          "max_rarity": "epic",
+          "max_rarity": "mythic",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -37,7 +37,7 @@
         {
           "type": "apotheosis:random_affix_item",
           "min_rarity": "epic",
-          "max_rarity": "epic",
+          "max_rarity": "mythic",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
