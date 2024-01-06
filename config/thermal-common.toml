@@ -9,15 +9,15 @@
 
 		[World.Ores.Silver]
 			#Whether this ore should spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Ores.Lead]
 			#Whether this ore should spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Ores.Nickel]
 			#Whether this ore should spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Ores.Cinnabar]
 			#Whether this ore should spawn in the world.
@@ -29,7 +29,7 @@
 
 		[World.Ores.Tin]
 			#Whether this ore should spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Ores.Niter]
 			#Whether this ore should spawn in the world.

@@ -9,7 +9,7 @@
 		#When joining a new world, should players be given a blueprint package?
 		#The blueprint package gives some blueprints when used (right-click).
 		#To change what is given, override the starter_blueprints loot table.
-		spawnWithStarterBlueprints = false
+		spawnWithStarterBlueprints = true
 
 	#Repair kit configs.
 	[item.repairKits]
@@ -130,10 +130,10 @@
 		[gear.aoeTool.matchMode]
 			#Match mode for most blocks
 			#Allowed Values: LOOSE, MODERATE, STRICT
-			standard = "LOOSE"
+			standard = "MODERATE"
 			#Match mode for ore blocks (anything in the forge:ores block tag)
 			#Allowed Values: LOOSE, MODERATE, STRICT
-			ores = "LOOSE"
+			ores = "STRICT"
 
 	[gear.repairs]
 		#Effectiveness of gear repairs done in an anvil. Set to 0 to disable anvil repairs.
@@ -180,10 +180,10 @@
 [starlightCharger]
 	#The rate at which the starlight charger gathers energy during the night
 	#Range: > 0
-	chargeRate = 1500
+	chargeRate = 50
 	#The maximum amount of energy the starlight charger can store
 	#Range: > 0
-	maxCharge = 10000000
+	maxCharge = 1000000
 
 [debug]
 
@@ -192,12 +192,12 @@
 		#This might help track down more obscure issues.
 		extraPartAndTraitInfo = false
 		#Log stat calculations in the debug.log every time gear stats are recalculated
-		stats = false
+		stats = true
 		#Log information on construction of gear and part models, as well as textures they attempt to load.
 		#This is intended to help find and fix rare issues that some users are experiencing.
 		modelAndTexture = false
 		#Log details about certain features being adding to biomes and other world generator details
-		worldGen = false
+		worldGen = true
 
 [other]
 	#Shows a "WIP" (work in progress) label in the tooltip of certain unfinished, but usable blocks and items

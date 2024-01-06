@@ -11,7 +11,7 @@
 	#Enable default recipes for Energy Cells?
 	cells = true
 	#Enable default recipes for Thrusters?
-	thrusters = false
+	thrusters = true
 	#Enable default recipes for Capacitors?
 	capacitors = true
 	#Enable default recipes for Jetpacks?
