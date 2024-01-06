@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/common",
+          "name": "meatsalad:affix_item/early",
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -33,18 +33,20 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/uncommon",
+          "name": "meatsalad:affix_item/mid",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_nether"
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_other"
-              }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                }
+              ]
             },
             {
               "condition": "minecraft:inverted",
@@ -57,24 +59,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/rare",
-          "conditions": [
-            {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_other"
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_end"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/epic",
+          "name": "meatsalad:affix_item/end",
           "conditions": [
             {
               "condition": "gamestageconditions:stage",

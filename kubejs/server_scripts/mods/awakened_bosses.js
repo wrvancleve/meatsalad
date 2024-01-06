@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
   fullRemove('awakened_bosses:herobrine_hoe')
 
   event.remove({ id: 'awakened_bosses:herobrine_blue_recipe' })
-  event.recipes.summoningrituals.altar('kubejs:uu_matter')
+  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
     .itemOutput('awakened_bosses:herobrine_blue')
     .input(Ingredient.of('#forge:dyes/blue'))
     .input(Ingredient.of('#forge:storage_blocks/diamond'))
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     .id(`meatsalad:summoning/herobrine_blue`);
 
   event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' });
-  event.recipes.summoningrituals.altar('kubejs:uu_matter')
+  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
     .itemOutput('awakened_bosses:herobrine_cyan')
     .input(Ingredient.of('#forge:dyes/cyan'))
     .input(Ingredient.of('#forge:storage_blocks/diamond'))

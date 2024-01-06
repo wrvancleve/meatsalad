@@ -45,37 +45,7 @@ ServerEvents.recipes(event => {
     createReplicationRecipes(idSplit[0], idSplit[1]);
   })
 
-  /*
-  const gateways = [
-    'zombie_gate',
-    'spider_gate',
-    'skeleton_gate',
-    'creeper_gate',
-    'slime_gate',
-    'magma_cube_gate',
-    'zombie_gate_large',
-    'spider_gate_large',
-    'skeleton_gate_large',
-    'creeper_gate_large',
-    'slime_gate_large',
-    'magma_cube_gate_large',
-    'witch_gate',
-    'blaze_gate',
-    'enderman_gate',
-    'ghast_gate',
-    'shulker_gate',
-    'witch_gate_large',
-    'blaze_gate_large',
-    'enderman_gate_large',
-    'ghast_gate_large',
-    'shulker_gate_large'
-  ]
-  for (let gateway of gateways) {
-    createReplicationRecipes('gateways', 'gate_pearl', `{gateway:"gateways:${gateway}"}`, gateway);
-  }
-  createReplicationRecipes('gateways', 'gate_pearl', '{gateway:"meatsalad:supreme_gate"}', 'supreme_gate');
-  */
-
+  // Remove in future
   const gems = [
     { id: 'apotheosis:core/ballast', name: 'ballast' },
     { id: 'apotheosis:core/brawlers', name: 'brawlers' },
@@ -96,6 +66,18 @@ ServerEvents.recipes(event => {
     { id: 'apotheosis:the_nether/inferno', name: 'inferno' },
     { id: 'apotheosis:the_end/mageslayer', name: 'mageslayer' },
     { id: 'apotheosis:the_end/endersurge', name: 'endersurge' },
+    { id: 'irons_spellbooks:blood', name: 'blood' },
+    { id: 'irons_spellbooks:cast_time', name: 'cast_time' },
+    { id: 'irons_spellbooks:cooldown', name: 'cooldown' },
+    { id: 'irons_spellbooks:evocation', name: 'evocation' },
+    { id: 'irons_spellbooks:fire', name: 'fire' },
+    { id: 'irons_spellbooks:holy', name: 'holy' },
+    { id: 'irons_spellbooks:ice', name: 'ice' },
+    { id: 'irons_spellbooks:intelligent', name: 'intelligent' },
+    { id: 'irons_spellbooks:lightning', name: 'lightning' },
+    { id: 'irons_spellbooks:nature', name: 'nature' },
+    { id: 'irons_spellbooks:spell_resist', name: 'spell_resist' },
+    { id: 'irons_spellbooks:summoning', name: 'summoning' }
   ]
   for (let gem of gems) {
     createReplicationRecipes('apotheosis', 'gem', `{gem:"${gem.id}",rarity:"ancient"}`, `${gem.name}_gem`);

@@ -144,6 +144,7 @@ ClientEvents.lang('en_us', event => {
 
   // silentgear
   event.add('silentgear', 'material.silentgear.adamantite', 'Adamantite')
+  event.add('silentgear', 'material.silentgear.arcane_cloth', 'Arcane Cloth')
   event.add('silentgear', 'material.silentgear.certus_quartz', 'Certus Quartz')
   event.add('silentgear', 'material.silentgear.charged_certus_quartz', 'Charged Certus Quartz')
   event.add('silentgear', 'material.silentgear.dragon_scale', 'Dragon Scale')

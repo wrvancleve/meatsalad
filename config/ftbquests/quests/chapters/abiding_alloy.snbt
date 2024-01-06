@@ -38,6 +38,7 @@
 			id: "2D1B6A902D81893B"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7FAA2111F7D18687"
 					type: "xp"
 					xp: 250
@@ -69,6 +70,7 @@
 			id: "0E3800093D05C350"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5E4B4C10F2DDFD97"
 					type: "xp"
 					xp: 250
@@ -100,6 +102,7 @@
 			id: "631C087D76C96115"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2F99498C0A4D3584"
 					type: "xp"
 					xp: 250
@@ -131,6 +134,7 @@
 			id: "76F851126A285D25"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "0F93BC263B73A9BF"
 					type: "xp"
 					xp: 250
@@ -163,6 +167,7 @@
 			id: "542EE0FF5FEA8AC4"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6CC149BE3FB10465"
 					type: "xp"
 					xp: 250
@@ -200,6 +205,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "251869DC93842157"
 					type: "xp"
 					xp: 250
@@ -228,6 +234,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "7141A3782515166E"
 					type: "xp"
 					xp: 250
@@ -259,6 +266,7 @@
 					type: "item"
 				}
 				{
+					auto: "invisible"
 					id: "511FAD6A3AE31859"
 					type: "xp"
 					xp: 250
@@ -286,6 +294,7 @@
 			id: "27EE91A1FEDCB45E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "77B0BDF457FD6097"
 					type: "xp"
 					xp: 250
@@ -311,6 +320,7 @@
 			id: "1F2346D554622D18"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5528F0A1FE94B19F"
 					type: "xp"
 					xp: 250
@@ -336,6 +346,7 @@
 			id: "71E7A1FD612672DE"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "083699BEC0F63BB6"
 					type: "xp"
 					xp: 250
@@ -361,6 +372,7 @@
 			id: "2922A4A65832F17F"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "00F28A1D5C5F77ED"
 					type: "xp"
 					xp: 250
@@ -386,6 +398,7 @@
 			id: "2F811CADF2CD3136"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6A178E962A1E2841"
 					type: "xp"
 					xp: 250
@@ -415,6 +428,7 @@
 			id: "7F1245E48D130030"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5563D9DE5DC8DFAC"
 					type: "xp"
 					xp: 250
@@ -437,11 +451,12 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["639CE429599CBC46"]
+			dependencies: ["45A9D19462AB5258"]
 			description: ["Obtained by killing the Ender Guardian in the Ruined Citadel of the End"]
 			id: "61D4EA2C30CD1CBC"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "23EA688E407DB699"
 					type: "xp"
 					xp: 250
@@ -473,36 +488,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["45A9D19462AB5258"]
-			description: ["Found in End loot chests"]
-			id: "639CE429599CBC46"
-			rewards: [
-				{
-					id: "20C9EBB0CC428E6D"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "0C9D5CB9210C4453"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Eye of Void"
-			tasks: [{
-				id: "528CAC7F48E2C234"
-				item: "cataclysm:void_eye"
-				type: "item"
-			}]
-			title: "Eye of Void"
-			x: 5.0d
-			y: -3.5d
-		}
-		{
 			id: "4567CA10CF091158"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7B7EBCA31B7B4A36"
 					type: "xp"
 					xp: 250
@@ -529,6 +518,7 @@
 			id: "187B1F743B3323DF"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5FF4C1E5252DF9B1"
 					type: "xp"
 					xp: 250
@@ -586,7 +576,7 @@
 				type: "advancement"
 			}]
 			title: "Enter The End"
-			x: 6.5d
+			x: 5.0d
 			y: -3.5d
 		}
 	]

@@ -1,0 +1,113 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "uncommon",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "hellshelf"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "uncommon",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "deepshelf"
+              }
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "uncommon",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 40,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "uncommon",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "hellshelf"
+            }
+          ]
+        },
+        {
+          "type": "apotheosis:random_affix_item",
+          "min_rarity": "uncommon",
+          "max_rarity": "epic",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 60,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "deepshelf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

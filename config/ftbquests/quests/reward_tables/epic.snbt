@@ -16,95 +16,13 @@
 		{ count: 4, item: "mekanism:ultimate_mechanical_pipe", random_bonus: 4 }
 		{ count: 4, item: "mekanism:ultimate_pressurized_tube", random_bonus: 4 }
 		{ item: "mekanism:ultimate_tier_installer" }
-		{
-			item: {
-				Count: 1b
-				id: "mekanism:ultimate_energy_cube"
-				tag: {
-					mekData: {
-						EnergyContainers: [{
-							Container: 0b
-							stored: "256000000"
-						}]
-					}
-				}
-			}
-		}
-		{ item: "allthemodium:allthemodium_ingot", random_bonus: 4 }
-		{ item: "allthemodium:vibranium_ingot", random_bonus: 4 }
-		{ item: "allthemodium:unobtainium_ingot", random_bonus: 2 }
-		{ item: "kubejs:adamantite_ingot", random_bonus: 2 }
-		{ item: "kubejs:mythril_ingot", random_bonus: 2 }
-		{ item: "silentgear:tyrian_steel_ingot", random_bonus: 4 }
-		{ item: "alltheores:iridium_ingot", random_bonus: 2 }
 		{ item: "mekanism:quantum_entangloporter" }
 		{ item: "apotheosis:sigil_of_socketing" }
 		{ count: 2, item: "apotheosis:epic_material", random_bonus: 4 }
 		{ count: 2, item: "apotheosis:mythic_material", random_bonus: 4 }
-		{ item: "kubejs:dark_matter", random_bonus: 2 }
 		{ item: "irons_spellbooks:epic_ink", random_bonus: 2 }
 		{ item: "irons_spellbooks:legendary_ink", random_bonus: 2 }
 		{ item: "irons_spellbooks:ancient_knowledge_fragment", random_bonus: 1 }
-		{
-			item: {
-				Count: 1b
-				id: "quark:ancient_tome"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:protection"
-						lvl: 4s
-					}]
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1b
-				id: "quark:ancient_tome"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:sharpness"
-						lvl: 5s
-					}]
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1b
-				id: "quark:ancient_tome"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:efficiency"
-						lvl: 5s
-					}]
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1b
-				id: "quark:ancient_tome"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:power"
-						lvl: 5s
-					}]
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1b
-				id: "quark:ancient_tome"
-				tag: {
-					StoredEnchantments: [{
-						id: "minecraft:piercing"
-						lvl: 4s
-					}]
-				}
-			}
-		}
 	]
 	title: "&dEpic Reward"
 	use_title: true

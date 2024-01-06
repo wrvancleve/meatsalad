@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/common_treasure",
+          "name": "meatsalad:affix_item/early_treasure",
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -33,18 +33,20 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/uncommon_treasure",
+          "name": "meatsalad:affix_item/mid_treasure",
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_nether"
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_other"
-              }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                }
+              ]
             },
             {
               "condition": "minecraft:inverted",
@@ -57,24 +59,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/rare_treasure",
-          "conditions": [
-            {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_other"
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_end"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/epic_treasure",
+          "name": "meatsalad:affix_item/end_treasure",
           "conditions": [
             {
               "condition": "gamestageconditions:stage",

@@ -5,13 +5,13 @@
 		{
 			"weight": 2,
 			"stack": {
-				"item": "irons_spellbooks:iron_spell_book"
+				"item": "irons_spellbooks:gold_spell_book"
 			}
 		},
 		{
 			"weight": 1,
 			"stack": {
-				"item": "irons_spellbooks:gold_spell_book"
+				"item": "irons_spellbooks:diamond_spell_book"
 			}
 		}
 	],

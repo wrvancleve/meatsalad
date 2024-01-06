@@ -5,19 +5,19 @@
 		{
 			"weight": 3,
 			"stack": {
+				"item": "irons_spellbooks:gold_spell_book"
+			}
+		},
+		{
+			"weight": 2,
+			"stack": {
 				"item": "irons_spellbooks:iron_spell_book"
 			}
 		},
 		{
 			"weight": 2,
 			"stack": {
-				"item": "irons_spellbooks:copper_spell_book"
-			}
-		},
-		{
-			"weight": 2,
-			"stack": {
-				"item": "irons_spellbooks:gold_spell_book"
+				"item": "irons_spellbooks:diamond_spell_book"
 			}
 		}
 	],

@@ -15,12 +15,6 @@
           "name": "meatsalad:gear/other/random",
           "weight": 50,
           "quality": 1.0
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/spell_book/late",
-          "weight": 25,
-          "quality": 1.0
         }
       ]
     }

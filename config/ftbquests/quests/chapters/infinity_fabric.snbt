@@ -53,6 +53,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "60C5B232C0A39D6C"
 					type: "xp"
 					xp: 5000
@@ -74,6 +75,7 @@
 			id: "5F12C4BCEBD5B4AF"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "625CA2DE08CF880A"
 					type: "xp"
 					xp: 500
@@ -99,6 +101,7 @@
 			id: "766CA9AE21F36FDB"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "68C5D55D9900A6C8"
 					type: "xp"
 					xp: 250
@@ -126,6 +129,7 @@
 			id: "03AD037EFD34332E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4BD6F5743D70B29F"
 					type: "xp"
 					xp: 250
@@ -156,6 +160,7 @@
 			id: "28A4975DA30E6C1E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1B0C9DB9DF87AEE3"
 					type: "xp"
 					xp: 500
@@ -184,6 +189,7 @@
 			id: "1D0DB72145C53568"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3CA91667B160C7C2"
 					type: "xp"
 					xp: 500
@@ -210,6 +216,7 @@
 			id: "07B6A5B53A1FD6E1"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "48429EF7F1F71CAC"
 					type: "xp"
 					xp: 500
@@ -246,6 +253,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "16871E0264E01045"
 					type: "xp"
 					xp: 250
@@ -267,6 +275,7 @@
 			id: "59EF276AC2E1A632"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7FEC42528F9FA69B"
 					type: "xp"
 					xp: 250
@@ -293,6 +302,7 @@
 			id: "1CB9C84CECDBD755"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "67E653E1B49D76F9"
 					type: "xp"
 					xp: 250
@@ -319,6 +329,7 @@
 			id: "6A6C48828D916EE5"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "79EED54D772C3E58"
 					type: "xp"
 					xp: 250
@@ -345,6 +356,7 @@
 			id: "168535C035FCBBA5"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "13655B3F9FAD53D2"
 					type: "xp"
 					xp: 250
@@ -383,6 +395,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "33154A9C6023B7BB"
 					type: "xp"
 					xp: 500
@@ -409,6 +422,7 @@
 					type: "loot"
 				}
 				{
+					auto: "invisible"
 					id: "12F4CA3C980BF67C"
 					type: "xp"
 					xp: 500
@@ -431,6 +445,7 @@
 			id: "7A49403071057C31"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "747B1481D7B00F14"
 					type: "xp"
 					xp: 250
@@ -456,6 +471,7 @@
 			id: "11DC0F3A15F72DCB"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "514467A3E2B6AD4C"
 					type: "xp"
 					xp: 250
@@ -482,6 +498,7 @@
 			id: "00EC3EC36645FD74"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "566C7ED589B6C596"
 					type: "xp"
 					xp: 250
@@ -508,6 +525,7 @@
 			id: "1B9DA9387FAA915E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "59580C9824C99B7B"
 					type: "xp"
 					xp: 150
@@ -534,6 +552,7 @@
 			id: "21521E524363B585"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6A83520FE4414CA4"
 					type: "xp"
 					xp: 100
@@ -560,6 +579,7 @@
 			id: "6094D6AD4A191B04"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3883E4B15A5C4900"
 					type: "xp"
 					xp: 100
@@ -587,6 +607,7 @@
 			id: "1E3235AA840DEE28"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3F5C15198021C030"
 					type: "xp"
 					xp: 250
@@ -613,6 +634,7 @@
 			id: "3CA4A8270BFF4EF5"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7BD4D1F518A72999"
 					type: "xp"
 					xp: 100
@@ -639,6 +661,7 @@
 			id: "147AACD38A4F9B68"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "51A5D4A4DE19C348"
 					type: "xp"
 					xp: 250
@@ -661,37 +684,11 @@
 			y: 5.5d
 		}
 		{
-			description: ["Found in End loot chests"]
-			id: "7099BF92A37D5844"
-			rewards: [
-				{
-					id: "35554DCCA187D86E"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7BCA70AD64A15F16"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Eye of Abyss"
-			tasks: [{
-				id: "3ADE348EF087846F"
-				item: "cataclysm:abyss_eye"
-				type: "item"
-			}]
-			title: "Eye of Abyss"
-			x: -8.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7099BF92A37D5844"]
 			description: ["Obtained by killing Leviathan in the Sunken City of the Overworld"]
 			id: "25997744933767C0"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7DE0FFCEF250E25D"
 					type: "xp"
 					xp: 250
@@ -718,6 +715,7 @@
 			id: "634B56A0AB439540"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "407A4CBE5A6442FE"
 					type: "xp"
 					xp: 100
@@ -744,6 +742,7 @@
 			id: "628A1A6EF23DE973"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5358E9C37B61EFD2"
 					type: "xp"
 					xp: 100
@@ -783,6 +782,7 @@
 			id: "0EBF2B7E019B8841"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "644AA3D9535BD3BB"
 					type: "xp"
 					xp: 500
@@ -807,37 +807,11 @@
 			y: 4.5d
 		}
 		{
-			description: ["Found in End loot chests"]
-			id: "7AB9702449BC3DBF"
-			rewards: [
-				{
-					id: "74DB3E6CC4B461D8"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7AC455E0FF5DAA64"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Eye of Flame"
-			tasks: [{
-				id: "4341C889BED9C3FC"
-				item: "cataclysm:flame_eye"
-				type: "item"
-			}]
-			title: "Eye of Flame"
-			x: 7.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7AB9702449BC3DBF"]
 			description: ["Obtained by killing Ignis in the Burning Arena of the Nether"]
 			id: "5B31F25B371910D4"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2453A98F1215B3E9"
 					type: "xp"
 					xp: 250
@@ -873,6 +847,7 @@
 			id: "64CF45C58643CE83"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "35D92BEC3C0593A7"
 					type: "xp"
 					xp: 100
@@ -899,6 +874,7 @@
 			id: "20A1BFF256AE6CA1"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6247778B89301202"
 					type: "xp"
 					xp: 250
@@ -925,6 +901,7 @@
 			id: "2036EB7955BF42EC"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "01CE41F5317AA193"
 					type: "xp"
 					xp: 250
@@ -951,6 +928,7 @@
 			id: "24DA6E89E42BACEA"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5D46CAE5D1A6EEC6"
 					type: "xp"
 					xp: 250
@@ -962,7 +940,7 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Mysterious Worm"
+			subtitle: "Craft a Mysterious Worm"
 			tasks: [{
 				id: "65582CB56BBCFAA0"
 				item: "alexsmobs:mysterious_worm"
@@ -978,6 +956,7 @@
 			id: "41C8A9E44381EFEB"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "0DAB9870EC28CB36"
 					type: "xp"
 					xp: 250
@@ -1004,6 +983,7 @@
 			id: "72EBDA35E7084ED7"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "44B067838A2DBE0D"
 					type: "xp"
 					xp: 150
@@ -1030,6 +1010,7 @@
 			id: "1F6551CC07210781"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6FAA143DF4FD6444"
 					type: "xp"
 					xp: 250
@@ -1065,6 +1046,7 @@
 			id: "649779F5BA9CF6E3"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6F93857A879291B6"
 					type: "xp"
 					xp: 500
@@ -1092,6 +1074,7 @@
 			id: "59AE5FD98E96420C"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3F3B60277A7A1C6D"
 					type: "xp"
 					xp: 250
@@ -1117,6 +1100,7 @@
 			id: "1B7CDB65C4D3E5C0"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6DFDC217A1C8420B"
 					type: "xp"
 					xp: 250
@@ -1141,6 +1125,7 @@
 			id: "52F60E03501F7382"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5650E6F6EAF414D2"
 					type: "xp"
 					xp: 250
@@ -1166,6 +1151,7 @@
 			id: "0C7F5E46EB6E1028"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "21A4CB064FCF8837"
 					type: "xp"
 					xp: 250

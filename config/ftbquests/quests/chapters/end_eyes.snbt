@@ -12,7 +12,7 @@
 		}
 	}
 	id: "7FB8D01FCF54E313"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,6 +20,7 @@
 			id: "7CDE0E4990A47862"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1EEE4E91322C902D"
 					type: "xp"
 					xp: 100
@@ -52,6 +53,7 @@
 			id: "2DA59DE8765F8C13"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "30468031E6DAEED6"
 					type: "xp"
 					xp: 100
@@ -84,6 +86,7 @@
 			id: "702D2E2433677F56"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "576E10ACBFF413C5"
 					type: "xp"
 					xp: 100
@@ -116,6 +119,7 @@
 			id: "12B9E1F1D5C40C70"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "64F5B80D930086D2"
 					type: "xp"
 					xp: 100
@@ -148,6 +152,7 @@
 			id: "64419370C70B7567"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2AFAFDB4BFB2B3F8"
 					type: "xp"
 					xp: 100
@@ -176,11 +181,11 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["46836674AC71753C"]
 			description: ["Obtained by killing The Harbinger in Ancient Factories of the Overworld"]
 			id: "2CE91A7A76E8DD3B"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "633B6A00E0E64F49"
 					type: "xp"
 					xp: 100
@@ -206,66 +211,14 @@
 			}]
 			title: "Undead Eye"
 			x: -3.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
-			description: ["Found in Nether loot chests"]
-			id: "46836674AC71753C"
-			rewards: [
-				{
-					id: "072B82912DF3273C"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "00ADDFF4E36579A5"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Eye of Mech"
-			tasks: [{
-				id: "0519C00DBB8D100F"
-				item: "cataclysm:mech_eye"
-				type: "item"
-			}]
-			title: "Eye of Mech"
-			x: -3.0d
-			y: 0.5d
-		}
-		{
-			description: ["Found in Nether loot chests"]
-			id: "1BF5EF0193A21C7B"
-			rewards: [
-				{
-					id: "0F681816D8AAADD3"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "0BCDBC0CC1AC245C"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Eye of Monstrosity"
-			tasks: [{
-				id: "704CD783FEBAE3C2"
-				item: "cataclysm:monstrous_eye"
-				type: "item"
-			}]
-			title: "Eye of Monstrosity"
-			x: -4.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1BF5EF0193A21C7B"]
 			description: ["Obtained by killing Netherite Monstrosity in Soul Black Smiths of the Nether"]
 			id: "59B4BE881EB41531"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "0096512AB2D4CACC"
 					type: "xp"
 					xp: 100
@@ -291,7 +244,7 @@
 			}]
 			title: "Evil Eye"
 			x: -4.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["554D0321566294B6"]
@@ -299,6 +252,7 @@
 			id: "30C4ECBD79126F23"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5B0ABE7D08153C72"
 					type: "xp"
 					xp: 100
@@ -332,6 +286,7 @@
 			id: "6FEDCD787D97941D"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "27E4D4093F23BE8C"
 					type: "xp"
 					xp: 100
@@ -360,10 +315,11 @@
 			y: 2.5d
 		}
 		{
-			description: ["Found in Nether or Ancient City loot chests"]
+			description: [""]
 			id: "1159DD49B9FA955A"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "614A3CDE189BE415"
 					type: "xp"
 					xp: 100
@@ -377,7 +333,7 @@
 			]
 			shape: "pentagon"
 			size: 1.5d
-			subtitle: "Obtain an Explorer's Compass to better locate structures"
+			subtitle: "Craft an Explorer's Compass to better locate structures"
 			tasks: [{
 				id: "2BF5FE97A9A13B61"
 				item: {
@@ -398,6 +354,7 @@
 			id: "30356B69CF7818CD"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "041CA2A2EBAD92DE"
 					type: "xp"
 					xp: 100
@@ -435,6 +392,7 @@
 			id: "67329A57DB9E749E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4CACE5B772FB23BF"
 					type: "xp"
 					xp: 250
@@ -467,6 +425,7 @@
 			id: "3FD414CBC50208A0"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4750E443BE0F1C14"
 					type: "xp"
 					xp: 100
@@ -499,6 +458,7 @@
 			id: "503896124F05816B"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6AEF2FAA4F3F1231"
 					type: "xp"
 					xp: 100
@@ -537,6 +497,7 @@
 			min_required_dependencies: 1
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4D7E9BF551C6C1C3"
 					type: "xp"
 					xp: 100
@@ -567,6 +528,7 @@
 					type: "item"
 				}
 				{
+					auto: "invisible"
 					id: "7DF04DA81516D24D"
 					type: "xp"
 					xp: 100
@@ -596,6 +558,7 @@
 			min_required_dependencies: 1
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1CC9B326E63D5730"
 					type: "xp"
 					xp: 100
@@ -630,6 +593,7 @@
 			id: "554D0321566294B6"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6A6E705E8D9A240C"
 					type: "xp"
 					xp: 100

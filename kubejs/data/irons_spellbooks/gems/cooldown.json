@@ -1,0 +1,29 @@
+{
+    "variant": "cooldown",
+    "weight": 5,
+    "quality": 0,
+    "dimensions": [],
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "gem_class":
+            {
+                "key": "anything",
+                "types": ["helmet",
+                    "chestplate",
+                    "leggings",
+                    "boots", "spellbook"]
+            },
+            "attribute": "irons_spellbooks:cooldown_reduction",
+            "operation": "MULTIPLY_BASE",
+			"values": {
+				"common": 0.01,
+				"uncommon": 0.02,
+				"rare": 0.04,
+				"epic": 0.06,
+				"mythic": 0.08,
+				"ancient": 0.10
+			}
+        }
+    ]
+}

@@ -11,7 +11,7 @@
 		"item": "minecraft:trident"
 	},
 	"type": "TRIDENT",
-	"min_rarity": "rare",
+	"min_rarity": "uncommon",
 	"max_rarity": "epic",
 	"dimensions": [
 		"allthemodium:the_other"

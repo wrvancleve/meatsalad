@@ -228,3 +228,90 @@ ServerEvents.recipes(event => {
     B: '#forge:storage_blocks/blaze_gold'
   }, 'silentgear', 'starlight_charger');
 })
+
+ServerEvents.chestLootTables(event => {
+  event.modify('minecraft:village/village_armorer', table => {
+    table.addPool(pool => {
+      pool.rolls = 1.0;
+      [
+        'coating',
+        'lining',
+        'shield',
+        'helmet',
+        'chestplate',
+        'leggings',
+        'boots',
+        'ring',
+        'bracelet'
+      ].forEach(type => {
+        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
+        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
+      })
+    });
+  });
+
+  event.modify('minecraft:village/village_fletcher', table => {
+    table.addPool(pool => {
+      pool.rolls = 1.0;
+      [
+        'cord',
+        'fletching',
+        'bow',
+        'crossbow',
+        'slingshot',
+        'arrow'
+      ].forEach(type => {
+        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
+        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
+      })
+    });
+  });
+
+  event.modify('minecraft:village/village_toolsmith', table => {
+    table.addPool(pool => {
+      pool.rolls = 1.0;
+      [
+        'rod',
+        'tip',
+        'coating',
+        'grip',
+        'binding',
+        'pickaxe',
+        'shovel',
+        'axe',
+        'paxel',
+        'hammer',
+        'excavator',
+        'saw',
+        'hoe',
+        'mattock',
+        'prospector_hammer',
+        'sickle',
+        'shears',
+        'fishing_rod'
+      ].forEach(type => {
+        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
+        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
+      })
+    });
+  });
+
+  event.modify('minecraft:village/village_weaponsmith', table => {
+    table.addPool(pool => {
+      pool.rolls = 1.0;
+      [
+        'sword',
+        'katana',
+        'machete',
+        'claymore',
+        'scimitar',
+        'spear',
+        'knife',
+        'dagger'
+      ].forEach(type => {
+        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
+        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
+      })
+    });
+  });
+})

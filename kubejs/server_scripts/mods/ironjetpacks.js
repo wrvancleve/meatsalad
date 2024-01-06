@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   let thruster = (material, material_type, coil) => {
-    event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${material}",Throttle:1.0d}`), [
+    event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${material}"}`), [
       'MCM',
       'CDC',
       'MFM'

@@ -21,13 +21,19 @@
           "entity": "minecraft:vindicator"
         },
         {
-          "entity": "minecraft:evoker"
+          "entity": "minecraft:pillager"
         },
         {
-          "entity": "minecraft:evoker"
+          "entity": "minecraft:pillager"
         },
         {
-          "entity": "minecraft:evoker"
+          "entity": "minecraft:pillager"
+        },
+        {
+          "entity": "minecraft:pillager"
+        },
+        {
+          "entity": "minecraft:pillager"
         },
         {
           "entity": "minecraft:ravager"
@@ -36,10 +42,10 @@
           "entity": "minecraft:ravager"
         },
         {
-          "entity": "minecraft:vex"
+          "entity": "minecraft:ravager"
         },
         {
-          "entity": "minecraft:vex"
+          "entity": "minecraft:illusioner"
         },
         {
           "entity": "minecraft:illusioner"
@@ -81,64 +87,67 @@
     {
       "entities": [
         {
-          "entity": "minecraft:piglin_brute"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:piglin_brute"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:piglin_brute"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:piglin_brute"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:piglin_brute"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:wither_skeleton"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:wither_skeleton"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:wither_skeleton"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:zoglin"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "minecraft:zoglin"
+          "entity": "cataclysm:endermaptera"
         },
         {
-          "entity": "thermal:basalz"
+          "entity": "alexsmobs:farseer"
         },
         {
-          "entity": "thermal:blitz"
+          "entity": "alexsmobs:farseer"
         },
         {
-          "entity": "thermal:blizz"
+          "entity": "alexsmobs:farseer"
         },
         {
-          "entity": "minecraft:blaze"
+          "entity": "alexsmobs:farseer"
         },
         {
-          "entity": "thermal:basalz"
+          "entity": "cataclysm:koboleton"
         },
         {
-          "entity": "thermal:blitz"
+          "entity": "cataclysm:koboleton"
         },
         {
-          "entity": "thermal:blizz"
+          "entity": "cataclysm:koboleton"
         },
         {
-          "entity": "minecraft:blaze"
+          "entity": "cataclysm:koboleton"
         },
         {
-          "entity": "irons_spellbooks:citadel_keeper"
+          "entity": "cataclysm:koboleton"
         },
         {
-          "entity": "irons_spellbooks:citadel_keeper"
+          "entity": "cataclysm:koboleton"
+        },
+        {
+          "entity": "cataclysm:koboleton"
         }
       ],
       "modifiers": [
@@ -168,7 +177,7 @@
           "value": 0.15
         }
       ],
-      "max_wave_time": 1000,
+      "max_wave_time": 1200,
       "setup_time": 150
     },
     {
@@ -189,6 +198,18 @@
           "entity": "cataclysm:deepling_brute"
         },
         {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_brute"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_angler"
+        },
+        {
           "entity": "cataclysm:deepling_angler"
         },
         {
@@ -199,6 +220,21 @@
         },
         {
           "entity": "cataclysm:deepling_angler"
+        },
+        {
+          "entity": "cataclysm:deepling_warlock"
+        },
+        {
+          "entity": "cataclysm:deepling_warlock"
+        },
+        {
+          "entity": "cataclysm:deepling_warlock"
+        },
+        {
+          "entity": "cataclysm:deepling_warlock"
+        },
+        {
+          "entity": "cataclysm:deepling_warlock"
         },
         {
           "entity": "cataclysm:deepling_priest"
@@ -209,6 +245,42 @@
         {
           "entity": "cataclysm:deepling_priest"
         },
+        {
+          "entity": "cataclysm:the_baby_leviathan"
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.85
+        },
+        {
+          "attribute": "generic.armor",
+          "operation": "ADDITION",
+          "value": 5
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.66
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.15
+        },
+        {
+          "attribute": "generic.movement_speed",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.15
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 150
+    },
+    {
+      "entities": [
         {
           "entity": "cataclysm:ignited_revenant"
         },
@@ -225,34 +297,28 @@
           "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "cataclysm:nameless_sorcerer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "cataclysm:nameless_sorcerer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "alexsmobs:farseer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "alexsmobs:farseer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "alexsmobs:farseer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "alexsmobs:farseer"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "irons_spellbooks:archevoker"
+          "entity": "cataclysm:the_watcher"
         },
         {
-          "entity": "irons_spellbooks:cryomancer"
-        },
-        {
-          "entity": "irons_spellbooks:necromancer"
-        },
-        {
-          "entity": "irons_spellbooks:pyromancer"
+          "entity": "cataclysm:the_watcher"
         }
       ],
       "modifiers": [
@@ -282,7 +348,7 @@
           "value": 0.20
         }
       ],
-      "max_wave_time": 1200,
+      "max_wave_time": 3000,
       "setup_time": 150
     }
   ],

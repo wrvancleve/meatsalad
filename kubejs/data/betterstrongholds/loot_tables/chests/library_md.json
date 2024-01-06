@@ -55,6 +55,16 @@
       ]
     },
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:blueprints/random"
+        }
+      ]
+    },
+    {
       "rolls": {
         "type": "minecraft:uniform",
         "min": 1.0,
@@ -71,26 +81,6 @@
           "name": "meatsalad:ancient_tomes/random",
           "weight": 30,
           "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 1.0,
-        "max": 2.0
-      },
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/misc",
-		      "weight": 20,
-          "quality": 0.5
         }
       ]
     }

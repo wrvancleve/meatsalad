@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:blueprints/random",
+          "weight": 170,
+          "quality": 1.25
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/random",
+          "weight": 30,
+          "quality": 1.5,
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "the_nether"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

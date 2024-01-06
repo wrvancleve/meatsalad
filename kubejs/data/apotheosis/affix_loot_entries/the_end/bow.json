@@ -5,7 +5,7 @@
 		"item": "minecraft:bow"
 	},
 	"type": "BOW",
-	"min_rarity": "epic",
+	"min_rarity": "rare",
 	"max_rarity": "mythic",
 	"dimensions": [
 		"minecraft:the_end"

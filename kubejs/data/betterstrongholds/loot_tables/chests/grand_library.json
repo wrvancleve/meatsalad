@@ -29,7 +29,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/misc"
+          "name": "meatsalad:blueprints/random"
         }
       ]
     }

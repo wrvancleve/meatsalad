@@ -21,12 +21,6 @@
           "name": "meatsalad:gear/other/random_treasure",
           "weight": 75,
           "quality": 1.0
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/spell_book/early",
-          "weight": 25,
-          "quality": 1.0
         }
       ]
     }

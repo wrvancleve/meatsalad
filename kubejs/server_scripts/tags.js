@@ -98,21 +98,6 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores/arcane_salvage', 'irons_spellbooks:arcane_debris')
   event.add('forge:ores', 'irons_spellbooks:arcane_debris')
 
-  const mysteryGooReplications = [
-    'cataclysm:abyss_eye',
-    'cataclysm:flame_eye',
-    'cataclysm:mech_eye',
-    'cataclysm:desert_eye',
-    'cataclysm:monstrous_eye',
-    'cataclysm:void_eye',
-    'alexsmobs:mysterious_worm'
-  ];
-  for (let mysteryGooReplication of mysteryGooReplications) {
-    event.add('meatsalad:mystery_goo_replication', mysteryGooReplication);
-  }
-
-  //event.remove('balm:ingots', 'allthemodium:allthemodium_ingot')
-
   const allTheModiumItems = [
     {type: 'ore', item: 'allthemodium:allthemodium_ore'},
     {type: 'ore', item: 'allthemodium:allthemodium_slate_ore'},
@@ -303,6 +288,7 @@ ServerEvents.tags('item', event => {
     'minecraft:slime_block',
 
     'alexsmobs:mimicream',
+    'irons_spellbooks:magic_cloth',
   ].forEach(silentGearLiningMaterial => event.add(`silentgear:materials/lining`, silentGearLiningMaterial));
 
   // Silent Gear Binding Materials

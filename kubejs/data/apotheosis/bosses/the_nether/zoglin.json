@@ -12,12 +12,12 @@
 	"dimensions": [
 		"minecraft:the_nether"
 	],
-	"min_rarity": "rare",
-	"max_rarity": "rare",
+	"min_rarity": "epic",
+	"max_rarity": "epic",
 	"stats": {
-		"rare": {
-			"enchant_chance": 0.55,
-			"enchantment_levels": [22, 15, 32, 25],
+		"epic": {
+			"enchant_chance": 0.75,
+			"enchantment_levels": [26, 22, 40, 30],
 			"effects": [{
 				"effect": "minecraft:fire_resistance",
 				"chance": 1.0
@@ -26,7 +26,7 @@
 					"attribute": "minecraft:generic.max_health",
 					"operation": "ADDITION",
 					"value": {
-						"min": 60,
+						"min": 100,
 						"steps": 20,
 						"step": 2
 					}
@@ -35,8 +35,8 @@
 					"attribute": "minecraft:generic.movement_speed",
 					"operation": "MULTIPLY_BASE",
 					"value": {
-						"min": 0.10,
-						"steps": 15,
+						"min": 0.12,
+						"steps": 25,
 						"step": 0.01
 					}
 				},
@@ -44,25 +44,25 @@
 					"attribute": "minecraft:generic.attack_damage",
 					"operation": "MULTIPLY_BASE",
 					"value": {
-						"min": 0.3,
-						"steps": 30,
+						"min": 0.35,
+						"steps": 35,
 						"step": 0.01
 					}
 				},
 				{
 					"attribute": "minecraft:generic.knockback_resistance",
 					"operation": "ADDITION",
-					"value": 0.5
+					"value": 0.85
 				},
 				{
 					"attribute": "minecraft:generic.armor",
 					"operation": "ADDITION",
-					"value": 3
+					"value": 6
 				},
 				{
 					"attribute": "minecraft:generic.armor_toughness",
 					"operation": "ADDITION",
-					"value": 1.5
+					"value": 3
 				}
 			]
 		}

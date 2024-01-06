@@ -18,6 +18,8 @@
 			id: "09CD6FE0FC354227"
 			rewards: [
 				{
+					auto: "invisible"
+					auto: "invisible"
 					id: "63A73B284BCABD49"
 					type: "xp"
 					xp: 100
@@ -44,6 +46,7 @@
 			id: "2376C0A75866B1B1"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "0D67D4AC1D9BCA83"
 					type: "xp"
 					xp: 100
@@ -72,6 +75,7 @@
 			id: "7FBA72F5C653E74B"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6C1AD68A4818907A"
 					type: "xp"
 					xp: 150
@@ -99,6 +103,7 @@
 			id: "67145AAC43A91150"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1FBEBE446C85E6F8"
 					type: "xp"
 					xp: 200
@@ -126,6 +131,7 @@
 			id: "1AF595505905649E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5E2D76ACE9DC8CD0"
 					type: "xp"
 					xp: 250
@@ -164,6 +170,7 @@
 			id: "51B13EE9B8CE0329"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1BADA27E12B40393"
 					type: "xp"
 					xp: 250
@@ -202,6 +209,7 @@
 			id: "45E9D9A98E02BA4D"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "49966A6D6F146157"
 					type: "xp"
 					xp: 150
@@ -229,6 +237,7 @@
 			id: "0C72B608AB9242AD"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "0F1B817A00672A57"
 					type: "xp"
 					xp: 200
@@ -255,6 +264,7 @@
 			id: "665E44FFA45456D7"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "39682C3DADFE1E99"
 					type: "xp"
 					xp: 100
@@ -282,6 +292,7 @@
 			id: "44859269762ED3A4"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7E22FCED98170057"
 					type: "xp"
 					xp: 150
@@ -309,6 +320,7 @@
 			id: "4B4EF0386D53CC08"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7AF06F8CABA01D3C"
 					type: "xp"
 					xp: 200
@@ -336,6 +348,7 @@
 			id: "31915960A8CA280E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "65BE9713360D62C4"
 					type: "xp"
 					xp: 250
@@ -374,6 +387,7 @@
 			id: "629C27E7F68AB76F"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1C32A355575B7223"
 					type: "xp"
 					xp: 500
@@ -414,6 +428,7 @@
 			id: "5FC5C14EDC60DFA9"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "485D87B0863A1970"
 					type: "xp"
 					xp: 500
@@ -454,6 +469,7 @@
 			id: "00DFBE008DC6FD87"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "6C8FC46CB60D1FEB"
 					type: "xp"
 					xp: 500
@@ -493,6 +509,7 @@
 			id: "6830FA81622C9208"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5E5D2198CB3C5FFC"
 					type: "xp"
 					xp: 100
@@ -520,6 +537,7 @@
 			id: "456439F42A48EDE1"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7E1284941CB2F963"
 					type: "xp"
 					xp: 150
@@ -547,6 +565,7 @@
 			id: "458A2E8C5C0941AB"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "71E6F6D89F429BE0"
 					type: "xp"
 					xp: 200
@@ -574,6 +593,7 @@
 			id: "13CAEED3F8AA2906"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4081EC4F08FB0C82"
 					type: "xp"
 					xp: 250
@@ -612,6 +632,7 @@
 			id: "555D87903E98A34D"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "243307D96E3D2E6C"
 					type: "xp"
 					xp: 500
@@ -651,6 +672,7 @@
 			id: "3E8ECCB7DE575852"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "48483B7C3230282A"
 					type: "xp"
 					xp: 100
@@ -684,6 +706,7 @@
 			id: "5CD03B1D6C0D1AE5"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2A0E8AB6D14E8FBF"
 					type: "xp"
 					xp: 150
@@ -717,6 +740,7 @@
 			id: "0C6830970D4DAD86"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "15F1CCB0F2188B3F"
 					type: "xp"
 					xp: 200
@@ -750,6 +774,7 @@
 			id: "6AB7AB52F3BA5E72"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "159E6918D87D09BC"
 					type: "xp"
 					xp: 250
@@ -794,6 +819,7 @@
 			id: "10EA2A2E4B9027F1"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7AD1082DBAFA5449"
 					type: "xp"
 					xp: 500
@@ -839,6 +865,7 @@
 			id: "2A2542F4A4A35660"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4BA6EB6B1F6DC23F"
 					type: "xp"
 					xp: 100
@@ -866,6 +893,7 @@
 			id: "3E4CBEA5D47B6D77"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "62D55AF8FEB563B2"
 					type: "xp"
 					xp: 150
@@ -893,6 +921,7 @@
 			id: "759EB3CA41D39713"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1FA4EAE6580A0124"
 					type: "xp"
 					xp: 200
@@ -920,6 +949,7 @@
 			id: "36D5D86E84398DDA"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "4E67F7E18BCFB097"
 					type: "xp"
 					xp: 250
@@ -958,6 +988,7 @@
 			id: "6ACA1DBBAC4CF0EC"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "25BA9838943E7F0C"
 					type: "xp"
 					xp: 500
@@ -997,6 +1028,7 @@
 			id: "136DA52459A22DAF"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "670EF888FE41E9AC"
 					type: "xp"
 					xp: 100
@@ -1024,6 +1056,7 @@
 			id: "19F7A5F52A342B73"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "54A30A03D23795C6"
 					type: "xp"
 					xp: 150
@@ -1051,6 +1084,7 @@
 			id: "5A5B7015B7820DC9"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "79996772C4671577"
 					type: "xp"
 					xp: 200
@@ -1078,6 +1112,7 @@
 			id: "300E1EC251B23C5C"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7CE5643B69A3524D"
 					type: "xp"
 					xp: 250
@@ -1116,6 +1151,7 @@
 			id: "63514CE4B81888BE"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "40B80A32BF7BAB82"
 					type: "xp"
 					xp: 500
@@ -1155,6 +1191,7 @@
 			id: "5F3E7AA087542200"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "30244BC5206D77FE"
 					type: "xp"
 					xp: 100
@@ -1182,6 +1219,7 @@
 			id: "53E5DE964C2A1009"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3D9F323026E72C17"
 					type: "xp"
 					xp: 150
@@ -1209,6 +1247,7 @@
 			id: "5A2908106A273F10"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "23D4FD8A69528CA7"
 					type: "xp"
 					xp: 200
@@ -1236,6 +1275,7 @@
 			id: "1EA293D8D4691D8B"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "7BC8E543FC3FCFCC"
 					type: "xp"
 					xp: 250
@@ -1274,6 +1314,7 @@
 			id: "001FCFBDDB3CE933"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2AD5B6B59C92CD86"
 					type: "xp"
 					xp: 500
@@ -1313,6 +1354,7 @@
 			id: "52D76E20A4703B80"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "232C4D212A1AD6D1"
 					type: "xp"
 					xp: 100
@@ -1346,6 +1388,7 @@
 			id: "70824A5F4A2F6176"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "2254DE23D2E7540C"
 					type: "xp"
 					xp: 150
@@ -1379,6 +1422,7 @@
 			id: "16192E3E9EA75E31"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "41A5DC532F62B873"
 					type: "xp"
 					xp: 200
@@ -1412,6 +1456,7 @@
 			id: "799543DA7C3E8F95"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "78037B1386668BA2"
 					type: "xp"
 					xp: 250
@@ -1445,6 +1490,7 @@
 			id: "42A033AB58774D9E"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "3C6A5D8C3ABC57EF"
 					type: "xp"
 					xp: 500
@@ -1480,6 +1526,7 @@
 			id: "35245DCE5B5E062C"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "1F0B9EC455AEDEB3"
 					type: "xp"
 					xp: 1000
@@ -1515,6 +1562,7 @@
 			id: "5146AB018F99E693"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "01A6336A28106794"
 					type: "xp"
 					xp: 2500
@@ -1550,6 +1598,7 @@
 			id: "1A40F55428FDE4BA"
 			rewards: [
 				{
+					auto: "invisible"
 					id: "5495C8AF390CAC5E"
 					type: "xp"
 					xp: 5000

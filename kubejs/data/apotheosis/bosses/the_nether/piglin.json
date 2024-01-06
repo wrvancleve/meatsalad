@@ -12,12 +12,12 @@
 	"dimensions": [
 		"minecraft:the_nether"
 	],
-	"min_rarity": "uncommon",
-	"max_rarity": "uncommon",
+	"min_rarity": "rare",
+	"max_rarity": "rare",
 	"stats": {
-		"uncommon": {
-			"enchant_chance": 0.3,
-			"enchantment_levels": [15, 10, 23, 17],
+		"rare": {
+			"enchant_chance": 0.55,
+			"enchantment_levels": [22, 15, 32, 25],
 			"effects": [{
 				"effect": "minecraft:fire_resistance",
 				"chance": 1.0
@@ -27,7 +27,7 @@
 					"operation": "ADDITION",
 					"value": {
 						"min": 40,
-						"steps": 30,
+						"steps": 40,
 						"step": 2
 					}
 				},
@@ -35,8 +35,8 @@
 					"attribute": "minecraft:generic.movement_speed",
 					"operation": "MULTIPLY_BASE",
 					"value": {
-						"min": 0.10,
-						"steps": 8,
+						"min": 0.15,
+						"steps": 15,
 						"step": 0.01
 					}
 				},
@@ -45,7 +45,7 @@
 					"operation": "MULTIPLY_BASE",
 					"value": {
 						"min": 0.25,
-						"steps": 25,
+						"steps": 30,
 						"step": 0.01
 					}
 				},

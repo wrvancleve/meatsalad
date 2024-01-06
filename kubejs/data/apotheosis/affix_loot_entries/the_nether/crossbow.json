@@ -6,7 +6,7 @@
 	},
 	"type": "CROSSBOW",
 	"min_rarity": "uncommon",
-	"max_rarity": "rare",
+	"max_rarity": "epic",
 	"dimensions": [
 		"minecraft:the_nether"
 	]

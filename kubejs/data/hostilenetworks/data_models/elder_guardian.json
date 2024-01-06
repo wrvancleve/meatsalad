@@ -26,6 +26,10 @@
 		{
 			"item": "progressivebosses:elder_guardian_spike",
 			"count": 3
+		},
+		{
+			"item": "bhc:yellow_heart",
+			"count": 1
 		}
 	],
 	"data_per_kill": [

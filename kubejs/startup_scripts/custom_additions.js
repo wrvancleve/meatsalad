@@ -323,6 +323,21 @@ StartupEvents.registry('item', event => {
   event.create('chaos_crystal').displayName('Chaos Crystal').rarity('epic').glow(true);
   event.create('chaos_shard').displayName('Chaos Shard').rarity('epic').glow(true);
 
+  event.create('meatsalad:god_apple').displayName('God Apple').rarity('epic').glow(true).food(food => {
+		food.hunger(20)
+      .saturation(2)
+      .effect('minecraft:absorption', 2400, 4, 1)
+      .effect('minecraft:regeneration', 600, 4, 1)
+      .effect('minecraft:fire_resistance', 6000, 0, 1)
+      .effect('minecraft:resistance', 6000, 1, 1)
+      .effect('minecraft:night_vision', 2400, 2, 1)
+      .effect('minecraft:conduit_power', 2400, 0, 1)
+      .effect('alexsmobs:lava_vision', 2400, 0, 1)
+      .effect('cofh_core:panacea', 2400, 0, 1)
+      .alwaysEdible()
+      .fastToEat()
+	})
+
   event.create('infinity_fabric').displayName('Infinity Fabric').rarity('epic').glow(true);
   event.create('infinity_fiber').displayName('Infinity Fiber').rarity('epic').glow(true);
 })

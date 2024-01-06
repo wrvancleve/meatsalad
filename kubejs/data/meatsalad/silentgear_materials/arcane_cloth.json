@@ -1,0 +1,55 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 0,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "irons_spellbooks:magic_cloth"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.arcane_cloth"
+  },
+  "stats": {
+    "lining": {}
+  },
+  "traits": {
+    "lining": [
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 1
+      },
+      {
+        "name": "meatsalad:mana_regen",
+        "level": 1
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#B2DAFF"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#B2DAFF"
+      }
+    ]
+  }
+}

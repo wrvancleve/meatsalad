@@ -239,7 +239,6 @@ JEIEvents.hideItems(event => {
     'alexsmobs:banana_slug_slime_block',
     'alexsmobs:crystalized_banana_slug_mucus',
     'alexsmobs:rainbow_glass',
-    'alexsmobs:capsid',
   ])
 })
 

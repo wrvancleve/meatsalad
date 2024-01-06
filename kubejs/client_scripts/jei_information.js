@@ -1,13 +1,13 @@
 JEIEvents.information(event => {
-    event.addItem('alexsmobs:mysterious_worm', Text.of('Obtained in End loot chests'));
-
     event.addItem('bhc:wither_bone', Text.of('Obtained by killing Wither Skeletons'));
-    event.addItem('bhc:red_heart', [
+    event.addItem('bhc:red_heart', Text.of('Obtained in loot chests'));
+    event.addItem('bhc:yellow_heart', [
         Text.of('Obtained by killing any of the following:'),
         Text.of('    Elder Guardian'),
         Text.of('    The Harbinger'),
         Text.of('    Netherite Monstrosity'),
         Text.of('    The Wither'),
+        Text.of('    Piglich'),
         Text.of('    Ender Dragon'),
         Text.of('    Ender Golem')
     ]);
@@ -20,14 +20,6 @@ JEIEvents.information(event => {
         Text.of('    Herobrine')
     ]);
     event.addItem('bhc:blue_heart', Text.of('Obtained by killing the Warden'));
-    event.addItem('bhc:yellow_heart', Text.of('Obtained in Other and End loot chests'));
-
-    event.addItem('cataclysm:desert_eye', Text.of('Obtained in Nether loot chests'));
-    event.addItem('cataclysm:mech_eye', Text.of('Obtained in Nether loot chests'));
-    event.addItem('cataclysm:flame_eye', Text.of('Obtained in End loot chests'));
-    event.addItem('cataclysm:void_eye', Text.of('Obtained in End loot chests'));
-    event.addItem('cataclysm:monstrous_eye', Text.of('Obtained in Nether loot chests'));
-    event.addItem('cataclysm:abyss_eye', Text.of('Obtained in End loot chests'));
 
     event.addItem('endrem:black_eye', Text.of('Obtained in buried or shipwreck treasure chests'))
     event.addItem('endrem:corrupted_eye', Text.of('Obtained in loot chests of Pillager Outposts'))
@@ -43,25 +35,6 @@ JEIEvents.information(event => {
     event.addItem('endrem:wither_eye', Text.of('Obtained by killing the Wither'))
 
     event.addItem('extendedcrafting:ender_alternator', Text.of('Place within a 7x7 area of an Ender Crafter to power it'))
-
-    event.addItem('explorerscompass:explorerscompass', Text.of('Obtained in Nether or Ancient City loot chests'))
-    event.addItem('naturescompass:naturescompass', Text.of("Obtained in Nether or Ancient City loot chests"))
-
-    event.addItem('industrialforegoing:laser_lens0', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens1', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens3', Text.of('Obtained in The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens4', Text.of('Obtained in The Other and End loot chests'));
-    event.addItem('industrialforegoing:laser_lens5', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens7', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens8', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens10', Text.of('Obtained in The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens11', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens12', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens13', Text.of('Obtained in The Other and End loot chests'));
-    event.addItem('industrialforegoing:laser_lens14', Text.of('Obtained in The End loot chests'));
-    event.addItem('industrialforegoing:laser_lens15', Text.of('Obtained in The Nether, The Other and The End loot chests'));
-
-    event.addItem('summoningrituals:altar', Text.of('Obtained in End loot chests'));
 
     event.addItem('silentgear:template_board', Text.of('Obtained from loot chests'));
     event.addItem('silentgear:blueprint_paper', Text.of('Obtained from loot chests'));

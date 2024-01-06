@@ -1,0 +1,25 @@
+{
+  "type": "silentgear:attribute",
+  "max_level": 5,
+  "name": {
+    "text": "Mana Regen"
+  },
+  "description": {
+    "translate": "Grants additional mana regen"
+  },
+  "attribute_modifiers": {
+    "all": [
+      {
+        "attribute": "irons_spellbooks:mana_regen",
+        "operation": 1,
+        "value": [
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05
+        ]
+      }
+    ]
+  }
+}

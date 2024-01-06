@@ -11,13 +11,6 @@ ServerEvents.recipes(event => {
   fullRemove('cataclysm:witherite_block');
   fullRemove('cataclysm:witherite_ingot');
   fullRemove('cataclysm:mechanical_fusion_anvil');
-  event.remove({ id: 'cataclysm:abyss_eye' });
-  event.remove({ id: 'cataclysm:desert_eye' });
-  event.remove({ id: 'cataclysm:flame_eye' });
-  event.remove({ id: 'cataclysm:mech_eye' });
-  event.remove({ id: 'cataclysm:monstrous_eye' });
-  event.remove({ id: 'cataclysm:void_eye' });
-  event.remove({ id: 'cataclysm:desert_eye' });
   event.remove({ id: 'cataclysm:abyssal_sacrifice' });
 
   event.recipes.summoningrituals.altar('alexsmobs:mimicream')

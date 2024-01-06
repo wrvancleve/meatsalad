@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/rare",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_nether"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_other"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/epic",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_nether"
+                },
+                {
+                  "condition": "gamestageconditions:stage",
+                  "stage": "the_other"
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "gamestageconditions:stage",
+                "stage": "the_end"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/mythic",
+          "conditions": [
+            {
+              "condition": "gamestageconditions:stage",
+              "stage": "the_end"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

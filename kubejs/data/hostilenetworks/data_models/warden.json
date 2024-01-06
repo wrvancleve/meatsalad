@@ -29,7 +29,11 @@
     {
       "item": "minecraft:echo_shard",
       "count": 3
-    }
+    },
+		{
+			"item": "bhc:blue_heart",
+			"count": 1
+		}
   ],
   "tier_data": [
     6,

@@ -378,31 +378,15 @@ ServerEvents.recipes(event => {
     energy: 5000
   }).id('meatsalad:crystallizer/eternal_crystal')
 
-  event.custom({
-    type: 'mekanism:nucleosynthesizing',
-    duration: 1250,
-    gasInput: {
-      amount: 5,
-      gas: 'mekanism:antimatter'
-    },
-    itemInput: {
-      ingredient: Item.of('alexsmobs:mimicream')
-    },
-    output: Item.of('kubejs:uu_matter')
-  }).id('meatsalad:nucleosynthesizing/uu_matter')
+  global.nucleosynthesize(event,
+    {mod: 'alexsmobs', item: 'mimicream'}, // Input
+    {mod: 'kubejs', item: 'uu_matter'} // Output
+  )
 
-  event.custom({
-    type: 'mekanism:nucleosynthesizing',
-    duration: 1250,
-    gasInput: {
-      amount: 5,
-      gas: 'mekanism:antimatter'
-    },
-    itemInput: {
-      ingredient: Ingredient.of('#forge:ingots/uranium')
-    },
-    output: Item.of('kubejs:neutronium_ingot')
-  }).id('meatsalad:nucleosynthesizing/neutronium_ingot')
+  global.nucleosynthesize(event,
+    {tag: '#forge:ingots/uranium'}, // Input
+    {mod: 'kubejs', item: 'neutronium_ingot'} // Output
+  )
 
   /*
   event.custom({

@@ -18,6 +18,10 @@
 		{
 			"item": "minecraft:nether_star",
 			"count": 1
+		},
+		{
+			"item": "bhc:yellow_heart",
+			"count": 1
 		}
 	],
 	"data_per_kill": [

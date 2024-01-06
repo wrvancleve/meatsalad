@@ -46,10 +46,6 @@
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chest/hallway_loot"
-        },
-        {
-          "condition": "forge:loot_table_id",
           "loot_table_id": "allthemodium:chest/library_loot"
         },
         {

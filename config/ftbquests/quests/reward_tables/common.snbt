@@ -46,6 +46,8 @@
 		{ item: "sophisticatedstorage:upgrade_base", weight: 5.0f }
 		{ item: "sophisticatedbackpacks:upgrade_base", weight: 5.0f }
 		{ item: "pipez:basic_upgrade", weight: 7.0f }
+		{ item: "waystones:return_scroll", weight: 3.0f }
+		{ item: "waystones:bound_scroll", weight: 3.0f }
 	]
 	title: "Common Reward"
 	use_title: true

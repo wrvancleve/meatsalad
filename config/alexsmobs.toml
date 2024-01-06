@@ -395,10 +395,10 @@
 		cachalotWhaleSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		enderiophageSpawnWeight = 0
+		enderiophageSpawnWeight = 4
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		enderiophageSpawnRolls = 0
+		enderiophageSpawnRolls = 2
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
 		baldEagleSpawnWeight = 0

@@ -1,0 +1,110 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 15.0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:boss_summoner",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 15.0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:sigil_of_socketing",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "minecraft:enchanted_golden_apple",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10.0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:ancient_knowledge_fragment",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 10.0,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "apotheosis:superior_sigil_of_socketing",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 7.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "silentgear:greatsword_blueprint",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 7.5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "meatsalad:god_apple",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "mekanism:pellet_plutonium",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 3,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "mekanism:pellet_polonium",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "mekanism:pellet_antimatter",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

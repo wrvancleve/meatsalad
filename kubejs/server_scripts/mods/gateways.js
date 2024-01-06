@@ -47,4 +47,14 @@ ServerEvents.recipes(event => {
       .recipeTime(200)
       .id(`meatsalad:summoning/supreme_gate_from_${gate.name}_large`);
   })
+
+  // Supreme Gate from Chaos Shard
+  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+    .itemOutput(Item.of('gateways:gate_pearl', 1, { gateway: 'meatsalad:supreme_gate' }))
+    .input('kubejs:chaos_shard')
+    .input('kubejs:draconic_infused_dark_matter')
+    .input('minecraft:nether_star')
+    .input('kubejs:ender_star')
+    .recipeTime(200)
+    .id('meatsalad:summoning/supreme_gate_from_chaos_shard');
 })

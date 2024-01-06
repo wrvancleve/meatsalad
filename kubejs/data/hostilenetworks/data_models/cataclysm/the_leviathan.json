@@ -24,6 +24,10 @@
 		{
 			"item": "cataclysm:abyssal_egg",
 			"count": 1
+		},
+		{
+			"item": "bhc:green_heart",
+			"count": 1
 		}
 	],
 	"data_per_kill": [

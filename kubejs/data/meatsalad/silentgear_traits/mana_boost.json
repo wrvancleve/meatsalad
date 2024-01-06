@@ -1,0 +1,25 @@
+{
+    "type": "silentgear:attribute",
+    "max_level": 5,
+    "name": {
+      "text": "Mana Boost"
+    },
+    "description": {
+      "translate": "Grants additional max mana"
+    },
+    "attribute_modifiers": {
+      "all": [
+        {
+          "attribute": "irons_spellbooks:max_mana",
+          "operation": 0,
+          "value": [
+            25,
+            50,
+            100,
+            150,
+            200
+          ]
+        }
+      ]
+    }
+  }

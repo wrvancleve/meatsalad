@@ -13,6 +13,9 @@
 - [Server Startup](#server-startup)
 
 ## Manual Mod Changes
+### Alex's Mobs
+- Remove data\alexsmobs\capsid_recipes\shattered_dimensional_carver.json
+
 ### Apotheosis
 - Remove data\apotheosis\affixes\sword\attribute\elongated.json
 - Remove data\apotheosis\affix_loot_entries\overworld\chainmail_*.json
