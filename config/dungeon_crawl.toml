@@ -7,13 +7,13 @@
 	#----------------------------------------------------------------------------------------------------+
 	# Enables extended debug logging to help detecting errors. Enabled by default.
 	#
-	extended_debug = true
+	extended_debug = false
 
 ["World Generation"]
 	#----------------------------------------------------------------------------------------------------+
 	# Experimental. Prevents caves, ravines, etc.. from interfering with a dungeon.
 	#
-	bury = false
+	bury = true
 	#----------------------------------------------------------------------------------------------------+
 	# When enabled, the dungeons will ignore caves instead of trying to adjust to them (by not generating specific blocks).
 	#
@@ -32,7 +32,7 @@
 	# Halving it will quadruple the amount of dungeons, doubling it would have the opposite effect.
 	#
 	#Range: 9 ~ 4096
-	spacing = 32
+	spacing = 30
 	#----------------------------------------------------------------------------------------------------+
 	# The minimum distance between two adjacent dungeons in chunks. Has to be lower than the spacing!
 	# The closer the separation is to the spacing, the more grid-aligned and predictable the dungeon placement will be.
@@ -40,7 +40,7 @@
 	# !! Has to be lower than the spacing! !!
 	#
 	#Range: 8 ~ 4095
-	separation = 12
+	separation = 20
 
 ["Dungeon Settings"]
 	#----------------------------------------------------------------------------------------------------+
