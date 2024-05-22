@@ -3,35 +3,69 @@
   "pools": [
     {
       "rolls": {
-        "type": "minecraft:uniform",
-        "min": 3.0,
-        "max": 8.0
+        "min": 2.0,
+        "max": 8.0,
+        "type": "minecraft:uniform"
       },
       "bonus_rolls": 0.10,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure"
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 7.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:paper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random"
+          "name": "meatsalad:chests/enchanted_books/random_treasure",
+          "weight": 9
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/ancient_tomes/random",
+          "weight": 9
         }
       ]
     },
     {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 2.0,
-        "max": 3.0
-      },
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprints/random"
+          "type": "minecraft:item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

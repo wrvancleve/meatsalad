@@ -56,12 +56,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 9
+          "weight": 10
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
-          "weight": 1
+          "name": "meatsalad:chests/enchanted_books/random"
         }
       ]
     },

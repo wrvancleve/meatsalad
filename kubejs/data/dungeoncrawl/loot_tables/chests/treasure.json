@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -292,95 +292,7 @@
         "max": 8.0,
         "min": 7.0
       }
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/materials_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/random_treasure",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/random",
-		      "weight": 20,
-          "quality": 0.5
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 20,
-          "quality": 0.5,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "bhc:red_heart",
-            "count": 1
-          }
-        }
-      ]
     }
-  ]
+  ],
+  "random_sequence": "dungeoncrawl:chests/treasure"
 }

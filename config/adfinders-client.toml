@@ -12,6 +12,8 @@
 	#Size of the arrow indicators
 	#Range: 0.0 ~ 1.0
 	arrowSize = 0.2
+	#Draw an outline around each indicator for better visualization
+	drawOutline = false
 
 [Metal]
 	#Color of the finder's name
@@ -26,6 +28,8 @@
 	#Size of the arrow indicators
 	#Range: 0.0 ~ 1.0
 	arrowSize = 0.2
+	#Draw an outline around each indicator for better visualization
+	drawOutline = false
 
 [Mineral]
 	#Color of the finder's name
@@ -40,4 +44,6 @@
 	#Size of the arrow indicators
 	#Range: 0.0 ~ 1.0
 	arrowSize = 0.2
+	#Draw an outline around each indicator for better visualization
+	drawOutline = false
 

@@ -16,7 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Found in buried or shipwreck treasure chests"]
+			description: ["Obtained by killing The Harbinger in Ancient Factories of the Overworld"]
 			id: "7CDE0E4990A47862"
 			rewards: [
 				{
@@ -49,7 +49,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["Found in loot chests of Witch Huts"]
+			description: ["Obtain a Witch Pupil by killing a Witch and craft the Witch Eye"]
 			id: "2DA59DE8765F8C13"
 			rewards: [
 				{
@@ -115,7 +115,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["Found in treasure chests of The Lost Castle of the Overworld"]
+			description: ["Obtained by killing the Ancient Remnant in the Overworld Cursed Pyramid"]
 			id: "12B9E1F1D5C40C70"
 			rewards: [
 				{
@@ -181,7 +181,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["Obtained by killing The Harbinger in Ancient Factories of the Overworld"]
+			description: ["Obtained by killing the Dead King in Catacombs (Overworld Dimension)"]
 			id: "2CE91A7A76E8DD3B"
 			rewards: [
 				{
@@ -366,18 +366,18 @@
 					type: "loot"
 				}
 				{
+					advancement: "meatsalad:stage/the_other"
 					auto: "invisible"
-					command: "/gamestage addTeam @p the_other true"
-					id: "5393A20DD5E1550D"
-					silent: true
+					criterion: ""
+					id: "3C3EE4AA070FF40E"
 					team_reward: true
-					title: "Advance to The Other Stage"
-					type: "command"
+					title: "Advance to Other Stage"
+					type: "advancement"
 				}
 			]
 			subtitle: "Craft a Teleport Pad to enter The Other"
 			tasks: [{
-				advancement: "meatsalad:the_other"
+				advancement: "allthemodium:the_other"
 				criterion: ""
 				id: "648D84D175F30152"
 				type: "advancement"
@@ -572,17 +572,17 @@
 			]
 			subtitle: "Obtain a Palladium Ore"
 			tasks: [{
-				id: "1ABE07A1204F24B5"
+				icon: "allthemodium:allthemodium_ore"
+				id: "2F3532E4172F2D80"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:ores/palladium"
+						value: "forge:ores/allthemodium"
 					}
 				}
-				title: "Any #forge:ores/palladium"
+				title: "Palladium Ore"
 				type: "item"
-				weak_nbt_match: true
 			}]
 			title: "Palladium Ore"
 			x: 4.0d
@@ -605,13 +605,13 @@
 					type: "loot"
 				}
 				{
+					advancement: "meatsalad:stage/the_nether"
 					auto: "invisible"
-					command: "/gamestage addTeam @p the_nether true"
-					id: "6A61B756E1CB565E"
-					silent: true
+					criterion: ""
+					id: "07CD4C593124F609"
 					team_reward: true
-					title: "Advance to The Nether Stage"
-					type: "command"
+					title: "Advance to Nether Stage"
+					type: "advancement"
 				}
 			]
 			tasks: [{

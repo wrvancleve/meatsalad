@@ -4,71 +4,110 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
+          "type": "placebo:stack_entry",
           "weight": 15,
-          "name": "irons_spellbooks:common_ink",
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:common_ink",
+            "count": 1
+          },
           "conditions": [
             {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_nether"
-              }
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_other"
-              }
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_end"
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": false,
+                    "meatsalad:stage/the_other": false,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "placebo:stack_entry",
           "weight": 25,
-          "name": "irons_spellbooks:uncommon_ink",
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:uncommon_ink",
+            "count": 1
+          },
           "conditions": [
             {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "gamestageconditions:stage",
-                "stage": "the_end"
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": false
+                  }
+                }
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "placebo:stack_entry",
           "weight": 6,
-          "name": "irons_spellbooks:rare_ink"
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:rare_ink",
+            "count": 1
+          }
         },
         {
-          "type": "minecraft:item",
+          "type": "placebo:stack_entry",
           "weight": 3,
-          "name": "irons_spellbooks:epic_ink",
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:epic_ink",
+            "count": 1
+          },
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_nether"
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
             }
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "placebo:stack_entry",
           "weight": 1,
-          "name": "irons_spellbooks:legendary_ink",
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "irons_spellbooks:legendary_ink",
+            "count": 1
+          },
           "conditions": [
             {
-              "condition": "gamestageconditions:stage",
-              "stage": "the_end"
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": true
+                  }
+                }
+              }
             }
           ]
         },

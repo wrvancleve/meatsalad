@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#allthemodium:mining_features/mining_biomes",
-  "features": "meatsalad:mining_iron_ore_lower_placed",
-  "step": "underground_ores"
-}

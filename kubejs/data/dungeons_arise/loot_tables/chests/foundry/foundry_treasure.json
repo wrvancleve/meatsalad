@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure"
+          "name": "meatsalad:chests/enchanted_books/random_treasure"
         },
         {
           "type": "minecraft:item",

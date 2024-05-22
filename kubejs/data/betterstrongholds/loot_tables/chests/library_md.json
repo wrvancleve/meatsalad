@@ -7,7 +7,7 @@
         "max": 10.0,
         "type": "minecraft:uniform"
       },
-      "bonus_rolls": 0.05,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -49,40 +49,20 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
-		      "weight": 9
+          "name": "meatsalad:chests/enchanted_books/random_treasure",
+          "weight": 9
         }
       ]
     },
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprints/random"
+          "type": "minecraft:item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
         }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 1.0,
-        "max": 2.0
-      },
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 30,
-          "quality": 1
-        }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

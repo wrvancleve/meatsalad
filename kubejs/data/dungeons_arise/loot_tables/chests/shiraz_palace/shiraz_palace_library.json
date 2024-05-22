@@ -30,7 +30,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random"
+          "name": "meatsalad:chests/enchanted_books/random"
         },
         {
           "type": "minecraft:item",
@@ -198,22 +198,6 @@
         {
           "type": "minecraft:loot_table",
           "name": "minecraft:chests/woodland_mansion"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 30,
-          "quality": 1
         }
       ]
     }

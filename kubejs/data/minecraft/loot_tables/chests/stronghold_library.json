@@ -18,7 +18,7 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -34,7 +34,7 @@
             }
           ],
           "name": "minecraft:paper",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -46,31 +46,26 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure",
-          "weight": 10
+          "name": "meatsalad:chests/enchanted_books/random_treasure",
+          "weight": 9
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 9.0,
+        "max": 10.0,
         "min": 2.0
       }
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
+      "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 50
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 50,
-          "quality": 2
+          "type": "minecraft:item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:chests/stronghold_library"
 }

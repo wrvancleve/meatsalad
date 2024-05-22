@@ -5,17 +5,17 @@
       "type": "forge:mod_loaded"
     }
   ],
-  "type": "allthemodium:piglich",
-  "subtypes": [],
+  "entity": "allthemodium:piglich",
+  "variants": [],
   "name": "entity.allthemodium.piglich",
-  "name_color": "0xD3D3D3",
+  "name_color": "#D3D3D3",
   "gui_scale": 0.85,
   "gui_x_offset": 0.0,
   "gui_y_offset": 0.0,
   "gui_z_offset": 0.0,
   "sim_cost": 16384,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
+    "item": "hostilenetworks:prediction_matrix",
     "count": 1
   },
   "base_drop": {
@@ -28,10 +28,11 @@
       "item": "allthemodium:piglich_heart",
       "count": 1
     },
-		{
-			"item": "bhc:yellow_heart",
-			"count": 1
-		}
+    {
+      "optional": true,
+      "item": "bhc:yellow_heart",
+      "count": 1
+    }
   ],
   "tier_data": [
     6,

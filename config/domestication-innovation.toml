@@ -93,11 +93,11 @@
 	#true if shadow hands enchant is enabled, false if disabled
 	shadow_hands_enabled = true
 	#true if disc jockey enchant is enabled, false if disabled
-	disc_jockey_enabled = true
+	disc_jockey_enabled = false
 	#true if defusal enchant is enabled, false if disabled
 	defusal_enabled = true
 	#true if warping bite enchant is enabled, false if disabled
-	warping_bite_enabled = true
+	warping_bite_enabled = false
 	#true if ore scenting enchant is enabled, false if disabled
 	ore_scenting_enabled = true
 	#true if gluttonous enchant is enabled, false if disabled
@@ -117,11 +117,11 @@
 	#true if rejuvenation enchant is enabled, false if disabled
 	rejuvenation_enabled = true
 	#true if undead curse enchant is enabled, false if disabled
-	undead_curse_enabled = true
+	undead_curse_enabled = false
 	#true if infamy curse enchant is enabled, false if disabled
-	infamy_curse_enabled = true
+	infamy_curse_enabled = false
 	#true if blight curse enchant is enabled, false if disabled
-	blight_curse_enabled = true
+	blight_curse_enabled = false
 	#true if immaturity curse enchant is enabled, false if disabled
-	immaturity_curse_enabled = true
+	immaturity_curse_enabled = false
 

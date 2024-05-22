@@ -19,7 +19,6 @@
 			rewards: [
 				{
 					auto: "invisible"
-					auto: "invisible"
 					id: "63A73B284BCABD49"
 					type: "xp"
 					xp: 100

@@ -8,10 +8,9 @@ ServerEvents.recipes(event => {
     G: '#forge:glass_panes',
     R: '#forge:dusts/redstone',
     C: '#forge:circuits/ultimate'
-  }, 'hostilenetworks', 'deep_learner');
+  }, Item.of('hostilenetworks:deep_learner'))
 
-  event.remove({ id: 'hostilenetworks:framework' })
-  event.shaped('hostilenetworks:blank_data_model', [
+  global.replaceShaped(event, [
     'CAC',
     'RHR',
     'CAC'
@@ -19,8 +18,8 @@ ServerEvents.recipes(event => {
     C: 'minecraft:clay_ball',
     A: '#forge:gems/amethyst',
     R: '#forge:dusts/redstone',
-    H: 'ae2:cell_component_256k'
-  }).id('meatsalad:blank_data_model');
+    H: '#refinedstorage:parts/items/256k'
+  }, Item.of('hostilenetworks:blank_data_model'), 'framework')
 
   global.replaceShaped(event, [
     'OEO',
@@ -31,8 +30,8 @@ ServerEvents.recipes(event => {
     E: '#forge:storage_blocks/emerald',
     G: '#forge:ingots/blaze_gold',
     C: '#forge:circuits/ultimate',
-    I: 'kubejs:infused_ender_pearl'
-  }, 'hostilenetworks', 'loot_fabricator');
+    I: 'meatsalad:infused_ender_pearl'
+  }, Item.of('hostilenetworks:loot_fabricator'))
 
   global.replaceShaped(event, [
     'OTO',
@@ -41,7 +40,7 @@ ServerEvents.recipes(event => {
   ], {
     O: '#forge:obsidian',
     T: 'mekanism:teleportation_core',
-    I: 'kubejs:infused_ender_pearl',
+    I: 'meatsalad:infused_ender_pearl',
     C: '#forge:circuits/ultimate'
-  }, 'hostilenetworks', 'sim_chamber');
+  }, Item.of('hostilenetworks:sim_chamber'))
 })

@@ -7,12 +7,11 @@
 		{ item: "allthemodium:allthemodium_ingot", random_bonus: 4, weight: 10.0f }
 		{ item: "allthemodium:vibranium_ingot", random_bonus: 4, weight: 7.5f }
 		{ item: "allthemodium:unobtainium_ingot", random_bonus: 2, weight: 7.5f }
-		{ item: "kubejs:adamantite_ingot", random_bonus: 2, weight: 7.5f }
-		{ item: "kubejs:mythril_ingot", random_bonus: 2, weight: 7.5f }
+		{ item: "meatsalad:adamantite_ingot", random_bonus: 2, weight: 7.5f }
+		{ item: "meatsalad:mythril_ingot", random_bonus: 2, weight: 7.5f }
 		{ item: "silentgear:tyrian_steel_ingot", random_bonus: 4, weight: 7.5f }
 		{ item: "alltheores:iridium_ingot", random_bonus: 2, weight: 7.5f }
-		{ item: "kubejs:dark_matter", random_bonus: 2, weight: 7.5f }
-		{ item: "meatsalad:god_apple", weight: 5.0f }
+		{ item: "meatsalad:dark_matter", random_bonus: 2, weight: 7.5f }
 		{ item: "mekanism:pellet_plutonium", weight: 5.0f }
 		{ item: "mekanism:pellet_polonium", weight: 3.0f }
 		{ item: "mekanism:pellet_antimatter" }
@@ -23,7 +22,7 @@
 				Count: 1b
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "meatsalad:supreme_gate"
+					gateway: "meatsalad:supreme"
 				}
 			}
 			weight: 10.0f

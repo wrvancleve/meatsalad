@@ -1,71 +1,83 @@
 {
-    "target": "minecraft:cave_spider",
-    "attributes": [
-        {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "Tier Two More Health",
-            "amount": 0.5,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "minecraft:the_nether"
-                ]
-            }
-        },
-        {
-            "id": "minecraft:generic.attack_damage",
-            "modifier_name": "Tier Two More Damage",
-            "amount": 0.25,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "minecraft:the_nether"
-                ]
-            }
-        },
-        {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "Tier Three More Health",
-            "amount": 1.0,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "allthemodium:the_other"
-                ]
-            }
-        },
-        {
-            "id": "minecraft:generic.attack_damage",
-            "modifier_name": "Tier Three More Damage",
-            "amount": 0.5,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "allthemodium:the_other"
-                ]
-            }
-        },
-        {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "Tier Four More Health",
-            "amount": 1.5,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "minecraft:the_end"
-                ]
-            }
-        },
-        {
-            "id": "minecraft:generic.attack_damage",
-            "modifier_name": "Tier Four More Damage",
-            "amount": 1.0,
-            "operation": "multiply_base",
-            "world_whitelist": {
-                "dimensions": [
-                    "minecraft:the_end"
-                ]
-            }
+  "target": "minecraft:cave_spider",
+  "attributes": [
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier One More Health",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "minecraft:the_nether"
+          ]
         }
-    ]
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier One More Damage",
+      "amount": 0.25,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "minecraft:the_nether"
+          ]
+        }
+      }
+    },
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier Two More Health",
+      "amount": 1.0,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "allthemodium:the_other"
+          ]
+        }
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier Two More Damage",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "allthemodium:the_other"
+          ]
+        }
+      }
+    },
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier Three More Health",
+      "amount": 1.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "minecraft:the_end"
+          ]
+        }
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier Three More Damage",
+      "amount": 1.0,
+      "operation": "multiply_base",
+      "conditions": {
+        "world": {
+          "dimensions": [
+            "minecraft:the_end"
+          ]
+        }
+      }
+    }
+  ]
 }

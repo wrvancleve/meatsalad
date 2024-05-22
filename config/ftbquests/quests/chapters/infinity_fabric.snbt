@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "infinity_fabric"
 	group: "011F1A00FBBC8153"
-	icon: "kubejs:infinity_fabric"
+	icon: "meatsalad:infinity_fabric"
 	id: "403A066B92C66FDF"
 	order_index: 1
 	quest_links: [
@@ -43,7 +43,7 @@
 			rewards: [
 				{
 					id: "3A64C891271BD1CF"
-					item: "kubejs:infinity_fabric"
+					item: "meatsalad:infinity_fabric"
 					type: "item"
 				}
 				{
@@ -64,7 +64,7 @@
 			subtitle: "Craft an Infinity Fabric"
 			tasks: [{
 				id: "5E4C14184772ACB7"
-				item: "kubejs:infinity_fabric"
+				item: "meatsalad:infinity_fabric"
 				type: "item"
 			}]
 			title: "Infinity Fabric"
@@ -90,7 +90,7 @@
 			subtitle: "Craft a Draconic Infused Eternal Crystal"
 			tasks: [{
 				id: "5FA7F5FF8094999A"
-				item: "kubejs:draconic_infused_eternal_crystal"
+				item: "meatsalad:draconic_infused_eternal_crystal"
 				type: "item"
 			}]
 			title: "Draconic Infused Eternal Crystal"
@@ -144,7 +144,7 @@
 			subtitle: "Craft an Oblivion Shard"
 			tasks: [{
 				id: "09967B7D98D9D8F8"
-				item: "kubejs:oblivion_shard"
+				item: "meatsalad:oblivion_shard"
 				type: "item"
 			}]
 			title: "Oblivion Shard"
@@ -177,7 +177,7 @@
 			subtitle: "Obtain a Chaos Crystal"
 			tasks: [{
 				id: "770BC84F6739BC8C"
-				item: "kubejs:chaos_crystal"
+				item: "meatsalad:chaos_crystal"
 				type: "item"
 			}]
 			title: "Chaos Crystal"
@@ -243,7 +243,7 @@
 			rewards: [
 				{
 					id: "4A7597DF0083430B"
-					item: "kubejs:draconic_infused_dark_matter"
+					item: "meatsalad:draconic_infused_dark_matter"
 					type: "item"
 				}
 				{
@@ -264,7 +264,7 @@
 			subtitle: "Craft a Draconic Infused Dark Matter"
 			tasks: [{
 				id: "7E7F4ADF867C5FA1"
-				item: "kubejs:draconic_infused_dark_matter"
+				item: "meatsalad:draconic_infused_dark_matter"
 				type: "item"
 			}]
 			title: "Draconic Infused Dark Matter"
@@ -385,7 +385,7 @@
 			rewards: [
 				{
 					id: "1F4FB4EC1E4BDDE2"
-					item: "kubejs:uu_matter"
+					item: "meatsalad:uu_matter"
 					type: "item"
 				}
 				{
@@ -404,7 +404,7 @@
 			subtitle: "Craft an UU-Matter"
 			tasks: [{
 				id: "122FB2424C9E4BC3"
-				item: "kubejs:uu_matter"
+				item: "meatsalad:uu_matter"
 				type: "item"
 			}]
 			title: "UU-Matter"
@@ -432,9 +432,9 @@
 			size: 1.5d
 			subtitle: "Craft a Cosmic Shelling"
 			tasks: [{
-				icon: "kubejs:cosmic_shelling"
+				icon: "meatsalad:cosmic_shelling"
 				id: "252DE1E8BF5F6586"
-				item: "kubejs:cosmic_shelling"
+				item: "meatsalad:cosmic_shelling"
 				type: "item"
 			}]
 			title: "Cosmic Shelling"
@@ -799,7 +799,7 @@
 			subtitle: "Craft a Lost Illusion"
 			tasks: [{
 				id: "12EC9D06F077CA18"
-				item: "kubejs:lost_illusion"
+				item: "meatsalad:lost_illusion"
 				type: "item"
 			}]
 			title: "Lost Illusion"
@@ -822,20 +822,11 @@
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
-				{
-					auto: "invisible"
-					command: "/gamestage addTeam @p kill_ignis true"
-					id: "5B250AFD30D58D5A"
-					silent: true
-					team_reward: true
-					title: "Advance to Kill Ignis Stage"
-					type: "command"
-				}
 			]
 			subtitle: "Obtain Vulcanite"
 			tasks: [{
 				id: "3EC55F2A62B8E6E3"
-				item: "kubejs:vulcanite"
+				item: "meatsalad:vulcanite"
 				type: "item"
 			}]
 			title: "Vulcanite"
@@ -1063,7 +1054,7 @@
 			subtitle: "Craft a Manifest Illusion"
 			tasks: [{
 				id: "3F3AB239AB82877F"
-				item: "kubejs:manifest_illusion"
+				item: "meatsalad:manifest_illusion"
 				type: "item"
 			}]
 			title: "Manifest Illusion"
@@ -1089,7 +1080,7 @@
 			subtitle: "Craft an Abiding Alloy Block"
 			tasks: [{
 				id: "520B4C25F22F56E4"
-				item: "kubejs:abiding_alloy_block"
+				item: "meatsalad:abiding_alloy_block"
 				type: "item"
 			}]
 			title: "Abiding Alloy Block"
@@ -1140,7 +1131,7 @@
 			subtitle: "Craft an Adamantite Block"
 			tasks: [{
 				id: "70996D4C3FCD141B"
-				item: "kubejs:adamantite_block"
+				item: "meatsalad:adamantite_block"
 				type: "item"
 			}]
 			title: "Adamantite Block"
@@ -1166,7 +1157,7 @@
 			subtitle: "Craft a Mythril Block"
 			tasks: [{
 				id: "3C3B30957D78B442"
-				item: "kubejs:mythril_block"
+				item: "meatsalad:mythril_block"
 				type: "item"
 			}]
 			title: "Mythril Block"

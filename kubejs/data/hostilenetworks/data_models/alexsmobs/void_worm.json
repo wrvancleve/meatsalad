@@ -1,19 +1,25 @@
 {
-  "type": "alexsmobs:void_worm",
-  "subtypes": [],
+  "conditions": [
+    {
+      "modid": "alexsmobs",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "entity": "alexsmobs:void_worm",
+  "variants": [],
   "name": "entity.alexsmobs.void_worm",
-  "name_color": "0x1699AB",
+  "name_color": "#1699AB",
   "gui_scale": 0.55,
   "gui_x_offset": 0.0,
   "gui_y_offset": 0.0,
   "gui_z_offset": 0.0,
-  "sim_cost": 2560,
+  "sim_cost": 16384,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
+    "item": "hostilenetworks:prediction_matrix",
     "count": 1
   },
   "base_drop": {
-	"item": "hostilenetworks:end_prediction",
+    "item": "hostilenetworks:end_prediction",
     "count": 1
   },
   "trivia": "hostilenetworks.trivia.void_worm",
@@ -23,11 +29,15 @@
       "count": 1
     },
     {
+      "optional": true,
       "item": "bhc:green_heart",
       "count": 1
     }
   ],
   "data_per_kill": [
-		3, 16, 75, 150
-	]
+    3,
+    12,
+    30,
+    45
+  ]
 }

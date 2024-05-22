@@ -41,7 +41,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/diamond/random_treasure"
+          "name": "meatsalad:chests/gear/random_treasure"
         }
       ]
     },
@@ -115,12 +115,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 9
+          "weight": 10
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure",
-          "weight": 1
+          "name": "meatsalad:chests/enchanted_books/random"
         }
       ]
     },
@@ -196,7 +195,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "betterfortresses:chests/keep"
+          "name": "minecraft:chests/nether_bridge"
         }
       ]
     }

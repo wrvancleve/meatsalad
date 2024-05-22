@@ -27,9 +27,6 @@
       "armor_durability": {
         "add": 64.0
       },
-      "harvest_level": {
-        "max": 2.0
-      },
       "harvest_speed": {
         "add": 1.0
       },

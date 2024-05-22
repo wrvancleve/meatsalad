@@ -82,19 +82,19 @@
 					xp: 100
 				}
 				{
-					auto: "invisible"
-					command: "/gamestage addTeam @p hellshelf true"
-					id: "5EAFC8049CFE9A91"
-					silent: true
-					team_reward: true
-					title: "Advance to Hellshelf Stage"
-					type: "command"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "4B17E695CC59A805"
 					table_id: 2331916246003022704L
 					type: "loot"
+				}
+				{
+					advancement: "meatsalad:stage/hellshelf"
+					auto: "invisible"
+					criterion: ""
+					id: "6E4A4F703595A8B9"
+					team_reward: true
+					title: "Advance to Hellshelf Stage"
+					type: "advancement"
 				}
 			]
 			subtitle: "Create a Hellshelf"
@@ -153,19 +153,19 @@
 					xp: 100
 				}
 				{
-					auto: "invisible"
-					command: "/gamestage addTeam @p deepshelf true"
-					id: "04AD1AE47FC2CF6E"
-					silent: true
-					team_reward: true
-					title: "Advance to Deepshelf Stage"
-					type: "command"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "3E440C0DD9DD9805"
 					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					advancement: "meatsalad:stage/deepshelf"
+					auto: "invisible"
+					criterion: ""
+					id: "667139BA3AF0863D"
+					team_reward: true
+					title: "Advance to Deepshelf Stage"
+					type: "advancement"
 				}
 			]
 			subtitle: "Active a Dormant Deepshelf"
@@ -224,19 +224,19 @@
 					xp: 100
 				}
 				{
-					auto: "invisible"
-					command: "/gamestage addTeam @p endshelf true"
-					id: "49D0E332D8B680C2"
-					silent: true
-					team_reward: true
-					title: "Advance to Endshelf Stage"
-					type: "command"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "3175D05F551B6C3B"
 					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					advancement: "meatsalad:stage/endshelf"
+					auto: "invisible"
+					criterion: ""
+					id: "1371A5D18EDE497B"
+					team_reward: true
+					title: "Advance to Endshelf Stage"
+					type: "advancement"
 				}
 			]
 			subtitle: "Acquire Infused Dragon's Breath, and create an Endshelf"

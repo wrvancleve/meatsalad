@@ -1,9 +1,9 @@
 {
-  "feature": "meatsalad:other_redstone_ore",
+  "feature": "meatsalad:ore_redstone",
   "placement": [
     {
-      "count": 14,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 14
     },
     {
       "type": "minecraft:in_square"

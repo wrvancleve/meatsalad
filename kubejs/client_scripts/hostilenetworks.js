@@ -1,0 +1,13 @@
+ClientEvents.lang('en_us', event => {
+  event.add('hostilenetworks', 'hostilenetworks.trivia.crimson_mosquito', 'Hideous, mutant flying insect')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.dropbear', 'Demonic-looking marsupial')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.farseer', 'Being from beyond dimensions')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.ignis', 'Knight of the Burning Arena')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.mimicube', 'Relatives of the slimes of the Overworld and the Magma Cubes of the Nether')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.skreecher', 'Strange hideously-mutated primate')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.soul_vulture', 'Withered remains of long dead birds')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.straddler', 'Giant relatives of the common Strider of the Nether')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.void_worm', 'Interdimensional parasite that tunnels through reality')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.ender_guardian', 'Guardian of the Ruined Citadel')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.the_leviathan', 'Serpent of the Sunken City')
+})

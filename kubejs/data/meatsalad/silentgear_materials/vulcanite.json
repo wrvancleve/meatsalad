@@ -12,14 +12,14 @@
   },
   "crafting_items": {
     "main": {
-      "item": "kubejs:vulcanite"
+      "item": "meatsalad:vulcanite"
     }
   },
   "name": {
-    "translate": "material.silentgear.vulcanite"
+    "translate": "material.meatsalad.vulcanite"
   },
   "name_prefix": {
-    "translate": "material.silentgear.vulcanite"
+    "translate": "material.meatsalad.vulcanite"
   },
   "stats": {
     "coating": {
@@ -85,7 +85,7 @@
     ],
     "coating/armor": [
       {
-        "texture": "kubejs:vulcanite"
+        "texture": "meatsalad:vulcanite"
       }
     ]
   }

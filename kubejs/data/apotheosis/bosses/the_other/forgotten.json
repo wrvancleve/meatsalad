@@ -3,14 +3,18 @@
 		{
 			"type": "forge:mod_loaded",
 			"modid": "quark"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "allthemodium"
 		}
 	],
 	"entity": "quark:forgotten",
 	"weight": 30,
 	"quality": 7,
 	"size": {
-		"width": 1,
-		"height": 2
+		"width": 0.7,
+		"height": 2.4
 	},
 	"valid_gear_sets": [
 		"#the_other",
@@ -57,7 +61,7 @@
 					}
 				},
 				{
-					"attribute": "apotheosis:arrow_damage",
+					"attribute": "attributeslib:arrow_damage",
 					"operation": "MULTIPLY_BASE",
 					"value": {
 						"min": 0.25,
@@ -107,7 +111,7 @@
 					}
 				},
 				{
-					"attribute": "apotheosis:arrow_damage",
+					"attribute": "attributeslib:arrow_damage",
 					"operation": "MULTIPLY_BASE",
 					"value": {
 						"min": 0.35,

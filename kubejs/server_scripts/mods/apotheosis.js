@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
-  event.remove({ id: 'apotheosis:ender_lead' })
-  event.remove({ id: 'apotheosis:gem_cutting_table' })
+  global.removeRecipes(event, [
+    'apotheosis:ender_lead',
+    'apotheosis:gem_cutting_table',
+  ])
 
   global.nucleosynthesize(event,
     {mod: 'apotheosis', item: 'mythic_material'}, // Input
@@ -27,23 +29,24 @@ ServerEvents.recipes(event => {
     { id: 'apotheosis:the_nether/inferno', name: 'inferno' },
     { id: 'apotheosis:the_end/mageslayer', name: 'mageslayer' },
     { id: 'apotheosis:the_end/endersurge', name: 'endersurge' },
-    { id: 'irons_spellbooks:blood', name: 'blood' },
-    { id: 'irons_spellbooks:cast_time', name: 'cast_time' },
-    { id: 'irons_spellbooks:cooldown', name: 'cooldown' },
-    { id: 'irons_spellbooks:evocation', name: 'evocation' },
-    { id: 'irons_spellbooks:fire', name: 'fire' },
-    { id: 'irons_spellbooks:holy', name: 'holy' },
-    { id: 'irons_spellbooks:ice', name: 'ice' },
-    { id: 'irons_spellbooks:intelligent', name: 'intelligent' },
-    { id: 'irons_spellbooks:lightning', name: 'lightning' },
-    { id: 'irons_spellbooks:nature', name: 'nature' },
-    { id: 'irons_spellbooks:spell_resist', name: 'spell_resist' },
-    { id: 'irons_spellbooks:summoning', name: 'summoning' }
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:blood', name: 'blood' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:cast_time', name: 'cast_time' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:cooldown', name: 'cooldown' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:evocation', name: 'evocation' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:fire', name: 'fire' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:holy', name: 'holy' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:ice', name: 'ice' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:intelligent', name: 'intelligent' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:lightning', name: 'lightning' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:nature', name: 'nature' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:spell_resist', name: 'spell_resist' },
+    { mod: 'irons_spellbooks', id: 'irons_spellbooks:summoning', name: 'summoning' }
   ]
   for (let gem of gems) {
+    let gemMod = gem.mod || 'apotheosis'
     global.nucleosynthesize(event,
-      {mod: 'apotheosis', item: 'gem', data: `{gem:"${gem.id}",rarity:"mythic"}`}, // Input
-      {mod: 'apotheosis', item: 'gem', data: `{gem:"${gem.id}",rarity:"ancient"}`, recipeName: `${gem.name}_gem`} // Output
+      {mod: 'apotheosis', item: 'gem', data: `{affix_data:{rarity:"apotheosis:mythic"},gem:"${gem.id}"}`}, // Input
+      {mod: 'apotheosis', item: 'gem', data: `{affix_data:{rarity:"apotheosis:ancient"},gem:"${gem.id}"}`, recipeName: `gems/${gemMod}/${gem.name}`} // Output
     ) 
   }
 })

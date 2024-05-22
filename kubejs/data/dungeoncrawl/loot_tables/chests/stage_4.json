@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -119,22 +119,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:saddle",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:golden_apple",
           "weight": 2
         },
         {
@@ -342,158 +326,31 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:slime_ball",
-          "weight": 2
+          "name": "minecraft:minecart"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:minecart"
+          "name": "minecraft:diamond_horse_armor"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "function": "dungeoncrawl:random_potion",
-              "loot_level": 2
+              "loot_level": 3
             }
           ],
           "name": "minecraft:potion",
           "weight": 8
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:material_blocks"
-            }
-          ],
-          "name": "minecraft:air",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:shield",
-              "loot_level": 3
-            }
-          ],
-          "name": "minecraft:shield",
-          "weight": 6
         }
       ],
       "name": "stage four chest",
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 5.0
+        "max": 10.0,
+        "min": 7.0
       }
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/materials"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random",
-          "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/random",
-		      "weight": 20,
-          "quality": 0.5
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 20,
-          "quality": 0.5,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "bhc:red_heart",
-            "count": 1
-          }
-        }
-      ]
     }
-  ]
+  ],
+  "random_sequence": "dungeoncrawl:chests/stage_4"
 }

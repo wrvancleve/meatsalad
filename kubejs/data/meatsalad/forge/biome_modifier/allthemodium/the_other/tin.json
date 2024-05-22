@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#allthemodium:other_biomes",
+  "features": "meatsalad:other_tin_ore_placed",
+  "step": "underground_ores"
+}

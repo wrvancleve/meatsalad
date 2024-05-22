@@ -10,6 +10,6 @@
   "dimensions": [
     "minecraft:the_end"
   ],
-	"min_rarity": "rare",
-	"max_rarity": "mythic"
+	"min_rarity": "apotheosis:rare",
+	"max_rarity": "apotheosis:mythic"
 }

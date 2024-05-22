@@ -1,0 +1,14 @@
+{
+    "type": "botanypots:soil",
+    "input": {
+        "item": "allthemodium:ancient_stone"
+    },
+    "display": {
+        "block": "allthemodium:ancient_stone"
+    },
+    "categories": [
+        "stone",
+        "mushroom"
+    ],
+    "growthModifier": 1.1
+}

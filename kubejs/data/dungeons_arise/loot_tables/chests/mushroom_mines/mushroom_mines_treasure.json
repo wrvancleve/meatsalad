@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_treasure"
+          "name": "meatsalad:chests/gear/random_treasure"
         }
       ]
     },

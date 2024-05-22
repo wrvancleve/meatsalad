@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.silentgear.dragon_scale"
+    "translate": "material.meatsalad.dragon_scale"
   },
   "name_prefix": {
-    "translate": "material.silentgear.dragon_scale"
+    "translate": "material.meatsalad.dragon_scale"
   },
   "stats": {
     "fletching": {
@@ -104,7 +104,7 @@
     ],
     "coating/armor": [
       {
-        "texture": "kubejs:dragon_scale"
+        "texture": "meatsalad:dragon_scale"
       }
     ]
   }

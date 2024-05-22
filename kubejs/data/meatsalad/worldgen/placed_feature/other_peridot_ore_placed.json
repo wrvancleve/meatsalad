@@ -1,13 +1,9 @@
 {
-  "feature": "meatsalad:other_peridot_ore",
+  "feature": "meatsalad:ore_peridot",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
       "chance": 2
-    },
-    {
-      "count": 3,
-      "type": "minecraft:count"
     },
     {
       "type": "minecraft:in_square"

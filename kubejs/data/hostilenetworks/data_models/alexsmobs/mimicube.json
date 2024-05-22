@@ -1,19 +1,25 @@
 {
-  "type": "alexsmobs:mimicube",
-  "subtypes": [],
+  "conditions": [
+    {
+      "modid": "alexsmobs",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "entity": "alexsmobs:mimicube",
+  "variants": [],
   "name": "entity.alexsmobs.mimicube",
-  "name_color": "0x5E4F6F",
+  "name_color": "#5E4F6F",
   "gui_scale": 1.05,
   "gui_x_offset": 0.0,
   "gui_y_offset": 0.0,
   "gui_z_offset": 0.0,
-  "sim_cost": 512,
+  "sim_cost": 16384,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
+    "item": "hostilenetworks:prediction_matrix",
     "count": 1
   },
   "base_drop": {
-	"item": "hostilenetworks:end_prediction",
+    "item": "hostilenetworks:end_prediction",
     "count": 1
   },
   "trivia": "hostilenetworks.trivia.mimicube",

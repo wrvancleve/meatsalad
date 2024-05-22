@@ -1,69 +1,19 @@
+#Sets behavior for keeping Curios items on death.
+#ON - Curios items are kept on death
+#DEFAULT - Curios items follow the keepInventory gamerule
+#OFF - Curios items are dropped on death
+#Allowed Values: ON, DEFAULT, OFF
+keepCurios = "DEFAULT"
 
-#List of curio slot type settings
-[[curiosSettings]]
-	identifier = "head"
-	size = 0
-	visible = false
-	override = true
+[menu]
+	#Enables the old legacy Curios menu for better backwards compatibility.
+	enableLegacyMenu = true
 
-[[curiosSettings]]
-	identifier = "necklace"
-	size = 1
-	override = true
-
-[[curiosSettings]]
-	identifier = "back"
-	size = 1
-	override = true
-
-[[curiosSettings]]
-	identifier = "bracelet"
-	size = 1
-	override = true
-
-[[curiosSettings]]
-	identifier = "ring"
-	size = 1
-	override = true
-
-[[curiosSettings]]
-	identifier = "charm"
-	size = 3
-	override = true
-
-[[curiosSettings]]
-	identifier = "angelring"
-	size = 0
-	visible = false
-	override = true
-
-[[curiosSettings]]
-	identifier = "belt"
-	size = 0
-	visible = false
-	override = true
-
-[[curiosSettings]]
-	identifier = "feet"
-	size = 0
-	visible = false
-	override = true
-
-[[curiosSettings]]
-	identifier = "heartamulet"
-	size = 0
-	visible = false
-	override = true
-
-[[curiosSettings]]
-	identifier = "body"
-	size = 0
-	visible = false
-	override = true
-
-[[curiosSettings]]
-	identifier = "hands"
-	size = 0
-	visible = false
-	override = true
+	[menu.experimental]
+		#The minimum number of columns for the Curios menu.
+		#Range: 1 ~ 8
+		minimumColumns = 1
+		#The maximum number of slots per page of the Curios menu.
+		#Range: 1 ~ 48
+		maxSlotsPerPage = 48
 

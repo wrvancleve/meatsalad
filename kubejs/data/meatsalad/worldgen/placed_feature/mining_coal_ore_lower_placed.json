@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:ore_coal_buried",
+  "feature": "meatsalad:ore_coal",
   "placement": [
     {
-      "count": 25,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 25
     },
     {
       "type": "minecraft:in_square"

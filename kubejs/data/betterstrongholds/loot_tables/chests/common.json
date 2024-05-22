@@ -129,11 +129,6 @@
           "name": "minecraft:stick"
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random",
-          "weight": 2
-        },
-        {
           "type": "minecraft:item",
           "name": "minecraft:ender_pearl"
         },
@@ -185,7 +180,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
+          "name": "meatsalad:chests/enchanted_books/random",
           "weight": 1
         }
       ]

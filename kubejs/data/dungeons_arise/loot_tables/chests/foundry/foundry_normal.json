@@ -29,6 +29,10 @@
           ]
         },
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/enchanted_books/random"
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
           "functions": [

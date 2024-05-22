@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.silentgear.echo"
+    "translate": "material.meatsalad.echo"
   },
   "name_prefix": {
-    "translate": "material.silentgear.echo"
+    "translate": "material.meatsalad.echo"
   },
   "stats": {
     "coating": {}
@@ -61,7 +61,7 @@
     ],
     "coating/armor": [
       {
-        "texture": "kubejs:echo"
+        "texture": "meatsalad:echo"
       }
     ]
   }

@@ -4,16 +4,16 @@ ServerEvents.recipes(event => {
     'isi',
     'iii'
   ], {
-    i: 'kubejs:infinity_fiber',
+    i: 'meatsalad:infinity_fiber',
     s: 'minecraft:stick'
-  }, 'dankstorage', '6_to_7');
+  }, Item.of('dankstorage:6_to_7'))
 
   global.replaceShaped(event, [
     'iii',
     'idi',
     'iii'
   ], {
-    i: 'kubejs:infinity_fiber',
+    i: 'meatsalad:infinity_fiber',
     d: 'dankstorage:dank_6'
-  }, 'dankstorage', 'dank_7', '7');
+  }, Item.of('dankstorage:dank_7'), '7')
 })

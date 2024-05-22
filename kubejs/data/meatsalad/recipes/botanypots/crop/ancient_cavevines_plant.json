@@ -1,0 +1,22 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "allthemodium:ancient_cavevines_plant"
+    },
+    "categories": [
+        "dirt",
+        "stone"
+    ],
+    "growthTicks": 2400,
+    "display": {
+        "block": "allthemodium:ancient_cavevines_plant"
+    },
+    "drops": [
+        {
+            "chance": 1.00,
+            "output": {
+                "item": "allthemodium:ancient_soulberries"
+            }
+        }
+    ]
+}

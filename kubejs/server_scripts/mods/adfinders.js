@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     d: '#forge:gems/diamond',
     C: 'minecraft:compass',
     R: 'minecraft:comparator'
-  }, 'adfinders', 'gem_finder')
+  }, Item.of('adfinders:gem_finder'))
 
   global.replaceShaped(event, [
     'rLr',
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     g: '#forge:ingots/gold',
     C: 'minecraft:compass',
     R: 'minecraft:comparator'
-  }, 'adfinders', 'metal_finder')
+  }, Item.of('adfinders:metal_finder'))
 
   global.replaceShaped(event, [
     'rLr',
@@ -33,5 +33,5 @@ ServerEvents.recipes(event => {
     i: '#forge:ingots/iron',
     C: 'minecraft:compass',
     R: 'minecraft:comparator'
-  }, 'adfinders', 'mineral_finder')
+  }, Item.of('adfinders:mineral_finder'))
 })

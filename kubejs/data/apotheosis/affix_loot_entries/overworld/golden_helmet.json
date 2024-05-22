@@ -10,6 +10,6 @@
   "dimensions": [
     "minecraft:overworld"
   ],
-	"min_rarity": "common",
-	"max_rarity": "rare"
+	"min_rarity": "apotheosis:common",
+	"max_rarity": "apotheosis:rare"
 }

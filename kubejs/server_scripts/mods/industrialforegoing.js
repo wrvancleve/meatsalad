@@ -1,17 +1,12 @@
 ServerEvents.recipes(event => {
-  let removeRecipes = (ids) => {
-    ids.forEach(id => {
-      event.remove({id: id});
-    })
-  }
-
-  removeRecipes([
+  global.removeRecipes(event, [
     'industrialforegoing:diamond_gear',
     'industrialforegoing:gold_gear',
     'industrialforegoing:iron_gear',
     'industrialforegoing:pitiful_generator',
-    'industrialforegoing:plastic',
+    //'industrialforegoing:plastic',
     //'industrialforegoing:bioreactor',
+    'industrialforegoing:dryrubber',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:mycelial_furnace',
     'industrialforegoing:mycelial_potion',
@@ -42,16 +37,6 @@ ServerEvents.recipes(event => {
     'industrialforegoing:dissolution_chamber/infinity_saw',
     'industrialforegoing:dissolution_chamber/infinity_trident'
   ])
-  event.custom({
-    type: 'minecraft:smelting',
-    ingredient: {
-      item: 'thermal:cured_rubber'
-    },
-    result: 'industrialforegoing:plastic',
-    experience: 0.3,
-    cookingtime: 200
-  }).id('meatsalad:plastic');
-
 
   global.replaceShaped(event, [
     'PNP',
@@ -64,7 +49,7 @@ ServerEvents.recipes(event => {
     M: '#industrialforegoing:machine_frame/advanced',
     V: '#forge:gears/vibranium',
     R: '#forge:circuits/advanced'
-  }, 'industrialforegoing', 'ore_laser_base');
+  }, Item.of('industrialforegoing:ore_laser_base'))
 
   global.replaceShaped(event, [
     'PNP',
@@ -77,7 +62,7 @@ ServerEvents.recipes(event => {
     M: '#industrialforegoing:machine_frame/advanced',
     V: '#forge:gears/vibranium',
     R: '#forge:circuits/advanced'
-  }, 'industrialforegoing', 'laser_drill');
+  }, Item.of('industrialforegoing:laser_drill'))
 
   global.replaceShaped(event, [
     'PNP',
@@ -90,7 +75,7 @@ ServerEvents.recipes(event => {
     M: '#industrialforegoing:machine_frame/advanced',
     V: '#forge:gears/vibranium',
     R: '#forge:circuits/advanced'
-  }, 'industrialforegoing', 'fluid_laser_base');
+  }, Item.of('industrialforegoing:fluid_laser_base'))
 
   global.replaceShaped(event, [
     'PPP',
@@ -102,7 +87,7 @@ ServerEvents.recipes(event => {
     U: '#forge:gears/unobtainium',
     R: '#forge:storage_blocks/redstone',
     M: '#industrialforegoing:machine_frame/advanced'
-  }, 'industrialforegoing', 'infinity_charger');
+  }, Item.of('industrialforegoing:infinity_charger'))
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -113,7 +98,7 @@ ServerEvents.recipes(event => {
       Item.of('industrialforegoing:common_black_hole_unit'),
       Item.of('industrialforegoing:common_black_hole_unit'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -123,7 +108,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_backpack');
+  }).id('meatsalad:dissolution_chamber/infinity_backpack')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -134,7 +119,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('#forge:storage_blocks/netherite'),
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -144,7 +129,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_drill');
+  }).id('meatsalad:dissolution_chamber/infinity_drill')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -155,7 +140,7 @@ ServerEvents.recipes(event => {
       Item.of('minecraft:netherite_axe'),
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -165,7 +150,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_hammer');
+  }).id('meatsalad:dissolution_chamber/infinity_hammer')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -176,7 +161,7 @@ ServerEvents.recipes(event => {
       Item.of('industrialforegoing:mob_imprisonment_tool'),
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -186,7 +171,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_launcher');
+  }).id('meatsalad:dissolution_chamber/infinity_launcher')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -198,7 +183,7 @@ ServerEvents.recipes(event => {
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:storage_blocks/netherite'),
       Item.of('minecraft:nether_star'),
-      Item.of('kubejs:ender_star')
+      Item.of('meatsalad:ender_star')
     ],
     inputFluid: '{Amount:2000,FluidName:"industrialforegoing:ether_gas"}',
     processingTime: 400,
@@ -207,7 +192,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_nuke');
+  }).id('meatsalad:dissolution_chamber/infinity_nuke')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -218,7 +203,7 @@ ServerEvents.recipes(event => {
       Item.of('minecraft:netherite_axe'),
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -228,7 +213,7 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_saw');
+  }).id('meatsalad:dissolution_chamber/infinity_saw')
 
   event.custom({
     type: 'industrialforegoing:dissolution_chamber',
@@ -239,7 +224,7 @@ ServerEvents.recipes(event => {
       Item.of('minecraft:netherite_hoe'),
       Item.of('industrialforegoing:range_addon11'),
       Ingredient.of('#forge:gears/unobtainium'),
-      Item.of('kubejs:dark_matter'),
+      Item.of('meatsalad:dark_matter'),
       Ingredient.of('#forge:gears/unobtainium'),
     ],
     inputFluid: '{FluidName:"industrialforegoing:pink_slime",Amount:2000}',
@@ -249,5 +234,5 @@ ServerEvents.recipes(event => {
       count: 1,
       nbt: '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'
     }
-  }).id('meatsalad:dissolution_chamber/infinity_trident');
+  }).id('meatsalad:dissolution_chamber/infinity_trident')
 })

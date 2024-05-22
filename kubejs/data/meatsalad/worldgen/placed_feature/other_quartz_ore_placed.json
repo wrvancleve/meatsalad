@@ -1,9 +1,9 @@
 {
-  "feature": "meatsalad:other_quartz_ore",
+  "feature": "meatsalad:ore_quartz",
   "placement": [
     {
-      "count": 16,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 16
     },
     {
       "type": "minecraft:in_square"

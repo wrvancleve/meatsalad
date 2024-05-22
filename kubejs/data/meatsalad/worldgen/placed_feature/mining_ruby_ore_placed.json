@@ -1,13 +1,9 @@
 {
-  "feature": "alltheores:ore_ruby",
+  "feature": "meatsalad:ore_ruby",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 2
-    },
-    {
-      "count": 3,
-      "type": "minecraft:count"
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"

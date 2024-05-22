@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -440,10 +440,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple"
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:bowl"
         },
         {
@@ -476,16 +472,6 @@
             }
           ],
           "name": "minecraft:spider_eye"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:material_blocks"
-            }
-          ],
-          "name": "minecraft:air",
-          "weight": 5
         }
       ],
       "name": "supply",
@@ -494,22 +480,7 @@
         "max": 10.0,
         "min": 8.0
       }
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
     }
-  ]
+  ],
+  "random_sequence": "dungeoncrawl:chests/supply"
 }

@@ -16,7 +16,7 @@
         {
             "id": "minecraft:generic.attack_damage",
             "modifier_name": "More Damage",
-            "amount": 1.5,
+            "amount": 2.0,
             "operation": "multiply_base"
         },
         {

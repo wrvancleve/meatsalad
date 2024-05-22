@@ -1,20 +1,200 @@
+ServerEvents.tags('block', event => {
+  event.add('forge:needs_vibranium_tool', 'silentgear:azure_silver_ore')
+})
+
+ServerEvents.tags('item', event => {
+  const silentGearMainMaterials = [
+    '#forge:ingots/azure_electrum',
+    '#forge:ingots/azure_silver',
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/brass',
+    '#forge:ingots/bronze',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:ingots/electrum',
+    '#forge:gems/emerald',
+    '#forge:ingots/enderium',
+    '#forge:ingots/gold',
+    '#forge:ingots/invar',
+    '#forge:ingots/iron',
+    '#forge:leather',
+    '#forge:ingots/lumium',
+    'silentgear:netherwood_planks',
+    '#forge:obsidian',
+    '#forge:ingots/platinum',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/signalum',
+    '#forge:ingots/silver',
+    '#forge:ingots/steel',
+    '#forge:cobblestone',
+    '#forge:ingots/tyrian_steel',
+
+    '#forge:ingots/adamantite',
+    '#forge:ingots/allthemodium',
+    '#forge:gems/peridot',
+    '#forge:ingots/mythril',
+    '#forge:gems/ruby',
+    '#forge:gems/sapphire',
+    '#forge:ingots/unobtainium',
+    '#forge:ingots/vibranium',
+  ]
+  silentGearMainMaterials.forEach(silentGearMainMaterial =>
+    event.add(`silentgear:materials/main`, silentGearMainMaterial)
+  )
+
+  // Silent Gear Rod Materials
+  const silentGearRodMaterials = [
+    '#forge:ingots/azure_electrum',
+    '#forge:ingots/azure_silver',
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/brass',
+    '#forge:ingots/bronze',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:ingots/electrum',
+    '#forge:gems/emerald',
+    '#forge:ingots/enderium',
+    '#forge:ingots/gold',
+    '#forge:ingots/invar',
+    '#forge:ingots/iron',
+    '#forge:ingots/lumium',
+    'silentgear:netherwood_planks',
+    '#forge:obsidian',
+    '#forge:ingots/platinum',
+    '#forge:gems/quartz',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/signalum',
+    '#forge:ingots/silver',
+    '#forge:ingots/steel',
+    '#forge:cobblestone',
+    '#forge:ingots/tyrian_steel',
+
+    '#forge:gems/peridot',
+    '#forge:gems/ruby',
+    '#forge:gems/sapphire',
+  ]
+  silentGearRodMaterials.forEach(silentGearRodMaterial =>
+    event.add(`silentgear:materials/rod`, silentGearRodMaterial)
+  )
+
+  const silentGearTipMaterials = [
+    'minecraft:amethyst_shard',
+    '#forge:ingots/azure_electrum',
+    '#forge:ingots/azure_silver',
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/crimson_iron',
+    '#forge:ingots/crimson_steel',
+    '#forge:gems/diamond',
+    '#forge:gems/emerald',
+    '#forge:ingots/gold',
+    '#forge:ingots/iron',
+    '#forge:gems/lapis',
+    '#forge:ingots/lumium',
+    '#forge:gems/quartz',
+    '#forge:dusts/redstone',
+    '#forge:ingots/refined_obsidian',
+    '#forge:ingots/tyrian_steel',
+
+    '#forge:gems/peridot',
+    '#forge:ingots/platinum',
+    '#forge:gems/ruby',
+    '#forge:gems/sapphire',
+  ]
+  silentGearTipMaterials.forEach(silentGearTipMaterial =>
+    event.add(`silentgear:materials/tip`, silentGearTipMaterial)
+  )
+
+  const silentGearGripMaterials = [
+    'silentgear:fine_silk_cloth',
+    '#forge:leather',
+    'minecraft:phantom_membrane',
+  ]
+  silentGearGripMaterials.forEach(silentGearGripMaterial =>
+    event.add(`silentgear:materials/grip`, silentGearGripMaterial)
+  )
+
+  const silentGearAdornmentMaterials = [
+    'minecraft:amethyst_shard',
+    '#forge:gems/diamond',
+    '#forge:gems/emerald',
+    'minecraft:flint',
+    '#forge:gems/lapis',
+    '#forge:gems/prismarine',
+    '#forge:gems/quartz',
+
+    '#forge:gems/peridot',
+    '#forge:gems/ruby',
+    '#forge:gems/sapphire',
+  ]
+  silentGearAdornmentMaterials.forEach(silentGearAdornmentMaterial =>
+    event.add(`silentgear:materials/adornment`, silentGearAdornmentMaterial)
+  )
+
+  const silentGearLiningMaterials = [
+    'silentgear:fine_silk_cloth',
+    '#forge:leather',
+    'minecraft:phantom_membrane',
+    'minecraft:slime_block',
+
+    'alexsmobs:mimicream',
+    'irons_spellbooks:magic_cloth',
+  ]
+  silentGearLiningMaterials.forEach(silentGearLiningMaterial =>
+    event.add(`silentgear:materials/lining`, silentGearLiningMaterial)
+  )
+
+  const silentGearBindingMaterials = [
+    'silentgear:fine_silk',
+    'silentgear:flax_string',
+    'silentgear:fluffy_string',
+    'silentgear:sinew_fiber',
+    'minecraft:vine',
+  ]
+  silentGearBindingMaterials.forEach(silentGearBindingMaterial =>
+    event.add(`silentgear:materials/binding`, silentGearBindingMaterial)
+  )
+
+  const silentGearCoatingMaterials = [
+    '#forge:ingots/blaze_gold',
+    '#forge:ingots/gold',
+    'minecraft:netherite_ingot',
+    '#forge:gems/prismarine',
+
+    'minecraft:echo_shard',
+    'quark:dragon_scale',
+    'meatsalad:vulcanite',
+    'meatsalad:infinity_fabric',
+  ]
+  silentGearCoatingMaterials.forEach(silentGearCoatingMaterial =>
+    event.add(`silentgear:materials/coating`, silentGearCoatingMaterial)
+  )
+
+  const silentGearCordMaterials = [
+    'silentgear:fine_silk',
+    'silentgear:flax_string',
+    'silentgear:fluffy_string',
+    'silentgear:sinew_fiber',
+  ]
+  silentGearCordMaterials.forEach(silentGearCordMaterial =>
+    event.add(`silentgear:materials/cord`, silentGearCordMaterial)
+  )
+
+  const silentGearFletchingMaterials = [
+    '#forge:feathers',
+    '#minecraft:leaves',
+    '#forge:paper',
+
+    'quark:dragon_scale',
+  ]
+  silentGearFletchingMaterials.forEach(silentGearFletchingMaterial =>
+    event.add(`silentgear:materials/fletching`, silentGearFletchingMaterial)
+  )
+})
+
 ServerEvents.recipes(event => {
-  let removeRecipes = (ids) => {
-    ids.forEach(id => {
-      event.remove({ id: id });
-    })
-  }
-
-  let salvage = (mod, item, results) => {
-    event.custom({
-      type: "silentgear:salvaging",
-      ingredient: Item.of(`${mod}:${item}`).toJson(),
-      results: results
-    }).id(`meatsalad:salvaging/${item}`);
-  }
-
-  event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
-  removeRecipes([
+  global.removeRecipes(event, [
     'silentgear:azure_electrum_ingot',
     'silentgear:blaze_gold_ingot',
     'silentgear:crimson_steel_ingot',
@@ -23,15 +203,15 @@ ServerEvents.recipes(event => {
     'silentgear:metal_press',
     'silentgear:recrystallizer',
     'silentgear:refabricator',
-    'silentgear:claymore_template',
-    'silentgear:claymore_blueprint',
-    'silentgear:greatsword_template',
-    'silentgear:greatsword_blueprint',
-    'silentgear:scimitar_template',
-    'silentgear:scimitar_blueprint',
     'silentgear:template_board',
     'silentgear:blueprint_paper',
+    'silentgear:coating_smithing_template',
+    'silentgear:coating_smithing_template_duplication',
+    'silentgear:red_card_upgrade',
+    'silentgear:salvager'
   ])
+
+  event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
 
   event.custom({
     type: 'thermal:smelter',
@@ -50,19 +230,16 @@ ServerEvents.recipes(event => {
     ],
     result: [Item.of('silentgear:blaze_gold_ingot')],
     energy: 16000
-  }).id('meatsalad:smelter/blaze_gold_ingot');
-  event.custom({
-    type: 'powah:energizing',
-    ingredients: [
-      {tag: 'forge:ingots/gold'},
-      {item: 'minecraft:blaze_powder'},
-      {item: 'minecraft:blaze_powder'}
+  }).id('meatsalad:smelter/blaze_gold_ingot')
+  global.energize(event,
+    [
+      Ingredient.of('#forge:ingots/gold'),
+      Ingredient.of('minecraft:blaze_powder'),
+      Ingredient.of('minecraft:blaze_powder')
     ],
-    energy: 16000,
-    result: {
-      item: 'silentgear:blaze_gold_ingot'
-    }
-  }).id('meatsalad:energizing/blaze_gold_ingot');
+    16000,
+    Item.of('silentgear:blaze_gold_ingot')
+  )
 
   event.custom({
     type: 'thermal:smelter',
@@ -85,20 +262,17 @@ ServerEvents.recipes(event => {
     ],
     result: [Item.of('silentgear:crimson_steel_ingot')],
     energy: 120000
-  }).id('meatsalad:smelter/crimson_steel_ingot');
-  event.custom({
-    type: 'powah:energizing',
-    ingredients: [
-      {tag: 'forge:ingots/crimson_iron'},
-      {tag: 'forge:ingots/crimson_iron'},
-      {tag: 'forge:rods/blaze'},
-      {item: 'minecraft:magma_cream'}
+  }).id('meatsalad:smelter/crimson_steel_ingot')
+  global.energize(event,
+    [
+      Ingredient.of('#forge:ingots/crimson_iron'),
+      Ingredient.of('#forge:ingots/crimson_iron'),
+      Ingredient.of('#forge:rods/blaze'),
+      Ingredient.of('minecraft:magma_cream')
     ],
-    energy: 120000,
-    result: {
-      item: 'silentgear:crimson_steel_ingot'
-    }
-  }).id('meatsalad:energizing/crimson_steel_ingot');
+    120000,
+    Item.of('silentgear:crimson_steel_ingot')
+  )
 
   event.custom({
     type: 'thermal:smelter',
@@ -127,81 +301,41 @@ ServerEvents.recipes(event => {
     ],
     result: [Item.of('silentgear:azure_electrum_ingot')],
     energy: 300000
-  }).id('meatsalad:smelter/azure_electrum_ingot');
-  event.custom({
-    type: 'powah:energizing',
-    ingredients: [
-      {tag: 'forge:ingots/azure_silver'},
-      {tag: 'forge:ingots/azure_silver'},
-      {tag: 'forge:ingots/gold'},
-      {tag: 'forge:ender_pearls'}
+  }).id('meatsalad:smelter/azure_electrum_ingot')
+  global.energize(event,
+    [
+      Ingredient.of('#forge:ingots/azure_silver'),
+      Ingredient.of('#forge:ingots/azure_silver'),
+      Ingredient.of('#forge:ingots/gold'),
+      Ingredient.of('#forge:ender_pearls')
     ],
-    energy: 300000,
-    result: {
-      item: 'silentgear:azure_electrum_ingot'
-    }
-  }).id('meatsalad:energizing/azure_electrum_ingot');
+    300000,
+    Item.of('silentgear:azure_electrum_ingot')
+  )
 
   event.custom({
     type: "thermal:pulverizer",
     ingredient: Item.of('minecraft:shulker_shell').toJson(),
     result: [Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()]
-  }).id('meatsalad:pulverizer/crushed_shulker_shell');
+  }).id('meatsalad:pulverizer/crushed_shulker_shell')
   event.custom({
     type: "mekanism:crushing",
     input: {
       ingredient: Item.of('minecraft:shulker_shell').toJson()
     },
     output: Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()
-  }).id('meatsalad:crushing/crushed_shulker_shell');
+  }).id('meatsalad:crushing/crushed_shulker_shell')
 
-  // allthemodium Salvaging
-  salvage('allthemodium', 'allthemodium_pickaxe', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
-    Item.of('minecraft:stick').withCount(2).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_sword', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
-    Item.of('minecraft:stick').toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_axe', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(3).toJson(),
-    Item.of('minecraft:stick').withCount(2).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_hoe', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(2).toJson(),
-    Item.of('minecraft:stick').withCount(2).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_shovel', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(1).toJson(),
-    Item.of('minecraft:stick').withCount(2).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_helmet', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(5).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_chestplate', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(8).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_leggings', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(7).toJson()
-  ]);
-  salvage('allthemodium', 'allthemodium_boots', [
-    Item.of('allthemodium:allthemodium_ingot').withCount(4).toJson()
-  ]);
-
-  event.custom({
-    type: 'powah:energizing',
-    ingredients: [
-      {tag: 'forge:ingots/crimson_steel'},
-      {tag: 'forge:ingots/azure_electrum'},
-      {item: 'silentgear:crushed_shulker_shell'},
-      {item: 'minecraft:netherite_scrap'},
+  global.energize(event,
+    [
+      Ingredient.of('forge:ingots/crimson_steel'),
+      Ingredient.of('forge:ingots/azure_electrum'),
+      Ingredient.of('silentgear:crushed_shulker_shell'),
+      Ingredient.of('minecraft:netherite_scrap')
     ],
-    energy: 1000000,
-    result: {
-      item: 'silentgear:tyrian_steel_ingot'
-    }
-  }).id('meatsalad:energizing/tyrian_steel_ingot');
+    1000000,
+    Item.of('silentgear:tyrian_steel_ingot')
+  )
 
   global.replaceShaped(event, [
     "NII",
@@ -213,8 +347,8 @@ ServerEvents.recipes(event => {
     A: '#forge:dusts/azure_electrum',
     P: '#forge:dusts/platinum',
     B: '#forge:dusts/blaze_gold',
-    E: 'kubejs:ender_star_fragment'
-  }, 'silentgear', 'starmetal_dust');
+    E: 'meatsalad:ender_star_fragment'
+  }, Item.of('silentgear:starmetal_dust'))
 
   global.replaceShaped(event, [
     'QGQ',
@@ -224,94 +358,7 @@ ServerEvents.recipes(event => {
     Q: '#forge:storage_blocks/quartz',
     G: '#forge:glass/colorless',
     P: 'minecraft:polished_blackstone',
-    D: 'kubejs:dark_matter',
+    D: 'meatsalad:dark_matter',
     B: '#forge:storage_blocks/blaze_gold'
-  }, 'silentgear', 'starlight_charger');
-})
-
-ServerEvents.chestLootTables(event => {
-  event.modify('minecraft:village/village_armorer', table => {
-    table.addPool(pool => {
-      pool.rolls = 1.0;
-      [
-        'coating',
-        'lining',
-        'shield',
-        'helmet',
-        'chestplate',
-        'leggings',
-        'boots',
-        'ring',
-        'bracelet'
-      ].forEach(type => {
-        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
-        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
-      })
-    });
-  });
-
-  event.modify('minecraft:village/village_fletcher', table => {
-    table.addPool(pool => {
-      pool.rolls = 1.0;
-      [
-        'cord',
-        'fletching',
-        'bow',
-        'crossbow',
-        'slingshot',
-        'arrow'
-      ].forEach(type => {
-        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
-        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
-      })
-    });
-  });
-
-  event.modify('minecraft:village/village_toolsmith', table => {
-    table.addPool(pool => {
-      pool.rolls = 1.0;
-      [
-        'rod',
-        'tip',
-        'coating',
-        'grip',
-        'binding',
-        'pickaxe',
-        'shovel',
-        'axe',
-        'paxel',
-        'hammer',
-        'excavator',
-        'saw',
-        'hoe',
-        'mattock',
-        'prospector_hammer',
-        'sickle',
-        'shears',
-        'fishing_rod'
-      ].forEach(type => {
-        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
-        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
-      })
-    });
-  });
-
-  event.modify('minecraft:village/village_weaponsmith', table => {
-    table.addPool(pool => {
-      pool.rolls = 1.0;
-      [
-        'sword',
-        'katana',
-        'machete',
-        'claymore',
-        'scimitar',
-        'spear',
-        'knife',
-        'dagger'
-      ].forEach(type => {
-        global.addSingleItem(pool, `silentgear:${type}_template`, 1, global.getNotOtherCondition());
-        global.addSingleItem(pool, `silentgear:${type}_blueprint`, 1, global.getOtherCondition());
-      })
-    });
-  });
+  }, Item.of('silentgear:starlight_charger'))
 })
