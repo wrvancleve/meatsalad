@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "meatsalad:chaos_crystal",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "awakened_bosses:entities/herobrine"
+}

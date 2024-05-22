@@ -31,6 +31,13 @@ WorldgenEvents.remove(event => {
     'alltheores:ore_uranium_placed',
     'alltheores:ore_uranium_placed_mining',
     'alltheores:ore_zinc_placed',
+    'powah:uraninite_ore',
+    'powah:uraninite_ore_dense',
+    'powah:uraninite_ore_poor',
+    'thermal:lead_ore',
+    'thermal:nickel_ore',
+    'thermal:silver_ore',
+    'thermal:tin_ore',
   ])
 })
 

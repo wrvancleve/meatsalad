@@ -44,22 +44,9 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.entityLootTables(event => {
-  event.modifyEntity('awakened_bosses:herobrine_minion', table => {
-    table.clearPools()
-  })
   event.modifyEntity('awakened_bosses:herobrine', table => {
-    table.clearPools()
-    global.addStackLootPool(table, {item: 'meatsalad:chaos_crystal'})
+    //global.addStackLootPool(table, {item: 'meatsalad:chaos_crystal'})
     global.addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
     global.addGemLootPool(table, {name: 'ancient', weight: null})
-  })
-  event.modifyEntity('awakened_bosses:mahva', table => {
-    table.clearPools()
-  })
-  event.modifyEntity('awakened_bosses:prowler', table => {
-    table.clearPools()
-  })
-  event.modifyEntity('awakened_bosses:reeker', table => {
-    table.clearPools()
   })
 })

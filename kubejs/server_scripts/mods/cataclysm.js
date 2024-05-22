@@ -40,69 +40,9 @@ ServerEvents.entityLootTables(event => {
     global.addGemLootPool(table, {name: 'max', weight: null})
   })
 
-  event.modifyEntity('cataclysm:deepling_brute', table => {
-    table.addPool(pool => {
-      pool.addItem('minecraft:heart_of_the_sea').randomChanceWithLooting(0.05, 0.05).killedByPlayer()
-    })
-  })
-
-  event.modifyEntity('cataclysm:deepling_priest', table => {
-    table.clearPools()
-    global.addStackLootPool(table, {item: 'cataclysm:abyssal_sacrifice'})
-  })
-
-  event.modifyEntity('cataclysm:deepling_warlock', table => {
-    table.clearPools()
-  })
-
-  event.modifyEntity('cataclysm:kobolediator', table => {
-    table.clearPools()
-    global.addStackLootPool(table,
-      { item: 'cataclysm:koboleton_bone', min: 3, max: 5 },
-      {
-        functions: [{
-            function: 'minecraft:looting_enchant',
-            count: {
-              type: 'minecraft:uniform',
-              min: 0.0,
-              max: 1.0
-            }
-        }]
-      }
-    )
-  })
-
-  event.modifyEntity('cataclysm:koboleton', table => {
-    table.clearPools()
-    global.addStackLootPool(table,
-      { item: 'cataclysm:koboleton_bone', max: 2 },
-      {
-        functions: [{
-            function: 'minecraft:looting_enchant',
-            count: {
-              type: 'minecraft:uniform',
-              min: 0.0,
-              max: 1.0
-            }
-        }]
-      }
-    )
-  })
-
   event.modifyEntity('cataclysm:netherite_monstrosity', table => {
-    table.clearPools()
     global.addStackLootPool(table, {item: 'cataclysm:infernal_forge'})
     global.addEyeLootPool(table, 'evil')
-    global.addStackLootPool(table,
-      { item: 'cataclysm:music_disc_netherite_monstrosity' },
-      {
-        conditions: [{
-          condition: 'random_chance_with_looting',
-          chance: 0.1,
-          looting_multiplier: 0.1
-        }]
-      }
-    )
     global.addGemLootPool(table, {name: 'max', weight: null})
   })
 
