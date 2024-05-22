@@ -92,8 +92,10 @@
 
 ## Server Startup
 1. `wget <forgeInstallerURL>`
-2. `java -jar bin/<forgeInstaller>.jar --installServer`
-3. Delete client side mods
+2. `java -jar <forgeInstaller>.jar --installServer`
+3. Delete installer, run.bat
+4. Restore run.sh, user_jvm_args.txt
+5. Delete client side mods
     - Entity Culling
     - Legendary Tooltips
     - Oculus
