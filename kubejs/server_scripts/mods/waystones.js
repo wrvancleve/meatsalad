@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     G: '#forge:nuggets/gold',
     W: 'waystones:warp_dust',
     P: '#forge:paper'
-  }, 'waystones', 'return_scroll');
+  }, Item.of('waystones:return_scroll'))
 
   global.replaceShaped(event, [
     "GWG",
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
   ], {
     G: '#forge:nuggets/gold',
     W: 'waystones:warp_dust',
-    E: 'kubejs:infused_ender_pearl',
+    E: 'meatsalad:infused_ender_pearl',
     P: '#forge:paper'
-  }, 'waystones', 'bound_scroll');
+  }, Item.of('waystones:bound_scroll'))
 
   global.replaceShaped(event, [
     "WWW",
@@ -26,9 +26,9 @@ ServerEvents.recipes(event => {
   ], {
     W: 'waystones:warp_dust',
     G: '#forge:nuggets/gold',
-    E: 'kubejs:infused_ender_pearl',
+    E: 'meatsalad:infused_ender_pearl',
     P: '#forge:paper'
-  }, 'waystones', 'warp_scroll');
+  }, Item.of('waystones:warp_scroll'))
 
   global.replaceShaped(event, [
     "SWS",
@@ -37,9 +37,9 @@ ServerEvents.recipes(event => {
   ], {
     S: 'minecraft:stone_bricks',
     W: 'waystones:warp_dust',
-    E: 'kubejs:infused_ender_pearl'
-  }, 'waystones', 'warp_plate');
-  
+    E: 'meatsalad:infused_ender_pearl'
+  }, Item.of('waystones:warp_plate'))
+
   global.replaceShaped(event, [
     "WEW",
     "EDE",
@@ -47,10 +47,10 @@ ServerEvents.recipes(event => {
   ], {
     W: 'waystones:warp_dust',
     E: '#balm:emeralds',
-    D: 'kubejs:infused_dark_matter'
-  }, 'waystones', 'warp_stone');
+    D: 'meatsalad:infused_dark_matter'
+  }, Item.of('waystones:warp_stone'))
 
-  event.remove({ id: 'waystones:warp_dust' });
+  event.remove({ id: 'waystones:warp_dust' })
 
   event.custom({
     type: 'thermal:smelter',
@@ -72,16 +72,13 @@ ServerEvents.recipes(event => {
     ],
     result: [Item.of('waystones:warp_dust')],
     energy: 8000
-  }).id('meatsalad:smelter/warp_dust');
-  event.custom({
-    type: 'powah:energizing',
-    ingredients: [
-      {tag: 'forge:ender_pearls'},
-      {tag: 'forge:gems/amethyst'}
+  }).id('meatsalad:smelter/warp_dust')
+  global.energize(event,
+    [
+      Ingredient.of('#forge:ender_pearls'),
+      Ingredient.of('#forge:gems/amethyst')
     ],
-    energy: 8000,
-    result: {
-      item: 'waystones:warp_dust'
-    }
-  }).id('meatsalad:energizing/warp_dust');
+    8000,
+    Item.of('waystones:warp_dust')
+  )
 })

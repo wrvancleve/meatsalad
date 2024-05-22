@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random"
+          "name": "meatsalad:chests/enchanted_books/random"
         }
       ]
     },
@@ -107,7 +107,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random",
+          "name": "meatsalad:chests/gear/random",
           "weight": 16
         }
       ]

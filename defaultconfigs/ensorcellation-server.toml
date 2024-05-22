@@ -90,7 +90,7 @@
 
 	[Enchantments.Vitality]
 		#If TRUE, the Vitality Enchantment is available for Chestplates.
-		Enable = false
+		Enable = true
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = true
 		#This option adjusts the maximum allowable level for the Enchantment.

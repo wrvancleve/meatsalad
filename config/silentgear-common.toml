@@ -94,10 +94,12 @@
 	#The item tier assigned to gear tool items.
 	#Leave this alone unless you are trying to work around mod compatibility issues!
 	#Normally, this value is not used for anything. But some mods mistakenly check it.
+	#Allowed Values: WOOD, STONE, IRON, DIAMOND, GOLD, NETHERITE
 	dummyToolTier = "WOOD"
 	#The armor material assigned to the gear armor items.
 	#Leave this alone unless you are trying to work around mod compatibility issues!
 	#Normally, this value is not used for anything. But some mods mistakenly check it.
+	#Allowed Values: LEATHER, CHAIN, IRON, GOLD, DIAMOND, TURTLE, NETHERITE
 	dummyArmorMaterial = "LEATHER"
 
 	[gear.enchanting]
@@ -130,10 +132,10 @@
 		[gear.aoeTool.matchMode]
 			#Match mode for most blocks
 			#Allowed Values: LOOSE, MODERATE, STRICT
-			standard = "LOOSE"
+			standard = "MODERATE"
 			#Match mode for ore blocks (anything in the forge:ores block tag)
 			#Allowed Values: LOOSE, MODERATE, STRICT
-			ores = "LOOSE"
+			ores = "MODERATE"
 
 	[gear.repairs]
 		#Effectiveness of gear repairs done in an anvil. Set to 0 to disable anvil repairs.

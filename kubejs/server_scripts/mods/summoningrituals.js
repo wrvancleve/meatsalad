@@ -6,9 +6,9 @@ ServerEvents.recipes(event => {
   ], {
     C: '#minecraft:candles',
     S: 'minecraft:wither_skeleton_skull',
-    P: '#forge:ingots/palladium',
+    P: '#forge:ingots/allthemodium',
     E: 'minecraft:enchanting_table',
     W: '#minecraft:planks',
-    D: 'kubejs:dark_matter'
-  }).id('meatsalad:altar');
+    D: 'meatsalad:dark_matter'
+  }).id('meatsalad:altar')
 })

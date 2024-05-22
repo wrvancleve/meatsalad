@@ -74,12 +74,12 @@
 	[general.energy_conversion]
 		#Disables IC2 power integration. Requires world restart (server-side option in SMP).
 		blacklistIC2 = false
-		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
-		JoulePerEU = "10"
+		#Conversion multiplier from EU to Joules (EU * euConversionRate = Joules)
+		euConversionRate = "10"
 		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
 		blacklistForge = false
-		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
-		JoulePerForgeEnergy = "2.5000"
+		#Conversion multiplier from Forge Energy to Joules (FE * feConversionRate = Joules)
+		feConversionRate = "2.5000"
 		#Disables Flux Networks higher throughput Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP). Note: Disabling Forge Energy integration also disables this.
 		blacklistFluxNetworks = false
 		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.
@@ -140,7 +140,7 @@
 	#Oredictionificator Settings
 	[general.oredictionificator]
 		#The list of valid tag prefixes for the Oredictionificator. Note: It is highly recommended to only include well known/defined tag prefixes otherwise it is very easy to potentially add in accidental conversions of things that are not actually equivalent.
-		validItemFilters = ["forge:dusts/", "forge:ingots/", "forge:nuggets/", "forge:ores/", "forge:storage_blocks/"]
+		validItemFilters = ["forge:dusts/", "forge:ingots/", "forge:nuggets/", "forge:ores/", "forge:raw_materials/", "forge:storage_blocks/"]
 
 	#Pump Settings
 	[general.pump]
@@ -149,12 +149,12 @@
 		maxPumpRange = 80
 		#If enabled makes Water and Heavy Water blocks be removed from the world on pump.
 		pumpWaterSources = false
-		#Fluidic Plenisher stops after this many blocks.
-		#Range: 1 ~ 1000000
-		maxPlenisherNodes = 4000
 		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
 		#Range: 1 ~ 1000
 		pumpHeavyWaterAmount = 10
+		#Fluidic Plenisher stops after this many blocks.
+		#Range: 1 ~ 1000000
+		maxPlenisherNodes = 4000
 
 	#Quantum Entangloporter Settings
 	[general.quantum_entangloporter]

@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
     ' SI',
     'S  '
   ], {
-    I: 'kubejs:infinity_fiber',
+    I: 'meatsalad:infinity_fiber',
     U: '#forge:ingots/unobtainium',
     S: '#balm:wooden_rods'
-  }, 'constructionwand', 'infinity_wand');
+  }, Item.of('constructionwand:infinity_wand'))
 })

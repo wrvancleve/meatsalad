@@ -1,6 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
   "availability": {
     "tier": 6,
     "categories": [
@@ -16,7 +17,7 @@
     }
   },
   "name": {
-    "translate": "material.silentgear.mythril"
+    "translate": "material.meatsalad.mythril"
   },
   "stats": {
     "main": {
@@ -25,7 +26,6 @@
       "enchantment_value": 40.0,
       "rarity": 120.0,
       "charging_value": 2.0,
-      "harvest_level": 5.0,
       "harvest_speed": 20.0,
       "melee_damage": 5.0,
       "magic_damage": 10.0,

@@ -4,6 +4,18 @@
 {
 	# Admin commands for cheating and moderation
 	admin: {
+		# Allows admins to extinguish themselves or a player using a command
+		extinguish: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to fully feed themselves or a player using a command
+		feed: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows admins to toggle flying status using a command, without having to use Creative Mode
 		fly: {
 			# Default: true
@@ -16,7 +28,7 @@
 			enabled: true
 		}
 		
-		# Allows admins to heal themselves using a command
+		# Allows admins to fully heal (health, food, fire, potion effects) themselves or a player using a command
 		heal: {
 			# Default: true
 			enabled: true
@@ -28,8 +40,26 @@
 			enabled: true
 		}
 		
+		# Allows admins to configure kits of items that can be given to players.
+		kit: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows admins to restrict players from chatting by using a command to mute (or unmute) them
 		mute: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to change walk speed for themselves or a player
+		speed: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to change the location of offline players.
+		tp_offline: {
 			# Default: true
 			enabled: true
 		}
@@ -37,6 +67,18 @@
 	
 	# Miscellaneous features and utilities
 	misc: {
+		# Allows users to access an Anvil GUI without needing an Anvil.
+		anvil: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to access a Crafting Table GUI without needing a Crafting Table.
+		crafting: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
 		enderchest: {
 			# Default: true
@@ -61,6 +103,12 @@
 			enabled: true
 		}
 		
+		# Allows users to list nearby players, sorted by distance
+		near: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows users to change their display name, as well as admins to change nicknames for other users
 		nick: {
 			# Default: true
@@ -69,6 +117,18 @@
 		
 		# Allows users to announce their recording or streaming status to the server by using commands
 		rec: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to access a Smithing Table GUI without needing a Smithing Table.
+		smithing: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to access a Stonecutter GUI without needing a Stonecutter.
+		stonecutter: {
 			# Default: true
 			enabled: true
 		}
@@ -132,6 +192,12 @@
 			# Default: 0
 			# Range: 0 ~ 604800
 			warmup: 0
+		}
+		
+		# Allows admins to jump (teleport) to the focused block
+		jump: {
+			# Default: true
+			enabled: true
 		}
 		
 		# Allows players to teleport to a random point in the Wilderness

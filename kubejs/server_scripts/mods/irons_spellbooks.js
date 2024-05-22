@@ -1,13 +1,7 @@
 ServerEvents.recipes(event => {
-  let removeRecipes = (ids) => {
-    ids.forEach(id => {
-      event.remove({id: id});
-    })
-  }
-
-  removeRecipes([
+  global.removeRecipes(event, [
     'irons_spellbooks:alchemist_cauldron',
-  ]);
+  ])
 
   global.replaceShaped(event, [
     'Taa',
@@ -18,7 +12,7 @@ ServerEvents.recipes(event => {
     T: '#forge:ingots/copper',
     p: '#forge:paper',
     B: 'minecraft:leather'
-  }, 'irons_spellbooks', 'copper_spell_book');
+  }, Item.of('irons_spellbooks:copper_spell_book'))
 
   global.replaceShaped(event, [
     'Taa',
@@ -29,7 +23,7 @@ ServerEvents.recipes(event => {
     T: '#forge:ingots/iron',
     p: '#forge:paper',
     B: 'minecraft:leather'
-  }, 'irons_spellbooks', 'iron_spell_book');
+  }, Item.of('irons_spellbooks:iron_spell_book'))
 
   global.replaceShaped(event, [
     'Taa',
@@ -40,7 +34,7 @@ ServerEvents.recipes(event => {
     T: '#forge:ingots/gold',
     p: '#forge:paper',
     B: 'irons_spellbooks:hogskin'
-  }, 'irons_spellbooks', 'gold_spell_book');
+  }, Item.of('irons_spellbooks:gold_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -52,7 +46,7 @@ ServerEvents.recipes(event => {
     T: '#forge:gems/diamond',
     p: 'irons_spellbooks:magic_cloth',
     B: 'irons_spellbooks:hogskin'
-  }, 'irons_spellbooks', 'diamond_spell_book');
+  }, Item.of('irons_spellbooks:diamond_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -64,7 +58,7 @@ ServerEvents.recipes(event => {
     T: '#forge:rods/blaze',
     p: 'irons_spellbooks:magic_cloth',
     B: 'irons_spellbooks:hogskin'
-  }, 'irons_spellbooks', 'blaze_spell_book');
+  }, Item.of('irons_spellbooks:blaze_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -77,7 +71,7 @@ ServerEvents.recipes(event => {
     p: 'irons_spellbooks:magic_cloth',
     B: 'irons_spellbooks:hogskin',
     g: 'minecraft:glow_ink_sac',
-  }, 'irons_spellbooks', 'druidic_spell_book');
+  }, Item.of('irons_spellbooks:druidic_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -90,7 +84,7 @@ ServerEvents.recipes(event => {
     p: 'irons_spellbooks:magic_cloth',
     B: 'irons_spellbooks:hogskin',
     b: 'minecraft:bell',
-  }, 'irons_spellbooks', 'villager_spell_book');
+  }, Item.of('irons_spellbooks:villager_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -103,8 +97,8 @@ ServerEvents.recipes(event => {
     p: 'irons_spellbooks:magic_cloth',
     b: 'irons_spellbooks:ruined_book',
     B: 'irons_spellbooks:hogskin',
-    D: 'kubejs:dark_matter',
-  }, 'irons_spellbooks', 'netherite_spell_book');
+    D: 'meatsalad:dark_matter',
+  }, Item.of('irons_spellbooks:netherite_spell_book'))
 
   global.replaceShaped(event, [
     'Tsi',
@@ -117,6 +111,35 @@ ServerEvents.recipes(event => {
     p: 'irons_spellbooks:magic_cloth',
     b: 'irons_spellbooks:ruined_book',
     B: 'irons_spellbooks:hogskin',
-    D: 'kubejs:dark_matter',
-  }, 'irons_spellbooks', 'dragonskin_spell_book');
+    D: 'meatsalad:dark_matter',
+  }, Item.of('irons_spellbooks:dragonskin_spell_book'))
+
+  event.custom({
+    type: 'mekanism:enriching',
+    input: {
+      ingredient: { item: 'irons_spellbooks:arcane_debris' }
+    },
+    output: { item: 'irons_spellbooks:arcane_salvage', count: 2 }
+  }).id('meatsalad:enriching/arcane_salvage_from_debris')
+  event.custom({
+    type: 'thermal:smelter',
+    ingredient: { item: 'irons_spellbooks:arcane_debris' },
+    result: [
+      {
+        item: 'irons_spellbooks:arcane_salvage',
+        count: 2
+      },
+      {
+        item: 'thermal:rich_slag',
+        chance: 0.2,
+        locked: true
+      }
+    ]
+  }).id('meatsalad:smelter/arcane_salvage_from_debris')
+})
+
+ServerEvents.entityLootTables(event => {
+  event.modifyEntity('irons_spellbooks:dead_king', table => {
+    global.addEyeLootPool(table, 'undead')
+  })
 })

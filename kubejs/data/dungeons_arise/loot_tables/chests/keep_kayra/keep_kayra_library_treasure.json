@@ -29,17 +29,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure",
-          "weight": 40
+          "name": "meatsalad:chests/enchanted_books/random_treasure",
+          "weight": 5
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/diamond/random_treasure",
-          "weight": 50
+          "name": "meatsalad:chests/gear/random_treasure",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 3,
           "name": "minecraft:ender_pearl",
           "functions": [
             {
@@ -146,22 +146,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 30,
-          "quality": 1
         }
       ]
     }

@@ -12,14 +12,14 @@
   },
   "crafting_items": {
     "main": {
-      "item": "kubejs:infinity_fabric"
+      "item": "meatsalad:infinity_fabric"
     }
   },
   "name": {
-    "translate": "material.silentgear.infinity"
+    "translate": "material.meatsalad.infinity"
   },
   "name_prefix": {
-    "translate": "material.silentgear.infinity"
+    "translate": "material.meatsalad.infinity"
   },
   "stats": {
     "coating": {
@@ -128,7 +128,7 @@
     ],
     "coating/armor": [
       {
-        "texture": "kubejs:infinity"
+        "texture": "meatsalad:infinity"
       }
     ]
   }

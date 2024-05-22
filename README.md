@@ -1,14 +1,14 @@
 # Meat Salad
-1.19.2 Minecraft Forge Modpack with adventure, tech, and a little bit of everything else
+1.20.1 Minecraft Forge Modpack with adventure, tech, and a little bit of everything else
 
 **Table of contents**
 - [Manual Mod Changes](#manual-mod-changes)
+    - [Alex's Mobs](#alexs-mobs)
     - [Apotheosis](#apotheosis)
     - [AllTheModium](#allthemodium)
-    - [AllTheOres](#alltheores)
-    - [EndRemastered](#endremastered)
-    - [GatewaysToEternity](#gatewaystoeternity)
     - [Industrial Foregoing](#industrial-foregoing)
+    - [Iron Spellbooks](#iron-spellbooks)
+    - [Nullscape](#nullscape)
     - [Silent Gear](#silent-gear)
 - [Server Startup](#server-startup)
 
@@ -19,52 +19,37 @@
 ### Apotheosis
 - Remove data\apotheosis\affixes\sword\attribute\elongated.json
 - Remove data\apotheosis\affix_loot_entries\overworld\chainmail_*.json
-- Remove data\apotheosis\affix_loot_entries\overworld\leather_*.json
-- Remove data\apotheosis\affix_loot_entries\overworld\stone_*.json
 - Remove data\apotheosis\affix_loot_entries\overworld\turtle_helmet.json
+- Remove data\apotheosis\affix_loot_entries\the_end\netherite_*.json
 - Remove data\apotheosis\bosses\the_nether\zombified_piglin.json
 - Remove data\apotheosis\bosses\the_end\endermite.json
 - Remove data\apotheosis\bosses\the_end\shulker.json
 
 ### AllTheModium
-- Remove apotheosis bosses
-- Remove data\allthemodium\forge\biome_modifier\allthemodium\vibranium.json
-- Remove data\allthemodium\forge\biome_modifier\allthemodium\dim_ores
-- Remove data\forge\tags\blocks\needs_allthemodium_tool.json
+- Remove data\apotheosis
 
-### AllTheOres
-- Remove data\alltheores\forge\biome_modifier\alltheores\\*_nether.json
-- Remove data\alltheores\forge\biome_modifier\alltheores\\*_end.json
-- Remove data\alltheores\worldgen\placed_feature\ore_uranium_placed_mining.json
-- Remove data\forge\tags\blocks\ores_in_ground\ancient_stone.json
-- Remove data\forge\tags\blocks\ores_in_ground\end_stone.json
-- Remove data\forge\tags\blocks\ores_in_ground\netherrack.json
-- Remove data\forge\tags\items\ores_in_ground\ancient_stone.json
-- Remove data\forge\tags\items\ores_in_ground\end_stone.json
-- Remove data\forge\tags\items\ores_in_ground\netherrack.json
-
-### EndRemastered
-- Updates
-
-### GatewaysToEternity
-- Remove data\gateways\recipes
+### End Remastered
+- Remove data\endrem\loot_modifiers\*.json (except pillager_outpost and witch)
+- Remove data\endrem\loot_tables\minecraft\chests\*.json (except pillager_outpost)
+- Remove data\endrem\loot_tables\minecraft\entities\*.json (except witch)
 
 ### Industrial Foregoing
 - Remove data\industrialforegoing\recipes\laser_drill_ore\
 
 ### Iron Spellbooks
-- Remove data\irons_spellbooks\advancements\grant_patchouli.json
-- Remove data\irons_spellbooks\bosses\necromancer.json
+- Remove data\irons_spellbooks\bosses
+- Remove data\irons_spellbooks\boss_gear
 - Remove data\irons_spellbooks\loot_modifiers\entity_drops\blaze_modifier.json
 - Remove data\irons_spellbooks\loot_tables\entities\additional_blaze_loot.json
 
-### Mekanism
-- Remove data\mekanism\forge\biome_modifier\mekanism\*.json (except fluorite & salt)
-
 ### Nullscape
-- Remove data\minecraft\loot_tables\blocks\amethyst_block.json
+- Remove data\minecraft\loot_tables (for blocks\amethyst_block.json)
+
+### Progressive Bosses
+- Remove data\minecraft\loot_tables (for blocks\amethyst_block.json)
 
 ### Silent Gear
+- Remove data\silentgear\recipes\smithing
 - Remove data\silentgear\silentgear_materials\sandstone
 - Remove data\silentgear\silentgear_materials\terracotta
 - Remove data\silentgear\silentgear_materials\aluminum.json
@@ -104,10 +89,6 @@
 - Remove data\silentgear\silentgear_materials\turtle.json
 - Remove data\silentgear\silentgear_materials\uranium.json
 - Remove data\silentgear\silentgear_materials\zinc.json
-
-### Terralith
-- Remove data\minecraft\worldgen\structure_set\villages.json
-- Remove data\terralith\worldgen\structure_set\rare_village.json
 
 ## Server Startup
 1. `wget <forgeInstallerURL>`

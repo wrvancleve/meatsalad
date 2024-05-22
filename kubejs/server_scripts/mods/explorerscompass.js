@@ -1,12 +1,11 @@
 ServerEvents.recipes(event => {
-  event.remove({ id: 'explorerscompass:explorers_compass' })
-  event.shaped('explorerscompass:explorerscompass', [
+  global.replaceShaped(event, [
     'NAN',
     'ACA',
     'NAN'
   ], {
-    A: '#forge:ingots/palladium',
+    A: '#forge:ingots/allthemodium',
     N: '#forge:ingots/netherite',
     C: 'naturescompass:naturescompass',
-  }).id('meatsalad:explorerscompass');
+  }, Item.of('explorerscompass:explorerscompass'), 'explorers_compass')
 })

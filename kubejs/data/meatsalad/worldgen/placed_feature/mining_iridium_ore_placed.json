@@ -1,13 +1,9 @@
 {
-  "feature": "alltheores:ore_iridium",
+  "feature": "meatsalad:ore_iridium",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3
-    },
-    {
-      "count": 2,
-      "type": "minecraft:count"
+      "chance": 4
     },
     {
       "type": "minecraft:in_square"

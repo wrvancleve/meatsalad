@@ -5,8 +5,8 @@
 		"item": "minecraft:trident"
 	},
 	"type": "TRIDENT",
-	"min_rarity": "rare",
-	"max_rarity": "mythic",
+	"min_rarity": "apotheosis:rare",
+	"max_rarity": "apotheosis:mythic",
 	"dimensions": [
 		"minecraft:the_end"
 	]

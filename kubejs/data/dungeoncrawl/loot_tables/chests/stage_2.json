@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -558,34 +558,13 @@
           "type": "minecraft:item",
           "name": "minecraft:spider_eye",
           "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:material_blocks"
-            }
-          ],
-          "name": "minecraft:air",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:shield",
-              "loot_level": 1
-            }
-          ],
-          "name": "minecraft:shield",
-          "weight": 2
         }
       ],
       "name": "stage two chest",
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 5.0
+        "max": 9.0,
+        "min": 6.0
       }
     },
     {
@@ -594,15 +573,16 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 80
+          "weight": 85
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random",
-		      "weight": 20,
+          "name": "meatsalad:chests/gear/random",
+          "weight": 15,
           "quality": 1
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "dungeoncrawl:chests/stage_2"
 }

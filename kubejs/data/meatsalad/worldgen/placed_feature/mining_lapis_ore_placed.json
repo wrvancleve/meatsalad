@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:ore_lapis",
+  "feature": "meatsalad:ore_lapis",
   "placement": [
     {
-      "count": 2,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 2
     },
     {
       "type": "minecraft:in_square"

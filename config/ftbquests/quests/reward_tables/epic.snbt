@@ -7,7 +7,7 @@
 		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
 		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
 		{ count: 2, item: "fluxnetworks:flux_core", random_bonus: 2 }
-		{ count: 4, item: "kubejs:dimensional_shard", random_bonus: 2 }
+		{ count: 4, item: "meatsalad:dimensional_shard", random_bonus: 2 }
 		{ item: "pipez:ultimate_upgrade", random_bonus: 2 }
 		{ item: "thermal:upgrade_augment_3" }
 		{ item: "mekanism:ingot_refined_obsidian", random_bonus: 3 }

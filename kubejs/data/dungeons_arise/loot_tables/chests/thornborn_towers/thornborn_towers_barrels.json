@@ -5,6 +5,10 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/enchanted_books/random"
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:ender_pearl",
           "functions": [
@@ -165,6 +169,11 @@
           "name": "minecraft:golden_apple"
         },
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/gear/random_treasure",
+          "weight": 5
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:coal",
           "functions": [
@@ -176,6 +185,10 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/enchanted_books/random"
         },
         {
           "type": "minecraft:item",
@@ -260,70 +273,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/random",
-		      "weight": 30,
-          "quality": 1
         }
       ]
     }

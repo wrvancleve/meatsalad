@@ -4,10 +4,6 @@
 	# Valid values: "default", "forced_all", "forced_none"
 	ally_mode: "default"
 	
-	# Fallback offline chunk loading behaviour for when 'force_load_mode' is set to 'default'
-	# Default: true
-	chunk_load_offline: true
-	
 	# Dimension ID's where chunks may not be claimed. Add "minecraft:the_end" to this list if you want to disable chunk claiming in The End, or "othermod:*" to disable chunk claiming in *all* dimensions added by "othermod"
 	# Default: []
 	claim_dimension_blacklist: [ ]
@@ -33,7 +29,7 @@
 	# Control how force-loaded chunks work.
 	# NEVER: only allow chunk force-loading if the owning team has at least one online player.
 	# ALWAYS: always allow force-loading, even if no players are online.
-	# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission OR 'chunk_load_offline' is true.
+	# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission.
 	# Default: "default"
 	# Valid values: "default", "always", "never"
 	force_load_mode: "default"
@@ -85,6 +81,11 @@
 	# Range: 0.0 ~ 3650.0
 	max_idle_days_before_unforce: 0.0d
 	
+	# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
+	# Default: 7
+	# Range: 1 ~ 2147483647
+	max_prevented_log_age: 7
+	
 	# Requires you to claim chunks in order to edit and interact with blocks
 	# Default: false
 	no_wilderness: false
@@ -106,6 +107,11 @@
 	# (Ghast fireballs are a common case - vanilla supplies a null entity source)
 	# Default: true
 	protect_unknown_explosions: true
+	
+	# Should PvP combat be allowed in claimed chunks? Default is ALWAYS; NEVER prevents it in all claimed chunks; PER_TEAM allows teams to decide if PvP is allowed in their claims
+	# Default: "always"
+	# Valid values: "always", "never", "per_team"
+	pvp_mode: "always"
 	
 	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
 	# Requires KubeJS and/or Gamestages to be installed.

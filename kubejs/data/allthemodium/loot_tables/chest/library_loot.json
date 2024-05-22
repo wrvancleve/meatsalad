@@ -1,44 +1,12 @@
 {
   "pools": [
     {
-      "name": "library_loot",
-      "rolls": {
-        "min": 3.0,
-        "max": 7.0
-      },
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 2.0,
-        "max": 3.0
-      },
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprints/random"
-        }
-      ]
-    },
-    {
-      "name": "library_loot_tome_pool",
-      "rolls": {
-        "min": 1.0,
-        "max": 3.0
-      },
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random"
+          "name": "allthemodium:chests/library_loot"
         }
       ]
     }

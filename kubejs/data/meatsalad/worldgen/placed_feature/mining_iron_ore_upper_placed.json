@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:ore_iron",
+  "feature": "meatsalad:ore_iron",
   "placement": [
     {
-      "count": 20,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 20
     },
     {
       "type": "minecraft:in_square"

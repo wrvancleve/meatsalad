@@ -6,5 +6,5 @@ ServerEvents.recipes(event => {
   ], {
     I: '#forge:ingots/iron',
     F: 'minecraft:flint'
-  }, 'pipez', 'wrench');
+  }, Item.of('pipez:wrench'))
 })

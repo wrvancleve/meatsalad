@@ -10,6 +10,6 @@
   "dimensions": [
     "minecraft:the_nether"
   ],
-	"min_rarity": "uncommon",
-	"max_rarity": "epic"
+	"min_rarity": "apotheosis:uncommon",
+	"max_rarity": "apotheosis:epic"
 }

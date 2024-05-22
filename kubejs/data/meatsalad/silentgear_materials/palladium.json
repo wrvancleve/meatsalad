@@ -1,6 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
+  "harvest_tier": "allthemodium:allthemodium",
   "availability": {
     "tier": 6,
     "categories": [
@@ -12,11 +13,11 @@
   },
   "crafting_items": {
     "main": {
-      "tag": "forge:ingots/palladium"
+      "tag": "forge:ingots/allthemodium"
     }
   },
   "name": {
-    "translate": "material.silentgear.palladium"
+    "translate": "material.meatsalad.allthemodium"
   },
   "stats": {
     "main": {
@@ -25,7 +26,6 @@
       "enchantment_value": 18.0,
       "rarity": 100.0,
       "charging_value": 1.2,
-      "harvest_level": 5.0,
       "harvest_speed": 10.0,
       "melee_damage": 5.0,
       "magic_damage": 5.0,

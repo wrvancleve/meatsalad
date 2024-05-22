@@ -1,6 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
   "availability": {
     "tier": 6,
     "categories": [
@@ -16,7 +17,7 @@
     }
   },
   "name": {
-    "translate": "material.silentgear.unobtainium"
+    "translate": "material.meatsalad.unobtainium"
   },
   "stats": {
     "main": {
@@ -25,7 +26,6 @@
       "enchantment_value": 30.0,
       "rarity": 110.0,
       "charging_value": 1.5,
-      "harvest_level": 5.0,
       "harvest_speed": 14.0,
       "melee_damage": 7.0,
       "magic_damage": 9.0,

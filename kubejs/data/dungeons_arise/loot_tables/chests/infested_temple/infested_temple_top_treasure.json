@@ -19,6 +19,10 @@
           ]
         },
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/enchanted_books/random"
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:experience_bottle",
           "functions": [
@@ -30,6 +34,20 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/gear/random",
+          "weight": 4
         }
       ]
     },
@@ -142,52 +160,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_golden_apple"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/diamond/random_treasure",
-          "weight": 4
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/random_treasure",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/random",
-		      "weight": 30,
-          "quality": 1
         }
       ]
     }

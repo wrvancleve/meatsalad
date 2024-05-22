@@ -1,132 +1,144 @@
 //priority: 150
 ServerEvents.recipes(event => {
-  let ingotTags = global.auTags.filter(function (val) {
-    return /forge:ingots/.test(val)
-  })
-  ingotTags.forEach(ingotTagString => {
-    let materialType = ingotTagString.replace('forge:ingots/', '')
-    let ingot = AlmostUnified.getPreferredItemForTag(ingotTagString)
-    if (ingot.isEmpty()) {
-      console.log(`${materialType} does not have an ingot tag entry`)
-      return
-    }
-    let isAlloy = global.alloys.includes(materialType)
-    let storageTag = Ingredient.of(`#forge:storage_blocks/${materialType}`)
-    if (!AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/${materialType}`).isEmpty()) {
-      if (global.loaded.Thermal_Loaded) {
-        let count = 0
-        event.forEachRecipe({ type: 'thermal:press' }, recipe => {
-          let recipeJson = recipe.json
-          recipeJson.get('result').forEach(item => {
-            if (ingot.equalsIgnoringCount(Item.of(item))) {
-              count++
-            }
-          })
-        })
-        if (count == 0) {
-          event.custom({
-            type: 'thermal:press',
-            ingredients: [
-              storageTag.toJson(),
-              Ingredient.of('thermal:press_unpacking_die').toJson(),
-            ],
-            result: [ingot.withCount(9).toJson()],
-          }).id(`meatsalad:machines/press/unpacking/press_${materialType}_unpacking`)
-        }
+  const recipes = [
+    {
+      type: 'thermal:press',
+      target: 'forge:storage_blocks/{0}',
+      id: 'press/unpacking/{0}_ingots_from_block',
+      json: {
+        ingredients: [
+          { tag: '{0}' },
+          { item: 'thermal:press_unpacking_die' }
+        ],
+        result: [ { item: '{0}', count: 9 } ]
       }
-      
-      let nuggetsTagString = `forge:nuggets/${materialType}`;
-      if (!AlmostUnified.getPreferredItemForTag(nuggetsTagString).isEmpty()) {
-        if (global.loaded.Thermal_Loaded) {
-          // Check if thermal multiservo press recipe exists and add it if not
-          let count = 0
-          event.forEachRecipe({ type: 'thermal:press' }, recipe => {
-            let recipeJson = recipe.json
-            recipeJson.get('result').forEach(item => {
-              if (ingot.equalsIgnoringCount(Item.of(item))) {
-                count++
-              }
-            })
-          })
-          if (count == 0) {
-            event.custom({
-              type: 'thermal:press',
-              ingredients: [
-                {tag: nuggetsTagString, count: 9},
-                Ingredient.of('thermal:press_packing_3x3_die').toJson(),
-              ],
-              result: [ingot.toJson()],
-            }).id(`meatsalad:machines/press/packing3x3/press_${materialType}_nugget_packing`)
-          }
-        }
+    },
+    {
+      type: 'thermal:press',
+      target: 'forge:nuggets/{0}',
+      id: 'press/packing3x3/{0}_ingot_from_nuggets',
+      json: {
+        ingredients: [
+          { tag: '{0}', count: 9 },
+          { item: 'thermal:press_packing_3x3_die' }
+        ],
+        result: [ { item: '{0}' } ]
       }
-    }
-  });
-
-  const gemsToOres = [
-    'peridot',
-    'ruby',
-    'sapphire',
-    'bort'
-  ]
-  gemsToOres.forEach(material => {
-    let gem = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`);
-    event.smelting(gem.toJson(), `#forge:ores/${material}`).xp(1.0).id(`meatsalad:smelting/${material}_from_ore`)
-    event.blasting(gem.toJson(), `#forge:ores/${material}`).xp(1.0).id(`meatsalad:blasting/${material}_from_ore`)
-    event.custom({
-      type: "thermal:pulverizer",
-      ingredient: Ingredient.of(`#forge:ores/${material}`).toJson(),
-      result: [
-        {
-          item: gem.toItemString().slice(1, -1),
-          chance: 2.5
+    },
+    {
+      type: 'thermal:smelter',
+      target: 'forge:ores/{0}',
+      id: 'smelter/{0}_ingot_from_ore',
+      json: {
+        ingredient: {
+          tag: '{0}'
         },
-        {
-          item: 'minecraft:gravel',
-          chance: 0.2
-        }
-      ]
-    }).id(`meatsalad:pulverizer/${material}_from_ore`)
-    event.custom({
-      type: "mekanism:enriching",
-      input: {
-        ingredient: Ingredient.of(`#forge:ores/${material}`).toJson()
-      },
-      output: gem.withCount(2).toJson()
-    }).id(`meatsalad:enriching/${material}_from_ore`)
-  })
-
-  const dustSmeltings = [
-    'starmetal',
-    'mythril',
-    'adamantite',
+        result: [
+          {
+            item: '{0}',
+            chance: 1
+          },
+          {
+            item: 'thermal:rich_slag',
+            chance: 0.20
+          }
+        ],
+        experience: 0.2
+      }
+    },
+    {
+      type: 'thermal:smelter',
+      target: 'forge:raw_materials/{0}',
+      id: 'smelter/{0}_ingot_from_raw',
+      json: {
+        ingredient: {
+          tag: '{0}'
+        },
+        result: [
+          {
+            item: '{0}',
+            chance: 1.5
+          }
+        ],
+        experience: 0.1
+      }
+    },
+    {
+      type: 'thermal:smelter',
+      target: 'forge:plates/{0}',
+      id: 'smelter/{0}_ingot_from_plate',
+      json: {
+        ingredient: {
+          tag: '{0}'
+        },
+        result: [{ item: '{0}' }],
+        experience: 0.0
+      }
+    },
+    {
+      type: 'thermal:smelter',
+      target: 'forge:gears/{0}',
+      id: 'smelter/{0}_ingots_from_gear',
+      json: {
+        ingredient: {
+          tag: '{0}'
+        },
+        result: [{ item: '{0}', chance: 4.0 }],
+        experience: 0.0
+      }
+    },
+    {
+      type: 'minecraft:crafting_shapeless',
+      target: 'forge:storage_blocks/{0}',
+      id: '{0}_ingots_from_block',
+      json: {
+        result: { item: '{0}', count: 9 },
+        ingredients: [
+          { tag: '{0}' }
+        ]
+      }
+    },
+    {
+      type: 'minecraft:crafting_shaped',
+      target: 'forge:nuggets/{0}',
+      id: '{0}_ingot_from_nuggets',
+      json: {
+        key: {
+          a: { tag: '{0}' }
+        },
+        pattern: [
+          'aaa',
+          'aaa',
+          'aaa'
+        ],
+        result: { item: '{0}' }
+      }
+    },
+    {
+      type: 'minecraft:smelting',
+      target: 'forge:dusts/{0}',
+      id: 'smelting/{0}_ingot_from_dust',
+      exclude: ['gems'],
+      json: {
+        cookingtime: 200,
+        experience: 0.0,
+        ingredient: { tag: '{0}' },
+        result: '{0}'
+      }
+    },
+    {
+      type: 'minecraft:blasting',
+      target: 'forge:dusts/{0}',
+      id: 'blasting/{0}_ingot_from_dust',
+      exclude: ['gems'],
+      json: {
+        cookingtime: 100,
+        experience: 0.0,
+        ingredient: { tag: '{0}' },
+        result: '{0}'
+      }
+    },
   ]
-  dustSmeltings.forEach(material => {
-    let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);
-    event.smelting(ingot.toJson(), `#forge:dusts/${material}`).xp(1.0).id(`meatsalad:smelting/${material}_ingot_from_dust`)
-    event.blasting(ingot.toJson(), `#forge:dusts/${material}`).xp(1.0).id(`meatsalad:blasting/${material}_ingot_from_dust`)
-  })
 
-  const ingotsFrom = [
-    /*
-    'titanium',
-    'cobalt',
-    'uru',
-    */
-    'starmetal',
-    'adamantite',
-    'mythril',
-    'neutronium',
-    //'ultimate'
-  ]
-  ingotsFrom.forEach(material => {
-    let ingot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`);
-    event.shapeless(ingot.withCount(9).toJson(), `#forge:storage_blocks/${material}`).id(`meatsalad:${material}_ingots_from_block`)
-    
-    if (!AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`).isEmpty()) {
-      event.shaped(ingot.toJson(), ['NNN', 'NNN', 'NNN'], {
-        N: `#forge:nuggets/${material}`
-      }).id(`meatsalad:${material}_ingot_from_nuggets`)
-    }
-  })
+  global.unify(event, 'forge:ingots/', recipes)
 })

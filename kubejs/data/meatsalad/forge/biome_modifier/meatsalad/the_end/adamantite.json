@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "nullscape:void_barrens",
+  "features": "meatsalad:end_adamantite_ore_placed",
+  "step": "underground_ores"
+}

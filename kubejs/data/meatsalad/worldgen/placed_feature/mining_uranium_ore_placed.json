@@ -1,13 +1,9 @@
 {
-  "feature": "alltheores:ore_uranium",
+  "feature": "meatsalad:ore_uranium",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
       "chance": 2
-    },
-    {
-      "count": 2,
-      "type": "minecraft:count"
     },
     {
       "type": "minecraft:in_square"

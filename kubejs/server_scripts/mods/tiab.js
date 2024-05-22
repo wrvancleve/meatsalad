@@ -9,5 +9,5 @@ ServerEvents.recipes(event => {
     C: 'minecraft:clock',
     L: 'minecraft:lapis_lazuli',
     B: 'minecraft:experience_bottle'
-  }, 'tiab', 'time_in_a_bottle');
+  }, Item.of('tiab:time_in_a_bottle'))
 })

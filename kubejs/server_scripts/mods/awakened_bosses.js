@@ -1,3 +1,4 @@
+
 ServerEvents.recipes(event => {
   function fullRemove(id) {
     event.remove({ input: id })
@@ -18,20 +19,47 @@ ServerEvents.recipes(event => {
   fullRemove('awakened_bosses:herobrine_hoe')
 
   event.remove({ id: 'awakened_bosses:herobrine_blue_recipe' })
-  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
-    .itemOutput('awakened_bosses:herobrine_blue')
-    .input(Ingredient.of('#forge:dyes/blue'))
-    .input(Ingredient.of('#forge:storage_blocks/diamond'))
-    .recipeTime(200)
-    .blockBelow('extendedcrafting:nether_star_block')
-    .id(`meatsalad:summoning/herobrine_blue`);
+  global.energize(event,
+    [
+      Ingredient.of('#forge:dyes/blue'),
+      Ingredient.of('#forge:storage_blocks/diamond'),
+      Ingredient.of('alexsmobs:mimicream'),
+      Ingredient.of('meatsalad:draconic_infused_dark_matter')
+    ],
+    5000000,
+    Item.of('awakened_bosses:herobrine_blue')
+  )
 
-  event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' });
-  event.recipes.summoningrituals.altar('alexsmobs:mimicream')
-    .itemOutput('awakened_bosses:herobrine_cyan')
-    .input(Ingredient.of('#forge:dyes/cyan'))
-    .input(Ingredient.of('#forge:storage_blocks/diamond'))
-    .recipeTime(200)
-    .blockBelow('extendedcrafting:nether_star_block')
-    .id(`meatsalad:summoning/herobrine_cyan`);
+  event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' })
+  global.energize(event,
+    [
+      Ingredient.of('#forge:dyes/cyan'),
+      Ingredient.of('#forge:storage_blocks/diamond'),
+      Ingredient.of('alexsmobs:mimicream'),
+      Ingredient.of('meatsalad:draconic_infused_dark_matter')
+    ],
+    5000000,
+    Item.of('awakened_bosses:herobrine_cyan')
+  )
+})
+
+ServerEvents.entityLootTables(event => {
+  event.modifyEntity('awakened_bosses:herobrine_minion', table => {
+    table.clearPools()
+  })
+  event.modifyEntity('awakened_bosses:herobrine', table => {
+    table.clearPools()
+    global.addStackLootPool(table, {item: 'meatsalad:chaos_crystal'})
+    global.addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
+    global.addGemLootPool(table, {name: 'ancient', weight: null})
+  })
+  event.modifyEntity('awakened_bosses:mahva', table => {
+    table.clearPools()
+  })
+  event.modifyEntity('awakened_bosses:prowler', table => {
+    table.clearPools()
+  })
+  event.modifyEntity('awakened_bosses:reeker', table => {
+    table.clearPools()
+  })
 })

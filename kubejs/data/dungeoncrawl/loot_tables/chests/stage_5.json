@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -336,6 +336,10 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "add": false,
@@ -371,32 +375,11 @@
           "functions": [
             {
               "function": "dungeoncrawl:random_potion",
-              "loot_level": 3
+              "loot_level": 4
             }
           ],
           "name": "minecraft:potion",
           "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:material_blocks"
-            }
-          ],
-          "name": "minecraft:air",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "dungeoncrawl:shield",
-              "loot_level": 4
-            }
-          ],
-          "name": "minecraft:shield",
-          "weight": 3
         }
       ],
       "name": "stage five chest",
@@ -405,95 +388,7 @@
         "max": 9.0,
         "min": 6.0
       }
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:overworld/materials"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_item/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/random",
-		      "weight": 30,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/random",
-		      "weight": 20,
-          "quality": 0.5
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 80
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 20,
-          "quality": 0.5,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "bhc:red_heart",
-            "count": 1
-          }
-        }
-      ]
     }
-  ]
+  ],
+  "random_sequence": "dungeoncrawl:chests/stage_5"
 }

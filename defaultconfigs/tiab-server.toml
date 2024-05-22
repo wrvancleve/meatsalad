@@ -12,4 +12,6 @@
 	#Define max time the items can store - in tick (1 second = 20 ticks)
 	#Range: 600 ~ 622080000
 	"Max Stored Time" = 622080000
+	#Mods that are blocked from having API access. Can add Tiab itself aswell
+	"API Access" = [""]
 

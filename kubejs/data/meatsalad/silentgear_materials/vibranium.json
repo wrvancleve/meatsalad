@@ -1,6 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
+  "harvest_tier": "allthemodium:vibranium",
   "availability": {
     "tier": 5,
     "categories": [
@@ -16,7 +17,7 @@
     }
   },
   "name": {
-    "translate": "material.silentgear.vibranium"
+    "translate": "material.meatsalad.vibranium"
   },
   "stats": {
     "main": {
@@ -25,7 +26,6 @@
       "enchantment_value": 22.0,
       "rarity": 100.0,
       "charging_value": 1.5,
-      "harvest_level": 5.0,
       "harvest_speed": 15.0,
       "melee_damage": 8.0,
       "magic_damage": 8.0,

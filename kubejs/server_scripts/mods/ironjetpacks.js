@@ -1,22 +1,25 @@
+ServerEvents.tags('item', event => {
+  event.remove('curios:body', 'ironjetpacks:jetpack')
+  event.add('curios:back', 'ironjetpacks:jetpack')
+})
+
 ServerEvents.recipes(event => {
-  let thruster = (material, material_type, coil) => {
-    event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${material}"}`), [
+  let createThrusterRecipe = (name, material, material_type, coil) => {
+    event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${name}"}`), [
       'MCM',
       'CDC',
       'MFM'
     ], {
       M: `#forge:${material_type}s/${material}`,
       C: coil,
-      D: 'kubejs:dark_matter',
+      D: 'meatsalad:dark_matter',
       F: 'minecraft:fire_charge'
-    }).id(`meatsalad:${material}_thruster`);
+    }).id(`meatsalad:${name}_thruster`)
   }
 
-  event.remove({id: 'ironjetpacks:ultimate_coil'});
-
-  thruster('diamond', 'gem', 'ironjetpacks:basic_coil')
-  thruster('netherite', 'ingot', 'ironjetpacks:basic_coil')
-  thruster('palladium', 'ingot', 'ironjetpacks:advanced_coil')
-  thruster('vibranium', 'ingot', 'ironjetpacks:advanced_coil')
-  thruster('unobtainium', 'ingot', 'ironjetpacks:elite_coil')
+  createThrusterRecipe('diamond', 'diamond', 'gem', 'ironjetpacks:basic_coil')
+  createThrusterRecipe('netherite', 'netherite', 'ingot', 'ironjetpacks:basic_coil')
+  createThrusterRecipe('palladium', 'allthemodium', 'ingot', 'ironjetpacks:advanced_coil')
+  createThrusterRecipe('vibranium', 'vibranium', 'ingot', 'ironjetpacks:elite_coil')
+  createThrusterRecipe('unobtainium', 'unobtainium', 'ingot', 'ironjetpacks:ultimate_coil')
 })

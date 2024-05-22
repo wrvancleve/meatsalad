@@ -48,34 +48,8 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure",
+          "name": "meatsalad:chests/enchanted_books/random_treasure",
           "weight": 6
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:blueprints/random"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.05,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 30,
-          "quality": 1
         }
       ]
     }

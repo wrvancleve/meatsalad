@@ -52,9 +52,11 @@ dontShowContentsUnlessSneaking = []
 #A list of blocks for which we don't send NBT over the network. This is mostly useful for blocks that have HUGE NBT in their pickblock (itemstack)
 dontSendNBT = []
 #A list of either <modid>:<entityid> to disable the tooltip for specific entities. Can also be a single <modid> to disable an entire mod. Or it can also be '*' to disable everything
-blacklistEntities = []
+blacklistEntities = ["minecraft:elder_guardian", "minecraft:ender_dragon", "minecraft:wither", "cataclysm:ender_golem", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "alexsmobs:void_worm", "awakened_bosses:herobrine", "cataclysm:ender_guardian", "cataclysm:ignis", "cataclysm:the_leviathan", "awakened_bosses:projectile_mahva"]
 #A list of <tag>=<name> containing all tooltype tags with their associated name to display
 tooltypeTags = ["minecraft:mineable/axe=Axe", "minecraft:mineable/pickaxe=Pickaxe", "minecraft:mineable/shovel=Shovel", "minecraft:mineable/hoe=Hoe"]
 #A list of <tag>=<name> containing all harvestability tags with their associated name to display
-harvestabilityTags = ["forge:needs_wood_tool=Wood", "forge:needs_gold_tool=Gold", "minecraft:needs_stone_tool=Stone", "minecraft:needs_iron_tool=Iron", "minecraft:needs_diamond_tool=Diamond", "forge:needs_netherite_tool=Netherite"]
+harvestabilityTags = ["forge:needs_wood_tool=Wood", "forge:needs_gold_tool=Gold", "minecraft:needs_stone_tool=Stone", "minecraft:needs_iron_tool=Iron", "minecraft:needs_diamond_tool=Diamond", "forge:needs_netherite_tool=Netherite", "forge:needs_allthemodium_tool=Palladium", "forge:needs_vibranium_tool=Vibranium", "forge:needs_unobtainium_tool=Unobtainium"]
+#true means shows harvestability with vanilla style icons
+harvestStyleVanilla = true
 

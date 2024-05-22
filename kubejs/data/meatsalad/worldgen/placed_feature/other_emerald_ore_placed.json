@@ -1,9 +1,9 @@
 {
-  "feature": "meatsalad:other_emerald_ore",
+  "feature": "meatsalad:ore_emerald",
   "placement": [
     {
-      "count": 20,
-      "type": "minecraft:count"
+      "type": "minecraft:count",
+      "count": 20
     },
     {
       "type": "minecraft:in_square"

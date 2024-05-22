@@ -9,6 +9,8 @@
 	noInteractionBlocks = []
 	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
 	noConnectionBlocks = []
+	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["furnace_upgrades|1", "stack_upgrades|3", "jukebox_upgrade|1"]
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -25,6 +27,15 @@
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
 		inventorySlotCount = 27
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Copper Backpack Settings
+	[server.copperBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 45
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 1
@@ -390,7 +401,7 @@
 	[server.entityBackpackAdditions]
 		#Chance of an entity spawning with Backpack
 		#Range: 0.0 ~ 1.0
-		chance = 0.00
+		chance = 0.0
 		#Turns on/off addition of loot into backpacks
 		addLoot = false
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
@@ -409,7 +420,7 @@
 		dropToFakePlayers = false
 		#Chance of mob dropping backpack when killed by player
 		#Range: 0.0 ~ 1.0
-		backpackDropChance = 0.0
+		backpackDropChance = 0.5
 		#Chance increase per looting level of mob dropping backpack
 		#Range: 0.0 ~ 0.3
 		lootingChanceIncreasePerLevel = 0.15

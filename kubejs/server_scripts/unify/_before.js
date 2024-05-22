@@ -1,94 +1,418 @@
 //priority: 300
 
-global['auTags'] = [];
+const JsonObject = Java.loadClass('com.google.gson.JsonObject')
+const JsonArray = Java.loadClass('com.google.gson.JsonArray')
+const JsonPrimitive = Java.loadClass('com.google.gson.JsonPrimitive')
+
+function getArray(object) {
+  if (object.constructor === Array) {
+    return object
+  } else {
+    return [object]
+  }
+}
+
+global['auTags'] = []
 
 global['loaded'] = {
-    Mek_Loaded: Platform.isLoaded('mekanism'),
-    Thermal_Loaded: Platform.isLoaded('thermal'),
-    ATO_Loaded: Platform.isLoaded('alltheores'),
+  Mek_Loaded: Platform.isLoaded('mekanism'),
+  Thermal_Loaded: Platform.isLoaded('thermal'),
+  ATO_Loaded: Platform.isLoaded('alltheores'),
 }
 
-global['alloys'] = [
-    'steel',
-    'invar',
-    'electrum',
-    'bronze',
-    'enderium',
-    'lumium',
-    'signalum',
-    'constantan',
-    'brass'
+// global['alloys'] = [
+//   'steel',
+//   'invar',
+//   'electrum',
+//   'bronze',
+//   'enderium',
+//   'lumium',
+//   'signalum',
+//   'constantan',
+//   'brass'
+// ]
+
+global['gems'] = [
+  'amethyst',
+  'apatite',
+  'certus_quartz',
+  'cinnabar',
+  'diamond',
+  'dimensional_shard',
+  'emerald',
+  'fluorite',
+  'lapis',
+  'niter',
+  'peridot',
+  'quartz',
+  'ruby',
+  'sapphire',
+  'sulfur',
 ]
 
-global['gemCheck'] = function(material) {
-    return [
-        'amethyst',
-        'apatite',
-        'certus_quartz',
-        'cinnabar',
-        'diamond',
-        'emerald',
-        'lapis',
-        'niter',
-        'peridot',
-        'quartz',
-        'ruby',
-        'sapphire',
-        'sulfur',
-    ].includes(material);
+global['getRecipeInputKey'] = function (recipeType, recipeJson) {
+  let inputKeys
+  switch (recipeType) {
+    case 'minecraft:crafting_shaped':
+      inputKeys = ['key']
+      break
+    case 'minecraft:crafting_shapeless':
+    case 'thermal:crystallizer':
+      inputKeys = ['ingredients']
+      break
+    case 'mekanism:enriching':
+    case 'mekanism:crushing':
+      inputKeys = ['input']
+      break
+    case 'thermal:smelter':
+    case 'thermal:press':
+      inputKeys = ['ingredients', 'ingredient']
+      break
+    case 'mekanism:purifying':
+    case 'mekanism:injecting':
+      inputKeys = ['itemInput']
+      break
+    default:
+      inputKeys = ['ingredient']
+      break
+  }
+
+  for (let inputKey of inputKeys) {
+    let inputValue
+    if (recipeJson instanceof JsonObject) {
+      inputValue = recipeJson.get(inputKey)
+    } else {
+      inputValue = recipeJson[inputKey]
+    }
+    if (inputValue) {
+      return inputKey
+    }
+  }
 }
 
-global['ingredientCheck'] = function(itemstack, json) {
-    if(json.has('tag')) {
-        let tag = json.get('tag').getAsString()
-        if (AlmostUnified.getItemIds(tag).contains(itemstack.id)) { return true }
-    } else if (json.has('item')) {
-        let item = json.get('item').getAsString()
-        if (itemstack.id == item) { return true }
+global['getIngredients'] = function* (ingredients, filler) {
+  if (ingredients instanceof JsonArray) {
+    for (var i = 0; i < ingredients.size(); i++) {
+      yield* global.getIngredients(ingredients.get(i), filler)
     }
-    return false
+  } else if (ingredients instanceof Array) {
+    for (let ingredient of ingredients) {
+      yield* global.getIngredients(ingredient, filler)
+    }
+  } else if (ingredients instanceof JsonObject) {
+    if (ingredients.has('tag')) {
+      yield filler
+        ? ingredients.get('tag').getAsString().replace('{0}', filler) + "" // + "" is for a bug
+        : ingredients.get('tag').getAsString() + "" // + "" is for a bug
+    } else if (ingredients.has('item')) {
+      yield filler
+        ? ingredients.get('item').getAsString().replace('{0}', filler) + "" // + "" is for a bug
+        : ingredients.get('item').getAsString() + "" // + "" is for a bug
+    } else {
+      for (let ingredientKey of ingredients.keySet().toArray()) {
+        yield* global.getIngredients(ingredients.get(ingredientKey), filler)
+      }
+    }
+  } else if (ingredients instanceof Object) {
+    if (ingredients.tag) {
+      yield filler ? ingredients.tag.replace('{0}', filler) : ingredients.tag
+    } else if (ingredients.item) {
+      yield filler ? ingredients.item.replace('{0}', filler) : ingredients.item 
+    } else {
+      yield* global.getIngredients(Object.values(ingredients), filler)
+    }
+  } else if (ingredients instanceof JsonPrimitive) {
+    if (ingredients.isString()) {
+      yield filler ? ingredients.getAsString().replace('{0}', filler) : ingredients.getAsString()
+    }
+  }
+}
+
+global['finalizeComponent'] = function (component, filler) {
+  if (component.constructor === Array) {
+    return component.map(c => global.finalizeComponent(c, filler))
+  } else if (component.constructor === String) {
+    return component.replace('{0}', filler)
+  } else if (component.constructor === Object) {
+    let newComponent = Object.assign({}, component)
+    if (newComponent.tag) {
+      newComponent.tag = newComponent.tag.replace('{0}', filler)
+    } else if (newComponent.item) {
+      newComponent.item = newComponent.item.replace('{0}', filler)
+    } else {
+      for (let newComponentProp of Object.keys(newComponent)) {
+        newComponent[newComponentProp] = global.finalizeComponent(newComponent[newComponentProp], filler)
+      }
+    }
+    return newComponent
+  }
+  return component
+}
+
+global['unify'] = function (event, unifyTag, unifyRecipes) {
+  const recipeKeys = {
+    'minecraft:crafting_shaped': {
+      input: 'key',
+      output: 'result'
+    },
+    'minecraft:crafting_shapeless': {
+      input: 'ingredients',
+      output: 'result'
+    },
+    'minecraft:smelting': {
+      input: 'ingredient',
+      output: 'result'
+    },
+    'minecraft:blasting': {
+      input: 'ingredient',
+      output: 'result'
+    },
+    'mekanism:crushing': {
+      input: 'input',
+      output: 'output'
+    },
+    'mekanism:enriching': {
+      input: 'input',
+      output: 'output'
+    },
+    'mekanism:purifying': {
+      input: 'itemInput',
+      output: 'output'
+    },
+    'mekanism:injecting': {
+      input: 'itemInput',
+      output: 'output'
+    },
+    'thermal:pulverizer': {
+      input: 'ingredient',
+      output: 'result'
+    },
+    'thermal:smelter': {
+      input: 'ingredient',
+      output: 'result'
+    },
+    'thermal:press': {
+      input: 'ingredients',
+      output: 'result'
+    },
+    'thermal:crystallizer': {
+      input: 'ingredients',
+      output: 'result'
+    },
+  }
+
+  const unifyHandler = {
+    materials: {},
+    recipes: {},
+    preExistingRecipes: {},
+    addRecipe: function (recipe) {
+      const recipeType = recipe.type
+      if (recipeType in this.recipes === false) this.recipes[recipeType] = {}
+
+      const recipeTargets = getArray(recipe.target)
+      const hasMultipleIds = recipe.id instanceof Array
+      const hasMultipleJsons = recipe.json instanceof Array
+      let recipeExclude = new Set()
+      if (recipe.exclude) {
+        if (recipe.exclude instanceof RegExp) {
+          recipeExclude = recipe.exclude
+        } else {
+          recipe.exclude.forEach(exclusion => {
+            if (exclusion === 'gems') {
+              global.gems.forEach(gem => {
+                recipeExclude.add(gem)
+              })
+            } else {
+              recipeExclude.add(exclusion)
+            }
+          })
+        }
+      }
+
+      for (let i = 0; i < recipeTargets.length; i++) {
+        this.recipes[recipeType][recipeTargets[i]] = {
+          id: hasMultipleIds ? recipe.id[i] : recipe.id,
+          exclude: recipeExclude,
+          json: hasMultipleJsons ? recipe.json[i] : recipe.json
+        }
+      }
+    },
+    addMaterial: function (material) {
+      const materialTag = `${unifyTag}${material}`
+      const preferredItem = AlmostUnified.getPreferredItemForTag(materialTag)
+      if (preferredItem.isEmpty()) {
+        console.log(`${materialTag} has no entries`)
+        return
+      }
+      this.materials[preferredItem.id] = material
+      
+      // Start material's preExistingRecipes
+      this.preExistingRecipes[material] = {}
+      const targetChecks = {}
+      for (let [recipeType, recipesInType] of Object.entries(this.recipes)) {
+        this.preExistingRecipes[material][recipeType] = {}
+        for (let [target, recipeProps] of Object.entries(recipesInType)) {
+          let isMaterialExcluded = recipeProps.exclude instanceof RegExp
+            ? recipeProps.exclude.test(material)
+            : recipeProps.exclude.has(material)
+          if (!isMaterialExcluded) {
+            let targetMaterial = global.finalizeComponent(target, material)
+            let hasTargetCheckOccurred = targetMaterial in targetChecks
+            let targetCheck = hasTargetCheckOccurred
+              ? targetChecks[targetMaterial]
+              : !AlmostUnified.getPreferredItemForTag(targetMaterial).isEmpty()
+            if (targetCheck) {
+              this.preExistingRecipes[material][recipeType][target] = false
+            }
+            if (!hasTargetCheckOccurred) targetChecks[targetMaterial] = targetCheck
+          }
+        }
+      }
+    },
+    unify: function () {
+      // Setup function to compare recipes
+      function compareIngredients(recipeIngredients, testIngredients) {
+        const requiredIngredients = new Set(recipeIngredients)
+        testIngredients.forEach(testIngredient => {
+          requiredIngredients.delete(testIngredient)
+        })
+        return requiredIngredients.size === 0
+      }
+
+      // First fill pre-existing recipes
+      for (let [recipeType, recipesInType] of Object.entries(this.recipes)) {
+        event.forEachRecipe({type: recipeType}, recipe => {
+          let recipeJson = recipe.json
+          for (let result of global.getIngredients(recipeJson.get(recipeKeys[recipeType].output))) {
+            let material = this.materials[result]
+            if (material) {
+              for (let [target, recipeProps] of Object.entries(recipesInType)) {
+                // Create target string
+                let targetMaterial = global.finalizeComponent(target, material)
+                let recipeIngredients = recipeProps.json[global.getRecipeInputKey(recipeType, recipeProps.json)]
+                recipeIngredients = Array.from(global.getIngredients(recipeIngredients, targetMaterial))
+
+                let testIngredients = recipeJson.get(global.getRecipeInputKey(recipeType, recipeJson))
+                testIngredients = Array.from(global.getIngredients(testIngredients))
+
+                if (compareIngredients(recipeIngredients, testIngredients)) {
+                  this.preExistingRecipes[material][recipeType][target] = true
+                }
+              }
+            }
+          }
+        })
+      }
+
+      // Create missing recipes
+      for (let [preferredItem, material] of Object.entries(this.materials)) {
+        for (let [recipeType, recipesInType] of Object.entries(this.recipes)) {
+          let materialPreExistingRecipes = this.preExistingRecipes[material][recipeType]
+          for (let [target, recipeProps] of Object.entries(recipesInType)) {
+            if (target in materialPreExistingRecipes && !materialPreExistingRecipes[target]) {
+              // Finalize recipe
+              let recipeJson = recipeProps.json
+              let ingredientsKey = global.getRecipeInputKey(recipeType, recipeJson)
+              let resultsKey = recipeKeys[recipeType].output
+              let targetMaterial = global.finalizeComponent(target, material)
+              let missingRecipe = Object.assign({}, recipeJson)
+              missingRecipe[ingredientsKey] = global.finalizeComponent(missingRecipe[ingredientsKey], targetMaterial)
+              missingRecipe[resultsKey] = global.finalizeComponent(missingRecipe[resultsKey], preferredItem)
+
+              // Create recipe
+              let recipeBuilder
+              switch (recipeType) {
+                case 'minecraft:crafting_shapeless':
+                  recipeBuilder = event.shapeless(missingRecipe[resultsKey], missingRecipe[ingredientsKey])
+                  break
+                case 'minecraft:crafting_shaped':
+                  recipeBuilder = event.shaped(missingRecipe[resultsKey], missingRecipe['pattern'], missingRecipe[ingredientsKey])
+                  break
+                case 'minecraft:smelting':
+                  recipeBuilder = event.smelting(missingRecipe[resultsKey], missingRecipe[ingredientsKey]).xp(missingRecipe.experience)
+                  break
+                case 'minecraft:blasting':
+                  recipeBuilder = event.blasting(missingRecipe[resultsKey], missingRecipe[ingredientsKey]).xp(missingRecipe.experience)
+                  break
+                default:
+                  missingRecipe['type'] = recipeType
+                  recipeBuilder = event.custom(missingRecipe)
+                  break
+              }
+              let recipeId = global.finalizeComponent(recipeProps.id, material)
+              recipeBuilder = recipeBuilder.id(`meatsalad:${recipeId}`)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Add recipes
+  unifyRecipes.forEach(recipe => {
+    unifyHandler.addRecipe(recipe)
+  })
+
+  // Add materials
+  const unifyTagTester = new RegExp(unifyTag)
+  global.auTags.forEach(unifyTagString => {
+    if (unifyTagTester.test(unifyTagString)) {
+      let material = unifyTagString.replace(unifyTag, '')
+      if (!material.startsWith('raw_')) {
+        unifyHandler.addMaterial(material)
+      }
+    }
+  })
+
+  // Perform unify
+  unifyHandler.unify()
 }
 
 ServerEvents.recipes(event => {
-    global.auTags = AlmostUnified.getTags()
+  global.auTags = AlmostUnified.getTags()
 
-    let pack = (input, inputAlias, outputMod, outputItem) => {
-        event.shaped(`${outputMod}:${outputItem}`, ['NNN', 'NNN', 'NNN'], {
-            N: input
-        }).id(`meatsalad:${outputItem}_from_${inputAlias}s`)
-    }
-    let unpack = (input, inputAlias, outputMod, outputItem) => {
-        event.shapeless(Item.of(`${outputMod}:${outputItem}`).withCount(9).toJson(), input).id(`meatsalad:${outputItem}s_from_${inputAlias}`)
-    }
-
-    // Misc recipes
-    pack('kubejs:chaos_shard', 'shard', 'kubejs', 'chaos_crystal')
-    unpack('kubejs:chaos_crystal', 'crystal', 'kubejs', 'chaos_shard')
-    pack('kubejs:ender_star_fragment', 'fragment', 'kubejs', 'ender_star')
-    unpack('kubejs:ender_star', 'star', 'kubejs', 'ender_star_fragment')
-    pack('kubejs:infinity_fiber', 'fiber', 'kubejs', 'infinity_fabric')
-    unpack('kubejs:infinity_fabric', 'fabric', 'kubejs', 'infinity_fiber')
-
+  let pack = (input, output) => {
+    const inputAlias = input.split(':')[1].split('_').pop()
+    const outputItem = output.split(':')[1]
+    event.shaped(output, 
+      [
+        'NNN',
+        'NNN',
+        'NNN'
+      ], 
+      {
+        N: input
+      }
+    ).id(`meatsalad:${outputItem}_from_${inputAlias}s`)
     event.custom({
-        type: "mekanism:enriching",
-        input: {
-            ingredient: Ingredient.of('irons_spellbooks:arcane_debris').toJson()
-        },
-        output: Item.of('irons_spellbooks:arcane_salvage').withCount(2).toJson()
-    }).id('meatsalad:enriching/arcane_salvage_from_debris')
+      type: 'thermal:press',
+      ingredients: [
+        { item: input, count: 9 },
+        { item: 'thermal:press_packing_3x3_die' }
+      ],
+      result: [ { item: output } ]
+    }).id(`meatsalad:press/packing3x3/${outputItem}_from_${inputAlias}s`)
+  }
+  let unpack = (input, output) => {
+    const inputAlias = input.split(':')[1].split('_').pop()
+    const outputItem = output.split(':')[1]
+    event.shapeless(`9x ${output}`, input).id(`meatsalad:${outputItem}s_from_${inputAlias}`)
     event.custom({
-        type: 'thermal:smelter',
-        ingredient: Item.of('irons_spellbooks:arcane_debris').toJson(),
-        result: [
-            {
-                item: 'irons_spellbooks:arcane_salvage',
-                count: 2
-            },
-            {
-                item: 'thermal:rich_slag',
-                chance: 0.2,
-                locked: true
-            }
-        ]
-    }).id('meatsalad:smelter/arcane_debris')
+      type: 'thermal:press',
+      ingredients: [
+        { item: input },
+        { item: 'thermal:press_unpacking_die' }
+      ],
+      result: [ { item: output, count: 9 } ]
+    }).id(`meatsalad:press/unpacking/${outputItem}_from_${inputAlias}s`)
+  }
+
+  // Misc recipes
+  pack('meatsalad:chaos_shard', 'meatsalad:chaos_crystal')
+  unpack('meatsalad:chaos_crystal', 'meatsalad:chaos_shard')
+  pack('meatsalad:ender_star_fragment', 'meatsalad:ender_star')
+  unpack('meatsalad:ender_star', 'meatsalad:ender_star_fragment')
+  pack('meatsalad:infinity_fiber', 'meatsalad:infinity_fabric')
+  unpack('meatsalad:infinity_fabric', 'meatsalad:infinity_fiber')
 })
+

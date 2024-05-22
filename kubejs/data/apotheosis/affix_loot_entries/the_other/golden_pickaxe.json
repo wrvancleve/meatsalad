@@ -13,8 +13,8 @@
     "nbt": "{Damage:0}"
   },
   "type": "BREAKER",
-	"min_rarity": "uncommon",
-	"max_rarity": "epic",
+	"min_rarity": "apotheosis:uncommon",
+	"max_rarity": "apotheosis:epic",
 	"dimensions": [
 		"allthemodium:the_other"
 	]
