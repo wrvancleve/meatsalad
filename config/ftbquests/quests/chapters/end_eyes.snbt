@@ -82,7 +82,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["Found in loot chests of Pillager Outposts"]
+			description: ["Found in loot chests of Pillager Outposts or other Illager Structures"]
 			id: "702D2E2433677F56"
 			rewards: [
 				{

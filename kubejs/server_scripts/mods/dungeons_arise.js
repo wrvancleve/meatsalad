@@ -44,6 +44,46 @@ ServerEvents.chestLootTables(event => {
     global.addGatewayLootPool(table)
   })
 
+  event.modify('dungeons_arise:illager_campsite/illager_campsite_tent', table => {
+    global.addEyeLootPool(table, 'corrupted', 10)
+  })
+
+  event.modify('dungeons_arise:illager_corsair/illager_corsair_barrels', table => {
+    global.addEyeLootPool(table, 'corrupted', 10)
+  })
+
+  event.modify('dungeons_arise:illager_corsair/illager_corsair_treasure', table => {
+    global.addEyeLootPool(table, 'corrupted', 50)
+  })
+
+  event.modify('dungeons_arise:illager_fort/illager_fort_barrels', table => {
+    global.addEyeLootPool(table, 'corrupted', 10)
+  })
+
+  event.modify('dungeons_arise:illager_fort/illager_fort_normal', table => {
+    global.addEyeLootPool(table, 'corrupted', 25)
+  })
+
+  event.modify('dungeons_arise:illager_fort/illager_fort_treasure', table => {
+    global.addEyeLootPool(table, 'corrupted', 50)
+  })
+
+  event.modify('dungeons_arise:illager_galley/illager_galley_barrels', table => {
+    global.addEyeLootPool(table, 'corrupted', 10)
+  })
+
+  event.modify('dungeons_arise:illager_galley/illager_galley_treasure', table => {
+    global.addEyeLootPool(table, 'corrupted', 50)
+  })
+
+  event.modify('dungeons_arise:illager_windmill/illager_windmill_barrels', table => {
+    global.addEyeLootPool(table, 'corrupted', 10)
+  })
+
+  event.modify('dungeons_arise:illager_windmill/illager_windmill_treasure', table => {
+    global.addEyeLootPool(table, 'corrupted', 50)
+  })
+
   event.modify('dungeons_arise:infested_temple/infested_temple_top_treasure', table => {
     global.addAffixItemLootPool(table, 'random_treasure')
     global.addPartLootPool(table)
