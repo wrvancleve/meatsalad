@@ -4,7 +4,6 @@
 	"stack": {
 		"item": "minecraft:crossbow"
 	},
-	"type": "CROSSBOW",
 	"min_rarity": "apotheosis:rare",
 	"max_rarity": "apotheosis:mythic",
 	"dimensions": [
