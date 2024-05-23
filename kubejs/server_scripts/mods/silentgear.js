@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('silentgear:crimson_steel_ingot')],
-    energy: 120000
+    energy: 32000
   }).id('meatsalad:smelter/crimson_steel_ingot')
   global.energize(event,
     [
@@ -270,7 +270,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('#forge:rods/blaze'),
       Ingredient.of('minecraft:magma_cream')
     ],
-    120000,
+    32000,
     Item.of('silentgear:crimson_steel_ingot')
   )
 
@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('silentgear:azure_electrum_ingot')],
-    energy: 300000
+    energy: 64000
   }).id('meatsalad:smelter/azure_electrum_ingot')
   global.energize(event,
     [
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('#forge:ingots/gold'),
       Ingredient.of('#forge:ender_pearls')
     ],
-    300000,
+    64000,
     Item.of('silentgear:azure_electrum_ingot')
   )
 
@@ -333,7 +333,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('silentgear:crushed_shulker_shell'),
       Ingredient.of('minecraft:netherite_scrap')
     ],
-    1000000,
+    128000,
     Item.of('silentgear:tyrian_steel_ingot')
   )
 
