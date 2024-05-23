@@ -8,12 +8,10 @@ ServerEvents.chestLootTables(event => {
   })
 
   event.modify('betterfortresses:keep', table => {
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addPartLootPool(table)
-    global.addGemLootPool(table)
+    global.addGearLootPool(table, 5, 0.5, true, false)
     global.addEyeLootPool(table, 'nether', 5)
-    global.addGatewayLootPool(table)
-    global.addRedHeartLootPool(table)
+    global.addGatewayLootPool(table, {weight: 5})
+    global.addRedHeartLootPool(table, 5)
   })
 
   event.modify('betterfortresses:puzzle', table => {

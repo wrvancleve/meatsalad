@@ -10,7 +10,6 @@
 	"stack": {
 		"item": "minecraft:trident"
 	},
-	"type": "TRIDENT",
 	"min_rarity": "apotheosis:uncommon",
 	"max_rarity": "apotheosis:epic",
 	"dimensions": [

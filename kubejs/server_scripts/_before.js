@@ -162,6 +162,16 @@ global['addRedHeartLootPool'] = (lootBuilder, weight, quality) => {
   })
 }
 
+global.addGearLootPool = (table, baseWeight, baseQuality, isTreasure, isGuaranteed) => {
+  let tableName = isTreasure ? 'random_treasure' : 'random'
+  table.addPool(pool => {
+    global.addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight * 2, quality: baseQuality})
+    global.addLootTable(pool, {name: 'meatsalad:chests/parts/random', weight: baseWeight, quality: baseQuality})
+    global.addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 3})
+    if (!isGuaranteed) pool.addEmpty(100 - (6 * baseWeight))
+  })
+}
+
 global.addEyeLootPool = (lootBuilder, eye, weight) => {
   lootBuilder.addPool(pool => {
     const eyeCondition = {

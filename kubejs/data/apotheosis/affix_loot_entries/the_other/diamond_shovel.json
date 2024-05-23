@@ -12,7 +12,6 @@
     "count": 1,
     "nbt": "{Damage:0}"
   },
-  "type": "BREAKER",
 	"min_rarity": "apotheosis:uncommon",
 	"max_rarity": "apotheosis:epic",
 	"dimensions": [

@@ -4,7 +4,6 @@
 	"stack": {
 		"item": "minecraft:shield"
 	},
-	"type": "SHIELD",
 	"min_rarity": "apotheosis:common",
 	"max_rarity": "apotheosis:rare",
 	"dimensions": [
