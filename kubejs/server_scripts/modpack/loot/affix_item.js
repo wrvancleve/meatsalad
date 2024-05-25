@@ -9,23 +9,13 @@ ServerEvents.chestLootTables(event => {
     mid: {
       min_rarity: 'uncommon',
       max_rarity: 'epic',
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-      ],
+      enchantLevels: global.getEnchantLevels(20, 60),
       conditions: [global.getWorldStageCondition({nether: true, end: false})]
     },
     end: {
       min_rarity: 'rare',
       max_rarity: 'mythic',
-      enchantLevels: [
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ],
+      enchantLevels: global.getEnchantLevels(60, 80, false),
       conditions: [global.endStageCondition]
     }
   }
@@ -46,10 +36,11 @@ ServerEvents.chestLootTables(event => {
               max_rarity: affixStageProps.max_rarity
             }, 
             affixStageProps.enchantLevels.map(enchantLevel => {
-              return { 
-                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)],
-                conditions: enchantLevel.conditions
+              let entry = { 
+                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
               }
+              if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
+              return entry
             })
           )
         })

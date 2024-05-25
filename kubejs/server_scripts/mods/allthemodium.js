@@ -27,6 +27,13 @@ ServerEvents.chestLootTables(event => {
     global.addLootTablePool(table, {type: 'enchanted_books', name: 'random_treasure'}, [3,7], 0.05)
     global.addBlueprintLootPool(table, {name: 'permanent', weight: null}, [2,3])
     global.addAncientTomeLootPool(table, {weight: null}, [1,3], 0.05)
+    table.addPool(pool => {
+      pool.rolls = [1,2]
+      global.addStack(pool, {item: 'minecraft:netherite_upgrade_smithing_template'})
+      global.addStack(pool, {item: 'allthemodium:allthemodium_upgrade_smithing_template'})
+      global.addStack(pool, {item: 'allthemodium:vibranium_upgrade_smithing_template'})
+      global.addStack(pool, {item: 'allthemodium:unobtainium_upgrade_smithing_template'})
+    })
   })
 
   event.modify('allthemodium:treasure_room', table => {
@@ -118,7 +125,7 @@ ServerEvents.recipes(event => {
   global.replaceShaped(event,
     [
       'fuf',
-      'ubu',
+      'fbf',
       'fuf'
     ],
     {
@@ -133,7 +140,7 @@ ServerEvents.recipes(event => {
   global.replaceShaped(event,
     [
       'fuf',
-      'ubu',
+      'fbf',
       'fuf'
     ],
     {
@@ -148,7 +155,7 @@ ServerEvents.recipes(event => {
   global.replaceShaped(event,
     [
       'fuf',
-      'ubu',
+      'fbf',
       'fuf'
     ],
     {

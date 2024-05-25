@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
   global.replaceShaped(event,
     [
       'fuf',
-      'ubu',
+      'fbf',
       'fuf'
     ],
     {

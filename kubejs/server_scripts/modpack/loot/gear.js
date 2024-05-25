@@ -11,11 +11,7 @@ ServerEvents.chestLootTables(event => {
         'minecraft:iron_pickaxe',
         'minecraft:iron_shovel'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 40)
     },
     gold: {
       items: [
@@ -28,11 +24,7 @@ ServerEvents.chestLootTables(event => {
         'minecraft:golden_pickaxe',
         'minecraft:golden_shovel'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 40)
     },
     diamond: {
       items: [
@@ -45,71 +37,31 @@ ServerEvents.chestLootTables(event => {
         'minecraft:diamond_pickaxe',
         'minecraft:diamond_shovel'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 80)
     },
     bow: {
       items: [
         'minecraft:bow'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 80)
     },
     crossbow: {
       items: [
         'minecraft:crossbow'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 80)
     },
     shield: {
       items: [
         'minecraft:shield'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 80)
     },
     trident: {
       items: [
         'minecraft:trident'
       ],
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ]
+      enchantLevels: global.getEnchantLevels(20, 80)
     }
   }
 
@@ -149,10 +101,11 @@ ServerEvents.chestLootTables(event => {
                 type: 'minecraft:loot_table'
               }, 
               gearTypeProps.enchantLevels.map(enchantLevel => {
-                return {
-                  name: `meatsalad:chests/gear/${gearType}/level_${enchantLevel.value}${treasureSuffix}`,
-                  conditions: enchantLevel.conditions
+                let entry = { 
+                  name: `meatsalad:chests/gear/${gearType}/level_${enchantLevel.value}${treasureSuffix}`
                 }
+                if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
+                return entry
               })
             )
           } else {
@@ -166,10 +119,11 @@ ServerEvents.chestLootTables(event => {
                 }
               }, 
               gearTypeProps.enchantLevels.map(enchantLevel => {
-                return {
-                  functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)],
-                  conditions: enchantLevel.conditions
+                let entry = { 
+                  functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
                 }
+                if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
+                return entry
               })
             )
           }

@@ -12,6 +12,10 @@ ServerEvents.chestLootTables(event => {
     global.addEyeLootPool(table, 'nether', 5)
     global.addGatewayLootPool(table, {weight: 5})
     global.addRedHeartLootPool(table, 5)
+    global.addStackLootPool(table, 
+      { item: 'minecraft:netherite_upgrade_smithing_template' },
+      { weight: 2.5, quality: 0.5 }
+    )
   })
 
   event.modify('betterfortresses:puzzle', table => {

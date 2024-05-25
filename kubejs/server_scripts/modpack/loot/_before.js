@@ -35,12 +35,12 @@ global['getEnchantStageCondition'] = (enchantStageFlags) => {
   }
 }
 
-global['shelfStageCondition'] = global.getEnchantStageCondition(false)
+global['shelfStageCondition'] = global.getEnchantStageCondition({hellshelf: false})
 global['hellshelfStageCondition'] = global.getEnchantStageCondition({hellshelf: true, deepshelf: false, endshelf: false})
 global['deepshelfStageCondition'] = global.getEnchantStageCondition({deepshelf: true})
 global['endshelfStageCondition'] = global.getEnchantStageCondition({endshelf: true})
 
-global['EnchantLevels'] = {
+global.EnchantLevels = {
   '10': { value: 10, conditions: [global.shelfStageCondition] },
   '20': { value: 20, conditions: [global.shelfStageCondition] },
   '30': { value: 30, conditions: [global.shelfStageCondition] },
@@ -49,4 +49,17 @@ global['EnchantLevels'] = {
   '60': { value: 60, conditions: [global.deepshelfStageCondition] },
   '70': { value: 70, conditions: [global.deepshelfStageCondition] },
   '80': { value: 80, conditions: [global.endshelfStageCondition] },
+}
+
+global.getEnchantLevels = (min, max, useFirstCondition) => {
+  useFirstCondition = useFirstCondition ?? true
+  const enchantLevels = []
+  for (let i = min; i <= max; i += 10) {
+    if (i == min && !useFirstCondition) {
+      enchantLevels.push({ value: i })
+    } else {
+      enchantLevels.push(global.EnchantLevels[`${i}`])
+    }
+  }
+  return enchantLevels
 }

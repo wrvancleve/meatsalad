@@ -101,4 +101,22 @@ ServerEvents.chestLootTables(event => {
       )
     })
   })
+
+  // Create supreme gate loot
+  event.addChest('meatsalad:gates/supreme', table => {
+    global.addStackLootPool(table, {item: 'meatsalad:dark_matter', min: 2, max: 3})
+    table.addPool(pool => {
+      pool.rolls = [2,3]
+      global.addStack(pool, {item: 'apotheosis:mythic_material', min: 3, max: 12}, {weight: 85})
+      global.addStack(pool, {item: 'apotheosis:ancient_material', max: 4}, {weight: 15, quality: 0.5})
+    })
+    global.addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
+    table.addPool(pool => {
+      pool.rolls = [2,3]
+      global.addLootTable(pool, {type: 'gems', name: 'mythic', weight: 85})
+      global.addLootTable(pool, {type: 'gems', name: 'ancient', weight: 15, quality: 0.5})
+    })
+    global.addGemLootPool(table, {name: 'ancient', weight: null})
+    global.addAncientTomeLootPool(table, {name: 'random_reversed', weight: null})
+  })
 })
