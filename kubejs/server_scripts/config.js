@@ -12,6 +12,8 @@ const DEFAULT_CONFIG = {
   darkMatterQuality: 0.5,
   bossAncientWeight: 10,
   bossAncientQuality: 0.5,
+  gateWeight: 10,
+  gateQuality: 0.5,
 }
 
 let setConfig = (key, value) => {

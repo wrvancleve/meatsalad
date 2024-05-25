@@ -1,7 +1,6 @@
 ServerEvents.chestLootTables(event => {
   event.modify('minecraft:ancient_city', table => {
     global.addAffixItemLootPool(table, 'random_treasure')
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
     global.addRedHeartLootPool(table)
@@ -10,28 +9,24 @@ ServerEvents.chestLootTables(event => {
 
   event.modify('minecraft:bastion_bridge', table => {
     global.addAffixItemLootPool(table)
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_hoglin_stable', table => {
     global.addAffixItemLootPool(table)
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_other', table => {
     global.addAffixItemLootPool(table)
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_treasure', table => {
     global.addAffixItemLootPool(table, 'random_treasure')
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
     global.addRedHeartLootPool(table)
@@ -40,7 +35,6 @@ ServerEvents.chestLootTables(event => {
 
   event.modify('minecraft:end_city_treasure', table => {
     global.addAffixItemLootPool(table, 'random_treasure')
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
     global.addAncientTomeLootPool(table)
@@ -54,14 +48,12 @@ ServerEvents.chestLootTables(event => {
 
   event.modify('minecraft:stronghold_corridor', table => {
     global.addAffixItemLootPool(table)
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
   })
 
   event.modify('minecraft:stronghold_crossing', table => {
     global.addAffixItemLootPool(table)
-    global.addPartLootPool(table)
     global.addGemLootPool(table)
     global.addGatewayLootPool(table)
   })
@@ -159,12 +151,6 @@ ServerEvents.entityLootTables(event => {
   event.modifyEntity('minecraft:elder_guardian', table => {
     global.addStackLootPool(table, {item: 'progressivebosses:elder_guardian_spike'})
     global.addEyeLootPool(table, 'guardian', 50)
-  })
-
-  event.modifyEntity('minecraft:wither', table => {
-    //table.clearPools()
-    //global.addStackLootPool(table, { item: 'minecraft:nether_star' })
-    global.addEyeLootPool(table, 'wither')
   })
 })
 

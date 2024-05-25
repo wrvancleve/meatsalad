@@ -90,6 +90,13 @@ ServerEvents.entityLootTables(event => {
           global.addLootTable(pool, {type: 'gems', name: 'mythic', weight: 100 - (global.config.bossAncientWeight * i)})
           global.addLootTable(pool, {type: 'gems', name: 'ancient', weight: global.config.bossAncientWeight * i, quality: global.config.bossAncientQuality})
         })
+        global.addStackLootPool(table,
+          {
+            item: 'gateways:gate_pearl',
+            nbt: '{gateway: "meatsalad:supreme"}'
+          },
+          { weight: Math.min(global.config.bossAncientWeight * 2.5 * i, 100)}
+        )
       })
     }
   }
