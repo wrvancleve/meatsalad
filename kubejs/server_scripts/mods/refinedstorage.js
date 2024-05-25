@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('minecraft:iron_ingot'),
       Ingredient.of('minecraft:quartz'),
     ],
-    40000,
+    12000,
     Item.of('refinedstorage:quartz_enriched_iron', 4)
   )
   event.custom({
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('refinedstorage:quartz_enriched_iron', 4)],
-    energy: 40000
+    energy: 12000
   }).id('meatsalad:smelter/quartz_enriched_iron')
 
 
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('#forge:slimeballs'),
       Ingredient.of('#forge:string')
     ],
-    30000,
+    8000,
     Item.of('refinedstorage:processor_binding', 8)
   )
   event.custom({
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('refinedstorage:processor_binding', 8)],
-    energy: 30000
+    energy: 8000
   }).id('meatsalad:smelter/processor_binding')
 
   // silicon
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     [
       Ingredient.of('minecraft:quartz')
     ],
-    20000,
+    12000,
     Item.of('refinedstorage:silicon')
   )
   event.custom({
@@ -79,6 +79,6 @@ ServerEvents.recipes(event => {
       }
     ],
     result: [Item.of('refinedstorage:silicon')],
-    energy: 20000
+    energy: 12000
   }).id('meatsalad:smelter/silicon')
 })
