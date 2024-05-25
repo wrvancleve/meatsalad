@@ -7,21 +7,21 @@ ServerEvents.chestLootTables(event => {
     },
     uncommon: { 
       weight: 320.0,
-      quality: 1.5,
+      quality: 5.0,
       stageCondition: global.getWorldStageCondition({end: false})
     },
     rare: {
       weight: 150.0,
-      quality: 3.0
+      quality: 10.0
     },
     epic: {
       weight: 90.0,
-      quality: 4.5,
+      quality: 15.0,
       stageCondition: global.getWorldStageCondition({nether: true})
     },
     mythic: {
       weight: 40.0,
-      quality: 6.0,
+      quality: 20.0,
       stageCondition: global.endStageCondition
     }
   }
