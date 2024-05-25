@@ -1,34 +1,19 @@
 ServerEvents.chestLootTables(event => {
   const BookStages = {
     early: { 
-      enchantLevels: [
-        global.EnchantLevels['10'],
-        global.EnchantLevels['20'],
-      ],
+      enchantLevels: global.getEnchantLevels(10, 20),
       conditions: [global.earlyStageCondition]
     },
     mid: {
-      enchantLevels: [
-        global.EnchantLevels['20'],
-        global.EnchantLevels['30'],
-        global.EnchantLevels['40'],
-      ],
+      enchantLevels: global.getEnchantLevels(20, 40),
       conditions: [global.midStageCondition]
     },
     late: {
-      enchantLevels: [
-        global.EnchantLevels['40'],
-        global.EnchantLevels['50'],
-        global.EnchantLevels['60'],
-      ],
+      enchantLevels: global.getEnchantLevels(40, 60, false),
       conditions: [global.lateStageCondition]
     },
     end: {
-      enchantLevels: [
-        global.EnchantLevels['60'],
-        global.EnchantLevels['70'],
-        global.EnchantLevels['80'],
-      ],
+      enchantLevels: global.getEnchantLevels(60, 80, false),
       conditions: [global.endStageCondition]
     }
   }
@@ -52,10 +37,11 @@ ServerEvents.chestLootTables(event => {
               }
             }, 
             bookStageProps.enchantLevels.map(enchantLevel => {
-              return { 
-                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)],
-                conditions: enchantLevel.conditions
+              let entry = { 
+                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
               }
+              if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
+              return entry
             })
           )
         })

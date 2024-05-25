@@ -141,7 +141,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:skeleton_gate"
+							gateway: "meatsalad:skeleton"
 						}
 					}
 					type: "item"
@@ -180,7 +180,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:zombie_gate"
+							gateway: "meatsalad:zombie"
 						}
 					}
 					type: "item"
@@ -358,7 +358,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:creeper_gate"
+							gateway: "meatsalad:creeper"
 						}
 					}
 					type: "item"
@@ -397,7 +397,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:zombie_gate_large"
+							gateway: "meatsalad:zombie"
 						}
 					}
 					type: "item"
@@ -438,7 +438,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:skeleton_gate_large"
+							gateway: "meatsalad:skeleton"
 						}
 					}
 					type: "item"
@@ -479,7 +479,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:creeper_gate_large"
+							gateway: "meatsalad:creeper"
 						}
 					}
 					type: "item"
@@ -603,7 +603,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:spider_gate"
+							gateway: "meatsalad:spider"
 						}
 					}
 					type: "item"
@@ -642,7 +642,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:spider_gate_large"
+							gateway: "meatsalad:spider"
 						}
 					}
 					type: "item"
@@ -784,7 +784,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:witch_gate"
+							gateway: "meatsalad:witch"
 						}
 					}
 					type: "item"
@@ -829,7 +829,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:witch_gate_large"
+							gateway: "meatsalad:witch"
 						}
 					}
 					type: "item"
@@ -959,7 +959,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:blaze_gate"
+							gateway: "gateways:basic/blaze"
 						}
 					}
 					type: "item"
@@ -998,7 +998,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:blaze_gate_large"
+							gateway: "gateways:basic/blaze"
 						}
 					}
 					type: "item"
@@ -1122,7 +1122,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "meatsalad:wither_skeleton_gate"
+							gateway: "meatsalad:wither_skeleton"
 						}
 					}
 					type: "item"
@@ -1161,7 +1161,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "meatsalad:wither_skeleton_gate_large"
+							gateway: "meatsalad:wither_skeleton"
 						}
 					}
 					type: "item"
@@ -1285,7 +1285,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:enderman_gate"
+							gateway: "gateways:basic/enderman"
 						}
 					}
 					type: "item"
@@ -1324,7 +1324,7 @@
 						Count: 1b
 						id: "gateways:gate_pearl"
 						tag: {
-							gateway: "gateways:enderman_gate_large"
+							gateway: "gateways:basic/enderman"
 						}
 					}
 					type: "item"
