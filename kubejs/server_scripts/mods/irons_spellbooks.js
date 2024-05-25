@@ -143,3 +143,62 @@ ServerEvents.entityLootTables(event => {
     global.addEyeLootPool(table, 'undead')
   })
 })
+
+ServerEvents.chestLootTables(event => {
+  event.addChest('meatsalad:spells/random', table => {
+    table.addPool(pool => {
+      global.addStack(pool,
+        { item: 'irons_spellbooks:scroll' },
+        { 
+          functions: [{
+            function: 'irons_spellbooks:randomize_spell',
+            quality: {
+              min: 0.0,
+              max: 0.3
+            }
+          }],
+          conditions: [global.earlyStageCondition]
+        }
+      )
+      global.addStack(pool,
+        { item: 'irons_spellbooks:scroll' },
+        { 
+          functions: [{
+            function: 'irons_spellbooks:randomize_spell',
+            quality: {
+              min: 0.0,
+              max: 0.5
+            }
+          }],
+          conditions: [global.midStageCondition]
+        }
+      )
+      global.addStack(pool,
+        { item: 'irons_spellbooks:scroll' },
+        { 
+          functions: [{
+            function: 'irons_spellbooks:randomize_spell',
+            quality: {
+              min: 0.0,
+              max: 0.7
+            }
+          }],
+          conditions: [global.lateStageCondition]
+        }
+      )
+      global.addStack(pool,
+        { item: 'irons_spellbooks:scroll' },
+        { 
+          functions: [{
+            function: 'irons_spellbooks:randomize_spell',
+            quality: {
+              min: 0.2,
+              max: 0.7
+            }
+          }],
+          conditions: [global.endStageCondition]
+        }
+      )
+    })
+  })
+})

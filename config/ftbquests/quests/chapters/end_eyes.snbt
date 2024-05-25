@@ -454,14 +454,28 @@
 			y: 2.5d
 		}
 		{
-			description: ["Obtained by killing the Wither"]
+			can_repeat: false
+			description: [""]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "endrem:wither_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "503896124F05816B"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "6AEF2FAA4F3F1231"
-					type: "xp"
-					xp: 100
+					id: "20E108B9298EE168"
+					item: {
+						Count: 1b
+						id: "endrem:wither_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 				{
 					exclude_from_claim_all: true
@@ -469,18 +483,20 @@
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
-			]
-			subtitle: "Obtain a Wither Eye"
-			tasks: [{
-				id: "6EE79E7F2A98E204"
-				item: {
-					Count: 1b
-					id: "endrem:wither_eye"
-					tag: {
-						Damage: 0
-					}
+				{
+					auto: "invisible"
+					id: "6AEF2FAA4F3F1231"
+					type: "xp"
+					xp: 100
 				}
-				type: "item"
+			]
+			subtitle: "Kill The Wither"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "027ED381F7831A15"
+				title: "Kill: Wither"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Wither Eye"
 			x: 0.5d

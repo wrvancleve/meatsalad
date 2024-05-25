@@ -39,14 +39,14 @@ ServerEvents.chestLootTables(event => {
         { id: 'gateways:hellish_fortress', conditions: [global.getWorldStageCondition({nether: true})] },
       ]
     },
-    epic: {
-      weight: 20.0,
-      quality: 2.5,
-      conditions: [global.endStageCondition],
-      gates: [
-        { id: 'meatsalad:supreme', conditions: [global.endStageCondition] },
-      ]
-    }
+    // epic: {
+    //   weight: 20.0,
+    //   quality: 2.5,
+    //   conditions: [global.endStageCondition],
+    //   gates: [
+    //     { id: '', conditions: [global.endStageCondition] },
+    //   ]
+    // }
   }
 
   // Create gate rarity tables

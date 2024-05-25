@@ -37,13 +37,18 @@ global['addStack'] = (pool, stack, stackProps) => {
   for (let stackProp in stackProps) { 
     poolEntry[stackProp] = stackProps[stackProp]
   }
+  if (poolEntry.weight)
   pool.addEntry(poolEntry)
 }
 
 global['addStackLootPool'] = (lootBuilder, stack, stackProps) => {
   lootBuilder.addPool(pool => {
+    let emptyPoolWeight = 0
+    if (stackProps != null && stackProps.weight) emptyPoolWeight = 100 - stackProps.weight
     global.addStack(pool, stack, stackProps)
-    if (stackProps != null && stackProps.weight != null) pool.addEmpty(100 - stackProps.weight)
+    if (emptyPoolWeight) {
+      pool.addEmpty(emptyPoolWeight)
+    }
   })
 }
 
@@ -141,11 +146,7 @@ global['addBlueprintLootPool'] = (lootBuilder, blueprintTable, rolls, bonusRolls
 }
 
 global['addGatewayLootPool'] = (lootBuilder, gatewayTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'gates', gatewayTable, rolls, bonusRolls, 'random')
-}
-
-global['addPartLootPool'] = (lootBuilder, partTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'parts', partTable, rolls, bonusRolls, 'random')
+  addCustomLootPool(lootBuilder, 'gates', gatewayTable, rolls, bonusRolls, 'random', global.config.gateWeight, global.config.gateQuality)
 }
 
 global['addRedHeartLootPool'] = (lootBuilder, weight, quality) => {
@@ -165,10 +166,9 @@ global['addRedHeartLootPool'] = (lootBuilder, weight, quality) => {
 global.addGearLootPool = (table, baseWeight, baseQuality, isTreasure, isGuaranteed) => {
   let tableName = isTreasure ? 'random_treasure' : 'random'
   table.addPool(pool => {
-    global.addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight * 2, quality: baseQuality})
-    global.addLootTable(pool, {name: 'meatsalad:chests/parts/random', weight: baseWeight, quality: baseQuality})
-    global.addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 3})
-    if (!isGuaranteed) pool.addEmpty(100 - (6 * baseWeight))
+    global.addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight, quality: baseQuality})
+    global.addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 5})
+    if (!isGuaranteed) pool.addEmpty(14 * baseWeight)
   })
 }
 
