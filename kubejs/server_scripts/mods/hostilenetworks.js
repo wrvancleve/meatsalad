@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'OGO',
     'RCR',
     'OGO'
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     C: '#forge:circuits/ultimate'
   }, Item.of('hostilenetworks:deep_learner'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'CAC',
     'RHR',
     'CAC'
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     H: '#refinedstorage:parts/items/256k'
   }, Item.of('hostilenetworks:blank_data_model'), 'framework')
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'OEO',
     'GCG',
     'OIO'
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     I: 'meatsalad:infused_ender_pearl'
   }, Item.of('hostilenetworks:loot_fabricator'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'OTO',
     'ICI',
     'OIO'

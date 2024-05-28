@@ -1,12 +1,12 @@
 //priority: 400
 
-global['removeRecipes'] = (event, ids) => {
+const removeRecipes = (event, ids) => {
   ids.forEach(id => {
     event.remove({ id: id })
   })
 }
 
-global['replaceShaped'] = (event, pattern, key, result, oldRecipeId) => {
+const replaceShaped = (event, pattern, key, result, oldRecipeId) => {
   let [mod, itemId] = result.getId().split(':')
   if (oldRecipeId == null) oldRecipeId = itemId
   event.remove({ id: `${mod}:${oldRecipeId || itemId}` })
@@ -20,7 +20,7 @@ const popProp = (object, prop, defaultValue) => {
   return propValue
 }
 
-global['addStack'] = (pool, stack, stackProps) => {
+const addStack = (pool, stack, stackProps) => {
   if (stack.count == null) stack.count = 1
   const min = popProp(stack, 'min', 1)
   const max = popProp(stack, 'max', 1)
@@ -41,18 +41,18 @@ global['addStack'] = (pool, stack, stackProps) => {
   pool.addEntry(poolEntry)
 }
 
-global['addStackLootPool'] = (lootBuilder, stack, stackProps) => {
+const addStackLootPool = (lootBuilder, stack, stackProps) => {
   lootBuilder.addPool(pool => {
     let emptyPoolWeight = 0
     if (stackProps != null && stackProps.weight) emptyPoolWeight = 100 - stackProps.weight
-    global.addStack(pool, stack, stackProps)
+    addStack(pool, stack, stackProps)
     if (emptyPoolWeight) {
       pool.addEmpty(emptyPoolWeight)
     }
   })
 }
 
-global['addDynamic'] = (pool, constants, dimensions) => {
+const addDynamic = (pool, constants, dimensions) => {
   dimensions.forEach(dimension => {
     let poolEntry = {}
     for (let constantProp in constants) { 
@@ -89,7 +89,7 @@ const readTable = (table, defaultWeight, defaultQuality) => {
   return [tableName, table]
 }
 
-global['addLootTable'] = (pool, table) => {
+const addLootTable = (pool, table) => {
   const [tableName, tableProps] = readTable(table)
   const lootTableEntry = {
     type: 'minecraft:loot_table',
@@ -103,15 +103,15 @@ global['addLootTable'] = (pool, table) => {
   pool.addEntry(lootTableEntry)
 }
 
-global['addLootTablePool'] = (lootBuilder, table, rolls, bonusRolls) => {
+const addLootTablePool = (lootBuilder, table, rolls, bonusRolls) => {
   lootBuilder.addPool(pool => {
     pool.rolls = rolls || 1
     if (bonusRolls) pool.bonusRolls = bonusRolls
-    global.addLootTable(pool, table)
+    addLootTable(pool, table)
   })
 }
 
-let addCustomLootPool = (lootBuilder, type, table, rolls, bonusRolls, defaultTableName, defaultWeight, defaultQuality) => {
+const addCustomLootPool = (lootBuilder, type, table, rolls, bonusRolls, defaultTableName, defaultWeight, defaultQuality) => {
   if (defaultWeight === undefined) defaultWeight = global.config.defaultRandomWeight
   if (defaultQuality === undefined) defaultQuality = global.config.defaultRandomQuality
   let [tableName, tableProps] = readTable(table, defaultWeight, defaultQuality)
@@ -125,31 +125,31 @@ let addCustomLootPool = (lootBuilder, type, table, rolls, bonusRolls, defaultTab
     for (let tableProp in tableProps) {
       customLootTable[tableProp] = tableProps[tableProp]
     }
-    global.addLootTable(pool, customLootTable)
+    addLootTable(pool, customLootTable)
   })
 }
 
-global['addGemLootPool'] = (lootBuilder, gemTable, rolls, bonusRolls) => {
+const addGemLootPool = (lootBuilder, gemTable, rolls, bonusRolls) => {
   addCustomLootPool(lootBuilder, 'gems', gemTable, rolls, bonusRolls, 'random')
 }
 
-global['addAffixItemLootPool'] = (lootBuilder, affixItemTable, rolls, bonusRolls) => {
+const addAffixItemLootPool = (lootBuilder, affixItemTable, rolls, bonusRolls) => {
   addCustomLootPool(lootBuilder, 'affix_items', affixItemTable, rolls, bonusRolls, 'random')
 }
 
-global['addAncientTomeLootPool'] = (lootBuilder, ancientTomeTable, rolls, bonusRolls) => {
+const addAncientTomeLootPool = (lootBuilder, ancientTomeTable, rolls, bonusRolls) => {
   addCustomLootPool(lootBuilder, 'ancient_tomes', ancientTomeTable, rolls, bonusRolls, 'random')
 }
 
-global['addBlueprintLootPool'] = (lootBuilder, blueprintTable, rolls, bonusRolls) => {
+const addBlueprintLootPool = (lootBuilder, blueprintTable, rolls, bonusRolls) => {
   addCustomLootPool(lootBuilder, 'blueprints', blueprintTable, rolls, bonusRolls, 'random')
 }
 
-global['addGatewayLootPool'] = (lootBuilder, gatewayTable, rolls, bonusRolls) => {
+const addGatewayLootPool = (lootBuilder, gatewayTable, rolls, bonusRolls) => {
   addCustomLootPool(lootBuilder, 'gates', gatewayTable, rolls, bonusRolls, 'random', global.config.gateWeight, global.config.gateQuality)
 }
 
-global['addRedHeartLootPool'] = (lootBuilder, weight, quality) => {
+const addRedHeartLootPool = (lootBuilder, weight, quality) => {
   if (weight === undefined) weight = global.config.redHeartWeight
   if (quality === undefined) quality = global.config.redHeartQuality
   lootBuilder.addPool(pool => {
@@ -159,43 +159,20 @@ global['addRedHeartLootPool'] = (lootBuilder, weight, quality) => {
       stackProps.weight = weight
     }
     if (quality != null) stackProps.quality = quality
-    global.addStack(pool, {item: 'bhc:red_heart'}, stackProps)
+    addStack(pool, {item: 'bhc:red_heart'}, stackProps)
   })
 }
 
-global.addGearLootPool = (table, baseWeight, baseQuality, isTreasure, isGuaranteed) => {
+const addGearLootPool = (table, baseWeight, baseQuality, isTreasure, isGuaranteed) => {
   let tableName = isTreasure ? 'random_treasure' : 'random'
   table.addPool(pool => {
-    global.addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight, quality: baseQuality})
-    global.addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 5})
+    addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight, quality: baseQuality})
+    addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 5})
     if (!isGuaranteed) pool.addEmpty(14 * baseWeight)
   })
 }
 
-global.addEyeLootPool = (lootBuilder, eye, weight) => {
-  lootBuilder.addPool(pool => {
-    const eyeCondition = {
-      condition: 'minecraft:entity_properties',
-      entity: 'this',
-      predicate: {
-        type_specific: {
-          type: 'player',
-          advancements: {}
-        }
-      }
-    }
-    eyeCondition.predicate.type_specific.advancements[`endrem:main/${eye}_eye`] = false
-    const stackProps = {
-      conditions: [eyeCondition]
-    }
-    if (weight != null) stackProps.weight = weight
-
-    global.addStack(pool, { item: `endrem:${eye}_eye` }, stackProps)
-    if (weight != null) pool.addEmpty(100 - weight)
-  })
-}
-
-global['enchantFunction'] = (levels, treasureAllowed) => {
+const enchantFunction = (levels, treasureAllowed) => {
   return {
     function: 'minecraft:enchant_with_levels',
     levels: levels,
@@ -203,7 +180,7 @@ global['enchantFunction'] = (levels, treasureAllowed) => {
   }
 }
 
-global['energize'] = (event, ingredients, energy, result, recipeId) => {
+const energize = (event, ingredients, energy, result, recipeId) => {
   if (recipeId == null) recipeId = result.getId().split(':')[1]
   event.custom({
     type: 'powah:energizing',
@@ -213,7 +190,7 @@ global['energize'] = (event, ingredients, energy, result, recipeId) => {
   }).id(`meatsalad:energizing/${recipeId}`)
 }
 
-global['nucleosynthesize'] = (event, input, output, duration, gasAmount) => {
+const nucleosynthesize = (event, input, output, duration, gasAmount) => {
   let inputCount = input.count || 1
   let inputIngredient = null
   if (input.tag != null) {
@@ -253,7 +230,7 @@ global['nucleosynthesize'] = (event, input, output, duration, gasAmount) => {
   }).id(`meatsalad:nucleosynthesizing/${recipeName}`)
 }
 
-global['getStageCondition'] = (name, value) => {
+const getStageCondition = (name, value) => {
   const stageCondition = {
     condition: 'minecraft:entity_properties',
     entity: 'this',
@@ -268,7 +245,7 @@ global['getStageCondition'] = (name, value) => {
   return stageCondition
 }
 
-global['getWorldStageCondition'] = (worldStageFlags) => {
+const getWorldStageCondition = (worldStageFlags) => {
   let hasNetherStage
   let hasOtherStage
   let hasEndStage
@@ -305,7 +282,7 @@ global['getWorldStageCondition'] = (worldStageFlags) => {
   }
 }
 
-global['earlyStageCondition'] = global.getWorldStageCondition(false)
-global['midStageCondition'] = global.getWorldStageCondition({nether: true, other: false, end: false})
-global['lateStageCondition'] = global.getWorldStageCondition({other: true, end: false})
-global['endStageCondition'] = global.getWorldStageCondition({end: true})
+const earlyStageCondition = getWorldStageCondition(false)
+const midStageCondition = getWorldStageCondition({nether: true, other: false, end: false})
+const lateStageCondition = getWorldStageCondition({other: true, end: false})
+const endStageCondition = getWorldStageCondition({end: true})

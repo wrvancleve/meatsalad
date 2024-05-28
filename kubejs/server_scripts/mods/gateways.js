@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'gateways:basic/blaze',
     'gateways:basic/slime',
     'gateways:basic/enderman',

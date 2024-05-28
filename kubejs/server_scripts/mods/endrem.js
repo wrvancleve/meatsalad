@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'endrem:exotic_eye',
     'endrem:undead_eye',
   ])

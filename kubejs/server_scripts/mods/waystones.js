@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "GWG",
     "PPP"
   ], {
@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     P: '#forge:paper'
   }, Item.of('waystones:return_scroll'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "GWG",
     "GEG",
     "PPP"
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     P: '#forge:paper'
   }, Item.of('waystones:bound_scroll'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "WWW",
     "GEG",
     "PPP"
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     P: '#forge:paper'
   }, Item.of('waystones:warp_scroll'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "SWS",
     "WEW",
     "SWS"
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     E: 'meatsalad:infused_ender_pearl'
   }, Item.of('waystones:warp_plate'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "WEW",
     "EDE",
     "WEW"
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('waystones:warp_dust')],
     energy: 8000
   }).id('meatsalad:smelter/warp_dust')
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ender_pearls'),
       Ingredient.of('#forge:gems/amethyst')

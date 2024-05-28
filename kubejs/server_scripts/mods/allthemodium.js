@@ -1,63 +1,77 @@
 ServerEvents.tags('block', event => {
   event.remove('forge:needs_allthemodium_tool', 'allthemodium:unobtainium_ore')
   event.add('forge:needs_vibranium_tool', 'allthemodium:unobtainium_ore')
+
+  event.add('forge:ores', 'allthemodium:allthemodium_ore')
+  event.add('forge:ores', 'allthemodium:allthemodium_slate_ore')
+  event.add('forge:ores', 'allthemodium:unobtainium_ore')
+  event.add('forge:ores', 'allthemodium:other_vibranium_ore')
 })
 
 ServerEvents.chestLootTables(event => {
   event.modify('allthemodium:generic_loot', table => {
     table.clearPools()
-    global.addLootTablePool(table, {type: 'the_other', name: 'materials'}, [3,4])
-    global.addLootTablePool(table, {type: 'gear', name: 'random'})
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    table.addPool(pool => {
+      addLootTable(pool, {type: 'the_other', name: 'materials_treasure', weight: 55})
+      addLootTable(pool, {name: 'meatsalad:random_gear_treasure', weight: 44, quality: 0.5})
+      addStack(pool, {item: 'minecraft:enchanted_golden_apple', weight: 1, quality: 0.5})
+    })
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 
   event.modify('allthemodium:hallway_loot', table => {
     table.clearPools()
-    global.addLootTablePool(table, {type: 'the_other', name: 'materials'}, [3,4])
-    global.addLootTablePool(table, {type: 'gear', name: 'random'})
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    table.addPool(pool => {
+      addLootTable(pool, {type: 'the_other', name: 'materials_treasure', weight: 55})
+      addLootTable(pool, {name: 'meatsalad:random_gear_treasure', weight: 44, quality: 0.5})
+      addStack(pool, {item: 'minecraft:enchanted_golden_apple', weight: 1, quality: 0.5})
+    })
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 
   event.modify('allthemodium:library_loot', table => {
     table.clearPools()
-    global.addLootTablePool(table, {type: 'enchanted_books', name: 'random_treasure'}, [3,7], 0.05)
-    global.addBlueprintLootPool(table, {name: 'permanent', weight: null}, [2,3])
-    global.addAncientTomeLootPool(table, {weight: null}, [1,3], 0.05)
+    addLootTablePool(table, {type: 'enchanted_books', name: 'random_treasure'}, [3,5], 0.05)
+    addBlueprintLootPool(table, {name: 'permanent', weight: null}, [2,3])
+    addAncientTomeLootPool(table, {weight: null}, [1,2], 0.05)
     table.addPool(pool => {
-      pool.rolls = [1,2]
-      global.addStack(pool, {item: 'minecraft:netherite_upgrade_smithing_template'})
-      global.addStack(pool, {item: 'allthemodium:allthemodium_upgrade_smithing_template'})
-      global.addStack(pool, {item: 'allthemodium:vibranium_upgrade_smithing_template'})
-      global.addStack(pool, {item: 'allthemodium:unobtainium_upgrade_smithing_template'})
+      pool.rolls = 1
+      addStack(pool, {item: 'minecraft:netherite_upgrade_smithing_template'}, {weight: 20, quality: 1.5})
+      addStack(pool, {item: 'allthemodium:allthemodium_upgrade_smithing_template'}, {weight: 20, quality: 1.5})
+      addStack(pool, {item: 'allthemodium:vibranium_upgrade_smithing_template'}, {weight: 20, quality: 1.5})
+      addStack(pool, {item: 'allthemodium:unobtainium_upgrade_smithing_template'}, {weight: 20, quality: 1.5})
+      pool.addEmpty(80)
     })
   })
 
   event.modify('allthemodium:treasure_room', table => {
     table.clearPools()
-    global.addLootTablePool(table, {type: 'the_other', name: 'materials_treasure'}, [3,4], 0.05)
-    global.addLootTablePool(table, {type: 'gear', name: 'random_treasure'}, 1, 0.05)
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
-    global.addAncientTomeLootPool(table)
-    global.addRedHeartLootPool(table)
-    global.addEyeLootPool(table, 'magical', 30)
+    addLootTablePool(table, {type: 'the_other', name: 'materials_treasure'}, 1, 0.05)
+    addLootTablePool(table, {name: 'meatsalad:random_gear_treasure'}, 1)
+    table.addPool(pool => {
+      pool.addEmpty(98)
+      addStack(pool, {item: 'minecraft:enchanted_golden_apple', weight: 2, quality: 0.5})
+    })
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 
   event.modify('allthemodium:treasure_room_loot', table => {
     table.clearPools()
-    global.addLootTablePool(table, {type: 'the_other', name: 'materials_treasure'}, [3,4], 0.05)
-    global.addLootTablePool(table, {type: 'gear', name: 'random_treasure'}, 1, 0.05)
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
-    global.addAncientTomeLootPool(table)
-    global.addRedHeartLootPool(table)
-    global.addEyeLootPool(table, 'magical', 30)
+    addLootTablePool(table, {type: 'the_other', name: 'materials_treasure'}, 1, 0.05)
+    addLootTablePool(table, {name: 'meatsalad:random_gear_treasure'}, 1)
+    table.addPool(pool => {
+      pool.addEmpty(98)
+      addStack(pool, {item: 'minecraft:enchanted_golden_apple', weight: 2, quality: 0.5})
+    })
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 })
 
@@ -122,7 +136,7 @@ ServerEvents.recipes(event => {
     'allthemodium:alloy_paxel',
   ])
 
-  global.replaceShaped(event,
+  replaceShaped(event,
     [
       'fuf',
       'fbf',
@@ -137,7 +151,7 @@ ServerEvents.recipes(event => {
     'smithing/allthemodium_upgrade_smithing_template'
   )
 
-  global.replaceShaped(event,
+  replaceShaped(event,
     [
       'fuf',
       'fbf',
@@ -152,7 +166,7 @@ ServerEvents.recipes(event => {
     'smithing/vibranium_upgrade_smithing_template'
   )
 
-  global.replaceShaped(event,
+  replaceShaped(event,
     [
       'fuf',
       'fbf',
@@ -167,7 +181,7 @@ ServerEvents.recipes(event => {
     'smithing/unobtainium_upgrade_smithing_template'
   )
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     ' b ',
     'beb',
     ' b '
@@ -176,7 +190,7 @@ ServerEvents.recipes(event => {
     b: '#forge:nuggets/allthemodium'
   }, Item.of('allthemodium:teleport_pad'))
 
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'allthemodium:allthemodium_gear',
     'allthemodium:vibranium_gear',
     'allthemodium:unobtainium_gear',

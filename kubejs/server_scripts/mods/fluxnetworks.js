@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'fof',
     'oeo',
     'fof'

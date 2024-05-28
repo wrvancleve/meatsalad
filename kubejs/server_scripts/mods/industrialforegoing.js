@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'industrialforegoing:diamond_gear',
     'industrialforegoing:gold_gear',
     'industrialforegoing:iron_gear',
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     'industrialforegoing:dissolution_chamber/infinity_trident'
   ])
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'PNP',
     'IMI',
     'VRV'
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     R: '#forge:circuits/advanced'
   }, Item.of('industrialforegoing:ore_laser_base'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'PNP',
     'SMS',
     'VRV'
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     R: '#forge:circuits/advanced'
   }, Item.of('industrialforegoing:laser_drill'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'PNP',
     'BMB',
     'VRV'
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     R: '#forge:circuits/advanced'
   }, Item.of('industrialforegoing:fluid_laser_base'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'PPP',
     'CUC',
     'RMR'

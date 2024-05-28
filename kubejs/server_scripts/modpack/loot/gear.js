@@ -1,3 +1,5 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
   const GearMaterials = {
     iron: {
@@ -11,7 +13,7 @@ ServerEvents.chestLootTables(event => {
         'minecraft:iron_pickaxe',
         'minecraft:iron_shovel'
       ],
-      enchantLevels: global.getEnchantLevels(20, 40)
+      enchantLevels: getEnchantLevels(20, 40)
     },
     gold: {
       items: [
@@ -24,7 +26,7 @@ ServerEvents.chestLootTables(event => {
         'minecraft:golden_pickaxe',
         'minecraft:golden_shovel'
       ],
-      enchantLevels: global.getEnchantLevels(20, 40)
+      enchantLevels: getEnchantLevels(20, 40)
     },
     diamond: {
       items: [
@@ -37,31 +39,31 @@ ServerEvents.chestLootTables(event => {
         'minecraft:diamond_pickaxe',
         'minecraft:diamond_shovel'
       ],
-      enchantLevels: global.getEnchantLevels(20, 80)
+      enchantLevels: getEnchantLevels(20, 80)
     },
     bow: {
       items: [
         'minecraft:bow'
       ],
-      enchantLevels: global.getEnchantLevels(20, 80)
+      enchantLevels: getEnchantLevels(20, 80)
     },
     crossbow: {
       items: [
         'minecraft:crossbow'
       ],
-      enchantLevels: global.getEnchantLevels(20, 80)
+      enchantLevels: getEnchantLevels(20, 80)
     },
     shield: {
       items: [
         'minecraft:shield'
       ],
-      enchantLevels: global.getEnchantLevels(20, 80)
+      enchantLevels: getEnchantLevels(20, 80)
     },
     trident: {
       items: [
         'minecraft:trident'
       ],
-      enchantLevels: global.getEnchantLevels(20, 80)
+      enchantLevels: getEnchantLevels(20, 80)
     }
   }
 
@@ -77,12 +79,12 @@ ServerEvents.chestLootTables(event => {
           event.addChest(`meatsalad:gear/${gearType}/level_${enchantLevel.value}${treasureSuffix}`, table => {
             table.addPool(pool => {
               pool.rolls = 1.0
-              global.addDynamic(pool,
+              addDynamic(pool,
                 {
                   type: 'placebo:stack_entry',
                   min: 1,
                   max: 1,
-                  functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
+                  functions: [enchantFunction(enchantLevel.value, treasureAllowed)]
                 }, 
                 gearTypeProps.items.map(item => {
                   return { stack: {item: item} }
@@ -96,7 +98,7 @@ ServerEvents.chestLootTables(event => {
         table.addPool(pool => {
           pool.rolls = 1.0
           if (!isSingleGearItem) {
-            global.addDynamic(pool,
+            addDynamic(pool,
               {
                 type: 'minecraft:loot_table'
               }, 
@@ -109,7 +111,7 @@ ServerEvents.chestLootTables(event => {
               })
             )
           } else {
-            global.addDynamic(pool,
+            addDynamic(pool,
               {
                 type: 'placebo:stack_entry',
                 min: 1,
@@ -120,7 +122,7 @@ ServerEvents.chestLootTables(event => {
               }, 
               gearTypeProps.enchantLevels.map(enchantLevel => {
                 let entry = { 
-                  functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
+                  functions: [enchantFunction(enchantLevel.value, treasureAllowed)]
                 }
                 if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
                 return entry
@@ -139,7 +141,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:gear/other/random${treasureSuffix}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'minecraft:loot_table'
           }, 
@@ -158,7 +160,7 @@ ServerEvents.chestLootTables(event => {
         {type: 'gold', weight: 125.0, quality: 2.0},
         {type: 'other', weight: 75.0, quality: 1.0},
       ],
-      conditions: [global.earlyStageCondition]
+      conditions: [earlyStageCondition]
     },
     mid: {
       gears: [
@@ -167,21 +169,21 @@ ServerEvents.chestLootTables(event => {
         {type: 'diamond', weight: 20.0, quality: 2.5},
         {type: 'other', weight: 30.0, quality: 1.0},
       ],
-      conditions: [global.midStageCondition]
+      conditions: [midStageCondition]
     },
     late: {
       gears: [
         {type: 'diamond', weight: 150.0, quality: 2.0},
         {type: 'other', weight: 50.0, quality: 1.0},
       ],
-      conditions: [global.lateStageCondition]
+      conditions: [lateStageCondition]
     },
     end: {
       gears: [
         {type: 'diamond', weight: 60.0, quality: 2.5},
         {type: 'other', weight: 20.0, quality: 1.0},
       ],
-      conditions: [global.endStageCondition]
+      conditions: [endStageCondition]
     }
   }
 
@@ -192,7 +194,7 @@ ServerEvents.chestLootTables(event => {
       event.addChest(`meatsalad:gear/${gearStage}${treasureSuffix}`, table => {
         table.addPool(pool => {
           pool.rolls = 1.0
-          global.addDynamic(pool,
+          addDynamic(pool,
             {
               type: 'minecraft:loot_table'
             }, 
@@ -215,7 +217,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:gear/random${treasureSuffix}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'minecraft:loot_table'
           }, 

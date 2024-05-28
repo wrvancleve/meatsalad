@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
       result: [result],
       energy: energy
     }).id(`meatsalad:smelter/${recipeId}`)
-    global.energize(event,
+    energize(event,
       [
         Ingredient.of('#forge:plates/steel'),
         Ingredient.of('extendedcrafting:luminessence'),
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
       result: [result],
       energy: energy
     }).id(`meatsalad:smelter/${recipeId}`)
-    global.energize(event,
+    energize(event,
       [
         Ingredient.of(`extendedcrafting:${type}_component`),
         Ingredient.of(`extendedcrafting:${type}_component`),
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     )
   }
   let craftingTable = (type, material, previousTable) => {
-    global.replaceShaped(event, [
+    replaceShaped(event, [
       'oao',
       'tbt',
       'oso'
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     }, Item.of(`extendedcrafting:${type}_table`))
   }
   let autoCraftingTable = (type) => {
-    global.replaceShaped(event, [
+    replaceShaped(event, [
       'srs',
       'ctc',
       'srs'
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     }, Item.of(`extendedcrafting:${type}_auto_table`))
   }
 
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'extendedcrafting:pedestal',
     'extendedcrafting:black_iron_block',
     'extendedcrafting:black_iron_block_uncraft',
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('extendedcrafting:luminessence').withCount(2)],
     energy: 16000
   }).id('meatsalad:smelter/luminessence')
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:dusts/glowstone'),
       Ingredient.of('#forge:dusts/glowstone'),

@@ -1,66 +1,60 @@
 ServerEvents.chestLootTables(event => {
   event.modify('minecraft:ancient_city', table => {
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
-    global.addRedHeartLootPool(table)
-    global.addEyeLootPool(table, 'old', 30)
+    addAffixItemLootPool(table, 'random_treasure')
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 
   event.modify('minecraft:bastion_bridge', table => {
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    addAffixItemLootPool(table)
+    addGemLootPool(table)
+    addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_hoglin_stable', table => {
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    addAffixItemLootPool(table)
+    addGemLootPool(table)
+    addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_other', table => {
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    addAffixItemLootPool(table)
+    addGemLootPool(table)
+    addGatewayLootPool(table)
   })
 
   event.modify('minecraft:bastion_treasure', table => {
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
-    global.addRedHeartLootPool(table)
-    global.addEyeLootPool(table, 'cursed')
+    addAffixItemLootPool(table, 'random_treasure')
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addRedHeartLootPool(table)
   })
 
   event.modify('minecraft:end_city_treasure', table => {
-    global.addAffixItemLootPool(table, 'random_treasure')
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
-    global.addAncientTomeLootPool(table)
-    global.addRedHeartLootPool(table)
-    global.addStackLootPool(table, {item: 'meatsalad:dark_matter'}, {weight: global.config.darkMatterWeight, quality: global.config.darkMatterQuality})
-  })
-
-  event.modify('minecraft:nether_bridge', table => {
-    global.addEyeLootPool(table, 'nether', 30)
+    addAffixItemLootPool(table, 'random_treasure')
+    addGemLootPool(table)
+    addGatewayLootPool(table)
+    addAncientTomeLootPool(table)
+    addRedHeartLootPool(table)
+    addStackLootPool(table, {item: 'meatsalad:dark_matter'}, {weight: global.config.darkMatterWeight, quality: global.config.darkMatterQuality})
   })
 
   event.modify('minecraft:stronghold_corridor', table => {
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    addAffixItemLootPool(table)
+    addGemLootPool(table)
+    addGatewayLootPool(table)
   })
 
   event.modify('minecraft:stronghold_crossing', table => {
-    global.addAffixItemLootPool(table)
-    global.addGemLootPool(table)
-    global.addGatewayLootPool(table)
+    addAffixItemLootPool(table)
+    addGemLootPool(table)
+    addGatewayLootPool(table)
   })
 
   event.modify('minecraft:stronghold_library', table => {
-    global.addBlueprintLootPool(table, {weight: null})
-    global.addAncientTomeLootPool(table, {weight: global.defaultStrongholdAncientTomeWeight})
+    addBlueprintLootPool(table, {weight: null})
+    addAncientTomeLootPool(table)
   })
 
   event.modify('minecraft:village/village_armorer', table => {
@@ -78,7 +72,7 @@ ServerEvents.chestLootTables(event => {
         'bracelet'
       ]
       templateTypes.forEach(type => {
-        global.addStack(pool, { item: `silentgear:${type}_template` })
+        addStack(pool, { item: `silentgear:${type}_template` })
       })
     })
   })
@@ -95,7 +89,7 @@ ServerEvents.chestLootTables(event => {
         'arrow'
       ]
       templateTypes.forEach(type => {
-        global.addStack(pool, { item: `silentgear:${type}_template` })
+        addStack(pool, { item: `silentgear:${type}_template` })
       })
     })
   })
@@ -124,7 +118,7 @@ ServerEvents.chestLootTables(event => {
         'fishing_rod'
       ]
       templateTypes.forEach(type => {
-        global.addStack(pool, { item: `silentgear:${type}_template` })
+        addStack(pool, { item: `silentgear:${type}_template` })
       })
     })
   })
@@ -141,21 +135,14 @@ ServerEvents.chestLootTables(event => {
         'dagger'
       ]
       templateTypes.forEach(type => {
-        global.addStack(pool, { item: `silentgear:${type}_template` })
+        addStack(pool, { item: `silentgear:${type}_template` })
       })
     })
   })
 })
 
-ServerEvents.entityLootTables(event => {
-  event.modifyEntity('minecraft:elder_guardian', table => {
-    global.addStackLootPool(table, {item: 'progressivebosses:elder_guardian_spike'})
-    global.addEyeLootPool(table, 'guardian', 50)
-  })
-})
-
 ServerEvents.recipes(event => {
-  global.replaceShaped(event,
+  replaceShaped(event,
     [
       'fuf',
       'fbf',

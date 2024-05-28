@@ -1,7 +1,7 @@
 {
 	"defaultRandomWeight": 30,
 	"defaultRandomQuality": 1,
-	"redHeartWeight": 20,
+	"redHeartWeight": 10,
 	"redHeartQuality": 0.5,
 	"darkMatterWeight": 10,
 	"darkMatterQuality": 0.5,

@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'naturescompass:natures_compass',
   ])
 })

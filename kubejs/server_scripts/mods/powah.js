@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  // global.removeRecipes(event, [
+  // removeRecipes(event, [
   //   'powah:energizing/uraninite_from_ore_poor',
   //   'powah:energizing/uraninite_from_ore',
   //   'powah:energizing/uraninite_from_ore_dense',
@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
   //   'powah:smelting/uraninite_from_raw',
   // ])
 
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:raw_materials/uranium')
     ],
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     Item.of('powah:uraninite', 2),
     'uraninite_from_raw'
   )
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ores/uranium')
     ],

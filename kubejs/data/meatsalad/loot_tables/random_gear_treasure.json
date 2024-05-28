@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/gear/random_treasure",
+          "weight": 70,
+          "quality": 0.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:chests/affix_items/random_treasure",
+          "weight": 30,
+          "quality": 1.0
+        }
+      ]
+    }
+  ]
+}

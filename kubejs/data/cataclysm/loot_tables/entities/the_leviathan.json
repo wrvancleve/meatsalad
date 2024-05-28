@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "name": "egg",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:abyssal_egg",
+            "count": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "weapon",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:tidal_claws",
+            "count": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "disc",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:music_disc_the_leviathan",
+            "count": 1
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.1
+        }
+      ]
+    }
+  ]
+}

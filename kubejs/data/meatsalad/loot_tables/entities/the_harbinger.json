@@ -1,0 +1,63 @@
+{
+  "pools": [
+    {
+      "name": "weapon",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:laser_gatling",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:meat_shredder",
+            "count": 1
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:wither_assault_shoulder_weapon",
+            "count": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "disc",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:music_disc_the_harbinger",
+            "count": 1
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.1
+        }
+      ]
+    }
+  ]
+}

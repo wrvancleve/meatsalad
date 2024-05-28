@@ -7,7 +7,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'bhc:smelting/blue_heart_melted',
     'bhc:smelting/green_heart_melted',
     'bhc:smelting/red_heart_melted',

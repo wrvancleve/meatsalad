@@ -3,7 +3,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'alexsmobs:hemolymph_blaster',
     'alexsmobs:mosquito_larva',
     'alexsmobs:transmutation_table',

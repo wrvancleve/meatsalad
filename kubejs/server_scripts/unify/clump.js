@@ -63,5 +63,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'mekanism:clumps/', recipes)
+  unify(event, 'mekanism:clumps/', recipes)
 })

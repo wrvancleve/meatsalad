@@ -44,5 +44,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:gears/', recipes)
+  unify(event, 'forge:gears/', recipes)
 })

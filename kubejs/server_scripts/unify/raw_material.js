@@ -26,5 +26,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:raw_materials/', recipes)
+  unify(event, 'forge:raw_materials/', recipes)
 })

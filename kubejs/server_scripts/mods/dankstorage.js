@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'iii',
     'isi',
     'iii'
@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     s: 'minecraft:stick'
   }, Item.of('dankstorage:6_to_7'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'iii',
     'idi',
     'iii'

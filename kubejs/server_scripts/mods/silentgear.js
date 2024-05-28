@@ -101,6 +101,9 @@ ServerEvents.tags('item', event => {
     '#forge:ingots/platinum',
     '#forge:gems/ruby',
     '#forge:gems/sapphire',
+    '#forge:ingots/allthemodium',
+    '#forge:ingots/unobtainium',
+    '#forge:ingots/vibranium',
   ]
   silentGearTipMaterials.forEach(silentGearTipMaterial =>
     event.add(`silentgear:materials/tip`, silentGearTipMaterial)
@@ -194,7 +197,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'silentgear:azure_electrum_ingot',
     'silentgear:blaze_gold_ingot',
     'silentgear:crimson_steel_ingot',
@@ -231,7 +234,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('silentgear:blaze_gold_ingot')],
     energy: 12000
   }).id('meatsalad:smelter/blaze_gold_ingot')
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ingots/gold'),
       Ingredient.of('minecraft:blaze_powder'),
@@ -263,7 +266,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('silentgear:crimson_steel_ingot')],
     energy: 16000
   }).id('meatsalad:smelter/crimson_steel_ingot')
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ingots/crimson_iron'),
       Ingredient.of('#forge:ingots/crimson_iron'),
@@ -302,7 +305,7 @@ ServerEvents.recipes(event => {
     result: [Item.of('silentgear:azure_electrum_ingot')],
     energy: 20000
   }).id('meatsalad:smelter/azure_electrum_ingot')
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ingots/azure_silver'),
       Ingredient.of('#forge:ingots/azure_silver'),
@@ -326,7 +329,7 @@ ServerEvents.recipes(event => {
     output: Item.of('silentgear:crushed_shulker_shell').withCount(2).toJson()
   }).id('meatsalad:crushing/crushed_shulker_shell')
 
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ingots/crimson_steel'),
       Ingredient.of('#forge:ingots/azure_electrum'),
@@ -337,7 +340,7 @@ ServerEvents.recipes(event => {
     Item.of('silentgear:tyrian_steel_ingot')
   )
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     "NII",
     "APB",
     "IIE"
@@ -350,7 +353,7 @@ ServerEvents.recipes(event => {
     E: 'meatsalad:ender_star_fragment'
   }, Item.of('silentgear:starmetal_dust'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'QGQ',
     'PDP',
     'PBP'

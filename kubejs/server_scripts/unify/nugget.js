@@ -38,5 +38,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:nuggets/', recipes)
+  unify(event, 'forge:nuggets/', recipes)
 })

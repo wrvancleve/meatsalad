@@ -1,28 +1,30 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
   const GemRarities = {
     common: { 
       weight: 400.0,
       quality: 0.0,
-      stageCondition: global.earlyStageCondition
+      stageCondition: earlyStageCondition
     },
     uncommon: { 
       weight: 320.0,
-      quality: 5.0,
-      stageCondition: global.getWorldStageCondition({end: false})
+      quality: 3.0,
+      stageCondition: getWorldStageCondition({end: false})
     },
     rare: {
       weight: 150.0,
-      quality: 10.0
+      quality: 6.0
     },
     epic: {
       weight: 90.0,
-      quality: 15.0,
-      stageCondition: global.getWorldStageCondition({nether: true})
+      quality: 9.0,
+      stageCondition: getWorldStageCondition({nether: true})
     },
     mythic: {
       weight: 40.0,
-      quality: 20.0,
-      stageCondition: global.endStageCondition
+      quality: 12.0,
+      stageCondition: endStageCondition
     }
   }
 
@@ -234,7 +236,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:gems/${rarity}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'placebo:stack_entry',
             min: 1,
@@ -260,7 +262,7 @@ ServerEvents.chestLootTables(event => {
   event.addChest('meatsalad:gems/random', table => {
     table.addPool(pool => {
       pool.rolls = 1.0
-      global.addDynamic(pool,
+      addDynamic(pool,
         {
           type: 'minecraft:loot_table'
         },
@@ -284,14 +286,14 @@ ServerEvents.chestLootTables(event => {
   event.addChest('meatsalad:gems/max', table => {
     table.addPool(pool => {
       pool.rolls = 1.0
-      global.addDynamic(pool,
+      addDynamic(pool,
         {
           type: 'minecraft:loot_table'
         },
         [
-          { name: 'meatsalad:chests/gems/rare', conditions: [global.getWorldStageCondition(false)] },
-          { name: 'meatsalad:chests/gems/epic', conditions: [global.getWorldStageCondition({nether: true, end: false})] },
-          { name: 'meatsalad:chests/gems/mythic', conditions: [global.endStageCondition] },
+          { name: 'meatsalad:chests/gems/rare', conditions: [earlyStageCondition] },
+          { name: 'meatsalad:chests/gems/epic', conditions: [getWorldStageCondition({nether: true, end: false})] },
+          { name: 'meatsalad:chests/gems/mythic', conditions: [endStageCondition] },
         ]
       )
     })
@@ -301,7 +303,7 @@ ServerEvents.chestLootTables(event => {
   event.addChest('meatsalad:gems/ancient', table => {
     table.addPool(pool => {
       pool.rolls = 1.0
-      global.addDynamic(pool,
+      addDynamic(pool,
         {
           type: 'placebo:stack_entry',
           min: 1,
