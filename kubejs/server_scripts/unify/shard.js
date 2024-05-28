@@ -64,5 +64,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'mekanism:shards/', recipes)
+  unify(event, 'mekanism:shards/', recipes)
 })

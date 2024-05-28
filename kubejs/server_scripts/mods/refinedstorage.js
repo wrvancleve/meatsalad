@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
   // quartz_enriched_iron
   event.remove({ id: 'refinedstorage:quartz_enriched_iron' })
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('minecraft:iron_ingot'),
       Ingredient.of('minecraft:iron_ingot'),
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
   // processor_binding
   event.remove({ id: 'refinedstorage:processor_binding' })
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:string'),
       Ingredient.of('#forge:slimeballs'),
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 
   // silicon
   event.remove({ id: 'refinedstorage:silicon' })
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('minecraft:quartz')
     ],

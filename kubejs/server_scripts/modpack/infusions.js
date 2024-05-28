@@ -1,3 +1,5 @@
+//priority: 70
+
 ServerEvents.recipes(event => {
   let infusion = (input, outputMod, outputName) => {
     event.custom({

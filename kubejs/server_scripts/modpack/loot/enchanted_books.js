@@ -1,20 +1,22 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
   const BookStages = {
     early: { 
-      enchantLevels: global.getEnchantLevels(10, 20),
-      conditions: [global.earlyStageCondition]
+      enchantLevels: getEnchantLevels(10, 20),
+      conditions: [earlyStageCondition]
     },
     mid: {
-      enchantLevels: global.getEnchantLevels(20, 40),
-      conditions: [global.midStageCondition]
+      enchantLevels: getEnchantLevels(20, 40),
+      conditions: [midStageCondition]
     },
     late: {
-      enchantLevels: global.getEnchantLevels(40, 60, false),
-      conditions: [global.lateStageCondition]
+      enchantLevels: getEnchantLevels(40, 60, false),
+      conditions: [lateStageCondition]
     },
     end: {
-      enchantLevels: global.getEnchantLevels(60, 80, false),
-      conditions: [global.endStageCondition]
+      enchantLevels: getEnchantLevels(60, 80, false),
+      conditions: [endStageCondition]
     }
   }
 
@@ -27,7 +29,7 @@ ServerEvents.chestLootTables(event => {
       event.addChest(`meatsalad:enchanted_books/${bookStage}${treasureSuffix}`, table => {
         table.addPool(pool => {
           pool.rolls = 1.0
-          global.addDynamic(pool,
+          addDynamic(pool,
             {
               type: 'placebo:stack_entry',
               min: 1,
@@ -38,7 +40,7 @@ ServerEvents.chestLootTables(event => {
             }, 
             bookStageProps.enchantLevels.map(enchantLevel => {
               let entry = { 
-                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
+                functions: [enchantFunction(enchantLevel.value, treasureAllowed)]
               }
               if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
               return entry
@@ -55,7 +57,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:enchanted_books/random${treasureSuffix}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'minecraft:loot_table'
           }, 

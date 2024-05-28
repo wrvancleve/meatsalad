@@ -32,12 +32,21 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'rewards.meatsalad.loot_table.supreme', '§kSupreme§r Loot')
 
   // Extra Summon Entity Names
-  event.add('meatsalad', 'name.meatsalad.wither_1', 'Wither+')
-  event.add('meatsalad', 'name.meatsalad.wither_2', 'Wither++')
-  event.add('meatsalad', 'name.meatsalad.wither_3', 'Wither+++')
+  event.add('meatsalad', 'name.meatsalad.ancient_remnant_1', 'Ancient Remnant+')
+  event.add('meatsalad', 'name.meatsalad.ancient_remnant_2', 'Ancient Remnant++')
+  event.add('meatsalad', 'name.meatsalad.ancient_remnant_3', 'Ancient Remnant+++')
   event.add('meatsalad', 'name.meatsalad.ender_guardian_1', 'Ender Guardian+')
   event.add('meatsalad', 'name.meatsalad.ender_guardian_2', 'Ender Guardian++')
   event.add('meatsalad', 'name.meatsalad.ender_guardian_3', 'Ender Guardian+++')
+  event.add('meatsalad', 'name.meatsalad.ignis_1', 'Ignis+')
+  event.add('meatsalad', 'name.meatsalad.ignis_2', 'Ignis++')
+  event.add('meatsalad', 'name.meatsalad.ignis_3', 'Ignis+++')
+  event.add('meatsalad', 'name.meatsalad.netherite_monstrosity_1', 'Netherite Monstrosity+')
+  event.add('meatsalad', 'name.meatsalad.netherite_monstrosity_2', 'Netherite Monstrosity++')
+  event.add('meatsalad', 'name.meatsalad.netherite_monstrosity_3', 'Netherite Monstrosity+++')
+  event.add('meatsalad', 'name.meatsalad.the_harbinger_1', 'The Harbinger+')
+  event.add('meatsalad', 'name.meatsalad.the_harbinger_2', 'The Harbinger++')
+  event.add('meatsalad', 'name.meatsalad.the_harbinger_3', 'The Harbinger+++')
 
   // Infuse Types
   event.add('meatsalad', 'infuse_type.kubejs.dimensional_shard', "Dimensional Shard")

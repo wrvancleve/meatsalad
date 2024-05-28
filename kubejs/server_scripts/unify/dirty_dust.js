@@ -14,5 +14,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'mekanism:dirty_dusts/', recipes)
+  unify(event, 'mekanism:dirty_dusts/', recipes)
 })

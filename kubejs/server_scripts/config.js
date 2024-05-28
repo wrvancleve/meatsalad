@@ -6,7 +6,7 @@ const CONFIG_FILE = `${CONFIG_DIRECTORY}/${CONFIG_FILE_NAME}`
 const DEFAULT_CONFIG = {
   defaultRandomWeight: 30,
   defaultRandomQuality: 1.0,
-  redHeartWeight: 20,
+  redHeartWeight: 10,
   redHeartQuality: 0.5,
   darkMatterWeight: 10,
   darkMatterQuality: 0.5,
@@ -16,7 +16,31 @@ const DEFAULT_CONFIG = {
   gateQuality: 0.5,
 }
 
-let setConfig = (key, value) => {
+const loadConfig = () => {
+  let isConfigDirty = false
+  let config = JsonIO.read(CONFIG_FILE)
+  
+  if (!config) {
+    isConfigDirty = true
+    config = DEFAULT_CONFIG
+  }
+  
+  for (const key in DEFAULT_CONFIG) {
+    if (!config.hasOwnProperty(key)) {
+      config[key] = DEFAULT_CONFIG[key]
+      isConfigDirty = true
+    }
+  }
+  
+  if (isConfigDirty) {
+    JsonIO.write(CONFIG_FILE, config)
+    isConfigDirty = false
+  }
+  
+  global.config = config
+}
+
+const setConfig = (key, value) => {
   global.config[key] = value
   JsonIO.write(CONFIG_FILE, global.config)
 }
@@ -45,25 +69,4 @@ ServerEvents.commandRegistry(event => {
   )
 })
 
-
-let isConfigDirty = false
-let config = JsonIO.read(CONFIG_FILE)
-
-if (!config) {
-  isConfigDirty = true
-  config = DEFAULT_CONFIG
-}
-
-for (const key in DEFAULT_CONFIG) {
-  if (!config.hasOwnProperty(key)) {
-    config[key] = DEFAULT_CONFIG[key]
-    isConfigDirty = true
-  }
-}
-
-if (isConfigDirty) {
-  JsonIO.write(CONFIG_FILE, config)
-  isConfigDirty = false
-}
-
-global.config = config
+loadConfig()

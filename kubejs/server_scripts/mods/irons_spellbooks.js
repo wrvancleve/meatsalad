@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'irons_spellbooks:alchemist_cauldron',
   ])
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Taa',
     'Bpp',
     'BBT'
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:leather'
   }, Item.of('irons_spellbooks:copper_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Taa',
     'Bpp',
     'BBT'
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:leather'
   }, Item.of('irons_spellbooks:iron_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Taa',
     'Bpp',
     'BBT'
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     B: 'irons_spellbooks:hogskin'
   }, Item.of('irons_spellbooks:gold_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bpp',
     'BBT'
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     B: 'irons_spellbooks:hogskin'
   }, Item.of('irons_spellbooks:diamond_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bpp',
     'BBT'
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     B: 'irons_spellbooks:hogskin'
   }, Item.of('irons_spellbooks:blaze_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bpp',
     'BBg'
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     g: 'minecraft:glow_ink_sac',
   }, Item.of('irons_spellbooks:druidic_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bpp',
     'BBb'
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
     b: 'minecraft:bell',
   }, Item.of('irons_spellbooks:villager_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bbp',
     'BBD'
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
     D: 'meatsalad:dark_matter',
   }, Item.of('irons_spellbooks:netherite_spell_book'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'Tsi',
     'Bbp',
     'BBD'
@@ -138,16 +138,10 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:smelter/arcane_salvage_from_debris')
 })
 
-ServerEvents.entityLootTables(event => {
-  event.modifyEntity('irons_spellbooks:dead_king', table => {
-    global.addEyeLootPool(table, 'undead')
-  })
-})
-
 ServerEvents.chestLootTables(event => {
   event.addChest('meatsalad:spells/random', table => {
     table.addPool(pool => {
-      global.addStack(pool,
+      addStack(pool,
         { item: 'irons_spellbooks:scroll' },
         { 
           functions: [{
@@ -157,10 +151,10 @@ ServerEvents.chestLootTables(event => {
               max: 0.3
             }
           }],
-          conditions: [global.earlyStageCondition]
+          conditions: [earlyStageCondition]
         }
       )
-      global.addStack(pool,
+      addStack(pool,
         { item: 'irons_spellbooks:scroll' },
         { 
           functions: [{
@@ -170,10 +164,10 @@ ServerEvents.chestLootTables(event => {
               max: 0.5
             }
           }],
-          conditions: [global.midStageCondition]
+          conditions: [midStageCondition]
         }
       )
-      global.addStack(pool,
+      addStack(pool,
         { item: 'irons_spellbooks:scroll' },
         { 
           functions: [{
@@ -183,10 +177,10 @@ ServerEvents.chestLootTables(event => {
               max: 0.7
             }
           }],
-          conditions: [global.lateStageCondition]
+          conditions: [lateStageCondition]
         }
       )
-      global.addStack(pool,
+      addStack(pool,
         { item: 'irons_spellbooks:scroll' },
         { 
           functions: [{
@@ -196,7 +190,7 @@ ServerEvents.chestLootTables(event => {
               max: 0.7
             }
           }],
-          conditions: [global.endStageCondition]
+          conditions: [endStageCondition]
         }
       )
     })

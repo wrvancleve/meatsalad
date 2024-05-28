@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 30,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "endrem:nether_eye",
+            "count": 1
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "endrem:main/nether_eye": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 70
+        }
+      ]
+    }
+  ]
+}

@@ -14,11 +14,11 @@ function getArray(object) {
 
 global['auTags'] = []
 
-global['loaded'] = {
-  Mek_Loaded: Platform.isLoaded('mekanism'),
-  Thermal_Loaded: Platform.isLoaded('thermal'),
-  ATO_Loaded: Platform.isLoaded('alltheores'),
-}
+// global['loaded'] = {
+//   Mek_Loaded: Platform.isLoaded('mekanism'),
+//   Thermal_Loaded: Platform.isLoaded('thermal'),
+//   ATO_Loaded: Platform.isLoaded('alltheores'),
+// }
 
 // global['alloys'] = [
 //   'steel',
@@ -32,25 +32,7 @@ global['loaded'] = {
 //   'brass'
 // ]
 
-global['gems'] = [
-  'amethyst',
-  'apatite',
-  'certus_quartz',
-  'cinnabar',
-  'diamond',
-  'dimensional_shard',
-  'emerald',
-  'fluorite',
-  'lapis',
-  'niter',
-  'peridot',
-  'quartz',
-  'ruby',
-  'sapphire',
-  'sulfur',
-]
-
-global['getRecipeInputKey'] = function (recipeType, recipeJson) {
+const getRecipeInputKey = function (recipeType, recipeJson) {
   let inputKeys
   switch (recipeType) {
     case 'minecraft:crafting_shaped':
@@ -90,14 +72,14 @@ global['getRecipeInputKey'] = function (recipeType, recipeJson) {
   }
 }
 
-global['getIngredients'] = function* (ingredients, filler) {
+const getIngredients = function* (ingredients, filler) {
   if (ingredients instanceof JsonArray) {
     for (var i = 0; i < ingredients.size(); i++) {
-      yield* global.getIngredients(ingredients.get(i), filler)
+      yield* getIngredients(ingredients.get(i), filler)
     }
   } else if (ingredients instanceof Array) {
     for (let ingredient of ingredients) {
-      yield* global.getIngredients(ingredient, filler)
+      yield* getIngredients(ingredient, filler)
     }
   } else if (ingredients instanceof JsonObject) {
     if (ingredients.has('tag')) {
@@ -110,7 +92,7 @@ global['getIngredients'] = function* (ingredients, filler) {
         : ingredients.get('item').getAsString() + "" // + "" is for a bug
     } else {
       for (let ingredientKey of ingredients.keySet().toArray()) {
-        yield* global.getIngredients(ingredients.get(ingredientKey), filler)
+        yield* getIngredients(ingredients.get(ingredientKey), filler)
       }
     }
   } else if (ingredients instanceof Object) {
@@ -119,7 +101,7 @@ global['getIngredients'] = function* (ingredients, filler) {
     } else if (ingredients.item) {
       yield filler ? ingredients.item.replace('{0}', filler) : ingredients.item 
     } else {
-      yield* global.getIngredients(Object.values(ingredients), filler)
+      yield* getIngredients(Object.values(ingredients), filler)
     }
   } else if (ingredients instanceof JsonPrimitive) {
     if (ingredients.isString()) {
@@ -128,9 +110,9 @@ global['getIngredients'] = function* (ingredients, filler) {
   }
 }
 
-global['finalizeComponent'] = function (component, filler) {
+const finalizeComponent = function (component, filler) {
   if (component.constructor === Array) {
-    return component.map(c => global.finalizeComponent(c, filler))
+    return component.map(c => finalizeComponent(c, filler))
   } else if (component.constructor === String) {
     return component.replace('{0}', filler)
   } else if (component.constructor === Object) {
@@ -141,7 +123,7 @@ global['finalizeComponent'] = function (component, filler) {
       newComponent.item = newComponent.item.replace('{0}', filler)
     } else {
       for (let newComponentProp of Object.keys(newComponent)) {
-        newComponent[newComponentProp] = global.finalizeComponent(newComponent[newComponentProp], filler)
+        newComponent[newComponentProp] = finalizeComponent(newComponent[newComponentProp], filler)
       }
     }
     return newComponent
@@ -149,8 +131,25 @@ global['finalizeComponent'] = function (component, filler) {
   return component
 }
 
-global['unify'] = function (event, unifyTag, unifyRecipes) {
-  const recipeKeys = {
+const unify = function (event, unifyTag, unifyRecipes) {
+  const GEM_MATERIALS = [
+    'amethyst',
+    'apatite',
+    'certus_quartz',
+    'cinnabar',
+    'diamond',
+    'dimensional_shard',
+    'emerald',
+    'fluorite',
+    'lapis',
+    'niter',
+    'peridot',
+    'quartz',
+    'ruby',
+    'sapphire',
+    'sulfur',
+  ]
+  const RECIPE_KEYS = {
     'minecraft:crafting_shaped': {
       input: 'key',
       output: 'result'
@@ -201,7 +200,7 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
     },
   }
 
-  const unifyHandler = {
+  const UnifyHandler = {
     materials: {},
     recipes: {},
     preExistingRecipes: {},
@@ -219,7 +218,7 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
         } else {
           recipe.exclude.forEach(exclusion => {
             if (exclusion === 'gems') {
-              global.gems.forEach(gem => {
+              GEM_MATERIALS.forEach(gem => {
                 recipeExclude.add(gem)
               })
             } else {
@@ -256,7 +255,7 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
             ? recipeProps.exclude.test(material)
             : recipeProps.exclude.has(material)
           if (!isMaterialExcluded) {
-            let targetMaterial = global.finalizeComponent(target, material)
+            let targetMaterial = finalizeComponent(target, material)
             let hasTargetCheckOccurred = targetMaterial in targetChecks
             let targetCheck = hasTargetCheckOccurred
               ? targetChecks[targetMaterial]
@@ -283,17 +282,17 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
       for (let [recipeType, recipesInType] of Object.entries(this.recipes)) {
         event.forEachRecipe({type: recipeType}, recipe => {
           let recipeJson = recipe.json
-          for (let result of global.getIngredients(recipeJson.get(recipeKeys[recipeType].output))) {
+          for (let result of getIngredients(recipeJson.get(RECIPE_KEYS[recipeType].output))) {
             let material = this.materials[result]
             if (material) {
               for (let [target, recipeProps] of Object.entries(recipesInType)) {
                 // Create target string
-                let targetMaterial = global.finalizeComponent(target, material)
-                let recipeIngredients = recipeProps.json[global.getRecipeInputKey(recipeType, recipeProps.json)]
-                recipeIngredients = Array.from(global.getIngredients(recipeIngredients, targetMaterial))
+                let targetMaterial = finalizeComponent(target, material)
+                let recipeIngredients = recipeProps.json[getRecipeInputKey(recipeType, recipeProps.json)]
+                recipeIngredients = Array.from(getIngredients(recipeIngredients, targetMaterial))
 
-                let testIngredients = recipeJson.get(global.getRecipeInputKey(recipeType, recipeJson))
-                testIngredients = Array.from(global.getIngredients(testIngredients))
+                let testIngredients = recipeJson.get(getRecipeInputKey(recipeType, recipeJson))
+                testIngredients = Array.from(getIngredients(testIngredients))
 
                 if (compareIngredients(recipeIngredients, testIngredients)) {
                   this.preExistingRecipes[material][recipeType][target] = true
@@ -312,12 +311,12 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
             if (target in materialPreExistingRecipes && !materialPreExistingRecipes[target]) {
               // Finalize recipe
               let recipeJson = recipeProps.json
-              let ingredientsKey = global.getRecipeInputKey(recipeType, recipeJson)
-              let resultsKey = recipeKeys[recipeType].output
-              let targetMaterial = global.finalizeComponent(target, material)
+              let ingredientsKey = getRecipeInputKey(recipeType, recipeJson)
+              let resultsKey = RECIPE_KEYS[recipeType].output
+              let targetMaterial = finalizeComponent(target, material)
               let missingRecipe = Object.assign({}, recipeJson)
-              missingRecipe[ingredientsKey] = global.finalizeComponent(missingRecipe[ingredientsKey], targetMaterial)
-              missingRecipe[resultsKey] = global.finalizeComponent(missingRecipe[resultsKey], preferredItem)
+              missingRecipe[ingredientsKey] = finalizeComponent(missingRecipe[ingredientsKey], targetMaterial)
+              missingRecipe[resultsKey] = finalizeComponent(missingRecipe[resultsKey], preferredItem)
 
               // Create recipe
               let recipeBuilder
@@ -339,7 +338,7 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
                   recipeBuilder = event.custom(missingRecipe)
                   break
               }
-              let recipeId = global.finalizeComponent(recipeProps.id, material)
+              let recipeId = finalizeComponent(recipeProps.id, material)
               recipeBuilder = recipeBuilder.id(`meatsalad:${recipeId}`)
             }
           }
@@ -350,7 +349,7 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
 
   // Add recipes
   unifyRecipes.forEach(recipe => {
-    unifyHandler.addRecipe(recipe)
+    UnifyHandler.addRecipe(recipe)
   })
 
   // Add materials
@@ -359,13 +358,13 @@ global['unify'] = function (event, unifyTag, unifyRecipes) {
     if (unifyTagTester.test(unifyTagString)) {
       let material = unifyTagString.replace(unifyTag, '')
       if (!material.startsWith('raw_')) {
-        unifyHandler.addMaterial(material)
+        UnifyHandler.addMaterial(material)
       }
     }
   })
 
   // Perform unify
-  unifyHandler.unify()
+  UnifyHandler.unify()
 }
 
 ServerEvents.recipes(event => {

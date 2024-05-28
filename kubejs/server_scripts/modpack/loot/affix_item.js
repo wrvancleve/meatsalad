@@ -1,34 +1,36 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
   const AffixRarities = {
     common: {
       id: 'apotheosis:common',
       weight: 400,
       quality: 0.0,
-      enchantLevels: global.getEnchantLevels(20, 80),
+      enchantLevels: getEnchantLevels(20, 80),
     },
     uncommon: {
       id: 'apotheosis:uncommon',
       weight: 320,
-      quality: 5.0,
-      enchantLevels: global.getEnchantLevels(20, 80),
+      quality: 3.0,
+      enchantLevels: getEnchantLevels(20, 80),
     },
     rare: {
       id: 'apotheosis:rare',
       weight: 150,
-      quality: 10.0,
-      enchantLevels: global.getEnchantLevels(20, 80),
+      quality: 6.0,
+      enchantLevels: getEnchantLevels(20, 80),
     },
     epic: {
       id: 'apotheosis:epic',
       weight: 90,
-      quality: 15.0,
-      enchantLevels: global.getEnchantLevels(20, 80),
+      quality: 9.0,
+      enchantLevels: getEnchantLevels(20, 80),
     },
     mythic: {
       id: 'apotheosis:mythic',
       weight: 40,
-      quality: 20.0,
-      enchantLevels: global.getEnchantLevels(20, 80),
+      quality: 12.0,
+      enchantLevels: getEnchantLevels(20, 80),
     },
   }
 
@@ -41,7 +43,7 @@ ServerEvents.chestLootTables(event => {
       event.addChest(`meatsalad:affix_items/${rarityName}/random${treasureSuffix}`, table => {
         table.addPool(pool => {
           pool.rolls = 1.0
-          global.addDynamic(pool,
+          addDynamic(pool,
             {
               type: 'apotheosis:random_affix_item',
               min_rarity: rarityProps.id,
@@ -49,7 +51,7 @@ ServerEvents.chestLootTables(event => {
             }, 
             rarityProps.enchantLevels.map(enchantLevel => {
               let entry = { 
-                functions: [global.enchantFunction(enchantLevel.value, treasureAllowed)]
+                functions: [enchantFunction(enchantLevel.value, treasureAllowed)]
               }
               if (enchantLevel.conditions) entry.conditions = enchantLevel.conditions
               return entry
@@ -67,7 +69,7 @@ ServerEvents.chestLootTables(event => {
         'uncommon',
         'rare'
       ],
-      conditions: [global.earlyStageCondition]
+      conditions: [earlyStageCondition]
     },
     mid: {
       rarities: [
@@ -75,7 +77,7 @@ ServerEvents.chestLootTables(event => {
         'rare',
         'epic',
       ],
-      conditions: [global.getWorldStageCondition({nether: true, end: false})]
+      conditions: [getWorldStageCondition({nether: true, end: false})]
     },
     end: {
       rarities: [
@@ -83,7 +85,7 @@ ServerEvents.chestLootTables(event => {
         'epic',
         'mythic',
       ],
-      conditions: [global.endStageCondition]
+      conditions: [endStageCondition]
     }
   }
 
@@ -94,7 +96,7 @@ ServerEvents.chestLootTables(event => {
       event.addChest(`meatsalad:affix_items/${affixStage}${treasureSuffix}`, table => {
         table.addPool(pool => {
           pool.rolls = 1.0
-          global.addDynamic(pool,
+          addDynamic(pool,
             {
               type: 'minecraft:loot_table'
             }, 
@@ -118,7 +120,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:affix_items/random${treasureSuffix}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'minecraft:loot_table'
           }, 

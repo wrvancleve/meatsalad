@@ -1,23 +1,42 @@
+//priority: 70
+
 const Summons = {
-  wither: {
-    boss: 'minecraft:wither',
+  ancient_remnant: {
+    boss: 'cataclysm:ancient_remnant',
     inputs: [
-      '3x minecraft:wither_skeleton_skull',
-      '3x minecraft:soul_sand',
+      'cataclysm:desert_eye',
     ],
-    bossNameColor: 'Dark Gray'
+    bossNameColor: 'Gray'
   },
   ender_guardian: {
     boss: 'cataclysm:ender_guardian',
-    baseInput: 'cataclysm:void_jaw',
+    baseInput: 'cataclysm:void_stone',
     inputs: [
       'cataclysm:void_eye',
-      'cataclysm:void_stone',
-      '2x minecraft:obsidian',
-      '2x minecraft:crying_obsidian',
     ],
     bossNameColor: 'Light Purple'
-  }
+  },
+  ignis: {
+    boss: 'cataclysm:ignis',
+    inputs: [
+      'cataclysm:flame_eye',
+    ],
+    bossNameColor: 'Dark Red'
+  },
+  netherite_monstrosity: {
+    boss: 'cataclysm:netherite_monstrosity',
+    inputs: [
+      'cataclysm:monstrous_eye',
+    ],
+    bossNameColor: 'Red'
+  },
+  the_harbinger: {
+    boss: 'cataclysm:the_harbinger',
+    inputs: [
+      'cataclysm:mech_eye',
+    ],
+    bossNameColor: 'Red'
+  },
 }
 
 ServerEvents.recipes(event => {

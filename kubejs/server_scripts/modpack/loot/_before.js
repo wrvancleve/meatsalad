@@ -1,4 +1,6 @@
-global['getEnchantStageCondition'] = (enchantStageFlags) => {
+//priority: 90
+
+const getEnchantStageCondition = (enchantStageFlags) => {
   let hasHellshelfStage
   let hasDeepshelfStage
   let hasEndshelfStage
@@ -35,30 +37,30 @@ global['getEnchantStageCondition'] = (enchantStageFlags) => {
   }
 }
 
-global['shelfStageCondition'] = global.getEnchantStageCondition({hellshelf: false})
-global['hellshelfStageCondition'] = global.getEnchantStageCondition({hellshelf: true, deepshelf: false, endshelf: false})
-global['deepshelfStageCondition'] = global.getEnchantStageCondition({deepshelf: true})
-global['endshelfStageCondition'] = global.getEnchantStageCondition({endshelf: true})
+const shelfStageCondition = getEnchantStageCondition({hellshelf: false})
+const hellshelfStageCondition = getEnchantStageCondition({hellshelf: true, deepshelf: false, endshelf: false})
+const deepshelfStageCondition = getEnchantStageCondition({deepshelf: true})
+const endshelfStageCondition = getEnchantStageCondition({endshelf: true})
 
-global.EnchantLevels = {
-  '10': { value: 10, conditions: [global.shelfStageCondition] },
-  '20': { value: 20, conditions: [global.shelfStageCondition] },
-  '30': { value: 30, conditions: [global.shelfStageCondition] },
-  '40': { value: 40, conditions: [global.hellshelfStageCondition] },
-  '50': { value: 50, conditions: [global.hellshelfStageCondition] },
-  '60': { value: 60, conditions: [global.deepshelfStageCondition] },
-  '70': { value: 70, conditions: [global.deepshelfStageCondition] },
-  '80': { value: 80, conditions: [global.endshelfStageCondition] },
+const EnchantLevels = {
+  '10': { value: 10, conditions: [shelfStageCondition] },
+  '20': { value: 20, conditions: [shelfStageCondition] },
+  '30': { value: 30, conditions: [shelfStageCondition] },
+  '40': { value: 40, conditions: [hellshelfStageCondition] },
+  '50': { value: 50, conditions: [hellshelfStageCondition] },
+  '60': { value: 60, conditions: [deepshelfStageCondition] },
+  '70': { value: 70, conditions: [deepshelfStageCondition] },
+  '80': { value: 80, conditions: [endshelfStageCondition] },
 }
 
-global.getEnchantLevels = (min, max, useFirstCondition) => {
+const getEnchantLevels = (min, max, useFirstCondition) => {
   useFirstCondition = useFirstCondition ?? true
   const enchantLevels = []
   for (let i = min; i <= max; i += 10) {
     if (i == min && !useFirstCondition) {
       enchantLevels.push({ value: i })
     } else {
-      enchantLevels.push(global.EnchantLevels[`${i}`])
+      enchantLevels.push(EnchantLevels[`${i}`])
     }
   }
   return enchantLevels

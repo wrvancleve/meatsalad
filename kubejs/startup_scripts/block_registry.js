@@ -1,4 +1,4 @@
-global['getReadableText'] = (text) => {
+global.getReadableText = (text) => {
   return String(text)
     .split('_')
     .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)

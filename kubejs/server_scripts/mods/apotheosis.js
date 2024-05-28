@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'apotheosis:ender_lead',
     'apotheosis:gem_cutting_table',
   ])
 
-  global.nucleosynthesize(event,
+  nucleosynthesize(event,
     {mod: 'apotheosis', item: 'mythic_material'}, // Input
     {mod: 'apotheosis', item: 'ancient_material'} // Output
   )
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
   ]
   for (let gem of gems) {
     let gemMod = gem.mod || 'apotheosis'
-    global.nucleosynthesize(event,
+    nucleosynthesize(event,
       {mod: 'apotheosis', item: 'gem', data: `{affix_data:{rarity:"apotheosis:mythic"},gem:"${gem.id}"}`}, // Input
       {mod: 'apotheosis', item: 'gem', data: `{affix_data:{rarity:"apotheosis:ancient"},gem:"${gem.id}"}`, recipeName: `gems/${gemMod}/${gem.name}`} // Output
     ) 

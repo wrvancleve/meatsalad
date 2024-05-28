@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'rLr',
     'dCd',
     'RdR'
@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     R: 'minecraft:comparator'
   }, Item.of('adfinders:gem_finder'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'rLr',
     'gCg',
     'RgR'
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     R: 'minecraft:comparator'
   }, Item.of('adfinders:metal_finder'))
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'rLr',
     'iCi',
     'RiR'

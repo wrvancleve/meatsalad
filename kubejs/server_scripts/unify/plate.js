@@ -20,5 +20,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:plates/', recipes)
+  unify(event, 'forge:plates/', recipes)
 })

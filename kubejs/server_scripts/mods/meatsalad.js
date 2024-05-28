@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     c: '#forge:gems/amethyst',
   }).id('meatsalad:dimensional_shard')
   
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:ingots/tyrian_steel'),
       Ingredient.of('#forge:ingots/refined_obsidian'),
@@ -50,12 +50,12 @@ ServerEvents.recipes(event => {
     energy: 5000
   }).id('meatsalad:crystallizer/eternal_crystal')
 
-  global.nucleosynthesize(event,
+  nucleosynthesize(event,
     {mod: 'alexsmobs', item: 'mimicream'}, // Input
     {mod: 'meatsalad', item: 'uu_matter'} // Output
   )
 
-  global.nucleosynthesize(event,
+  nucleosynthesize(event,
     {tag: '#forge:ingots/uranium'}, // Input
     {mod: 'meatsalad', item: 'neutronium_ingot'} // Output
   )
@@ -228,4 +228,48 @@ ServerEvents.recipes(event => {
     S: '#forge:ingots/osmium',
     U: 'mekanism:ultimate_chemical_tank'
   }).id('meatsalad:mekanism_creative_chemical_tank')
+})
+
+ServerEvents.entityLootTables(event => {
+  let createScalingBossTables = (boss) => {
+    const bossMobId = boss.split(':')[1]
+    for (let i = 1; i <= 3; i++) {
+      let customMobId = `meatsalad:${bossMobId}_${i}`
+      event.addEntity(customMobId, table => {
+        table.customId = customMobId
+        addLootTablePool(table, {name: `meatsalad:entities/${bossMobId}`})
+        table.addPool(pool => {
+          addStack(pool, {item: 'apotheosis:mythic_material', min: 3, max: 12}, {weight: 100 - (global.config.bossAncientWeight * i)})
+          addStack(pool, {item: 'apotheosis:ancient_material', max: 4}, {weight: global.config.bossAncientWeight * i, quality: global.config.bossAncientQuality})
+        })
+        table.addPool(pool => {
+          addLootTable(pool, {type: 'gems', name: 'mythic', weight: 100 - (global.config.bossAncientWeight * i)})
+          addLootTable(pool, {type: 'gems', name: 'ancient', weight: global.config.bossAncientWeight * i, quality: global.config.bossAncientQuality})
+        })
+        addStackLootPool(table,
+          {
+            item: 'gateways:gate_pearl',
+            nbt: '{gateway: "meatsalad:supreme"}'
+          },
+          { weight: Math.min(global.config.bossAncientWeight * 2.5 * i, 100)}
+        )
+      })
+    }
+  }
+
+  // const incineratorModifiers = [
+  //   '{AttributeName:"generic.attack_damage",Amount:28,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-124413,32397,111837,-64794]}',
+  //   '{AttributeName:"generic.attack_speed",Amount:-2.8,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-124413,32697,111837,-65394]}',
+  //   '{AttributeName:"forge:entity_reach",Amount:2.0,Slot:"mainhand",Name:"forge:entity_reach",UUID:[I;-1434080246,1489914181,-1452003312,1592641912]}'
+  // ]
+  const bosses = [
+    'cataclysm:ancient_remnant',
+    'cataclysm:ender_guardian',
+    'cataclysm:ignis',
+    'cataclysm:netherite_monstrosity',
+    'cataclysm:the_harbinger',
+  ]
+  bosses.forEach(boss => {
+    createScalingBossTables(boss)
+  })
 })

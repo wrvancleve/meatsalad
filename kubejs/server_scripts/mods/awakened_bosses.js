@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
   fullRemove('awakened_bosses:herobrine_hoe')
 
   event.remove({ id: 'awakened_bosses:herobrine_blue_recipe' })
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:dyes/blue'),
       Ingredient.of('#forge:storage_blocks/diamond'),
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
   )
 
   event.remove({ id: 'awakened_bosses:herobrine_cyan_recipe' })
-  global.energize(event,
+  energize(event,
     [
       Ingredient.of('#forge:dyes/cyan'),
       Ingredient.of('#forge:storage_blocks/diamond'),
@@ -41,12 +41,4 @@ ServerEvents.recipes(event => {
     5000000,
     Item.of('awakened_bosses:herobrine_cyan')
   )
-})
-
-ServerEvents.entityLootTables(event => {
-  event.modifyEntity('awakened_bosses:herobrine', table => {
-    //global.addStackLootPool(table, {item: 'meatsalad:chaos_crystal'})
-    global.addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
-    global.addGemLootPool(table, {name: 'ancient', weight: null})
-  })
 })

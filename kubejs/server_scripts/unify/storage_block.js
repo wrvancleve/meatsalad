@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:storage_blocks/', storageRecipes)
+  unify(event, 'forge:storage_blocks/', storageRecipes)
 
   const rawStorageRecipes = [
     {
@@ -76,5 +76,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:storage_blocks/raw_', rawStorageRecipes)
+  unify(event, 'forge:storage_blocks/raw_', rawStorageRecipes)
 })

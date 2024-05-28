@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:gems/', recipes)
+  unify(event, 'forge:gems/', recipes)
 
   // Missing amethyst processing
   event.shapeless(

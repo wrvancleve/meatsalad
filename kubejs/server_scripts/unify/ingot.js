@@ -140,5 +140,5 @@ ServerEvents.recipes(event => {
     },
   ]
 
-  global.unify(event, 'forge:ingots/', recipes)
+  unify(event, 'forge:ingots/', recipes)
 })

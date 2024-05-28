@@ -1,3 +1,5 @@
+//priority: 80
+
 // ServerEvents.chestLootTables(event => {
 //   const Parts = {
 //     partSizes: new Map([
@@ -235,10 +237,10 @@
 //       ['ss0', { weight: 250, quality: 1 }],
 //       ['sss0', { weight: 100, quality: 1 }],
 //       ['max0', { weight: 50, quality: 1.5 }],
-//       ['max1', { weight: 25, quality: 2, conditions: [global.getStageCondition('meatsalad:stage/starcharger', true)] }],
-//       ['max2', { weight: 10, quality: 3, conditions: [global.getStageCondition('meatsalad:stage/starcharger', true)] }],
-//       ['max3', { weight: 5, quality: 4, conditions: [global.getStageCondition('meatsalad:stage/starcharger', true)] }],
-//       ['max4', { weight: 1, quality: 5, conditions: [global.getStageCondition('meatsalad:stage/starcharger', true)] }],
+//       ['max1', { weight: 25, quality: 2, conditions: [getStageCondition('meatsalad:stage/starcharger', true)] }],
+//       ['max2', { weight: 10, quality: 3, conditions: [getStageCondition('meatsalad:stage/starcharger', true)] }],
+//       ['max3', { weight: 5, quality: 4, conditions: [getStageCondition('meatsalad:stage/starcharger', true)] }],
+//       ['max4', { weight: 1, quality: 5, conditions: [getStageCondition('meatsalad:stage/starcharger', true)] }],
 //     ]),
 //     modifiersByTier: [
 //       ['s0', 'ss0', 'sss0'],
@@ -274,7 +276,7 @@
 //                 let materialNamespace = isCustomMaterial ? 'meatsalad' : 'silentgear'
 //                 let materialName = isCustomMaterial ? material.replace('meatsalad:', '') : material
 //                 let modifierTagString = modifierTag != null ? `,tag:{${modifierTag}}` : ''
-//                 global.addStack(
+//                 addStack(
 //                   pool,
 //                   {
 //                     item: `silentgear:${part}`,
@@ -333,22 +335,22 @@
 //     {
 //       weight: 400.0,
 //       quality: 0.0,
-//       conditions: [global.getWorldStageCondition({other: false})]
+//       conditions: [getWorldStageCondition({other: false})]
 //     },
 //     {
 //       weight: 320.0,
 //       quality: 1.5,
-//       conditions: [global.getWorldStageCondition({nether: true})]
+//       conditions: [getWorldStageCondition({nether: true})]
 //     },
 //     {
 //       weight: 150.0,
 //       quality: 3.0,
-//       conditions: [global.getWorldStageCondition({other: true})]
+//       conditions: [getWorldStageCondition({other: true})]
 //     },
 //     {
 //       weight: 90.0,
 //       quality: 4.5,
-//       conditions: [global.endStageCondition]
+//       conditions: [endStageCondition]
 //     },
 //   ]
 //   event.addChest(`meatsalad:parts/random`, table => {

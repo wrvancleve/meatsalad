@@ -1,3 +1,5 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
   const AncientTomes = {
     common: {
@@ -120,7 +122,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:ancient_tomes/${rarity}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'placebo:stack_entry',
             weight: 1,
@@ -147,7 +149,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:ancient_tomes/random${reversedSuffix}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'minecraft:loot_table'
           },

@@ -1,6 +1,8 @@
+//priority: 80
+
 ServerEvents.chestLootTables(event => {
-  const netherStageCondition = global.getWorldStageCondition({nether: true})
-  const otherStageCondition = global.getWorldStageCondition({other: true})
+  const netherStageCondition = getWorldStageCondition({nether: true})
+  const otherStageCondition = getWorldStageCondition({other: true})
   const Gates = {
     common: {
       weight: 620.0,
@@ -35,16 +37,16 @@ ServerEvents.chestLootTables(event => {
         { id: 'meatsalad:basalz', conditions: [otherStageCondition] },
         { id: 'meatsalad:blitz', conditions: [otherStageCondition] },
         { id: 'meatsalad:blizz', conditions: [otherStageCondition] },
-        { id: 'meatsalad:shulker', conditions: [global.endStageCondition] },
-        { id: 'gateways:hellish_fortress', conditions: [global.getWorldStageCondition({nether: true})] },
+        { id: 'meatsalad:shulker', conditions: [endStageCondition] },
+        { id: 'gateways:hellish_fortress', conditions: [getWorldStageCondition({nether: true})] },
       ]
     },
     // epic: {
     //   weight: 20.0,
     //   quality: 2.5,
-    //   conditions: [global.endStageCondition],
+    //   conditions: [endStageCondition],
     //   gates: [
-    //     { id: '', conditions: [global.endStageCondition] },
+    //     { id: '', conditions: [endStageCondition] },
     //   ]
     // }
   }
@@ -54,7 +56,7 @@ ServerEvents.chestLootTables(event => {
     event.addChest(`meatsalad:gates/${rarity}`, table => {
       table.addPool(pool => {
         pool.rolls = 1.0
-        global.addDynamic(pool,
+        addDynamic(pool,
           {
             type: 'placebo:stack_entry',
             weight: 1,
@@ -82,7 +84,7 @@ ServerEvents.chestLootTables(event => {
   event.addChest('meatsalad:gates/random', table => {
     table.addPool(pool => {
       pool.rolls = 1.0
-      global.addDynamic(pool,
+      addDynamic(pool,
         {
           type: 'minecraft:loot_table'
         },
@@ -104,19 +106,19 @@ ServerEvents.chestLootTables(event => {
 
   // Create supreme gate loot
   event.addChest('meatsalad:gates/supreme', table => {
-    global.addStackLootPool(table, {item: 'meatsalad:dark_matter', min: 2, max: 3})
+    addStackLootPool(table, {item: 'meatsalad:dark_matter', min: 2, max: 3})
     table.addPool(pool => {
       pool.rolls = [2,3]
-      global.addStack(pool, {item: 'apotheosis:mythic_material', min: 3, max: 12}, {weight: 85})
-      global.addStack(pool, {item: 'apotheosis:ancient_material', max: 4}, {weight: 15, quality: 0.5})
+      addStack(pool, {item: 'apotheosis:mythic_material', min: 3, max: 12}, {weight: 85})
+      addStack(pool, {item: 'apotheosis:ancient_material', max: 4}, {weight: 15, quality: 0.5})
     })
-    global.addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
+    addStackLootPool(table, {item: 'apotheosis:ancient_material', max: 4})
     table.addPool(pool => {
       pool.rolls = [2,3]
-      global.addLootTable(pool, {type: 'gems', name: 'mythic', weight: 85})
-      global.addLootTable(pool, {type: 'gems', name: 'ancient', weight: 15, quality: 0.5})
+      addLootTable(pool, {type: 'gems', name: 'mythic', weight: 85})
+      addLootTable(pool, {type: 'gems', name: 'ancient', weight: 15, quality: 0.5})
     })
-    global.addGemLootPool(table, {name: 'ancient', weight: null})
-    global.addAncientTomeLootPool(table, {name: 'random_reversed', weight: null})
+    addGemLootPool(table, {name: 'ancient', weight: null})
+    addAncientTomeLootPool(table, {name: 'random_reversed', weight: null})
   })
 })

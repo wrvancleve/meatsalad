@@ -1,0 +1,23 @@
+{
+  "entries": [
+    "meatsalad:boss_summoner",
+    "meatsalad:elder_guardian_spike",
+
+    "meatsalad:eyes/black",
+    "meatsalad:eyes/corrupted",
+    "meatsalad:eyes/cursed",
+    "meatsalad:eyes/evil",
+    "meatsalad:eyes/guardian",
+    "meatsalad:eyes/lost",
+    "meatsalad:eyes/magical",
+    "meatsalad:eyes/nether",
+    "meatsalad:eyes/old",
+    "meatsalad:eyes/undead",
+    "meatsalad:eyes/wither",
+
+    "meatsalad:gems/max",
+
+    "meatsalad:rewards/mythic"
+  ],
+  "replace": false
+}

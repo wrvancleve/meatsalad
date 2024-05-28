@@ -4,7 +4,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  global.removeRecipes(event, [
+  removeRecipes(event, [
     'angelring:energetic_angel_ring',
     'angelring:leadstone_angel_ring',
     'angelring:hardened_angel_ring',
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     'angelring:resonant_angel_ring',
   ])
 
-  global.replaceShaped(event, [
+  replaceShaped(event, [
     'IPI',
     'PDP',
     'UPU'
