@@ -118,7 +118,19 @@ ServerEvents.chestLootTables(event => {
       addLootTable(pool, {type: 'gems', name: 'mythic', weight: 85})
       addLootTable(pool, {type: 'gems', name: 'ancient', weight: 15, quality: 0.5})
     })
+    table.addPool(pool => {
+      pool.rolls = [2,3]
+      addStack(pool, {item: 'irons_spellbooks:legendary_ink', max: 4}, {weight: 2})
+      addStack(pool, {item: 'irons_spellbooks:ancient_knowledge_fragment', max: 3}, {weight: 1})
+    })
     addGemLootPool(table, {name: 'ancient', weight: null})
     addAncientTomeLootPool(table, {name: 'random_reversed', weight: null})
+    table.addPool(pool => {
+      pool.rolls = 1
+      addStack(pool, {item: 'minecraft:enchanted_golden_apple'}, {weight: 285})
+      addStack(pool, {item: 'mekanism:pellet_plutonium'}, {weight: 9, quality: 0.5})
+      addStack(pool, {item: 'mekanism:pellet_polonium'}, {weight: 4.5, quality: 0.5})
+      addStack(pool, {item: 'mekanism:pellet_antimatter'}, {weight: 1.5, quality: 0.5})
+    })
   })
 })
