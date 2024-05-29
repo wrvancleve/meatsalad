@@ -225,7 +225,6 @@ const unify = function (event, unifyTag, unifyRecipes) {
               recipeExclude.add(exclusion)
             }
           })
-          console.log(`${recipe.id} excludes: ${JSON.stringify(recipeExclude)}`)
         }
       }
 
