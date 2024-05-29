@@ -4,15 +4,15 @@
 	#Changing armor values requires world restart
 	[ArmorConfig.allthemodium]
 		#Allthemodium's Armor Values, in the form of [boots, leggings, chestplate, helmet]. Default: [4, 7, 9, 4]
-		armorValues = [4, 7, 9, 4]
+		armorValues = [4, 7, 9, 5]
 		#Allthemodium's Armor Toughness. Default: 4
 		toughness = 4
 		#Allthemodium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Allthemodium's Max Mana. Default: 200
-		maxMana = 200
+		maxMana = 150
 		#Allthemodium's Spell Power. Default: 0.2 (+20%)
-		spellPower = 0.2
+		spellPower = 0.08
 		#Allthemodium's Mana Regen. Default: 0.05
 		manaRegen = 0.05
 		#Allthemodium's Helmet Prevents Drowning. Default: true
@@ -40,9 +40,9 @@
 		#Vibranium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Vibranium's Max Mana. Default: 325
-		maxMana = 325
+		maxMana = 200
 		#Vibranium's Spell Power. Default: 0.3 (+30%)
-		spellPower = 0.3
+		spellPower = 0.16
 		#Vibranium's Mana Regen. Default: 0.1
 		manaRegen = 0.1
 		#Vibranium's Helmet Prevents Drowning. Default: true
@@ -70,9 +70,9 @@
 		#Unobtainium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Unobtainium's Max Mana. Default: 450
-		maxMana = 450
+		maxMana = 250
 		#Unobtainium's Spell Power. Default: 0.4 (+40%)
-		spellPower = 0.4
+		spellPower = 0.24
 		#Unobtainium's Mana Regen. Default: 0.15
 		manaRegen = 0.15
 		#Unobtainium's Helmet Prevents Drowning. Default: true

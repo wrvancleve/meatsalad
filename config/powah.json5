@@ -31,7 +31,7 @@
 			"minecraft:magma_block": 800
 		},
 		// Energy produced per fuel tick in the Furnator.
-		"energy_per_fuel_tick": 30,
+		" ": 30,
 		"energizing_range": 4,
 		/* Multiplier to the required energy applied after an energizing recipe is read.
 		   Use this to adjust the cost of ALL energizing recipes.
@@ -100,31 +100,31 @@
 		},
 		"reactors": {
 			"capacities": {
-				"starter": 250000,
-				"basic": 1000000,
-				"hardened": 2500000,
-				"blazing": 10000000,
-				"niotic": 25000000,
-				"spirited": 100000000,
-				"nitro": 500000000
+				"starter": 500000,
+				"basic": 2000000,
+				"hardened": 5000000,
+				"blazing": 20000000,
+				"niotic": 50000000,
+				"spirited": 200000000,
+				"nitro": 1000000000
 			},
 			"transfer_rates": {
-				"starter": 1000,
-				"basic": 4000,
-				"hardened": 10000,
-				"blazing": 40000,
-				"niotic": 100000,
-				"spirited": 400000,
-				"nitro": 2000000
+				"starter": 2000,
+				"basic": 8000,
+				"hardened": 20000,
+				"blazing": 80000,
+				"niotic": 200000,
+				"spirited": 800000,
+				"nitro": 4000000
 			},
 			"generation_rates": {
-				"starter": 250,
-				"basic": 1000,
-				"hardened": 2500,
-				"blazing": 10000,
-				"niotic": 25000,
-				"spirited": 100000,
-				"nitro": 500000
+				"starter": 500,
+				"basic": 2000,
+				"hardened": 5000,
+				"blazing": 20000,
+				"niotic": 50000,
+				"spirited": 200000,
+				"nitro": 1000000
 			}
 		},
 		"solar_panels": {

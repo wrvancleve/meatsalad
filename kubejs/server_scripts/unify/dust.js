@@ -79,6 +79,7 @@ ServerEvents.recipes(event => {
       type: 'mekanism:enriching',
       target: 'forge:ores/{0}',
       id: 'enriching/{0}_dusts_from_ore',
+      exclude: ['gems'],
       json: {
         input: {
           ingredient: { tag: '{0}' }

@@ -225,6 +225,7 @@ const unify = function (event, unifyTag, unifyRecipes) {
               recipeExclude.add(exclusion)
             }
           })
+          console.log(`${recipe.id} excludes: ${JSON.stringify(recipeExclude)}`)
         }
       }
 
@@ -405,6 +406,16 @@ ServerEvents.recipes(event => {
       result: [ { item: output, count: 9 } ]
     }).id(`meatsalad:press/unpacking/${outputItem}_from_${inputAlias}s`)
   }
+  let crush = (input, output) => {
+    const recipeId = `${output.id.split(':').pop()}_from_${input.id.split(':').pop()}`
+    event.custom({
+      type: 'mekanism:crushing',
+      input: {
+        ingredient: input
+      },
+      output: output
+    }).id(`meatsalad:crushing/${recipeId}`)
+  }
 
   // Misc recipes
   pack('meatsalad:chaos_shard', 'meatsalad:chaos_crystal')
@@ -413,5 +424,31 @@ ServerEvents.recipes(event => {
   unpack('meatsalad:ender_star', 'meatsalad:ender_star_fragment')
   pack('meatsalad:infinity_fiber', 'meatsalad:infinity_fabric')
   unpack('meatsalad:infinity_fabric', 'meatsalad:infinity_fiber')
-})
 
+  // Missing crushing recipes
+  const missingCrushRecipes = [
+    {
+      input: Item.of('minecraft:blaze_rod'),
+      output: Item.of('minecraft:blaze_powder', 3)
+    },
+    {
+      input: Item.of('thermal:basalz_rod'),
+      output: Item.of('thermal:basalz_powder', 3)
+    },
+    {
+      input: Item.of('thermal:blitz_rod'),
+      output: Item.of('thermal:blitz_powder', 3)
+    },
+    {
+      input: Item.of('thermal:blizz_rod'),
+      output: Item.of('thermal:blizz_powder', 3)
+    },
+    {
+      input: Item.of('minecraft:ender_pearl'),
+      output: Item.of('thermal:ender_pearl_dust')
+    },
+  ]
+  missingCrushRecipes.forEach(missingCrushRecipe => {
+    crush(missingCrushRecipe.input, missingCrushRecipe.output)
+  })
+})

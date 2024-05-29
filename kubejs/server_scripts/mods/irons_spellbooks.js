@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
   replaceShaped(event, [
     'Tsi',
     'Bbp',
-    'BBD'
+    'BBT'
   ], {
     i: 'irons_spellbooks:arcane_ingot',
     s: 'irons_spellbooks:arcane_salvage',
@@ -97,7 +97,6 @@ ServerEvents.recipes(event => {
     p: 'irons_spellbooks:magic_cloth',
     b: 'irons_spellbooks:ruined_book',
     B: 'irons_spellbooks:hogskin',
-    D: 'meatsalad:dark_matter',
   }, Item.of('irons_spellbooks:netherite_spell_book'))
 
   replaceShaped(event, [
@@ -107,11 +106,11 @@ ServerEvents.recipes(event => {
   ], {
     i: 'irons_spellbooks:arcane_ingot',
     s: 'irons_spellbooks:arcane_salvage',
-    T: 'quark:dragon_scale',
+    D: 'quark:dragon_scale',
     p: 'irons_spellbooks:magic_cloth',
     b: 'irons_spellbooks:ruined_book',
     B: 'irons_spellbooks:hogskin',
-    D: 'meatsalad:dark_matter',
+    T: '#forge:ingots/netherite',
   }, Item.of('irons_spellbooks:dragonskin_spell_book'))
 
   event.custom({

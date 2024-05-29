@@ -34,12 +34,12 @@
       "ranged_speed": 0.3,
       "projectile_speed": 1.3,
       "projectile_accuracy": 1.2,
-      "armor": 25.0,
-      "armor/helmet": 5.0,
-      "armor/chestplate": 9.0,
-      "armor/leggings": 7.0,
-      "armor/boots": 4.0,
-      "armor_toughness": 12.0,
+      "armor": 32.0,
+      "armor/helmet": 6.0,
+      "armor/chestplate": 11.0,
+      "armor/leggings": 9.0,
+      "armor/boots": 6.0,
+      "armor_toughness": 20.0,
       "magic_armor": 8.0
     },
     "tip": {

@@ -286,3 +286,42 @@ const earlyStageCondition = getWorldStageCondition(false)
 const midStageCondition = getWorldStageCondition({nether: true, other: false, end: false})
 const lateStageCondition = getWorldStageCondition({other: true, end: false})
 const endStageCondition = getWorldStageCondition({end: true})
+
+const createGooReplication = (event, itemId, itemNbt, itemNbtAlias) => {
+  const itemName = itemId.split(':').pop()
+  if (itemNbt != null) {
+    event.shaped(Item.of(itemId, 2, itemNbt).strongNBT(), [
+      ' M ',
+      'MIM',
+      ' M '
+    ], {
+      M: 'alexsmobs:mimicream',
+      I: Item.of(itemId, itemNbt).strongNBT()
+    }).id(`meatsalad:goo_replication/2x/${itemNbtAlias}_${itemName}`)
+    event.shaped(Item.of(itemId, 4, itemNbt).strongNBT(), [
+      'MMM',
+      'MIM',
+      'MMM'
+    ], {
+      M: 'alexsmobs:mimicream',
+      I: Item.of(itemId, itemNbt).strongNBT()
+    }).id(`meatsalad:goo_replication/4x/${itemNbtAlias}_${itemName}`)
+  } else {
+    event.shaped(Item.of(itemId, 2), [
+      ' M ',
+      'MIM',
+      ' M '
+    ], {
+      M: 'alexsmobs:mimicream',
+      I: itemId
+    }).id(`meatsalad:goo_replication/2x/${itemName}`)
+    event.shaped(Item.of(itemId, 4), [
+      'MMM',
+      'MIM',
+      'MMM'
+    ], {
+      M: 'alexsmobs:mimicream',
+      I: itemId
+    }).id(`meatsalad:goo_replication/4x/${itemName}`)
+  }
+}
