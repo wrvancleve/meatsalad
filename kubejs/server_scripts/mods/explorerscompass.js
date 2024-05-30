@@ -1,11 +1,13 @@
 ServerEvents.recipes(event => {
   replaceShaped(event, [
-    'NAN',
-    'ACA',
-    'NAN'
+    'rLr',
+    'SCS',
+    'RSR'
   ], {
-    A: '#forge:ingots/allthemodium',
-    N: '#forge:ingots/netherite',
-    C: 'naturescompass:naturescompass',
+    r: 'minecraft:repeater',
+    L: 'minecraft:lodestone',
+    S: '#minecraft:stone_bricks',
+    C: 'minecraft:compass',
+    R: 'minecraft:comparator'
   }, Item.of('explorerscompass:explorerscompass'), 'explorers_compass')
 })
