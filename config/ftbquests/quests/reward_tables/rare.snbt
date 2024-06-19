@@ -35,7 +35,6 @@
 		{ count: 8, item: "minecraft:obsidian", random_bonus: 8, weight: 2.0f }
 		{ item: "minecraft:ghast_tear", random_bonus: 3, weight: 2.0f }
 		{ item: "minecraft:budding_amethyst", random_bonus: 2 }
-		{ item: "ae2:flawless_budding_quartz" }
 		{ item: "waystones:waystone" }
 		{ count: 2, item: "apotheosis:rare_material", random_bonus: 4 }
 		{ item: "irons_spellbooks:rare_ink", random_bonus: 2 }

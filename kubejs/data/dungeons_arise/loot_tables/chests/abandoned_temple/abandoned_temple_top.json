@@ -23,7 +23,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/gear/random",
+          "name": "meatsalad:gear/random_chance",
           "weight": 3
         }
       ]

@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 150.0,
+          "min": 2,
+          "max": 7,
+          "stack": {
+            "item": "minecraft:iron_ingot"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 100.0,
+          "quality": 1.0,
+          "min": 2,
+          "max": 7,
+          "stack": {
+            "item": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 50.0,
+          "quality": 2.0,
+          "min": 2,
+          "max": 6,
+          "stack": {
+            "item": "minecraft:diamond"
+          }
+        }
+      ]
+    }
+  ]
+}

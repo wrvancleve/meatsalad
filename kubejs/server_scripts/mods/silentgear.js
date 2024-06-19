@@ -14,26 +14,21 @@ ServerEvents.tags('item', event => {
     '#forge:gems/diamond',
     '#forge:ingots/electrum',
     '#forge:gems/emerald',
-    '#forge:ingots/enderium',
     '#forge:ingots/gold',
     '#forge:ingots/invar',
     '#forge:ingots/iron',
     '#forge:leather',
-    '#forge:ingots/lumium',
     'silentgear:netherwood_planks',
     '#forge:obsidian',
     '#forge:ingots/platinum',
     '#forge:ingots/refined_obsidian',
-    '#forge:ingots/signalum',
     '#forge:ingots/silver',
     '#forge:ingots/steel',
     '#forge:cobblestone',
     '#forge:ingots/tyrian_steel',
 
-    '#forge:ingots/adamantite',
     '#forge:ingots/allthemodium',
     '#forge:gems/peridot',
-    '#forge:ingots/mythril',
     '#forge:gems/ruby',
     '#forge:gems/sapphire',
     '#forge:ingots/unobtainium',
@@ -141,7 +136,6 @@ ServerEvents.tags('item', event => {
     'minecraft:phantom_membrane',
     'minecraft:slime_block',
 
-    'alexsmobs:mimicream',
     'irons_spellbooks:magic_cloth',
   ]
   silentGearLiningMaterials.forEach(silentGearLiningMaterial =>
@@ -352,16 +346,4 @@ ServerEvents.recipes(event => {
     B: '#forge:dusts/blaze_gold',
     E: 'meatsalad:ender_star_fragment'
   }, Item.of('silentgear:starmetal_dust'))
-
-  replaceShaped(event, [
-    'QGQ',
-    'PDP',
-    'PBP'
-  ], {
-    Q: '#forge:storage_blocks/quartz',
-    G: '#forge:glass/colorless',
-    P: 'minecraft:polished_blackstone',
-    D: 'meatsalad:dark_matter',
-    B: '#forge:storage_blocks/blaze_gold'
-  }, Item.of('silentgear:starlight_charger'))
 })

@@ -513,7 +513,7 @@
 			subtitle: "Obtain an Elder Guardian Spike"
 			tasks: [{
 				id: "35B9FDA5117B3E34"
-				item: "progressivebosses:elder_guardian_spike"
+				item: "meatsalad:elder_guardian_spike"
 				type: "item"
 			}]
 			title: "Elder Guardian Spike"

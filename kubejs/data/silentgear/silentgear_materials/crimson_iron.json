@@ -21,7 +21,7 @@
   },
   "stats": {
     "main": {
-      "durability": 448.0,
+      "durability": 420.0,
       "armor_durability": 27.0,
       "enchantment_value": 14.0,
       "rarity": 31.0,
@@ -29,7 +29,7 @@
       "repair_value": 0.5,
       "harvest_speed": 8.0,
       "melee_damage": 3.0,
-      "magic_damage": 3.0,
+      "magic_damage": 1.0,
       "attack_speed": -0.1,
       "ranged_damage": 2.0,
       "ranged_speed": -0.1,
@@ -41,7 +41,7 @@
       "armor/leggings": 5.0,
       "armor/boots": 3.0,
       "armor_toughness": 2.0,
-      "magic_armor": 6.0
+      "magic_armor": 4.0
     },
     "rod": {},
     "tip": {

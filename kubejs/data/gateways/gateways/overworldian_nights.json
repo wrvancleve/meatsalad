@@ -291,7 +291,7 @@
             "type": "gateways:loot_table",
             "loot_table": "dungeoncrawl:chests/stage_5",
             "rolls": 10,
-            "desc": "rewards.gateways.loot_table.stage_5_dungeon"
+            "desc": "rewards.meatsalad.loot_table.stage_5_dungeon"
         }
     ],
     "failures": [

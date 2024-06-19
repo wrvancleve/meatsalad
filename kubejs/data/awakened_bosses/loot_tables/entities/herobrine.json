@@ -36,7 +36,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/gems/ancient",
+          "name": "meatsalad:gems/ancient",
           "weight": 1
         }
       ]

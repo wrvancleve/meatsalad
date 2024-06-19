@@ -1,23 +1,30 @@
 {
   "entries": [
-    "meatsalad:boss_summoner",
     "meatsalad:elder_guardian_spike",
 
-    "meatsalad:eyes/black",
+    "meatsalad:ancient_tomes/random_chance",
+
+    "meatsalad:blueprints/permanent",
+    "meatsalad:blueprints/random",
+
     "meatsalad:eyes/corrupted",
     "meatsalad:eyes/cursed",
-    "meatsalad:eyes/evil",
-    "meatsalad:eyes/guardian",
-    "meatsalad:eyes/lost",
     "meatsalad:eyes/magical",
     "meatsalad:eyes/nether",
     "meatsalad:eyes/old",
-    "meatsalad:eyes/undead",
-    "meatsalad:eyes/wither",
+
+    "meatsalad:gates/random",
+    "meatsalad:gates/random_chance",
+
+    "meatsalad:gear/affixed/random_treasure",
 
     "meatsalad:gems/max",
+    "meatsalad:gems/random",
+    "meatsalad:gems/random_chance",
 
-    "meatsalad:rewards/mythic"
+    "meatsalad:misc/boss_summoner_chance",
+    "meatsalad:misc/mythic_reward",
+    "meatsalad:misc/red_heart_chance"
   ],
   "replace": false
 }

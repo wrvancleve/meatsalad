@@ -14,6 +14,10 @@
         },
         {
           "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/bastion_treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
           "loot_table_id": "minecraft:chests/end_city_treasure"
         },
         {
@@ -43,10 +47,6 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/ceryneian_hind/ceryneian_hind_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/foundry/foundry_treasure"
         },
         {
           "condition": "forge:loot_table_id",

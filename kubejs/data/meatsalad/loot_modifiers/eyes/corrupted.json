@@ -10,10 +10,6 @@
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_campsite/illager_campsite_tent"
-        },
-        {
-          "condition": "forge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/illager_corsair/illager_corsair_barrels"
         },
         {

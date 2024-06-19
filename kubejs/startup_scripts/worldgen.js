@@ -13,9 +13,11 @@ WorldgenEvents.remove(event => {
     'allthemodium:ore_lapis',
     'allthemodium:ore_netherite',
     'allthemodium:allthemodium_mining',
+    'allthemodium:allthemodium_ore',
     'allthemodium:ore_quartz_nether',
     'allthemodium:ore_redstone',
     'allthemodium:ore_redstone_lower',
+    'allthemodium:other_vibranium_ore',
     'allthemodium:vibranium_ore',
     'alltheores:ore_aluminum_placed',
     'alltheores:ore_iridium_placed',
@@ -44,38 +46,6 @@ WorldgenEvents.remove(event => {
 /*
 WorldgenEvents.add(event => {
   const { anchors } = event
-  event.addOre((ore) => {
-    ore.id = "meatsalad:end_adamantite"
-    ore.biomes = ['nullscape:void_barrens']
-    ore.addTarget('minecraft:basalt', 'meatsalad:adamantite_basalt_ore')
-    ore.addTarget('minecraft:blackstone', 'meatsalad:adamantite_blackstone_ore')
-    ore.size(3)
-    ore.count([3,5])
-        .squared()
-        .triangleHeight(
-            anchors.aboveBottom(8),
-            anchors.belowTop(8)
-        )
-    ore.noSurface = 1.0
-    ore.worldgenLayer = 'underground_ores'
-    //ore.chance = 3
-  })
-  event.addOre((ore) => {
-    ore.id = "meatsalad:end_mythril"
-    ore.biomes = ['nullscape:void_barrens']
-    ore.addTarget('minecraft:basalt', 'meatsalad:mythril_basalt_ore')
-    ore.addTarget('minecraft:blackstone', 'meatsalad:mythril_blackstone_ore')
-    ore.size(3)
-    ore.count([3,5])
-        .squared()
-        .triangleHeight(
-            anchors.aboveBottom(8),
-            anchors.belowTop(8)
-        )
-    ore.noSurface = 1.0
-    ore.worldgenLayer = 'underground_ores'
-    //ore.chance = 3
-  })
   event.addOre((ore) => {
     ore.id = "meatsalad:mining_thermal_apatite"
     ore.biomes = ['allthemodium:mining']

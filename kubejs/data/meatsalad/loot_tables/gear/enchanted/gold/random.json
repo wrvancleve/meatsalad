@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/enchanted/gold/level_20",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/hellshelf": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/enchanted/gold/level_30",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/hellshelf": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gear/enchanted/gold/level_40",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 40,
+              "treasure": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/hellshelf": true,
+                    "meatsalad:stage/deepshelf": false,
+                    "meatsalad:stage/endshelf": false
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

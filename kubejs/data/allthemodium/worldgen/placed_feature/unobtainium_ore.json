@@ -2,6 +2,10 @@
   "feature": "allthemodium:unobtainium_ore",
   "placement": [
     {
+      "count": 3,
+      "type": "minecraft:count"
+    },
+    {
       "type": "minecraft:in_square"
     },
     {

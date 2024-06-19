@@ -16,9 +16,27 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Obtained by killing The Harbinger in Ancient Factories of the Overworld"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "endrem:black_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7CDE0E4990A47862"
 			rewards: [
+				{
+					id: "0382A7ABF7B9FE6A"
+					item: {
+						Count: 1b
+						id: "endrem:black_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					auto: "invisible"
 					id: "1EEE4E91322C902D"
@@ -32,17 +50,15 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Black Eye"
+			subtitle: "Kill The Harbinger in Ancient Factories of the Overworld"
 			tasks: [{
-				id: "249CB79AFF035597"
-				item: {
-					Count: 1b
-					id: "endrem:black_eye"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				disable_toast: true
+				entity: "cataclysm:the_harbinger"
+				icon: "cataclysm:the_harbinger_spawn_egg"
+				id: "6327A07CFCBD70F5"
+				title: "Kill: The Harbinger"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Black Eye"
 			x: 0.0d
@@ -115,9 +131,27 @@
 			y: -2.5d
 		}
 		{
-			description: ["Obtained by killing the Ancient Remnant in the Overworld Cursed Pyramid"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "endrem:lost_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "12B9E1F1D5C40C70"
 			rewards: [
+				{
+					id: "13A52380567422B0"
+					item: {
+						Count: 1b
+						id: "endrem:lost_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					auto: "invisible"
 					id: "64F5B80D930086D2"
@@ -131,26 +165,42 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Lost Eye"
+			subtitle: "Kill The Ancient Remnant in the Overworld Cursed Pyramid"
 			tasks: [{
-				id: "6B086588997435CE"
-				item: {
-					Count: 1b
-					id: "endrem:lost_eye"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				disable_toast: true
+				entity: "cataclysm:ancient_remnant"
+				icon: "cataclysm:ancient_remnant_spawn_egg"
+				id: "7F8677BE745896C8"
+				title: "Kill: Ancient Remnant"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Lost Eye"
 			x: 2.0d
 			y: -2.5d
 		}
 		{
-			description: ["Obtained by killing the Elder Guardian"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "endrem:guardian_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "64419370C70B7567"
 			rewards: [
+				{
+					id: "0FDA5D8A2E144E5A"
+					item: {
+						Count: 1b
+						id: "endrem:guardian_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					auto: "invisible"
 					id: "2AFAFDB4BFB2B3F8"
@@ -164,26 +214,42 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Guardian Eye"
+			subtitle: "Kill an Elder Guardian in an Ocean Monument"
 			tasks: [{
-				id: "1ED5E30F98F461DA"
-				item: {
-					Count: 1b
-					id: "endrem:guardian_eye"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				disable_toast: true
+				entity: "minecraft:elder_guardian"
+				icon: "minecraft:elder_guardian_spawn_egg"
+				id: "23E4B4E21A12C906"
+				title: "Kill: Elder Guardian"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Guardian Eye"
 			x: -2.0d
 			y: -2.5d
 		}
 		{
-			description: ["Obtained by killing the Dead King in Catacombs (Overworld Dimension)"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "endrem:undead_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "2CE91A7A76E8DD3B"
 			rewards: [
+				{
+					id: "1FF86925CB75BD9F"
+					item: {
+						Count: 1b
+						id: "endrem:undead_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					auto: "invisible"
 					id: "633B6A00E0E64F49"
@@ -197,26 +263,42 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain an Undead Eye"
+			subtitle: "Kill The Dead King in Catacombs (Overworld Dimension)"
 			tasks: [{
-				id: "0443FBC5AFA4D470"
-				item: {
-					Count: 1b
-					id: "endrem:undead_eye"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				disable_toast: true
+				entity: "irons_spellbooks:dead_king"
+				icon: "irons_spellbooks:dead_king_corpse_spawn_egg"
+				id: "1C1DF66748BDE1BB"
+				title: "Kill: The Dead King"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Undead Eye"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
-			description: ["Obtained by killing Netherite Monstrosity in Soul Black Smiths of the Nether"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "endrem:evil_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "59B4BE881EB41531"
 			rewards: [
+				{
+					id: "6E170790B5768DD4"
+					item: {
+						Count: 1b
+						id: "endrem:evil_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					auto: "invisible"
 					id: "0096512AB2D4CACC"
@@ -230,17 +312,15 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain an Evil Eye"
+			subtitle: "Kill Netherite Monstrosity in Soul Black Smiths of the Nether"
 			tasks: [{
-				id: "50915380722D0F5F"
-				item: {
-					Count: 1b
-					id: "endrem:evil_eye"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				disable_toast: true
+				entity: "cataclysm:netherite_monstrosity"
+				icon: "cataclysm:netherite_monstrosity_spawn_egg"
+				id: "2193D5F6B4826399"
+				title: "Kill: Netherite Monstrosity"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Evil Eye"
 			x: -4.0d
@@ -490,9 +570,11 @@
 					xp: 100
 				}
 			]
-			subtitle: "Kill The Wither"
+			subtitle: "Summon and kill The Wither"
 			tasks: [{
+				disable_toast: true
 				entity: "minecraft:wither"
+				icon: "minecraft:wither_spawn_egg"
 				id: "027ED381F7831A15"
 				title: "Kill: Wither"
 				type: "kill"
@@ -558,9 +640,11 @@
 			]
 			subtitle: "Kill a Warden"
 			tasks: [{
+				disable_toast: true
 				entity: "minecraft:warden"
-				icon: "minecraft:sculk_shrieker"
+				icon: "minecraft:warden_spawn_egg"
 				id: "4D161BAEA7547B22"
+				title: "Kill: Warden"
 				type: "kill"
 				value: 1L
 			}]

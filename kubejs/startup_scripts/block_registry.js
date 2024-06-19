@@ -75,14 +75,6 @@ StartupEvents.registry('block', event => {
     }
   }
 
-  createBlock('adamantite', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('mythril', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
   createBlock('starmetal', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
   createBlock('neutronium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG)
   createBlock('abiding_alloy', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)

@@ -97,5 +97,11 @@
       "allthemodium:allthemodium_leggings",
       "allthemodium:allthemodium_boots"
     ]
+  },
+  {
+    "mob": "quark:forgotten",
+    "remove": [
+      "quark:forgotten_hat"
+    ]
   }
 ]

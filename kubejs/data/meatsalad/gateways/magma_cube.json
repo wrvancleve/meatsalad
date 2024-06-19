@@ -9,7 +9,7 @@
           "nbt": {
             "Size": 1
           },
-          "count": 3
+          "count": 5
         }
       ],
       "rewards": [
@@ -32,7 +32,7 @@
           "nbt": {
             "Size": 3
           },
-          "count": 4
+          "count": 5
         }
       ],
       "modifiers": [
@@ -82,7 +82,7 @@
           "nbt": {
             "Size": 3
           },
-          "count": 5
+          "count": 7
         }
       ],
       "modifiers": [
@@ -132,7 +132,7 @@
           "nbt": {
             "Size": 3
           },
-          "count": 6
+          "count": 7
         }
       ],
       "modifiers": [
@@ -182,14 +182,14 @@
           "nbt": {
             "Size": 7
           },
-          "count": 1
+          "count": 2
         },
         {
           "entity": "minecraft:magma_cube",
           "nbt": {
             "Size": 3
           },
-          "count": 6
+          "count": 8
         }
       ],
       "modifiers": [

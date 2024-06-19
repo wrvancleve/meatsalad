@@ -1,0 +1,90 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_materials/uranium"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "industrialforegoing:laser_drill_ore",
+        "catalyst": {
+          "item": "industrialforegoing:laser_lens5"
+        },
+        "output": {
+          "tag": "forge:raw_materials/uranium"
+        },
+        "pointer": 0,
+        "rarity": [
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": -7,
+            "depth_max": 0,
+            "weight": 6
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 1,
+            "depth_max": 8,
+            "weight": 4
+          },
+          {
+            "whitelist": {},
+            "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:nether_wastes",
+                "minecraft:basalt_deltas",
+                "minecraft:warped_forest",
+                "minecraft:crimson_forest",
+                "minecraft:soul_sand_valley",
+                "allthemodium:mining",
+                "minecraft:the_end",
+                "minecraft:the_void",
+                "minecraft:small_end_islands",
+                "minecraft:end_barrens",
+                "minecraft:end_highlands",
+                "minecraft:end_midlands",
+                "nullscape:void_barrens",
+                "nullscape:shadowlands",
+                "nullscape:crystal_peaks"
+              ]
+            },
+            "depth_min": -63,
+            "depth_max": 196,
+            "weight": 3
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 9,
+            "depth_max": 175,
+            "weight": 2
+          }
+        ]
+      }
+    }
+  ]
+}

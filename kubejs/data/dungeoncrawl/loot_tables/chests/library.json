@@ -79,7 +79,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/enchanted_books/random",
+          "name": "meatsalad:enchanted_books/random",
           "weight": 5
         }
       ]

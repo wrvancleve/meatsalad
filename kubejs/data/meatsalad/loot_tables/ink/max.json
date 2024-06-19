@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "irons_spellbooks:rare_ink"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": false,
+                    "meatsalad:stage/the_other": false,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "irons_spellbooks:epic_ink"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "irons_spellbooks:legendary_ink"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

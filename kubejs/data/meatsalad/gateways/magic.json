@@ -1,0 +1,466 @@
+{
+    "size": "large",
+    "color": "#0077C0",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 3
+                }
+            ],
+            "modifiers": [],
+            "rewards": [],
+            "max_wave_time": 600,
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                }
+            ],
+            "modifiers": [],
+            "rewards": [],
+            "max_wave_time": 600,
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 600,
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 900,
+            "setup_time": 150
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 900,
+            "setup_time": 150
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 900,
+            "setup_time": 150
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 2
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "count": 2
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "desc": "name.gateways.corrupted_archevoker",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.corrupted_archevoker\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "attribute": "irons_spellbooks:spell_power",
+                            "operation": "multiply_base",
+                            "value": 0.2
+                        }
+                    ],
+                    "count": 1,
+                    "finalize_spawn": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 1200,
+            "setup_time": 200
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "count": 1
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "desc": "name.gateways.corrupted_archevoker",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.corrupted_archevoker\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "attribute": "irons_spellbooks:spell_power",
+                            "operation": "multiply_base",
+                            "value": 0.2
+                        }
+                    ],
+                    "count": 2,
+                    "finalize_spawn": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 3
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 1500,
+            "setup_time": 200
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 4
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "desc": "name.gateways.corrupted_archevoker",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.corrupted_archevoker\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "attribute": "irons_spellbooks:spell_power",
+                            "operation": "multiply_base",
+                            "value": 0.2
+                        }
+                    ],
+                    "count": 2,
+                    "finalize_spawn": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 3
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 1800,
+            "setup_time": 200
+        },
+        {
+            "entities": [
+                {
+                    "entity": "irons_spellbooks:necromancer",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:citadel_keeper",
+                    "count": 5
+                },
+                {
+                    "entity": "irons_spellbooks:archevoker",
+                    "desc": "name.gateways.corrupted_archevoker",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.corrupted_archevoker\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "attribute": "irons_spellbooks:spell_power",
+                            "operation": "multiply_base",
+                            "value": 0.2
+                        }
+                    ],
+                    "count": 3,
+                    "finalize_spawn": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 3
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [],
+            "max_wave_time": 2400,
+            "setup_time": 200
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "meatsalad:gates/magic",
+            "rolls": 1,
+            "desc": "rewards.meatsalad.loot_table.magic"
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:explosion",
+            "strength": 4,
+            "fire": true,
+            "block_damage": true
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "irons_spellbooks:necromancer",
+                "count": 2
+            }
+        }
+    ]
+}

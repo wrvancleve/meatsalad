@@ -1,0 +1,108 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"gateways:basic/blaze\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"gateways:basic/enderman\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"gateways:basic/slime\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:magma_cube\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:witch\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:wither_skeleton\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

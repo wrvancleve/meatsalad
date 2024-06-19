@@ -1,6 +1,4 @@
 global.mekStackAdditions = [
-  { material: 'adamantite', color: '#EC1321' },
-  { material: 'mythril', color: '#64EAFB' },
   { material: 'crimson_iron', color:'#fc9aad', onlyMekItems: true },
   { material: 'azure_silver', color:'#e89ffc', onlyMekItems: true }
 ]
@@ -135,6 +133,8 @@ StartupEvents.registry('item', event => {
   INFUSETYPE.register($EventBuses.getModEventBus('kubejs').get())
 
   createTaggedItem('amethyst', 'dust')
+
+  createItem('elder_guardian_spike')
 
   createTaggedItem('dimensional_shard', 'gem')
   createTaggedItem('dimensional_shard', 'dust')

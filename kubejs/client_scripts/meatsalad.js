@@ -1,13 +1,9 @@
 ClientEvents.lang('en_us', event => {
   // Materials
-  event.add('meatsalad', 'material.meatsalad.adamantite', 'Adamantite')
   event.add('meatsalad', 'material.meatsalad.arcane_cloth', 'Arcane Cloth')
-  event.add('meatsalad', 'material.meatsalad.cobalt', 'Cobalt')
   event.add('meatsalad', 'material.meatsalad.dragon_scale', 'Dragon Scale')
   event.add('meatsalad', 'material.meatsalad.echo', 'Echo')
   event.add('meatsalad', 'material.meatsalad.infinity', 'Infinity')
-  event.add('meatsalad', 'material.meatsalad.mystery_goo', 'Mystery Goo')
-  event.add('meatsalad', 'material.meatsalad.mythril', 'Mythril')
   event.add('meatsalad', 'material.meatsalad.allthemodium', 'Palladium')
   event.add('meatsalad', 'material.meatsalad.peridot', 'Peridot')
   event.add('meatsalad', 'material.meatsalad.ruby', 'Ruby')
@@ -25,10 +21,20 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'meatsalad.shulker', 'Shulker Gateway')
   event.add('meatsalad', 'meatsalad.skeleton', 'Skeleton Gateway')
   event.add('meatsalad', 'meatsalad.spider', 'Spider Gateway')
+  event.add('meatsalad', 'meatsalad.stronghold', 'Stronghold Gateway')
   event.add('meatsalad', 'meatsalad.supreme', '§kSupreme§r Gateway')
   event.add('meatsalad', 'meatsalad.witch', 'Witch Gateway')
   event.add('meatsalad', 'meatsalad.wither_skeleton', 'Wither Skeleton Gateway')
   event.add('meatsalad', 'meatsalad.zombie', 'Zombie Gateway')
+  event.add('meatsalad', 'name.gateways.corrupted_husk', 'Corrupted Husk')
+  event.add('meatsalad', 'name.gateways.corrupted_vindicator', 'Corrupted Vindicator')
+  event.add('meatsalad', 'name.gateways.corrupted_archevoker', 'Corrupted Archevoker')
+  
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.stage_5_dungeon', 'Overworld Dungeon Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.stronghold', 'Stronghold Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.magic', 'Magic Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.otherside', 'The Other Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.outer_end', 'End Loot')
   event.add('meatsalad', 'rewards.meatsalad.loot_table.supreme', '§kSupreme§r Loot')
 
   // Extra Summon Entity Names
