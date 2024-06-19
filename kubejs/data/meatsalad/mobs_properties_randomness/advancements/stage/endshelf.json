@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "endshelf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "apotheosis:endshelf"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.meatsalad.endshelf.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "apotheosis:endshelf"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.meatsalad.endshelf.title"
+    }
+  },
+  "requirements": [
+    [
+      "endshelf"
+    ]
+  ]
+}

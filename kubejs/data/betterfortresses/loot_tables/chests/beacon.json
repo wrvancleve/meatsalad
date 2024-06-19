@@ -49,7 +49,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/gear/bow/random_treasure"
+          "name": "meatsalad:gear/enchanted/bow/random_treasure"
         }
       ]
     }

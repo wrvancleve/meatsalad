@@ -203,7 +203,7 @@
   "rewards": [
     {
       "type": "gateways:loot_table",
-      "loot_table": "meatsalad:chests/gates/supreme",
+      "loot_table": "meatsalad:gates/supreme",
       "rolls": 1,
       "desc": "rewards.meatsalad.loot_table.supreme"
     },

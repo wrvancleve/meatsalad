@@ -7,7 +7,7 @@
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:ores/azure_silver"
+            "tag": "forge:raw_materials/azure_silver"
           }
         }
       ],
@@ -17,7 +17,7 @@
           "item": "industrialforegoing:laser_lens10"
         },
         "output": {
-          "tag": "forge:ores/azure_silver"
+          "tag": "forge:raw_materials/azure_silver"
         },
         "pointer": 0,
         "rarity": [

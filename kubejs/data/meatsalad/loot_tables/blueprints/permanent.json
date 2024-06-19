@@ -1,0 +1,17 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "max": 5,
+          "stack": {
+            "item": "silentgear:blueprint_paper"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/mythic",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/ancient",
+          "weight": 15,
+          "quality": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -41,7 +41,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/gear/random_treasure"
+          "name": "meatsalad:gear/affixed/random_treasure"
         }
       ]
     },
@@ -114,12 +114,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 10
-        },
-        {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/enchanted_books/random"
+          "name": "meatsalad:enchanted_books/random"
         }
       ]
     },

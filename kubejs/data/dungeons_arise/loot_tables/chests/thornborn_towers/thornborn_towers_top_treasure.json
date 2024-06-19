@@ -50,7 +50,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/gear/random_treasure"
+          "name": "meatsalad:gear/affixed/random_treasure"
         }
       ]
     },
@@ -58,26 +58,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 12,
-                "max": 32
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 1
-        },
-        {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/enchanted_books/random_treasure",
-          "weight": 2
+          "name": "meatsalad:enchanted_books/random_treasure"
         }
       ]
     },

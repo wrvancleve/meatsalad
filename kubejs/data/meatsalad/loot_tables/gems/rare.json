@@ -1,0 +1,262 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/ballast\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/brawlers\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/breach\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/combatant\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/guardian\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:lightning\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/lunar\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/samurai\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/slipstream\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/solar\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/splendor\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/tyrannical\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 12.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:core/warlord\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5.0,
+          "quality": 1.5,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:overworld/earth\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5.0,
+          "quality": 1.5,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:overworld/royalty\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5.0,
+          "quality": 1.5,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:the_nether/blood_lord\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 5.0,
+          "quality": 1.5,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"apotheosis:the_nether/inferno\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:blood\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:cast_time\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:cooldown\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:evocation\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:fire\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:holy\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:ice\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:intelligent\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:nature\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:spell_resist\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1.0,
+          "quality": 1.25,
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:rare\"},gem:\"irons_spellbooks:summoning\"}"
+          }
+        }
+      ]
+    }
+  ]
+}

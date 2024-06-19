@@ -13,10 +13,10 @@
           "attribute": "irons_spellbooks:max_mana",
           "operation": 0,
           "value": [
-            25,
-            50,
             100,
+            125,
             150,
+            175,
             200
           ]
         }

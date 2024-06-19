@@ -87,10 +87,6 @@
           ],
           "name": "minecraft:book",
           "weight": 5
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/spells/random"
         }
       ],
       "conditions": [

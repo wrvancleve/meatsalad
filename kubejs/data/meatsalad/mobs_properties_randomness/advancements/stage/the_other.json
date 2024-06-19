@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "entered_other": {
+      "conditions": {
+        "to": "allthemodium:the_other"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.meatsalad.the_other.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "allthemodium:ancient_stone"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.meatsalad.the_other.title"
+    }
+  },
+  "requirements": [
+    [
+      "entered_other"
+    ]
+  ]
+}

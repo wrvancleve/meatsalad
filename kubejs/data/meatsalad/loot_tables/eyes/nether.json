@@ -2,15 +2,13 @@
   "pools": [
     {
       "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 30,
-          "min": 1,
-          "max": 1,
+          "weight": 30.0,
           "stack": {
-            "item": "endrem:nether_eye",
-            "count": 1
+            "item": "endrem:nether_eye"
           },
           "conditions": [
             {
@@ -28,8 +26,8 @@
           ]
         },
         {
-          "type": "empty",
-          "weight": 70
+          "type": "minecraft:empty",
+          "weight": 70.0
         }
       ]
     }

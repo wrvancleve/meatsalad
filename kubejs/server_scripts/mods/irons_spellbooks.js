@@ -1,3 +1,13 @@
+ServerEvents.tags('block', event => {
+  event.add('forge:ores', 'irons_spellbooks:arcane_debris')
+  event.add('forge:ores/arcane_salvage', 'irons_spellbooks:arcane_debris')
+})
+
+ServerEvents.tags('item', event => {
+  event.add('forge:ores', 'irons_spellbooks:arcane_debris')
+  event.add('forge:ores/arcane_salvage', 'irons_spellbooks:arcane_debris')
+})
+
 ServerEvents.recipes(event => {
   removeRecipes(event, [
     'irons_spellbooks:alchemist_cauldron',
@@ -135,63 +145,4 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('meatsalad:smelter/arcane_salvage_from_debris')
-})
-
-ServerEvents.chestLootTables(event => {
-  event.addChest('meatsalad:spells/random', table => {
-    table.addPool(pool => {
-      addStack(pool,
-        { item: 'irons_spellbooks:scroll' },
-        { 
-          functions: [{
-            function: 'irons_spellbooks:randomize_spell',
-            quality: {
-              min: 0.0,
-              max: 0.3
-            }
-          }],
-          conditions: [earlyStageCondition]
-        }
-      )
-      addStack(pool,
-        { item: 'irons_spellbooks:scroll' },
-        { 
-          functions: [{
-            function: 'irons_spellbooks:randomize_spell',
-            quality: {
-              min: 0.0,
-              max: 0.5
-            }
-          }],
-          conditions: [midStageCondition]
-        }
-      )
-      addStack(pool,
-        { item: 'irons_spellbooks:scroll' },
-        { 
-          functions: [{
-            function: 'irons_spellbooks:randomize_spell',
-            quality: {
-              min: 0.0,
-              max: 0.7
-            }
-          }],
-          conditions: [lateStageCondition]
-        }
-      )
-      addStack(pool,
-        { item: 'irons_spellbooks:scroll' },
-        { 
-          functions: [{
-            function: 'irons_spellbooks:randomize_spell',
-            quality: {
-              min: 0.2,
-              max: 0.7
-            }
-          }],
-          conditions: [endStageCondition]
-        }
-      )
-    })
-  })
 })

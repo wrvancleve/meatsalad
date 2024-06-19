@@ -7,7 +7,7 @@
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:ores/zinc"
+            "tag": "forge:raw_materials/zinc"
           }
         }
       ],
@@ -17,7 +17,7 @@
           "item": "industrialforegoing:laser_lens3"
         },
         "output": {
-          "tag": "forge:ores/zinc"
+          "tag": "forge:raw_materials/zinc"
         },
         "pointer": 0,
         "rarity": [

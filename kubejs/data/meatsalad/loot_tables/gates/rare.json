@@ -1,0 +1,115 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:basalz\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:blitz\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:blizz\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_other": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:shulker\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "gateways:gate_pearl",
+            "nbt": "{gateway: \"meatsalad:magic\"}"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

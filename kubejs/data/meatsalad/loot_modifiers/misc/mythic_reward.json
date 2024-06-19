@@ -1,0 +1,23 @@
+{
+  "type": "irons_spellbooks:append_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ender_guardian"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ignis"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_leviathan"
+        }
+      ]
+    }
+  ],
+  "key": "meatsalad:misc/mythic_reward"
+}

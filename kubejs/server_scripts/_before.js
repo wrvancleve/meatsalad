@@ -79,7 +79,7 @@ const readTable = (table, defaultWeight, defaultQuality) => {
     }
   }
 
-  const tableName = table.type != null ? `meatsalad:chests/${table.type}/${table.name}` : table.name
+  const tableName = table.type != null ? `meatsalad:${table.type}/${table.name}` : table.name
   delete table.type
   delete table.name
   if (defaultWeight != null && table.weight === undefined) {
@@ -129,47 +129,8 @@ const addCustomLootPool = (lootBuilder, type, table, rolls, bonusRolls, defaultT
   })
 }
 
-const addGemLootPool = (lootBuilder, gemTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'gems', gemTable, rolls, bonusRolls, 'random')
-}
-
 const addAffixItemLootPool = (lootBuilder, affixItemTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'affix_items', affixItemTable, rolls, bonusRolls, 'random')
-}
-
-const addAncientTomeLootPool = (lootBuilder, ancientTomeTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'ancient_tomes', ancientTomeTable, rolls, bonusRolls, 'random')
-}
-
-const addBlueprintLootPool = (lootBuilder, blueprintTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'blueprints', blueprintTable, rolls, bonusRolls, 'random')
-}
-
-const addGatewayLootPool = (lootBuilder, gatewayTable, rolls, bonusRolls) => {
-  addCustomLootPool(lootBuilder, 'gates', gatewayTable, rolls, bonusRolls, 'random', global.config.gateWeight, global.config.gateQuality)
-}
-
-const addRedHeartLootPool = (lootBuilder, weight, quality) => {
-  if (weight === undefined) weight = global.config.redHeartWeight
-  if (quality === undefined) quality = global.config.redHeartQuality
-  lootBuilder.addPool(pool => {
-    const stackProps = {}
-    if (weight != null) {
-      pool.addEmpty(100 - weight)
-      stackProps.weight = weight
-    }
-    if (quality != null) stackProps.quality = quality
-    addStack(pool, {item: 'bhc:red_heart'}, stackProps)
-  })
-}
-
-const addGearLootPool = (table, baseWeight, baseQuality, isTreasure, isGuaranteed) => {
-  let tableName = isTreasure ? 'random_treasure' : 'random'
-  table.addPool(pool => {
-    addLootTable(pool, {name: `meatsalad:chests/affix_items/${tableName}`, weight: baseWeight, quality: baseQuality})
-    addLootTable(pool, {name: `meatsalad:chests/gear/${tableName}`, weight: baseWeight * 5})
-    if (!isGuaranteed) pool.addEmpty(14 * baseWeight)
-  })
+  addCustomLootPool(lootBuilder, 'gear/affixed', affixItemTable, rolls, bonusRolls, 'random')
 }
 
 const enchantFunction = (levels, treasureAllowed) => {
@@ -286,42 +247,3 @@ const earlyStageCondition = getWorldStageCondition(false)
 const midStageCondition = getWorldStageCondition({nether: true, other: false, end: false})
 const lateStageCondition = getWorldStageCondition({other: true, end: false})
 const endStageCondition = getWorldStageCondition({end: true})
-
-const createGooReplication = (event, itemId, itemNbt, itemNbtAlias) => {
-  const itemName = itemId.split(':').pop()
-  if (itemNbt != null) {
-    event.shaped(Item.of(itemId, 2, itemNbt).strongNBT(), [
-      ' M ',
-      'MIM',
-      ' M '
-    ], {
-      M: 'alexsmobs:mimicream',
-      I: Item.of(itemId, itemNbt).strongNBT()
-    }).id(`meatsalad:goo_replication/2x/${itemNbtAlias}_${itemName}`)
-    event.shaped(Item.of(itemId, 4, itemNbt).strongNBT(), [
-      'MMM',
-      'MIM',
-      'MMM'
-    ], {
-      M: 'alexsmobs:mimicream',
-      I: Item.of(itemId, itemNbt).strongNBT()
-    }).id(`meatsalad:goo_replication/4x/${itemNbtAlias}_${itemName}`)
-  } else {
-    event.shaped(Item.of(itemId, 2), [
-      ' M ',
-      'MIM',
-      ' M '
-    ], {
-      M: 'alexsmobs:mimicream',
-      I: itemId
-    }).id(`meatsalad:goo_replication/2x/${itemName}`)
-    event.shaped(Item.of(itemId, 4), [
-      'MMM',
-      'MIM',
-      'MMM'
-    ], {
-      M: 'alexsmobs:mimicream',
-      I: itemId
-    }).id(`meatsalad:goo_replication/4x/${itemName}`)
-  }
-}

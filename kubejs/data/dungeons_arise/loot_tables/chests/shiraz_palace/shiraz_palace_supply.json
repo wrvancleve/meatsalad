@@ -56,7 +56,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/enchanted_books/random_treasure",
+          "name": "meatsalad:enchanted_books/random_treasure",
           "weight": 5
         },
         {

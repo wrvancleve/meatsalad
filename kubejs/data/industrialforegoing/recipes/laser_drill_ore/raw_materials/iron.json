@@ -1,0 +1,148 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_materials/iron"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "industrialforegoing:laser_drill_ore",
+        "catalyst": {
+          "item": "industrialforegoing:laser_lens12"
+        },
+        "output": {
+          "tag": "forge:raw_materials/iron"
+        },
+        "pointer": 0,
+        "rarity": [
+          {
+            "whitelist": {},
+            "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:nether_wastes",
+                "minecraft:basalt_deltas",
+                "minecraft:warped_forest",
+                "minecraft:crimson_forest",
+                "minecraft:soul_sand_valley",
+                "allthemodium:mining",
+                "allthemodium:soul_sand_valley",
+                "allthemodium:desert_hills",
+                "allthemodium:desert",
+                "allthemodium:warped_forest",
+                "allthemodium:crimson_forest",
+                "allthemodium:the_other",
+                "allthemodium:basalt_deltas",
+                "minecraft:the_end",
+                "minecraft:the_void",
+                "minecraft:small_end_islands",
+                "minecraft:end_barrens",
+                "minecraft:end_highlands",
+                "minecraft:end_midlands",
+                "nullscape:void_barrens",
+                "nullscape:shadowlands",
+                "nullscape:crystal_peaks"
+              ]
+            },
+            "depth_min": 80,
+            "depth_max": 255,
+            "weight": 15
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 112,
+            "depth_max": 175,
+            "weight": 12
+          },
+          {
+            "whitelist": {},
+            "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:nether_wastes",
+                "minecraft:basalt_deltas",
+                "minecraft:warped_forest",
+                "minecraft:crimson_forest",
+                "minecraft:soul_sand_valley",
+                "allthemodium:mining",
+                "allthemodium:soul_sand_valley",
+                "allthemodium:desert_hills",
+                "allthemodium:desert",
+                "allthemodium:warped_forest",
+                "allthemodium:crimson_forest",
+                "allthemodium:the_other",
+                "allthemodium:basalt_deltas",
+                "minecraft:the_end",
+                "minecraft:the_void",
+                "minecraft:small_end_islands",
+                "minecraft:end_barrens",
+                "minecraft:end_highlands",
+                "minecraft:end_midlands",
+                "nullscape:void_barrens",
+                "nullscape:shadowlands",
+                "nullscape:crystal_peaks"
+              ]
+            },
+            "depth_min": -63,
+            "depth_max": 79,
+            "weight": 10
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 176,
+            "depth_max": 247,
+            "weight": 10
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 1,
+            "depth_max": 111,
+            "weight": 9
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:soul_sand_valley",
+                "allthemodium:desert_hills",
+                "allthemodium:desert",
+                "allthemodium:warped_forest",
+                "allthemodium:crimson_forest",
+                "allthemodium:the_other",
+                "allthemodium:basalt_deltas"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": -24,
+            "depth_max": 255,
+            "weight": 8
+          }
+        ]
+      }
+    }
+  ]
+}

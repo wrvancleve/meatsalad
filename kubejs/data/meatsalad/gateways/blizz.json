@@ -6,7 +6,7 @@
       "entities": [
         {
           "entity": "thermal:blizz",
-          "count": 3
+          "count": 5
         }
       ],
       "rewards": [
@@ -23,7 +23,7 @@
       "entities": [
         {
           "entity": "thermal:blizz",
-          "count": 4
+          "count": 5
         }
       ],
       "modifiers": [
@@ -67,7 +67,7 @@
       "entities": [
         {
           "entity": "thermal:blizz",
-          "count": 5
+          "count": 7
         }
       ],
       "modifiers": [
@@ -111,7 +111,7 @@
       "entities": [
         {
           "entity": "thermal:blizz",
-          "count": 6
+          "count": 7
         }
       ],
       "modifiers": [
@@ -155,7 +155,7 @@
       "entities": [
         {
           "entity": "thermal:blizz",
-          "count": 7
+          "count": 10
         }
       ],
       "modifiers": [

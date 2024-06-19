@@ -1,0 +1,402 @@
+{
+	"root_mage": {
+		"title": "Path of the Mage (+5% Spell Power)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_freelancer": {
+		"title": "Path of the Freelancer (+4 Luck)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.luck",
+					"value": 4,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_warrior": {
+		"title": "Path of the Warrior (+5% Melee Damage)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_archer": {
+		"title": "Path of the Archer (+5% Arrow Damage)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power": {
+		"title": "+2.5% Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"melee_damage": {
+		"title": "+2.5% Melee Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"arrow_damage": {
+		"title": "+2.5% Arrow Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"luck": {
+		"title": "+1 Luck",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.luck",
+					"value": 1.0,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"attack_speed": {
+		"title": "+2.5% Attack Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "golden_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"life_steal": {
+		"title": "+2.5% Life Steal",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "instant_health"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:life_steal",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"draw_speed": {
+		"title": "+2.5% Draw Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "silentgear:fine_silk"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"arrow_velocity": {
+		"title": "+2.5% Arrow Velocity",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "arrow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"cooldown_reduction": {
+		"title": "+2.5% Spell Cooldown Reduction",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:cooldown_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:cooldown_reduction",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"mana_regen": {
+		"title": "+2.5% Mana Regeneration",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:mana_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:mana_regen",
+					"value": 0.025,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"movement_speed": {
+		"title": "+5% Movement Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"crit_chance": {
+		"title": "+5% Critical Chance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"dodge_chance": {
+		"title": "+10% Dodge Chance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:dodge_chance",
+					"value": 0.10,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"crit_damage": {
+		"title": "+10% Critical Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.10,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"ring_slot": {
+		"title": "+1 Ring Slot",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "angelring:diamond_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "curios add ring @s 1"
+				}
+			}
+		]
+	},
+	"charm_slot": {
+		"title": "+1 Charm Slot",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:totem_of_undying"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "curios add charm @s 1"
+				}
+			}
+		]
+	}
+}

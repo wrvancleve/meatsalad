@@ -9,7 +9,7 @@
           "min": 1,
           "max": 1,
           "stack": {
-            "item": "progressivebosses:elder_guardian_spike",
+            "item": "meatsalad:elder_guardian_spike",
             "count": 1
           }
         }

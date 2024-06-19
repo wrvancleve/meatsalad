@@ -36,21 +36,6 @@
       ]
     },
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/spells/random"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.7
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 0,
         "max": 2

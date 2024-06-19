@@ -54,13 +54,13 @@ JEIEvents.hideItems(event => {
 
 ItemEvents.tooltip(event => {
   event.add('industrialforegoing:laser_lens0', [
-    Text.of('Prioritizes Iridium and Nether Quartz in the Ore Laser Base').gold()
+    Text.of('Prioritizes Iridium, Arcane Debris and Nether Quartz in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens1', [
     Text.of('Prioritizes Copper in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens3', [
-    Text.of('Prioritizes Apatite, Diamond, Mythril, Platinum and Zinc in the Ore Laser Base').gold()
+    Text.of('Prioritizes Apatite, Diamond, Platinum and Zinc in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens4', [
     Text.of('Prioritizes Gold, Glowstone, Niter, Palladium and Sulfur in the Ore Laser Base').gold()
@@ -87,7 +87,7 @@ ItemEvents.tooltip(event => {
     Text.of('Prioritizes Peridot and Vibranium in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens14', [
-    Text.of('Prioritizes Adamantite, Cinnabar, Crimson Iron, Redstone and Ruby in the Ore Laser Base').gold()
+    Text.of('Prioritizes Cinnabar, Crimson Iron, Redstone and Ruby in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens15', [
     Text.of('Prioritizes Coal in the Ore Laser Base').gold()

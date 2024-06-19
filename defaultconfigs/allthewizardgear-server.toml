@@ -4,17 +4,17 @@
 	#Changing armor values requires world restart
 	[ArmorConfig.allthemodium]
 		#Allthemodium's Armor Values, in the form of [boots, leggings, chestplate, helmet]. Default: [4, 7, 9, 4]
-		armorValues = [4, 7, 9, 5]
+		armorValues = [3, 6, 8, 3]
 		#Allthemodium's Armor Toughness. Default: 4
-		toughness = 4
+		toughness = 3
 		#Allthemodium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Allthemodium's Max Mana. Default: 200
-		maxMana = 150
+		maxMana = 100
 		#Allthemodium's Spell Power. Default: 0.2 (+20%)
-		spellPower = 0.08
+		spellPower = 0.02
 		#Allthemodium's Mana Regen. Default: 0.05
-		manaRegen = 0.05
+		manaRegen = 0.0125
 		#Allthemodium's Helmet Prevents Drowning. Default: true
 		helmetPreventsDrowning = false
 		#Allthemodium's Helmet Prevents Elytra Damage. Default: true
@@ -34,17 +34,17 @@
 
 	[ArmorConfig.vibranium]
 		#Vibranium's Armor Values, in the form of [boots, leggings, chestplate, helmet]. Default: [6, 9, 11, 6]
-		armorValues = [6, 9, 11, 6]
+		armorValues = [3, 7, 9, 3]
 		#Vibranium's Armor Toughness. Default: 5
-		toughness = 5
+		toughness = 3
 		#Vibranium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Vibranium's Max Mana. Default: 325
-		maxMana = 200
+		maxMana = 125
 		#Vibranium's Spell Power. Default: 0.3 (+30%)
-		spellPower = 0.16
+		spellPower = 0.05
 		#Vibranium's Mana Regen. Default: 0.1
-		manaRegen = 0.1
+		manaRegen = 0.025
 		#Vibranium's Helmet Prevents Drowning. Default: true
 		helmetPreventsDrowning = false
 		#Vibranium's Helmet Prevents Elytra Damage. Default: true
@@ -64,17 +64,17 @@
 
 	[ArmorConfig.unobtainium]
 		#Unobtainium's Armor Values, in the form of [boots, leggings, chestplate, helmet]. Default: [8, 11, 13, 8]
-		armorValues = [8, 11, 13, 8]
+		armorValues = [4, 7, 10, 4]
 		#Unobtainium's Armor Toughness. Default: 6
-		toughness = 6
+		toughness = 4
 		#Unobtainium's Knockback Resistance. Default: 0.0
 		knockbackResistance = 0.0
 		#Unobtainium's Max Mana. Default: 450
-		maxMana = 250
+		maxMana = 150
 		#Unobtainium's Spell Power. Default: 0.4 (+40%)
-		spellPower = 0.24
+		spellPower = 0.08
 		#Unobtainium's Mana Regen. Default: 0.15
-		manaRegen = 0.15
+		manaRegen = 0.0375
 		#Unobtainium's Helmet Prevents Drowning. Default: true
 		helmetPreventsDrowning = false
 		#Unobtainium's Helmet Prevents Elytra Damage. Default: true

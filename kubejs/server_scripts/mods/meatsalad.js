@@ -3,6 +3,15 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
+  event.shaped('minecraft:trident', [
+    ' ss',
+    ' ps',
+    'p  '
+  ], {
+    s: 'meatsalad:elder_guardian_spike',
+    p: 'minecraft:prismarine_shard',
+  }).id('meatsalad:trident')
+
   event.shaped('4x meatsalad:dimensional_shard', [
     'deg',
     'irX',
@@ -18,6 +27,51 @@ ServerEvents.recipes(event => {
     C: 'minecraft:prismarine_shard',
     c: '#forge:gems/amethyst',
   }).id('meatsalad:dimensional_shard')
+
+  // Gates
+  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:magic` }).strongNBT(), [
+    'AAA',
+    'GeG',
+    'AAA'
+  ], {
+    
+    A: 'irons_spellbooks:arcane_essence',
+    G: '#forge:storage_blocks/copper',
+    e: 'meatsalad:infused_ender_pearl',
+  }).stage('magic_gate').id('meatsalad:magic_gate')
+  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:stronghold` }).strongNBT(), [
+    'BRB',
+    'GeG',
+    'SSS'
+  ], {
+    B: 'minecraft:bone',
+    R: 'minecraft:rotten_flesh',
+    G: '#forge:storage_blocks/iron',
+    e: 'meatsalad:infused_ender_pearl',
+    S: 'minecraft:stone_bricks'
+  }).stage('stronghold_gate').id('meatsalad:stronghold_gate')
+  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:otherside` }).strongNBT(), [
+    'BWB',
+    'GeG',
+    'SSS'
+  ], {
+    B: 'bhc:wither_bone',
+    W: 'minecraft:wither_skeleton_skull',
+    G: '#forge:storage_blocks/diamond',
+    e: 'meatsalad:infused_ender_pearl',
+    S: 'allthemodium:ancient_stone'
+  }).stage('otherside_gate').id('meatsalad:otherside_gate')
+  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:outer_end` }).strongNBT(), [
+    'PSP',
+    'GeG',
+    'EEE'
+  ], {
+    P: 'minecraft:popped_chorus_fruit',
+    S: 'minecraft:shulker_shell',
+    G: '#forge:storage_blocks/diamond',
+    e: 'meatsalad:infused_ender_pearl',
+    E: 'minecraft:end_stone'
+  }).stage('outer_end_gate').id('meatsalad:outer_end_gate')
   
   energize(event,
     [
@@ -99,7 +153,7 @@ ServerEvents.recipes(event => {
       A: Ingredient.of('cataclysm:abyssal_egg'),
       W: Ingredient.of('apotheosis:warden_tendril'),
       D: Ingredient.of('quark:dragon_scale'),
-      S: Ingredient.of('progressivebosses:elder_guardian_spike'),
+      S: Ingredient.of('meatsalad:elder_guardian_spike'),
       e: Ingredient.of('minecraft:echo_shard'),
       C: Ingredient.of('alexsmobs:mosquito_larva'),
       H: Ingredient.of('alexsmobs:soul_heart'),
@@ -128,8 +182,8 @@ ServerEvents.recipes(event => {
       C: Ingredient.of('meatsalad:chaos_shard'),
       L: Ingredient.of('meatsalad:lost_illusion'),
       M: Ingredient.of('meatsalad:manifest_illusion'),
-      a: Ingredient.of('#forge:storage_blocks/adamantite'),
-      m: Ingredient.of('#forge:storage_blocks/mythril'),
+      a: Ingredient.of('#forge:storage_blocks/crimson_steel'),
+      m: Ingredient.of('#forge:storage_blocks/azure_electrum'),
       v: Ingredient.of('#forge:storage_blocks/vibranium'),
       u: Ingredient.of('#forge:storage_blocks/unobtainium'),
       p: Ingredient.of('#forge:storage_blocks/allthemodium'),

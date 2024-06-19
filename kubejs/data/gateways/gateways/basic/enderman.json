@@ -74,7 +74,7 @@
       "entities": [
         {
           "entity": "minecraft:enderman",
-          "count": 4
+          "count": 5
         }
       ],
       "modifiers": [
@@ -118,7 +118,7 @@
       "entities": [
         {
           "entity": "minecraft:enderman",
-          "count": 4
+          "count": 5
         }
       ],
       "modifiers": [
@@ -191,7 +191,7 @@
         },
         {
           "entity": "minecraft:enderman",
-          "count": 3
+          "count": 5
         }
       ],
       "modifiers": [

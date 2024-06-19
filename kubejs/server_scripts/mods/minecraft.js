@@ -1,60 +1,6 @@
 ServerEvents.chestLootTables(event => {
   event.modify('minecraft:ancient_city', table => {
     addAffixItemLootPool(table, 'random_treasure')
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-    addRedHeartLootPool(table)
-  })
-
-  event.modify('minecraft:bastion_bridge', table => {
-    addAffixItemLootPool(table)
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-  })
-
-  event.modify('minecraft:bastion_hoglin_stable', table => {
-    addAffixItemLootPool(table)
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-  })
-
-  event.modify('minecraft:bastion_other', table => {
-    addAffixItemLootPool(table)
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-  })
-
-  event.modify('minecraft:bastion_treasure', table => {
-    addAffixItemLootPool(table, 'random_treasure')
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-    addRedHeartLootPool(table)
-  })
-
-  event.modify('minecraft:end_city_treasure', table => {
-    addAffixItemLootPool(table, 'random_treasure')
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-    addAncientTomeLootPool(table)
-    addRedHeartLootPool(table)
-    addStackLootPool(table, {item: 'meatsalad:dark_matter'}, {weight: global.config.darkMatterWeight, quality: global.config.darkMatterQuality})
-  })
-
-  event.modify('minecraft:stronghold_corridor', table => {
-    addAffixItemLootPool(table)
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-  })
-
-  event.modify('minecraft:stronghold_crossing', table => {
-    addAffixItemLootPool(table)
-    addGemLootPool(table)
-    addGatewayLootPool(table)
-  })
-
-  event.modify('minecraft:stronghold_library', table => {
-    addBlueprintLootPool(table, {weight: null})
-    addAncientTomeLootPool(table)
   })
 
   event.modify('minecraft:village/village_armorer', table => {

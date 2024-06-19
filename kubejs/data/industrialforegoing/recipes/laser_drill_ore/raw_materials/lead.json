@@ -1,0 +1,73 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_materials/lead"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "industrialforegoing:laser_drill_ore",
+        "catalyst": {
+          "item": "industrialforegoing:laser_lens10"
+        },
+        "output": {
+          "tag": "forge:raw_materials/lead"
+        },
+        "pointer": 0,
+        "rarity": [
+          {
+            "whitelist": {},
+            "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:nether_wastes",
+                "minecraft:basalt_deltas",
+                "minecraft:warped_forest",
+                "minecraft:crimson_forest",
+                "minecraft:soul_sand_valley",
+                "allthemodium:mining",
+                "allthemodium:soul_sand_valley",
+                "allthemodium:desert_hills",
+                "allthemodium:desert",
+                "allthemodium:warped_forest",
+                "allthemodium:crimson_forest",
+                "allthemodium:the_other",
+                "allthemodium:basalt_deltas",
+                "minecraft:the_end",
+                "minecraft:the_void",
+                "minecraft:small_end_islands",
+                "minecraft:end_barrens",
+                "minecraft:end_highlands",
+                "minecraft:end_midlands",
+                "nullscape:void_barrens",
+                "nullscape:shadowlands",
+                "nullscape:crystal_peaks"
+              ]
+            },
+            "depth_min": -63,
+            "depth_max": 56,
+            "weight": 3
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 1,
+            "depth_max": 143,
+            "weight": 2
+          }
+        ]
+      }
+    }
+  ]
+}

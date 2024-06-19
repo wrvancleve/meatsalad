@@ -22,15 +22,6 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:chests/spells/random"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
           "type": "minecraft:item",
           "name": "irons_spellbooks:blank_rune",
           "conditions": [

@@ -21,7 +21,7 @@
   },
   "stats": {
     "main": {
-      "durability": 256.0,
+      "durability": 250.0,
       "armor_durability": 15.0,
       "enchantment_value": 14.0,
       "rarity": 20.0,
@@ -41,7 +41,7 @@
       "armor/chestplate": 6.0,
       "armor/leggings": 5.0,
       "armor/boots": 2.0,
-      "magic_armor": 6.0
+      "magic_armor": 4.0
     },
     "rod": {},
     "tip": {
