@@ -75,60 +75,6 @@ ServerEvents.recipes(event => {
     'allthemodium:alloy_paxel',
   ])
 
-  replaceShaped(event,
-    [
-      'fuf',
-      'fbf',
-      'fuf'
-    ],
-    {
-      f: 'minecraft:deepslate',
-      u: '#forge:ingots/allthemodium',
-      b: '#forge:ingots/netherite'
-    },
-    Item.of('allthemodium:allthemodium_upgrade_smithing_template'),
-    'smithing/allthemodium_upgrade_smithing_template'
-  )
-
-  replaceShaped(event,
-    [
-      'fuf',
-      'fbf',
-      'fuf'
-    ],
-    {
-      f: 'allthemodium:ancient_stone',
-      u: '#forge:ingots/vibranium',
-      b: '#forge:ingots/allthemodium'
-    },
-    Item.of('allthemodium:vibranium_upgrade_smithing_template'),
-    'smithing/vibranium_upgrade_smithing_template'
-  )
-
-  replaceShaped(event,
-    [
-      'fuf',
-      'fbf',
-      'fuf'
-    ],
-    {
-      f: 'minecraft:end_stone',
-      u: '#forge:ingots/unobtainium',
-      b: '#forge:ingots/vibranium'
-    },
-    Item.of('allthemodium:unobtainium_upgrade_smithing_template'),
-    'smithing/unobtainium_upgrade_smithing_template'
-  )
-
-  replaceShaped(event, [
-    ' b ',
-    'beb',
-    ' b '
-  ], {
-    e: 'meatsalad:infused_ender_pearl',
-    b: '#forge:nuggets/allthemodium'
-  }, Item.of('allthemodium:teleport_pad'))
-
   removeRecipes(event, [
     'allthemodium:allthemodium_gear',
     'allthemodium:vibranium_gear',
@@ -139,5 +85,47 @@ ServerEvents.recipes(event => {
     'allthemodium:raw_allthemodium_block',
     'allthemodium:raw_vibranium_block',
     'allthemodium:raw_unobtainium_block',
+    'allthemodium:smithing/allthemodium_upgrade_smithing_template',
+    'allthemodium:smithing/vibranium_upgrade_smithing_template',
+    'allthemodium:smithing/unobtainium_upgrade_smithing_template',
   ])
+
+  event.shaped('allthemodium:allthemodium_upgrade_smithing_template', [
+    'fuf',
+    'fbf',
+    'fuf'
+  ], {
+    f: 'minecraft:deepslate',
+    u: '#forge:ingots/allthemodium',
+    b: '#forge:ingots/netherite',
+  }).stage('allthemodium_upgrade').id('meatsalad:allthemodium_upgrade_smithing_template')
+
+  event.shaped('allthemodium:vibranium_upgrade_smithing_template', [
+    'fuf',
+    'fbf',
+    'fuf'
+  ], {
+    f: 'allthemodium:ancient_stone',
+    u: '#forge:ingots/vibranium',
+    b: '#forge:ingots/allthemodium',
+  }).stage('vibranium_upgrade').id('meatsalad:vibranium_upgrade_smithing_template')
+
+  event.shaped('allthemodium:unobtainium_upgrade_smithing_template', [
+    'fuf',
+    'fbf',
+    'fuf'
+  ], {
+    f: 'minecraft:end_stone',
+    u: '#forge:ingots/unobtainium',
+    b: '#forge:ingots/vibranium',
+  }).stage('unobtainium_upgrade').id('meatsalad:unobtainium_upgrade_smithing_template')
+
+  replaceShaped(event, [
+    ' b ',
+    'beb',
+    ' b '
+  ], {
+    e: 'meatsalad:infused_ender_pearl',
+    b: '#forge:nuggets/allthemodium'
+  }, Item.of('allthemodium:teleport_pad'))
 })

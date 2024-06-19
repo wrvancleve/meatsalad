@@ -88,17 +88,16 @@ ServerEvents.chestLootTables(event => {
 })
 
 ServerEvents.recipes(event => {
-  replaceShaped(event,
-    [
-      'fuf',
-      'fbf',
-      'fuf'
-    ],
-    {
-      f: 'minecraft:netherrack',
-      u: '#forge:ingots/netherite',
-      b: '#forge:gems/diamond'
-    },
-    Item.of('minecraft:netherite_upgrade_smithing_template')
-  )
+  removeRecipes(event, [
+    'minecraft:netherite_upgrade_smithing_template'
+  ])
+  event.shaped('minecraft:netherite_upgrade_smithing_template', [
+    'fuf',
+    'fbf',
+    'fuf'
+  ], {
+    f: 'minecraft:netherrack',
+    u: '#forge:ingots/netherite',
+    b: '#forge:gems/diamond',
+  }).stage('netherite_upgrade').id('meatsalad:netherite_upgrade_smithing_template')
 })

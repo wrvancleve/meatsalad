@@ -13,8 +13,14 @@
     "meatsalad:eyes/nether",
     "meatsalad:eyes/old",
 
-    "meatsalad:gates/random",
+    "meatsalad:gates/hellish_fortress_random_chance_treasure",
+    "meatsalad:gates/hellish_fortress_random_chance",
+    "meatsalad:gates/otherside_random_chance",
+    "meatsalad:gates/otherside_random_chance_treasure",
+    "meatsalad:gates/outer_end_random_chance",
     "meatsalad:gates/random_chance",
+    "meatsalad:gates/stronghold_random_chance",
+    "meatsalad:gates/stronghold_random_chance_treasure",
 
     "meatsalad:gear/affixed/random_treasure",
 
@@ -23,6 +29,7 @@
     "meatsalad:gems/random_chance",
 
     "meatsalad:misc/boss_summoner_chance",
+    "meatsalad:misc/dark_matter_chance",
     "meatsalad:misc/mythic_reward",
     "meatsalad:misc/red_heart_chance"
   ],
