@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     f: 'minecraft:deepslate',
     u: '#forge:ingots/allthemodium',
     b: '#forge:ingots/netherite',
-  }).stage('allthemodium_upgrade').id('meatsalad:allthemodium_upgrade_smithing_template')
+  }).stage('palladium_upgrade').id('meatsalad:allthemodium_upgrade_smithing_template')
 
   event.shaped('allthemodium:vibranium_upgrade_smithing_template', [
     'fuf',

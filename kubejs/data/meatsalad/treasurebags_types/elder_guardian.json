@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Elder Guardian Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/elder_guardian",
+  "rarity": "rare",
+  "bagColor": "#CBB1A5",
+  "bagOverlayColor": "#CBB1A5",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

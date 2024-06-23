@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "The Leviathan Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/the_leviathan",
+  "rarity": "rare",
+  "bagColor": "#322141",
+  "bagOverlayColor": "#6500FF",
+  "bagStringColor": "#8A3EFF",
+  "dropsFromGroups": []
+}

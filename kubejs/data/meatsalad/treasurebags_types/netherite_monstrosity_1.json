@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Netherite Monstrosity+ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/netherite_monstrosity_1",
+  "rarity": "rare",
+  "bagColor": "#4D494D",
+  "bagOverlayColor": "#640D05",
+  "bagStringColor": "#0F090A",
+  "dropsFromGroups": []
+}

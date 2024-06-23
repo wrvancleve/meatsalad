@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "minecraft:entities/elder_guardian"
+          "loot_table_id": "meatsalad:bags/elder_guardian"
         }
       ]
     }

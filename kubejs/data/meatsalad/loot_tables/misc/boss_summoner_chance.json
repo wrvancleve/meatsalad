@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 10,
+          "weight": 5,
           "quality": 1.0,
           "stack": {
             "item": "apotheosis:boss_summoner"
@@ -14,7 +14,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 90
+          "weight": 95
         }
       ]
     }

@@ -31,7 +31,13 @@
     "meatsalad:misc/boss_summoner_chance",
     "meatsalad:misc/dark_matter_chance",
     "meatsalad:misc/mythic_reward",
-    "meatsalad:misc/red_heart_chance"
+    "meatsalad:misc/red_heart_chance",
+
+    "meatsalad:upgrade_templates/all_chance_treasure",
+    "meatsalad:upgrade_templates/palladium_chance_treasure",
+    "meatsalad:upgrade_templates/unobtainium_chance",
+    "meatsalad:upgrade_templates/vibranium_chance",
+    "meatsalad:upgrade_templates/vibranium_chance_treasure"
   ],
   "replace": false
 }

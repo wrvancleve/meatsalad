@@ -565,9 +565,8 @@
     ],
     "rewards": [
         {
-            "type": "gateways:loot_table",
-            "loot_table": "meatsalad:gates/hellish_fortress",
-            "rolls": 1,
+            "type": "gateways:command",
+            "command": "give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:\"meatsalad:hellish_fortress\",LootTable:\"meatsalad:bags/hellish_fortress\"}}",
             "desc": "rewards.gateways.loot_table.hellish_fortress"
         }
     ],

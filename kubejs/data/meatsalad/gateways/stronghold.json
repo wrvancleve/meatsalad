@@ -387,9 +387,8 @@
     ],
     "rewards": [
         {
-            "type": "gateways:loot_table",
-            "loot_table": "meatsalad:gates/stronghold",
-            "rolls": 1,
+            "type": "gateways:command",
+            "command": "give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:\"meatsalad:stronghold\",LootTable:\"meatsalad:bags/stronghold\"}}",
             "desc": "rewards.meatsalad.loot_table.stronghold"
         }
     ],

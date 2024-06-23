@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Wither Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/wither",
+  "rarity": "rare",
+  "bagColor": "#343434",
+  "bagOverlayColor": "#6B8A8A",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

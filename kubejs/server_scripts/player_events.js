@@ -1,5 +1,5 @@
-let addStage = (player, stage) => {
-  Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
+let addStage = (level, player, stage) => {
+  level.runCommandSilent(`gamestage add ${player.username} ${stage}`)
   player.tell('You have unlocked the ability to craft: ' + global.getReadableText(stage))
 }
 
@@ -12,7 +12,14 @@ const GATES = [
   //'gateways:overworldian_nights',
 ]
 
-PlayerEvents.inventoryChanged((event) => {
+PlayerEvents.loggedIn(event => {
+  const player = event.player
+  if (!player.isOnScoreboardTeam('Meat')) {
+    event.level.runCommandSilent(`team join Meat ${player.username}`)
+  }
+})
+
+PlayerEvents.inventoryChanged(event => {
   const { player, item, level } = event
   switch (item.id) {
     case 'gateways:gate_pearl':
@@ -21,28 +28,28 @@ PlayerEvents.inventoryChanged((event) => {
         let gateStage = `${gateName}_gate`
         if (item.isNBTEqual(Item.of('gateways:gate_pearl', 1, { gateway: gateId }))
           && !player.stages.has(gateStage)) {
-          addStage(player, gateStage)
+          addStage(level, player, gateStage)
         }
       })
       break
     case 'minecraft:netherite_upgrade_smithing_template':
       if (!player.stages.has('netherite_upgrade')) {
-        addStage(player, 'netherite_upgrade')
+        addStage(level, player, 'netherite_upgrade')
       }
       break
     case 'allthemodium:allthemodium_upgrade_smithing_template':
-      if (!player.stages.has('allthemodium_upgrade')) {
-        addStage(player, 'allthemodium_upgrade')
+      if (!player.stages.has('palladium_upgrade')) {
+        addStage(level, player, 'palladium_upgrade')
       }
       break
     case 'allthemodium:vibranium_upgrade_smithing_template':
       if (!player.stages.has('vibranium_upgrade')) {
-        addStage(player, 'vibranium_upgrade')
+        addStage(level, player, 'vibranium_upgrade')
       }
       break
     case 'allthemodium:unobtainium_upgrade_smithing_template':
       if (!player.stages.has('unobtainium_upgrade')) {
-        addStage(player, 'unobtainium_upgrade')
+        addStage(level, player, 'unobtainium_upgrade')
       }
       break
   }

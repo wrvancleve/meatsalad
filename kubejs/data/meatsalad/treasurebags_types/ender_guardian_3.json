@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Ender Guardian+++ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/ender_guardian_3",
+  "rarity": "rare",
+  "bagColor": "#ECFBAF",
+  "bagOverlayColor": "#C4A6C6",
+  "bagStringColor": "#A153FE",
+  "dropsFromGroups": []
+}

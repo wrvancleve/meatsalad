@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Stronghold Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/stronghold",
+  "rarity": "rare",
+  "bagColor": "#777777",
+  "bagOverlayColor": "#D3D3D3",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}
