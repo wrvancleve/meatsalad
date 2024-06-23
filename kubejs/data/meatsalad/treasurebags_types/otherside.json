@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Otherside Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/otherside",
+  "rarity": "rare",
+  "bagColor": "#012A39",
+  "bagOverlayColor": "#1699AB",
+  "bagStringColor": "#0F1026",
+  "dropsFromGroups": []
+}

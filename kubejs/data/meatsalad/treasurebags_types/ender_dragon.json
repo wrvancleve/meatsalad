@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Ender Dragon Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/ender_dragon",
+  "rarity": "rare",
+  "bagColor": "#1C1C1C",
+  "bagOverlayColor": "#E079FA",
+  "bagStringColor": "#858585",
+  "dropsFromGroups": []
+}

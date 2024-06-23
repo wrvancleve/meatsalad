@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Magic Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/magic",
+  "rarity": "rare",
+  "bagColor": "#0077C0",
+  "bagOverlayColor": "#1D7CF1",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

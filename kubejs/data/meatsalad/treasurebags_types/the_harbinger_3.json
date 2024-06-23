@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "The Harbinger+++ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/the_harbinger_3",
+  "rarity": "rare",
+  "bagColor": "#1E2021",
+  "bagOverlayColor": "#B0BDC5",
+  "bagStringColor": "#FB6B1D",
+  "dropsFromGroups": []
+}

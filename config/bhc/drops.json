@@ -4,24 +4,25 @@
       "hostile": 0.0
     },
     "green": {
-      "alexsmobs:void_worm": 0.5,
-      "awakened_bosses:herobrine": 0.5,
-      "cataclysm:ender_guardian": 0.5,
-      "cataclysm:ignis": 0.5,
-      "cataclysm:the_leviathan": 0.5
+      "alexsmobs:void_worm": 0.0,
+      "awakened_bosses:herobrine": 0.0,
+      "cataclysm:ender_guardian": 0.0,
+      "cataclysm:ignis": 0.0,
+      "cataclysm:the_leviathan": 0.0
     },
     "blue": {
-      "minecraft:warden": 0.5
+      "minecraft:warden": 0.0
     },
     "yellow": {
       "allthemodium:piglich": 0.3,
-      "minecraft:elder_guardian": 0.5,
-      "minecraft:ender_dragon": 0.5,
-      "minecraft:wither": 0.5,
-      "cataclysm:ender_golem": 1.0,
-      "cataclysm:netherite_monstrosity": 1.0,
-      "cataclysm:the_harbinger": 1.0,
-      "irons_spellbooks:dead_king": 1.0
+      "minecraft:elder_guardian": 0.0,
+      "minecraft:ender_dragon": 0.0,
+      "minecraft:wither": 0.0,
+      "cataclysm:ancient_remnant": 0.0,
+      "cataclysm:ender_golem": 0.0,
+      "cataclysm:netherite_monstrosity": 0.0,
+      "cataclysm:the_harbinger": 0.0,
+      "irons_spellbooks:dead_king": 0.0
     }
   }
 }

@@ -90,6 +90,9 @@
 - Remove data\silentgear\silentgear_materials\uranium.json
 - Remove data\silentgear\silentgear_materials\zinc.json
 
+### Treasure Bags
+- Remove data
+
 ## Server Startup
 1. `wget <forgeInstallerURL>`
 2. `java -jar <forgeInstaller>.jar --installServer`

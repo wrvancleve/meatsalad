@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Herobrine Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/herobrine",
+  "rarity": "rare",
+  "bagColor": "#463AB4",
+  "bagOverlayColor": "#00BCBE",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

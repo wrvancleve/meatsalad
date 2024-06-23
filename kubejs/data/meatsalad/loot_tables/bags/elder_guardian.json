@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/elder_guardian"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 50,
+          "stack": {
+            "item": "endrem:guardian_eye"
+          }
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "endrem:main/guardian_eye": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 50,
+          "stack": {
+            "item": "bhc:yellow_heart"
+          }
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

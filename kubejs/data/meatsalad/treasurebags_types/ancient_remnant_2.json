@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Ancient Remnant++ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/ancient_remnant_2",
+  "rarity": "rare",
+  "bagColor": "#B7B196",
+  "bagOverlayColor": "#9A8C7C",
+  "bagStringColor": "#682E22",
+  "dropsFromGroups": []
+}

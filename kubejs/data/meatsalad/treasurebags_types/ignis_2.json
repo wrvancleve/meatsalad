@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Ignis++ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/ignis_2",
+  "rarity": "rare",
+  "bagColor": "#FFEA90",
+  "bagOverlayColor": "#733B45",
+  "bagStringColor": "#53EFF4",
+  "dropsFromGroups": []
+}

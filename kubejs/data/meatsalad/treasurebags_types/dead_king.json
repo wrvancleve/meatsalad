@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Dead King Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/dead_king",
+  "rarity": "rare",
+  "bagColor": "#393939",
+  "bagOverlayColor": "#E9B115",
+  "bagStringColor": "#826C4C",
+  "dropsFromGroups": []
+}

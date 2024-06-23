@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         summoningRitual = summoningRitual.mobOutput(
           SummoningOutput.mob(boss)
             .data({
-              DeathLootTable: `meatsalad:entities/${entityId}`,
+              //DeathLootTable: `meatsalad:entities/${entityId}`,
               CustomName: `{"translate": "name.meatsalad.${entityId}","color": "${bossNameColor}"}`
             })
         )
@@ -114,10 +114,13 @@ SummoningRituals.complete(event => {
     event.level.getEntitiesWithin(area).forEach(entity => {
       let displayName = entity.getDisplayName().getString() + ''
       if (entity.isLiving() && entity.type == mobId && displayName.endsWith('+'.repeat(summonModifier)) && !entity.isGlowing()) {
-        entity.setGlowing(true)
+        if (summonModifier > 0) {
+          entity.persistentData.putInt('chaos_level', summonModifier)
+        }
         entity.modifyAttribute('minecraft:generic.max_health', 'HealthBoost', 0.1 * summonModifier, 'multiply_total')
         entity.modifyAttribute('minecraft:generic.attack_damage', 'AttackBoost', 0.1 * summonModifier, 'multiply_total')
         entity.heal(entity.maxHealth)
+        entity.setGlowing(true)
       }
     })
   }

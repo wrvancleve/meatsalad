@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Warden Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/warden",
+  "rarity": "rare",
+  "bagColor": "#0D1217",
+  "bagOverlayColor": "#D1D6B6",
+  "bagStringColor": "#074857",
+  "dropsFromGroups": []
+}

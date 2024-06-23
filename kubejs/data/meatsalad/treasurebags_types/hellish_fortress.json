@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Hellish Fortress Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/hellish_fortress",
+  "rarity": "rare",
+  "bagColor": "#CF352E",
+  "bagOverlayColor": "#733B45",
+  "bagStringColor": "#53EFF4",
+  "dropsFromGroups": []
+}

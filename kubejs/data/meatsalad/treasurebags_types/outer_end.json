@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Outer End Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/outer_end",
+  "rarity": "rare",
+  "bagColor": "#310047",
+  "bagOverlayColor": "#C4A6C6",
+  "bagStringColor": "#A153FE",
+  "dropsFromGroups": []
+}

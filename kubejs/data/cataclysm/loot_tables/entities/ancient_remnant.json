@@ -1,12 +1,57 @@
 {
   "pools": [
     {
+      "name": "bottle",
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:entities/ancient_remnant",
-          "weight": 1
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:sandstorm_in_a_bottle",
+            "count": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "skull",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:remnant_skull",
+            "count": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "disc",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 1,
+          "min": 1,
+          "max": 1,
+          "stack": {
+            "item": "cataclysm:music_disc_ancient_remnant",
+            "count": 1
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.1
         }
       ]
     }
