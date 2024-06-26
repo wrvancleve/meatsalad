@@ -25,7 +25,7 @@ EntityEvents.death(event => {
   if (chaos_level > 0) {
     treasure_id += `_${chaos_level}`
   }
-  event.level.runCommandSilent(`give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:"meatsalad:${treasure_id}",LootTable:"meatsalad:bags/${treasure_id}"}}`)
+  Utils.server.runCommandSilent(`give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:"meatsalad:${treasure_id}",LootTable:"meatsalad:bags/${treasure_id}"}}`)
 })
 
 LootJS.modifiers((event) => {

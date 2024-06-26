@@ -136,6 +136,13 @@
             "item": "quark:ancient_tome",
             "nbt": "{StoredEnchantments: [{id: 'ensorcellation:frost_aspect', lvl: 4s}]}"
           }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "quark:ancient_tome",
+            "nbt": "{StoredEnchantments: [{id: 'ensorcellation:vorpal', lvl: 4s}]}"
+          }
         }
       ]
     }
