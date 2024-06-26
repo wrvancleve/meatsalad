@@ -1,5 +1,5 @@
 let addStage = (level, player, stage) => {
-  level.runCommandSilent(`gamestage add ${player.username} ${stage}`)
+  Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
   player.tell('You have unlocked the ability to craft: ' + global.getReadableText(stage))
 }
 
@@ -15,7 +15,7 @@ const GATES = [
 PlayerEvents.loggedIn(event => {
   const player = event.player
   if (!player.isOnScoreboardTeam('Meat')) {
-    event.level.runCommandSilent(`team join Meat ${player.username}`)
+    Utils.server.runCommandSilent(`team join Meat ${player.username}`)
   }
 })
 
