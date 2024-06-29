@@ -1,12 +1,39 @@
 {
   "pools": [
     {
-      "rolls": 1.0,
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "allthemodium:chests/hallway_loot"
+          "name": "meatsalad:gear/random_chance",
+          "weight": 49,
+          "quality": 1.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:materials/random",
+          "weight": 37
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 8,
+          "quality": 1.0,
+          "stack": {
+            "item": "minecraft:totem_of_undying"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 6,
+          "quality": 1.0,
+          "stack": {
+            "item": "minecraft:enchanted_golden_apple"
+          }
         }
       ]
     }

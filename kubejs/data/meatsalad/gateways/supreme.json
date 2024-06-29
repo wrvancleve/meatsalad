@@ -47,6 +47,11 @@
           "attribute": "generic.movement_speed",
           "operation": "MULTIPLY_TOTAL",
           "value": 0.10
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.10
         }
       ],
       "rewards": [],
@@ -91,6 +96,11 @@
         },
         {
           "attribute": "generic.movement_speed",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.15
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
           "operation": "MULTIPLY_TOTAL",
           "value": 0.15
         }
@@ -147,6 +157,11 @@
           "attribute": "generic.movement_speed",
           "operation": "MULTIPLY_TOTAL",
           "value": 0.15
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.20
         }
       ],
       "rewards": [],
@@ -193,6 +208,11 @@
           "attribute": "generic.movement_speed",
           "operation": "MULTIPLY_TOTAL",
           "value": 0.20
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 0.40
         }
       ],
       "rewards": [],

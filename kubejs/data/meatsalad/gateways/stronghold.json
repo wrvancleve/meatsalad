@@ -41,13 +41,28 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:arrow_damage",
+                    "operation": "ADDITION",
                     "value": 0.10
                 },
                 {
                     "attribute": "generic.movement_speed",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
                     "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
                 }
             ],
             "rewards": [],
@@ -72,13 +87,28 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "attributeslib:arrow_damage",
+                    "operation": "ADDITION",
                     "value": 0.10
                 },
                 {
                     "attribute": "generic.movement_speed",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
                     "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
                 }
             ],
             "rewards": [],
@@ -99,13 +129,13 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
-                    "value": 0.15
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
                 },
                 {
-                    "attribute": "generic.movement_speed",
-                    "operation": "MULTIPLY_TOTAL",
-                    "value": 0.05
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.10
                 },
                 {
                     "attribute": "attributeslib:arrow_damage",
@@ -113,8 +143,13 @@
                     "value": 0.10
                 },
                 {
-                    "attribute": "attributeslib:life_steal",
-                    "operation": "ADDITION",
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
                     "value": 0.10
                 }
             ],
@@ -132,13 +167,28 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "attributeslib:arrow_damage",
+                    "operation": "ADDITION",
                     "value": 0.15
                 },
                 {
                     "attribute": "generic.movement_speed",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
                     "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.20
                 },
                 {
                     "attribute": "attributeslib:life_steal",
@@ -164,18 +214,28 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
+                    "operation": "MULTIPLY_BASE",
                     "value": 0.15
                 },
                 {
-                    "attribute": "generic.movement_speed",
-                    "operation": "MULTIPLY_TOTAL",
-                    "value": 0.05
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
                 },
                 {
                     "attribute": "attributeslib:arrow_damage",
                     "operation": "ADDITION",
-                    "value": 0.10
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.20
                 },
                 {
                     "attribute": "attributeslib:life_steal",
@@ -242,29 +302,29 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
-                    "value": 0.25
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
                 },
                 {
-                    "attribute": "generic.knockback_resistance",
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "attributeslib:arrow_damage",
                     "operation": "ADDITION",
-                    "value": 0.5
+                    "value": 0.15
                 },
                 {
-                    "attribute": "generic.armor",
-                    "operation": "ADDITION",
-                    "value": 3
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.05
                 },
                 {
-					"attribute": "generic.attack_damage",
-					"operation": "ADDITION",
-					"value": 3
-				},
-                {
-					"attribute": "attributeslib:armor_pierce",
-					"operation": "ADDITION",
-					"value": 3
-				},
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.20
+                },
                 {
                     "attribute": "attributeslib:life_steal",
                     "operation": "ADDITION",
@@ -349,38 +409,36 @@
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
-                    "operation": "MULTIPLY_TOTAL",
-                    "value": 0.25
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
                 },
                 {
-                    "attribute": "generic.knockback_resistance",
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "attributeslib:arrow_damage",
                     "operation": "ADDITION",
-                    "value": 0.5
+                    "value": 0.15
                 },
                 {
-                    "attribute": "generic.armor",
-                    "operation": "ADDITION",
-                    "value": 3
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.05
                 },
                 {
-					"attribute": "generic.attack_damage",
-					"operation": "ADDITION",
-					"value": 3
-				},
-                {
-					"attribute": "attributeslib:armor_pierce",
-					"operation": "ADDITION",
-					"value": 3
-				},
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "MULTIPLY_BASE",
+                    "value": 0.20
+                },
                 {
                     "attribute": "attributeslib:life_steal",
                     "operation": "ADDITION",
                     "value": 0.10
                 }
             ],
-            "rewards": [
-                
-            ],
+            "rewards": [],
             "max_wave_time": 2400,
             "setup_time": 200
         }

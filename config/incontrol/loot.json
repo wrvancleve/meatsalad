@@ -103,5 +103,25 @@
     "remove": [
       "quark:forgotten_hat"
     ]
+  },
+  {
+    "mob": "minecraft:evoker",
+    "remove": [
+      "minecraft:emerald",
+      "minecraft:totem_of_undying"
+    ]
+  },
+  {
+    "mob": "minecraft:vindicator",
+    "remove": [
+      "minecraft:emerald",
+      "minecraft:iron_axe"
+    ]
+  },
+  {
+    "mob": "irons_spellbooks:necromancer",
+    "remove": [
+      "irons_spellbooks:tarnished_helmet"
+    ]
   }
 ]

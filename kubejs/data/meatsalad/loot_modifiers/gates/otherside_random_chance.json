@@ -6,15 +6,15 @@
       "terms": [
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chests/generic_loot"
+          "loot_table_id": "allthemodium:chest/generic_loot"
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chests/hallway_loot"
+          "loot_table_id": "allthemodium:chest/hallway_loot"
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chests/library_loot"
+          "loot_table_id": "allthemodium:chest/library_loot"
         }
       ]
     }

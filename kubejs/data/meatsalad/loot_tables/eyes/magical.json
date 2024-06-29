@@ -6,7 +6,6 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 30.0,
           "stack": {
             "item": "endrem:magical_eye"
           },
@@ -24,10 +23,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 70.0
         }
       ]
     }

@@ -29,7 +29,7 @@
       "repair_value": 0.5,
       "harvest_speed": 8.0,
       "melee_damage": 3.0,
-      "magic_damage": 1.0,
+      "magic_damage": 3.0,
       "attack_speed": -0.1,
       "ranged_damage": 2.0,
       "ranged_speed": -0.1,
