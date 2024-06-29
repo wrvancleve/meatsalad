@@ -29,6 +29,7 @@ EntityEvents.death(event => {
 })
 
 LootJS.modifiers((event) => {
+  event.disableWitherStarDrop()
   Object.keys(BOSSES).forEach(boss => {
     event.addEntityLootModifier(boss)
       .removeLoot(Ingredient.all)

@@ -10,11 +10,11 @@
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chests/treasure_room"
+          "loot_table_id": "allthemodium:chest/treasure_room"
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "allthemodium:chests/treasure_room_loot"
+          "loot_table_id": "allthemodium:chest/treasure_room_loot"
         },
         {
           "condition": "forge:loot_table_id",

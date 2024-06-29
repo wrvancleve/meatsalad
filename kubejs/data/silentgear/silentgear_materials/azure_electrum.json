@@ -27,9 +27,9 @@
       "rarity": 109.0,
       "charging_value": 1.5,
       "repair_value": 0.5,
-      "harvest_speed": 18.0,
-      "melee_damage": 4.0,
-      "magic_damage": 4.0,
+      "harvest_speed": 29.0,
+      "melee_damage": 7.0,
+      "magic_damage": 10.0,
       "attack_speed": 0.0,
       "ranged_damage": 4.0,
       "ranged_speed": 0.0,
@@ -41,7 +41,7 @@
       "armor/leggings": 6.0,
       "armor/boots": 3.0,
       "armor_toughness": 8.0,
-      "magic_armor": 16.0
+      "magic_armor": 20.0
     },
     "rod": {
       "durability": {

@@ -19,7 +19,7 @@
 				"data": {
 					"attribute": "irons_spellbooks:spell_power",
 					"value": 0.05,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -69,7 +69,7 @@
 				"data": {
 					"attribute": "minecraft:generic.attack_damage",
 					"value": 0.05,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -94,7 +94,7 @@
 				"data": {
 					"attribute": "attributeslib:arrow_damage",
 					"value": 0.05,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -113,7 +113,7 @@
 				"data": {
 					"attribute": "irons_spellbooks:spell_power",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -132,7 +132,7 @@
 				"data": {
 					"attribute": "minecraft:generic.attack_damage",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -151,7 +151,7 @@
 				"data": {
 					"attribute": "attributeslib:arrow_damage",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -189,7 +189,7 @@
 				"data": {
 					"attribute": "minecraft:generic.attack_speed",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -208,7 +208,7 @@
 				"data": {
 					"attribute": "attributeslib:life_steal",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -227,7 +227,7 @@
 				"data": {
 					"attribute": "attributeslib:draw_speed",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -246,7 +246,7 @@
 				"data": {
 					"attribute": "attributeslib:arrow_velocity",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -265,7 +265,7 @@
 				"data": {
 					"attribute": "irons_spellbooks:cooldown_reduction",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -284,7 +284,7 @@
 				"data": {
 					"attribute": "irons_spellbooks:mana_regen",
 					"value": 0.025,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -303,7 +303,7 @@
 				"data": {
 					"attribute": "generic.movement_speed",
 					"value": 0.05,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -322,7 +322,7 @@
 				"data": {
 					"attribute": "attributeslib:crit_chance",
 					"value": 0.05,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -341,7 +341,7 @@
 				"data": {
 					"attribute": "attributeslib:dodge_chance",
 					"value": 0.10,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -360,7 +360,7 @@
 				"data": {
 					"attribute": "attributeslib:crit_damage",
 					"value": 0.10,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
