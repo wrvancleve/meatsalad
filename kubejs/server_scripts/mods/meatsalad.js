@@ -3,15 +3,6 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  event.shaped('minecraft:trident', [
-    ' ss',
-    ' ps',
-    'p  '
-  ], {
-    s: 'meatsalad:elder_guardian_spike',
-    p: 'minecraft:prismarine_shard',
-  }).id('meatsalad:trident')
-
   event.shaped('4x meatsalad:dimensional_shard', [
     'deg',
     'irX',
@@ -153,7 +144,7 @@ ServerEvents.recipes(event => {
       A: Ingredient.of('cataclysm:abyssal_egg'),
       W: Ingredient.of('apotheosis:warden_tendril'),
       D: Ingredient.of('quark:dragon_scale'),
-      S: Ingredient.of('meatsalad:elder_guardian_spike'),
+      S: Ingredient.of('progressivebosses:elder_guardian_spike'),
       e: Ingredient.of('minecraft:echo_shard'),
       C: Ingredient.of('alexsmobs:mosquito_larva'),
       H: Ingredient.of('alexsmobs:soul_heart'),
