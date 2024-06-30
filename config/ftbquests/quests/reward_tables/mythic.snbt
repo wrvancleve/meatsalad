@@ -17,7 +17,7 @@
 		{ item: "apotheosis:superior_sigil_of_socketing", weight: 10.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
 					gateway: "meatsalad:supreme"

@@ -1,6 +1,6 @@
 {
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ftbquests:lootcrate"
 		tag: {
 			type: "common_loot"
@@ -31,7 +31,7 @@
 		{ item: "minecraft:saddle", weight: 3.0f }
 		{
 			item: {
-				Count: 1b
+				Count: 1
 				id: "constructionwand:iron_wand"
 				tag: {
 					Damage: 0

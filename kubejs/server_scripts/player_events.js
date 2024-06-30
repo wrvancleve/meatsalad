@@ -54,3 +54,14 @@ PlayerEvents.inventoryChanged(event => {
       break
   }
 })
+
+PlayerEvents.advancement(event => {
+  let advancement = event.getAdvancement() + ''
+  if (advancement.startsWith('meatsalad:stage/')) {
+    let player = event.player
+    let stage = advancement.split('/')[1]
+    if (!player.stages.has(stage)) {
+      Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
+    }
+  }
+})
