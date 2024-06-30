@@ -7,42 +7,6 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "minecraft:chests/pillager_outpost"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_corsair/illager_corsair_barrels"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_corsair/illager_corsair_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_barrels"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_galley/illager_galley_barrels"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_galley/illager_galley_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_windmill/illager_windmill_barrels"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_windmill/illager_windmill_treasure"
         }
       ]
     }

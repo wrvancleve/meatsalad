@@ -19,18 +19,6 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "betterstrongholds:chests/library_md"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_library"
         }
       ]
     }

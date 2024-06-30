@@ -24,9 +24,13 @@
 - Remove data\apotheosis\bosses\the_nether\zombified_piglin.json
 - Remove data\apotheosis\bosses\the_end\endermite.json
 - Remove data\apotheosis\bosses\the_end\shulker.json
+- Remove data\apotheosis\worldgen\structure_set
 
 ### AllTheModium
 - Remove data\apotheosis
+
+### CTOV
+- Remove data\ctov\worldgen\structure_set
 
 ### End Remastered
 - Remove data\endrem\loot_modifiers\*.json (except pillager_outpost and witch)
@@ -92,6 +96,27 @@
 
 ### Treasure Bags
 - Remove data
+
+### YungsBetterDesertTemples
+- Remove data\betterdeserttemples\worldgen\structure_set
+
+### YungsBetterJungleTemples
+- Remove data\betterjungletemples\worldgen\structure_set
+
+### YungsBetterMineshafts
+- Remove data\bettermineshafts\worldgen\structure_set
+
+### YungsBetterNetherFortresses
+- Remove data\betterfortresses\worldgen\structure_set
+
+### YungsBetterOceanMonuments
+- Remove data\betteroceanmonuments\worldgen\structure_set
+
+### YungsBetterStrongholds
+- Remove data\betterstrongholds\worldgen\structure_set
+
+### YungsBetterWitchHuts
+- Remove data\betterwitchhuts\worldgen\structure_set\witch_hut
 
 ## Server Startup
 1. `wget <forgeInstallerURL>`
