@@ -417,7 +417,7 @@
 				{
 					id: "6F600A9C86934DA7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:creative_fluid_tank"
 						tag: {
 							mekData: {

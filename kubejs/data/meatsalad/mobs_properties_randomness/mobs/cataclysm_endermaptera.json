@@ -1,17 +1,10 @@
 {
   "target": "cataclysm:endermaptera",
-  "attributes": [
-    {
-      "id": "minecraft:generic.max_health",
-      "modifier_name": "Tier Three More Health",
-      "amount": 1.5,
-      "operation": "multiply_base"
-    },
-    {
-      "id": "minecraft:generic.attack_damage",
-      "modifier_name": "Tier Three More Damage",
-      "amount": 1.0,
-      "operation": "multiply_base"
-    }
-  ]
+  "presets": {
+    "list": [
+      {
+        "id": "meatsalad:default_scaling"
+      }
+    ]
+  }
 }

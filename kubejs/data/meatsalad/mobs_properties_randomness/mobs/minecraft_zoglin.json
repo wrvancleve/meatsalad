@@ -1,87 +1,10 @@
 {
   "target": "minecraft:zoglin",
-  "attributes": [
-    {
-      "id": "minecraft:generic.max_health",
-      "modifier_name": "Tier One More Health",
-      "amount": 0.5,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "allthemodium:the_other",
-            "minecraft:the_end"
-          ],
-          "inverse_dimension_list": true
-        }
+  "presets": {
+    "list": [
+      {
+        "id": "meatsalad:default_scaling"
       }
-    },
-    {
-      "id": "minecraft:generic.attack_damage",
-      "modifier_name": "Tier One More Damage",
-      "amount": 0.25,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "allthemodium:the_other",
-            "minecraft:the_end"
-          ],
-          "inverse_dimension_list": true
-        }
-      }
-    },
-    {
-      "id": "minecraft:generic.max_health",
-      "modifier_name": "Tier Two More Health",
-      "amount": 1.0,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "allthemodium:the_other"
-          ]
-        }
-      }
-    },
-    {
-      "id": "minecraft:generic.attack_damage",
-      "modifier_name": "Tier Two More Damage",
-      "amount": 0.5,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "allthemodium:the_other"
-          ]
-        }
-      }
-    },
-    {
-      "id": "minecraft:generic.max_health",
-      "modifier_name": "Tier Three More Health",
-      "amount": 1.5,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "minecraft:the_end"
-          ]
-        }
-      }
-    },
-    {
-      "id": "minecraft:generic.attack_damage",
-      "modifier_name": "Tier Three More Damage",
-      "amount": 1.0,
-      "operation": "multiply_base",
-      "conditions": {
-        "world": {
-          "dimensions": [
-            "minecraft:the_end"
-          ]
-        }
-      }
-    }
-  ]
+    ]
+  }
 }

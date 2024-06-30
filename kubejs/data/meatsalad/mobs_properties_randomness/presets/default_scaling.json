@@ -1,0 +1,147 @@
+{
+  "attributes": [
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier One More Health",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_nether"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier One More Damage",
+      "amount": 0.25,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_nether"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier Two More Health",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_other"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier Two More Damage",
+      "amount": 0.25,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_other"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Tier Three More Health",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_end"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Tier Three More Damage",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_end"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    }
+  ],
+  "experience_multiplier": {
+    "value": 1,
+    "conditions_modifier": [
+      {
+        "operation": "add",
+        "amount": 0.25,
+        "condition": {
+          "game_stages_unlocked": [
+            {
+              "game_stages": [
+                "the_nether"
+              ],
+              "player_mode": "any"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "add",
+        "amount": 0.25,
+        "condition": {
+          "game_stages_unlocked": [
+            {
+              "game_stages": [
+                "the_other"
+              ],
+              "player_mode": "any"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "add",
+        "amount": 0.5,
+        "condition": {
+          "game_stages_unlocked": [
+            {
+              "game_stages": [
+                "the_end"
+              ],
+              "player_mode": "any"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

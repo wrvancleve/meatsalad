@@ -4,7 +4,7 @@
 	filename: "bounties"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "minecraft:diamond_sword"
 		tag: {
 			Damage: 0
@@ -138,7 +138,7 @@
 				{
 					id: "2813AD7B0B0C1ED6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:skeleton"
@@ -177,7 +177,7 @@
 				{
 					id: "0C5D804F5CC89A1B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:zombie"
@@ -355,7 +355,7 @@
 				{
 					id: "79B22AE796AAC230"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:creeper"
@@ -394,7 +394,7 @@
 				{
 					id: "1EF25D775C9CC4D9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:zombie"
@@ -435,7 +435,7 @@
 				{
 					id: "7C6D7C0107084C09"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:skeleton"
@@ -476,7 +476,7 @@
 				{
 					id: "3E9E093E3A02AD17"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:creeper"
@@ -600,7 +600,7 @@
 				{
 					id: "25E87C4EF2BF596F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:spider"
@@ -639,7 +639,7 @@
 				{
 					id: "117985EEF74C6562"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:spider"
@@ -686,7 +686,7 @@
 			tasks: [{
 				entity: "minecraft:witch"
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:harming"
@@ -720,7 +720,7 @@
 			tasks: [{
 				entity: "minecraft:witch"
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:harming"
@@ -754,7 +754,7 @@
 			tasks: [{
 				entity: "minecraft:witch"
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:harming"
@@ -781,7 +781,7 @@
 				{
 					id: "665C1468B3F7F519"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:witch"
@@ -799,7 +799,7 @@
 			tasks: [{
 				entity: "minecraft:witch"
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:harming"
@@ -826,7 +826,7 @@
 				{
 					id: "045A1AC510F6B0AF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:witch"
@@ -846,7 +846,7 @@
 			tasks: [{
 				entity: "minecraft:witch"
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:harming"
@@ -956,7 +956,7 @@
 				{
 					id: "4E7344A0927B0E7F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "gateways:basic/blaze"
@@ -995,7 +995,7 @@
 				{
 					id: "632030718DDCFC01"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "gateways:basic/blaze"
@@ -1119,7 +1119,7 @@
 				{
 					id: "305D4E85C87AD335"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:wither_skeleton"
@@ -1158,7 +1158,7 @@
 				{
 					id: "023FAC6DF7F5069C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "meatsalad:wither_skeleton"
@@ -1282,7 +1282,7 @@
 				{
 					id: "2378F6272D930155"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "gateways:basic/enderman"
@@ -1321,7 +1321,7 @@
 				{
 					id: "7338D44E518DB529"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gateways:gate_pearl"
 						tag: {
 							gateway: "gateways:basic/enderman"
@@ -1367,7 +1367,7 @@
 			]
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:wooden_sword"
 					tag: {
 						Damage: 0
@@ -1401,7 +1401,7 @@
 			]
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:stone_sword"
 					tag: {
 						Damage: 0
@@ -1435,7 +1435,7 @@
 			]
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:golden_sword"
 					tag: {
 						Damage: 0
@@ -1469,7 +1469,7 @@
 			]
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:iron_sword"
 					tag: {
 						Damage: 0
@@ -1505,7 +1505,7 @@
 			size: 1.5d
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:diamond_sword"
 					tag: {
 						Damage: 0
@@ -1541,7 +1541,7 @@
 			size: 1.5d
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:netherite_sword"
 					tag: {
 						Damage: 0
@@ -1577,7 +1577,7 @@
 			size: 1.75d
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "allthemodium:allthemodium_sword"
 					tag: {
 						Damage: 0
@@ -1613,7 +1613,7 @@
 			size: 2.0d
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "awakened_bosses:herobrine_sword"
 					tag: {
 						Damage: 0
