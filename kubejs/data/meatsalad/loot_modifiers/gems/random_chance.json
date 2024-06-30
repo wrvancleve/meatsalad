@@ -43,54 +43,6 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "betterfortresses:chests/keep"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/aviary/aviary_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_elite"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_normal"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_towers"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_barrels"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms"
         }
       ]
     }

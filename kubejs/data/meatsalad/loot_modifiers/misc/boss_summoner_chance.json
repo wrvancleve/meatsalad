@@ -43,46 +43,6 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "dungeoncrawl:chests/treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/aviary/aviary_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/ceryneian_hind/ceryneian_hind_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure"
         }
       ]
     }

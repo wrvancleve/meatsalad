@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:nether_complexes",
-    "betterfortresses:fortress"
+    "minecraft:nether_complexes"
   ]
 }
