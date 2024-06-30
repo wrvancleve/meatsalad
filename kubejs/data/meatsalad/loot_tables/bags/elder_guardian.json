@@ -16,6 +16,18 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
+          "stack": {
+            "item": "progressivebosses:elder_guardian_spike"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
           "weight": 50,
           "stack": {
             "item": "endrem:guardian_eye"
