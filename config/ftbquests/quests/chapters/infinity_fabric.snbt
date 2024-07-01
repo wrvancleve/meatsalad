@@ -445,16 +445,16 @@
 			id: "7A49403071057C31"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "747B1481D7B00F14"
-					type: "xp"
-					xp: 250
-				}
-				{
 					exclude_from_claim_all: true
 					id: "7839F41BF80B9AAB"
 					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "747B1481D7B00F14"
+					type: "xp"
+					xp: 200
 				}
 			]
 			subtitle: "Craft a Palladium Block"
@@ -464,23 +464,23 @@
 				type: "item"
 			}]
 			title: "Palladium Block"
-			x: 3.0d
-			y: -3.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			id: "11DC0F3A15F72DCB"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "514467A3E2B6AD4C"
-					type: "xp"
-					xp: 250
-				}
-				{
 					exclude_from_claim_all: true
 					id: "0156C723F6DA43BA"
 					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "514467A3E2B6AD4C"
+					type: "xp"
+					xp: 200
 				}
 			]
 			subtitle: "Craft a Vibranium Block"
@@ -490,8 +490,8 @@
 				type: "item"
 			}]
 			title: "Vibranium Block"
-			x: 4.0d
-			y: -2.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			description: ["Obtained by killing the Elder Guardian"]
@@ -552,25 +552,25 @@
 			id: "21521E524363B585"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "6A83520FE4414CA4"
-					type: "xp"
-					xp: 100
-				}
-				{
 					exclude_from_claim_all: true
 					id: "0E906EE31DB34F46"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "6A83520FE4414CA4"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Soul Heart"
+			subtitle: "Obtain a Ghast Tear"
 			tasks: [{
 				id: "7850192B9355AC51"
-				item: "alexsmobs:soul_heart"
+				item: "minecraft:ghast_tear"
 				type: "item"
 			}]
-			title: "Soul Heart"
+			title: "Ghast Tear"
 			x: -5.0d
 			y: 2.0d
 		}
@@ -579,25 +579,25 @@
 			id: "6094D6AD4A191B04"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "3883E4B15A5C4900"
-					type: "xp"
-					xp: 100
-				}
-				{
 					exclude_from_claim_all: true
 					id: "32F8AB6435E84DFE"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "3883E4B15A5C4900"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Crimson Mosquito Larva"
+			subtitle: "Obtain a Phantom Membrane"
 			tasks: [{
 				id: "480DB77338372096"
-				item: "alexsmobs:mosquito_larva"
+				item: "minecraft:phantom_membrane"
 				type: "item"
 			}]
-			title: "Crimson Mosquito Larva"
+			title: "Phantom Membrane"
 			x: -6.0d
 			y: 2.0d
 		}
@@ -634,25 +634,25 @@
 			id: "3CA4A8270BFF4EF5"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "7BD4D1F518A72999"
-					type: "xp"
-					xp: 100
-				}
-				{
 					exclude_from_claim_all: true
 					id: "2C229A338273FAF6"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "7BD4D1F518A72999"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Skreecher Soul"
+			subtitle: "Obtain a Frozen Bone"
 			tasks: [{
 				id: "0798F66D2648BB85"
-				item: "alexsmobs:skreecher_soul"
+				item: "irons_spellbooks:frozen_bone"
 				type: "item"
 			}]
-			title: "Skreecher Soul"
+			title: "Frozen Bone"
 			x: -8.0d
 			y: 3.5d
 		}
@@ -715,25 +715,25 @@
 			id: "634B56A0AB439540"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "407A4CBE5A6442FE"
-					type: "xp"
-					xp: 100
-				}
-				{
 					exclude_from_claim_all: true
 					id: "71564C1C0737C1C0"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "407A4CBE5A6442FE"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Straddlite"
+			subtitle: "Obtain a Hogskin"
 			tasks: [{
 				id: "0583FA1E90EEE46B"
-				item: "alexsmobs:straddlite"
+				item: "irons_spellbooks:hogskin"
 				type: "item"
 			}]
-			title: "Straddlite"
+			title: "Hogskin"
 			x: -6.0d
 			y: 7.0d
 		}
@@ -838,25 +838,25 @@
 			id: "64CF45C58643CE83"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "35D92BEC3C0593A7"
-					type: "xp"
-					xp: 100
-				}
-				{
 					exclude_from_claim_all: true
 					id: "60B40FD410AF26E0"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "35D92BEC3C0593A7"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Dropbear Claw"
+			subtitle: "Obtain a Koboleton Bone"
 			tasks: [{
 				id: "593637987A6D4C8A"
-				item: "alexsmobs:dropbear_claw"
+				item: "cataclysm:koboleton_bone"
 				type: "item"
 			}]
-			title: "Dropbear Claw"
+			title: "Koboleton Bone"
 			x: 5.0d
 			y: 7.0d
 		}
@@ -915,57 +915,29 @@
 			y: 4.5d
 		}
 		{
-			description: ["Found in End loot chests"]
-			id: "24DA6E89E42BACEA"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "5D46CAE5D1A6EEC6"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7F6A1C6F056DF198"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Craft a Mysterious Worm"
-			tasks: [{
-				id: "65582CB56BBCFAA0"
-				item: "alexsmobs:mysterious_worm"
-				type: "item"
-			}]
-			title: "Mysterious Worm"
-			x: 7.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["24DA6E89E42BACEA"]
-			description: ["Obtained by killing the Void Worm in the End"]
+			description: ["Obtained by killing Witches"]
 			id: "41C8A9E44381EFEB"
 			rewards: [
-				{
-					auto: "invisible"
-					id: "0DAB9870EC28CB36"
-					type: "xp"
-					xp: 250
-				}
 				{
 					exclude_from_claim_all: true
 					id: "2FE23D943FE50770"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "0DAB9870EC28CB36"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Void Worm Eye"
+			subtitle: "Obtain a Witch Pupil"
 			tasks: [{
 				id: "6808DC6E80DBD9EA"
-				item: "alexsmobs:void_worm_eye"
+				item: "endrem:witch_pupil"
 				type: "item"
 			}]
-			title: "Void Worm Eye"
+			title: "Witch Pupil"
 			x: 6.0d
 			y: 2.0d
 		}
@@ -974,25 +946,25 @@
 			id: "72EBDA35E7084ED7"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "44B067838A2DBE0D"
-					type: "xp"
-					xp: 150
-				}
-				{
 					exclude_from_claim_all: true
 					id: "33F0B1734A0EAD4D"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "44B067838A2DBE0D"
+					type: "xp"
+					xp: 100
+				}
 			]
-			subtitle: "Obtain a Farseer Arm"
+			subtitle: "Obtain a Wither Bone"
 			tasks: [{
 				id: "3A9B044610E641BE"
-				item: "alexsmobs:farseer_arm"
+				item: "bhc:wither_bone"
 				type: "item"
 			}]
-			title: "Farseer Arm"
+			title: "Wither Bone"
 			x: 5.0d
 			y: 2.0d
 		}
@@ -1065,16 +1037,16 @@
 			id: "59AE5FD98E96420C"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "3F3B60277A7A1C6D"
-					type: "xp"
-					xp: 250
-				}
-				{
 					exclude_from_claim_all: true
 					id: "02C324C1593901C9"
 					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "3F3B60277A7A1C6D"
+					type: "xp"
+					xp: 300
 				}
 			]
 			subtitle: "Craft an Abiding Alloy Block"
@@ -1084,8 +1056,8 @@
 				type: "item"
 			}]
 			title: "Abiding Alloy Block"
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			id: "1B7CDB65C4D3E5C0"
@@ -1116,51 +1088,51 @@
 			id: "52F60E03501F7382"
 			rewards: [
 				{
-					auto: "invisible"
-					id: "5650E6F6EAF414D2"
-					type: "xp"
-					xp: 250
-				}
-				{
 					exclude_from_claim_all: true
 					id: "5651FC1CA84187EA"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "5650E6F6EAF414D2"
+					type: "xp"
+					xp: 200
+				}
 			]
-			subtitle: "Craft an Adamantite Block"
+			subtitle: "Craft an Azure Electrum Block"
 			tasks: [{
 				id: "70996D4C3FCD141B"
-				item: "meatsalad:adamantite_block"
+				item: "silentgear:azure_electrum_block"
 				type: "item"
 			}]
-			title: "Adamantite Block"
-			x: -2.0d
-			y: -4.0d
+			title: "Azure Electrum Block"
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			id: "0C7F5E46EB6E1028"
 			rewards: [
-				{
-					auto: "invisible"
-					id: "21A4CB064FCF8837"
-					type: "xp"
-					xp: 250
-				}
 				{
 					exclude_from_claim_all: true
 					id: "2DC27B0F0DA1ABE1"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
+				{
+					auto: "invisible"
+					id: "21A4CB064FCF8837"
+					type: "xp"
+					xp: 150
+				}
 			]
-			subtitle: "Craft a Mythril Block"
+			subtitle: "Craft a Crimson Steel Block"
 			tasks: [{
 				id: "3C3B30957D78B442"
-				item: "meatsalad:mythril_block"
+				item: "silentgear:crimson_steel_block"
 				type: "item"
 			}]
-			title: "Mythril Block"
+			title: "Crimson Steel Block"
 			x: -4.0d
 			y: -2.0d
 		}

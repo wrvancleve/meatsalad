@@ -75,12 +75,6 @@
         "maxCount": 5
       },
       {
-        "type": "alexsmobs:straddler",
-        "weight": 40,
-        "minCount": 2,
-        "maxCount": 3
-      },
-      {
         "type": "irons_spellbooks:archevoker",
         "weight": 20,
         "minCount": 1,
@@ -94,12 +88,6 @@
       },
       {
         "type": "irons_spellbooks:necromancer",
-        "weight": 20,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "irons_spellbooks:pyromancer",
         "weight": 20,
         "minCount": 1,
         "maxCount": 1

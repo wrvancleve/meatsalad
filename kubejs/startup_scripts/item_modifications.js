@@ -14,8 +14,6 @@ ItemEvents.modification(event => {
     })
   }
 
-  modifyItem('alexsmobs:mimicream', RARE)
-
   event.modify('awakened_bosses:herobrine_a_helmet', item => {
     item.armorProtection = 20
     item.armorToughness = 13.0

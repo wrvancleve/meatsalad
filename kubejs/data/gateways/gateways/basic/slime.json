@@ -40,7 +40,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
@@ -60,7 +60,7 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.05
         }
       ],
@@ -106,7 +106,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
@@ -116,7 +116,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         },
         {
@@ -126,7 +126,7 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         }
       ],
@@ -172,7 +172,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
@@ -182,7 +182,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         },
         {
@@ -192,7 +192,7 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         }
       ],

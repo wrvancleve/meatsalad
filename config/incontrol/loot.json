@@ -1,1 +1,127 @@
-[]
+[
+  {
+    "mob": "awakened_bosses:herobrine",
+    "remove": [
+      "awakened_bosses:herobrine_a_helmet",
+      "awakened_bosses:herobrine_a_chestplate",
+      "awakened_bosses:herobrine_a_leggings",
+      "awakened_bosses:herobrine_a_boots",
+      "awakened_bosses:herobrine_sword",
+      "awakened_bosses:herobrine_pickaxe",
+      "awakened_bosses:herobrine_axe",
+      "awakened_bosses:herobrine_shovel",
+      "awakened_bosses:herobrine_hoe",
+      "awakened_bosses:herobrine_nugget",
+      "awakened_bosses:herobrine_ingot",
+      "awakened_bosses:herobrine_block"
+    ]
+  },
+  {
+    "mob": "awakened_bosses:herobrine_minion",
+    "remove": [
+      "awakened_bosses:herobrine_a_helmet",
+      "awakened_bosses:herobrine_a_chestplate",
+      "awakened_bosses:herobrine_a_leggings",
+      "awakened_bosses:herobrine_a_boots",
+      "awakened_bosses:herobrine_sword",
+      "awakened_bosses:herobrine_pickaxe",
+      "awakened_bosses:herobrine_axe",
+      "awakened_bosses:herobrine_shovel",
+      "awakened_bosses:herobrine_hoe",
+      "awakened_bosses:herobrine_nugget",
+      "awakened_bosses:herobrine_ingot",
+      "awakened_bosses:herobrine_block"
+    ]
+  },
+  {
+    "mob": "awakened_bosses:mahva",
+    "remove": [
+      "awakened_bosses:herobrine_a_helmet",
+      "awakened_bosses:herobrine_a_chestplate",
+      "awakened_bosses:herobrine_a_leggings",
+      "awakened_bosses:herobrine_a_boots",
+      "awakened_bosses:herobrine_sword",
+      "awakened_bosses:herobrine_pickaxe",
+      "awakened_bosses:herobrine_axe",
+      "awakened_bosses:herobrine_shovel",
+      "awakened_bosses:herobrine_hoe",
+      "awakened_bosses:herobrine_nugget",
+      "awakened_bosses:herobrine_ingot",
+      "awakened_bosses:herobrine_block"
+    ]
+  },
+  {
+    "mob": "awakened_bosses:prowler",
+    "remove": [
+      "awakened_bosses:herobrine_a_helmet",
+      "awakened_bosses:herobrine_a_chestplate",
+      "awakened_bosses:herobrine_a_leggings",
+      "awakened_bosses:herobrine_a_boots",
+      "awakened_bosses:herobrine_sword",
+      "awakened_bosses:herobrine_pickaxe",
+      "awakened_bosses:herobrine_axe",
+      "awakened_bosses:herobrine_shovel",
+      "awakened_bosses:herobrine_hoe",
+      "awakened_bosses:herobrine_nugget",
+      "awakened_bosses:herobrine_ingot",
+      "awakened_bosses:herobrine_block"
+    ]
+  },
+  {
+    "mob": "awakened_bosses:reeker",
+    "remove": [
+      "awakened_bosses:herobrine_a_helmet",
+      "awakened_bosses:herobrine_a_chestplate",
+      "awakened_bosses:herobrine_a_leggings",
+      "awakened_bosses:herobrine_a_boots",
+      "awakened_bosses:herobrine_sword",
+      "awakened_bosses:herobrine_pickaxe",
+      "awakened_bosses:herobrine_axe",
+      "awakened_bosses:herobrine_shovel",
+      "awakened_bosses:herobrine_hoe",
+      "awakened_bosses:herobrine_nugget",
+      "awakened_bosses:herobrine_ingot",
+      "awakened_bosses:herobrine_block"
+    ]
+  },
+  {
+    "mob": "allthemodium:piglich",
+    "remove": [
+      "allthemodium:allthemodium_sword",
+      "allthemodium:allthemodium_pickaxe",
+      "allthemodium:allthemodium_axe",
+      "allthemodium:allthemodium_shovel",
+      "allthemodium:allthemodium_hoe",
+      "allthemodium:allthemodium_helmet",
+      "allthemodium:allthemodium_chestplate",
+      "allthemodium:allthemodium_leggings",
+      "allthemodium:allthemodium_boots"
+    ]
+  },
+  {
+    "mob": "quark:forgotten",
+    "remove": [
+      "quark:forgotten_hat"
+    ]
+  },
+  {
+    "mob": "minecraft:evoker",
+    "remove": [
+      "minecraft:emerald",
+      "minecraft:totem_of_undying"
+    ]
+  },
+  {
+    "mob": "minecraft:vindicator",
+    "remove": [
+      "minecraft:emerald",
+      "minecraft:iron_axe"
+    ]
+  },
+  {
+    "mob": "irons_spellbooks:necromancer",
+    "remove": [
+      "irons_spellbooks:tarnished_helmet"
+    ]
+  }
+]

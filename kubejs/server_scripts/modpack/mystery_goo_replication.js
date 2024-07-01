@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         : `goo_replication/${size}x/${itemName}`
 
       let replicationRecipe = event.shaped(output, replication.pattern, {
-        M: 'alexsmobs:mimicream',
+        M: 'meatsalad:mystery_goo',
         I: input
       })
       if (stage != null) {

@@ -1,29 +1,29 @@
 {
-    "target": "allthemodium:piglich",
-    "attributes": [
-        {
-            "id": "minecraft:generic.movement_speed",
-            "modifier_name": "Speedy Piglich",
-            "amount": 0.35,
-            "operation": "multiply_base"
-        },
-        {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "Adjust Health",
-            "amount": -9499,
-            "operation": "addition"
-        },
-        {
-            "id": "minecraft:generic.attack_damage",
-            "modifier_name": "More Damage",
-            "amount": 2.0,
-            "operation": "multiply_base"
-        },
-        {
-            "id": "minecraft:generic.armor",
-            "modifier_name": "Adjust Armor",
-            "amount": -39,
-            "operation": "addition"
-        }
-    ]
+  "target": "allthemodium:piglich",
+  "attributes": [
+    {
+      "id": "minecraft:generic.movement_speed",
+      "modifier_name": "Speedy Piglich",
+      "amount": 0.35,
+      "operation": "multiply_base"
+    },
+    {
+      "id": "minecraft:generic.max_health",
+      "modifier_name": "Adjust Health",
+      "amount": -9499,
+      "operation": "addition"
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "More Damage",
+      "amount": 2.0,
+      "operation": "multiply_base"
+    },
+    {
+      "id": "minecraft:generic.armor",
+      "modifier_name": "Adjust Armor",
+      "amount": -39,
+      "operation": "addition"
+    }
+  ]
 }

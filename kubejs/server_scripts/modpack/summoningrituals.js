@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
 
     for (let i = baseLevel; i <= 3; i++) {
       let entityId = `${bossMobId}_${i}`
-      let summoningRitual = event.recipes.summoningrituals.altar('alexsmobs:mimicream')
+      let summoningRitual = event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
       
       // Add mob output
       if (i == 0) {

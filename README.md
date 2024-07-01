@@ -13,9 +13,6 @@
 - [Server Startup](#server-startup)
 
 ## Manual Mod Changes
-### Alex's Mobs
-- Remove data\alexsmobs\capsid_recipes\shattered_dimensional_carver.json
-
 ### Apotheosis
 - Remove data\apotheosis\affixes\sword\attribute\elongated.json
 - Remove data\apotheosis\affix_loot_entries\overworld\chainmail_*.json
@@ -41,6 +38,8 @@
 - Remove data\industrialforegoing\recipes\laser_drill_ore\
 
 ### Iron Spellbooks
+- Remove data\irons_spellbooks\affixes\armor\attribute\spell_power
+- Remove data\irons_spellbooks\affixes\sword
 - Remove data\irons_spellbooks\bosses
 - Remove data\irons_spellbooks\boss_gear
 - Remove data\irons_spellbooks\loot_modifiers\entity_drops\blaze_modifier.json

@@ -129,10 +129,6 @@
                 {
                     "entity": "minecraft:shulker",
                     "count": 3
-                },
-                {
-                    "entity": "alexsmobs:mimicube",
-                    "count": 1
                 }
             ],
             "modifiers": [
@@ -175,10 +171,6 @@
                 {
                     "entity": "minecraft:shulker",
                     "count": 5
-                },
-                {
-                    "entity": "alexsmobs:mimicube",
-                    "count": 1
                 }
             ],
             "modifiers": [
@@ -327,10 +319,6 @@
                 {
                     "entity": "minecraft:shulker",
                     "count": 5
-                },
-                {
-                    "entity": "alexsmobs:mimicube",
-                    "count": 1
                 }
             ],
             "modifiers": [
@@ -372,7 +360,7 @@
         {
             "entities": [
                 {
-                    "entity": "alexsmobs:mimicube",
+                    "entity": "minecraft:illusioner",
                     "count": 3
                 }
             ],
@@ -415,7 +403,7 @@
         {
             "entities": [
                 {
-                    "entity": "alexsmobs:farseer",
+                    "entity": "minecraft:illusioner",
                     "count": 3
                 }
             ],
@@ -491,12 +479,8 @@
                     "count": 5
                 },
                 {
-                    "entity": "alexsmobs:mimicube",
-                    "count": 2
-                },
-                {
-                    "entity": "alexsmobs:farseer",
-                    "count": 2
+                    "entity": "minecraft:illusioner",
+                    "count": 5
                 }
             ],
             "modifiers": [
