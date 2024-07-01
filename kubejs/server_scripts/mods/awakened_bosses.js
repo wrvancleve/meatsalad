@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     [
       Ingredient.of('#forge:dyes/blue'),
       Ingredient.of('#forge:storage_blocks/diamond'),
-      Ingredient.of('alexsmobs:mimicream'),
+      Ingredient.of('meatsalad:mystery_goo'),
       Ingredient.of('meatsalad:draconic_infused_dark_matter')
     ],
     5000000,
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     [
       Ingredient.of('#forge:dyes/cyan'),
       Ingredient.of('#forge:storage_blocks/diamond'),
-      Ingredient.of('alexsmobs:mimicream'),
+      Ingredient.of('meatsalad:mystery_goo'),
       Ingredient.of('meatsalad:draconic_infused_dark_matter')
     ],
     5000000,

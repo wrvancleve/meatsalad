@@ -4,6 +4,7 @@ let addStage = (level, player, stage) => {
 }
 
 const GATES = [
+  'gateways:basic/blaze',
   'gateways:hellish_fortress',
   'meatsalad:stronghold',
   'meatsalad:magic',

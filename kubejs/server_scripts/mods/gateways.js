@@ -20,4 +20,14 @@ ServerEvents.recipes(event => {
     e: 'meatsalad:infused_ender_pearl',
     N: 'minecraft:nether_bricks',
   }).stage('hellish_fortress_gate').id('meatsalad:hellish_fortress_gate')
+
+  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `gateways:basic/blaze` }).strongNBT(), [
+    'BBB',
+    'BeB',
+    'NNN'
+  ], {
+    B: 'minecraft:blaze_rod',
+    e: 'meatsalad:infused_ender_pearl',
+    N: 'minecraft:nether_bricks',
+  }).stage('blaze_gate').id('meatsalad:blaze_gate')
 })

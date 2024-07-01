@@ -9,7 +9,6 @@ const BOSSES = {
   'cataclysm:netherite_monstrosity': 'netherite_monstrosity',
   'cataclysm:the_harbinger': 'the_harbinger',
   'cataclysm:the_leviathan': 'the_leviathan',
-  'alexsmobs:void_worm': 'void_worm',
   'minecraft:warden': 'warden',
   'minecraft:wither': 'wither',
 }

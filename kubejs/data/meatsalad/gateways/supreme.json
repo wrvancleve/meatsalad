@@ -25,7 +25,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.66
         },
         {
@@ -35,7 +35,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.5
         },
         {
@@ -45,12 +45,12 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         },
         {
           "attribute": "irons_spellbooks:spell_resist",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.10
         }
       ],
@@ -65,10 +65,6 @@
           "count": 10
         },
         {
-          "entity": "alexsmobs:farseer",
-          "count": 4
-        },
-        {
           "entity": "cataclysm:koboleton",
           "count": 7
         }
@@ -76,7 +72,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.85
         },
         {
@@ -86,7 +82,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.66
         },
         {
@@ -96,12 +92,12 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
           "attribute": "irons_spellbooks:spell_resist",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         }
       ],
@@ -135,7 +131,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.85
         },
         {
@@ -145,7 +141,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.66
         },
         {
@@ -155,12 +151,12 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.15
         },
         {
           "attribute": "irons_spellbooks:spell_resist",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.20
         }
       ],
@@ -186,7 +182,7 @@
       "modifiers": [
         {
           "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 1.25
         },
         {
@@ -196,7 +192,7 @@
         },
         {
           "attribute": "generic.attack_damage",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.85
         },
         {
@@ -206,12 +202,12 @@
         },
         {
           "attribute": "generic.movement_speed",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.20
         },
         {
           "attribute": "irons_spellbooks:spell_resist",
-          "operation": "MULTIPLY_TOTAL",
+          "operation": "MULTIPLY_BASE",
           "value": 0.40
         }
       ],

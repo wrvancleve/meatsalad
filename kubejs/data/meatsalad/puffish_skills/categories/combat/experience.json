@@ -2,7 +2,7 @@
 	"experience_per_level": {
 		"type": "expression",
 		"data": {
-			"expression": "round((level ^ 1.864) + 24)"
+			"expression": "round((level ^ 1.932) + 24)"
 		}
 	},
 	"sources": [

@@ -134,6 +134,8 @@ StartupEvents.registry('item', event => {
 
   createTaggedItem('amethyst', 'dust')
 
+  createItem('mystery_goo', 'rare')
+
   createTaggedItem('dimensional_shard', 'gem')
   createTaggedItem('dimensional_shard', 'dust')
   createItem('infused_diamond')

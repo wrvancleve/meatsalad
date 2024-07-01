@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:crystallizer/eternal_crystal')
 
   nucleosynthesize(event,
-    {mod: 'alexsmobs', item: 'mimicream'}, // Input
+    {mod: 'meatsalad', item: 'mystery_goo'}, // Input
     {mod: 'meatsalad', item: 'uu_matter'} // Output
   )
 
@@ -109,8 +109,8 @@ ServerEvents.recipes(event => {
     type: 'extendedcrafting:shaped_table',
     pattern: [
       'd     d',
-      ' V d P ',
-      '  FNC  ',
+      ' W d P ',
+      '  BNK  ',
       '  DMI  ',
       '  d d  '
     ],
@@ -120,10 +120,10 @@ ServerEvents.recipes(event => {
       M: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
       D: Ingredient.of('minecraft:dragon_egg'),
       I: Ingredient.of('meatsalad:vulcanite'),
-      V: Ingredient.of('alexsmobs:void_worm_eye'),
+      W: Ingredient.of('endrem:witch_pupil'),
       P: Ingredient.of('allthemodium:piglich_heart'),
-      F: Ingredient.of('alexsmobs:farseer_arm'),
-      C: Ingredient.of('alexsmobs:dropbear_claw'),
+      B: Ingredient.of('bhc:wither_bone'),
+      K: Ingredient.of('cataclysm:koboleton_bone'),
     },
     result: Item.of('meatsalad:manifest_illusion')
   }).id('meatsalad:manifest_illusion')
@@ -133,8 +133,8 @@ ServerEvents.recipes(event => {
     pattern: [
       'd     d',
       ' D d S ',
-      ' eHEkC ',
-      ' AsMhW ',
+      ' eGEFP ',
+      ' AHMhW ',
       '   d   '
     ],
     key: {
@@ -146,10 +146,10 @@ ServerEvents.recipes(event => {
       D: Ingredient.of('quark:dragon_scale'),
       S: Ingredient.of('progressivebosses:elder_guardian_spike'),
       e: Ingredient.of('minecraft:echo_shard'),
-      C: Ingredient.of('alexsmobs:mosquito_larva'),
-      H: Ingredient.of('alexsmobs:soul_heart'),
-      k: Ingredient.of('alexsmobs:skreecher_soul'),
-      s: Ingredient.of('alexsmobs:straddlite'),
+      P: Ingredient.of('minecraft:phantom_membrane'),
+      G: Ingredient.of('minecraft:ghast_tear'),
+      F: Ingredient.of('irons_spellbooks:frozen_bone'),
+      H: Ingredient.of('irons_spellbooks:hogskin'),
       h: Ingredient.of('minecraft:shulker_shell'),
     },
     result: Item.of('meatsalad:lost_illusion')

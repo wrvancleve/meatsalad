@@ -63,7 +63,7 @@
     "on_damaged": [
       {
         "target": "other",
-        "health_left": 0.80,
+        "health_left": 0.8,
         "potion_effects": [
           {
             "id": "minecraft:poison",
@@ -156,24 +156,6 @@
             "chance": 0.025
           },
           {
-            "id": "alexsmobs:earthquake",
-            "amplifier": 4,
-            "duration": 2,
-            "chance": 0.025
-          },
-          {
-            "id": "alexsmobs:exsanguination",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "alexsmobs:fear",
-            "amplifier": 1,
-            "duration": 1,
-            "chance": 0.01
-          },
-          {
             "id": "cataclysm:abyssal_burn",
             "amplifier": 4,
             "duration": 5,
@@ -207,12 +189,6 @@
         "potion_effects": [
           {
             "id": "minecraft:regeneration",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.5
-          },
-          {
-            "id": "alexsmobs:soulsteal",
             "amplifier": 4,
             "duration": 5,
             "chance": 0.5
@@ -255,12 +231,6 @@
           },
           {
             "id": "cofh_core:shocked",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "alexsmobs:exsanguination",
             "amplifier": 4,
             "duration": 5,
             "chance": 0.025

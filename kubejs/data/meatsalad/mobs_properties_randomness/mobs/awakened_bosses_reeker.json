@@ -1,23 +1,23 @@
 {
-    "target": "awakened_bosses:reeker",
-    "attributes": [
-        {
-            "id": "apotheosis:prot_pierce",
-            "modifier_name": "Protection pierce",
-            "amount": 48.0,
-            "operation": "addition"
-        },
-        {
-            "id": "apotheosis:armor_pierce",
-            "modifier_name": "Armor pierce",
-            "amount": 56.0,
-            "operation": "addition"
-        },
-        {
-            "id": "minecraft:generic.attack_damage",
-            "modifier_name": "More Damage",
-            "amount": 9.0,
-            "operation": "multiply_base"
-        }
-    ]
+  "target": "awakened_bosses:reeker",
+  "attributes": [
+    {
+      "id": "apotheosis:prot_pierce",
+      "modifier_name": "Protection pierce",
+      "amount": 48.0,
+      "operation": "addition"
+    },
+    {
+      "id": "apotheosis:armor_pierce",
+      "modifier_name": "Armor pierce",
+      "amount": 56.0,
+      "operation": "addition"
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "More Damage",
+      "amount": 9.0,
+      "operation": "multiply_base"
+    }
+  ]
 }

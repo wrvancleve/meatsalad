@@ -126,12 +126,6 @@
         "weight": 10,
         "minCount": 1,
         "maxCount": 1
-      },
-      {
-        "type": "irons_spellbooks:pyromancer",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 1
       }
     ],
     "creature": [
