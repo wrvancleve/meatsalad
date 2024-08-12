@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:overworld/earth\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:overworld/royalty\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:the_nether/blood_lord\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:the_nether/inferno\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:the_end/mageslayer\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:mythic\"},gem:\"apotheosis:the_end/endersurge\"}"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -136,6 +136,9 @@ StartupEvents.registry('item', event => {
 
   createItem('mystery_goo', 'rare')
 
+  createItem('incomplete_gate_pearl', 'rare')
+  createItem('incomplete_large_gate_pearl', 'rare')
+
   createTaggedItem('dimensional_shard', 'gem')
   createTaggedItem('dimensional_shard', 'dust')
   createItem('infused_diamond')
@@ -160,20 +163,22 @@ StartupEvents.registry('item', event => {
   })
   SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
 
+  createItem('level_up_skill_token')
+  createItem('reset_skill_token')
+
   createItem('oblivion_shard', 'uncommon')
   createItem('dark_matter', 'rare')
   createItem('infused_dark_matter', 'rare')
   createItem('draconic_infused_dark_matter', 'rare', true)
 
-  createItem('crystalline_powder', 'rare')
   createItem('eternal_crystal', 'epic')
-  createItem('infused_eternal_crystal', 'epic')
-  createItem('draconic_infused_eternal_crystal', 'epic', true)
+  createItem('eternal_crystal_shard', 'epic')
+  createItem('eternal_crystalline_powder', 'epic')
 
   createMaterials([
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
-    {name: 'neutronium', rarity: 'rare' },
-    {name: 'abiding_alloy', rarity: 'rare', types: ['ingot'] }
+    {name: 'neutronium', rarity: 'epic' },
+    {name: 'abiding_alloy', rarity: 'epic', types: ['ingot'] }
   ])
 
   createItem('vulcanite', 'rare', true)
@@ -185,8 +190,8 @@ StartupEvents.registry('item', event => {
 
   createItem('uu_matter', 'epic', true, 'UU-Matter')
   createItem('cosmic_shelling', 'epic', true)
-  createItem('chaos_crystal', 'epic', true)
-  createItem('chaos_shard', 'epic', true)
+  createItem('chaos_crystal', 'rare', true)
+  createItem('chaos_shard', 'rare', true)
 
   createItem('infinity_fabric', 'epic', true)
   createItem('infinity_fiber', 'epic', true)

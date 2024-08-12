@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 
   const tiers = [
     { name: 'redstone', material: 'redstone', materialType: 'dust', hasCatalyst: false },
-    { name: 'crystaltine', material: 'crystaltine', hasCatalyst: false },
+    { name: 'crystaltine', material: 'crystaltine' },
     { name: 'basic', material: 'iron', previousTable: 'minecraft:crafting_table' },
     { name: 'advanced', material: 'gold', previousTable: 'extendedcrafting:basic_table' },
     { name: 'elite', material: 'diamond', materialType: 'gem', previousTable: 'extendedcrafting:advanced_table' },
@@ -181,4 +181,15 @@ ServerEvents.recipes(event => {
       autoCraftingTable(tier.name)
     }
   })
+
+  replaceShaped(event, [
+    'scs',
+    'ede',
+    'scs'
+  ], {
+    s: '#forge:plates/steel',
+    c: 'extendedcrafting:crystaltine_component',
+    e: 'extendedcrafting:elite_catalyst',
+    d: 'meatsalad:dark_matter'
+  }, Item.of('extendedcrafting:compressor'))
 })

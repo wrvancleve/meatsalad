@@ -1,0 +1,11 @@
+{
+  "name": "Ender Pearl",
+  "colors": [
+    "0b4d42",
+    "032620"
+  ],
+  "ingredient": {
+    "tag": "forge:ender_pearls"
+  },
+  "materialCount": 81
+}

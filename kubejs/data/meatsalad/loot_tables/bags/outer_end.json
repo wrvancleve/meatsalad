@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random"
+          "name": "meatsalad:affix_materials/max"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random_chance"
+          "name": "meatsalad:affix_materials/random_chance"
         }
       ]
     },
@@ -56,31 +56,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/affixed/max_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 5,
-        "max": 10
-      },
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/max"
+          "name": "meatsalad:gems/random_max"
         }
       ]
     },
@@ -118,7 +94,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/great_ink"
+          "name": "meatsalad:ink/random_chance"
         }
       ]
     },
@@ -127,10 +103,8 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "stack": {
-            "item": "apotheosis:boss_summoner"
-          }
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:misc/very_rare/random"
         }
       ]
     },
@@ -144,33 +118,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/boss_summoner_chance"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "stack": {
-            "item": "bhc:red_heart"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "minecraft:uniform",
-        "min": 5,
-        "max": 10
-      },
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/red_heart_chance"
+          "name": "meatsalad:misc/very_rare/random_chance"
         }
       ]
     }

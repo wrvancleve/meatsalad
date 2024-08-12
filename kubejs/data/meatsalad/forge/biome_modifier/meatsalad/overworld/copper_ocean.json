@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_ocean",
+  "features": "meatsalad:overworld_copper_ore_bonus_placed",
+  "step": "underground_ores"
+}

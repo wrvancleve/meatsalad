@@ -6,19 +6,7 @@
       "terms": [
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "betterdeserttemples:chests/pharaoh_hidden"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "betterfortresses:chests/worship"
-        },
-        {
-          "condition": "forge:loot_table_id",
           "loot_table_id": "minecraft:chests/bastion_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "minecraft:chests/end_city_treasure"
         },
         {
           "condition": "forge:loot_table_id",
@@ -30,11 +18,31 @@
         },
         {
           "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/pharaoh_hidden"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/puzzle"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterjungletemples:chests/treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betteroceanmonuments:chests/upper_side_chamber"
+        },
+        {
+          "condition": "forge:loot_table_id",
           "loot_table_id": "betterstrongholds:chests/grand_library"
         },
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "betterstrongholds:chests/treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "dungeoncrawl:chests/treasure"
         }
       ]
     }

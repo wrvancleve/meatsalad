@@ -1,0 +1,11 @@
+{
+  "name": "Ghast Tear",
+  "colors": [
+    "9fc3c3",
+    "385858"
+  ],
+  "ingredient": {
+    "item": "minecraft:ghast_tear"
+  },
+  "materialCount": 81
+}

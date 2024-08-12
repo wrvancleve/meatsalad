@@ -7,12 +7,11 @@ ServerEvents.recipes(event => {
   let createThrusterRecipe = (name, material, material_type, coil) => {
     event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${name}"}`), [
       'MCM',
-      'CDC',
+      'CFC',
       'MFM'
     ], {
       M: `#forge:${material_type}s/${material}`,
       C: coil,
-      D: 'meatsalad:dark_matter',
       F: 'minecraft:fire_charge'
     }).id(`meatsalad:${name}_thruster`)
   }

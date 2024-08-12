@@ -49,11 +49,6 @@
           "type": "minecraft:loot_table",
           "name": "meatsalad:enchanted_books/random_treasure",
           "weight": 9
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:ancient_tomes/random",
-          "weight": 9
         }
       ]
     },

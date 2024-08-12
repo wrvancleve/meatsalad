@@ -1,0 +1,10 @@
+{
+  "name": "Niter",
+  "colors": [
+    "e7e2e2",
+    "a89c9d"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/niter"
+  }
+}

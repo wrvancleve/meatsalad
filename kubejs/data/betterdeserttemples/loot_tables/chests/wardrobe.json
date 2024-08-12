@@ -58,11 +58,6 @@
           "name": "minecraft:leather"
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance_treasure",
-          "weight": 16
-        },
-        {
           "type": "minecraft:item",
           "weight": 2,
           "functions": [

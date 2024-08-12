@@ -26,15 +26,11 @@
     "lining": [
       {
         "name": "meatsalad:mana_boost",
-        "level": 3
-      },
-      {
-        "name": "meatsalad:mana_regen",
-        "level": 3
+        "level": 1
       },
       {
         "name": "meatsalad:spell_damage",
-        "level": 5
+        "level": 1
       }
     ]
   },

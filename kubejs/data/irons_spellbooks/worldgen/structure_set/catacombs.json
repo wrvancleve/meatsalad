@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "irons_spellbooks:catacombs",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "yungsapi:enhanced_random_spread",
+    "salt": 1794563212,
+    "spacing": 72,
+    "separation": 48,
+    "enhanced_exclusion_zone": {
+      "other_set": "#irons_spellbooks:catacombs_avoid",
+      "chunk_count": 4
+    }
+  }
+}

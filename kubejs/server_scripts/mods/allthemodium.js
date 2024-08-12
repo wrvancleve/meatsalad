@@ -128,4 +128,32 @@ ServerEvents.recipes(event => {
     e: 'meatsalad:infused_ender_pearl',
     b: '#forge:nuggets/allthemodium'
   }, Item.of('allthemodium:teleport_pad'))
+
+  energize(event,
+    [
+      Ingredient.of('#forge:storage_blocks/vibranium'),
+      Ingredient.of('allthemodium:piglich_heart_block'),
+      Ingredient.of('#forge:storage_blocks/allthemodium'),
+    ],
+    8100000000,
+    Item.of('allthemodium:vibranium_allthemodium_alloy_block')
+  )
+  energize(event,
+    [
+      Ingredient.of('#forge:storage_blocks/unobtainium'),
+      Ingredient.of('allthemodium:piglich_heart_block'),
+      Ingredient.of('#forge:storage_blocks/allthemodium'),
+    ],
+    8100000000,
+    Item.of('allthemodium:unobtainium_allthemodium_alloy_block')
+  )
+  energize(event,
+    [
+      Ingredient.of('#forge:storage_blocks/unobtainium'),
+      Ingredient.of('allthemodium:piglich_heart_block'),
+      Ingredient.of('#forge:storage_blocks/vibranium'),
+    ],
+    8100000000,
+    Item.of('allthemodium:unobtainium_vibranium_alloy_block')
+  )
 })

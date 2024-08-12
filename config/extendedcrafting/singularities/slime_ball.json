@@ -1,0 +1,11 @@
+{
+  "name": "Slimeball",
+  "colors": [
+    "8cd782",
+    "508049"
+  ],
+  "ingredient": {
+    "item": "minecraft:slime_ball"
+  },
+  "materialCount": 81
+}

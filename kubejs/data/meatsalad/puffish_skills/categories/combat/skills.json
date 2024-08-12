@@ -156,7 +156,7 @@
 		"root": false
 	},
 	"-8_-10": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -256,
 		"y": -320,
 		"root": false
@@ -204,7 +204,7 @@
 		"root": false
 	},
 	"-7_-4": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -224,
 		"y": -128,
 		"root": false
@@ -240,7 +240,7 @@
 		"root": false
 	},
 	"-6_-1": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -192,
 		"y": -32,
 		"root": false
@@ -288,7 +288,7 @@
 		"root": false
 	},
 	"-5_13": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -160,
 		"y": 416,
 		"root": false
@@ -378,7 +378,7 @@
 		"root": false
 	},
 	"-1_-11": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -32,
 		"y": -352,
 		"root": false
@@ -396,7 +396,7 @@
 		"root": false
 	},
 	"-1_4": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": -32,
 		"y": 128,
 		"root": false
@@ -486,7 +486,7 @@
 		"root": false
 	},
 	"1_-4": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 32,
 		"y": -128,
 		"root": false
@@ -504,7 +504,7 @@
 		"root": false
 	},
 	"1_11": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 32,
 		"y": 352,
 		"root": false
@@ -594,7 +594,7 @@
 		"root": false
 	},
 	"5_-13": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 160,
 		"y": -416,
 		"root": false
@@ -636,7 +636,7 @@
 		"root": false
 	},
 	"6_-1": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 192,
 		"y": -32,
 		"root": false
@@ -672,7 +672,7 @@
 		"root": false
 	},
 	"7_-4": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 224,
 		"y": -128,
 		"root": false
@@ -726,7 +726,7 @@
 		"root": false
 	},
 	"8_10": {
-		"definition": "mana_regen",
+		"definition": "max_mana",
 		"x": 256,
 		"y": 320,
 		"root": false

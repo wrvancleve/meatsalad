@@ -1,0 +1,11 @@
+{
+  "name": "Gunpowder",
+  "colors": [
+    "727272",
+    "494949"
+  ],
+  "ingredient": {
+    "tag": "forge:gunpowder"
+  },
+  "materialCount": 81
+}

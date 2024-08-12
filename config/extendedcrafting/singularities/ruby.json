@@ -1,0 +1,10 @@
+{
+  "name": "Ruby",
+  "colors": [
+    "f9afB7",
+    "cd0134"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/ruby"
+  }
+}

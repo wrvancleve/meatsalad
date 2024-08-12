@@ -66,6 +66,22 @@ ClientEvents.lang('en_us', event => {
     event.add('meatsalad', `slurry.kubejs.dirty_${entry.material}`, global.getReadableText(`dirty_${entry.material}_slurry`))
   })
 
+  // Mob Effects
+  event.add('meatsalad', 'effect.meatsalad.magic_forbiden', 'Magic Forbiden')
+  event.add('meatsalad', 'effect.meatsalad.magic_forbiden.description', 'Disables magic')
+  event.add('meatsalad', 'effect.meatsalad.glimpse_of_god', 'Divine Grace: Glimpse')
+  event.add('meatsalad', 'effect.meatsalad.glimpse_of_god.description', 'Just a glimpose of the divine magic of a god. Capable of damage immunity')
+  event.add('meatsalad', 'effect.meatsalad.gaze_of_god', 'Divine Grace: Gaze')
+  event.add('meatsalad', 'effect.meatsalad.gaze_of_god.description', 'Start to feel the divine magic of a god. Capable of damage immunity')
+  event.add('meatsalad', 'effect.meatsalad.glare_of_god', 'Divine Grace: Glare')
+  event.add('meatsalad', 'effect.meatsalad.glare_of_god.description', 'Encounter the divine magic of a god. Capable of damage immunity')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_magic', 'God\'s License: Magic Immunity')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_magic.description', 'Grants magic damage immunity via the divine magic of a god')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_melee', 'God\'s License: Melee Immunity')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_melee.description', 'Grants melee damage immunity via the divine magic of a god')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_projectile', 'God\'s License: Projectile Immunity')
+  event.add('meatsalad', 'effect.meatsalad.pardon_of_god_projectile.description', 'Grants projectile damage immunity via the divine magic of a god')
+
   // Advancements
   event.add('meatsalad', 'advancements.meatsalad.the_nether.description', 'Transition into The Nether Stage')
   event.add('meatsalad', 'advancements.meatsalad.the_nether.title', 'The Nether Stage')
@@ -79,6 +95,4 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'advancements.meatsalad.the_end.title', 'The End Stage')
   event.add('meatsalad', 'advancements.meatsalad.endshelf.description', 'Transition into The Endshelf Stage')
   event.add('meatsalad', 'advancements.meatsalad.endshelf.title', 'Endshelf Stage')
-  event.add('meatsalad', 'advancements.meatsalad.starcharger.description', 'Transition into The Starcharger Stage')
-  event.add('meatsalad', 'advancements.meatsalad.starcharger.title', 'Starcharger Stage')
 })

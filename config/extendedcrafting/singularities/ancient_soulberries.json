@@ -1,0 +1,11 @@
+{
+  "name": "Ancient Soulberries",
+  "colors": [
+    "7bfbff",
+    "27a9f4"
+  ],
+  "ingredient": {
+    "item": "allthemodium:ancient_soulberries"
+  },
+  "materialCount": 81
+}

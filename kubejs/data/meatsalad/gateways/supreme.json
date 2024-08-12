@@ -173,10 +173,6 @@
         {
           "entity": "cataclysm:the_watcher",
           "count": 10
-        },
-        {
-          "entity": "cataclysmicillagers:abyssal_master",
-          "count": 1
         }
       ],
       "modifiers": [

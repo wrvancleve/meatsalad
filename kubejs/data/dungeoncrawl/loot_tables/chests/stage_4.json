@@ -350,6 +350,22 @@
         "max": 10.0,
         "min": 7.0
       }
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:misc/gear_upgrades/random",
+          "weight": 15,
+          "quality": 1
+        }
+      ]
     }
   ],
   "random_sequence": "dungeoncrawl:chests/stage_4"

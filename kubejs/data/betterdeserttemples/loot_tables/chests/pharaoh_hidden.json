@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance_treasure"
+          "name": "meatsalad:enchanted_books/random_single_treasure"
         }
       ]
     },

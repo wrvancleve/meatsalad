@@ -1,0 +1,11 @@
+{
+  "name": "Spider Eye",
+  "colors": [
+    "9d1e2d",
+    "65062b"
+  ],
+  "ingredient": {
+    "item": "minecraft:spider_eye"
+  },
+  "materialCount": 81
+}

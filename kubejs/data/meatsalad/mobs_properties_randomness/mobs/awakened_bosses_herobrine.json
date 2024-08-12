@@ -20,6 +20,12 @@
       "operation": "addition"
     },
     {
+      "id": "irons_spellbooks:spell_resist",
+      "modifier_name": "More Spell Resist",
+      "amount": 1.0,
+      "operation": "addition"
+    },
+    {
       "id": "forge:attack_range",
       "modifier_name": "More Attack Range",
       "amount": 1.0,
@@ -66,12 +72,6 @@
         "health_left": 0.8,
         "potion_effects": [
           {
-            "id": "minecraft:poison",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
             "id": "minecraft:slowness",
             "amplifier": 4,
             "duration": 5,
@@ -79,12 +79,6 @@
           },
           {
             "id": "minecraft:weakness",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "minecraft:wither",
             "amplifier": 4,
             "duration": 5,
             "chance": 0.025
@@ -112,18 +106,6 @@
             "amplifier": 4,
             "duration": 5,
             "chance": 0.025
-          },
-          {
-            "id": "cofh_core:chilled",
-            "amplifier": 4,
-            "duration": 2,
-            "chance": 0.025
-          },
-          {
-            "id": "cofh_core:shocked",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
           }
         ]
       },
@@ -144,15 +126,9 @@
         "health_left": 0.4,
         "potion_effects": [
           {
-            "id": "minecraft:darkness",
+            "id": "minecraft:blindness",
             "amplifier": 1,
             "duration": 10,
-            "chance": 0.025
-          },
-          {
-            "id": "minecraft:levitation",
-            "amplifier": 2,
-            "duration": 3,
             "chance": 0.025
           },
           {
@@ -171,12 +147,6 @@
             "id": "cataclysm:abyssal_fear",
             "amplifier": 4,
             "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cofh_core:wrenched",
-            "amplifier": 4,
-            "duration": 2,
             "chance": 0.025
           }
         ]
@@ -200,6 +170,18 @@
         "health_left": 0.4,
         "potion_effects": [
           {
+            "id": "meatsalad:magic_forbiden",
+            "amplifier": 0,
+            "duration": 10,
+            "chance": 0.05
+          },
+          {
+            "id": "minecraft:slowness",
+            "amplifier": 4,
+            "duration": 5,
+            "chance": 0.025
+          },
+          {
             "id": "minecraft:weakness",
             "amplifier": 4,
             "duration": 5,
@@ -225,12 +207,6 @@
           },
           {
             "id": "cataclysm:bone_fracture",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cofh_core:shocked",
             "amplifier": 4,
             "duration": 5,
             "chance": 0.025

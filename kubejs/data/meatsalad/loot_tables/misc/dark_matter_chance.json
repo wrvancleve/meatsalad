@@ -7,7 +7,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 10,
-          "quality": 1.0,
+          "quality": 0.5,
           "stack": {
             "item": "meatsalad:dark_matter"
           }

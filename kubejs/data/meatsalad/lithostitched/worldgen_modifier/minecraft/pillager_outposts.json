@@ -1,0 +1,7 @@
+{
+  "type": "lithostitched:remove_structures_from_structure_set",
+  "structure_set": "minecraft:pillager_outposts",
+  "structures": [
+    "minecraft:pillager_outpost"
+  ]
+}

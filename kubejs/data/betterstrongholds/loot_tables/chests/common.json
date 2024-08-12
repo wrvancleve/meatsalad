@@ -180,7 +180,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random",
+          "name": "meatsalad:enchanted_books/random_single",
           "weight": 1
         }
       ]

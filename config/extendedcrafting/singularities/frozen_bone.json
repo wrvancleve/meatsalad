@@ -1,0 +1,11 @@
+{
+  "name": "Frozen Bone",
+  "colors": [
+    "edfbfc",
+    "7f9598"
+  ],
+  "ingredient": {
+    "item": "irons_spellbooks:frozen_bone"
+  },
+  "materialCount": 81
+}

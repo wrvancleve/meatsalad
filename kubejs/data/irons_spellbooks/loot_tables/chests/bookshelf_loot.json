@@ -61,7 +61,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_treasure",
+          "name": "meatsalad:enchanted_books/random_single",
           "weight": 5
         }
       ],
@@ -73,20 +73,11 @@
       ]
     },
     {
-      "rolls": {
-        "min": 0,
-        "max": 6
-      },
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/poor_ink"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.7
+          "name": "meatsalad:ink/random_chance"
         }
       ]
     }

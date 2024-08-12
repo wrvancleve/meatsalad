@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": [
+    "meatsalad:overworld_diamond_ore_bonus_placed",
+    "meatsalad:overworld_diamond_ore_buried_bonus_placed",
+    "meatsalad:overworld_diamond_ore_large_bonus_placed",
+    "meatsalad:overworld_diamond_ore_medium_bonus_placed"
+  ],
+  "step": "underground_ores"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Cinder Essence",
+  "colors": [
+    "c16d0b",
+    "4a3333"
+  ],
+  "ingredient": {
+    "item": "irons_spellbooks:cinder_essence"
+  },
+  "materialCount": 81
+}

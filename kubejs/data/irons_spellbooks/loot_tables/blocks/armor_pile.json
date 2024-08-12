@@ -43,12 +43,6 @@
           "type": "minecraft:item",
           "name": "irons_spellbooks:cinder_essence"
         }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.65
-        }
       ]
     }
   ]

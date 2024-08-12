@@ -6,12 +6,12 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 50
+          "weight": 35
         },
         {
           "type": "placebo:stack_entry",
-          "weight": 35,
-          "quality": 1.0,
+          "weight": 50,
+          "quality": 0.5,
           "stack": {
             "item": "gateways:gate_pearl",
             "nbt": "{gateway: \"meatsalad:otherside\"}"
@@ -19,9 +19,9 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gates/random",
+          "name": "meatsalad:misc/rare/random",
           "weight": 15,
-          "quality": 1.0
+          "quality": 0.5
         }
       ]
     }

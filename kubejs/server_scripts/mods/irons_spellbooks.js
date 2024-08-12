@@ -145,4 +145,11 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('meatsalad:smelter/arcane_salvage_from_debris')
+
+  event.custom({
+    type: 'cataclysm:weapon_fusion',
+    base: {item: 'irons_spellbooks:legendary_ink'},
+    addition: {item: 'meatsalad:eternal_crystal_shard'},
+    result: {item: 'irons_spellbooks:ancient_ink'}
+  }).id('meatsalad:fusion/ancient_ink')
 })

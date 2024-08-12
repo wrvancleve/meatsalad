@@ -8,35 +8,38 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "5EFE8AD3AE01FF64"
-			linked_quest: "08453199907DD711"
-			x: -8.5d
-			y: 2.0d
+			id: "110B0B25B45C9FC7"
+			linked_quest: "7F9256C5E4CA6060"
+			shape: "diamond"
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			id: "3B0B4266461094B9"
-			linked_quest: "61D4EA2C30CD1CBC"
-			x: -8.0d
-			y: 4.5d
+			id: "2B2DAC476DE7D2CD"
+			linked_quest: "6E477150D56A208D"
+			shape: "diamond"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "407A3405ABF3F0BC"
+			linked_quest: "0DA3403E64E63089"
+			shape: "diamond"
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 	quests: [
 		{
 			dependencies: [
-				"766CA9AE21F36FDB"
 				"0EBF2B7E019B8841"
 				"03AD037EFD34332E"
-				"5F12C4BCEBD5B4AF"
-				"28A4975DA30E6C1E"
 				"649779F5BA9CF6E3"
 				"79E763DF7C0DFB4D"
 				"0DA3403E64E63089"
-				"11DC0F3A15F72DCB"
 				"59AE5FD98E96420C"
-				"7A49403071057C31"
-				"1B7CDB65C4D3E5C0"
-				"0C7F5E46EB6E1028"
-				"52F60E03501F7382"
+				"7F9256C5E4CA6060"
+				"6E477150D56A208D"
 			]
 			hide_details_until_startable: false
 			id: "2CA0273F29B2DAC8"
@@ -59,71 +62,15 @@
 					xp: 5000
 				}
 			]
-			shape: "octagon"
-			size: 3.0d
-			subtitle: "Craft an Infinity Fabric"
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "5E4C14184772ACB7"
 				item: "meatsalad:infinity_fabric"
 				type: "item"
 			}]
-			title: "Infinity Fabric"
 			x: 0.0d
 			y: 0.0d
-		}
-		{
-			id: "5F12C4BCEBD5B4AF"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "625CA2DE08CF880A"
-					type: "xp"
-					xp: 500
-				}
-				{
-					exclude_from_claim_all: true
-					id: "1F2EDC0ACF50814D"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-			]
-			subtitle: "Craft a Draconic Infused Eternal Crystal"
-			tasks: [{
-				id: "5FA7F5FF8094999A"
-				item: "meatsalad:draconic_infused_eternal_crystal"
-				type: "item"
-			}]
-			title: "Draconic Infused Eternal Crystal"
-			x: 1.5d
-			y: 3.0d
-		}
-		{
-			id: "766CA9AE21F36FDB"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "68C5D55D9900A6C8"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "22094EAF873D913D"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Craft an Ultimate Crafting Table"
-			tasks: [{
-				id: "7B4BD06E3B56DCEC"
-				item: "extendedcrafting:ultimate_table"
-				type: "item"
-			}]
-			title: "Ultimate Crafting Table"
-			x: 0.0d
-			y: -4.5d
 		}
 		{
 			id: "03AD037EFD34332E"
@@ -141,48 +88,14 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Craft an Oblivion Shard"
+			shape: "diamond"
 			tasks: [{
 				id: "09967B7D98D9D8F8"
 				item: "meatsalad:oblivion_shard"
 				type: "item"
 			}]
-			title: "Oblivion Shard"
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"1D0DB72145C53568"
-				"07B6A5B53A1FD6E1"
-			]
-			description: ["Obtained by killing Herobrine"]
-			id: "28A4975DA30E6C1E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "1B0C9DB9DF87AEE3"
-					type: "xp"
-					xp: 500
-				}
-				{
-					exclude_from_claim_all: true
-					id: "1B597A5B5043FFDF"
-					table_id: 3670248595616648664L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Obtain a Chaos Crystal"
-			tasks: [{
-				id: "770BC84F6739BC8C"
-				item: "meatsalad:chaos_crystal"
-				type: "item"
-			}]
-			title: "Chaos Crystal"
-			x: 5.0d
-			y: 0.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			description: [""]
@@ -201,14 +114,13 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Craft a Herobrine Blue"
+			shape: "diamond"
 			tasks: [{
 				id: "66DA7CF8495580AF"
 				item: "awakened_bosses:herobrine_blue"
 				type: "item"
 			}]
-			title: "Herobrine Blue"
-			x: 7.0d
+			x: -4.0d
 			y: -0.5d
 		}
 		{
@@ -228,159 +140,16 @@
 					type: "loot"
 				}
 			]
-			subtitle: "Craft a Herobrine Cyan"
+			shape: "diamond"
 			tasks: [{
 				id: "52D209C07C5946EA"
 				item: "awakened_bosses:herobrine_cyan"
 				type: "item"
 			}]
-			title: "Herobrine Cyan"
-			x: 7.0d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
-			id: "0DA3403E64E63089"
-			rewards: [
-				{
-					id: "4A7597DF0083430B"
-					item: "meatsalad:draconic_infused_dark_matter"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "00E9DB5BF2EFB6D1"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "16871E0264E01045"
-					type: "xp"
-					xp: 250
-				}
-			]
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Craft a Draconic Infused Dark Matter"
-			tasks: [{
-				id: "7E7F4ADF867C5FA1"
-				item: "meatsalad:draconic_infused_dark_matter"
-				type: "item"
-			}]
-			title: "Draconic Infused Dark Matter"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			id: "59EF276AC2E1A632"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "7FEC42528F9FA69B"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7D6DE2409F0E203E"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Craft a Loot Fabricator to generate loot from your data models"
-			tasks: [{
-				id: "2B0BB87FCB20B8FB"
-				item: "hostilenetworks:loot_fabricator"
-				type: "item"
-			}]
-			title: "Loot Fabricator"
-			x: 1.5d
-			y: 7.0d
-		}
-		{
-			id: "1CB9C84CECDBD755"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "67E653E1B49D76F9"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "431F8514430E9633"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Craft a Simulation Chamber to use your data models"
-			tasks: [{
-				id: "12F3149D21F3DAAE"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "Simulation Chamber"
-			x: 0.5d
-			y: 7.0d
-		}
-		{
-			id: "6A6C48828D916EE5"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "79EED54D772C3E58"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7301C8148683E653"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Craft a Deep Learner to train your data models"
-			tasks: [{
-				id: "097E7B20C53AE941"
-				item: "hostilenetworks:deep_learner"
-				type: "item"
-			}]
-			title: "Deep Learner"
-			x: -0.5d
-			y: 7.0d
-		}
-		{
-			id: "168535C035FCBBA5"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "13655B3F9FAD53D2"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "16FDD38B1AA30A9D"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Craft a Model Framework to train data models"
-			tasks: [{
-				id: "3BD3BAAAD95F3E14"
-				item: "hostilenetworks:blank_data_model"
-				type: "item"
-			}]
-			title: "Model Framework"
-			x: -1.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["37172411ED942FAB"]
 			id: "597F049F648EC535"
 			rewards: [
 				{
@@ -401,15 +170,14 @@
 					xp: 500
 				}
 			]
-			subtitle: "Craft an UU-Matter"
+			shape: "diamond"
 			tasks: [{
 				id: "122FB2424C9E4BC3"
 				item: "meatsalad:uu_matter"
 				type: "item"
 			}]
-			title: "UU-Matter"
-			x: -7.0d
-			y: 0.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["597F049F648EC535"]
@@ -429,355 +197,20 @@
 				}
 			]
 			shape: "diamond"
-			size: 1.5d
-			subtitle: "Craft a Cosmic Shelling"
+			size: 1.0d
 			tasks: [{
 				icon: "meatsalad:cosmic_shelling"
 				id: "252DE1E8BF5F6586"
 				item: "meatsalad:cosmic_shelling"
 				type: "item"
 			}]
-			title: "Cosmic Shelling"
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			id: "7A49403071057C31"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7839F41BF80B9AAB"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "747B1481D7B00F14"
-					type: "xp"
-					xp: 200
-				}
-			]
-			subtitle: "Craft a Palladium Block"
-			tasks: [{
-				id: "4A4A70BF7CBF4528"
-				item: "allthemodium:allthemodium_block"
-				type: "item"
-			}]
-			title: "Palladium Block"
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			id: "11DC0F3A15F72DCB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0156C723F6DA43BA"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "514467A3E2B6AD4C"
-					type: "xp"
-					xp: 200
-				}
-			]
-			subtitle: "Craft a Vibranium Block"
-			tasks: [{
-				id: "51D554DD3491D5CB"
-				item: "allthemodium:vibranium_block"
-				type: "item"
-			}]
-			title: "Vibranium Block"
-			x: 3.0d
+			x: 0.0d
 			y: -3.0d
 		}
 		{
-			description: ["Obtained by killing the Elder Guardian"]
-			id: "00EC3EC36645FD74"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "566C7ED589B6C596"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5954601BB78CF7C8"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Elder Guardian Spike"
-			tasks: [{
-				id: "35B9FDA5117B3E34"
-				item: "progressivebosses:elder_guardian_spike"
-				type: "item"
-			}]
-			title: "Elder Guardian Spike"
-			x: -4.0d
-			y: 7.0d
-		}
-		{
-			description: [""]
-			id: "1B9DA9387FAA915E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "59580C9824C99B7B"
-					type: "xp"
-					xp: 150
-				}
-				{
-					exclude_from_claim_all: true
-					id: "069EBF5DECBC509B"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Shulker Shell"
-			tasks: [{
-				id: "145751158813532A"
-				item: "minecraft:shulker_shell"
-				type: "item"
-			}]
-			title: "Shulker Shell"
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			description: [""]
-			id: "21521E524363B585"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0E906EE31DB34F46"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "6A83520FE4414CA4"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Ghast Tear"
-			tasks: [{
-				id: "7850192B9355AC51"
-				item: "minecraft:ghast_tear"
-				type: "item"
-			}]
-			title: "Ghast Tear"
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			description: [""]
-			id: "6094D6AD4A191B04"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "32F8AB6435E84DFE"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "3883E4B15A5C4900"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Phantom Membrane"
-			tasks: [{
-				id: "480DB77338372096"
-				item: "minecraft:phantom_membrane"
-				type: "item"
-			}]
-			title: "Phantom Membrane"
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["08453199907DD711"]
-			description: ["Obtained by killing the Warden"]
-			id: "1E3235AA840DEE28"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "3F5C15198021C030"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7ADAA8570E44F248"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Warden Tendril"
-			tasks: [{
-				id: "3DB5E9EDA52FE5A3"
-				item: "apotheosis:warden_tendril"
-				type: "item"
-			}]
-			title: "Warden Tendril"
-			x: -7.0d
-			y: 2.0d
-		}
-		{
-			description: [""]
-			id: "3CA4A8270BFF4EF5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2C229A338273FAF6"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "7BD4D1F518A72999"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Frozen Bone"
-			tasks: [{
-				id: "0798F66D2648BB85"
-				item: "irons_spellbooks:frozen_bone"
-				type: "item"
-			}]
-			title: "Frozen Bone"
-			x: -8.0d
-			y: 3.5d
-		}
-		{
-			description: ["Obtained by killing a respawned Dragon"]
-			id: "147AACD38A4F9B68"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "51A5D4A4DE19C348"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "44DBB147AFB1566D"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Dragon Scale"
-			tasks: [{
-				id: "7848B4F3D102FF9B"
-				item: "quark:dragon_scale"
-				type: "item"
-			}]
-			title: "Dragon Scale"
-			x: -8.0d
-			y: 5.5d
-		}
-		{
-			description: ["Obtained by killing Leviathan in the Sunken City of the Overworld"]
-			id: "25997744933767C0"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "7DE0FFCEF250E25D"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "06D97BAB3E3C6D8F"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain an Abyssal Egg"
-			tasks: [{
-				id: "30990DD183CE0C29"
-				item: "cataclysm:abyssal_egg"
-				type: "item"
-			}]
-			title: "Abyssal Egg"
-			x: -7.0d
-			y: 7.0d
-		}
-		{
-			description: [""]
-			id: "634B56A0AB439540"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "71564C1C0737C1C0"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "407A4CBE5A6442FE"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Hogskin"
-			tasks: [{
-				id: "0583FA1E90EEE46B"
-				item: "irons_spellbooks:hogskin"
-				type: "item"
-			}]
-			title: "Hogskin"
-			x: -6.0d
-			y: 7.0d
-		}
-		{
-			description: [""]
-			id: "628A1A6EF23DE973"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "5358E9C37B61EFD2"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "786449D5F1C20C8B"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Echo Shard"
-			tasks: [{
-				id: "57A13D9598F65D2E"
-				item: "minecraft:echo_shard"
-				type: "item"
-			}]
-			title: "Echo Shard"
-			x: -5.0d
-			y: 7.0d
-		}
-		{
 			dependencies: [
-				"25997744933767C0"
-				"00EC3EC36645FD74"
-				"61D4EA2C30CD1CBC"
-				"6094D6AD4A191B04"
-				"1B9DA9387FAA915E"
-				"634B56A0AB439540"
-				"3CA4A8270BFF4EF5"
-				"21521E524363B585"
-				"147AACD38A4F9B68"
-				"1E3235AA840DEE28"
-				"628A1A6EF23DE973"
-				"0DA3403E64E63089"
+				"07B6A5B53A1FD6E1"
+				"1D0DB72145C53568"
 			]
 			id: "0EBF2B7E019B8841"
 			rewards: [
@@ -794,218 +227,17 @@
 					type: "loot"
 				}
 			]
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "Craft a Lost Illusion"
+			shape: "diamond"
+			size: 1.0d
 			tasks: [{
 				id: "12EC9D06F077CA18"
 				item: "meatsalad:lost_illusion"
 				type: "item"
 			}]
-			title: "Lost Illusion"
-			x: -5.0d
-			y: 4.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
-			description: ["Obtained by killing Ignis in the Burning Arena of the Nether"]
-			id: "5B31F25B371910D4"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "2453A98F1215B3E9"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7939B6A333A44750"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain Vulcanite"
-			tasks: [{
-				id: "3EC55F2A62B8E6E3"
-				item: "meatsalad:vulcanite"
-				type: "item"
-			}]
-			title: "Vulcanite"
-			x: 6.0d
-			y: 7.0d
-		}
-		{
-			description: [""]
-			id: "64CF45C58643CE83"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "60B40FD410AF26E0"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "35D92BEC3C0593A7"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Koboleton Bone"
-			tasks: [{
-				id: "593637987A6D4C8A"
-				item: "cataclysm:koboleton_bone"
-				type: "item"
-			}]
-			title: "Koboleton Bone"
-			x: 5.0d
-			y: 7.0d
-		}
-		{
-			description: ["Obtained by killing a Piglich in The Other"]
-			id: "20A1BFF256AE6CA1"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "6247778B89301202"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "423C7CF6AB5A54BA"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Piglich Heart"
-			tasks: [{
-				id: "5CBA04A920205019"
-				item: "allthemodium:piglich_heart"
-				type: "item"
-			}]
-			title: "Piglich Heart"
-			x: 4.0d
-			y: 7.0d
-		}
-		{
-			description: [""]
-			id: "2036EB7955BF42EC"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "01CE41F5317AA193"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3DD70D939BC49074"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Nether Star"
-			tasks: [{
-				id: "538A185D7671A1D7"
-				item: "minecraft:nether_star"
-				type: "item"
-			}]
-			title: "Nether Star"
-			x: 8.0d
-			y: 4.5d
-		}
-		{
-			description: ["Obtained by killing Witches"]
-			id: "41C8A9E44381EFEB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2FE23D943FE50770"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "0DAB9870EC28CB36"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Witch Pupil"
-			tasks: [{
-				id: "6808DC6E80DBD9EA"
-				item: "endrem:witch_pupil"
-				type: "item"
-			}]
-			title: "Witch Pupil"
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			description: [""]
-			id: "72EBDA35E7084ED7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "33F0B1734A0EAD4D"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "44B067838A2DBE0D"
-					type: "xp"
-					xp: 100
-				}
-			]
-			subtitle: "Obtain a Wither Bone"
-			tasks: [{
-				id: "3A9B044610E641BE"
-				item: "bhc:wither_bone"
-				type: "item"
-			}]
-			title: "Wither Bone"
-			x: 5.0d
-			y: 2.0d
-		}
-		{
-			description: [""]
-			id: "1F6551CC07210781"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "6FAA143DF4FD6444"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "27338E4746E4A5F0"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			subtitle: "Obtain a Dragon Egg"
-			tasks: [{
-				id: "3B59E8FD5A871B9E"
-				item: "minecraft:dragon_egg"
-				type: "item"
-			}]
-			title: "Dragon Egg"
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"72EBDA35E7084ED7"
-				"20A1BFF256AE6CA1"
-				"64CF45C58643CE83"
-				"5B31F25B371910D4"
-				"1F6551CC07210781"
-				"41C8A9E44381EFEB"
-				"2036EB7955BF42EC"
-				"0DA3403E64E63089"
-			]
 			id: "649779F5BA9CF6E3"
 			rewards: [
 				{
@@ -1021,19 +253,18 @@
 					type: "loot"
 				}
 			]
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "Craft a Manifest Illusion"
+			shape: "diamond"
+			size: 1.0d
 			tasks: [{
 				id: "3F3AB239AB82877F"
 				item: "meatsalad:manifest_illusion"
 				type: "item"
 			}]
-			title: "Manifest Illusion"
-			x: 5.0d
-			y: 4.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["20E07EE7BBA393B3"]
 			id: "59AE5FD98E96420C"
 			rewards: [
 				{
@@ -1049,92 +280,461 @@
 					xp: 300
 				}
 			]
-			subtitle: "Craft an Abiding Alloy Block"
+			shape: "diamond"
 			tasks: [{
 				id: "520B4C25F22F56E4"
 				item: "meatsalad:abiding_alloy_block"
 				type: "item"
 			}]
-			title: "Abiding Alloy Block"
-			x: -2.0d
-			y: -4.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
-			id: "1B7CDB65C4D3E5C0"
+			id: "27EE91A1FEDCB45E"
 			rewards: [
 				{
 					auto: "invisible"
-					id: "6DFDC217A1C8420B"
+					id: "77B0BDF457FD6097"
 					type: "xp"
 					xp: 250
 				}
 				{
 					exclude_from_claim_all: true
-					id: "666C61D404D4BBBA"
+					id: "3EBA0463CBB10F4B"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
 			]
-			subtitle: "Craft an Unobtainium Block"
+			shape: "diamond"
 			tasks: [{
-				id: "7F2B316586E9299A"
-				item: "allthemodium:unobtainium_block"
+				id: "105CE6C17D649EC4"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "1F2346D554622D18"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5528F0A1FE94B19F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "116B6DA2C2F0D914"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "35A3A0FC76010153"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "71E7A1FD612672DE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "083699BEC0F63BB6"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C5929C0C9E5CE09"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0579B2CAE4632979"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			id: "2922A4A65832F17F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "00F28A1D5C5F77ED"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C0C3DD8EFDAF8CB"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "07878435DC16834A"
+					item: "pipez:infinity_upgrade"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4AD888F9E99323A0"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			id: "2F811CADF2CD3136"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6A178E962A1E2841"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2175DAFEA50892E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "6F600A9C86934DA7"
+					item: {
+						Count: 1
+						id: "mekanism:creative_fluid_tank"
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										Amount: 2147483647
+										FluidName: "minecraft:water"
+									}
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "767B6610B85166A8"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2F811CADF2CD3136"
+				"2922A4A65832F17F"
+				"27EE91A1FEDCB45E"
+				"71E7A1FD612672DE"
+				"1F2346D554622D18"
+			]
+			id: "2FD5F74EDCFE7FFC"
+			rewards: [
+				{
+					id: "567D795999AA5824"
+					item: "mekanism:pellet_polonium"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "511FAD6A3AE31859"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4755B0C366A40190"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "14A0D1C360374523"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2FD5F74EDCFE7FFC"]
+			id: "47AC3BAD4C6A1D26"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "059571B8661C330E"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "7141A3782515166E"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "74E92C3DC64EEEC5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["47AC3BAD4C6A1D26"]
+			id: "37172411ED942FAB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A0AF1309B03D9B3"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "251869DC93842157"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "pentagon"
+			size: 1.0d
+			tasks: [{
+				id: "6A32AE8AF616B34C"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			description: [""]
+			id: "542EE0FF5FEA8AC4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6CC149BE3FB10465"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04A4CC220DD7F76C"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "1430B8C8D500EA97"
+					item: "meatsalad:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5F7D5E2D52D6D0F3"
+				item: "meatsalad:neutronium_ingot"
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.0d
+			y: 4.0d
 		}
 		{
-			id: "52F60E03501F7382"
+			description: [""]
+			id: "76F851126A285D25"
 			rewards: [
 				{
+					auto: "invisible"
+					id: "0F93BC263B73A9BF"
+					type: "xp"
+					xp: 250
+				}
+				{
 					exclude_from_claim_all: true
-					id: "5651FC1CA84187EA"
+					id: "5D3BD622FE934972"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
 				{
-					auto: "invisible"
-					id: "5650E6F6EAF414D2"
-					type: "xp"
-					xp: 200
+					id: "18A4A0FB93E79790"
+					item: "silentgear:tyrian_steel_ingot"
+					type: "item"
 				}
 			]
-			subtitle: "Craft an Azure Electrum Block"
+			shape: "diamond"
 			tasks: [{
-				id: "70996D4C3FCD141B"
-				item: "silentgear:azure_electrum_block"
+				id: "553D259EE64F9E9A"
+				item: "silentgear:tyrian_steel_ingot"
 				type: "item"
 			}]
-			title: "Azure Electrum Block"
-			x: -3.0d
-			y: -3.0d
+			x: 4.5d
+			y: 3.5d
 		}
 		{
-			id: "0C7F5E46EB6E1028"
+			description: [""]
+			id: "0E3800093D05C350"
 			rewards: [
 				{
+					auto: "invisible"
+					id: "5E4B4C10F2DDFD97"
+					type: "xp"
+					xp: 250
+				}
+				{
 					exclude_from_claim_all: true
-					id: "2DC27B0F0DA1ABE1"
+					id: "6CDE982968CFAFDD"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
 				{
-					auto: "invisible"
-					id: "21A4CB064FCF8837"
-					type: "xp"
-					xp: 150
+					id: "0AD3D17E8DE616DC"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
 				}
 			]
-			subtitle: "Craft a Crimson Steel Block"
+			shape: "diamond"
 			tasks: [{
-				id: "3C3B30957D78B442"
-				item: "silentgear:crimson_steel_block"
+				id: "1A1B9A79EC64D206"
+				item: "mekanism:ingot_refined_obsidian"
 				type: "item"
 			}]
-			title: "Crimson Steel Block"
-			x: -4.0d
-			y: -2.0d
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F1245E48D130030"]
+			description: [""]
+			id: "2D1B6A902D81893B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7FAA2111F7D18687"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2962DEFF75E78A01"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "481412CE97987A8D"
+					item: "meatsalad:starmetal_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "390A7481C1AFAA9A"
+				item: "meatsalad:starmetal_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			description: [""]
+			id: "631C087D76C96115"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2F99498C0A4D3584"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "322C9A723DB5CE5F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "498F6149C5EF29D1"
+					item: "alltheores:iridium_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2322CC01BF598C0F"
+				item: "alltheores:iridium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"76F851126A285D25"
+				"631C087D76C96115"
+				"0E3800093D05C350"
+				"2D1B6A902D81893B"
+				"542EE0FF5FEA8AC4"
+			]
+			id: "20E07EE7BBA393B3"
+			shape: "pentagon"
+			size: 1.0d
+			tasks: [{
+				id: "7F9C8B1D70987E2E"
+				item: "meatsalad:abiding_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: [""]
+			id: "1C469ED8C057583E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "531AC1A23BE6D4AB"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20160614172B125B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					id: "19322C7039BF9972"
+					item: "mekanism:ingot_refined_glowstone"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1236A3250CE0DB1B"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
 		}
 	]
 	title: "Infinity Fabric"

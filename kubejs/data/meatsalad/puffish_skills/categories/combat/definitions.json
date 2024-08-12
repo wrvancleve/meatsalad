@@ -1,6 +1,6 @@
 {
 	"root_mage": {
-		"title": "Path of the Mage (+5% Spell Power)",
+		"title": "Path of the Mage (+10% Spell Power)",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -18,14 +18,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:spell_power",
-					"value": 0.05,
+					"value": 0.10,
 					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"root_freelancer": {
-		"title": "Path of the Freelancer (+4 Luck)",
+		"title": "Path of the Freelancer (+8 Luck)",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -43,14 +43,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.luck",
-					"value": 4,
+					"value": 8,
 					"operation": "addition"
 				}
 			}
 		]
 	},
 	"root_warrior": {
-		"title": "Path of the Warrior (+5% Melee Damage)",
+		"title": "Path of the Warrior (+10% Melee Damage)",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -68,14 +68,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "minecraft:generic.attack_damage",
-					"value": 0.05,
+					"value": 0.10,
 					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"root_archer": {
-		"title": "Path of the Archer (+5% Arrow Damage)",
+		"title": "Path of the Archer (+10% Arrow Damage)",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -93,7 +93,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:arrow_damage",
-					"value": 0.05,
+					"value": 0.10,
 					"operation": "multiply_base"
 				}
 			}
@@ -270,8 +270,8 @@
 			}
 		]
 	},
-	"mana_regen": {
-		"title": "+2.5% Mana Regeneration",
+	"max_mana": {
+		"title": "+15 Max Mana",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -282,9 +282,9 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "irons_spellbooks:mana_regen",
-					"value": 0.025,
-					"operation": "multiply_base"
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 15,
+					"operation": "addition"
 				}
 			}
 		]

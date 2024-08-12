@@ -1,0 +1,140 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 400.0,
+          "quality": 0.0,
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:efficiency",
+                "minecraft:piercing",
+                "minecraft:power",
+                "minecraft:protection",
+                "minecraft:sharpness"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 200.0,
+          "quality": 5.0,
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "apotheosis:bane_of_illagers",
+                "apotheosis:spearfishing",
+                "apotheosis:tempting",
+                "cofh_core:holding",
+                "ensorcellation:trueshot",
+                "ensorcellation:bulwark",
+                "ensorcellation:magic_protection",
+                "ensorcellation:phalanx",
+                "ensorcellation:soulbound",
+                "minecraft:bane_of_arthropods",
+                "minecraft:feather_falling",
+                "minecraft:fire_protection",
+                "minecraft:knockback",
+                "minecraft:loyalty",
+                "minecraft:projectile_protection",
+                "minecraft:quick_charge",
+                "minecraft:smite",
+                "minecraft:unbreaking"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 100.0,
+          "quality": 10.0,
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "apotheosis:exploitation",
+                "apotheosis:icy_thorns",
+                "apotheosis:knowledge",
+                "apotheosis:natures_blessing",
+                "apotheosis:obliteration",
+                "apotheosis:rebounding",
+                "apotheosis:reflective",
+                "apotheosis:shield_bash",
+                "apotheosis:splitting",
+                "apotheosis:stable_footing",
+                "ensorcellation:air_affinity",
+                "ensorcellation:excavating",
+                "ensorcellation:frost_aspect",
+                "ensorcellation:vorpal",
+                "minecraft:aqua_affinity",
+                "minecraft:blast_protection",
+                "minecraft:depth_strider",
+                "minecraft:fire_aspect",
+                "minecraft:flame",
+                "minecraft:fortune",
+                "minecraft:frost_walker",
+                "minecraft:impaling",
+                "minecraft:looting",
+                "minecraft:luck_of_the_sea",
+                "minecraft:lure",
+                "minecraft:mending",
+                "minecraft:multishot",
+                "minecraft:punch",
+                "minecraft:respiration",
+                "minecraft:riptide",
+                "minecraft:sweeping"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "weight": 50.0,
+          "quality": 15.0,
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "apotheosis:berserkers_fury",
+                "apotheosis:capturing",
+                "apotheosis:crescendo",
+                "apotheosis:earths_boon",
+                "apotheosis:endless_quiver",
+                "apotheosis:growth_serum",
+                "apotheosis:scavenger",
+                "ensorcellation:angler",
+                "ensorcellation:hunter",
+                "ensorcellation:leech",
+                "minecraft:channeling",
+                "minecraft:infinity",
+                "minecraft:silk_touch",
+                "minecraft:soul_speed",
+                "minecraft:swift_sneak",
+                "minecraft:thorns"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "lithostitched:add_structure_set_entries",
+  "structure_set": "minecraft:nether_complexes",
+  "entries": [
+    {
+      "structure": "betterfortresses:fortress",
+      "weight": 2
+    }
+  ]
+}

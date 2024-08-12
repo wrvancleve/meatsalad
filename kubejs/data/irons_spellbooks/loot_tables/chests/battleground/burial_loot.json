@@ -144,20 +144,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance_treasure",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 14
-        }
-      ]
     }
   ]
 }

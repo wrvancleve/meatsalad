@@ -10,8 +10,8 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance",
-          "weight": 90
+          "name": "meatsalad:materials/random",
+          "weight": 7
         },
         {
           "type": "minecraft:item",
@@ -42,6 +42,11 @@
             }
           ],
           "name": "minecraft:charcoal"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:enchanted_books/random_single",
+          "weight": 3
         }
       ]
     }

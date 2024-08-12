@@ -1,0 +1,10 @@
+{
+  "type": "lithostitched:add_structure_set_entries",
+  "structure_set": "minecraft:swamp_huts",
+  "entries": [
+    {
+      "structure": "betterwitchhuts:witch_hut",
+      "weight": 1
+    }
+  ]
+}

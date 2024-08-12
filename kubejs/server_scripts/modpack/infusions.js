@@ -43,9 +43,7 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:infusion_conversion/dimensional_shard/from_shard')
 
   infusion('#forge:gems/diamond', 'meatsalad', 'infused_diamond');
-  infusion('minecraft:ender_pearl', 'meatsalad', 'infused_ender_pearl');
+  infusion('minecraft:ender_pearl', 'meatsalad', 'infused_ender_pearl')
   infusion('meatsalad:dark_matter', 'meatsalad', 'infused_dark_matter')
-  infusion('meatsalad:eternal_crystal', 'meatsalad', 'infused_eternal_crystal')
   draconicInfusion('meatsalad', 'infused_dark_matter')
-  draconicInfusion('meatsalad', 'infused_eternal_crystal')
 })

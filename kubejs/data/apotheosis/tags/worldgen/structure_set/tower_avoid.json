@@ -1,0 +1,12 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:villages",
+    "minecraft:pillager_outposts",
+    "minecraft:desert_pyramids",
+    "cataclysm:cursed_pyramid",
+    "irons_spellbooks:evoker_fort",
+    "irons_spellbooks:mountain_tower",
+    "irons_spellbooks:pyromancer_tower"
+  ]
+}

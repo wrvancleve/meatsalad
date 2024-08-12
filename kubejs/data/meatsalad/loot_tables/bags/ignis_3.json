@@ -15,6 +15,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_materials/max"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random_max"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
           "type": "placebo:stack_entry",
           "weight": 50,
           "stack": {
@@ -33,38 +53,11 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 70,
           "min": 3,
-          "max": 12,
+          "max": 6,
           "stack": {
-            "item": "apotheosis:mythic_material"
+            "item": "meatsalad:chaos_shard"
           }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 30,
-          "quality": 1.0,
-          "max": 4,
-          "stack": {
-            "item": "apotheosis:ancient_material"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/mythic",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/ancient",
-          "weight": 30,
-          "quality": 1.0
         }
       ]
     },

@@ -1,0 +1,11 @@
+{
+  "name": "Rotten Flesh",
+  "colors": [
+    "c5815a",
+    "8b3418"
+  ],
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "materialCount": 81
+}

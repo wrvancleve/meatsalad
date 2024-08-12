@@ -1,0 +1,11 @@
+{
+  "name": "Phantom Membrane",
+  "colors": [
+    "c3b9a1",
+    "6f516c"
+  ],
+  "ingredient": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "materialCount": 81
+}

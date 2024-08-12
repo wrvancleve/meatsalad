@@ -6,11 +6,35 @@
       "terms": [
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "betterdeserttemples:chests/tomb"
+          "loot_table_id": "minecraft:chests/bastion_bridge"
         },
         {
           "condition": "forge:loot_table_id",
-          "loot_table_id": "betterdeserttemples:chests/storage"
+          "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/bastion_other"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/end_city_treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/stronghold_corridor"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/stronghold_crossing"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "allthemodium:chest/generic_loot"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "allthemodium:chest/hallway_loot"
         },
         {
           "condition": "forge:loot_table_id",
@@ -18,35 +42,35 @@
         },
         {
           "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/tomb"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/tomb_pharaoh"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdungeons:skeleton_dungeon/chests/common"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdungeons:spider_dungeon/chests/egg_room"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/common"
+        },
+        {
+          "condition": "forge:loot_table_id",
           "loot_table_id": "betterdungeons:zombie_dungeon/chests/tombstone"
         },
         {
           "condition": "forge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/common"
+        },
+        {
+          "condition": "forge:loot_table_id",
           "loot_table_id": "betterwitchhuts:chests/hut_0"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "structory:library/high"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "structory:library/low"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "structory:ruin/taiga/illager_treasure"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "idas:chests/wizardtower/wizardtower_top"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "idas:chests/tinkers_workshop/tinkers_workshop_vault"
-        },
-        {
-          "condition": "forge:loot_table_id",
-          "loot_table_id": "betteroceanmonuments:chests/upper_side_chamber"
         }
       ]
     }

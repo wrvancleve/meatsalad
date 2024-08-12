@@ -3,36 +3,36 @@
   "attribute": "irons_spellbooks:max_mana",
   "operation": "ADDITION",
   "values": {
-		"common": {
-			"min": 35,
-			"steps": 15,
-			"step": 1
-		},
-		"uncommon": {
-			"min": 40,
-			"steps": 15,
-			"step": 1
-		},
-		"rare": {
-			"min": 45,
-			"steps": 15,
-			"step": 1
-		},
-		"epic": {
-			"min": 50,
-			"steps": 15,
-			"step": 1
-		},
-		"mythic": {
-			"min": 55,
-			"steps": 15,
-			"step": 1
-		},
-		"ancient": {
-			"min": 60,
-			"steps": 15,
-			"step": 1
-		}
+	"common": {
+		"min": 25,
+		"steps": 2,
+		"step": 5
+	},
+	"uncommon": {
+		"min": 35,
+		"steps": 2,
+		"step": 5
+	},
+	"rare": {
+		"min": 45,
+		"steps": 3,
+		"step": 5
+	},
+	"epic": {
+		"min": 55,
+		"steps": 3,
+		"step": 5
+	},
+	"mythic": {
+		"min": 65,
+		"steps": 3,
+		"step": 5
+	},
+	"ancient": {
+		"min": 75,
+		"steps": 3,
+		"step": 5
+	}
   },
   "types": [
     "curios:spellbook"
