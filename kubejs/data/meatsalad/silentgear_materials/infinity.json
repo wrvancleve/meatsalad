@@ -100,6 +100,18 @@
       {
         "name": "silentgear:void_ward",
         "level": 1
+      },
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 10
+      },
+      {
+        "name": "meatsalad:mana_regen",
+        "level": 2
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 8
       }
     ]
   },

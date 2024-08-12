@@ -1,0 +1,11 @@
+{
+  "name": "Hogskin",
+  "colors": [
+    "f2ba9a",
+    "bb725b"
+  ],
+  "ingredient": {
+    "item": "irons_spellbooks:hogskin"
+  },
+  "materialCount": 81
+}

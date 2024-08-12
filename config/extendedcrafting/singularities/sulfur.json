@@ -1,0 +1,10 @@
+{
+  "name": "Sulfur",
+  "colors": [
+    "e4ff95",
+    "c9ab4b"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/sulfur"
+  }
+}

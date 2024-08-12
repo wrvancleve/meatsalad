@@ -7,7 +7,7 @@
   ],
   "placement": {
     "salt": 596441294,
-    "spacing": 85,
+    "spacing": 60,
     "separation": 50,
     "chunk_distance_to_first_ring": 80,
     "ring_chunk_thickness": 96,

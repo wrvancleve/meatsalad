@@ -7,13 +7,13 @@
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:materials/random",
-          "weight": 56
+          "weight": 65
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gear/random_chance",
-          "weight": 44,
-          "quality": 0.5
+          "name": "meatsalad:misc/gear_upgrades/random",
+          "weight": 35,
+          "quality": 1.0
         }
       ]
     }

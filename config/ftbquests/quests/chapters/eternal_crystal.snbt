@@ -1,0 +1,848 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "eternal_crystal"
+	group: "011F1A00FBBC8153"
+	icon: "meatsalad:eternal_crystal"
+	id: "6F884BF7AEBBC8AE"
+	order_index: 0
+	quest_links: [{
+		id: "5EFE8AD3AE01FF64"
+		linked_quest: "08453199907DD711"
+		shape: "diamond"
+		x: -3.5d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"6CFFF1176273D226"
+				"106C0EB8E16617D3"
+				"43422C2C60B405E7"
+				"55EDC18111788860"
+				"25997744933767C0"
+				"3C9C356BDB6A5819"
+				"7F9D44E269D9DAAC"
+				"44F43383AD8ED224"
+				"1F6551CC07210781"
+				"00EC3EC36645FD74"
+				"312AA3DAB7E577E6"
+				"147AACD38A4F9B68"
+				"1E3235AA840DEE28"
+				"5B31F25B371910D4"
+				"0DA3403E64E63089"
+			]
+			id: "6E477150D56A208D"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "357AD867684F43AD"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27281807708C90C9"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "39C3B8C6205FF98D"
+				item: "meatsalad:eternal_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Obtained by killing a respawned Dragon"]
+			id: "147AACD38A4F9B68"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "51A5D4A4DE19C348"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "44DBB147AFB1566D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7848B4F3D102FF9B"
+				item: "quark:dragon_scale"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			description: ["Obtained by killing the Elder Guardian"]
+			id: "00EC3EC36645FD74"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "566C7ED589B6C596"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5954601BB78CF7C8"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "35B9FDA5117B3E34"
+				item: "progressivebosses:elder_guardian_spike"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			description: ["Obtained by killing Leviathan in the Sunken City of the Overworld"]
+			id: "25997744933767C0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7DE0FFCEF250E25D"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06D97BAB3E3C6D8F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "30990DD183CE0C29"
+				item: "cataclysm:abyssal_egg"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: ["Obtained by killing Ignis in the Burning Arena of the Nether"]
+			id: "5B31F25B371910D4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2453A98F1215B3E9"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7939B6A333A44750"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "3EC55F2A62B8E6E3"
+				item: "meatsalad:vulcanite"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: [""]
+			id: "1F6551CC07210781"
+			ignore_reward_blocking: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6FAA143DF4FD6444"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27338E4746E4A5F0"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "3B59E8FD5A871B9E"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"61D4EA2C30CD1CBC"
+				"2036EB7955BF42EC"
+			]
+			id: "7F1245E48D130030"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5563D9DE5DC8DFAC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F590002A88B7381"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "18430FD38C27DB43"
+				item: "silentgear:starmetal_dust"
+				type: "item"
+			}]
+			title: "Starmetal Dust"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["45A9D19462AB5258"]
+			description: ["Obtained by killing the Ender Guardian in the Ruined Citadel of the End"]
+			id: "61D4EA2C30CD1CBC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "23EA688E407DB699"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5466DFC7EDA7FA31"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7EE4951EBD6C779A"
+				item: "meatsalad:ender_star"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			disable_toast: true
+			id: "45A9D19462AB5258"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "00961FD4A83D34DC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04202526B796633F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					advancement: "meatsalad:stage/the_end"
+					auto: "invisible"
+					criterion: ""
+					id: "5F4467746D16B9C6"
+					team_reward: true
+					title: "Advance to End Stage"
+					type: "advancement"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Place all 12 eyes in The End Portal and jump in the portal"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				disable_toast: true
+				id: "28526744A7C3F644"
+				type: "advancement"
+			}]
+			title: "Enter The End"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7F1245E48D130030"]
+			id: "44F43383AD8ED224"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "21D66A26E51AAE4F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5CE9AC44BA6EEE57"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "61D8F8BA98216EDD"
+				item: "meatsalad:starmetal_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "312AA3DAB7E577E6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3730FB6091818F9E"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09611653138641C5"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "32409487C5B7E963"
+				item: "alltheores:iridium_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			id: "7F9D44E269D9DAAC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "66BF157541EAFDDF"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "776213D4947E5F94"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4DD9EA78AEB4BB93"
+				item: "silentgear:tyrian_steel_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			id: "43422C2C60B405E7"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "533BF697E934749F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66AADA2D23BEACA0"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7C6017EE07B635AB"
+				item: "allthemodium:unobtainium_vibranium_alloy_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			id: "55EDC18111788860"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3A4813FD66BC3444"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F32DAFAC3687D54"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "36874B90ED4E6ED4"
+				item: "allthemodium:unobtainium_allthemodium_alloy_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			id: "106C0EB8E16617D3"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4777F11776ADE7E4"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "708E2FF6795A8AD2"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "69F333BB67FB4840"
+				item: "allthemodium:vibranium_allthemodium_alloy_block"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1180B27F6F49CBCD"
+				"4222A0010FE98E97"
+				"7F9256C5E4CA6060"
+			]
+			id: "6CFFF1176273D226"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6B45C116962439D8"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "274CAC9325CCAC2F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1E6CBB5391093FD1"
+				item: "extendedcrafting:ultimate_singularity"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "4222A0010FE98E97"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "36D590539A155311"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0764AF9D7316030D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2F93015C8F971394"
+				item: "extendedcrafting:compressor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			id: "1180B27F6F49CBCD"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1F4C6E9E82531A70"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03152DA674B80028"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "03DDF13CD3042530"
+				item: "extendedcrafting:crystaltine_catalyst"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			id: "7F9256C5E4CA6060"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6D7B0BD89CB33045"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E183C0CDDE4EF4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5EBF901FCD02E6C4"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["08453199907DD711"]
+			description: ["Obtained by killing the Warden"]
+			id: "1E3235AA840DEE28"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3F5C15198021C030"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7ADAA8570E44F248"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "3DB5E9EDA52FE5A3"
+				item: "apotheosis:warden_tendril"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			id: "3C9C356BDB6A5819"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "163134A38DFB578C"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F28AA0416AB4B79"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "41B464E6DFC89055"
+				item: "meatsalad:chaos_shard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			description: [""]
+			id: "2036EB7955BF42EC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "01CE41F5317AA193"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3DD70D939BC49074"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "538A185D7671A1D7"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			description: ["Obtained by killing a Piglich in The Other"]
+			id: "20A1BFF256AE6CA1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6247778B89301202"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "423C7CF6AB5A54BA"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5CBA04A920205019"
+				item: "allthemodium:piglich_heart"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "0DA3403E64E63089"
+			rewards: [
+				{
+					id: "4A7597DF0083430B"
+					item: "meatsalad:draconic_infused_dark_matter"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00E9DB5BF2EFB6D1"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+				{
+					auto: "invisible"
+					id: "16871E0264E01045"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "7E7F4ADF867C5FA1"
+				item: "meatsalad:draconic_infused_dark_matter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "168535C035FCBBA5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "13655B3F9FAD53D2"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16FDD38B1AA30A9D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Model Framework to train data models"
+			tasks: [{
+				id: "3BD3BAAAD95F3E14"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			title: "Model Framework"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			id: "6A6C48828D916EE5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "79EED54D772C3E58"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7301C8148683E653"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Deep Learner to train your data models"
+			tasks: [{
+				id: "097E7B20C53AE941"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
+			title: "Deep Learner"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			id: "1CB9C84CECDBD755"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "67E653E1B49D76F9"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "431F8514430E9633"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Simulation Chamber to use your data models"
+			tasks: [{
+				id: "12F3149D21F3DAAE"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "Simulation Chamber"
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			id: "59EF276AC2E1A632"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7FEC42528F9FA69B"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D6DE2409F0E203E"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Loot Fabricator to generate loot from your data models"
+			tasks: [{
+				id: "2B0BB87FCB20B8FB"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			title: "Loot Fabricator"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			id: "187B1F743B3323DF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5FF4C1E5252DF9B1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FE1376BE1315013"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft an Ore Laser Base to automatically mine ores"
+			tasks: [{
+				id: "4B22FF186C370495"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			title: "Ore Laser Base"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			id: "4567CA10CF091158"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7B7EBCA31B7B4A36"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A13B15FABC33475"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Craft a Laser Drill to power your Ore Laser Base"
+			tasks: [{
+				id: "68971C19AE10124D"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
+			title: "Laser Drill"
+			x: 4.5d
+			y: 4.5d
+		}
+	]
+	title: "Eternal Crystal"
+}

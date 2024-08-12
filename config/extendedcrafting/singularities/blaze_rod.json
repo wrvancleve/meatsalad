@@ -1,0 +1,11 @@
+{
+  "name": "Blaze Rod",
+  "colors": [
+    "ffc100",
+    "ae3c00"
+  ],
+  "ingredient": {
+    "tag": "forge:rods/blaze"
+  },
+  "materialCount": 81
+}

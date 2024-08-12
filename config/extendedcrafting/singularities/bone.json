@@ -1,0 +1,11 @@
+{
+  "name": "Bone",
+  "colors": [
+    "fcfBed",
+    "cbc6a5"
+  ],
+  "ingredient": {
+    "item": "minecraft:bone"
+  },
+  "materialCount": 81
+}

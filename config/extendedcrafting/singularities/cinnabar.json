@@ -1,0 +1,10 @@
+{
+  "name": "Cinnabar",
+  "colors": [
+    "ca2f3a",
+    "64002f"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/cinnabar"
+  }
+}

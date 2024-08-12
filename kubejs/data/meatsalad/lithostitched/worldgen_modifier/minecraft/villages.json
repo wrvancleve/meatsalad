@@ -1,0 +1,11 @@
+{
+  "type": "lithostitched:remove_structures_from_structure_set",
+  "structure_set": "minecraft:villages",
+  "structures": [
+    "minecraft:village_plains",
+    "minecraft:village_desert",
+    "minecraft:village_savanna",
+    "minecraft:village_snowy",
+    "minecraft:village_taiga"
+  ]
+}

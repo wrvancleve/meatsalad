@@ -1,0 +1,11 @@
+{
+  "name": "Magma Cream",
+  "colors": [
+    "c6dc57",
+    "bd4018"
+  ],
+  "ingredient": {
+    "item": "minecraft:magma_cream"
+  },
+  "materialCount": 81
+}

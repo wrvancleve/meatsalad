@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:birch_forest",
+  "features": [
+    "meatsalad:overworld_iron_ore_middle_bonus_placed",
+    "meatsalad:overworld_iron_ore_small_bonus_placed",
+    "meatsalad:overworld_iron_ore_upper_bonus_placed"
+  ],
+  "step": "underground_ores"
+}

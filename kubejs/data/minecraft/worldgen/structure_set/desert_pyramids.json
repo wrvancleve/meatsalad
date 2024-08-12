@@ -11,7 +11,7 @@
     "separation": 8,
     "exclusion_zone": {
       "chunk_count": 4,
-      "other_set": "minecraft:villages"
+      "other_set": "#betterdeserttemples:desert_temple_avoid"
     },
     "type": "betterdeserttemples:desert_temple"
   }

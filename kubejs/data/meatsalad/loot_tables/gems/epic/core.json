@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/ballast\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/brawlers\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/breach\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/combatant\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/guardian\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/lightning\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/lunar\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/samurai\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/slipstream\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/solar\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/splendor\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/tyrannical\"}"
+          }
+        },
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "apotheosis:gem",
+            "nbt": "{affix_data:{rarity:\"apotheosis:epic\"},gem:\"apotheosis:core/warlord\"}"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -5,32 +5,12 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "irons_spellbooks:arcane_essence",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 15
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "irons_spellbooks:blank_rune"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.3
+          "type": "placebo:stack_entry",
+          "min": 2,
+          "max": 15,
+          "stack": {
+            "item": "irons_spellbooks:arcane_essence"
+          }
         }
       ]
     },
@@ -39,28 +19,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/basic_curios"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.8
-        }
-      ]
-    },
-    {
-      "rolls": 2,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/great_ink"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "name": "meatsalad:ink/random"
         }
       ]
     },
@@ -68,23 +27,16 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "irons_spellbooks:ancient_knowledge_fragment",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 0,
-                "max": 3
-              }
-            }
-          ]
-        }
-      ],
-      "conditions": [
+          "type": "placebo:stack_entry",
+          "weight": 25,
+          "stack": {
+            "item": "irons_spellbooks:blank_rune"
+          }
+        },
         {
-          "condition": "minecraft:random_chance",
-          "chance": 0.10
+          "type": "minecraft:loot_table",
+          "name": "irons_spellbooks:magic_items/basic_curios",
+          "weight": 10
         }
       ]
     }

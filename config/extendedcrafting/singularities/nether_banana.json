@@ -1,0 +1,11 @@
+{
+  "name": "Nether Banana",
+  "colors": [
+    "7cb6cc",
+    "133d5b"
+  ],
+  "ingredient": {
+    "item": "silentgear:nether_banana"
+  },
+  "materialCount": 81
+}

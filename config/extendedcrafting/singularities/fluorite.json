@@ -1,0 +1,10 @@
+{
+  "name": "Fluorite",
+  "colors": [
+    "d6dbdd",
+    "a8c5e4"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/fluorite"
+  }
+}

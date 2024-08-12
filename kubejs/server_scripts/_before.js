@@ -141,6 +141,20 @@ const enchantFunction = (levels, treasureAllowed) => {
   }
 }
 
+const smash = (event, input, output, recipeId) => {
+  if (recipeId == null) recipeId = output.getId().split(':').pop()
+  event.custom({
+    type: 'mekanism:crushing',
+    input: { ingredient: input },
+    output: output
+  }).id(`meatsalad:crushing/${recipeId}`)
+  event.custom({
+    type: 'thermal:pulverizer',
+    ingredient: input,
+    result: output
+  }).id(`meatsalad:pulverizer/${recipeId}`)
+}
+
 const energize = (event, ingredients, energy, result, recipeId) => {
   if (recipeId == null) recipeId = result.getId().split(':')[1]
   event.custom({

@@ -1,0 +1,11 @@
+{
+  "name": "Witch Pupil",
+  "colors": [
+    "6f34a9",
+    "330364"
+  ],
+  "ingredient": {
+    "item": "endrem:witch_pupil"
+  },
+  "materialCount": 81
+}

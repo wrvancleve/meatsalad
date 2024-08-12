@@ -10,7 +10,7 @@
 	#Whether or not players can harm their own magic summons. Default: false
 	canAttackOwnSummons = true
 	#The maximum amount of times an applicable piece of equipment can be upgraded in the arcane anvil. Default: 3
-	maxUpgrades = 10
+	maxUpgrades = 3
 	#From 0-1, the percent of max mana a player respawns with. Default: 0.0
 	manaSpawnPercent = 1.0
 	#If true the world will attempt to be upgraded from an older version of ISS
@@ -54,7 +54,8 @@
 	[Spells."irons_spellbooks:fireball"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.5
@@ -65,7 +66,8 @@
 	[Spells."irons_spellbooks:heat_surge"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -76,7 +78,8 @@
 	[Spells."irons_spellbooks:wall_of_fire"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.5
@@ -88,6 +91,7 @@
 		Enabled = true
 		School = "irons_spellbooks:fire"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -98,7 +102,8 @@
 	[Spells."irons_spellbooks:magma_bomb"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 2.0
@@ -110,6 +115,7 @@
 		Enabled = true
 		School = "irons_spellbooks:fire"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.5
@@ -121,6 +127,7 @@
 		Enabled = true
 		School = "irons_spellbooks:fire"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.5
@@ -132,6 +139,7 @@
 		Enabled = true
 		School = "irons_spellbooks:fire"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -143,6 +151,7 @@
 		Enabled = true
 		School = "irons_spellbooks:fire"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -153,7 +162,8 @@
 	[Spells."irons_spellbooks:flaming_strike"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.5
@@ -166,6 +176,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 0.5
@@ -177,6 +188,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -188,6 +200,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 0.5
@@ -198,7 +211,8 @@
 	[Spells."irons_spellbooks:oakskin"]
 		Enabled = true
 		School = "irons_spellbooks:nature"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -209,7 +223,8 @@
 	[Spells."irons_spellbooks:spider_aspect"]
 		Enabled = true
 		School = "irons_spellbooks:nature"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 0.5
@@ -221,6 +236,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 0.5
@@ -232,6 +248,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 0.5
@@ -242,7 +259,8 @@
 	[Spells."irons_spellbooks:blight"]
 		Enabled = true
 		School = "irons_spellbooks:nature"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 2.0
@@ -253,7 +271,8 @@
 	[Spells."irons_spellbooks:stomp"]
 		Enabled = true
 		School = "irons_spellbooks:nature"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 0.5
@@ -265,6 +284,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 0.5
@@ -276,6 +296,7 @@
 		Enabled = true
 		School = "irons_spellbooks:nature"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 0.5
@@ -286,7 +307,8 @@
 	[Spells."irons_spellbooks:gluttony"]
 		Enabled = true
 		School = "irons_spellbooks:nature"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -298,7 +320,8 @@
 	[Spells."irons_spellbooks:frostbite"]
 		Enabled = true
 		School = "irons_spellbooks:ice"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -309,7 +332,8 @@
 	[Spells."irons_spellbooks:ice_block"]
 		Enabled = true
 		School = "irons_spellbooks:ice"
-		MaxLevel = 10
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -320,7 +344,8 @@
 	[Spells."irons_spellbooks:ray_of_frost"]
 		Enabled = true
 		School = "irons_spellbooks:ice"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -332,6 +357,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ice"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -343,17 +369,19 @@
 		Enabled = true
 		School = "irons_spellbooks:ice"
 		MaxLevel = 5
+		AncientLevel = 8
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 6.0
+		SpellPowerMultiplier = 5.0
 		CooldownInSeconds = 30.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:frostwave"]
 		Enabled = true
 		School = "irons_spellbooks:ice"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -365,10 +393,11 @@
 		Enabled = true
 		School = "irons_spellbooks:ice"
 		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 15.0
+		SpellPowerMultiplier = 10.0
 		CooldownInSeconds = 600.0
 		AllowCrafting = true
 
@@ -376,6 +405,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ice"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -387,7 +417,8 @@
 	[Spells."irons_spellbooks:arrow_volley"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 10
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -398,7 +429,8 @@
 	[Spells."irons_spellbooks:fang_ward"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 10
+		MaxLevel = 8
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -410,6 +442,7 @@
 		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -421,17 +454,19 @@
 		Enabled = false
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 6
+		AncientLevel = 6
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 15.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:gust"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -442,7 +477,8 @@
 	[Spells."irons_spellbooks:invisibility"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 10
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -453,7 +489,8 @@
 	[Spells."irons_spellbooks:summon_vex"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -465,28 +502,31 @@
 		Enabled = false
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 3.0
 		CooldownInSeconds = 2.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:wololo"]
 		Enabled = false
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 1
+		AncientLevel = 1
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 10.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:shield"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -498,6 +538,7 @@
 		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 5
+		AncientLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -509,17 +550,19 @@
 		Enabled = false
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 5
+		AncientLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 0.0
 		CooldownInSeconds = 2.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:slow"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 10
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -531,6 +574,7 @@
 		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 2.0
@@ -543,6 +587,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ender"
 		MaxLevel = 3
+		AncientLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -553,7 +598,8 @@
 	[Spells."irons_spellbooks:black_hole"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.5
@@ -564,7 +610,8 @@
 	[Spells."irons_spellbooks:evasion"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
@@ -576,6 +623,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ender"
 		MaxLevel = 1
+		AncientLevel = 1
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -586,7 +634,8 @@
 	[Spells."irons_spellbooks:magic_missile"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 10
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 2.0
@@ -598,17 +647,19 @@
 		Enabled = false
 		School = "irons_spellbooks:ender"
 		MaxLevel = 1
+		AncientLevel = 1
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 5.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:magic_arrow"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 10
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -620,6 +671,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ender"
 		MaxLevel = 5
+		AncientLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.5
@@ -630,7 +682,8 @@
 	[Spells."irons_spellbooks:dragon_breath"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 10
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -642,6 +695,7 @@
 		Enabled = true
 		School = "irons_spellbooks:ender"
 		MaxLevel = 1
+		AncientLevel = 1
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -652,7 +706,8 @@
 	[Spells."irons_spellbooks:echoing_strikes"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 5
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -663,7 +718,8 @@
 	[Spells."irons_spellbooks:starfall"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
-		MaxLevel = 20
+		MaxLevel = 5
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -675,7 +731,8 @@
 	[Spells."irons_spellbooks:sculk_tentacles"]
 		Enabled = true
 		School = "irons_spellbooks:eldritch"
-		MaxLevel = 10
+		MaxLevel = 4
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -686,7 +743,8 @@
 	[Spells."irons_spellbooks:telekinesis"]
 		Enabled = true
 		School = "irons_spellbooks:eldritch"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -697,7 +755,8 @@
 	[Spells."irons_spellbooks:planar_sight"]
 		Enabled = true
 		School = "irons_spellbooks:eldritch"
-		MaxLevel = 10
+		MaxLevel = 3
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -708,7 +767,8 @@
 	[Spells."irons_spellbooks:eldritch_blast"]
 		Enabled = true
 		School = "irons_spellbooks:eldritch"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -720,6 +780,7 @@
 		Enabled = false
 		School = "irons_spellbooks:eldritch"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -730,7 +791,8 @@
 	[Spells."irons_spellbooks:sonic_boom"]
 		Enabled = true
 		School = "irons_spellbooks:eldritch"
-		MaxLevel = 10
+		MaxLevel = 3
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
@@ -743,6 +805,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -754,6 +817,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -764,7 +828,8 @@
 	[Spells."irons_spellbooks:angel_wing"]
 		Enabled = true
 		School = "irons_spellbooks:holy"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
@@ -776,6 +841,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -787,6 +853,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 2.0
@@ -798,6 +865,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -809,6 +877,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -820,6 +889,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 6
+		AncientLevel = 6
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -831,6 +901,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -841,7 +912,8 @@
 	[Spells."irons_spellbooks:divine_smite"]
 		Enabled = true
 		School = "irons_spellbooks:holy"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 5.0
@@ -853,6 +925,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 1
+		AncientLevel = 1
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -864,6 +937,7 @@
 		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
@@ -875,33 +949,36 @@
 	[Spells."irons_spellbooks:raise_dead"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
-		MaxLevel = 10
+		MaxLevel = 6
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 2.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 10.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:blood_slash"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 6.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 3.0
 		CooldownInSeconds = 10.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:blood_step"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 1.5
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 5.0
 		AllowCrafting = true
 
@@ -909,10 +986,11 @@
 		Enabled = true
 		School = "irons_spellbooks:blood"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 3.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 20.0
 		AllowCrafting = true
 
@@ -920,10 +998,11 @@
 		Enabled = true
 		School = "irons_spellbooks:blood"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 11.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 5.0
 		CooldownInSeconds = 15.0
 		AllowCrafting = true
 
@@ -931,31 +1010,34 @@
 		Enabled = true
 		School = "irons_spellbooks:blood"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 5.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 2.5
 		CooldownInSeconds = 10.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:sacrifice"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
-		ManaCostMultiplier = 0.0
+		ManaCostMultiplier = 0.5
 		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 20.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:heartstop"]
-		Enabled = true
+		Enabled = false
 		School = "irons_spellbooks:blood"
 		MaxLevel = 3
+		AncientLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
-		ManaCostMultiplier = 0.0
+		ManaCostMultiplier = 0.5
 		SpellPowerMultiplier = 0.2
 		CooldownInSeconds = 120.0
 		AllowCrafting = false
@@ -964,10 +1046,11 @@
 		Enabled = true
 		School = "irons_spellbooks:blood"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 4.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 2.0
 		CooldownInSeconds = 20.0
 		AllowCrafting = true
 
@@ -975,10 +1058,11 @@
 		Enabled = true
 		School = "irons_spellbooks:blood"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 0.0
-		SpellPowerMultiplier = 6.0
+		ManaCostMultiplier = 0.5
+		SpellPowerMultiplier = 3.0
 		CooldownInSeconds = 1.0
 		AllowCrafting = true
 
@@ -986,7 +1070,8 @@
 	[Spells."irons_spellbooks:thunder_step"]
 		Enabled = true
 		School = "irons_spellbooks:lightning"
-		MaxLevel = 10
+		MaxLevel = 5
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
@@ -997,7 +1082,8 @@
 	[Spells."irons_spellbooks:thunderstorm"]
 		Enabled = true
 		School = "irons_spellbooks:lightning"
-		MaxLevel = 30
+		MaxLevel = 8
+		AncientLevel = 20
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -1009,6 +1095,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 2.0
@@ -1020,6 +1107,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 2.5
@@ -1031,6 +1119,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 8
+		AncientLevel = 8
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 2.0
@@ -1042,6 +1131,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 2.0
@@ -1053,6 +1143,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 2.0
@@ -1063,11 +1154,12 @@
 	[Spells."irons_spellbooks:charge"]
 		Enabled = true
 		School = "irons_spellbooks:lightning"
-		MaxLevel = 10
+		MaxLevel = 3
+		AncientLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 2.0
-		SpellPowerMultiplier = 3.0
+		SpellPowerMultiplier = 1.5
 		CooldownInSeconds = 0.1
 		AllowCrafting = true
 
@@ -1075,6 +1167,7 @@
 		Enabled = true
 		School = "irons_spellbooks:lightning"
 		MaxLevel = 10
+		AncientLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 2.0

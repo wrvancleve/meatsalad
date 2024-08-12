@@ -15,6 +15,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:affix_materials/max"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/random_max"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
           "type": "placebo:stack_entry",
           "stack": {
             "item": "endrem:lost_eye"

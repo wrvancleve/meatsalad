@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_swamp",
+  "features": [
+    "meatsalad:overworld_redstone_ore_bonus_placed",
+    "meatsalad:overworld_redstone_ore_lower_bonus_placed"
+  ],
+  "step": "underground_ores"
+}

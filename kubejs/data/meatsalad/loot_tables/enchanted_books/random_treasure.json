@@ -5,8 +5,21 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/early_treasure",
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 20
+              },
+              "treasure": true
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -25,8 +38,21 @@
           ]
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/mid_treasure",
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 20,
+                "max": 40
+              },
+              "treasure": true
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -45,8 +71,21 @@
           ]
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/late_treasure",
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "treasure": true
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -64,8 +103,21 @@
           ]
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/end_treasure",
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "minecraft:book"
+          },
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 40,
+                "max": 60
+              },
+              "treasure": true
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",

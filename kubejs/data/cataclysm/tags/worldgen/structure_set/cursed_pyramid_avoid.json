@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
-    "minecraft:desert_pyramids"
+    "minecraft:desert_pyramids",
+    "minecraft:villages"
   ]
 }

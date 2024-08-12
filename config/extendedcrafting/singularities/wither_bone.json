@@ -1,0 +1,11 @@
+{
+  "name": "Wither Bone",
+  "colors": [
+    "515353",
+    "2a292d"
+  ],
+  "ingredient": {
+    "item": "bhc:wither_bone"
+  },
+  "materialCount": 81
+}

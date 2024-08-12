@@ -11,7 +11,7 @@
         {
           "type": "placebo:stack_entry",
           "weight": 7,
-          "quality": 1.0,
+          "quality": 0.5,
           "stack": {
             "item": "gateways:gate_pearl",
             "nbt": "{gateway: \"meatsalad:otherside\"}"
@@ -19,9 +19,9 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gates/random",
+          "name": "meatsalad:misc/rare/random",
           "weight": 3,
-          "quality": 1.0
+          "quality": 0.5
         }
       ]
     }

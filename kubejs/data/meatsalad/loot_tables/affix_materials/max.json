@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "max": 6,
+          "stack": {
+            "item": "apotheosis:rare_material"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": false,
+                    "meatsalad:stage/the_other": false,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "max": 6,
+          "stack": {
+            "item": "apotheosis:epic_material"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "placebo:stack_entry",
+          "max": 6,
+          "stack": {
+            "item": "apotheosis:mythic_material"
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

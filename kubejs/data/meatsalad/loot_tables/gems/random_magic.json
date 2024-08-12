@@ -1,0 +1,98 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/common/magic",
+          "weight": 400.0,
+          "quality": 0.0,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": false,
+                    "meatsalad:stage/the_other": false,
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/uncommon/magic",
+          "weight": 320.0,
+          "quality": 3.0,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/rare/magic",
+          "weight": 150.0,
+          "quality": 6.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/epic/magic",
+          "weight": 90.0,
+          "quality": 9.0,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_nether": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/mythic/magic",
+          "weight": 40.0,
+          "quality": 12.0,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "meatsalad:stage/the_end": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

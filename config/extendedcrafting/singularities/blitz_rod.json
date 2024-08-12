@@ -1,0 +1,11 @@
+{
+  "name": "Blitz Rod",
+  "colors": [
+    "e9edf3",
+    "aab7c9"
+  ],
+  "ingredient": {
+    "item": "thermal:blitz_rod"
+  },
+  "materialCount": 81
+}

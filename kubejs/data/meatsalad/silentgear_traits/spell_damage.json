@@ -1,6 +1,6 @@
 {
     "type": "silentgear:attribute",
-    "max_level": 5,
+    "max_level": 8,
     "name": {
       "text": "Spell Damage"
     },
@@ -11,13 +11,16 @@
       "all": [
         {
           "attribute": "irons_spellbooks:spell_power",
-          "operation": 0,
+          "operation": 1,
           "value": [
-            0.02,
-            0.04,
-            0.06,
-            0.08,
-            0.1
+            0.0125,
+            0.0250,
+            0.0375,
+            0.0500,
+            0.0625,
+            0.0750,
+            0.0875,
+            0.1000
           ]
         }
       ]

@@ -10,7 +10,6 @@ const Summons = {
   },
   ender_guardian: {
     boss: 'cataclysm:ender_guardian',
-    baseInput: 'cataclysm:void_stone',
     inputs: [
       'cataclysm:void_eye',
     ],
@@ -45,10 +44,8 @@ ServerEvents.recipes(event => {
     const bossMobId = boss.split(':')[1]
     const inputs = bossSummon.inputs
     const bossNameColor = bossSummon.bossNameColor
-    const baseInput = bossSummon.baseInput
-    const baseLevel = baseInput != null ? 0 : 1
 
-    for (let i = baseLevel; i <= 3; i++) {
+    for (let i = 0; i <= 3; i++) {
       let entityId = `${bossMobId}_${i}`
       let summoningRitual = event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
       
@@ -71,7 +68,7 @@ ServerEvents.recipes(event => {
       })
       switch (i) {
         case 0:
-          summoningRitual = summoningRitual.input(baseInput)
+          summoningRitual = summoningRitual.input('meatsalad:infused_ender_pearl')
           break
         case 1:
           summoningRitual = summoningRitual.input('meatsalad:dark_matter')

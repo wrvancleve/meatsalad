@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:blaze_rod',
     E: 'minecraft:wither_skeleton_skull',
     G: '#forge:storage_blocks/gold',
-    e: 'meatsalad:infused_ender_pearl',
+    e: 'meatsalad:incomplete_large_gate_pearl',
     N: 'minecraft:nether_bricks',
   }).stage('hellish_fortress_gate').id('meatsalad:hellish_fortress_gate')
 
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     'NNN'
   ], {
     B: 'minecraft:blaze_rod',
-    e: 'meatsalad:infused_ender_pearl',
+    e: 'meatsalad:incomplete_gate_pearl',
     N: 'minecraft:nether_bricks',
   }).stage('blaze_gate').id('meatsalad:blaze_gate')
 })

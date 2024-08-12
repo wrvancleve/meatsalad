@@ -42,7 +42,7 @@ JEIEvents.hideItems(event => {
     'extendedcrafting:enhanced_redstone_nugget',
     'extendedcrafting:redstone_ingot_block',
     'extendedcrafting:enhanced_redstone_ingot_block',
-    'extendedcrafting:crystaltine_catalyst',
+    'extendedcrafting:ultimate_catalyst',
     Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'),
     Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"Datapack"}'),
     Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"CraftTweaker"}'),

@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_savanna",
+  "features": [
+    "meatsalad:overworld_coal_ore_lower_bonus_placed",
+    "meatsalad:overworld_coal_ore_upper_bonus_placed"
+  ],
+  "step": "underground_ores"
+}

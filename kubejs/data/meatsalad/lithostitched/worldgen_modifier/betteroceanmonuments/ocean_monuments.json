@@ -1,0 +1,10 @@
+{
+  "type": "lithostitched:add_structure_set_entries",
+  "structure_set": "minecraft:ocean_monuments",
+  "entries": [
+    {
+      "structure": "betteroceanmonuments:ocean_monument",
+      "weight": 1
+    }
+  ]
+}

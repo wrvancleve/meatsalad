@@ -52,7 +52,7 @@ dontShowContentsUnlessSneaking = []
 #A list of blocks for which we don't send NBT over the network. This is mostly useful for blocks that have HUGE NBT in their pickblock (itemstack)
 dontSendNBT = []
 #A list of either <modid>:<entityid> to disable the tooltip for specific entities. Can also be a single <modid> to disable an entire mod. Or it can also be '*' to disable everything
-blacklistEntities = ["minecraft:elder_guardian", "minecraft:ender_dragon", "minecraft:wither", "cataclysm:ancient_remnant", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "awakened_bosses:herobrine", "cataclysm:ender_guardian", "cataclysm:ignis", "cataclysm:the_leviathan", "awakened_bosses:projectile_mahva"]
+blacklistEntities = ["minecraft:elder_guardian", "minecraft:ender_dragon", "minecraft:wither", "cataclysm:ancient_remnant", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "awakened_bosses:herobrine", "cataclysm:ender_guardian", "cataclysm:ignis", "cataclysm:the_leviathan", "awakened_bosses:projectile_mahva", "dummmmmmy:target_dummy"]
 #A list of <tag>=<name> containing all tooltype tags with their associated name to display
 tooltypeTags = ["minecraft:mineable/axe=Axe", "minecraft:mineable/pickaxe=Pickaxe", "minecraft:mineable/shovel=Shovel", "minecraft:mineable/hoe=Hoe"]
 #A list of <tag>=<name> containing all harvestability tags with their associated name to display
