@@ -1,0 +1,7 @@
+{
+  "type": "lithostitched:remove_structures_from_structure_set",
+  "structure_set": "mes:enderkeep_courtyard",
+  "structures": [
+    "mes:enderkeep_courtyard"
+  ]
+}

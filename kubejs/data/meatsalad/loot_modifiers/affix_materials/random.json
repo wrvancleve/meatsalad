@@ -39,6 +39,10 @@
         {
           "condition": "forge:loot_table_id",
           "loot_table_id": "dungeoncrawl:chests/treasure"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "mes:astral_meteorite"
         }
       ]
     }

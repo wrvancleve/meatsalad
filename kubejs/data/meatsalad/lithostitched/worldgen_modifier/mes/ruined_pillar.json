@@ -1,0 +1,7 @@
+{
+  "type": "lithostitched:remove_structures_from_structure_set",
+  "structure_set": "mes:ruined_pillar",
+  "structures": [
+    "mes:ruined_pillar"
+  ]
+}

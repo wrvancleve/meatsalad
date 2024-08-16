@@ -12,15 +12,15 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/mythic/special",
-          "weight": 5.0,
-          "quality": 1.5
-        },
-        {
-          "type": "minecraft:loot_table",
           "name": "meatsalad:gems/mythic/core",
           "weight": 12.0,
           "quality": 1.0
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/mythic/special",
+          "weight": 5.0,
+          "quality": 1.5
         }
       ]
     }
