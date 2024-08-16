@@ -5,8 +5,11 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gates/random",
+          "type": "placebo:stack_entry",
+          "weight": 3,
+          "stack": {
+            "item": "meatsalad:mystery_goo"
+          },
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -23,10 +26,9 @@
           ]
         },
         {
-          "type": "placebo:stack_entry",
-          "stack": {
-            "item": "meatsalad:mystery_goo"
-          },
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:gates/random",
+          "weight": 2,
           "conditions": [
             {
               "condition": "minecraft:entity_properties",

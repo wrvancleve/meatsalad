@@ -5,12 +5,10 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:misc/dark_matter",
           "weight": 10,
-          "quality": 0.5,
-          "stack": {
-            "item": "meatsalad:dark_matter"
-          }
+          "quality": 0.5
         },
         {
           "type": "minecraft:empty",

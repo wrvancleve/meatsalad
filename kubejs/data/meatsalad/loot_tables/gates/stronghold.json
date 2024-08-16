@@ -5,23 +5,11 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 35
-        },
-        {
           "type": "placebo:stack_entry",
-          "weight": 50,
-          "quality": 0.5,
           "stack": {
             "item": "gateways:gate_pearl",
             "nbt": "{gateway: \"meatsalad:stronghold\"}"
           }
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/rare/random",
-          "weight": 15,
-          "quality": 0.5
         }
       ]
     }

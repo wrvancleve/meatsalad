@@ -8,7 +8,7 @@
           "type": "minecraft:loot_table",
           "name": "meatsalad:misc/rare/random",
           "weight": 10,
-          "quality": 0.5
+          "quality": 1.0
         },
         {
           "type": "minecraft:empty",
