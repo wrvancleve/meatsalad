@@ -90,6 +90,9 @@ PlayerEvents.advancement(event => {
       case 'cataclysm:kill_remnant':
         addSummonStage('ancient_remnant')
         break
+      case 'awakened_bosses:herobrine_dead':
+        addStage('herobrine')
+        break
     }
   }
 })
