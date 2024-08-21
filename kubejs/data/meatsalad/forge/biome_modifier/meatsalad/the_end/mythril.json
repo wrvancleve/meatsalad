@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#meatsalad:has_mythril_ore",
+  "features": "meatsalad:end_mythril_ore_placed",
+  "step": "underground_ores"
+}

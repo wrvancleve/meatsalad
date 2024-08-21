@@ -1,0 +1,107 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/mythril"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.mythril"
+  },
+  "stats": {
+    "main": {
+      "durability": 1664.0,
+      "armor_durability": 37.0,
+      "enchantment_value": 25.0,
+      "rarity": 120.0,
+      "charging_value": 1.4,
+      "harvest_speed": 20.0,
+      "melee_damage": 6.0,
+      "magic_damage": 9.0,
+      "attack_speed": 0.3,
+      "ranged_damage": 3.0,
+      "ranged_speed": 0.5,
+      "projectile_speed": 1.5,
+      "projectile_accuracy": 2.0,
+      "armor": 20.0,
+      "armor/helmet": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/leggings": 6.0,
+      "armor/boots": 3.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 16.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:accelerate",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:light",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 5,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "name": "silentgear:malleable",
+        "level": 3,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#64EAFB"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#64EAFB"
+      }
+    ]
+  }
+}

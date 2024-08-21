@@ -39,6 +39,13 @@ StartupEvents.registry('block', event => {
       type_tag: 'forge:ores',
       material_tag: '{0}',
     },
+    end_ore: {
+      registry_name: '{0}_end_ore',
+      material_type: 'stone',
+      display_name: '{0} Ore',
+      type_tag: 'forge:ores',
+      material_tag: '{0}',
+    },
   }
 
   function createBlock(material, type, harvest_level_tag, hardness, resistance) {
@@ -75,7 +82,22 @@ StartupEvents.registry('block', event => {
     }
   }
 
+  createBlock('adamantite', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('adamantite', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('adamantite', 'end_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('adamantite', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('adamantite', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('mythril', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('mythril', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('mythril', 'end_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('mythril', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
+  createBlock('mythril', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
   createBlock('starmetal', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
   createBlock('neutronium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG)
   createBlock('abiding_alloy', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('awakened_adamantite', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('awakened_mythril', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('awakened_palladium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('awakened_unobtainium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('awakened_vibranium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
 })

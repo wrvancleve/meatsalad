@@ -1,10 +1,12 @@
 ServerEvents.recipes(event => {
   removeRecipes(event, [
     'potionsmaster:activated_charcoal',
+    'potionsmaster:adamantite_powder',
     'potionsmaster:allthemodium_powder',
     'potionsmaster:aluminium_powder',
     'potionsmaster:azuresilver_powder',
     'potionsmaster:blaze_powder',
+    'potionsmaster:calcinatedadamantite_powder',
     'potionsmaster:calcinatedallthemodium_powder',
     'potionsmaster:calcinatedaluminium_powder',
     'potionsmaster:calcinatedazuresilver_powder',
@@ -17,6 +19,7 @@ ServerEvents.recipes(event => {
     'potionsmaster:calcinatediron_powder',
     'potionsmaster:calcinatedlapis_powder',
     'potionsmaster:calcinatedlead_powder',
+    'potionsmaster:calcinatedmythril_powder',
     'potionsmaster:calcinatednetherite_powder',
     'potionsmaster:calcinatednickel_powder',
     'potionsmaster:calcinatedosmium_powder',
@@ -40,6 +43,7 @@ ServerEvents.recipes(event => {
     'potionsmaster:iron_powder',
     'potionsmaster:lapis_powder',
     'potionsmaster:lead_powder',
+    'potionsmaster:mythril_powder',
     'potionsmaster:netherite_powder',
     'potionsmaster:nickel_powder',
     'potionsmaster:osmium_powder',
@@ -95,6 +99,7 @@ ServerEvents.recipes(event => {
   }
 
   const calcinateRecipes = [
+    { name: 'adamantite' },
     { name: 'allthemodium' },
     { name: 'aluminium', material: 'aluminum' },
     { name: 'azuresilver', material: 'azure_silver' },
@@ -107,6 +112,7 @@ ServerEvents.recipes(event => {
     { name: 'iron' },
     { name: 'lapis' },
     { name: 'lead' },
+    { name: 'mythril' },
     { name: 'netherite' },
     { name: 'nickel' },
     { name: 'osmium' },

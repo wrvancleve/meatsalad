@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "nullscape:void_barrens",
+  "features": "meatsalad:end_mythril_ore_bonus_placed",
+  "step": "underground_ores"
+}

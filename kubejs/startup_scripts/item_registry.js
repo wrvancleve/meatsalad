@@ -1,6 +1,8 @@
 global.mekStackAdditions = [
   { material: 'crimson_iron', color:'#fc9aad', onlyMekItems: true },
-  { material: 'azure_silver', color:'#e89ffc', onlyMekItems: true }
+  { material: 'azure_silver', color:'#e89ffc', onlyMekItems: true },
+  { material: 'adamantite', color: '#ec1321' },
+  { material: 'mythril', color: '#64eafb' }
 ]
 
 StartupEvents.registry('item', event => {
@@ -178,7 +180,12 @@ StartupEvents.registry('item', event => {
   createMaterials([
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
     {name: 'neutronium', rarity: 'epic' },
-    {name: 'abiding_alloy', rarity: 'epic', types: ['ingot'] }
+    {name: 'abiding_alloy', rarity: 'epic', types: ['ingot'] },
+    {name: 'awakened_adamantite', rarity: 'epic', types: ['ingot']},
+    {name: 'awakened_palladium', rarity: 'epic', types: ['ingot']},
+    {name: 'awakened_mythril', rarity: 'epic', types: ['ingot']},
+    {name: 'awakened_unobtainium', rarity: 'epic', types: ['ingot']},
+    {name: 'awakened_vibranium', rarity: 'epic', types: ['ingot']},
   ])
 
   createItem('vulcanite', 'rare', true)

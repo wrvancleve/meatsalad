@@ -10,6 +10,7 @@ ClientEvents.lang('en_us', event => {
 JEIEvents.hideItems(event => {
   event.hide([
     'potionsmaster:activated_charcoal',
+    'potionsmaster:adamantite_powder',
     'potionsmaster:allthemodium_powder',
     'potionsmaster:aluminium_powder',
     'potionsmaster:azuresilver_powder',
@@ -26,6 +27,7 @@ JEIEvents.hideItems(event => {
     'potionsmaster:iron_powder',
     'potionsmaster:lapis_powder',
     'potionsmaster:lead_powder',
+    'potionsmaster:mythril_powder',
     'potionsmaster:netherite_powder',
     'potionsmaster:nickel_powder',
     'potionsmaster:osmium_powder',

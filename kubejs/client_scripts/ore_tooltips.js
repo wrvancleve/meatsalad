@@ -158,6 +158,18 @@ const AZURE_SILVER_ITEMS = [
 const ARCANE_SALVAGE_ITEMS = [
   'irons_spellbooks:arcane_debris'
 ]
+const ADAMANTITE_ITEMS = [
+  'meatsalad:raw_adamantite',
+  'meatsalad:adamantite_basalt_ore',
+  'meatsalad:adamantite_blackstone_ore',
+  'meatsalad:adamantite_end_ore'
+]
+const MYTHRIL_ITEMS = [
+  'meatsalad:raw_mythril',
+  'meatsalad:mythril_basalt_ore',
+  'meatsalad:mythril_blackstone_ore',
+  'meatsalad:mythril_end_ore'
+]
 
 ItemEvents.tooltip(event => {
   let addOreTooltips = (oreItems, tooltips) => {
@@ -341,5 +353,13 @@ ItemEvents.tooltip(event => {
   addOreTooltips(ARCANE_SALVAGE_ITEMS, [
     Text.of('Overworld: Any Biome (Y: -63 to -38)').gold(),
     Text.of('Mining Dimension: (Y: 1 to 63)').gold(),
+  ])
+
+  addOreTooltips(ADAMANTITE_ITEMS, [
+    Text.of('The End: End Highlands/Void Barrens (Y: 8 to 376)').gold()
+  ])
+
+  addOreTooltips(MYTHRIL_ITEMS, [
+    Text.of('The End: End Highlands/Void Barrens (Y: 8 to 376)').gold()
   ])
 })
