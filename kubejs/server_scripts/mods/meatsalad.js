@@ -358,4 +358,12 @@ ServerEvents.recipes(event => {
       result: Item.of('quark:ancient_tome', `{StoredEnchantments:[{id:"${enchant}",lvl:${currentMax}s}]}`)//.strongNBT()
     }).id(`meatsalad:fusion/${enchant.split(':').pop()}_ancient_tome`)
   }
+
+  event.custom({
+    type: 'minecraft:smithing_transform',
+    addition: Item.of('silentgear:golden_nether_banana'),
+    base: Ingredient.of('#forge:ingots/netherite'),
+    result: Item.of('allthemodium:allthemodium_ingot'),
+    template: Item.of('allthemodium:allthemodium_upgrade_smithing_template')
+  })
 })

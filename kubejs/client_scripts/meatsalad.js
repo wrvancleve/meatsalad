@@ -1,9 +1,11 @@
 ClientEvents.lang('en_us', event => {
   // Materials
+  event.add('meatsalad', 'material.meatsalad.adamantite', 'Adamantite')
   event.add('meatsalad', 'material.meatsalad.arcane_cloth', 'Arcane Cloth')
   event.add('meatsalad', 'material.meatsalad.dragon_scale', 'Dragon Scale')
   event.add('meatsalad', 'material.meatsalad.echo', 'Echo')
   event.add('meatsalad', 'material.meatsalad.infinity', 'Infinity')
+  event.add('meatsalad', 'material.meatsalad.mythril', 'Mythril')
   event.add('meatsalad', 'material.meatsalad.allthemodium', 'Palladium')
   event.add('meatsalad', 'material.meatsalad.peridot', 'Peridot')
   event.add('meatsalad', 'material.meatsalad.ruby', 'Ruby')

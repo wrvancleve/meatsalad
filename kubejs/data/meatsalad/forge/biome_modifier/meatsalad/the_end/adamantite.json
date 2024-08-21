@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#meatsalad:has_adamantite_ore",
+  "features": "meatsalad:end_adamantite_ore_placed",
+  "step": "underground_ores"
+}
