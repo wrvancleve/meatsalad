@@ -6,21 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/epic/magic",
-          "weight": 1.0,
-          "quality": 1.25
+          "name": "meatsalad:gems/epic/special",
+          "weight": 5.0,
+          "quality": 1.0
         },
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:gems/epic/core",
           "weight": 12.0,
-          "quality": 1.0
+          "quality": 1.25
         },
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/epic/special",
-          "weight": 5.0,
-          "quality": 1.5
+          "name": "meatsalad:gems/epic/magic",
+          "weight": 1.0,
+          "quality": 0.5
         }
       ]
     }

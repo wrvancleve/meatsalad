@@ -38,7 +38,8 @@
 - Remove data\industrialforegoing\recipes\laser_drill_ore\
 
 ### Iron Spellbooks
-- Remove data\irons_spellbooks\affixes\armor\attribute\spell_power
+- Remove data\irons_spellbooks\affixes\armor\attribute\cooldown.json
+- Remove data\irons_spellbooks\affixes\armor\attribute\spell_power.json
 - Remove data\irons_spellbooks\affixes\sword
 - Remove data\irons_spellbooks\bosses
 - Remove data\irons_spellbooks\boss_gear

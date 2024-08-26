@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:iron",
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "gem"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:gems/topaz"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.topaz"
+  },
+  "stats": {
+    "tip": {},
+    "adornment": {}
+  },
+  "traits": {
+    "tip": [
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 2
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#FFFFC87C"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#FFFFC87C"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ],
+    "adornment/all": [
+      {
+        "texture": "silentgear:adornment_generic",
+        "color": "#FFFFC87C"
+      },
+      {
+        "texture": "silentgear:adornment_highlight",
+        "color": "#FFFFC87C"
+      }
+    ],
+    "adornment/part": [
+      {
+        "texture": "silentgear:adornment",
+        "color": "#FFFFC87C"
+      },
+      {
+        "texture": "silentgear:adornment_highlight"
+      }
+    ]
+  }
+}

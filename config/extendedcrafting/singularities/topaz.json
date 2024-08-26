@@ -1,0 +1,10 @@
+{
+  "name": "Topaz",
+  "colors": [
+    "E4AC46",
+    "B47827"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/topaz"
+  }
+}

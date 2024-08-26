@@ -1,6 +1,7 @@
 {
     "type": "silentgear:attribute",
-    "max_level": 10,
+    "max_level": 20,
+    "additive": true,
     "name": {
       "text": "Mana Boost"
     },
@@ -22,7 +23,17 @@
             175,
             200,
             225,
-            250
+            250,
+            275,
+            300,
+            325,
+            350,
+            375,
+            400,
+            425,
+            450,
+            475,
+            500
           ]
         }
       ]

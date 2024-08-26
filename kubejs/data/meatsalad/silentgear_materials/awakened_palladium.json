@@ -1,0 +1,99 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/awakened_palladium"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.awakened_palladium"
+  },
+  "stats": {
+    "main": {
+      "durability": 6912.0,
+      "armor_durability": 147.0,
+      "enchantment_value": 42.0,
+      "rarity": 150.0,
+      "charging_value": 1.75,
+      "harvest_speed": 30.0,
+      "melee_damage": 16.0,
+      "magic_damage": 12.0,
+      "attack_speed": 0.5,
+      "ranged_damage": 7.0,
+      "ranged_speed": 0.7,
+      "projectile_speed": 1.7,
+      "projectile_accuracy": 2.5,
+      "armor": 30.0,
+      "armor/helmet": 5.0,
+      "armor/chestplate": 12.0,
+      "armor/leggings": 8.0,
+      "armor/boots": 5.0,
+      "armor_toughness": 28.0,
+      "magic_armor": 22.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:accelerate",
+        "level": 5
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:light",
+        "level": 5
+      },
+      {
+        "name": "silentgear:lucky",
+        "level": 4
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 5
+      },
+      {
+        "name": "silentgear:sturdy",
+        "level": 4
+      },
+      {
+        "name": "silentgear:swift_swim",
+        "level": 5
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#FFC70C"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#FFC70C"
+      }
+    ]
+  }
+}

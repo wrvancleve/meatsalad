@@ -1,0 +1,10 @@
+{
+  "name": "Onyx",
+  "colors": [
+    "4A4A4A",
+    "121212"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/onyx"
+  }
+}
