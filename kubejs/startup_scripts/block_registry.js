@@ -25,6 +25,20 @@ StartupEvents.registry('block', event => {
       type_tag: 'forge:storage_blocks',
       material_tag: 'raw_{0}',
     },
+    ore: {
+      registry_name: '{0}_ore',
+      material_type: 'stone',
+      display_name: '{0} Ore',
+      type_tag: 'forge:ores',
+      material_tag: '{0}',
+    },
+    deepslate_ore: {
+      registry_name: 'deepslate_{0}_ore',
+      material_type: 'stone',
+      display_name: 'Deepslate {0} Ore',
+      type_tag: 'forge:ores',
+      material_tag: '{0}',
+    },
     basalt_ore: {
       registry_name: '{0}_basalt_ore',
       material_type: 'stone',
@@ -81,6 +95,23 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
     }
   }
+
+  function addGemBlocks(material) {
+    createBlock(material, 'storage_block')
+    createBlock(material, 'ore')
+    createBlock(material, 'deepslate_ore')
+  }
+  const gems = [
+    'aquamarine',
+    'garnet',
+    'jade',
+    'onyx',
+    'tanzanite',
+    'topaz',
+  ]
+  gems.forEach(gem => {
+    addGemBlocks(gem)
+  })
 
   createBlock('adamantite', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
   createBlock('adamantite', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)

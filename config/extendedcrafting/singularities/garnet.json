@@ -1,0 +1,10 @@
+{
+  "name": "Garnet",
+  "colors": [
+    "86223D",
+    "4C041A"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/garnet"
+  }
+}

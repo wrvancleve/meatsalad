@@ -1,0 +1,95 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/awakened_vibranium"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.awakened_vibranium"
+  },
+  "stats": {
+    "main": {
+      "durability": 6144.0,
+      "armor_durability": 130.0,
+      "enchantment_value": 50.0,
+      "rarity": 150.0,
+      "charging_value": 1.75,
+      "harvest_speed": 32.0,
+      "melee_damage": 14.0,
+      "magic_damage": 20.0,
+      "attack_speed": 0.5,
+      "ranged_damage": 5.0,
+      "ranged_speed": 0.6,
+      "projectile_speed": 1.6,
+      "projectile_accuracy": 2.2,
+      "armor": 25.0,
+      "armor/helmet": 4.0,
+      "armor/chestplate": 10.0,
+      "armor/leggings": 7.0,
+      "armor/boots": 4.0,
+      "armor_toughness": 20.0,
+      "magic_armor": 30.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:lucky",
+        "level": 4
+      },
+      {
+        "name": "silentgear:sharp",
+        "level": 5
+      },
+      {
+        "name": "silentgear:sturdy",
+        "level": 4
+      },
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 6
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 8
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#1BB38A"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#1BB38A"
+      }
+    ]
+  }
+}

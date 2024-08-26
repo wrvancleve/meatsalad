@@ -116,7 +116,7 @@
 	EnderGuardianDamageMultiplier = 4.0
 	#EnderGuardian's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	EnderGuardianDamageCap = 90.0
+	EnderGuardianDamageCap = 250.0
 	#EnderGuardian's Healing with out target
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianNatureHealing = 10.0

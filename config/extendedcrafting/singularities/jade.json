@@ -1,0 +1,10 @@
+{
+  "name": "Jade",
+  "colors": [
+    "00CC5F",
+    "009D63"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/jade"
+  }
+}

@@ -1,6 +1,7 @@
 {
   "type": "silentgear:attribute",
-  "max_level": 4,
+  "max_level": 10,
+  "additive": true,
   "name": {
     "text": "Mana Regen"
   },
@@ -16,7 +17,13 @@
           0.0125,
           0.025,
           0.0375,
-          0.05
+          0.05,
+          0.0625,
+          0.075,
+          0.0875,
+          0.1,
+          0.1125,
+          0.125
         ]
       }
     ]

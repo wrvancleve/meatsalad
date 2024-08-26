@@ -1,0 +1,77 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "minecraft:iron",
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "gem"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:gems/aquamarine"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.aquamarine"
+  },
+  "stats": {
+    "tip": {},
+    "adornment": {}
+  },
+  "traits": {
+    "tip": [
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 2
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 2
+      }
+    ]
+  },
+  "model": {
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp",
+        "color": "#FF6BCAE2"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip",
+        "color": "#FF6BCAE2"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ],
+    "adornment/all": [
+      {
+        "texture": "silentgear:adornment_generic",
+        "color": "#FF6BCAE2"
+      },
+      {
+        "texture": "silentgear:adornment_highlight",
+        "color": "#FF6BCAE2"
+      }
+    ],
+    "adornment/part": [
+      {
+        "texture": "silentgear:adornment",
+        "color": "#FF6BCAE2"
+      },
+      {
+        "texture": "silentgear:adornment_highlight"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_water",
+  "features": "meatsalad:overworld_aquamarine_ore_placed",
+  "step": "underground_ores"
+}

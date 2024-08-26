@@ -1,0 +1,91 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "harvest_tier": "allthemodium:unobtainium",
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/awakened_adamantite"
+    }
+  },
+  "name": {
+    "translate": "material.meatsalad.awakened_adamantite"
+  },
+  "stats": {
+    "main": {
+      "durability": 7680.0,
+      "armor_durability": 163.0,
+      "enchantment_value": 42.0,
+      "rarity": 150.0,
+      "charging_value": 1.75,
+      "harvest_speed": 36.0,
+      "melee_damage": 20.0,
+      "magic_damage": 10.0,
+      "attack_speed": 0.4,
+      "ranged_damage": 6.0,
+      "ranged_speed": 0.6,
+      "projectile_speed": 1.6,
+      "projectile_accuracy": 2.1,
+      "armor": 35.0,
+      "armor/helmet": 6.0,
+      "armor/chestplate": 14.0,
+      "armor/leggings": 9.0,
+      "armor/boots": 6.0,
+      "armor_toughness": 32.0,
+      "magic_armor": 20.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:adamant",
+        "level": 4
+      },
+      {
+        "name": "silentgear:ancient",
+        "level": 4
+      },
+      {
+        "name": "silentgear:fireproof",
+        "level": 1
+      },
+      {
+        "name": "silentgear:lucky",
+        "level": 4
+      },
+      {
+        "name": "silentgear:mighty",
+        "level": 5
+      },
+      {
+        "name": "silentgear:sturdy",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#CC101F"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#CC101F"
+      }
+    ]
+  }
+}

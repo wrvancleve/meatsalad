@@ -1,11 +1,11 @@
 ServerEvents.tags('item', event => {
   event.add('silentgear:grader_catalysts/tier5', 'meatsalad:eternal_crystalline_powder')
   event.add('silentgear:starlight_charger_catalysts/tier5', 'meatsalad:eternal_crystal_shard')
-  event.add('silentgear:starlight_charger_pillars/tier5', 'meatsalad:starmetal_block')
+  event.add('silentgear:starlight_charger_pillars/tier5', 'meatsalad:abiding_alloy_block')
 })
 
 ServerEvents.tags('block', event => {
-  event.add('silentgear:starlight_charger_pillars/tier5', 'meatsalad:starmetal_block')
+  event.add('silentgear:starlight_charger_pillars/tier5', 'meatsalad:abiding_alloy_block')
 })
 
 ServerEvents.recipes(event => {
@@ -103,15 +103,36 @@ ServerEvents.recipes(event => {
     Item.of('meatsalad:abiding_alloy_ingot')
   )
 
+  let hypermatterEnergize = (type) => {
+    energize(event,
+      [
+        Ingredient.of('meatsalad:perfect_crystal'),
+        Ingredient.of('meatsalad:chaos_shard'),
+        Ingredient.of(`meatsalad:${type}_chunk`),
+        Ingredient.of(`meatsalad:${type}_chunk`),
+        Ingredient.of('meatsalad:chaos_shard'),
+        Ingredient.of('meatsalad:abiding_alloy_ingot'),
+      ],
+      100000000,
+      Item.of(`meatsalad:${type}_hypermatter`)
+    )
+  }
+
+  hypermatterEnergize('arcanis')
+  hypermatterEnergize('maestris')
+  hypermatterEnergize('sentis')
+  hypermatterEnergize('stalgaris')
+  hypermatterEnergize('velocis')
+
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
       '    C    ',
       '   CeC   ',
       'C CsSEC C',
-      'CCCvpuCCC',
-      'CTCDUDCIC',
-      'CISupvSTC',
+      'CCmvpuaCC',
+      'CTSDUDSIC',
+      'CIaupvmTC',
       ' CCWSVCC ',
       '   CAC   ',
       '    C    '
@@ -126,6 +147,8 @@ ServerEvents.recipes(event => {
       p: Ingredient.of('allthemodium:unobtainium_allthemodium_alloy_block'),
       u: Ingredient.of('allthemodium:unobtainium_vibranium_alloy_block'),
       T: Ingredient.of('#forge:storage_blocks/tyrian_steel'),
+      a: Ingredient.of('#forge:storage_blocks/adamantite'),
+      m: Ingredient.of('#forge:storage_blocks/mythril'),
       D: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
       U: Ingredient.of('extendedcrafting:ultimate_singularity'),
       I: Ingredient.of('#forge:storage_blocks/iridium'),
@@ -136,8 +159,8 @@ ServerEvents.recipes(event => {
     result: Item.of('meatsalad:eternal_crystal')
   }).id('meatsalad:eternal_crystal')
 
-  smash(event, Ingredient.of('meatsalad:eternal_crystal'), Item.of('meatsalad:eternal_crystal_shard', 16))
-  smash(event, Ingredient.of('meatsalad:eternal_crystal_shard'), Item.of('meatsalad:eternal_crystalline_powder', 8))
+  smash(event, Ingredient.of('meatsalad:eternal_crystal'), Item.of('meatsalad:eternal_crystal_shard', 32))
+  smash(event, Ingredient.of('meatsalad:eternal_crystal_shard'), Item.of('meatsalad:eternal_crystalline_powder', 16))
 
   nucleosynthesize(event,
     {mod: 'minecraft', item: 'ender_pearl'}, // Input
@@ -157,6 +180,11 @@ ServerEvents.recipes(event => {
   nucleosynthesize(event,
     {tag: '#forge:ingots/uranium'}, // Input
     {mod: 'meatsalad', item: 'neutronium_ingot'} // Output
+  )
+
+  nucleosynthesize(event,
+    {mod: 'meatsalad', item: 'perfect_crystal'}, // Input
+    {mod: 'meatsalad', item: 'eternal_crystal'} // Output
   )
 
   event.custom({
@@ -180,6 +208,32 @@ ServerEvents.recipes(event => {
     },
     result: Item.of('meatsalad:manifest_illusion')
   }).id('meatsalad:manifest_illusion')
+
+  event.custom({
+    type: 'extendedcrafting:shaped_table',
+    pattern: [
+      ' XXX ',
+      'ALTGP',
+      'RJDZS',
+      ' XOX ',
+      '  X  '
+    ],
+    key: {
+      X: Ingredient.of('meatsalad:chaos_shard'),
+      A: Ingredient.of('#forge:gems/aquamarine'),
+      L: Ingredient.of('#forge:gems/lapis'),
+      T: Ingredient.of('#forge:gems/topaz'),
+      G: Ingredient.of('#forge:gems/garnet'),
+      P: Ingredient.of('#forge:gems/peridot'),
+      R: Ingredient.of('#forge:gems/ruby'),
+      J: Ingredient.of('#forge:gems/jade'),
+      D: Ingredient.of('meatsalad:infused_diamond'),
+      Z: Ingredient.of('#forge:gems/tanzanite'),
+      S: Ingredient.of('#forge:gems/sapphire'),
+      O: Ingredient.of('#forge:gems/onyx'),
+    },
+    result: Item.of('meatsalad:perfect_crystal')
+  }).id('meatsalad:perfect_crystal')
 
   event.custom({
     type: 'extendedcrafting:shaped_table',
@@ -217,16 +271,17 @@ ServerEvents.recipes(event => {
   }).id('meatsalad:oblivion_shard');
 
   event.shaped('meatsalad:cosmic_shelling', [
-    'FAL',
-    'AUA',
-    'EAI'
+    'gpg',
+    'aUu',
+    'vgm'
   ], {
+    g: 'meatsalad:mystery_goo',
+    p: 'meatsalad:maestris_hypermatter',
+    a: 'meatsalad:stalgaris_hypermatter',
     U: 'meatsalad:uu_matter',
-    F: 'minecraft:fire_charge',
-    L: 'thermal:lightning_charge',
-    E: 'thermal:earth_charge',
-    I: 'thermal:ice_charge',
-    A: '#forge:ingots/abiding_alloy'
+    u: 'meatsalad:sentis_hypermatter',
+    v: 'meatsalad:arcanis_hypermatter',
+    m: 'meatsalad:velocis_hypermatter',
   }).id('meatsalad:cosmic_shelling');
 
   event.shaped('16x pipez:infinity_upgrade', [
@@ -359,11 +414,19 @@ ServerEvents.recipes(event => {
     }).id(`meatsalad:fusion/${enchant.split(':').pop()}_ancient_tome`)
   }
 
-  event.custom({
-    type: 'minecraft:smithing_transform',
-    addition: Item.of('silentgear:golden_nether_banana'),
-    base: Ingredient.of('#forge:ingots/netherite'),
-    result: Item.of('allthemodium:allthemodium_ingot'),
-    template: Item.of('allthemodium:allthemodium_upgrade_smithing_template')
-  })
+  let awakenedUpgrade = (base_ingot, hypermatter, awakened_ingot) => {
+    event.custom({
+      type: 'minecraft:smithing_transform',
+      template: Item.of('meatsalad:awakened_upgrade_smithing_template'),
+      base: Ingredient.of(base_ingot),
+      addition: Item.of(hypermatter),
+      result: Item.of(awakened_ingot)
+    }).id(`meatsalad:smithing/${awakened_ingot.split(':').pop()}`)
+  }
+
+  awakenedUpgrade('#forge:ingots/adamantite', 'meatsalad:stalgaris_hypermatter', 'meatsalad:awakened_adamantite_ingot')
+  awakenedUpgrade('#forge:ingots/allthemodium', 'meatsalad:maestris_hypermatter', 'meatsalad:awakened_palladium_ingot')
+  awakenedUpgrade('#forge:ingots/mythril', 'meatsalad:velocis_hypermatter', 'meatsalad:awakened_mythril_ingot')
+  awakenedUpgrade('#forge:ingots/unobtainium', 'meatsalad:sentis_hypermatter', 'meatsalad:awakened_unobtainium_ingot')
+  awakenedUpgrade('#forge:ingots/vibranium', 'meatsalad:arcanis_hypermatter', 'meatsalad:awakened_vibranium_ingot')
 })

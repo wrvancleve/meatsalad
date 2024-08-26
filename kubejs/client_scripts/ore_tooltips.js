@@ -170,6 +170,30 @@ const MYTHRIL_ITEMS = [
   'meatsalad:mythril_blackstone_ore',
   'meatsalad:mythril_end_ore'
 ]
+const AQUAMARINE_ITEMS = [
+  'meatsalad:aquamarine_ore',
+  'meatsalad:deepslate_aquamarine_ore'
+]
+const GARNET_ITEMS = [
+  'meatsalad:garnet_ore',
+  'meatsalad:deepslate_garnet_ore'
+]
+const JADE_ITEMS = [
+  'meatsalad:jade_ore',
+  'meatsalad:deepslate_jade_ore'
+]
+const ONYX_ITEMS = [
+  'meatsalad:onyx_ore',
+  'meatsalad:deepslate_onyx_ore'
+]
+const TANZANITE_ITEMS = [
+  'meatsalad:tanzanite_ore',
+  'meatsalad:deepslate_tanzanite_ore'
+]
+const TOPAZ_ITEMS = [
+  'meatsalad:topaz_ore',
+  'meatsalad:deepslate_topaz_ore'
+]
 
 ItemEvents.tooltip(event => {
   let addOreTooltips = (oreItems, tooltips) => {
@@ -358,8 +382,32 @@ ItemEvents.tooltip(event => {
   addOreTooltips(ADAMANTITE_ITEMS, [
     Text.of('The End: End Highlands/Void Barrens (Y: 8 to 376)').gold()
   ])
-
   addOreTooltips(MYTHRIL_ITEMS, [
     Text.of('The End: End Highlands/Void Barrens (Y: 8 to 376)').gold()
+  ])
+
+  addOreTooltips(AQUAMARINE_ITEMS, [
+    Text.of('Overworld: Ocean Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
+  ])
+  addOreTooltips(GARNET_ITEMS, [
+    Text.of('Overworld: Swamp Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
+  ])
+  addOreTooltips(JADE_ITEMS, [
+    Text.of('Overworld: Jungle Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
+  ])
+  addOreTooltips(ONYX_ITEMS, [
+    Text.of('Overworld: Badlands Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
+  ])
+  addOreTooltips(TANZANITE_ITEMS, [
+    Text.of('Overworld: Savanna Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
+  ])
+  addOreTooltips(TOPAZ_ITEMS, [
+    Text.of('Overworld: Desert Biomes (Y: -63 to 228)').gold(),
+    Text.of('Mining Dimension: (Y: 1 to 247)').gold()
   ])
 })

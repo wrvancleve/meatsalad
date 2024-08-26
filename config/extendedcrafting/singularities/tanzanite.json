@@ -1,0 +1,10 @@
+{
+  "name": "Tanzanite",
+  "colors": [
+    "674CDD",
+    "1A0879"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/tanzanite"
+  }
+}

@@ -168,6 +168,20 @@ StartupEvents.registry('item', event => {
   createItem('level_up_skill_token')
   createItem('reset_skill_token')
 
+  createItem('perfect_crystal')
+
+  createItem('arcanis_chunk', 'rare')
+  createItem('maestris_chunk', 'rare')
+  createItem('sentis_chunk', 'rare')
+  createItem('stalgaris_chunk', 'rare')
+  createItem('velocis_chunk', 'rare')
+  createItem('arcanis_hypermatter', 'epic')
+  createItem('maestris_hypermatter', 'epic')
+  createItem('sentis_hypermatter', 'epic')
+  createItem('stalgaris_hypermatter', 'epic')
+  createItem('velocis_hypermatter', 'epic')
+  createItem('awakened_upgrade_smithing_template', 'rare')
+
   createItem('oblivion_shard', 'uncommon')
   createItem('dark_matter', 'rare')
   createItem('infused_dark_matter', 'rare')
@@ -178,6 +192,12 @@ StartupEvents.registry('item', event => {
   createItem('eternal_crystalline_powder', 'epic')
 
   createMaterials([
+    {name: 'aquamarine', types: ['gem', 'dust'] },
+    {name: 'garnet', types: ['gem', 'dust'] },
+    {name: 'jade', types: ['gem', 'dust'] },
+    {name: 'onyx', types: ['gem', 'dust'] },
+    {name: 'tanzanite', types: ['gem', 'dust'] },
+    {name: 'topaz', types: ['gem', 'dust'] },
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
     {name: 'neutronium', rarity: 'epic' },
     {name: 'abiding_alloy', rarity: 'epic', types: ['ingot'] },

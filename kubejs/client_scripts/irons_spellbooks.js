@@ -1,5 +1,7 @@
 ClientEvents.lang('en_us', event => {
   event.add('irons_spellbooks', 'item.irons_spellbooks.dragonskin_spell_book', 'Dragon Scale Spell Book')
+  event.add('irons_spellbooks', 'affix.irons_spellbooks:spellbook/attribute/cooldown', 'Quick-Minded')
+  event.add('irons_spellbooks', 'affix.irons_spellbooks:spellbook/attribute/cooldown.suffix', 'of the Fast-Wit')
 })
 
 JEIEvents.removeCategories(event => {
