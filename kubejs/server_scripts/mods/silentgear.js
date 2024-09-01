@@ -1,7 +1,3 @@
-ServerEvents.tags('block', event => {
-  event.add('forge:needs_vibranium_tool', 'silentgear:azure_silver_ore')
-})
-
 ServerEvents.tags('item', event => {
   const GEAR_MATERIALS = {
     main: [

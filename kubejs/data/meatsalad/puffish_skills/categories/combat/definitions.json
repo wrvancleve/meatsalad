@@ -377,7 +377,7 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"command": "curios add ring @s 1"
+					"command": "gamestage add @s mage_ring_1"
 				}
 			}
 		]
@@ -394,7 +394,7 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"command": "curios add charm @s 1"
+					"command": "gamestage add @s free_charm_1"
 				}
 			}
 		]

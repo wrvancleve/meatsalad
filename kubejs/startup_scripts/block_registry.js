@@ -6,9 +6,8 @@ global.getReadableText = (text) => {
 }
 
 StartupEvents.registry('block', event => {
+  const IRON_HARVEST_LEVEL_TAG = 'minecraft:needs_iron_tool'
   const NETHERITE_HARVEST_LEVEL_TAG = 'forge:needs_netherite_tool'
-  const VIBRANIUM_HARVEST_LEVEL_TAG = 'forge:needs_vibranium_tool'
-  const UNOBTAINIUM_HARVEST_LEVEL_TAG = 'forge:needs_unobtainium_tool'
 
   const TYPE_PROPERTIES = {
     storage_block: { 
@@ -97,9 +96,9 @@ StartupEvents.registry('block', event => {
   }
 
   function addGemBlocks(material) {
-    createBlock(material, 'storage_block')
-    createBlock(material, 'ore')
-    createBlock(material, 'deepslate_ore')
+    createBlock(material, 'storage_block', IRON_HARVEST_LEVEL_TAG)
+    createBlock(material, 'ore', IRON_HARVEST_LEVEL_TAG, 3.0, 3.0)
+    createBlock(material, 'deepslate_ore', IRON_HARVEST_LEVEL_TAG, 4.5, 3.0)
   }
   const gems = [
     'aquamarine',
@@ -113,22 +112,22 @@ StartupEvents.registry('block', event => {
     addGemBlocks(gem)
   })
 
-  createBlock('adamantite', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'end_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('adamantite', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'basalt_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'blackstone_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'end_ore', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'storage_block_raw', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('mythril', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('starmetal', 'storage_block', VIBRANIUM_HARVEST_LEVEL_TAG)
-  createBlock('neutronium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG)
-  createBlock('abiding_alloy', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('awakened_adamantite', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('awakened_mythril', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('awakened_palladium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('awakened_unobtainium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
-  createBlock('awakened_vibranium', 'storage_block', UNOBTAINIUM_HARVEST_LEVEL_TAG, 70.0, 1200.0)
+  createBlock('adamantite', 'basalt_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('adamantite', 'blackstone_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('adamantite', 'end_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('adamantite', 'storage_block_raw', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
+  createBlock('adamantite', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
+  createBlock('mythril', 'basalt_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('mythril', 'blackstone_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('mythril', 'end_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('mythril', 'storage_block_raw', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
+  createBlock('mythril', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
+  createBlock('starmetal', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('neutronium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  createBlock('abiding_alloy', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
+  createBlock('awakened_adamantite', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
+  createBlock('awakened_mythril', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
+  createBlock('awakened_palladium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
+  createBlock('awakened_unobtainium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
+  createBlock('awakened_vibranium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
 })

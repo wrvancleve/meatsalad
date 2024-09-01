@@ -6,16 +6,6 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:upgrade_templates/all_chance_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
           "name": "meatsalad:affix_materials/max"
         }
       ]
