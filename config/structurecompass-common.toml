@@ -10,5 +10,5 @@
 	locateAsync = true
 	#Defines which structures can't be searched with the Structure Compass
 	#(Supports wildcard *, Example: 'minecraft:*' will blacklist anything in the minecraft domain)
-	structureBlacklist = ["minecraft:swamp_hut", "minecraft:stronghold", "minecraft:monument", "minecraft:fortress", "minecraft:mineshaft", "minecraft:mineshaft_mesa", "ctov:*", "minecraft:village_*", "minecraft:desert_pyramid", "minecraft:jungle_pyramid"]
+	structureBlacklist = ["minecraft:desert_pyramid", "minecraft:fortress", "minecraft:jungle_pyramid", "minecraft:mineshaft", "minecraft:mineshaft_mesa", "minecraft:monument", "minecraft:pillager_outpost", "minecraft:stronghold", "minecraft:swamp_hut", "minecraft:village_desert", "minecraft:village_plains", "minecraft:village_savanna", "minecraft:village_snowy", "minecraft:village_taiga", "ctov:*", "mes:astral_hideaway", "mes:ender_spire", "mes:enderbloom_grove", "mes:enderkeep_courtyard", "mes:enderpin_spikes", "mes:enderskog", "mes:enderwatch_tower", "mes:endscraps", "mes:manuscript_shrine", "mes:monolith", "mes:mythic_garden", "mes:phantom_citadel", "mes:placid_prairie", "mes:ruined_pillar", "mes:starlight_voyager"]
 

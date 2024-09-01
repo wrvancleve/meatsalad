@@ -47,21 +47,6 @@ PlayerEvents.inventoryChanged(event => {
         addCraftStage('netherite_upgrade')
       }
       break
-    case 'allthemodium:allthemodium_upgrade_smithing_template':
-      if (!player.stages.has('palladium_upgrade')) {
-        addCraftStage('palladium_upgrade')
-      }
-      break
-    case 'allthemodium:vibranium_upgrade_smithing_template':
-      if (!player.stages.has('vibranium_upgrade')) {
-        addCraftStage('vibranium_upgrade')
-      }
-      break
-    case 'allthemodium:unobtainium_upgrade_smithing_template':
-      if (!player.stages.has('unobtainium_upgrade')) {
-        addCraftStage('unobtainium_upgrade')
-      }
-      break
   }
 })
 

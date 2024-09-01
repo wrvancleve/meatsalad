@@ -6,6 +6,12 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "meatsalad:gems/rare/magic",
+          "weight": 1.0,
+          "quality": 0.5
+        },
+        {
+          "type": "minecraft:loot_table",
           "name": "meatsalad:gems/rare/special",
           "weight": 5.0,
           "quality": 1.0
@@ -15,12 +21,6 @@
           "name": "meatsalad:gems/rare/core",
           "weight": 12.0,
           "quality": 1.25
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:gems/rare/magic",
-          "weight": 1.0,
-          "quality": 0.5
         }
       ]
     }

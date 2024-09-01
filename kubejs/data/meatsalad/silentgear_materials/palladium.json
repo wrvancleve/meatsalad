@@ -1,7 +1,7 @@
 {
   "type": "silentgear:standard",
   "simple": true,
-  "harvest_tier": "allthemodium:allthemodium",
+  "harvest_tier": "minecraft:netherite",
   "availability": {
     "tier": 6,
     "categories": [

@@ -10,8 +10,8 @@ ClientEvents.lang('en_us', event => {
   event.add('allthemodium', 'stat.tconstruct.harvest_tier.allthemodium.allthemodium', 'Palladium')
   event.add('allthemodium', 'material.allthemodium.vibranium_allthemodium', 'Vibranium - Palladium Alloy')
   event.add('allthemodium', 'material.silentgear.vibranium_allthemodium', 'Vibranium - Palladium Alloy')
-  event.add('allthemodium', 'material.allthemodium.unobtainium_allthemodium', 'Unobtainium - Palladium Alloy')
-  event.add('allthemodium', 'material.silentgear.unobtainium_allthemodium', 'Unobtainium - Palladium Alloy')
+  event.add('allthemodium', 'material.allthemodium.unobtainium_allthemodium', 'Palladium - Unobtainium Alloy')
+  event.add('allthemodium', 'material.silentgear.unobtainium_allthemodium', 'Palladium - Unobtainium Alloy')
   event.add('allthemodium', 'block.allthemodium.raw_allthemodium_block', 'Raw Palladium Block')
   event.add('allthemodium', 'item.allthemodium.allthemodium_pickaxe', 'Palladium Pickaxe')
   event.add('allthemodium', 'item.allthemodium.allthemodium_axe', 'Palladium Axe')
@@ -46,11 +46,11 @@ ClientEvents.lang('en_us', event => {
   event.add('allthemodium', 'fluid.allthemodium.molten_atmunob', 'Unobtainium-Palladium Alloy')
   event.add('allthemodium', 'slurry.allthemodium.dirty_allthemodium', 'Dirty Palladium Slurry')
   event.add('allthemodium', 'slurry.allthemodium.clean_allthemodium', 'Clean Palladium Slurry')
-  event.add('allthemodium', 'block.allthemodium.unobtainium_allthemodium_alloy_block', 'Unobtainium - Palladium Alloy Block')
+  event.add('allthemodium', 'block.allthemodium.unobtainium_allthemodium_alloy_block', 'Palladium - Unobtainium Alloy Block')
   event.add('allthemodium', 'block.allthemodium.vibranium_allthemodium_alloy_block', 'Vibranium - Palladium Alloy Block')
-  event.add('allthemodium', 'item.allthemodium.unobtainium_allthemodium_alloy_dust', 'Unobtainium - Palladium Alloy Dust')
+  event.add('allthemodium', 'item.allthemodium.unobtainium_allthemodium_alloy_dust', 'Palladium - Unobtainium Alloy Dust')
   event.add('allthemodium', 'item.allthemodium.vibranium_allthemodium_alloy_dust', 'Vibranium - Palladium Alloy Dust')
-  event.add('allthemodium', 'item.allthemodium.unobtainium_allthemodium_alloy_ingot', 'Unobtainium - Palladium Alloy Ingot')
+  event.add('allthemodium', 'item.allthemodium.unobtainium_allthemodium_alloy_ingot', 'Palladium - Unobtainium Alloy Ingot')
   event.add('allthemodium', 'item.allthemodium.vibranium_allthemodium_alloy_ingot', 'Vibranium - Palladium Alloy Ingot')
   event.add('allthemodium', 'item.allthemodium.allthemodium_clump', 'Palladium Clump')
   event.add('allthemodium', 'item.allthemodium.allthemodium_shard', 'Palladium Shard')
@@ -78,41 +78,44 @@ ItemEvents.tooltip(event => {
 
 JEIEvents.hideItems(event => {
   event.hide([
-    // 'allthemodium:allthemodium_sword',
-    // 'allthemodium:allthemodium_pickaxe',
-    // 'allthemodium:allthemodium_axe',
-    // 'allthemodium:allthemodium_shovel',
-    // 'allthemodium:allthemodium_hoe',
-    // 'allthemodium:allthemodium_helmet',
-    // 'allthemodium:allthemodium_chestplate',
-    // 'allthemodium:allthemodium_leggings',
-    // 'allthemodium:allthemodium_boots',
+    'allthemodium:allthemodium_sword',
+    'allthemodium:allthemodium_pickaxe',
+    'allthemodium:allthemodium_axe',
+    'allthemodium:allthemodium_shovel',
+    'allthemodium:allthemodium_hoe',
+    'allthemodium:allthemodium_helmet',
+    'allthemodium:allthemodium_chestplate',
+    'allthemodium:allthemodium_leggings',
+    'allthemodium:allthemodium_boots',
     'allthemodium:allthemodium_rod',
     'allthemodium:allthemodium_apple',
     'allthemodium:allthemodium_carrot',
+    'allthemodium:allthemodium_upgrade_smithing_template',
 
     'allthemodium:vibranium_ore',
-    // 'allthemodium:vibranium_sword',
-    // 'allthemodium:vibranium_pickaxe',
-    // 'allthemodium:vibranium_axe',
-    // 'allthemodium:vibranium_shovel',
-    // 'allthemodium:vibranium_hoe',
-    // 'allthemodium:vibranium_helmet',
-    // 'allthemodium:vibranium_chestplate',
-    // 'allthemodium:vibranium_leggings',
-    // 'allthemodium:vibranium_boots',
+    'allthemodium:vibranium_sword',
+    'allthemodium:vibranium_pickaxe',
+    'allthemodium:vibranium_axe',
+    'allthemodium:vibranium_shovel',
+    'allthemodium:vibranium_hoe',
+    'allthemodium:vibranium_helmet',
+    'allthemodium:vibranium_chestplate',
+    'allthemodium:vibranium_leggings',
+    'allthemodium:vibranium_boots',
     'allthemodium:vibranium_rod',
+    'allthemodium:vibranium_upgrade_smithing_template',
 
-    // 'allthemodium:unobtainium_sword',
-    // 'allthemodium:unobtainium_pickaxe',
-    // 'allthemodium:unobtainium_axe',
-    // 'allthemodium:unobtainium_shovel',
-    // 'allthemodium:unobtainium_hoe',
-    // 'allthemodium:unobtainium_helmet',
-    // 'allthemodium:unobtainium_chestplate',
-    // 'allthemodium:unobtainium_leggings',
-    // 'allthemodium:unobtainium_boots',
+    'allthemodium:unobtainium_sword',
+    'allthemodium:unobtainium_pickaxe',
+    'allthemodium:unobtainium_axe',
+    'allthemodium:unobtainium_shovel',
+    'allthemodium:unobtainium_hoe',
+    'allthemodium:unobtainium_helmet',
+    'allthemodium:unobtainium_chestplate',
+    'allthemodium:unobtainium_leggings',
+    'allthemodium:unobtainium_boots',
     'allthemodium:unobtainium_rod',
+    'allthemodium:unobtainium_upgrade_smithing_template',
 
     'allthemodium:unobtainium_allthemodium_alloy_dust',
     'allthemodium:unobtainium_vibranium_alloy_dust',
