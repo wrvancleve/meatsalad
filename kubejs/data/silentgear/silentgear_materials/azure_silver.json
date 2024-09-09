@@ -41,34 +41,6 @@
       "armor/leggings": 4.0,
       "armor/boots": 2.0,
       "magic_armor": 12.0
-    },
-    "rod": {
-      "durability": {
-        "mul2": -0.1
-      },
-      "harvest_speed": {
-        "mul2": 0.05
-      }
-    },
-    "tip": {
-      "durability": {
-        "add": 83.0
-      },
-      "armor_durability": {
-        "add": 3.0
-      },
-      "harvest_speed": {
-        "add": 4.0
-      },
-      "magic_damage": {
-        "add": 2.0
-      },
-      "attack_speed": {
-        "add": 0.2
-      },
-      "rarity": {
-        "add": 31.0
-      }
     }
   },
   "traits": {
@@ -91,22 +63,6 @@
           }
         ]
       }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:bending",
-        "level": 2
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 2
-      },
-      {
-        "name": "silentgear:soft",
-        "level": 2
-      }
     ]
   },
   "model": {
@@ -123,36 +79,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#CBBAFF"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#CBBAFF"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#CBBAFF"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#CBBAFF"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#CBBAFF"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

@@ -20,27 +20,6 @@
     "translate": "material.meatsalad.sapphire"
   },
   "stats": {
-    "main": {
-      "durability": 512.0,
-      "armor_durability": 28.0,
-      "enchantment_value": 12.0,
-      "rarity": 30.0,
-      "charging_value": 1.3,
-      "harvest_speed": 6.0,
-      "melee_damage": 2.0,
-      "magic_damage": 2.0,
-      "attack_speed": 0.0,
-      "ranged_damage": 1.0,
-      "ranged_speed": 0.0,
-      "armor": 18.0,
-      "armor/helmet": 3.0,
-      "armor/chestplate": 8.0,
-      "armor/leggings": 5.0,
-      "armor/boots": 2.0,
-      "armor_toughness": 6.0,
-      "magic_armor": 8.0
-    },
-    "rod": {},
     "tip": {
       "harvest_speed": {
         "add": 1.0
@@ -61,16 +40,6 @@
     "adornment": {}
   },
   "traits": {
-    "main": [
-      {
-        "name": "silentgear:aquatic",
-        "level": 2
-      },
-      {
-        "name": "silentgear:brittle",
-        "level": 2
-      }
-    ],
     "adornment": [
       {
         "name": "meatsalad:swiftness",
@@ -79,37 +48,10 @@
     ]
   },
   "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#FF1D60E5"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#FF1D60E5"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_hc",
-        "color": "#FF1D60E5"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#FF1D60E5"
-      }
-    ],
     "tip/all": [
       {
         "texture": "silentgear:tip_sharp",
-        "color": "#FF1D60E5"
+        "color": "#FF0F6CED"
       }
     ],
     "tip/part": [
@@ -118,7 +60,7 @@
       },
       {
         "texture": "silentgear:tip",
-        "color": "#FF1D60E5"
+        "color": "#FF0F6CED"
       },
       {
         "texture": "silentgear:tip_shine"
@@ -127,17 +69,17 @@
     "adornment/all": [
       {
         "texture": "silentgear:adornment_generic",
-        "color": "#FF1D60E5"
+        "color": "#FF0F6CED"
       },
       {
         "texture": "silentgear:adornment_highlight",
-        "color": "#FF1D60E5"
+        "color": "#FF0F6CED"
       }
     ],
     "adornment/part": [
       {
         "texture": "silentgear:adornment",
-        "color": "#FF1D60E5"
+        "color": "#FF0F6CED"
       },
       {
         "texture": "silentgear:adornment_highlight"

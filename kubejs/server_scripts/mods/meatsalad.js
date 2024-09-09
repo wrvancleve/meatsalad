@@ -213,9 +213,9 @@ ServerEvents.recipes(event => {
     type: 'extendedcrafting:shaped_table',
     pattern: [
       ' XXX ',
-      'ALTGP',
-      'RJDZS',
-      ' XOX ',
+      'ALTEP',
+      'RJaQS',
+      ' XdX ',
       '  X  '
     ],
     key: {
@@ -223,14 +223,14 @@ ServerEvents.recipes(event => {
       A: Ingredient.of('#forge:gems/aquamarine'),
       L: Ingredient.of('#forge:gems/lapis'),
       T: Ingredient.of('#forge:gems/topaz'),
-      G: Ingredient.of('#forge:gems/garnet'),
+      E: Ingredient.of('#forge:gems/emerald'),
       P: Ingredient.of('#forge:gems/peridot'),
       R: Ingredient.of('#forge:gems/ruby'),
       J: Ingredient.of('#forge:gems/jade'),
-      D: Ingredient.of('meatsalad:infused_diamond'),
-      Z: Ingredient.of('#forge:gems/tanzanite'),
+      Q: Ingredient.of('#forge:gems/quartz'),
       S: Ingredient.of('#forge:gems/sapphire'),
-      O: Ingredient.of('#forge:gems/onyx'),
+      d: Ingredient.of('#forge:gems/diamond'),
+      a: Ingredient.of('#forge:gems/amethyst'),
     },
     result: Item.of('meatsalad:perfect_crystal')
   }).id('meatsalad:perfect_crystal')

@@ -20,25 +20,6 @@
     "translate": "material.silentgear.silver"
   },
   "stats": {
-    "main": {
-      "durability": 64.0,
-      "armor_durability": 9.0,
-      "enchantment_value": 20.0,
-      "harvest_speed": 11.0,
-      "melee_damage": 0.0,
-      "magic_damage": 3.0,
-      "attack_speed": 0.2,
-      "armor": 11.0,
-      "armor/helmet": 2.0,
-      "armor/chestplate": 5.0,
-      "armor/leggings": 3.0,
-      "armor/boots": 1.0,
-      "magic_armor": 12.0,
-      "ranged_damage": 0.0,
-      "ranged_speed": 0.3,
-      "rarity": 40.0,
-      "charging_value": 1.1
-    },
     "rod": {
       "durability": {
         "mul2": -0.2
@@ -53,16 +34,6 @@
     }
   },
   "traits": {
-    "main": [
-      {
-        "name": "silentgear:malleable",
-        "level": 2
-      },
-      {
-        "name": "silentgear:soft",
-        "level": 1
-      }
-    ],
     "rod": [
       {
         "name": "silentgear:malleable",
@@ -75,21 +46,6 @@
     ]
   },
   "model": {
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#CBCCEA"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#CBCCEA"
-      }
-    ],
     "rod/all": [
       {
         "texture": "silentgear:rod_generic_hc",

@@ -193,10 +193,7 @@ StartupEvents.registry('item', event => {
 
   createMaterials([
     {name: 'aquamarine', types: ['gem', 'dust'] },
-    {name: 'garnet', types: ['gem', 'dust'] },
     {name: 'jade', types: ['gem', 'dust'] },
-    {name: 'onyx', types: ['gem', 'dust'] },
-    {name: 'tanzanite', types: ['gem', 'dust'] },
     {name: 'topaz', types: ['gem', 'dust'] },
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
     {name: 'neutronium', rarity: 'epic' },

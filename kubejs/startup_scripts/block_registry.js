@@ -102,10 +102,7 @@ StartupEvents.registry('block', event => {
   }
   const gems = [
     'aquamarine',
-    'garnet',
     'jade',
-    'onyx',
-    'tanzanite',
     'topaz',
   ]
   gems.forEach(gem => {

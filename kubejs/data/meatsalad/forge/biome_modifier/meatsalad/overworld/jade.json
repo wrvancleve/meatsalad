@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_jungle",
+  "biomes": "#forge:is_wet/overworld",
   "features": "meatsalad:overworld_jade_ore_placed",
   "step": "underground_ores"
 }

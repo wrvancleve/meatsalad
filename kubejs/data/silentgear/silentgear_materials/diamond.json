@@ -43,7 +43,6 @@
       "armor_toughness": 8.0,
       "magic_armor": 4.0
     },
-    "rod": {},
     "tip": {
       "durability": {
         "add": 256.0
@@ -95,28 +94,6 @@
         ]
       }
     ],
-    "rod": [
-      {
-        "name": "silentgear:brittle",
-        "level": 5,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.5
-          }
-        ]
-      },
-      {
-        "name": "silentgear:lustrous",
-        "level": 4,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.5
-          }
-        ]
-      }
-    ],
     "tip": [
       {
         "name": "silentgear:brittle",
@@ -147,18 +124,6 @@
     "main/fragment": [
       {
         "texture": "silentgear:metal",
-        "color": "#33EBCB"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_hc",
-        "color": "#33EBCB"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
         "color": "#33EBCB"
       }
     ],

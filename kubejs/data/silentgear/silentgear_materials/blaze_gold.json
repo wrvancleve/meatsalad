@@ -42,40 +42,6 @@
       "armor_toughness": 1.0,
       "magic_armor": 8.0
     },
-    "rod": {
-      "durability": {
-        "mul2": -0.15
-      },
-      "harvest_speed": {
-        "mul2": 0.15
-      },
-      "attack_speed": {
-        "mul2": 0.1
-      },
-      "ranged_speed": {
-        "mul2": 0.15
-      }
-    },
-    "tip": {
-      "durability": {
-        "add": 32.0
-      },
-      "armor_durability": {
-        "add": 3.0
-      },
-      "harvest_speed": {
-        "add": 4.0
-      },
-      "melee_damage": {
-        "add": 1.0
-      },
-      "magic_damage": {
-        "add": 1.0
-      },
-      "rarity": {
-        "add": 14.0
-      }
-    },
     "coating": {
       "durability": {
         "mul2": -0.05
@@ -109,22 +75,6 @@
         "level": 3
       }
     ],
-    "rod": [
-      {
-        "name": "silentgear:flexible",
-        "level": 3
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:soft",
-        "level": 2
-      },
-      {
-        "name": "silentgear:fiery",
-        "level": 4
-      }
-    ],
     "coating": [
       {
         "name": "silentgear:brilliant",
@@ -137,34 +87,19 @@
     ]
   },
   "model": {
-    "rod/all": [
+    "main/all": [
       {
-        "texture": "silentgear:rod_generic_hc",
-        "color": "#DD8500"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#DD8500"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_smooth",
-        "color": "#DD8500"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
+        "texture": "silentgear:main_generic_hc",
         "color": "#DD8500"
       },
       {
-        "texture": "silentgear:tip_shine"
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal",
+        "color": "#DD8500"
       }
     ],
     "coating/all": [
@@ -183,21 +118,6 @@
       },
       {
         "texture": "silentgear:coating_jar"
-      }
-    ],
-    "main/all": [
-      {
-        "texture": "silentgear:main_generic_hc",
-        "color": "#DD8500"
-      },
-      {
-        "texture": "silentgear:_highlight"
-      }
-    ],
-    "main/fragment": [
-      {
-        "texture": "silentgear:metal",
-        "color": "#DD8500"
       }
     ]
   }
