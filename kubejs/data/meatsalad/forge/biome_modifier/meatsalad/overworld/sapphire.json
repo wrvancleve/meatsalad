@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_mountain",
+  "biomes": "#forge:is_cold/overworld",
   "features": "meatsalad:overworld_sapphire_ore_placed",
   "step": "underground_ores"
 }

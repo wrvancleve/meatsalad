@@ -48,26 +48,6 @@
         "mul2": 0.1
       },
       "rarity": 70.0
-    },
-    "tip": {
-      "durability": {
-        "add": 16.0
-      },
-      "armor_durability": {
-        "add": 1.0
-      },
-      "harvest_speed": {
-        "add": 5.0
-      },
-      "magic_damage": {
-        "add": 2.0
-      },
-      "ranged_speed": {
-        "add": 0.2
-      },
-      "rarity": {
-        "add": 30.0
-      }
     }
   },
   "traits": {
@@ -89,16 +69,6 @@
       {
         "name": "silentgear:soft",
         "level": 4
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 3
-      },
-      {
-        "name": "silentgear:soft",
-        "level": 2
       }
     ]
   },
@@ -128,24 +98,6 @@
       {
         "texture": "silentgear:rod",
         "color": "#B3B3FF"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_smooth",
-        "color": "#B3B3FF"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#B3B3FF"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

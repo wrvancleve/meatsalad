@@ -42,22 +42,6 @@
       "armor/boots": 3.0,
       "armor_toughness": 10.0,
       "magic_armor": 4.0
-    },
-    "rod": {
-      "durability": {
-        "mul2": 0.2
-      }
-    },
-    "tip": {
-      "durability": {
-        "add": 448.0
-      },
-      "armor_durability": {
-        "add": 16.0
-      },
-      "rarity": {
-        "add": 20.0
-      }
     }
   },
   "traits": {
@@ -89,28 +73,6 @@
           }
         ]
       }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:flexible",
-        "level": 4
-      },
-      {
-        "name": "silentgear:sturdy",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.5
-          }
-        ]
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:magmatic",
-        "level": 1
-      }
     ]
   },
   "model": {
@@ -127,36 +89,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#DC143C"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#DC143C"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#DC143C"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#DC143C"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#DC143C"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

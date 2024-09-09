@@ -39,7 +39,7 @@
     "tip/all": [
       {
         "texture": "silentgear:tip_sharp",
-        "color": "#FF6BCAE2"
+        "color": "#FF04A4D4"
       }
     ],
     "tip/part": [
@@ -48,7 +48,7 @@
       },
       {
         "texture": "silentgear:tip",
-        "color": "#FF6BCAE2"
+        "color": "#FF04A4D4"
       },
       {
         "texture": "silentgear:tip_shine"
@@ -57,17 +57,17 @@
     "adornment/all": [
       {
         "texture": "silentgear:adornment_generic",
-        "color": "#FF6BCAE2"
+        "color": "#FF04A4D4"
       },
       {
         "texture": "silentgear:adornment_highlight",
-        "color": "#FF6BCAE2"
+        "color": "#FF04A4D4"
       }
     ],
     "adornment/part": [
       {
         "texture": "silentgear:adornment",
-        "color": "#FF6BCAE2"
+        "color": "#FF04A4D4"
       },
       {
         "texture": "silentgear:adornment_highlight"

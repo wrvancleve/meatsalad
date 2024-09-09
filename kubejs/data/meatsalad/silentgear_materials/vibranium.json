@@ -41,20 +41,6 @@
       "armor/boots": 3.0,
       "armor_toughness": 20.0,
       "magic_armor": 12.0
-    },
-    "tip": {
-      "durability": {
-        "add": 500.0
-      },
-      "armor_durability": {
-        "add": 13.0
-      },
-      "enchantment_value": {
-        "add": 6.0
-      },
-      "rarity": {
-        "add": 30.0
-      }
     }
   },
   "traits": {
@@ -79,12 +65,6 @@
           }
         ]
       }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:hard",
-        "level": 3
-      }
     ]
   },
   "model": {
@@ -101,24 +81,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#26DE88"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#26DE88"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#26DE88"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

@@ -40,17 +40,6 @@
       "ranged_speed": 0.2,
       "rarity": 70.0,
       "charging_value": 0.8
-    },
-    "rod": {
-      "durability": {
-        "mul2": 0.2
-      },
-      "rarity": 70.0
-    },
-    "tip": {
-      "durability": {
-        "add": 600.0
-      }
     }
   },
   "traits": {
@@ -62,22 +51,6 @@
       {
         "name": "silentgear:hard",
         "level": 4
-      }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:malleable",
-        "level": 4
-      },
-      {
-        "name": "silentgear:hard",
-        "level": 3
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:vulcan",
-        "level": 1
       }
     ]
   },
@@ -95,36 +68,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#665482"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_hc",
-        "color": "#665482"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#665482"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#665482"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#665482"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

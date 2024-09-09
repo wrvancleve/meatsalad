@@ -92,12 +92,19 @@ ServerEvents.recipes(event => {
     'minecraft:netherite_upgrade_smithing_template'
   ])
   event.shaped('minecraft:netherite_upgrade_smithing_template', [
-    'fuf',
-    'fbf',
-    'fuf'
+    'nnn',
+    'nNn',
+    'nnn'
   ], {
-    f: 'minecraft:netherrack',
-    u: '#forge:ingots/netherite',
-    b: '#forge:gems/diamond',
+    n: 'minecraft:netherrack',
+    N: '#forge:ingots/netherite',
   }).stage('netherite_upgrade').id('meatsalad:netherite_upgrade_smithing_template')
+  event.shaped('2x minecraft:netherite_upgrade_smithing_template', [
+    'nnn',
+    'nNn',
+    'nnn'
+  ], {
+    n: 'minecraft:netherrack',
+    N: 'minecraft:netherite_upgrade_smithing_template',
+  }).stage('netherite_upgrade').id('meatsalad:netherite_upgrade_smithing_template_copy')
 })

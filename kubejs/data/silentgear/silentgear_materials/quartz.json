@@ -19,7 +19,6 @@
     "translate": "material.silentgear.quartz"
   },
   "stats": {
-    "rod": {},
     "tip": {
       "durability": {
         "add": 64.0
@@ -43,12 +42,6 @@
     "adornment": {}
   },
   "traits": {
-    "rod": [
-      {
-        "name": "silentgear:brittle",
-        "level": 3
-      }
-    ],
     "tip": [
       {
         "name": "silentgear:chipping",
@@ -73,18 +66,6 @@
     ]
   },
   "model": {
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#D4CABA"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#D4CABA"
-      }
-    ],
     "tip/all": [
       {
         "texture": "silentgear:tip_sharp",

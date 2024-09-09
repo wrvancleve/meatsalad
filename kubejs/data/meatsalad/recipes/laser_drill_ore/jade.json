@@ -26,8 +26,12 @@
               "type": "minecraft:worldgen/biome",
               "values": [
                 "minecraft:bamboo_jungle",
+                "minecraft:beach",
                 "minecraft:jungle",
-                "minecraft:sparse_jungle"
+                "minecraft:lush_caves",
+                "minecraft:mangrove_swamp",
+                "minecraft:sparse_jungle",
+                "minecraft:swamp"
               ]
             },
             "blacklist": {},

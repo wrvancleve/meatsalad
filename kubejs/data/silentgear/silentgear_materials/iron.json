@@ -43,21 +43,7 @@
       "armor/boots": 2.0,
       "magic_armor": 4.0
     },
-    "rod": {},
-    "tip": {
-      "durability": {
-        "add": 128.0
-      },
-      "armor_durability": {
-        "add": 4.0
-      },
-      "ranged_speed": {
-        "add": 0.1
-      },
-      "rarity": {
-        "add": 8.0
-      }
-    }
+    "rod": {}
   },
   "traits": {
     "main": [
@@ -91,12 +77,6 @@
           }
         ]
       }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 2
-      }
     ]
   },
   "model": {
@@ -123,22 +103,6 @@
       {
         "texture": "silentgear:rod",
         "color": "#D8D8D8"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

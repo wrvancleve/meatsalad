@@ -42,28 +42,6 @@
       "armor/boots": 3.0,
       "armor_toughness": 8.0,
       "magic_armor": 20.0
-    },
-    "rod": {
-      "durability": {
-        "mul2": -0.05
-      },
-      "harvest_speed": {
-        "mul2": 0.1
-      },
-      "projectile_speed": {
-        "mul2": 1.5
-      }
-    },
-    "tip": {
-      "durability": {
-        "add": 401.0
-      },
-      "armor_durability": {
-        "add": 11.0
-      },
-      "harvest_speed": {
-        "add": 5.0
-      }
     }
   },
   "traits": {
@@ -92,28 +70,6 @@
           }
         ]
       }
-    ],
-    "rod": [
-      {
-        "name": "silentgear:flexible",
-        "level": 2
-      },
-      {
-        "name": "silentgear:accelerate",
-        "level": 5,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.66
-          }
-        ]
-      }
-    ],
-    "tip": [
-      {
-        "name": "silentgear:malleable",
-        "level": 3
-      }
     ]
   },
   "model": {
@@ -130,36 +86,6 @@
       {
         "texture": "silentgear:metal",
         "color": "#4575E3"
-      }
-    ],
-    "rod/all": [
-      {
-        "texture": "silentgear:rod_generic_lc",
-        "color": "#4575E3"
-      }
-    ],
-    "rod/part": [
-      {
-        "texture": "silentgear:rod",
-        "color": "#4575E3"
-      }
-    ],
-    "tip/all": [
-      {
-        "texture": "silentgear:tip_sharp",
-        "color": "#4575E3"
-      }
-    ],
-    "tip/part": [
-      {
-        "texture": "silentgear:tip_base"
-      },
-      {
-        "texture": "silentgear:tip",
-        "color": "#4575E3"
-      },
-      {
-        "texture": "silentgear:tip_shine"
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_mountain",
+  "biomes": "#meatsalad:has_peridot_ore",
   "features": "meatsalad:overworld_peridot_ore_placed",
   "step": "underground_ores"
 }
