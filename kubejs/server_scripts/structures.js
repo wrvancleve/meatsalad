@@ -1,7 +1,7 @@
-MoreJSEvents.structureLoad((event) => {
-  let replaceBlocks = (replacements) => {
-    event.forEachPalettes((palette) => {
-      palette.forEach((blockData) => {
+MoreJSEvents.structureLoad(event => {
+  const replaceBlocks = replacements => {
+    event.forEachPalettes(palette => {
+      palette.forEach(blockData => {
         if (replacements.hasOwnProperty(blockData.id)) {
           blockData.setBlock(replacements[blockData.id])
         }
@@ -9,7 +9,7 @@ MoreJSEvents.structureLoad((event) => {
     })
   }
 
-  let structureId = event.getId()
+  const structureId = event.getId()
   if (structureId.startsWith('allthemodium')) {
     replaceBlocks({
       'minecraft:netherite_block': 'minecraft:air'

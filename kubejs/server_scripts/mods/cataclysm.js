@@ -11,6 +11,11 @@ ServerEvents.recipes(event => {
     'cataclysm:bone_reptile_chestplate',
     'cataclysm:bone_reptile_helmet',
     'cataclysm:bulwark_of_the_flame',
+    'cataclysm:cursed_bow',
+    'cataclysm:cursed_eye',
+    'cataclysm:cursium_block',
+    'cataclysm:cursium_ingot',
+    'cataclysm:cursium_upgrade_smithing_template',
     'cataclysm:crystallized_coral',
     'cataclysm:desert_eye',
     'cataclysm:flame_eye',
@@ -22,13 +27,19 @@ ServerEvents.recipes(event => {
     'cataclysm:meat_shredder',
     'cataclysm:mech_eye',
     'cataclysm:monstrous_eye',
+    'cataclysm:smithing/cursium_boots',
+    'cataclysm:smithing/cursium_chestplate',
+    'cataclysm:smithing/cursium_helmet',
+    'cataclysm:smithing/cursium_leggings',
     'cataclysm:smithing/ignitium_boots',
     'cataclysm:smithing/ignitium_chestplate',
     'cataclysm:smithing/ignitium_elytra_chestplate',
     'cataclysm:smithing/ignitium_helmet',
     'cataclysm:smithing/ignitium_leggings',
     'cataclysm:smithing/monstrous_helm',
+    'cataclysm:soul_render',
     'cataclysm:sticky_gloves',
+    'cataclysm:the_annihilator',
     'cataclysm:the_incinerator',
     'cataclysm:void_eye',
     'cataclysm:void_scatter_arrow',
@@ -52,6 +63,19 @@ ServerEvents.recipes(event => {
     D: 'meatsalad:dark_matter',
     A: 'minecraft:anvil',
   }, Item.of('cataclysm:mechanical_fusion_anvil'))
+
+  
+  event.shaped('cataclysm:cursed_eye', [
+    'GBG',
+    'PEP',
+    'GRG'
+  ], {
+    G: '#forge:ingots/gold',
+    B: 'minecraft:bone',
+    P: 'minecraft:phantom_membrane',
+    E: 'minecraft:ender_eye',
+    R: 'minecraft:rotten_flesh',
+  }).stage('maledictus').id('meatsalad:cursed_eye')
 
   event.shaped('cataclysm:desert_eye', [
     'GSe',

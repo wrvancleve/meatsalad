@@ -1,70 +1,32 @@
-function EntityHurtCustomModel() {
-  this.returnDamage = 0
+const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
+const DAMAGE_TYPE = $ResourceKey.createRegistryKey('damage_type')
+
+function getDamageSource(level, damageType, attacker) {
+  const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType))
+  const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey)
+  return new DamageSource(holder, attacker, attacker)
 }
 
-const MAGIC_DAMAGES = [
-  'magic',
-  'blood_magic',
-  'dragon_breath_pool',
-  'eldritch_magic',
-  'ender_magic',
-  'evocation_magic',
-  'fire_field',
-  'fire_magic',
-  'holy_magic',
-  'ice_magic',
-  'lightning_magic',
-  'nature_magic',
-  'poison_cloud',
+const getCustomDamageSource = (attacker) => {
+  const level = attacker.getLevel()
+  if (level.isClientSide()) return
+  const entityType = attacker.type.split(':').pop()
+  return getDamageSource(level, `meatsalad:${entityType}`, attacker)
+}
+
+const CHAOS_ENTITIES = [
+  'awakened_bosses:herobrine',
+  'awakened_bosses:herobrine_minion',
+  'awakened_bosses:mahva',
+  'awakened_bosses:prowler',
+  'awakened_bosses:reeker',
 ]
 
-function pardonOfGodEntityHurtByPlayer(event, data) {
-  let entity = event.entity
-  console.log(`Found damge: ${event.source.getType()}`)
-  let damageType = event.source.getType() + ''
-  if (damageType == 'player') {
-    if (entity.hasEffect('meatsalad:pardon_of_god_melee')) {
-      pardonOfGodLevelEffect(event, data, entity.getEffect('meatsalad:pardon_of_god_melee').getAmplifier())
-    }
-  } else if (damageType == 'arrow') {
-    if (entity.hasEffect('meatsalad:pardon_of_god_projectile')) {
-      pardonOfGodLevelEffect(event, data, entity.getEffect('meatsalad:pardon_of_god_projectile').getAmplifier())
-    }
-  } else if (MAGIC_DAMAGES.includes(damageType)) {
-    if (entity.hasEffect('meatsalad:pardon_of_god_magic')) {
-      pardonOfGodLevelEffect(event, data, entity.getEffect('meatsalad:pardon_of_god_magic').getAmplifier())
-    }
+EntityEvents.hurt((event) => {
+  // Use only to cancel
+  if (event.source.getType() == 'mob' && CHAOS_ENTITIES.includes(event.source.actual.type)) {
+    let damage = event.getDamage()
+    event.entity.attack(getCustomDamageSource(event.source.actual), damage)
+    event.cancel()
   }
-}
-
-function pardonOfGodLevelEffect(event, data, amplifier) {
-  switch (amplifier) {
-    case 0:
-      event.amount = 0
-      break
-    case 1:
-      event.entity.heal(event.amount)
-      event.amount = 0
-      break
-    case 2:
-      event.entity.heal(event.amount)
-      data.returnDamage = data.returnDamage + event.amount
-      event.amount = 0
-      break
-    default:
-      event.entity.heal(event.amount)
-      data.returnDamage = data.returnDamage + event.amount
-      event.amount = 0
-      break
-  }
-}
-
-global.LivingHurtByPlayer = event => {
-  let player = event.source.player
-  if (!player) return
-  let data = new EntityHurtCustomModel()
-  pardonOfGodEntityHurtByPlayer(event, data)
-  if (data.returnDamage != 0) {
-    player.attack(data.returnDamage)
-  }
-}
+})

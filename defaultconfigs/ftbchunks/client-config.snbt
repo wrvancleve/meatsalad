@@ -139,6 +139,27 @@
 		# Range: 0.1 ~ 5.0
 		font_scale: 0.5d
 		
+		# Info hidden under minimap
+		# Default: ["ftbchunks:debug"]
+		info_hidden: [
+			"ftbchunks:fps"
+			"ftbchunks:real_time"
+			"ftbchunks:debug"
+		]
+		
+		# Info displayed under minimap
+		# Default: ["ftbchunks:player_pos", "ftbchunks:biome", "ftbchunks:zone", "ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
+		info_order: [
+			"ftbchunks:player_pos"
+			"ftbchunks:biome"
+			"ftbchunks:zone"
+			"ftbchunks:fps"
+			"ftbchunks:game_time"
+			"ftbchunks:real_time"
+			"ftbchunks:debug"
+		]
+		info_settings: { }
+		
 		# Entities in minimap will be larger
 		# Default: false
 		large_entities: false

@@ -12,6 +12,11 @@
     "irons_spellbooks:ice_magic",
     "irons_spellbooks:lightning_magic",
     "irons_spellbooks:nature_magic",
-    "irons_spellbooks:poison_cloud"
+    "irons_spellbooks:poison_cloud",
+    "meatsalad:herobrine",
+    "meatsalad:herobrine_minion",
+    "meatsalad:mahva",
+    "meatsalad:prowler",
+    "meatsalad:reeker"
   ]
 }

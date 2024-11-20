@@ -2,44 +2,37 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "infinity_fabric"
-	group: "011F1A00FBBC8153"
+	group: "382D29DACC0FCEC1"
 	icon: "meatsalad:infinity_fabric"
 	id: "403A066B92C66FDF"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
-			id: "110B0B25B45C9FC7"
+			id: "11BD1A3DF10646DF"
 			linked_quest: "7F9256C5E4CA6060"
-			shape: "diamond"
+			shape: "square"
+			size: 2.0d
 			x: 0.0d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
-			id: "2B2DAC476DE7D2CD"
-			linked_quest: "6E477150D56A208D"
-			shape: "diamond"
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			id: "407A3405ABF3F0BC"
+			id: "41013ABAE95E3E7E"
 			linked_quest: "0DA3403E64E63089"
-			shape: "diamond"
-			x: -2.0d
-			y: 2.0d
+			shape: "hexagon"
+			size: 1.5d
+			x: 3.0d
+			y: -0.75d
 		}
 	]
 	quests: [
 		{
 			dependencies: [
-				"0EBF2B7E019B8841"
-				"03AD037EFD34332E"
 				"649779F5BA9CF6E3"
-				"79E763DF7C0DFB4D"
+				"597F049F648EC535"
+				"57AC67D41845FC18"
 				"0DA3403E64E63089"
-				"59AE5FD98E96420C"
-				"7F9256C5E4CA6060"
-				"6E477150D56A208D"
+				"50650CC76A9935EC"
+				"25D533B5F7657F39"
 			]
 			hide_details_until_startable: false
 			id: "2CA0273F29B2DAC8"
@@ -62,8 +55,8 @@
 					xp: 5000
 				}
 			]
-			shape: "hexagon"
-			size: 2.0d
+			shape: "gear"
+			size: 3.0d
 			tasks: [{
 				id: "5E4C14184772ACB7"
 				item: "meatsalad:infinity_fabric"
@@ -73,31 +66,6 @@
 			y: 0.0d
 		}
 		{
-			id: "03AD037EFD34332E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "4BD6F5743D70B29F"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "591398C2A9917102"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "09967B7D98D9D8F8"
-				item: "meatsalad:oblivion_shard"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -2.0d
-		}
-		{
 			description: [""]
 			id: "1D0DB72145C53568"
 			rewards: [
@@ -105,7 +73,7 @@
 					auto: "invisible"
 					id: "3CA91667B160C7C2"
 					type: "xp"
-					xp: 500
+					xp: 40
 				}
 				{
 					exclude_from_claim_all: true
@@ -120,8 +88,8 @@
 				item: "awakened_bosses:herobrine_blue"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			description: [""]
@@ -131,7 +99,7 @@
 					auto: "invisible"
 					id: "48429EF7F1F71CAC"
 					type: "xp"
-					xp: 500
+					xp: 40
 				}
 				{
 					exclude_from_claim_all: true
@@ -146,595 +114,145 @@
 				item: "awakened_bosses:herobrine_cyan"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.5d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			id: "597F049F648EC535"
 			rewards: [
 				{
-					id: "1F4FB4EC1E4BDDE2"
-					item: "meatsalad:uu_matter"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4A3133E708BD1EAC"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-				{
 					auto: "invisible"
 					id: "33154A9C6023B7BB"
 					type: "xp"
-					xp: 500
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "536017113EDC50F5"
+					table_id: 3670248595616648664L
+					type: "loot"
 				}
 			]
-			shape: "diamond"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "122FB2424C9E4BC3"
 				item: "meatsalad:uu_matter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["597F049F648EC535"]
-			id: "79E763DF7C0DFB4D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "283113C36DC3435F"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "12F4CA3C980BF67C"
-					type: "xp"
-					xp: 500
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				icon: "meatsalad:cosmic_shelling"
-				id: "252DE1E8BF5F6586"
-				item: "meatsalad:cosmic_shelling"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.0d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"07B6A5B53A1FD6E1"
 				"1D0DB72145C53568"
+				"07B6A5B53A1FD6E1"
 			]
-			id: "0EBF2B7E019B8841"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "644AA3D9535BD3BB"
-					type: "xp"
-					xp: 500
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5398E176CC9E70EA"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				id: "12EC9D06F077CA18"
-				item: "meatsalad:lost_illusion"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
+			description: ["Obtained by killing Herobrine"]
 			id: "649779F5BA9CF6E3"
 			rewards: [
 				{
 					auto: "invisible"
 					id: "6F93857A879291B6"
 					type: "xp"
-					xp: 500
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "5C861F49FE7DABBD"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
-			shape: "diamond"
-			size: 1.0d
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "3F3AB239AB82877F"
 				item: "meatsalad:manifest_illusion"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["20E07EE7BBA393B3"]
-			id: "59AE5FD98E96420C"
+			dependencies: ["12282CBB658F1132"]
+			id: "57AC67D41845FC18"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "02C324C1593901C9"
-					table_id: 3121014603660562895L
-					type: "loot"
+					auto: "invisible"
+					id: "778A6AB6705032EE"
+					type: "xp"
+					xp: 50
 				}
 				{
-					auto: "invisible"
-					id: "3F3B60277A7A1C6D"
-					type: "xp"
-					xp: 300
+					exclude_from_claim_all: true
+					id: "1CBDE9AA2E6E2F92"
+					table_id: 3670248595616648664L
+					type: "loot"
 				}
 			]
-			shape: "diamond"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
-				id: "520B4C25F22F56E4"
+				id: "4B651CF489D76DF2"
+				item: "meatsalad:eternal_crystal_shard"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "50650CC76A9935EC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0D50B3C7D08E9DC3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FC26F5DE1E93C34"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6E36F2AA48EE9BC5"
 				item: "meatsalad:abiding_alloy_block"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			id: "27EE91A1FEDCB45E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "77B0BDF457FD6097"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3EBA0463CBB10F4B"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "105CE6C17D649EC4"
-				item: "mekanismgenerators:fission_reactor_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 3.0d
-		}
-		{
-			id: "1F2346D554622D18"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "5528F0A1FE94B19F"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "116B6DA2C2F0D914"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "35A3A0FC76010153"
-				item: "mekanismgenerators:fission_reactor_port"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			id: "71E7A1FD612672DE"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "083699BEC0F63BB6"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3C5929C0C9E5CE09"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "0579B2CAE4632979"
-				item: "mekanismgenerators:fission_reactor_logic_adapter"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 5.0d
-		}
-		{
-			id: "2922A4A65832F17F"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "00F28A1D5C5F77ED"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7C0C3DD8EFDAF8CB"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "07878435DC16834A"
-					item: "pipez:infinity_upgrade"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "4AD888F9E99323A0"
-				item: "mekanismgenerators:fission_fuel_assembly"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 6.0d
-		}
-		{
-			id: "2F811CADF2CD3136"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "6A178E962A1E2841"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2175DAFEA50892E6"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "6F600A9C86934DA7"
-					item: {
-						Count: 1
-						id: "mekanism:creative_fluid_tank"
-						tag: {
-							mekData: {
-								FluidTanks: [{
-									Tank: 0b
-									stored: {
-										Amount: 2147483647
-										FluidName: "minecraft:water"
-									}
-								}]
-							}
-						}
-					}
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "767B6610B85166A8"
-				item: "mekanismgenerators:control_rod_assembly"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"2F811CADF2CD3136"
-				"2922A4A65832F17F"
-				"27EE91A1FEDCB45E"
-				"71E7A1FD612672DE"
-				"1F2346D554622D18"
-			]
-			id: "2FD5F74EDCFE7FFC"
-			rewards: [
-				{
-					id: "567D795999AA5824"
-					item: "mekanism:pellet_polonium"
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					id: "511FAD6A3AE31859"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4755B0C366A40190"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				id: "14A0D1C360374523"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
 			x: -3.0d
-			y: 5.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["2FD5F74EDCFE7FFC"]
-			id: "47AC3BAD4C6A1D26"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "059571B8661C330E"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "7141A3782515166E"
-					type: "xp"
-					xp: 250
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "74E92C3DC64EEEC5"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["47AC3BAD4C6A1D26"]
-			id: "37172411ED942FAB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2A0AF1309B03D9B3"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					auto: "invisible"
-					id: "251869DC93842157"
-					type: "xp"
-					xp: 250
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			tasks: [{
-				id: "6A32AE8AF616B34C"
-				item: "mekanism:antiprotonic_nucleosynthesizer"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["37172411ED942FAB"]
-			description: [""]
-			id: "542EE0FF5FEA8AC4"
+			description: ["Obtained by killing Level 3 Chaos Bosses"]
+			id: "25D533B5F7657F39"
 			rewards: [
 				{
 					auto: "invisible"
-					id: "6CC149BE3FB10465"
+					id: "243CF4BCD81FEAD1"
 					type: "xp"
-					xp: 250
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
-					id: "04A4CC220DD7F76C"
-					table_id: 3121014603660562895L
+					id: "318000B507BFEDF5"
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
-				{
-					id: "1430B8C8D500EA97"
-					item: "meatsalad:neutronium_ingot"
-					type: "item"
-				}
 			]
-			shape: "diamond"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
-				id: "5F7D5E2D52D6D0F3"
-				item: "meatsalad:neutronium_ingot"
+				id: "457875EAA6D732F3"
+				item: "meatsalad:lost_illusion"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: [""]
-			id: "76F851126A285D25"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "0F93BC263B73A9BF"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5D3BD622FE934972"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "18A4A0FB93E79790"
-					item: "silentgear:tyrian_steel_ingot"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "553D259EE64F9E9A"
-				item: "silentgear:tyrian_steel_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.5d
-		}
-		{
-			description: [""]
-			id: "0E3800093D05C350"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "5E4B4C10F2DDFD97"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "6CDE982968CFAFDD"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "0AD3D17E8DE616DC"
-					item: "mekanism:ingot_refined_obsidian"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "1A1B9A79EC64D206"
-				item: "mekanism:ingot_refined_obsidian"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7F1245E48D130030"]
-			description: [""]
-			id: "2D1B6A902D81893B"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "7FAA2111F7D18687"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2962DEFF75E78A01"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "481412CE97987A8D"
-					item: "meatsalad:starmetal_ingot"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "390A7481C1AFAA9A"
-				item: "meatsalad:starmetal_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 4.5d
-		}
-		{
-			description: [""]
-			id: "631C087D76C96115"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "2F99498C0A4D3584"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "322C9A723DB5CE5F"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "498F6149C5EF29D1"
-					item: "alltheores:iridium_ingot"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "2322CC01BF598C0F"
-				item: "alltheores:iridium_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"76F851126A285D25"
-				"631C087D76C96115"
-				"0E3800093D05C350"
-				"2D1B6A902D81893B"
-				"542EE0FF5FEA8AC4"
-			]
-			id: "20E07EE7BBA393B3"
-			shape: "pentagon"
-			size: 1.0d
-			tasks: [{
-				id: "7F9C8B1D70987E2E"
-				item: "meatsalad:abiding_alloy_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			description: [""]
-			id: "1C469ED8C057583E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "531AC1A23BE6D4AB"
-					type: "xp"
-					xp: 250
-				}
-				{
-					exclude_from_claim_all: true
-					id: "20160614172B125B"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-				{
-					id: "19322C7039BF9972"
-					item: "mekanism:ingot_refined_glowstone"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "1236A3250CE0DB1B"
-				item: "mekanism:ingot_refined_glowstone"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	title: "Infinity Fabric"

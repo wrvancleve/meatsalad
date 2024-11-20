@@ -1,44 +1,72 @@
 {
-	icon: {
-		Count: 1
-		id: "ftbquests:lootcrate"
-		tag: {
-			type: "rare_loot_chest"
-		}
-	}
 	id: "2B50123F05FE91CF"
+	loot_crate: {
+		color: 5592575
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "rare_loot_crate"
+	}
 	loot_size: 1
-	order_index: 1
+	order_index: 2
 	rewards: [
 		{ item: "sophisticatedbackpacks:advanced_magnet_upgrade" }
-		{ item: "sophisticatedstorage:stack_upgrade_tier_2", weight: 2.0f }
-		{ item: "sophisticatedbackpacks:stack_upgrade_tier_2", weight: 2.0f }
 		{ item: "sophisticatedbackpacks:stack_upgrade_tier_3" }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
 		{ item: "sophisticatedstorage:stack_upgrade_tier_3" }
-		{ count: 2, item: "mekanism:alloy_infused", random_bonus: 2, weight: 3.0f }
-		{ count: 2, item: "mekanism:basic_control_circuit", random_bonus: 2, weight: 3.0f }
-		{ item: "mekanism:basic_tier_installer", weight: 3.0f }
-		{ item: "mekanism:upgrade_speed", weight: 3.0f }
-		{ item: "mekanism:upgrade_energy", weight: 3.0f }
-		{ item: "mekanism:advanced_control_circuit", random_bonus: 1, weight: 2.0f }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
+		{ count: 2, item: "mekanism:alloy_infused", random_bonus: 2 }
+		{ count: 2, item: "mekanism:basic_control_circuit", random_bonus: 2 }
+		{ item: "mekanism:basic_tier_installer" }
+		{ item: "mekanism:upgrade_speed" }
+		{ item: "mekanism:upgrade_energy" }
+		{ item: "mekanism:advanced_control_circuit", random_bonus: 1 }
 		{ item: "mekanism:alloy_reinforced", random_bonus: 1 }
 		{ item: "mekanism:elite_tier_installer" }
-		{ item: "thermal:upgrade_augment_1", weight: 3.0f }
-		{ item: "thermal:upgrade_augment_2", weight: 2.0f }
-		{ item: "thermal:machine_speed_augment", weight: 2.0f }
-		{ item: "pipez:advanced_upgrade", random_bonus: 2, weight: 2.0f }
-		{ item: "minecraft:diamond_block", random_bonus: 2, weight: 2.0f }
-		{ item: "minecraft:emerald_block", random_bonus: 1 }
+		{ item: "thermal:upgrade_augment_1" }
+		{ item: "thermal:upgrade_augment_2" }
+		{ item: "thermal:machine_speed_augment" }
+		{ item: "pipez:advanced_upgrade", random_bonus: 2 }
+		{ item: "minecraft:diamond_block" }
+		{ item: "minecraft:emerald_block" }
+		{ item: "alltheores:invar_ingot", random_bonus: 3 }
+		{ item: "alltheores:osmium_ingot", random_bonus: 3 }
 		{ item: "alltheores:enderium_ingot", random_bonus: 3 }
-		{ item: "alltheores:invar_ingot", random_bonus: 3, weight: 2.0f }
-		{ count: 4, item: "alltheores:osmium_ingot", random_bonus: 2, weight: 2.0f }
-		{ count: 8, item: "minecraft:obsidian", random_bonus: 8, weight: 2.0f }
-		{ item: "minecraft:ghast_tear", random_bonus: 3, weight: 2.0f }
-		{ item: "minecraft:budding_amethyst", random_bonus: 2 }
+		{ item: "minecraft:golden_apple" }
+		{ count: 2, item: "waystones:warp_dust", random_bonus: 2 }
+		{ item: "waystones:warp_scroll" }
 		{ item: "waystones:waystone" }
-		{ count: 2, item: "apotheosis:rare_material", random_bonus: 4 }
-		{ item: "irons_spellbooks:rare_ink", random_bonus: 2 }
+		{ item: "bhc:red_heart" }
+		{ item: "irons_spellbooks:hogskin", random_bonus: 3 }
+		{ item: "irons_spellbooks:frozen_bone", random_bonus: 3 }
+		{ item: "irons_spellbooks:blood_vial", random_bonus: 3 }
+		{ item: "irons_spellbooks:arcane_essence", random_bonus: 7 }
+		{ item: "irons_spellbooks:cinder_essence", random_bonus: 7 }
+		{ item: "irons_spellbooks:magic_cloth", random_bonus: 2 }
+		{ item: "irons_spellbooks:arcane_ingot", random_bonus: 2 }
+		{ item: "irons_spellbooks:upgrade_orb" }
+		{ item: "silentgear:nether_banana", random_bonus: 3 }
+		{ item: "thermal:basalz_rod", random_bonus: 3 }
+		{ item: "thermal:blitz_rod", random_bonus: 3 }
+		{ item: "thermal:blizz_rod", random_bonus: 3 }
+		{ item: "thermal:xp_crystal" }
+		{ item: "silentgear:blueprint_paper", random_bonus: 3 }
+		{ item: "refinedstorage:quartz_enriched_iron", random_bonus: 3 }
+		{ item: "refinedstorage:silicon", random_bonus: 3 }
+		{ item: "refinedstorage:processor_binding", random_bonus: 3 }
+		{ item: "refinedstorage:raw_basic_processor", random_bonus: 3 }
+		{ item: "refinedstorage:raw_improved_processor", random_bonus: 3 }
+		{ item: "refinedstorage:raw_advanced_processor", random_bonus: 3 }
+		{ item: "industrialforegoing:plastic", random_bonus: 3 }
+		{ item: "modulargolems:metal_golem_template", random_bonus: 3 }
+		{ item: "modulargolems:empty_upgrade", random_bonus: 2 }
+		{ count: 2, item: "apotheosis:rare_material", random_bonus: 2 }
+		{ item: "irons_spellbooks:rare_ink", random_bonus: 1 }
+		{ item: "meatsalad:level_up_skill_token" }
+		{ item: "apotheosis:boss_summoner" }
+		{ count: 8, item: "powah:dielectric_paste", random_bonus: 8 }
 	]
 	title: "&9Rare Reward"
-	use_title: true
 }

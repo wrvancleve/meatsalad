@@ -377,7 +377,14 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"command": "gamestage add @s mage_ring_1"
+					"unlock_command": "curios add ring @s 1",
+					"lock_command": "curios remove ring @s 1"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have gained one additional ring slot!\""
 				}
 			}
 		]
@@ -394,7 +401,14 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"command": "gamestage add @s free_charm_1"
+					"unlock_command": "curios add charm @s 1",
+					"lock_command": "curios remove charm @s 1"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have gained one additional charm slot!\""
 				}
 			}
 		]

@@ -10,7 +10,7 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancements.meatsalad.the_end.description"
+      "translate": "advancements.meatsalad.stage.the_end.description"
     },
     "frame": "task",
     "hidden": true,
@@ -19,7 +19,7 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "advancements.meatsalad.the_end.title"
+      "translate": "advancements.meatsalad.stage.the_end.title"
     }
   },
   "requirements": [

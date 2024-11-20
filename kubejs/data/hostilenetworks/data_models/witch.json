@@ -42,11 +42,6 @@
         },
         {
             "optional": true,
-            "item": "reliquary:witch_hat",
-            "count": 2
-        },
-        {
-            "optional": true,
             "item": "endrem:witch_pupil",
             "count": 1
         }

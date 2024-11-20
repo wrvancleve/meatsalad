@@ -1,0 +1,11 @@
+{
+  "name": "Myalite Crystal",
+  "colors": [
+    "ff55ff",
+    "aa00aa"
+  ],
+  "ingredient": {
+    "item": "quark:myalite_crystal"
+  },
+  "materialCount": 81
+}

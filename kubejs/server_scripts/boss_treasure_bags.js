@@ -6,6 +6,7 @@ const BOSSES = {
   'cataclysm:ender_guardian': 'ender_guardian',
   'awakened_bosses:herobrine': 'herobrine',
   'cataclysm:ignis': 'ignis',
+  'cataclysm:maledictus': 'maledictus',
   'cataclysm:netherite_monstrosity': 'netherite_monstrosity',
   'cataclysm:the_harbinger': 'the_harbinger',
   'cataclysm:the_leviathan': 'the_leviathan',

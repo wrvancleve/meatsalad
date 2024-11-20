@@ -10,4 +10,17 @@
 # 	}
 # }
 
-{ }
+{
+    teleportation: {
+        back: {
+            enabled: false
+            max: 0
+        }
+        home: {
+            cooldown: 60
+        }
+        rtp: {
+            enabled: false
+        }
+    }
+}

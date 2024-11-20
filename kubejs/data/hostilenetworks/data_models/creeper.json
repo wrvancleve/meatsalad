@@ -39,12 +39,7 @@
         },
         {
             "item": "minecraft:creeper_head",
-            "count": 4
-        },
-        {
-            "optional": true,
-            "item": "reliquary:catalyzing_gland",
-            "count": 2
+            "count": 1
         },
         {
             "optional": true,

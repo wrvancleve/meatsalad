@@ -22,6 +22,13 @@ const Summons = {
     ],
     bossNameColor: 'Dark Red'
   },
+  maledictus: {
+    boss: 'cataclysm:maledictus',
+    inputs: [
+      'cataclysm:cursed_eye',
+    ],
+    bossNameColor: 'Aqua'
+  },
   netherite_monstrosity: {
     boss: 'cataclysm:netherite_monstrosity',
     inputs: [
@@ -117,6 +124,7 @@ SummoningRituals.complete(event => {
         entity.modifyAttribute('minecraft:generic.max_health', 'HealthBoost', 0.1 * summonModifier, 'multiply_total')
         entity.modifyAttribute('minecraft:generic.attack_damage', 'AttackBoost', 0.1 * summonModifier, 'multiply_total')
         entity.heal(entity.maxHealth)
+        entity.potionEffects.add('meatsalad:glimpse_of_god', 20 * 3600, 0, false, false)
         entity.setGlowing(true)
       }
     })

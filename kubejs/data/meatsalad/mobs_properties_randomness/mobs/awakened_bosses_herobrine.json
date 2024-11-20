@@ -8,59 +8,21 @@
       "operation": "multiply_base"
     },
     {
-      "id": "attributeslib:prot_pierce",
-      "modifier_name": "Protection pierce",
-      "amount": 48.0,
-      "operation": "addition"
-    },
-    {
-      "id": "attributeslib:armor_pierce",
-      "modifier_name": "Armor pierce",
-      "amount": 56.0,
-      "operation": "addition"
-    },
-    {
-      "id": "irons_spellbooks:spell_resist",
-      "modifier_name": "More Spell Resist",
-      "amount": 1.0,
-      "operation": "addition"
-    },
-    {
       "id": "forge:attack_range",
       "modifier_name": "More Attack Range",
       "amount": 1.0,
-      "operation": "multiply_base"
-    },
-    {
-      "id": "minecraft:generic.attack_damage",
-      "modifier_name": "More Damage",
-      "amount": 0.7,
       "operation": "multiply_base"
     }
   ],
   "potion_effects": [
     {
-      "id": "minecraft:resistance",
-      "amplifier": 3,
+      "id": "meatsalad:glimpse_of_god",
+      "amplifier": 0,
+      "duration": 3600,
       "hide_particles": true
     },
     {
       "id": "cofh_core:panacea",
-      "amplifier": 0,
-      "hide_particles": true
-    },
-    {
-      "id": "cofh_core:explosion_resistance",
-      "amplifier": 0,
-      "hide_particles": true
-    },
-    {
-      "id": "cofh_core:lightning_resistance",
-      "amplifier": 0,
-      "hide_particles": true
-    },
-    {
-      "id": "cofh_core:magic_resistance",
       "amplifier": 0,
       "hide_particles": true
     }

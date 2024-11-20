@@ -165,24 +165,35 @@ StartupEvents.registry('item', event => {
   })
   SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
 
-  createItem('level_up_skill_token')
+  createItem('level_up_skill_token').maxStackSize(1)
+  createItem('archer_boost').maxStackSize(1)
+  createItem('mage_boost').maxStackSize(1)
+  createItem('warrior_boost').maxStackSize(1)
   createItem('reset_skill_token')
 
-  createItem('perfect_crystal')
+  createItem('lucky_ring', 'rare')
+    .maxStackSize(1)
+    .tag('curios:ring')
+    .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+        .canEquip(() => true)
+        .modifyAttribute('minecraft:generic.luck', 'Lucky Ring', 1.0, 'multiply_total'))
+        /*
+        .onEquip((itemFrom, ctx, itemTo) => {
+            if (ctx.entity().level.isClientSide()) return
+            Utils.server.runCommandSilent(`gamestage add ${ctx.entity().username} lucky_ring`)
+        })
+        .onUnequip((itemFrom, ctx, itemTo) => {
+            if (ctx.entity().level.isClientSide()) return
+            Utils.server.runCommandSilent(`gamestage remove ${ctx.entity().username} lucky_ring`)
+        }))
+        */
 
-  createItem('arcanis_chunk', 'rare')
-  createItem('maestris_chunk', 'rare')
-  createItem('sentis_chunk', 'rare')
-  createItem('stalgaris_chunk', 'rare')
-  createItem('velocis_chunk', 'rare')
   createItem('arcanis_hypermatter', 'epic')
   createItem('maestris_hypermatter', 'epic')
   createItem('sentis_hypermatter', 'epic')
   createItem('stalgaris_hypermatter', 'epic')
   createItem('velocis_hypermatter', 'epic')
-  createItem('awakened_upgrade_smithing_template', 'rare')
 
-  createItem('oblivion_shard', 'uncommon')
   createItem('dark_matter', 'rare')
   createItem('infused_dark_matter', 'rare')
   createItem('draconic_infused_dark_matter', 'rare', true)
@@ -198,11 +209,6 @@ StartupEvents.registry('item', event => {
     {name: 'starmetal', rarity: 'rare', types: ['ingot'] },
     {name: 'neutronium', rarity: 'epic' },
     {name: 'abiding_alloy', rarity: 'epic', types: ['ingot'] },
-    {name: 'awakened_adamantite', rarity: 'epic', types: ['ingot']},
-    {name: 'awakened_palladium', rarity: 'epic', types: ['ingot']},
-    {name: 'awakened_mythril', rarity: 'epic', types: ['ingot']},
-    {name: 'awakened_unobtainium', rarity: 'epic', types: ['ingot']},
-    {name: 'awakened_vibranium', rarity: 'epic', types: ['ingot']},
   ])
 
   createItem('vulcanite', 'rare', true)
@@ -213,7 +219,6 @@ StartupEvents.registry('item', event => {
   createItem('manifest_illusion', 'epic', true)
 
   createItem('uu_matter', 'epic', true, 'UU-Matter')
-  createItem('cosmic_shelling', 'epic', true)
   createItem('chaos_crystal', 'rare', true)
   createItem('chaos_shard', 'rare', true)
 

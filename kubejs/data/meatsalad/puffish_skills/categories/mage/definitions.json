@@ -1,0 +1,281 @@
+{
+	"root_mage": {
+		"title": "Mage Root (+10% Spell Power)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.10,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"spell_power": {
+		"title": "+2.5% Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"fortune+0.1": {
+		"title": "+0.1 Fortune",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.luck",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"mining_speed+3%": {
+		"title": "+3% Mining Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "haste"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.luck",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"cooldown_reduction": {
+		"title": "+2.5% Spell Cooldown Reduction",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:cooldown_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:cooldown_reduction",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"max_mana": {
+		"title": "+15 Max Mana",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:mana_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 15,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"ring_slot": {
+		"title": "+1 Ring Slot",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "angelring:diamond_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "curios add ring @s 1",
+					"lock_command": "curios remove ring @s 1"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have gained one additional ring slot!\""
+				}
+			}
+		],
+		"required_skills": 6
+	},
+	"spell_power_dump_root": {
+		"title": "+2% Spell Power",
+		"description": "Requires ALL 4 branches to be completed first",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"required_skills": 2,
+		"required_spent_points": 89
+	},
+	"spell_power_dump": {
+		"title": "+1% Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"spell_power_dump_center": {
+		"title": "+5% Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:hither_thither_wand"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"required_skills": 6
+	},
+	"max_mana_dump_root": {
+		"title": "+20 Max Mana",
+		"description": "Requires ALL 4 branches to be completed first",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:mana_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 20,
+					"operation": "addition"
+				}
+			}
+		],
+		"required_skills": 2,
+		"required_spent_points": 89
+	},
+	"max_mana_dump": {
+		"title": "+10 Max Mana",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:mana_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 10,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"max_mana_dump_center": {
+		"title": "+50 Max Mana",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:mana_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 50,
+					"operation": "addition"
+				}
+			}
+		],
+		"required_skills": 6
+	}
+}

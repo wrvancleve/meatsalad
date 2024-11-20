@@ -3,286 +3,1035 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "enchanting"
-	group: ""
+	group: "0DF589D313E68A18"
 	icon: "minecraft:enchanting_table"
 	id: "727016A99C5B8101"
-	order_index: 1
-	quest_links: [ ]
+	order_index: 2
+	quest_links: [{
+		id: "470D18412D3D9A29"
+		linked_quest: "57AC67D41845FC18"
+		x: 6.0d
+		y: 0.5d
+	}]
 	quests: [
 		{
-			disable_toast: true
-			id: "0F1C440DC0F5B1DF"
+			dependencies: ["57AC67D41845FC18"]
+			description: [""]
+			id: "2551EE0EA0833B60"
 			rewards: [
 				{
 					auto: "invisible"
-					id: "2238F0A3798DE5CD"
+					id: "63EDB62FB635FF89"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
-					id: "316453B591A67CFE"
+					id: "3E84FB93B9C766B9"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "30CCCEA7D4D46901"
+				item: "quark:ancient_tome"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Enchanting gets a few changes with Apotheosis. To summarize it, 15 bookshelves won't be enough now. There's new bookshelves and actions you can do with Enchantment Tables now."
+				""
+				"Eterna sets the Enchantment Level which determines what Enchantments you can or will get. It's default is 0 and max is 50."
+				""
+				"Arcana is very important quantity, it increases the amount of Enchantments you get and makes rare Enchantments more common. An example would be like with Swords, smite is a very common enchantment but looting is much more rare. Arcanas default is 0% and max is 100%."
+				""
+				"Quanta sets how random the Enchants you get will be. It can be used against you though depending on Retification. If the Quanta is high and Retification is low, you're more likely to get bad enchantments and curses. Default Quanta 15% and its max is 100%. Retification default is 0% and max is 100%"
+			]
+			id: "0EB5B926E1FBAF0E"
+			rewards: [
+				{
+					count: 6
+					id: "71CBD6EA1A5B7930"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "094B2721A0950DF3"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E0333552D4A178A"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "3B857C698A419BC0"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			description: ["Bookshelves are your starting point, but definitely not your end point. Atleast not normal bookshelves. With only normal bookshelves you can only get Eterna up and to a max of 15"]
+			id: "7F042DED357DEF3C"
+			rewards: [
+				{
+					count: 9
+					id: "02A49326EC0332F9"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "3C6D6B6DDDD43C4E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "514CEE55F065BD49"
 					table_id: 2331916246003022704L
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain an Enchanting Table, and begin to unveil the mystery"
 			tasks: [{
-				advancement: "apotheosis:enchanting/enchanter"
-				criterion: ""
-				disable_toast: true
-				id: "7B5363D80A46C03C"
-				title: "Obtain an Enchanting Table"
-				type: "advancement"
+				id: "1CC9EA4FD2BF3DB0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:bookshelves"
+					}
+				}
+				title: "Any #forge:bookshelves"
+				type: "item"
 			}]
-			title: "The Secrets of Enchanting"
-			x: -4.0d
+			title: "Vanilla Max is just the start"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			description: ["Hellshelves are your introduction to Quanta, they give 3% Quanta and 1.5 Eterna. Better than normal shelves right? You're going to need atleast 6 of them for the next step"]
+			id: "50EEDDDE129D2742"
+			rewards: [
+				{
+					count: 2
+					id: "6CBFD79D421FDEA7"
+					item: "apotheosis:hellshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "445B828DF49941C6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60B613FE36A6CA67"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "4511597A84EF2A40"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			x: -3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0F1C440DC0F5B1DF"]
-			disable_toast: true
-			id: "19FFE1CBDB304F21"
+			description: ["Seashelves are your introduction to Arcana, they give 2% Arcana and 1.5 Eterna. Better than normal shelves right? You're going to need atleast 6 of them for the next step"]
+			id: "5B3CC3F66F2C3DE5"
 			rewards: [
 				{
+					count: 2
+					id: "66E35FA659A0A347"
+					item: "apotheosis:seashelf"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "098B0F09E82EFFB5"
+					id: "65DD7B1AA4E76F0A"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 				{
 					exclude_from_claim_all: true
-					id: "3BB2F59C74C78B7E"
-					table_id: 2331916246003022704L
+					id: "12D985083B2EEA9D"
+					table_id: 6073978969392403156L
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Bookshelf"
 			tasks: [{
-				advancement: "apotheosis:enchanting/bookshelf"
-				criterion: ""
-				disable_toast: true
-				id: "124142121F0FB0F8"
-				title: "Obtain a Bookshelf"
-				type: "advancement"
+				id: "01AAFC6ADF0C8844"
+				item: "apotheosis:seashelf"
+				type: "item"
 			}]
-			title: "Local Librarian"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["Eterna sets the Enchantment Level which determines what Enchantments you can or will get. It's default is 0 and max is 50"]
+			id: "353C7440B32F0A5E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "48B69C4ED2286CE3"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52374F1EC04EE55A"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "1ADAC994F5D57FE1"
+				item: "apotheosis:dormant_deepshelf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50EEDDDE129D2742"]
+			description: ["In order to get higher Max Enchantments and levels you'll need Infused Hellshelves. To get them you will need 22.5 Eterna and 30% Quanta. The best way to get that would be 15 normal shelves and 5 Hellshelves"]
+			id: "218803812A9C332B"
+			rewards: [
+				{
+					count: 2
+					id: "0161A1B6EDB7214F"
+					item: "apotheosis:infused_hellshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "10F8AF0D18CE9312"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "055E4DCF790A8C60"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6AA52E3ABC6B3EE1"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B3CC3F66F2C3DE5"]
+			description: ["If you want higher Eterna and Arcana you'll need Infused Seashelves. To get them you need atleast 22.5 Eterna, 15% Quanta, and 10% Arcana. The best way to get that is 15 Bookshelves and 5 Seashelves. (15% Quanta is default you won't need Hellshelves for this)"]
+			id: "076DFB0B39A4259F"
+			rewards: [
+				{
+					count: 2
+					id: "6F52525D50A230D4"
+					item: "apotheosis:infused_seashelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "0EBCAC6E6DC1F430"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E81D96E7B8135A4"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "44BA467C008ACDEB"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["71E9E2041DF589AF"]
+			description: [""]
+			id: "001B11C3773022DE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "39226132585B50DF"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52A6D5922CE118BD"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1ADE62474D302F6C"
+				item: "apotheosis:rectifier_t3"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["218803812A9C332B"]
+			description: ["Each Enchanting Clue will tell you 1 Enchantment before you actually use it"]
+			id: "12F4980CB3BFCE0D"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0F9B9AC5B4AB3949"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78FD9BAC4055FFAE"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "125517255CFAF0EE"
+					item: "apotheosis:sightshelf"
+					type: "item"
+				}
+				{
+					id: "448DFB347B07F8C6"
+					item: "apotheosis:sightshelf_t2"
+					type: "item"
+				}
+			]
+			title: "Enchanting Clues"
 			x: -2.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["19FFE1CBDB304F21"]
-			disable_toast: true
-			id: "3DD19287DAC49D58"
+			dependencies: ["076DFB0B39A4259F"]
+			description: ["The Crystalline Seashelf is an upgrade to the Infused Seashelf. It's very good for normal Enchantments but doesn't give us enough Arcana for the next Infusion we'll need"]
+			id: "751189465F91B353"
 			rewards: [
 				{
+					id: "4D6EEDCD4A1B7BF3"
+					item: "apotheosis:crystal_seashelf"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "29F2632A8D80AA1E"
+					id: "42DE58E180B41079"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 				{
 					exclude_from_claim_all: true
-					id: "4B17E695CC59A805"
-					table_id: 2331916246003022704L
+					id: "0B098E457A258CCD"
+					table_id: 6073978969392403156L
 					type: "loot"
 				}
-				{
-					advancement: "meatsalad:stage/hellshelf"
-					auto: "invisible"
-					criterion: ""
-					id: "6E4A4F703595A8B9"
-					team_reward: true
-					title: "Advance to Hellshelf Stage"
-					type: "advancement"
-				}
 			]
-			subtitle: "Create a Hellshelf"
+			shape: "diamond"
 			tasks: [{
-				advancement: "apotheosis:enchanting/hellshelf"
-				criterion: ""
-				disable_toast: true
-				id: "7144858D6161D9CD"
-				title: "Create a Hellshelf"
-				type: "advancement"
+				id: "524C49903A565930"
+				item: "apotheosis:crystal_seashelf"
+				type: "item"
 			}]
-			title: "The Chaos of Hell"
-			x: -1.5d
-			y: 0.0d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["3DD19287DAC49D58"]
-			disable_toast: true
-			id: "19974778968F215E"
+			dependencies: ["076DFB0B39A4259F"]
+			description: ["The Heart-Forged Seashelf is another upgrade to the Infused Seashelf. It's a little expensive but gives the Arcana we'll need for Infusion and later Enchanting. The Negative Retification makes it a little worse for normal Enchanting though as it's important for getting good Enchantments"]
+			id: "3B52387068FC2487"
 			rewards: [
 				{
+					id: "7613504621365233"
+					item: "apotheosis:heart_seashelf"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "315C9DDA04C414EE"
+					id: "44992A9CBD960108"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 				{
 					exclude_from_claim_all: true
-					id: "78E76391013C79D8"
-					table_id: 2331916246003022704L
+					id: "0A1784CF5815FEC5"
+					table_id: 6073978969392403156L
 					type: "loot"
 				}
 			]
-			subtitle: "Upgrade an Infused Hellshelf"
+			shape: "diamond"
 			tasks: [{
-				advancement: "apotheosis:enchanting/upgrade_hellshelf"
-				criterion: ""
-				disable_toast: true
-				id: "1EAE7ABD61A66508"
-				title: "Upgrade an Infused Hellshelf"
-				type: "advancement"
+				id: "5CA899DB91021ED1"
+				item: "apotheosis:heart_seashelf"
+				type: "item"
 			}]
-			title: "Mastering the Inferno"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["218803812A9C332B"]
+			description: ["The Blazing Hellshelf is an upgrade to the Infused Hellshelf. It increases max Eterna to 30. The negative Enchanting Clue makes it a little worse for normal Enchanting, instead we can use it for better Infusion"]
+			id: "6C76AB8A6110C0C7"
+			rewards: [
+				{
+					id: "46322209C889C939"
+					item: "apotheosis:blazing_hellshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "736F9DEF6EBEA846"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03637541D3512674"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4EE21647F4434CB5"
+				item: "apotheosis:blazing_hellshelf"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["218803812A9C332B"]
+			description: ["The Glowing Hellshelf is an upgrade to the Infused Hellshelf. It also increases the Max Eterna but it's not the stats we're looking for in order to enchant"]
+			id: "0F77A9AD1F422537"
+			rewards: [
+				{
+					id: "54F20674FD4F4E21"
+					item: "apotheosis:glowing_hellshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6BDB333B0F19C483"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2818F4E849E80FC8"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0396FE7CF6AAF222"
+				item: "apotheosis:glowing_hellshelf"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["353C7440B32F0A5E"]
+			description: ["The Deepshelf (not dormant) is your next step to Enchanting. Like everything else it needs Infusion. The Deepshelf needs 30 Eterna, 40% Quanta, and 40% Arcana. You can get that with 5 Blazing Hellshelves and 4 Heart-Forged Seashelves"]
+			id: "62B2C1A24AE245EA"
+			rewards: [
+				{
+					count: 2
+					id: "55441430DA2F0963"
+					item: "apotheosis:deepshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6F2B005EB4C5C84D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B5F51036FC56954"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "639976E0D4F898DD"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0C596CB7C7C24615"]
+			description: ["Suprisingly you don't need infusion for these! You just need to kill the most powerful boss in vanilla Minecraft! The Skulk shelves increase Eterna to 40 which will allow us to Infuse the next item"]
+			id: "10C527C66EE4E95A"
+			rewards: [
+				{
+					id: "6EAD8EAE57E2CDCF"
+					item: "apotheosis:warden_tendril"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "5833696E1EE8E013"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08113E84D405E131"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2AE7BBE870F24DCB"
+				item: "apotheosis:soul_touched_sculkshelf"
+				type: "item"
+			}]
 			x: -0.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["19974778968F215E"]
-			disable_toast: true
-			id: "15CCE06A43644D7E"
+			dependencies: ["405369118613F935"]
+			description: ["This shelf is mostly for Arcana but it's a good source for all quantities. It will be needed for next Infusion"]
+			id: "606780E5B8CF83BE"
 			rewards: [
 				{
+					id: "6DE67336822BDF19"
+					item: "apotheosis:warden_tendril"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "08FFDAAE917BF378"
+					id: "2D5736383B5310F4"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
-					id: "3E440C0DD9DD9805"
+					id: "595D4AFD3BE4DCD8"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
-				{
-					advancement: "meatsalad:stage/deepshelf"
-					auto: "invisible"
-					criterion: ""
-					id: "667139BA3AF0863D"
-					team_reward: true
-					title: "Advance to Deepshelf Stage"
-					type: "advancement"
-				}
 			]
-			subtitle: "Active a Dormant Deepshelf"
+			shape: "diamond"
 			tasks: [{
-				advancement: "apotheosis:enchanting/deepshelf"
-				criterion: ""
-				disable_toast: true
-				id: "7FD71187C75C09E5"
-				title: "Active a Dormant Deepshelf"
-				type: "advancement"
+				id: "1C69BDCD5499805F"
+				item: "apotheosis:echoing_sculkshelf"
+				type: "item"
 			}]
-			title: "Delving Into Darkness"
 			x: 0.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["15CCE06A43644D7E"]
-			disable_toast: true
-			id: "5AC8E6D08668D654"
+			dependencies: ["62B2C1A24AE245EA"]
+			description: ["Like an improved Hellshelf, the Soul Touched Deepshelf gives a lot of Quanta, it does give higher Eterna max to 37.5 though!"]
+			id: "0C596CB7C7C24615"
 			rewards: [
 				{
+					count: 3
+					id: "20ADFE3645681379"
+					item: "minecraft:sculk"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "50E3A5C46D922CF2"
+					id: "4923498F1ADD8FF4"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
-					id: "22EF6189BA0F9201"
+					id: "619FCAD634E6CD51"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
 			]
-			subtitle: "Create a Sculkshelf using a Warden Tendril"
+			shape: "diamond"
 			tasks: [{
-				advancement: "apotheosis:enchanting/sculkshelf"
-				criterion: ""
-				disable_toast: true
-				id: "562B94F53F1F756C"
-				title: "Create a Sculkshelf"
-				type: "advancement"
+				id: "2E5979DF454E401A"
+				item: "apotheosis:soul_touched_deepshelf"
+				type: "item"
 			}]
-			title: "Embracing the Sculk"
-			x: 1.5d
-			y: 0.0d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["5AC8E6D08668D654"]
-			disable_toast: true
-			id: "6C369C2A61840810"
+			dependencies: ["62B2C1A24AE245EA"]
+			description: ["A little expensive but the Echoing Deep Shelf is like a much better Seashelf. Also increases Max Eterna to 37.5"]
+			id: "405369118613F935"
 			rewards: [
 				{
+					count: 4
+					id: "73B27D65679D4399"
+					item: "minecraft:sculk"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "59988D5181CF480E"
+					id: "394EB626620671D2"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
-					id: "3175D05F551B6C3B"
+					id: "5CE06D2B9D308212"
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
-				{
-					advancement: "meatsalad:stage/endshelf"
-					auto: "invisible"
-					criterion: ""
-					id: "1371A5D18EDE497B"
-					team_reward: true
-					title: "Advance to Endshelf Stage"
-					type: "advancement"
-				}
 			]
-			subtitle: "Acquire Infused Dragon's Breath, and create an Endshelf"
+			shape: "diamond"
 			tasks: [{
-				advancement: "apotheosis:enchanting/endshelf"
-				criterion: ""
-				disable_toast: true
-				id: "7CE99FFA0A0EB548"
-				title: "Create an Endshelf"
-				type: "advancement"
+				id: "47499C2393356F89"
+				item: "apotheosis:echoing_deepshelf"
+				type: "item"
 			}]
-			title: "Dragon-Slaying Enchanter"
-			x: 2.5d
-			y: 0.0d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["6C369C2A61840810"]
-			disable_toast: true
-			id: "028861B69034519C"
+			dependencies: ["290CB2E09363C9F6"]
+			description: [""]
+			id: "21EE522DDBF0BF72"
 			rewards: [
 				{
+					id: "366AFCAB92AF9E96"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
 					auto: "invisible"
-					id: "009451B2CD6B43AF"
+					id: "7B79262FC552AEC3"
 					type: "xp"
-					xp: 100
+					xp: 40
 				}
 				{
 					exclude_from_claim_all: true
-					id: "7B4B06B359C5334F"
+					id: "74B0D355703633D0"
 					table_id: 190274823471505902L
 					type: "loot"
 				}
 			]
-			subtitle: "Upgrade an Endshelf into a Draconic Endshelf"
+			shape: "hexagon"
 			tasks: [{
-				advancement: "apotheosis:enchanting/upgrade_endshelf"
-				criterion: ""
-				disable_toast: true
-				id: "743D46F08F5B3B93"
-				title: "Upgrade an Endshelf into a Draconic Endshelf"
-				type: "advancement"
+				id: "6436AFC23A51F495"
+				item: "apotheosis:endshelf"
+				type: "item"
 			}]
-			title: "The Final Bookshelf"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			description: ["Some infusions need very very exact amounts of Eterna, Quanta, or Arcana to get these you might need one of these shelves. Each lowers the amount of its respective amounts"]
+			id: "5C56452BE7879D0A"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "60C10E70BC5915DD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "697208F1229639DB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "437272DA5D788836"
+					item: "apotheosis:melonshelf"
+					type: "item"
+				}
+				{
+					id: "64B547185F213F62"
+					item: "apotheosis:beeshelf"
+					type: "item"
+				}
+				{
+					id: "36AD2AE569D8F729"
+					item: "apotheosis:stoneshelf"
+					type: "item"
+				}
+			]
+			title: "Negative Amounts"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6244032FE2E5F1E1"]
+			description: ["Charms allow you to get Potion Effects for much longer. You can Infuse them to make them Unbreakable. It needs 50 Eterna, between 8.5 and 13.5 Quanta, and between 32.5 to 37.5 Arcana. One way you can do this is with 5 Draconic Endshelves, 6 Glowing Hellshelves, 1 Blazing Hellshelves, 1 Heart-Forged Seashelf, and 2 Melonshelves"]
+			id: "12282CBB658F1132"
+			rewards: [
+				{
+					count: 12
+					id: "076A8F095CFA80BC"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "58F743B1D251F373"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A5F3C4DD58E2D19"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "20F90FD42F6A76E3"
+				item: {
+					Count: 1
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:night_vision"
+					}
+				}
+				title: "Apotheosis Charm"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Making Apotheosis Charms Unbreakable"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21EE522DDBF0BF72"]
+			description: ["The Pearlescent Endshelf is the best all-around shelf. It also gives a Max Eterna of 45, but this isn't the shelf we're looking for to get perfect set up"]
+			id: "4A59DF02128DA9F3"
+			rewards: [
+				{
+					id: "6DC65D64AFC9FB86"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "45560CB6BB5A486F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B52CAEAA9A27315"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7AB6761EB41B1E07"
+				item: "apotheosis:pearl_endshelf"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21EE522DDBF0BF72"]
+			description: ["Endshelf that gives the max max Eterna of 50"]
+			id: "6244032FE2E5F1E1"
+			rewards: [
+				{
+					id: "361E51B63206BF0A"
+					item: "apotheosis:draconic_endshelf"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "5EA52AEF8F3AAEDD"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "517A9CADA9C8FEEB"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1F41FD294030AE04"
+				item: "apotheosis:draconic_endshelf"
+				type: "item"
+			}]
 			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6244032FE2E5F1E1"
+				"001B11C3773022DE"
+			]
+			description: ["Ever want THE most perfect Enchants? Then this is the setup you need, for 100% everything. 7 Echoing Skulkshelves, 4 Soul-Touched Deepshelves, and 5 Draconic Shelves will get you 50 Eterna, 100% Quanta, 100% Arcana and 8 Enchanting Clues. 4 Shelves of End Fused Retification will give 100% Retification. And Deepshelf of Arcane Treasures will top it all off with Treasure Enchantments"]
+			id: "4C446F22771E2B53"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "13E4A3BF1FB727B5"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C938DB6EF0CE819"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 7L
+					id: "288C65CA52CA78B9"
+					item: "apotheosis:echoing_sculkshelf"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1ED6ED03BCF4B5F5"
+					item: "apotheosis:draconic_endshelf"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7DD85566E61EDA94"
+					item: "apotheosis:soul_touched_deepshelf"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2E6B0A322132B9FC"
+					item: "apotheosis:rectifier_t3"
+					type: "item"
+				}
+				{
+					id: "78831B3CE3EE431C"
+					item: "apotheosis:treasure_shelf"
+					type: "item"
+				}
+			]
+			title: "Best Enchanting Set-Up"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["314E41B84C8DD464"]
+			description: ["The Library of Alexandria is a better Enchantment Library. It can hold more, that's it. you need to Infuse a Enchantment Library. It needs exactly 50 Eterna, between 45%-50% Quanta, and 100% Arcana. This can be done with 7 Echoing Skulkshelves and 2 Draconic Shelves"]
+			id: "5FD4F40CEC37D9FD"
+			rewards: [
+				{
+					id: "2651F1CE1044AC2B"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "0B7A59006F8B92C5"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1580CE140BF6C380"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "21E8F3E04CA2BA93"
+				item: "apotheosis:ender_library"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0EB5B926E1FBAF0E"]
+			description: [
+				"You can store your enchanted books over time and can take them out anytime. "
+				""
+				"Warnings:"
+				""
+				"1. It has limits, high limits but limits"
+				"2. It can only take out the highest level put in regardless of how many are in"
+			]
+			id: "314E41B84C8DD464"
+			rewards: [
+				{
+					id: "54020DF00D36132E"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:smite"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "5B81FA26EFA3C4AE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "64ACDFE731B5164C"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "324CAB864D37604A"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["076DFB0B39A4259F"]
+			description: ["Retification is a quantity that works with Quanta, it determines if the enchantments will be good or bad. The more Retification the better the Enchantments. Definitely necessary for those wanting good gear"]
+			id: "2A27E9B59C73BCF7"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "55157D65D0BF1B76"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17BF14975599E6A8"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2C1A38F220F0ADA2"
+				item: "apotheosis:rectifier"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2A27E9B59C73BCF7"]
+			description: [""]
+			id: "71E9E2041DF589AF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "51D78F047F3FA7DD"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DE03636FB19559D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4B50307641E80E45"
+				item: "apotheosis:rectifier_t2"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			description: ["The last sets of Shelves you'll need are Endshelves, to get them you need Infused Dragon's Breath. This one was hard to get but you need atleast 40% Eterna, 15%-25% Quanta, and atleast 60% Arcana. It has to be between 15%-25% Quanta to get that you can try 9 Echoing Skulkshelves and 4 Melonshelves or 2 Echoing Skulkshelves and 10 Heart-Forged Seashelves"]
+			id: "290CB2E09363C9F6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2B416F2B3BC1744C"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D465BE251E07F6F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "34780B0392DF1192"
+				item: "apotheosis:infused_breath"
+				type: "item"
+			}]
+			x: 3.0d
 			y: 0.0d
 		}
 	]
-	title: "The Secrets of Enchanting"
+	title: "Enchanting"
 }

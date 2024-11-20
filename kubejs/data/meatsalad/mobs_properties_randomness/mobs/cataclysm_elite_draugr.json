@@ -1,0 +1,10 @@
+{
+  "target": "cataclysm:elite_draugr",
+  "presets": {
+    "list": [
+      {
+        "id": "meatsalad:default_scaling"
+      }
+    ]
+  }
+}

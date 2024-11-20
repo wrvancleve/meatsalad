@@ -78,6 +78,18 @@
           "weight": 25
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "meatsalad:lost_illusion"
+          }
+        }
+      ]
     }
   ]
 }

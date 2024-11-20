@@ -1,3 +1,7 @@
 {
-	chapter_groups: [{ id: "011F1A00FBBC8153", title: "End Game" }]
+	chapter_groups: [
+		{ id: "0DF589D313E68A18", title: "Gear" }
+		{ id: "08E187B4D4A9218F", title: "To The End" }
+		{ id: "382D29DACC0FCEC1", title: "End Game" }
+	]
 }

@@ -1,0 +1,634 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "affixing"
+	group: "0DF589D313E68A18"
+	icon: "apotheosis:salvaging_table"
+	id: "5929D4634564DF73"
+	order_index: 1
+	quest_links: [{
+		id: "140F60CCB6F53FD2"
+		linked_quest: "57AC67D41845FC18"
+		x: 2.5d
+		y: -3.5d
+	}]
+	quests: [
+		{
+			id: "738FB4AC92679507"
+			rewards: [
+				{
+					count: 2
+					id: "151067FE2B8D5BEE"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "1491348D46A08507"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40C02D1E3F354CAE"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "68C43D5FAB4FB1FB"
+				item: "apotheosis:mythic_material"
+				type: "item"
+			}]
+			title: "&6Godforged Pearl&r"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			id: "061244C38F05CBFE"
+			rewards: [
+				{
+					count: 2
+					id: "5D401F212458026B"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6D297C574E5DC2DD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21C0BA9060250D1F"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "6BED70FB7EF343B8"
+				item: "apotheosis:epic_material"
+				type: "item"
+			}]
+			title: "&5Arcane Seeds&r"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40926361B5A17F74"]
+			description: ["The Salvaging Table can finally get you materials and Gem Dust without using Anvils. You can recycle tools and armor with affixes to get their materials."]
+			id: "1A507E77BF750F60"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3F03C9A1B8C6CEA4"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0DA5A2CB49D9F243"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "14B79330933FD83E"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "40C8A9DF4581FF8C"
+			rewards: [
+				{
+					count: 2
+					id: "0B6CB6E01FDAC37E"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "66E4711F2122EB6D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "720AB5EB5D342182"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "71D7450548341CEB"
+				item: "apotheosis:rare_material"
+				type: "item"
+			}]
+			title: "&9Luminous Crystal Shard&r"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"375359043E71349C"
+				"061244C38F05CBFE"
+			]
+			description: ["The Reforging Table does everything a simple one does but better, it can do Epic, Mythic and Ancient Affixes!"]
+			id: "166DF03D93BC11F1"
+			rewards: [
+				{
+					count: 3
+					id: "705ACD5F9E420F18"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "2DD071C474C248FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "408788A327F1C05C"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "34D325EA464BEEEC"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0A70CC1A0F4F1CD1"]
+			description: ["The Simple Reforging Table is used like an Enchantment Table but with Affixes. With Gem Dust, Rarity Materials, and an Affixed Item you can reroll the affixes for a cost of EXP. This can also be used to change the Rarity of the Affixed item up to Rare"]
+			id: "375359043E71349C"
+			rewards: [
+				{
+					count: 3
+					id: "79DD1566F31F63C9"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "69E29CD67CB9E8BD"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0ACAFC14E5B6CEF2"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "2D2CA0A0899233C5"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			id: "0A70CC1A0F4F1CD1"
+			rewards: [
+				{
+					count: 2
+					id: "4BBFAD124EE92BED"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "45D2593D64BF5DB6"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D0D9BE9301B8148"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "70594E0D8666EB60"
+				item: "apotheosis:uncommon_material"
+				type: "item"
+			}]
+			title: "&2Timeworn Fabric&r"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "70D60687AAB145FE"
+			rewards: [
+				{
+					count: 2
+					id: "26ABC6C223985753"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "56439CB50E932DF1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12A56CFF4261410A"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "650CAE5254152FB9"
+				item: "apotheosis:common_material"
+				type: "item"
+			}]
+			title: "&7Mysterious Scrap Materials&n"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["096AFAAD5FEE3804"]
+			description: ["The Simple Reforging Table is used like an Enchantment Table but with Affixes. With Gem Dust, Rarity Materials, and an Affixed Item you can reroll the affixes for a cost of EXP. This can also be used to change the Rarity of the Affixed item up to Rare"]
+			id: "3D3C18A1B60E15E2"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4C9E21DDD0D2A7AE"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34E3AF8BF7C8B4F3"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "6DFB83F91B935EB9"
+				item: "apotheosis:sigil_of_rebirth"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["738FB4AC92679507"]
+			id: "54249B79B4545AB3"
+			rewards: [
+				{
+					count: 3
+					id: "0A5B14E43786BB73"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "57456DCEA5BE5AEE"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5ADA4D83E1E440C1"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "69C3667003EF6D25"
+				item: "apotheosis:augmenting_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"096AFAAD5FEE3804"
+				"738FB4AC92679507"
+			]
+			id: "3280B896CEBBD676"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "10A7853269C2147E"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2ABF31AADAF190D8"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "1F72CFECC4E38632"
+				item: "apotheosis:sigil_of_enhancement"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			description: ["Find an Apothic Gem, which can be socketed into affixed items"]
+			id: "5A0305BB1F8EA932"
+			rewards: [
+				{
+					id: "6F3F4CF471EE0CE6"
+					item: {
+						Count: 1
+						id: "apotheosis:gem"
+						tag: {
+							affix_data: {
+								rarity: "apotheosis:common"
+							}
+							gem: "apotheosis:core/splendor"
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "718CF83E27B27941"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75CFDEE2F99496D9"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				advancement: "apotheosis:affix/gem"
+				criterion: ""
+				id: "61A0FDFECECB6FFF"
+				type: "advancement"
+			}]
+			title: "Apothic Gem"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A0305BB1F8EA932"]
+			description: ["To get Gem Dust you need an Apotheosis Gem and an anvil. Any Apotheosis Gem (Recommended only common and uncommon). Once you get your gems smash them with a falling anvil! Then to make this easier make a Salvaging Table."]
+			id: "40926361B5A17F74"
+			rewards: [
+				{
+					count: 5
+					id: "2579209BE96C413A"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "0A9F8D6E939D374A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5673D0EF314D645A"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "2610766334068246"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A0305BB1F8EA932"]
+			description: ["Using a Smithing Table, socket a Gem into an affixed item"]
+			id: "359E1FFAB18FE50F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "264AF2E71500C373"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71CE1CADFC51F1B1"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				advancement: "apotheosis:affix/socket"
+				criterion: ""
+				id: "25CF23A41224A972"
+				type: "advancement"
+			}]
+			title: "Socketing Gems"
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40926361B5A17F74"]
+			description: [
+				"To increase your gem's rarity and power, combine the following items in the Gem Cutting Table:"
+				""
+				"- 2 of the same gem"
+				"- Some gem dust"
+				"- 3 of the next rarity material"
+			]
+			id: "544011D1C48D8E65"
+			rewards: [
+				{
+					count: 10
+					id: "3B0E731D612ECA80"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "386D8E337B2322CB"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "625FC1A74E2CE4CD"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "4241A0F3897E9DF0"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"544011D1C48D8E65"
+				"5867B73950D4726A"
+			]
+			description: ["Using the Gem Cutting Table, upgrade a Mythic Gem to an Ancient Gem"]
+			id: "4052849FD3742BEC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "597337E9BCF4EFF1"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52345F186830B51E"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				advancement: "apotheosis:affix/ancient_gem"
+				criterion: ""
+				id: "77482923290F3E50"
+				type: "advancement"
+			}]
+			title: "Ancient Gem"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40926361B5A17F74"]
+			description: [""]
+			id: "096AFAAD5FEE3804"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6317B20845DE6546"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C7863DB6A243010"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "6508B6241803F550"
+				item: "apotheosis:gem_fused_slate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["096AFAAD5FEE3804"]
+			description: [""]
+			id: "5AAD90931C2AAAC7"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "55A0E4EA8A93AB27"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "362803D184D44409"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "1D70CEA895BE9BAF"
+				item: "apotheosis:sigil_of_withdrawal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["096AFAAD5FEE3804"]
+			description: [""]
+			id: "490F89FCFE2563E2"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "57C8F14EDA1CA8FE"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31EF43E2938CB947"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "5DCD4EE444F01263"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"57AC67D41845FC18"
+				"738FB4AC92679507"
+			]
+			id: "5867B73950D4726A"
+			rewards: [
+				{
+					count: 2
+					id: "249CE85BC40338BA"
+					item: "apotheosis:ancient_material"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "78822FA43F7397A4"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6494304D1FCB3E99"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "7A10518E0D58CE1E"
+				item: "apotheosis:ancient_material"
+				type: "item"
+			}]
+			title: "&dManifestation of Infinity&r"
+			x: 2.5d
+			y: -2.0d
+		}
+	]
+	title: "Affixes \\& Gems"
+}

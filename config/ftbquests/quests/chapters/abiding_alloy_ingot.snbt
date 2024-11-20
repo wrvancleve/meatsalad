@@ -1,0 +1,952 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abiding_alloy_ingot"
+	group: "382D29DACC0FCEC1"
+	icon: "meatsalad:abiding_alloy_ingot"
+	id: "0BF56521B2B8CF94"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"76F851126A285D25"
+				"631C087D76C96115"
+				"0E3800093D05C350"
+				"2D1B6A902D81893B"
+				"542EE0FF5FEA8AC4"
+				"3C9C356BDB6A5819"
+				"24EE1AE4CCFF0FA1"
+				"350B62E9033B6531"
+				"1C469ED8C057583E"
+				"392009A0EE0F176B"
+				"1103AAAFE1DED587"
+				"76057DF28EF35DEA"
+				"71197B7EFA652F39"
+				"5909768561A84016"
+				"39EE7FE52C0D77B5"
+				"043052120C42F327"
+				"1EAFE7DA83C1CA0A"
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_visible: false
+			id: "20E07EE7BBA393B3"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0EE2CEE8B268F165"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52735236089B74B2"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "7F9C8B1D70987E2E"
+				item: "meatsalad:abiding_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			id: "350B62E9033B6531"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2B63A15876A334D3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1FB05E588924D863"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2DAD08BC64D4198F"
+				item: "meatsalad:mythril_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			description: [""]
+			id: "392009A0EE0F176B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4F42C26228D498BB"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CF7DBDB528D5F8A"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "6AC90327A2250F08"
+				item: "meatsalad:arcanis_hypermatter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "24EE1AE4CCFF0FA1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "66DB0FF83F5226FE"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "29C1E35014A9DDF4"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1210968C4E874AB5"
+				item: "meatsalad:adamantite_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			description: [""]
+			id: "1103AAAFE1DED587"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2A209917FF7E3BF6"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "077CD2094E6A3226"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7084E351236A51C4"
+				item: "meatsalad:maestris_hypermatter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			description: [""]
+			id: "0E3800093D05C350"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5E4B4C10F2DDFD97"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CDE982968CFAFDD"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1A1B9A79EC64D206"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			description: [""]
+			id: "1C469ED8C057583E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "531AC1A23BE6D4AB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20160614172B125B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "1236A3250CE0DB1B"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			description: [""]
+			id: "76057DF28EF35DEA"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "69D5EA18C3DFE532"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F9EAC78CF12FB18"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "055E271EB91577EA"
+				item: "meatsalad:sentis_hypermatter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			description: [""]
+			id: "76F851126A285D25"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0F93BC263B73A9BF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D3BD622FE934972"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "553D259EE64F9E9A"
+				item: "silentgear:tyrian_steel_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: [""]
+			id: "631C087D76C96115"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "265EBA27744D5CEB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CBB41FBF6931A56"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2322CC01BF598C0F"
+				item: "alltheores:iridium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: [""]
+			id: "71197B7EFA652F39"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "425B4816D53E2C6C"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A8BA53AF174D50D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "3AC46B88742BCA84"
+				item: "meatsalad:stalgaris_hypermatter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7F1245E48D130030"]
+			description: [""]
+			id: "2D1B6A902D81893B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1AD36AD8EDF3CAF0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C066F7457F906CA"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "390A7481C1AFAA9A"
+				item: "meatsalad:starmetal_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37172411ED942FAB"]
+			description: [""]
+			id: "542EE0FF5FEA8AC4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "39749DAA2B6882AB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28053F8C0AA9A8BD"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5F7D5E2D52D6D0F3"
+				item: "meatsalad:neutronium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			id: "5909768561A84016"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2E8535431F4858D9"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "605B8978F6376B4D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "59F29A8F82AC254D"
+				item: "meatsalad:velocis_hypermatter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			description: [""]
+			id: "1EAFE7DA83C1CA0A"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "433066E69FE61D73"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "471D7CD5C3B4B1CA"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "21F8B1576595D9C4"
+				item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			description: [""]
+			id: "39EE7FE52C0D77B5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0AFED366FFF33A1A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "400F2F90B5480478"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "020EBA87994C3298"
+				item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20A1BFF256AE6CA1"]
+			description: [""]
+			id: "043052120C42F327"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6296959538DFCA1D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B2601E95D946A82"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "365FF8AA60EF6FAD"
+				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			description: ["Obtained by killing a Piglich in The Other"]
+			id: "20A1BFF256AE6CA1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6247778B89301202"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "423C7CF6AB5A54BA"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "5CBA04A920205019"
+				item: "allthemodium:piglich_heart"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["47AC3BAD4C6A1D26"]
+			id: "37172411ED942FAB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "251869DC93842157"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "700B429F172E4478"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "6A32AE8AF616B34C"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FD5F74EDCFE7FFC"]
+			id: "47AC3BAD4C6A1D26"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "49B1EDEDE9E08060"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E895305A749E49E"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "74E92C3DC64EEEC5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F811CADF2CD3136"
+				"2922A4A65832F17F"
+				"27EE91A1FEDCB45E"
+				"71E7A1FD612672DE"
+				"1F2346D554622D18"
+			]
+			id: "2FD5F74EDCFE7FFC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "511FAD6A3AE31859"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4755B0C366A40190"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "14A0D1C360374523"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			id: "2F811CADF2CD3136"
+			rewards: [
+				{
+					id: "6F600A9C86934DA7"
+					item: {
+						Count: 1
+						id: "mekanism:creative_fluid_tank"
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										Amount: 2147483647
+										FluidName: "minecraft:water"
+									}
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6A178E962A1E2841"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2175DAFEA50892E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "767B6610B85166A8"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "71E7A1FD612672DE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "083699BEC0F63BB6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C5929C0C9E5CE09"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0579B2CAE4632979"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			id: "27EE91A1FEDCB45E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "77B0BDF457FD6097"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EBA0463CBB10F4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "105CE6C17D649EC4"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			id: "1F2346D554622D18"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5528F0A1FE94B19F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "116B6DA2C2F0D914"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "35A3A0FC76010153"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			id: "2922A4A65832F17F"
+			rewards: [
+				{
+					id: "07878435DC16834A"
+					item: "pipez:infinity_upgrade"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "00F28A1D5C5F77ED"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C0C3DD8EFDAF8CB"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4AD888F9E99323A0"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"61D4EA2C30CD1CBC"
+				"2036EB7955BF42EC"
+			]
+			id: "7F1245E48D130030"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5563D9DE5DC8DFAC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F590002A88B7381"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "18430FD38C27DB43"
+				item: "silentgear:starmetal_dust"
+				type: "item"
+			}]
+			title: "Starmetal Dust"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			id: "2036EB7955BF42EC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "01CE41F5317AA193"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3DD70D939BC49074"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "538A185D7671A1D7"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["45A9D19462AB5258"]
+			description: ["Obtained by killing the Ender Guardian in the Ruined Citadel of the End"]
+			id: "61D4EA2C30CD1CBC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "23EA688E407DB699"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5466DFC7EDA7FA31"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7EE4951EBD6C779A"
+				item: "meatsalad:ender_star"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			disable_toast: true
+			id: "45A9D19462AB5258"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "00961FD4A83D34DC"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04202526B796633F"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					advancement: "meatsalad:stage/the_end"
+					auto: "invisible"
+					criterion: ""
+					id: "5F4467746D16B9C6"
+					team_reward: true
+					title: "Advance to End Stage"
+					type: "advancement"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Place all 12 eyes in The End Portal and jump in the portal"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				disable_toast: true
+				id: "28526744A7C3F644"
+				type: "advancement"
+			}]
+			title: "Enter The End"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			id: "7F9256C5E4CA6060"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6D7B0BD89CB33045"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E183C0CDDE4EF4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "5EBF901FCD02E6C4"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "3C9C356BDB6A5819"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7E3BEF73851187D0"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55ACFFE43FFB6FC3"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "41B464E6DFC89055"
+				item: "meatsalad:chaos_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["45A9D19462AB5258"]
+			id: "4717EA040AC9709E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "09B5C7ACD3A478EC"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7354B3611A963EB4"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61EA6D847EB23461"
+					table_id: 1730227961762492868L
+					title: "Choice of Class Boost"
+					type: "choice"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				disable_toast: true
+				id: "314669F661988470"
+				title: "Kill the Ender Dragon"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+	]
+	title: "Abiding Alloy Ingot"
+}

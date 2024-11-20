@@ -65,6 +65,7 @@ ClientEvents.lang('en_us', event => {
   event.add('allthemodium', 'harvestTier.allthemodium.unobtainium', 'Unobtainium')
   event.add('allthemodium', 'advancements.allthemodium.the_other.description', 'Enter the Other dimension')
   event.add('allthemodium', 'advancements.allthemodium.the_other.title', 'Welcome to the other side!')
+  event.add('allthemodium', 'biome.allthemodium.mining', 'Flatland')
 })
 
 ItemEvents.tooltip(event => {
@@ -120,9 +121,6 @@ JEIEvents.hideItems(event => {
     'allthemodium:unobtainium_allthemodium_alloy_dust',
     'allthemodium:unobtainium_vibranium_alloy_dust',
     'allthemodium:vibranium_allthemodium_alloy_dust',
-    'allthemodium:unobtainium_allthemodium_alloy_ingot',
-    'allthemodium:unobtainium_vibranium_alloy_ingot',
-    'allthemodium:vibranium_allthemodium_alloy_ingot',
     'allthemodium:alloy_sword',
     'allthemodium:alloy_axe',
     'allthemodium:alloy_shovel',

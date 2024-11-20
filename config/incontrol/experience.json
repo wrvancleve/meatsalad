@@ -24,6 +24,10 @@
     "setxp": 1000
   },
   {
+    "mob": "cataclysm:maledictus",
+    "setxp": 500
+  },
+  {
     "mob": "cataclysm:netherite_monstrosity",
     "setxp": 500
   },

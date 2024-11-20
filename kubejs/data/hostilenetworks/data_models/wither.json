@@ -22,6 +22,11 @@
     },
     {
       "optional": true,
+      "item": "endrem:wither_eye",
+      "count": 1
+    },
+    {
+      "optional": true,
       "item": "bhc:yellow_heart",
       "count": 1
     }

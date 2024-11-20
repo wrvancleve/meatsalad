@@ -1,15 +1,38 @@
-function randomGet(list) {
+global.randomGet = (list) => {
   return list[Math.floor(Math.random() * list.length)];
 }
 
 function godPardonEffectIncr(entity) {
-  let effectType = randomGet([
+  let pardonTypeCount = 0
+  const hasMagicPardon = entity.hasEffect('meatsalad:pardon_of_god_magic')
+  if (hasMagicPardon) {
+    pardonTypeCount += 1
+  }
+  const hasMeleePardon = entity.hasEffect('meatsalad:pardon_of_god_melee')
+  if (hasMeleePardon) {
+    pardonTypeCount += 1
+  }
+  const hasProjectilePardon = entity.hasEffect('meatsalad:pardon_of_god_projectile')
+  if (hasProjectilePardon) {
+    pardonTypeCount += 1
+  }
+
+  let pardonTypes = [
     'meatsalad:pardon_of_god_magic',
     'meatsalad:pardon_of_god_melee',
     'meatsalad:pardon_of_god_projectile',
-    'meatsalad:pardon_of_god_magic',
-    'meatsalad:pardon_of_god_melee'
-  ])
+  ]
+  if (pardonTypeCount == 2) {
+    if (!hasMagicPardon) {
+      pardonTypes.splice(pardonTypes.indexOf('meatsalad:pardon_of_god_magic'), 1)
+    } else if (!hasMeleePardon) {
+      pardonTypes.splice(pardonTypes.indexOf('meatsalad:pardon_of_god_melee'), 1)
+    } else if (!hasProjectilePardon) {
+      pardonTypes.splice(pardonTypes.indexOf('meatsalad:pardon_of_god_projectile'), 1)
+    }
+  }
+
+  let effectType = global.randomGet(pardonTypes)
   let amplifier = 0
   if (entity.hasEffect(effectType)) {
     amplifier = entity.getEffect(effectType).getAmplifier() + 1
@@ -47,11 +70,18 @@ StartupEvents.registry('mob_effect', event => {
       if (!entity || entity.level.isClientSide()) return
       if (entity.age % 20 == 0) {
         entity.heal(entity.getMaxHealth() * 0.01)
+        if (entity.health < entity.maxHealth * 0.50) {
+          entity.removeEffect('meatsalad:gaze_of_god')
+          entity.potionEffects.add('meatsalad:glare_of_god', 3600 * 20, 1, false, false)
+          godPardonEffectIncr(entity)
+        }
+        /*
         if (entity.health < entity.maxHealth * 0.33) {
           entity.removeEffect('meatsalad:gaze_of_god')
           entity.potionEffects.add('meatsalad:glare_of_god', 180 * 20, 0, false, false)
           godPardonEffectIncr(entity)
         }
+        */
       }
     })
     .color(Color.YELLOW)
@@ -63,12 +93,19 @@ StartupEvents.registry('mob_effect', event => {
       if (!entity || entity.level.isClientSide()) return
       if (entity.age % 20 == 0) {
         entity.heal(entity.getMaxHealth() * 0.01)
+        if (lvl > 0 && entity.health < entity.maxHealth * 0.33) {
+          entity.removeEffect('meatsalad:glare_of_god')
+          entity.potionEffects.add('meatsalad:glare_of_god', 3600 * 20, 0, false, false)
+          godPardonEffectIncr(entity)
+        }
+        /*
         if (entity.getEffect('meatsalad:glare_of_god').getDuration() < 41) {
           entity.removeEffect('meatsalad:glare_of_god')
           entity.potionEffects.add('meatsalad:glimpse_of_god', 3600 * 20, 0, false, false)
           entity.setHealth(entity.getMaxHealth())
           godPardonEffectIncr(entity)
         }
+        */
       }
     })
     .color(Color.GOLD)

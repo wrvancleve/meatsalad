@@ -30,21 +30,53 @@
           "type": "placebo:stack_entry",
           "stack": {
             "item": "endrem:wither_eye"
-          },
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "endrem:main/wither_eye": false
-                  }
-                }
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "endrem:main/wither_eye": false
               }
             }
-          ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "weight": 35.0,
+          "quality": 1.0,
+          "stack": {
+            "item": "endrem:wither_eye"
+          }
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 65.0
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "endrem:main/wither_eye": true
+              }
+            }
+          }
         }
       ]
     },

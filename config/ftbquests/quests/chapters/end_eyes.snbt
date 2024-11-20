@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "end_eyes"
-	group: ""
+	group: "08E187B4D4A9218F"
 	icon: {
 		Count: 1
 		id: "endrem:magical_eye"
@@ -12,27 +12,26 @@
 		}
 	}
 	id: "7FB8D01FCF54E313"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: [""]
+			description: ["Obtained by killing The Harbinger in Ancient Factories (Overworld)"]
 			id: "7CDE0E4990A47862"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5FD00D64E5B94E31"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "1EEE4E91322C902D"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65661F067249050B"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing The Harbinger in Ancient Factories (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "6327A07CFCBD70F5"
@@ -45,62 +44,58 @@
 				}
 				type: "item"
 			}]
-			title: "Black Eye"
-			x: 0.0d
+			x: 0.5d
 			y: -2.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained by killing Maledictus in the Frosted Prison (Overworld)"]
 			id: "2DA59DE8765F8C13"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "396C385A92629338"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "30468031E6DAEED6"
 					type: "xp"
-					xp: 100
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C52C99BBD826D9D"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Witch Pupil by killing a Witch and craft the Witch Eye"
 			tasks: [{
 				disable_toast: true
 				id: "31FD864BC2EEAAF0"
 				item: {
 					Count: 1
-					id: "endrem:witch_eye"
+					id: "endrem:cold_eye"
 					tag: {
 						Damage: 0
 					}
 				}
 				type: "item"
 			}]
-			title: "Witch Eye"
-			x: -3.5d
-			y: 1.0d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained from loot chests of Pillager Outposts or other Illager Structures (Overworld)"]
 			id: "702D2E2433677F56"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "379BC6DD46D9AFA5"
-					table_id: 2331916246003022704L
-					type: "loot"
+					auto: "invisible"
+					id: "63F5F47AC73DF0BD"
+					type: "xp"
+					xp: 20
 				}
 				{
-					auto: "invisible"
-					id: "576E10ACBFF413C5"
-					type: "xp"
-					xp: 100
+					exclude_from_claim_all: true
+					id: "4030464D01B93690"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained from loot chests of Pillager Outposts or other Illager Structures (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "7671CE8D1F97C4D8"
@@ -113,28 +108,26 @@
 				}
 				type: "item"
 			}]
-			title: "Corrupted Eye"
 			x: -3.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained by killing The Ancient Remnant in the Cursed Pyramid (Overworld)"]
 			id: "12B9E1F1D5C40C70"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "777967B85B0913A8"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "64F5B80D930086D2"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "784ED160BF15D357"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing The Ancient Remnant in the Cursed Pyramid (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "7F8677BE745896C8"
@@ -147,28 +140,26 @@
 				}
 				type: "item"
 			}]
-			title: "Lost Eye"
-			x: 2.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained by killing an Elder Guardian in an Ocean Monument (Overworld)"]
 			id: "64419370C70B7567"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1B2E3B2C7D99F5BB"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "2AFAFDB4BFB2B3F8"
 					type: "xp"
-					xp: 100
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E049AEE6340A048"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing an Elder Guardian in an Ocean Monument (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "23E4B4E21A12C906"
@@ -181,28 +172,26 @@
 				}
 				type: "item"
 			}]
-			title: "Guardian Eye"
-			x: -2.0d
+			x: -2.5d
 			y: -2.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained by killing The Dead King in Catacombs (Overworld)"]
 			id: "2CE91A7A76E8DD3B"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5C20302031670033"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "633B6A00E0E64F49"
 					type: "xp"
-					xp: 100
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79D8D2039DEB7F89"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing The Dead King in Catacombs (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "1C1DF66748BDE1BB"
@@ -215,29 +204,27 @@
 				}
 				type: "item"
 			}]
-			title: "Undead Eye"
-			x: 1.0d
+			x: -0.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["554D0321566294B6"]
-			description: [""]
+			description: ["Obtained by killing Netherite Monstrosity in Soul Blacksmiths (Nether)"]
 			id: "59B4BE881EB41531"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "510D791BFC40FB0A"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "0096512AB2D4CACC"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46CF24673AECFE9C"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing Netherite Monstrosity in Soul Blacksmiths (Nether)"
 			tasks: [{
 				disable_toast: true
 				id: "118B8B9DE8A2FAFF"
@@ -250,29 +237,27 @@
 				}
 				type: "item"
 			}]
-			title: "Evil Eye"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["554D0321566294B6"]
-			description: [""]
+			description: ["Obtained from loot chests of Nether Fortresses"]
 			id: "30C4ECBD79126F23"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3F62C6373BD636EB"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "5B0ABE7D08153C72"
 					type: "xp"
-					xp: 100
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C67AB38EBA793AA"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained from loot chests of Nether Fortresses"
 			tasks: [{
 				disable_toast: true
 				id: "414387971F1C5F4F"
@@ -285,29 +270,27 @@
 				}
 				type: "item"
 			}]
-			title: "Nether Eye"
 			x: -1.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["554D0321566294B6"]
-			description: [""]
+			description: ["Obtained from loot chests of Nether Bastions"]
 			id: "6FEDCD787D97941D"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "26B1C8DEAB0B52B9"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "27E4D4093F23BE8C"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FE4C69FE3A80CB1"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained from loot chests of Nether Bastions"
 			tasks: [{
 				disable_toast: true
 				id: "5AD19B1ABC3DC57B"
@@ -320,7 +303,6 @@
 				}
 				type: "item"
 			}]
-			title: "Cursed Eye"
 			x: 1.0d
 			y: 2.5d
 		}
@@ -329,31 +311,26 @@
 			id: "1159DD49B9FA955A"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "5AC7D66683FDD61E"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
-				{
 					auto: "invisible"
 					id: "614A3CDE189BE415"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D1EF93383EF9B05"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
 			shape: "pentagon"
 			size: 1.5d
-			subtitle: "Craft an Explorer's Compass to better locate structures"
+			subtitle: "Craft a Structure Compass to better locate structures"
 			tasks: [{
 				id: "2BF5FE97A9A13B61"
-				item: {
-					Count: 1
-					id: "explorerscompass:explorerscompass"
-					tag: { }
-				}
+				item: "structurecompass:structure_compass"
 				type: "item"
 			}]
-			title: "Explorer's Compass"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -367,12 +344,12 @@
 					auto: "invisible"
 					id: "041CA2A2EBAD92DE"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
 					id: "76B0F06C98BEDB0B"
-					table_id: 2331916246003022704L
+					table_id: 3121014603660562895L
 					type: "loot"
 				}
 				{
@@ -392,29 +369,28 @@
 				id: "648D84D175F30152"
 				type: "advancement"
 			}]
-			title: "Enter The Other"
+			title: "Enter the Other"
 			x: 3.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["30356B69CF7818CD"]
-			description: [""]
+			description: ["Obtained from loot chests in The Other dimension"]
 			id: "67329A57DB9E749E"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "33988E95D64E8577"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "4CACE5B772FB23BF"
 					type: "xp"
-					xp: 250
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0726F55A7A45D7A8"
+					table_id: 190274823471505902L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained from loot chests in The Other dimension"
 			tasks: [{
 				disable_toast: true
 				id: "410002DDEF031505"
@@ -427,28 +403,26 @@
 				}
 				type: "item"
 			}]
-			title: "Magical Eye"
 			x: 3.5d
 			y: -1.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained from loot chests of Ancient Cities (Overworld)"]
 			id: "3FD414CBC50208A0"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "170B491FBFD394E6"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "4750E443BE0F1C14"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62682CBF0188AB97"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained from loot chests of Ancient Cities (Overworld)"
 			tasks: [{
 				disable_toast: true
 				id: "7FBA446B8EC89775"
@@ -461,28 +435,26 @@
 				}
 				type: "item"
 			}]
-			title: "Old Eye"
 			x: -3.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained by killing The Wither"]
 			id: "503896124F05816B"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4CA896DB8CFC7E9E"
-					table_id: 2331916246003022704L
-					type: "loot"
-				}
 				{
 					auto: "invisible"
 					id: "6AEF2FAA4F3F1231"
 					type: "xp"
-					xp: 100
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "602119D065A10BEC"
+					table_id: 3121014603660562895L
+					type: "loot"
 				}
 			]
-			subtitle: "Obtained by killing The Wither"
 			tasks: [{
 				disable_toast: true
 				id: "027ED381F7831A15"
@@ -495,8 +467,7 @@
 				}
 				type: "item"
 			}]
-			title: "Wither Eye"
-			x: -1.0d
+			x: -1.5d
 			y: -2.5d
 		}
 		{
@@ -513,22 +484,20 @@
 					auto: "invisible"
 					id: "4D7E9BF551C6C1C3"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
 					id: "16B2D8F649F89688"
-					table_id: 2331916246003022704L
+					table_id: 3121014603660562895L
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Palladium Ingot"
 			tasks: [{
 				id: "04C837E1E41B11D3"
 				item: "allthemodium:allthemodium_ingot"
 				type: "item"
 			}]
-			title: "Palladium Ingot"
 			x: 3.5d
 			y: 0.5d
 		}
@@ -544,13 +513,20 @@
 					auto: "invisible"
 					id: "7DF04DA81516D24D"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
 					id: "4FBEA5F555671A08"
-					table_id: 2331916246003022704L
+					table_id: 3121014603660562895L
 					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A63ABB551509720"
+					table_id: 1730227961762492868L
+					title: "Choice of Class Boost"
+					type: "choice"
 				}
 			]
 			tasks: [{
@@ -558,11 +534,10 @@
 				entity: "minecraft:warden"
 				icon: "minecraft:sculk_shrieker"
 				id: "4D161BAEA7547B22"
-				title: "Kill: Warden"
+				title: "Kill Warden"
 				type: "kill"
 				value: 1L
 			}]
-			title: "Kill Warden"
 			x: 3.0d
 			y: 1.5d
 		}
@@ -575,16 +550,15 @@
 					auto: "invisible"
 					id: "1CC9B326E63D5730"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
 					id: "389C45FAC9B4ECA8"
-					table_id: 2331916246003022704L
+					table_id: 3121014603660562895L
 					type: "loot"
 				}
 			]
-			subtitle: "Obtain a Palladium Ore"
 			tasks: [{
 				icon: "allthemodium:allthemodium_ore"
 				id: "2F3532E4172F2D80"
@@ -598,7 +572,6 @@
 				title: "Palladium Ore"
 				type: "item"
 			}]
-			title: "Palladium Ore"
 			x: 4.0d
 			y: 1.5d
 		}
@@ -610,12 +583,12 @@
 					auto: "invisible"
 					id: "6A6E705E8D9A240C"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 				{
 					exclude_from_claim_all: true
 					id: "584852BE22B982FC"
-					table_id: 2331916246003022704L
+					table_id: 6073978969392403156L
 					type: "loot"
 				}
 				{
@@ -640,5 +613,5 @@
 			y: 3.5d
 		}
 	]
-	title: "To The End"
+	title: "End Portal Eyes"
 }
