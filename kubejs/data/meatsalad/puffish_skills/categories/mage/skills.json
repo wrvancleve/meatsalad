@@ -114,7 +114,7 @@
 		"root": false
 	},
 	"-6_-2": {
-		"definition": "mining_speed+3%",
+		"definition": "max_mana",
 		"x": -192,
 		"y": -64,
 		"root": false
@@ -150,13 +150,13 @@
 		"root": false
 	},
 	"-4_-1": {
-		"definition": "mining_speed+3%",
+		"definition": "attack_speed",
 		"x": -128,
 		"y": -32,
 		"root": false
 	},
 	"-4_1": {
-		"definition": "mining_speed+3%",
+		"definition": "spell_power",
 		"x": -128,
 		"y": 32,
 		"root": false
@@ -168,7 +168,7 @@
 		"root": false
 	},
 	"-3_-8": {
-		"definition": "mining_speed+3%",
+		"definition": "spell_power",
 		"x": -96,
 		"y": -256,
 		"root": false
@@ -186,13 +186,13 @@
 		"root": false
 	},
 	"-2_-6": {
-		"definition": "mining_speed+3%",
+		"definition": "melee_damage",
 		"x": -64,
 		"y": -192,
 		"root": false
 	},
 	"-2_0": {
-		"definition": "mining_speed+3%",
+		"definition": "cooldown_reduction",
 		"x": -64,
 		"y": 0,
 		"root": false
@@ -216,19 +216,19 @@
 		"root": false
 	},
 	"-1_-9": {
-		"definition": "mining_speed+3%",
+		"definition": "movement_speed",
 		"x": -32,
 		"y": -288,
 		"root": false
 	},
 	"-1_-4": {
-		"definition": "mining_speed+3%",
+		"definition": "max_mana",
 		"x": -32,
 		"y": -128,
 		"root": false
 	},
 	"-1_4": {
-		"definition": "mining_speed+3%",
+		"definition": "spell_power",
 		"x": -32,
 		"y": 128,
 		"root": false
@@ -246,7 +246,7 @@
 		"root": false
 	},
 	"0_-2": {
-		"definition": "mining_speed+3%",
+		"definition": "spell_power",
 		"x": 0,
 		"y": -64,
 		"root": false
@@ -258,7 +258,7 @@
 		"root": true
 	},
 	"0_2": {
-		"definition": "mining_speed+3%",
+		"definition": "max_mana",
 		"x": 0,
 		"y": 64,
 		"root": false
@@ -276,13 +276,13 @@
 		"root": false
 	},
 	"1_-4": {
-		"definition": "mining_speed+3%",
+		"definition": "arrow_damage",
 		"x": 32,
 		"y": -128,
 		"root": false
 	},
 	"1_4": {
-		"definition": "mining_speed+3%",
+		"definition": "crit_chance",
 		"x": 32,
 		"y": 128,
 		"root": false
@@ -306,13 +306,13 @@
 		"root": false
 	},
 	"2_-6": {
-		"definition": "mining_speed+3%",
+		"definition": "cooldown_reduction",
 		"x": 64,
 		"y": -192,
 		"root": false
 	},
 	"2_0": {
-		"definition": "mining_speed+3%",
+		"definition": "luck",
 		"x": 64,
 		"y": 0,
 		"root": false
@@ -330,7 +330,7 @@
 		"root": false
 	},
 	"3_-8": {
-		"definition": "mining_speed+3%",
+		"definition": "luck",
 		"x": 96,
 		"y": -256,
 		"root": false
@@ -348,13 +348,13 @@
 		"root": false
 	},
 	"4_-1": {
-		"definition": "mining_speed+3%",
+		"definition": "cooldown_reduction",
 		"x": 128,
 		"y": -32,
 		"root": false
 	},
 	"4_1": {
-		"definition": "mining_speed+3%",
+		"definition": "spell_power",
 		"x": 128,
 		"y": 32,
 		"root": false

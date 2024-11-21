@@ -119,6 +119,139 @@
 			}
 		]
 	},
+	"melee_damage": {
+		"title": "+2.5% Melee Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"arrow_damage": {
+		"title": "+2.5% Arrow Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"luck": {
+		"title": "+1 Luck",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.luck",
+					"value": 1.0,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"attack_speed": {
+		"title": "+2.5% Attack Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "golden_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"arrow_velocity": {
+		"title": "+2.5% Arrow Velocity",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "arrow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"movement_speed": {
+		"title": "+5% Movement Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"crit_chance": {
+		"title": "+5% Critical Chance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
 	"ring_slot": {
 		"title": "+1 Ring Slot",
 		"icon": {

@@ -182,6 +182,13 @@ ServerEvents.recipes(event => {
     {mod: 'meatsalad', item: 'neutronium_ingot'} // Output
   )
 
+  nucleosynthesize(event,
+    {mod: 'meatsalad', item: 'manifest_illusion'}, // Input
+    {mod: 'extendedcrafting', item: 'ultimate_singularity'}, // Output
+    12500,
+    1000
+  )
+
   const mShaped = (result, pattern, count) => {
     const resultItem = Item.of(result, count || 1)
     let [mod, itemId] = resultItem.getId().split(':')

@@ -3,9 +3,8 @@ const boostClass = (player, className) => {
     Utils.server.runCommandSilent(`puffish_skills category unlock ${player.username} meatsalad:${className}`)
     Utils.server.runCommandSilent(`gamestage add ${player.username} ${className}`)
     player.tell(Text.gold(`You have unlocked the ${global.getReadableText(className)} skill tree!`))
-  } else {
-    Utils.server.runCommandSilent(`puffish_skills points add ${player.username} meatsalad:${className} 1`)
   }
+  Utils.server.runCommandSilent(`puffish_skills points add ${player.username} meatsalad:${className} 1`)
 }
 
 ItemEvents.rightClicked(event => {
