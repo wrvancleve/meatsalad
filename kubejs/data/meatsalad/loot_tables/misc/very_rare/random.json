@@ -21,12 +21,6 @@
           "stack": {
             "item": "minecraft:enchanted_golden_apple"
           }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "stack": {
-            "item": "meatsalad:level_up_skill_token"
-          }
         }
       ]
     }

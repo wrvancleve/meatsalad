@@ -34,13 +34,7 @@
     "meatsalad:misc/mystery_goo",
     "meatsalad:misc/rare/random_chance",
     "meatsalad:misc/very_rare/random",
-    "meatsalad:misc/very_rare/random_chance",
-
-    "meatsalad:upgrade_templates/all_chance_treasure",
-    "meatsalad:upgrade_templates/palladium_chance_treasure",
-    "meatsalad:upgrade_templates/unobtainium_chance",
-    "meatsalad:upgrade_templates/vibranium_chance",
-    "meatsalad:upgrade_templates/vibranium_chance_treasure"
+    "meatsalad:misc/very_rare/random_chance"
   ],
   "replace": false
 }

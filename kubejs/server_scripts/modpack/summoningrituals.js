@@ -46,6 +46,14 @@ const Summons = {
 }
 
 ServerEvents.recipes(event => {
+  event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
+    .mobOutput('cataclysm:ender_golem')
+    .input(Item.of('minecraft:obsidian', 4))
+    .input(Item.of('minecraft:crying_obsidian', 3))
+    .input(Item.of('cataclysm:void_stone', 1))
+    .recipeTime(200)
+    .id('meatsalad:summoning/ender_golem')
+
   let createBossSummons = (bossSummon) => {
     const boss = bossSummon.boss
     const bossMobId = boss.split(':')[1]
@@ -55,7 +63,7 @@ ServerEvents.recipes(event => {
     for (let i = 0; i <= 3; i++) {
       let entityId = `${bossMobId}_${i}`
       let summoningRitual = event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
-      
+
       // Add mob output
       if (i == 0) {
         summoningRitual = summoningRitual.mobOutput(boss)
