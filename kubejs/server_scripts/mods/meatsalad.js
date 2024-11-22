@@ -9,6 +9,16 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.recipes(event => {
+  event.shaped('meatsalad:eldritch_cloth', [
+    'fff',
+    'fcf',
+    'fff'
+  ], {
+    f: 'irons_spellbooks:ancient_knowledge_fragment',
+    c: 'irons_spellbooks:magic_cloth',
+  }).id('meatsalad:eldritch_cloth')
+  
+
   event.shaped('4x meatsalad:dimensional_shard', [
     'deg',
     'irX',

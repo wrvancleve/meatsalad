@@ -5,6 +5,7 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'material.meatsalad.arcane_cloth', 'Arcane Cloth')
   event.add('meatsalad', 'material.meatsalad.dragon_scale', 'Dragon Scale')
   event.add('meatsalad', 'material.meatsalad.echo', 'Echo')
+  event.add('meatsalad', 'material.meatsalad.eldritch_cloth', 'Eldritch Cloth')
   event.add('meatsalad', 'material.meatsalad.infinity', 'Infinity')
   event.add('meatsalad', 'material.meatsalad.jade', 'Jade')
   event.add('meatsalad', 'material.meatsalad.mythril', 'Mythril')

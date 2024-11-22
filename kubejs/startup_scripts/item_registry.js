@@ -165,6 +165,8 @@ StartupEvents.registry('item', event => {
   })
   SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
 
+  createItem('eldritch_cloth', 'rare', true)
+
   createItem('level_up_skill_token').maxStackSize(1)
   createItem('archer_boost').maxStackSize(1)
   createItem('mage_boost').maxStackSize(1)
