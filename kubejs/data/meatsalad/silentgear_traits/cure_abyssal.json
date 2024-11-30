@@ -1,0 +1,21 @@
+{
+  "type": "silentgear:cancel_effects",
+  "max_level": 1,
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "armor"
+    }
+  ],
+  "name": {
+    "text": "Cure Abyssal"
+  },
+  "description": {
+    "text": "Prevents Abyssal effects"
+  },
+  "effects": [
+    "cataclysm:abyssal_burn",
+    "cataclysm:abyssal_curse",
+    "cataclysm:abyssal_fear"
+  ]
+}

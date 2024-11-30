@@ -22,6 +22,8 @@ ServerEvents.tags('item', event => {
       '#forge:ingots/allthemodium',
       '#forge:ingots/unobtainium',
       '#forge:ingots/vibranium',
+      '#forge:ingots/adamantite',
+      '#forge:ingots/mythril',
     ],
     rod: [
       '#forge:ingots/brass',
@@ -42,10 +44,8 @@ ServerEvents.tags('item', event => {
     tip: [
       'minecraft:amethyst_shard',
       '#forge:gems/diamond',
-      '#forge:gems/emerald',
       '#forge:gems/lapis',
       '#forge:gems/quartz',
-      '#forge:dusts/redstone',
   
       '#forge:gems/aquamarine',
       '#forge:gems/jade',
@@ -59,18 +59,6 @@ ServerEvents.tags('item', event => {
       '#forge:leather',
       'minecraft:phantom_membrane',
     ],
-    adornment: [
-      'minecraft:amethyst_shard',
-      '#forge:gems/diamond',
-      '#forge:gems/emerald',
-      '#forge:gems/lapis',
-      '#forge:gems/prismarine',
-      '#forge:gems/quartz',
-  
-      '#forge:gems/peridot',
-      '#forge:gems/ruby',
-      '#forge:gems/sapphire',
-    ],
     lining: [
       'silentgear:fine_silk_cloth',
       '#forge:leather',
@@ -78,6 +66,7 @@ ServerEvents.tags('item', event => {
       'minecraft:slime_block',
   
       'irons_spellbooks:magic_cloth',
+      'meatsalad:eldritch_cloth',
     ],
     binding: [
       'silentgear:fine_silk',
@@ -94,8 +83,9 @@ ServerEvents.tags('item', event => {
   
       'minecraft:echo_shard',
       'quark:dragon_scale',
-      'meatsalad:vulcanite',
+      '#forge:ingots/ignitium',
       'meatsalad:infinity_fabric',
+      '#forge:ingots/witherite',
     ],
     cord: [
       'silentgear:fine_silk',
@@ -114,24 +104,56 @@ ServerEvents.tags('item', event => {
   for (let [type, material] of Object.entries(GEAR_MATERIALS)) {
     event.add(`silentgear:materials/${type}`, material)
   }
+
+  event.removeAllTagsFrom('silentgear:bort')
+  event.removeAllTagsFrom('silentgear:bort_ore')
+  event.removeAllTagsFrom('silentgear:deepslate_bort_ore')
+  event.removeAllTagsFrom('silentgear:bort_block')
+  event.removeAllTagsFrom('silentgear:jeweler_tools')
+  event.removeAllTagsFrom('silentgear:bracelet_template')
+  event.removeAllTagsFrom('silentgear:bracelet_blueprint')
+  event.removeAllTagsFrom('silentgear:ring_template')
+  event.removeAllTagsFrom('silentgear:ring_blueprint')
+})
+
+ServerEvents.tags('block', event => {
+  event.removeAllTagsFrom('silentgear:bort_ore')
+  event.removeAllTagsFrom('silentgear:deepslate_bort_ore')
+  event.removeAllTagsFrom('silentgear:bort_block')
 })
 
 ServerEvents.recipes(event => {
   removeRecipes(event, [
     'silentgear:azure_electrum_ingot',
     'silentgear:blaze_gold_ingot',
+    'silentgear:bort_block',
+    'silentgear:bort_from_block',
     'silentgear:crimson_steel_ingot',
     'silentgear:crushed_shulker_shell',
+    'silentgear:jeweler_tools',
     'silentgear:metal_alloyer',
     'silentgear:metal_press',
     'silentgear:recrystallizer',
     'silentgear:refabricator',
-    'silentgear:template_board',
-    'silentgear:blueprint_paper',
     'silentgear:coating_smithing_template',
     'silentgear:coating_smithing_template_duplication',
     'silentgear:red_card_upgrade',
-    'silentgear:salvager'
+    'silentgear:salvager',
+    'silentgear:bracelet_template',
+    'silentgear:bracelet_blueprint',
+    'silentgear:bracelet_blueprint_alt',
+    'silentgear:gear/bracelet',
+    'silentgear:gear/braceletquick',
+    'silentgear:gear/bracelet_main_only',
+    'silentgear:gear/bracelet_with_gem',
+    'silentgear:ring_template',
+    'silentgear:ring_blueprint',
+    'silentgear:ring_blueprint_alt',
+    'silentgear:gear/ring',
+    'silentgear:gear/ringquick',
+    'silentgear:gear/ring_main_only',
+    'silentgear:gear/ring_with_gem',
+    'silentgear:part/adornment',
   ])
 
   event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })

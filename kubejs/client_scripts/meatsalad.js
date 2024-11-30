@@ -1,37 +1,23 @@
 ClientEvents.lang('en_us', event => {
-  // Materials
-  event.add('meatsalad', 'material.meatsalad.adamantite', 'Adamantite')
-  event.add('meatsalad', 'material.meatsalad.aquamarine', 'Aquamarine')
-  event.add('meatsalad', 'material.meatsalad.arcane_cloth', 'Arcane Cloth')
-  event.add('meatsalad', 'material.meatsalad.dragon_scale', 'Dragon Scale')
-  event.add('meatsalad', 'material.meatsalad.echo', 'Echo')
-  event.add('meatsalad', 'material.meatsalad.eldritch_cloth', 'Eldritch Cloth')
-  event.add('meatsalad', 'material.meatsalad.infinity', 'Infinity')
-  event.add('meatsalad', 'material.meatsalad.jade', 'Jade')
-  event.add('meatsalad', 'material.meatsalad.mythril', 'Mythril')
-  event.add('meatsalad', 'material.meatsalad.allthemodium', 'Palladium')
-  event.add('meatsalad', 'material.meatsalad.peridot', 'Peridot')
-  event.add('meatsalad', 'material.meatsalad.ruby', 'Ruby')
-  event.add('meatsalad', 'material.meatsalad.sapphire', 'Sapphire')
-  event.add('meatsalad', 'material.meatsalad.topaz', 'Topaz')
-  event.add('meatsalad', 'material.meatsalad.unobtainium', 'Unobtainium')
-  event.add('meatsalad', 'material.meatsalad.vibranium', 'Vibranium')
-  event.add('meatsalad', 'material.meatsalad.vulcanite', 'Vulcanite')
-
   // Gates
+  event.add('meatsalad', 'meatsalad.arcanis', '§kArcanis§r Gateway')
   event.add('meatsalad', 'meatsalad.basalz', 'Basalz Gateway')
   event.add('meatsalad', 'meatsalad.blitz', 'Blitz Gateway')
   event.add('meatsalad', 'meatsalad.blizz', 'Blizz Gateway')
   event.add('meatsalad', 'meatsalad.creeper', 'Creeper Gateway')
+  event.add('meatsalad', 'meatsalad.maestris', '§kMaestris§r Gateway')
   event.add('meatsalad', 'meatsalad.magic', 'Magic Gateway')
   event.add('meatsalad', 'meatsalad.magma_cube', 'Magma Cube Gateway')
   event.add('meatsalad', 'meatsalad.otherside', 'Otherside Gateway')
   event.add('meatsalad', 'meatsalad.outer_end', 'Outer End Gateway')
+  event.add('meatsalad', 'meatsalad.sentis', '§kSentis§r Gateway')
   event.add('meatsalad', 'meatsalad.shulker', 'Shulker Gateway')
   event.add('meatsalad', 'meatsalad.skeleton', 'Skeleton Gateway')
   event.add('meatsalad', 'meatsalad.spider', 'Spider Gateway')
+  event.add('meatsalad', 'meatsalad.stalgaris', '§kStalgaris§r Gateway')
   event.add('meatsalad', 'meatsalad.stronghold', 'Stronghold Gateway')
-  event.add('meatsalad', 'meatsalad.supreme', '§kSupreme§r Gateway')
+  event.add('meatsalad', 'meatsalad.velocis', '§kVelocis§r Gateway')
+  
   event.add('meatsalad', 'meatsalad.witch', 'Witch Gateway')
   event.add('meatsalad', 'meatsalad.wither_skeleton', 'Wither Skeleton Gateway')
   event.add('meatsalad', 'meatsalad.zombie', 'Zombie Gateway')
@@ -92,16 +78,20 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'effect.meatsalad.pardon_of_god_projectile.description', 'Grants projectile damage immunity via the divine magic of a god')
 
   // Advancements
+  event.add('meatsalad', 'advancements.meatsalad.kill_dead_king.description', 'Kill The Dead King')
+  event.add('meatsalad', 'advancements.meatsalad.kill_dead_king.title', 'Kill The Dead King')
+  event.add('meatsalad', 'advancements.meatsalad.kill_elder_guardian.description', 'Kill an Elder Guardian')
+  event.add('meatsalad', 'advancements.meatsalad.kill_elder_guardian.title', 'Kill An Elder Guardian')
+  event.add('meatsalad', 'advancements.meatsalad.kill_warden.description', 'Kill The Warden')
+  event.add('meatsalad', 'advancements.meatsalad.kill_warden.title', 'Kill The Warden')
+  event.add('meatsalad', 'advancements.meatsalad.kill_wither.description', 'Kill The Wither')
+  event.add('meatsalad', 'advancements.meatsalad.kill_wither.title', 'Kill The Wither')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_nether.description', 'Transition into The Nether Stage')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_nether.title', 'The Nether Stage')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_other.description', 'Transition into The Other Stage')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_other.title', 'The Other Stage')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_end.description', 'Transition into The End Stage')
   event.add('meatsalad', 'advancements.meatsalad.stage.the_end.title', 'The End Stage')
-  event.add('meatsalad', 'advancements.meatsalad.stage.greater_ink_chance.description', 'Transition into the Greater Ink Chance Stage')
-  event.add('meatsalad', 'advancements.meatsalad.stage.greater_ink_chance.title', 'Greater Ink Chance Stage')
-  event.add('meatsalad', 'advancements.meatsalad.stage.lucky_ring.description', 'Transition into Lucky Ring Stage')
-  event.add('meatsalad', 'advancements.meatsalad.stage.lucky_ring.title', 'Lucky Ring Stage')
 
   // Deaths
   event.add('meatsalad', 'death.attack.meatsalad.herobrine', '%1$s was slain by Herobrine!')
@@ -114,25 +104,49 @@ ClientEvents.lang('en_us', event => {
 JEIEvents.information(event => {
   event.addItem('meatsalad:lost_illusion', [
     Text.of('Obtained by killing Level 3 Chaos Bosses'),
+    Text.of(' '),
+    Text.of('Usages:'),
+    Text.of('  Crafts/upgrades many items!'),
+    Text.of('  Adds a gem socket to affixed items (Max of 4)'),
   ])
   event.addItem('meatsalad:manifest_illusion', [
     Text.of('Obtained by killing Herobrine'),
+    Text.of(' '),
+    Text.of('Usages:'),
+    Text.of('  Crafts/upgrades many items!'),
+    Text.of('  Adds a gem socket to affixed items (Max of 5)'),
   ])
 })
 
 ItemEvents.tooltip(event => {
-  event.add('meatsalad:archer_boost', [
-    Text.of('Sneak Right Click to Boost Archer Skills').gold(),
-    Text.of('Right Click to Change Class').gold(),
+  event.add('meatsalad:mastery_essence', [
+    Text.of('Right Click to add 1 skill point').gold(),
   ])
-  event.add('meatsalad:mage_boost', [
-    Text.of('Sneak Right Click to Boost Mage Skills').gold(),
-    Text.of('Right Click to Change Class').gold(),
+  event.add('meatsalad:rebirth_essence', [
+    Text.of('Right Click to reset your skill tree').gold(),
   ])
-  event.add('meatsalad:warrior_boost', [
-    Text.of('Sneak Right Click to Boost Warrior Skills').gold(),
-    Text.of('Right Click to Change Class').gold(),
-  ])
+
+  const addCurioMasteryWarning = (type, itemId) => {
+    event.add(`meatsalad:${itemId}_plus`, [
+      Text.of(`Requires ${global.getReadableText(`${type}_mastery_curios`)} skill to equip`).red()
+    ])
+    event.add(`meatsalad:${itemId}_plus_plus`, [
+      Text.of(`Requires ${global.getReadableText(`${type}_mastery_curios`)} skill to equip`).red()
+    ])
+  }
+
+  addCurioMasteryWarning("archer", "arrow_damage_ring")
+  addCurioMasteryWarning("archer", "arrow_velocity_ring")
+  addCurioMasteryWarning("archer", "dodge_chance_ring")
+
+  addCurioMasteryWarning("mage", "mana_ring")
+  addCurioMasteryWarning("mage", "cooldown_ring")
+  addCurioMasteryWarning("mage", "cast_time_ring")
+  addCurioMasteryWarning("mage", "spell_power_ring")
+
+  addCurioMasteryWarning("warrior", "attack_damage_ring")
+  addCurioMasteryWarning("warrior", "attack_speed_ring")
+  addCurioMasteryWarning("warrior", "critical_damage_ring")
 })
 
 // ItemEvents.tooltip(event => {

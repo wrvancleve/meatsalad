@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "killed_elder_guardian": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:elder_guardian"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.meatsalad.kill_elder_guardian.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.meatsalad.kill_elder_guardian.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_elder_guardian"
+    ]
+  ]
+}

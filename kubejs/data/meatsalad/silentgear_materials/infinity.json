@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.infinity"
+    "text": "Infinity"
   },
   "name_prefix": {
-    "translate": "material.meatsalad.infinity"
+    "text": "Infinity"
   },
   "stats": {
     "coating": {
@@ -87,10 +87,6 @@
       },
       {
         "name": "silentgear:kitty_vision",
-        "level": 1
-      },
-      {
-        "name": "meatsalad:monstrous",
         "level": 1
       },
       {

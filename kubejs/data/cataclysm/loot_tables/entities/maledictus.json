@@ -2,7 +2,7 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "name": "weapon",
+      "name": "cursium",
       "rolls": 1,
       "entries": [
         {
@@ -11,27 +11,7 @@
           "min": 1,
           "max": 1,
           "stack": {
-            "item": "cataclysm:cursed_bow",
-            "count": 1
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:soul_render",
-            "count": 1
-          }
-        },
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:the_annihilator",
+            "item": "cataclysm:cursium_block",
             "count": 1
           }
         }

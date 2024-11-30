@@ -1,0 +1,99 @@
+{
+    "Restriction Data": {
+        "stage": "eldritch_cloth_lining",
+        "itemList": [
+            {
+                "item": "silentgear:helmet",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:lining",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:eldritch_cloth"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:chestplate",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:lining",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:eldritch_cloth"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:leggings",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:lining",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:eldritch_cloth"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:boots",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:lining",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:eldritch_cloth"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

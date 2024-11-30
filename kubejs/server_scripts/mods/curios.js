@@ -22,5 +22,6 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:feet')
   event.removeAll('curios:hands')
   event.removeAll('curios:head')
+  event.removeAll('curios:bracelet')
 })
 

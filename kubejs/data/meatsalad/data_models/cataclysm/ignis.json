@@ -9,7 +9,7 @@
   "variants": [],
   "name": "entity.cataclysm.ignis",
   "name_color": "#9B3E00",
-  "gui_scale": 0.5,
+  "gui_scale": 0.4,
   "gui_x_offset": 0.0,
   "gui_y_offset": 0.0,
   "gui_z_offset": 0.0,
@@ -25,8 +25,7 @@
   "trivia": "hostilenetworks.trivia.ignis",
   "fabricator_drops": [
     {
-      "optional": true,
-      "item": "meatsalad:vulcanite",
+      "item": "cataclysm:ignitium_block",
       "count": 1
     },
     {

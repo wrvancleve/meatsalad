@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.dragon_scale"
+    "text": "Dragon Scale"
   },
   "name_prefix": {
-    "translate": "material.meatsalad.dragon_scale"
+    "text": "Dragon Scale"
   },
   "stats": {
     "fletching": {

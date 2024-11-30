@@ -38,7 +38,6 @@
 		{ count: 2, item: "apotheosis:epic_material", random_bonus: 2 }
 		{ item: "irons_spellbooks:epic_ink", random_bonus: 1 }
 		{ item: "irons_spellbooks:ancient_knowledge_fragment", random_bonus: 1 }
-		{ item: "meatsalad:level_up_skill_token" }
 		{ item: "apotheosis:boss_summoner" }
 	]
 	title: "&dEpic Reward"

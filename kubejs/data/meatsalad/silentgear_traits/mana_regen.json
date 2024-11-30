@@ -6,7 +6,7 @@
     "text": "Mana Regen"
   },
   "description": {
-    "translate": "Grants additional mana regen"
+    "text": "Grants additional mana regen"
   },
   "attribute_modifiers": {
     "all": [

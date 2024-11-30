@@ -25,7 +25,6 @@
   "trivia": "hostilenetworks.trivia.ender_guardian",
   "fabricator_drops": [
     {
-      "optional": true,
       "item": "meatsalad:ender_star",
       "count": 1
     },

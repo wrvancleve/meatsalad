@@ -30,3 +30,46 @@ EntityEvents.hurt((event) => {
     event.cancel()
   }
 })
+
+const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
+
+global.LivingHurtByPlayer = (event) => {
+  const player = event.source.player
+  if (player.stages.has('berserk') && global.getDamageType(event.source) == global.DAMAGE_TYPES.PHYSICAL) {
+    const healthPercent = player.health / player.maxHealth
+    if (healthPercent <= 0.1) {
+      event.amount *= 1.5
+    } else if (healthPercent <= .25) {
+      event.amount *= 1.25
+    } else if (healthPercent <= .5) {
+      event.amount *= 1.15
+    } else if (healthPercent <= .75) {
+      event.amount *= 1.1
+    } else if (healthPercent <= .9) {
+      event.amount *= 1.05
+    }
+  }
+}
+
+global.PlayerDamagedByOthers = (event) => {
+  const player = event.entity
+  if (player.stages.has('mp_rage')) {
+    const playerMagicData = $MagicData.getPlayerMagicData(player)
+    playerMagicData.addMana(event.amount)
+  }
+
+  if (player.stages.has('damage_control') && global.getDamageType(event.source) != global.DAMAGE_TYPES.MAGIC) {
+    const healthPercent = player.health / player.maxHealth
+    if (healthPercent <= 0.1) {
+      event.amount *= 0.5
+    } else if (healthPercent <= .25) {
+      event.amount *= 0.75
+    } else if (healthPercent <= .5) {
+      event.amount *= 0.85
+    } else if (healthPercent <= .75) {
+      event.amount *= 0.9
+    } else if (healthPercent <= .9) {
+      event.amount *= 0.95
+    }
+  }
+}

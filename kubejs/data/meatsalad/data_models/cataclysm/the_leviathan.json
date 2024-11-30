@@ -25,6 +25,10 @@
   "trivia": "hostilenetworks.trivia.the_leviathan",
   "fabricator_drops": [
     {
+      "item": "meatsalad:abyssium_block",
+      "count": 1
+    },
+    {
       "item": "cataclysm:abyssal_egg",
       "count": 1
     },

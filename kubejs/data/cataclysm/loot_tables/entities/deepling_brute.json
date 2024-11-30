@@ -59,6 +59,29 @@
           "looting_multiplier": 0.05
         }
       ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "placebo:stack_entry",
+          "stack": {
+            "item": "meatsalad:abyssium_ingot"
+          },
+          "functions": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0.0,
+                "max": 1.0
+              },
+              "function": "minecraft:looting_enchant"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "random_sequence": "cataclysm:entities/deepling_brute"
 }

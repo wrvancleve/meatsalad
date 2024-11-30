@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.echo"
+    "text": "Echo"
   },
   "name_prefix": {
-    "translate": "material.meatsalad.echo"
+    "text": "Echo"
   },
   "stats": {
     "coating": {}

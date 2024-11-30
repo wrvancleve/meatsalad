@@ -1,0 +1,7 @@
+{
+  "type": "lithostitched:remove_structures_from_structure_set",
+  "structure_set": "betterwitchhuts:witch_hut",
+  "structures": [
+    "betterwitchhuts:witch_hut"
+  ]
+}

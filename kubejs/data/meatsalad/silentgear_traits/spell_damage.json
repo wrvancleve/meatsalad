@@ -1,12 +1,12 @@
 {
     "type": "silentgear:attribute",
-    "max_level": 20,
+    "max_level": 32,
     "additive": true,
     "name": {
       "text": "Spell Damage"
     },
     "description": {
-      "translate": "Grants additional spell damage"
+      "text": "Grants additional spell damage"
     },
     "attribute_modifiers": {
       "all": [
@@ -33,7 +33,19 @@
             0.2125,
             0.2250,
             0.2375,
-            0.2500
+            0.2500,
+            0.2625,
+            0.2750,
+            0.2875,
+            0.3000,
+            0.3125,
+            0.3250,
+            0.3375,
+            0.3500,
+            0.3625,
+            0.3750,
+            0.3875,
+            0.4000
           ]
         }
       ]

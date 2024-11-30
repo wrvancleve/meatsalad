@@ -8,12 +8,10 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 3,
-          "max": 5,
+          "min": 2,
+          "max": 4,
           "stack": {
-            "item": "cataclysm:koboleton_bone",
-            "count": 1
+            "item": "cataclysm:ancient_metal_ingot"
           },
           "functions": [
             {

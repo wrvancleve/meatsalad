@@ -24,7 +24,6 @@
 		}
 		{ count: 2, item: "apotheosis:mythic_material", random_bonus: 2 }
 		{ item: "irons_spellbooks:legendary_ink", random_bonus: 1 }
-		{ item: "meatsalad:level_up_skill_token" }
 	]
 	title: "&6Mythic Reward"
 }

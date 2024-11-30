@@ -521,13 +521,6 @@
 					table_id: 3121014603660562895L
 					type: "loot"
 				}
-				{
-					exclude_from_claim_all: true
-					id: "5A63ABB551509720"
-					table_id: 1730227961762492868L
-					title: "Choice of Class Boost"
-					type: "choice"
-				}
 			]
 			tasks: [{
 				disable_toast: true

@@ -11,6 +11,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.recipes(event => {
   removeRecipes(event, [
     'irons_spellbooks:alchemist_cauldron',
+    'irons_spellbooks:curios/emerald_stoneplate_ring',
   ])
 
   replaceShaped(event, [
@@ -146,32 +147,6 @@ ServerEvents.recipes(event => {
     ]
   }).id('meatsalad:smelter/arcane_salvage_from_debris')
 
-  const SPELL_TYPES = [
-    'fire',
-    'ice',
-    'lightning',
-    'ender',
-    'holy',
-    'blood',
-    'evocation',
-    'nature'
-  ]
-  SPELL_TYPES.forEach(spell_type => {
-    energize(event,
-      [
-        Ingredient.of(`irons_spellbooks:${spell_type}_rune`),
-        Ingredient.of('apotheosis:gem_dust'),
-        Ingredient.of('apotheosis:gem_dust'),
-        Ingredient.of('apotheosis:mythic_material'),
-        Ingredient.of('meatsalad:uu_matter'),
-        Ingredient.of('meatsalad:lost_illusion'),
-      ],
-      20000,
-      Item.of('apotheosis:gem', 1, `{affix_data:{rarity:"apotheosis:mythic"},gem:"irons_spellbooks:${spell_type}"}`),
-      `${spell_type}_gem`
-    )
-  })
-
   energize(event,
     [
       Ingredient.of('irons_spellbooks:arcane_essence'),
@@ -181,7 +156,7 @@ ServerEvents.recipes(event => {
       Ingredient.of('meatsalad:uu_matter'),
       Ingredient.of('meatsalad:lost_illusion'),
     ],
-    20000,
+    2500000,
     Item.of('irons_spellbooks:legendary_ink')
   )
 

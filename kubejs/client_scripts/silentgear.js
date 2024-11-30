@@ -96,6 +96,16 @@ JEIEvents.hideItems(event => {
     'silentgear:spear',
     'silentgear:sword',
     'silentgear:trident',
+
+    'silentgear:bort',
+    'silentgear:bort_ore',
+    'silentgear:deepslate_bort_ore',
+    'silentgear:bort_block',
+    'silentgear:jeweler_tools',
+    'silentgear:bracelet_template',
+    'silentgear:bracelet_blueprint',
+    'silentgear:ring_template',
+    'silentgear:ring_blueprint',
   ])
 })
 

@@ -147,10 +147,6 @@ const SULFUR_ITEMS = [
   'thermal:sulfur_ore',
   'thermal:deepslate_sulfur_ore'
 ]
-const BORT_ITEMS = [
-  'silentgear:deepslate_bort_ore',
-  'silentgear:bort_ore'
-]
 const AZURE_SILVER_ITEMS = [
   'silentgear:azure_silver_ore',
   'silentgear:raw_azure_silver'
@@ -351,11 +347,6 @@ ItemEvents.tooltip(event => {
   addOreTooltips(SULFUR_ITEMS, [
     Text.of('Overworld: Any Biome (Y: -16 to 32)').gold(),
     Text.of('Mining Dimension: (Y: 48 to 143)').gold()
-  ])
-
-  addOreTooltips(BORT_ITEMS, [
-    Text.of('Overworld: Any Biome (Y: -60 to 10)').gold(),
-    Text.of('Mining Dimension: (Y: 1 to 111)').gold()
   ])
 
   addOreTooltips(AZURE_SILVER_ITEMS, [

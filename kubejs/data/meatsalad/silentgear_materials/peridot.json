@@ -17,36 +17,31 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.peridot"
+    "text": "Peridot"
   },
   "stats": {
     "tip": {
+      "durability": {
+        "add": 401.0
+      },
+      "armor_durability": {
+        "add": 14.0
+      },
       "harvest_speed": {
-        "add": 1.0
+        "add": 1.5
       },
       "melee_damage": {
-        "add": 1.0
-      },
-      "magic_damage": {
-        "add": 1.0
+        "add": 2.0
       },
       "ranged_damage": {
         "add": 1.0
       },
       "rarity": {
-        "add": 20.0
+        "add": 25.0
       }
-    },
-    "adornment": {}
+    }
   },
-  "traits": {
-    "adornment": [
-      {
-        "name": "meatsalad:hearty",
-        "level": 2
-      }
-    ]
-  },
+  "traits": {},
   "model": {
     "tip/all": [
       {
@@ -64,25 +59,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#FF84D614"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#FF84D614"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#FF84D614"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

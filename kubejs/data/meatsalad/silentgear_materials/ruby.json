@@ -17,36 +17,31 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.ruby"
+    "text": "Ruby"
   },
   "stats": {
     "tip": {
-      "harvest_speed": {
-        "add": 2.0
+      "durability": {
+        "add": 360.0
       },
-      "melee_damage": {
+      "armor_durability": {
+        "add": 12.0
+      },
+      "harvest_speed": {
         "add": 3.0
       },
-      "magic_damage": {
+      "melee_damage": {
         "add": 1.0
       },
       "ranged_damage": {
-        "add": 0.75
+        "add": 0.5
       },
       "rarity": {
-        "add": 20.0
+        "add": 25.0
       }
-    },
-    "adornment": {}
+    }
   },
-  "traits": {
-    "adornment": [
-      {
-        "name": "silentgear:ancient",
-        "level": 2
-      }
-    ]
-  },
+  "traits": {},
   "model": {
     "tip/all": [
       {
@@ -64,25 +59,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#FFC62248"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#FFC62248"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#FFC62248"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

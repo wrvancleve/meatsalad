@@ -1,0 +1,30 @@
+{
+    "Restriction Data": {
+        "stage": "adamantite_weapon",
+        "itemList": [
+            {
+                "item": "silentgear:sword",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:sword_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

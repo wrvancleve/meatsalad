@@ -5,9 +5,9 @@
 	#Set to true to disable natural horde spawns (hordes can only be spawned with commands).
 	hordesCommandOnly = false
 	#Amount of mobs to spawn per wave.
-	spawnAmount = 25
+	spawnAmount = 30
 	#Multiplier by which the spawn amount increases by each time the event naturally spawns. (Set to 1 to disable scaling.)
-	hordeSpawnMultiplier = 1.05
+	hordeSpawnMultiplier = 1.1
 	#Time in ticks the event lasts for
 	hordeSpawnDuration = 9000
 	#Time in ticks between spawns for the horde spawn event.
@@ -43,7 +43,7 @@
 
 [Infection]
 	#Set to false to completely disable mob infection and anything related to it.
-	enableMobInfection = true
+	enableMobInfection = false
 	#Can villagers be infected.
 	infectVillagers = false
 	#Chance for a villager to get infected, a value of 1 or higher makes it guaranteed
@@ -55,7 +55,7 @@
 	#Whether later levels of infected should deplete hunger quicker? 
 	infectHunger = true
 	#Chance for a player to get infected, a value of 1 or higher makes it guaranteed
-	playerInfectChance = 0.75
+	playerInfectChance = 0.0
 	#How long do each of the 4 effect phases last for before the next phase is activated?
 	ticksForEffectStage = 6000
 	#Do players who die to infection spawn a zombie?

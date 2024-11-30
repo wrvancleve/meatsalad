@@ -1,6 +1,6 @@
 //priority: 70
 
-const Summons = {
+const SUMMONS = {
   ancient_remnant: {
     boss: 'cataclysm:ancient_remnant',
     inputs: [
@@ -47,6 +47,12 @@ const Summons = {
 
 ServerEvents.recipes(event => {
   event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
+    .mobOutput('cataclysm:aptrgangr')
+    .input(Item.of('cataclysm:frosted_stone_bricks', 5))
+    .input(Ingredient.of('#forge:ingots/steel', 3))
+    .recipeTime(200)
+    .id('meatsalad:summoning/aptrgangr')
+  event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
     .mobOutput('cataclysm:ender_golem')
     .input(Item.of('minecraft:obsidian', 4))
     .input(Item.of('minecraft:crying_obsidian', 3))
@@ -54,11 +60,10 @@ ServerEvents.recipes(event => {
     .recipeTime(200)
     .id('meatsalad:summoning/ender_golem')
 
-  let createBossSummons = (bossSummon) => {
-    const boss = bossSummon.boss
-    const bossMobId = boss.split(':')[1]
-    const inputs = bossSummon.inputs
-    const bossNameColor = bossSummon.bossNameColor
+  for (let [bossMobId, bossSummon] of Object.entries(SUMMONS)) {
+    let boss = bossSummon.boss
+    let inputs = bossSummon.inputs
+    let bossNameColor = bossSummon.bossNameColor
 
     for (let i = 0; i <= 3; i++) {
       let entityId = `${bossMobId}_${i}`
@@ -101,10 +106,6 @@ ServerEvents.recipes(event => {
       summoningRitual = summoningRitual.id(`meatsalad:summoning/${entityId}`)
     }
   }
-
-  Object.values(Summons).forEach(bossSummon => {
-    createBossSummons(bossSummon)
-  })
 })
 
 SummoningRituals.complete(event => {
@@ -116,7 +117,7 @@ SummoningRituals.complete(event => {
   let summonModifier = parseInt(summonName.split('_').pop())
   if (summonModifier) {
     let summonMobName = summonName.substring(0, summonName.lastIndexOf('_'))
-    let mobId = Summons[summonMobName].boss
+    let mobId = SUMMONS[summonMobName].boss
 
     let x = event.pos.x
     let y = event.pos.y

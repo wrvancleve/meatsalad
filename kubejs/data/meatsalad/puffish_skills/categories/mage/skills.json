@@ -510,7 +510,7 @@
 		"root": false
 	},
 	"i91b3kk83fp1untg": {
-		"definition": "ring_slot",
+		"definition": "mage_mastery_curios",
 		"x": 0,
 		"y": 352,
 		"root": false
@@ -522,13 +522,13 @@
 		"root": false
 	},
 	"c3gjol6xwn7l6k3c": {
-		"definition": "ring_slot",
+		"definition": "eldritch_cloth_lining",
 		"x": 352,
 		"y": 0,
 		"root": false
 	},
 	"2jtwc0mf14uxik20": {
-		"definition": "ring_slot",
+		"definition": "eldritch_cloth_lining",
 		"x": 0,
 		"y": -352,
 		"root": false

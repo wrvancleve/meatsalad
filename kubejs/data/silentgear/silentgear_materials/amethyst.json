@@ -19,30 +19,17 @@
     "translate": "material.silentgear.amethyst"
   },
   "stats": {
-    "tip": {
-      "durability": {
-        "mul2": -0.25
-      }
-    },
-    "adornment": {}
+    "tip": {}
   },
   "traits": {
     "tip": [
       {
-        "name": "silentgear:silky",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.66
-          }
-        ]
-      }
-    ],
-    "adornment": [
+        "name": "meatsalad:mana_boost",
+        "level": 1
+      },
       {
-        "name": "silentgear:cursed",
-        "level": 4
+        "name": "meatsalad:spell_damage",
+        "level": 1
       }
     ]
   },
@@ -63,21 +50,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#A31DE6"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#A31DE6"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

@@ -552,43 +552,6 @@
 		}
 		{
 			dependencies: ["64AB1E133E218173"]
-			hide_dependency_lines: true
-			id: "74FA25B2E087BEC4"
-			rewards: [{
-				id: "6A8BDD8F692F157C"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "316B266E606B709C"
-				item: "silentgear:ring_blueprint"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["64AB1E133E218173"]
-			hide_dependency_lines: true
-			id: "21234BB40DB05C78"
-			optional: true
-			rewards: [{
-				id: "6BE21A7766B057B1"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "6F72BC1DF6CBCDED"
-				item: "silentgear:bracelet_blueprint"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["64AB1E133E218173"]
 			description: [""]
 			id: "2EB96FF06627FD9A"
 			rewards: [
@@ -725,8 +688,8 @@
 				item: "silentgear:lining_blueprint"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -3.0d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["64AB1E133E218173"]

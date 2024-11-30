@@ -1,7 +1,3 @@
-global.randomGet = (list) => {
-  return list[Math.floor(Math.random() * list.length)];
-}
-
 function godPardonEffectIncr(entity) {
   let pardonTypeCount = 0
   const hasMagicPardon = entity.hasEffect('meatsalad:pardon_of_god_magic')

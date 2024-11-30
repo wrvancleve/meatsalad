@@ -8,10 +8,10 @@
       }
     ],
     "name": {
-      "translate": "Harmful Immune"
+      "text": "Harmful Immune"
     },
     "description": {
-      "translate": "Grants immunity to almost every harmful effect"
+      "text": "Grants immunity to almost every harmful effect"
     },
     "effects": [
       "minecraft:blindness",

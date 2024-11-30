@@ -69,7 +69,7 @@ ItemEvents.tooltip(event => {
     Text.of('Prioritizes Emerald and Uranium in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens7', [
-    Text.of('Prioritizes Bort and Silver in the Ore Laser Base').gold()
+    Text.of('Prioritizes Silver in the Ore Laser Base').gold()
   ])
   event.add('industrialforegoing:laser_lens8', [
     Text.of('Prioritizes Fluorite, Osmium and Tin in the Ore Laser Base').gold()

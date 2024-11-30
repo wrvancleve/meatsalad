@@ -1,0 +1,90 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 4,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/abyssium"
+    }
+  },
+  "name": {
+    "text": "Abyssium"
+  },
+  "name_prefix": {
+    "text": "Abyssium"
+  },
+  "stats": {
+    "coating": {
+      "durability": {
+        "mul2": 0.15
+      },
+      "armor_durability": {
+        "mul2": 0.0606060625
+      },
+      "harvest_speed": {
+        "mul2": 0.125
+      },
+      "melee_damage": {
+        "mul2": 0.5
+      },
+      "magic_damage": {
+        "mul2": 0.75
+      },
+      "ranged_damage": {
+        "mul2": 0.25
+      },
+      "armor_toughness": {
+        "add": 2.0
+      },
+      "enchantment_value": {
+        "add": 10.0
+      }
+    }
+  },
+  "traits": {
+    "coating": [
+      {
+        "name": "meatsalad:cure_abyssal",
+        "level": 1
+      },
+      {
+        "name": "silentgear:void_ward",
+        "level": 1
+      }
+    ]
+  },
+  "model": {
+    "coating/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#6500ff"
+      },
+      {
+        "texture": "silentgear:_highlight"
+      }
+    ],
+    "coating/part": [
+      {
+        "texture": "silentgear:coating_material",
+        "color": "#6500ff"
+      },
+      {
+        "texture": "silentgear:coating_jar"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:dust",
+        "color": "#6500ff"
+      }
+    ]
+  }
+}

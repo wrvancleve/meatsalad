@@ -1,5 +1,12 @@
 ClientEvents.lang('en_us', event => {
+  event.add('hostilenetworks', 'hostilenetworks.trivia.ancient_remnant', 'Prehistoric Guardian of the Burning Arena')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.aptrgangr', 'Guardian of the Frosted Prison')
   event.add('hostilenetworks', 'hostilenetworks.trivia.ignis', 'Knight of the Burning Arena')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.ender_golem', 'Golem of the Ruined Citadel')
   event.add('hostilenetworks', 'hostilenetworks.trivia.ender_guardian', 'Guardian of the Ruined Citadel')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.herobrine', 'Urban Legend of Minecraft')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.maledictus', 'Ghost of the Frosted Prison')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.netherite_monstrosity', 'Blacksmith of the Soul Blacksmith')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.the_harbinger', 'Undead Guardian of the Ancient Factory')
   event.add('hostilenetworks', 'hostilenetworks.trivia.the_leviathan', 'Serpent of the Sunken City')
 })

@@ -64,7 +64,6 @@
 		{ item: "modulargolems:empty_upgrade", random_bonus: 2 }
 		{ count: 2, item: "apotheosis:rare_material", random_bonus: 2 }
 		{ item: "irons_spellbooks:rare_ink", random_bonus: 1 }
-		{ item: "meatsalad:level_up_skill_token" }
 		{ item: "apotheosis:boss_summoner" }
 		{ count: 8, item: "powah:dielectric_paste", random_bonus: 8 }
 	]

@@ -252,6 +252,32 @@
 			}
 		]
 	},
+	"eldritch_cloth_lining": {
+		"title": "Eldritch Cloth Lining",
+		"description": "Unlock the use of Eldritch Cloth as an armor lining",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:eldritch_cloth"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "decstages add @s eldritch_cloth_lining",
+					"lock_command": "decstages remove @s eldritch_cloth_lining"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use Eldritch Cloth as an armor lining!\""
+				}
+			}
+		],
+		"required_skills": 6
+	},
 	"ring_slot": {
 		"title": "+1 Ring Slot",
 		"icon": {
@@ -272,6 +298,32 @@
 				"type": "puffish_skills:command",
 				"data": {
 					"command": "tellraw @s \"§6You have gained one additional ring slot!\""
+				}
+			}
+		],
+		"required_skills": 6
+	},
+	"mage_mastery_curios": {
+		"title": "Mage Mastery Curios",
+		"description": "Unlock the use of the best Mage Curios",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:spell_power_ring_plus_plus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s mage_mastery_curios",
+					"lock_command": "gamestage remove @s mage_mastery_curios"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use the best Mage Curios!\""
 				}
 			}
 		],

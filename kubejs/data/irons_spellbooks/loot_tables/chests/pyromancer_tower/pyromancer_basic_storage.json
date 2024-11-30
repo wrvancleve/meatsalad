@@ -109,7 +109,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/basic_curios"
+          "name": "meatsalad:curios/mage"
         }
       ],
       "conditions": [

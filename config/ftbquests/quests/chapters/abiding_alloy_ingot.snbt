@@ -102,7 +102,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6AC90327A2250F08"
-				item: "meatsalad:arcanis_hypermatter"
+				item: "meatsalad:arcanis_stone"
 				type: "item"
 			}]
 			x: -0.5d
@@ -154,7 +154,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "7084E351236A51C4"
-				item: "meatsalad:maestris_hypermatter"
+				item: "meatsalad:maestris_stone"
 				type: "item"
 			}]
 			x: -0.5d
@@ -232,7 +232,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "055E271EB91577EA"
-				item: "meatsalad:sentis_hypermatter"
+				item: "meatsalad:sentis_stone"
 				type: "item"
 			}]
 			x: 0.0d
@@ -310,7 +310,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "3AC46B88742BCA84"
-				item: "meatsalad:stalgaris_hypermatter"
+				item: "meatsalad:stalgaris_stone"
 				type: "item"
 			}]
 			x: 0.5d
@@ -390,7 +390,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "59F29A8F82AC254D"
-				item: "meatsalad:velocis_hypermatter"
+				item: "meatsalad:velocis_stone"
 				type: "item"
 			}]
 			x: 0.5d
@@ -926,13 +926,6 @@
 					id: "7354B3611A963EB4"
 					table_id: 190274823471505902L
 					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "61EA6D847EB23461"
-					table_id: 1730227961762492868L
-					title: "Choice of Class Boost"
-					type: "choice"
 				}
 			]
 			shape: "diamond"
