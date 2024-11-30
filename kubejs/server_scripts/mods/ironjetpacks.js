@@ -56,15 +56,11 @@ ServerEvents.recipes(event => {
   // }).id('kubejs:ironjetpacks_creative_capacator')
 
   event.shaped(Item.of('ironjetpacks:jetpack', { Id: "ironjetpacks:creative" }).strongNBT(), [
-    'ECE',
+    'III',
     'IJI',
-    'TIT'
+    'III'
   ], {
-    E: 'meatsalad:eternal_crystalline_powder',
-    C: Item.of('ironjetpacks:capacitor', { Id: "ironjetpacks:creative" }).strongNBT(),
-    I: 'meatsalad:infinity_fabric',
+    I: 'meatsalad:infinity_fiber',
     J: Item.of('ironjetpacks:jetpack', { Id: "ironjetpacks:unobtainium" }).weakNBT(),
-    T: Item.of('ironjetpacks:thruster', { Id: "ironjetpacks:creative" }).strongNBT(),
-    
   }).id('meatsalad:creative_jetpack')
 })

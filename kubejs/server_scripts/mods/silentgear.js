@@ -105,6 +105,53 @@ ServerEvents.tags('item', event => {
     event.add(`silentgear:materials/${type}`, material)
   }
 
+  const addTemplateTags = (templates) => {
+    templates.forEach(template => {
+      event.add('silentgear:templates', `silentgear:${template}`)
+    })
+  }
+  addTemplateTags([
+    'arrow_template',
+    'axe_template',
+    'binding_template',
+    'boots_template',
+    'bow_template',
+    'chestplate_template',
+    'coating_template',
+    'cord_template',
+    'crossbow_template',
+    'dagger_template',
+    'elytra_template',
+    'excavator_template',
+    'fishing_rod_template',
+    'fletching_template',
+    'grip_template',
+    'hammer_template',
+    'helmet_template',
+    'hoe_template',
+    'katana_template',
+    'knife_template',
+    'leggings_template',
+    'lining_template',
+    'machete_template',
+    'mattock_template',
+    'paxel_template',
+    'pickaxe_template',
+    'prospector_hammer_template',
+    'rod_template',
+    'saw_template',
+    'shears_template',
+    'shield_template',
+    'shovel_template',
+    'sickle_template',
+    'slingshot_template',
+    'spear_template',
+    'sword_template',
+    'template_board',
+    'tip_template',
+    'trident_template',
+  ])
+
   event.removeAllTagsFrom('silentgear:bort')
   event.removeAllTagsFrom('silentgear:bort_ore')
   event.removeAllTagsFrom('silentgear:deepslate_bort_ore')
@@ -157,6 +204,16 @@ ServerEvents.recipes(event => {
   ])
 
   event.remove({ not: { id: 'silentgear:pebble' }, input: '#forge:hammers' })
+
+  replaceShaped(event, [
+    "BWG",
+    "bbb",
+  ], {
+    B: 'minecraft:book',
+    W: '#minecraft:wool',
+    G: '#forge:ingots/gold',
+    b: 'silentgear:blueprint_paper',
+  }, Item.of('silentgear:blueprint_book'))
 
   event.custom({
     type: 'thermal:smelter',

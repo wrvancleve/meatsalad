@@ -32,6 +32,11 @@
       "optional": true,
       "item": "bhc:yellow_heart",
       "count": 1
+    },
+    {
+      "optional": true,
+      "item": "endrem:lost_eye",
+      "count": 1
     }
   ],
   "tier_data": [
