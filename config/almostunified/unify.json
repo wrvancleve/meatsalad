@@ -10,7 +10,8 @@
     "thermal",
     "immersiveengineering",
     "mekanism",
-    "silentgear"
+    "silentgear",
+    "cataclysm"
   ],
   "stoneStrata": [
     "stone",
@@ -67,6 +68,7 @@
     "copper",
     "crimson_iron",
     "crimson_steel",
+    "cursium",
     "diamond",
     "dimensional_shard",
     "electrum",
@@ -76,6 +78,7 @@
     "fluorite",
     "gold",
     "graphite",
+    "ignitium",
     "invar",
     "iridium",
     "iron",
@@ -112,6 +115,7 @@
     "unobtainium",
     "uranium",
     "vibranium",
+    "witherite",
     "zinc"
   ],
   "priorityOverrides": {},

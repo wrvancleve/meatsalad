@@ -2,85 +2,74 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:abyssal_sacrifice",
-            "count": 1
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "minecraft:nautilus_shell",
-            "count": 1
-          }
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "random_chance_with_looting",
-          "chance": 0.05,
-          "looting_multiplier": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "minecraft:heart_of_the_sea",
-            "count": 1
-          }
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "random_chance_with_looting",
-          "chance": 0.05,
-          "looting_multiplier": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "stack": {
-            "item": "meatsalad:abyssium_ingot"
-          },
+          "type": "minecraft:item",
+          "name": "cataclysm:abyssal_sacrifice"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "chance": 0.05,
+          "condition": "minecraft:random_chance_with_looting",
+          "looting_multiplier": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "chance": 0.05,
+          "condition": "minecraft:random_chance_with_looting",
+          "looting_multiplier": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "count": {
                 "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
+                "max": 1.0,
+                "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
-          ]
+          ],
+          "name": "meatsalad:abyssium_ingot"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "cataclysm:entities/deepling_brute"

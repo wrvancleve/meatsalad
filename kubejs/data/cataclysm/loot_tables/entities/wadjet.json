@@ -3,28 +3,32 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "min": 2,
-          "max": 4,
-          "stack": {
-            "item": "cataclysm:ancient_metal_ingot"
-          },
+          "type": "minecraft:item",
           "functions": [
             {
               "count": {
                 "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
-          ]
+          ],
+          "name": "cataclysm:ancient_metal_ingot"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "cataclysm:entities/wadjet"

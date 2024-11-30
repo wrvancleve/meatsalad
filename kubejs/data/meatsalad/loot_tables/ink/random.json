@@ -5,12 +5,10 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:item",
           "weight": 400.0,
           "quality": 0.0,
-          "stack": {
-            "item": "irons_spellbooks:common_ink"
-          },
+          "name": "irons_spellbooks:common_ink",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -29,12 +27,10 @@
           ]
         },
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:item",
           "weight": 320.0,
           "quality": 3.0,
-          "stack": {
-            "item": "irons_spellbooks:uncommon_ink"
-          },
+          "name": "irons_spellbooks:uncommon_ink",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -51,20 +47,16 @@
           ]
         },
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:item",
           "weight": 150.0,
           "quality": 6.0,
-          "stack": {
-            "item": "irons_spellbooks:rare_ink"
-          }
+          "name": "irons_spellbooks:rare_ink"
         },
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:item",
           "weight": 90.0,
           "quality": 9.0,
-          "stack": {
-            "item": "irons_spellbooks:epic_ink"
-          },
+          "name": "irons_spellbooks:epic_ink",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
@@ -81,12 +73,10 @@
           ]
         },
         {
-          "type": "placebo:stack_entry",
+          "type": "minecraft:item",
           "weight": 40.0,
           "quality": 12.0,
-          "stack": {
-            "item": "irons_spellbooks:legendary_ink"
-          },
+          "name": "irons_spellbooks:legendary_ink",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",

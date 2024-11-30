@@ -2,43 +2,31 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "name": "cursium",
-      "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:cursium_block",
-            "count": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "disc",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:music_disc_maledictus",
-            "count": 1
-          }
+          "type": "minecraft:item",
+          "name": "cataclysm:cursium_block"
         }
       ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "random_chance_with_looting",
           "chance": 0.1,
+          "condition": "random_chance_with_looting",
           "looting_multiplier": 0.1
         }
-      ]
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:music_disc_maledictus"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "cataclysm:entities/maledictus"

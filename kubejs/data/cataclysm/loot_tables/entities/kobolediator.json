@@ -3,53 +3,60 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 3,
-          "max": 5,
-          "stack": {
-            "item": "cataclysm:koboleton_bone",
-            "count": 1
-          },
+          "type": "minecraft:item",
           "functions": [
             {
               "count": {
                 "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
+                "max": 5.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
-          ]
+          ],
+          "name": "cataclysm:koboleton_bone"
         }
-      ]
+      ],
+      "rolls": 1.0
     },
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "max": 3,
-          "stack": {
-            "item": "cataclysm:ancient_metal_ingot"
-          },
+          "type": "minecraft:item",
           "functions": [
             {
               "count": {
                 "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 1.0
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
-          ]
+          ],
+          "name": "cataclysm:ancient_metal_ingot"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "cataclysm:entities/kobolediator"

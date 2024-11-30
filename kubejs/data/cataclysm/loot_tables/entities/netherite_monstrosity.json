@@ -1,59 +1,42 @@
 {
+  "type": "minecraft:entity",
   "pools": [
     {
-      "name": "horn",
-      "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:monstrous_horn",
-            "count": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "weapon",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:infernal_forge",
-            "count": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "disc",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "cataclysm:music_disc_netherite_monstrosity",
-            "count": 1
-          }
+          "type": "minecraft:item",
+          "name": "cataclysm:monstrous_horn"
         }
       ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:infernal_forge"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "random_chance_with_looting",
           "chance": 0.1,
+          "condition": "random_chance_with_looting",
           "looting_multiplier": 0.1
         }
-      ]
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:music_disc_netherite_monstrosity"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "cataclysm:entities/netherite_monstrosity"
