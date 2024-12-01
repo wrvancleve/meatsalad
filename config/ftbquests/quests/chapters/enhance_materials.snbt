@@ -202,7 +202,7 @@
 				type: "item"
 			}]
 			title: "Tier 1 Starlight Charger Pillar Cap"
-			x: 1.5d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -236,7 +236,7 @@
 				type: "item"
 			}]
 			title: "Tier 2 Starlight Charger Pillar Cap"
-			x: 2.5d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -270,7 +270,7 @@
 				type: "item"
 			}]
 			title: "Tier 3 Starlight Charger Pillar Cap"
-			x: 3.5d
+			x: 3.0d
 			y: -2.0d
 		}
 		{
@@ -304,7 +304,7 @@
 				type: "item"
 			}]
 			title: "Tier 5 Starlight Charger Pillar Cap"
-			x: 4.5d
+			x: 4.0d
 			y: -2.0d
 		}
 		{
@@ -346,7 +346,7 @@
 				type: "item"
 			}]
 			title: "Starlight Charger"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -378,7 +378,7 @@
 				type: "item"
 			}]
 			title: "Tier 5 Starlight Charger Catalyst"
-			x: 4.5d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -410,7 +410,7 @@
 				type: "item"
 			}]
 			title: "Tier 3 Starlight Charger Catalyst"
-			x: 3.5d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
@@ -442,7 +442,7 @@
 				type: "item"
 			}]
 			title: "Tier 2 Starlight Charger Catalyst"
-			x: 2.5d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -474,7 +474,7 @@
 				type: "item"
 			}]
 			title: "Tier 1 Starlight Charger Catalyst"
-			x: 1.5d
+			x: 1.0d
 			y: 2.0d
 		}
 	]

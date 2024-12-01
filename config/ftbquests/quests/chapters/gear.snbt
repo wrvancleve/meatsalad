@@ -57,14 +57,16 @@
 			id: "0DF4B01CC5B49E4E"
 			rewards: [
 				{
-					id: "3B6BDE76C5A9446F"
-					item: "minecraft:blaze_rod"
-					type: "item"
-				}
-				{
+					auto: "invisible"
 					id: "16720CCB3ED1C3A2"
 					type: "xp"
-					xp: 5
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EF96662E405FE70"
+					table_id: 6073978969392403156L
+					type: "loot"
 				}
 			]
 			shape: "hexagon"
@@ -82,11 +84,20 @@
 			description: ["Slightly faster than a sword, but lower damage."]
 			hide_dependency_lines: true
 			id: "3722B43822F80470"
-			rewards: [{
-				id: "569FE8789232CF20"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "569FE8789232CF20"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "684DD3C096D79F31"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Release Your Inner Samurai"
 			tasks: [{
@@ -102,11 +113,20 @@
 			description: ["More damage than a sword, but slower."]
 			hide_dependency_lines: true
 			id: "39B85DB54B1037FE"
-			rewards: [{
-				id: "736360B6DCAC64DA"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "736360B6DCAC64DA"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "374794E304EDD53B"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Thicc Sword"
 			tasks: [{
@@ -122,11 +142,20 @@
 			description: ["Less damage than a sword, but longer reach."]
 			hide_dependency_lines: true
 			id: "405DCD3E36232EEA"
-			rewards: [{
-				id: "54C35AD7C673B8BD"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "54C35AD7C673B8BD"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7292D1776DBCAB82"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Release Your Inner Spartan"
 			tasks: [{
@@ -142,11 +171,20 @@
 			description: ["Higher Durability than a dagger, but lower damage and speed."]
 			hide_dependency_lines: true
 			id: "0D26E5EF6CFCFDBF"
-			rewards: [{
-				id: "480C996B6EF91910"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "480C996B6EF91910"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A148F94539AD36B"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Stabby."
 			tasks: [{
@@ -162,11 +200,20 @@
 			description: [" Low damage, very high attack speed. Reduces the invincibility time of the target."]
 			hide_dependency_lines: true
 			id: "3D2C6FF462B17205"
-			rewards: [{
-				id: "6F242ECEA2C8AB26"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6F242ECEA2C8AB26"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66307DB2D50C06DD"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Stabby Stabby"
 			tasks: [{
@@ -181,11 +228,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "766C80E5D7B7A916"
-			rewards: [{
-				id: "69E8C6F8D3BFA819"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "69E8C6F8D3BFA819"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37C6EE025C1DD6D1"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "5456E2D6253496B4"
@@ -199,11 +255,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "52CDB46F6CBF007B"
-			rewards: [{
-				id: "2D85F22E09FDB6A2"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2D85F22E09FDB6A2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1DB892674F643B78"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "3BA93EF95C2D2AC7"
@@ -217,11 +282,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "69383DA579901E7E"
-			rewards: [{
-				id: "5AE2EB88B968AB84"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5AE2EB88B968AB84"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "517056B7E928F7CF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "75DA720893D281E2"
@@ -235,11 +309,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "63CAD77A4488F2CE"
-			rewards: [{
-				id: "69B3A90EBE7C08A0"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "69B3A90EBE7C08A0"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BCD69FD34DFF53C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "The All In One Tool"
 			tasks: [{
@@ -254,11 +337,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "262036FE8E87F50A"
-			rewards: [{
-				id: "350D7AB75BA2D89D"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "350D7AB75BA2D89D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E6C876A8745A5D4"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "3x3 Mining"
 			tasks: [{
@@ -273,11 +365,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "3F39BEB788175CEF"
-			rewards: [{
-				id: "165EDC4330665C22"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "165EDC4330665C22"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C4B0E8E34E98BE8"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "3x3 Digging!"
 			tasks: [{
@@ -292,11 +393,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "427516AA3E8C9442"
-			rewards: [{
-				id: "55313BAC0ABC7732"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "55313BAC0ABC7732"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "780DC3A13A0A71BF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Versatile Hoe"
 			tasks: [{
@@ -312,11 +422,20 @@
 			hide_dependency_lines: true
 			id: "083ABBA1C45FF960"
 			optional: true
-			rewards: [{
-				id: "2A72A2E5EBC9E64D"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2A72A2E5EBC9E64D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C288456012A5BB3"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "It's a Lawn Mower."
 			tasks: [{
@@ -331,11 +450,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "67216EC5274F08B9"
-			rewards: [{
-				id: "430D04B092F804E9"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "430D04B092F804E9"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D0D547360EC7CEF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "71F08CAC734CFABA"
@@ -350,11 +478,20 @@
 			hide_dependency_lines: true
 			id: "462C1F75A2FB9F02"
 			optional: true
-			rewards: [{
-				id: "73AECD6F2CB1CA8B"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "73AECD6F2CB1CA8B"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0813D54682E0F70E"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "2BC129A5A112714B"
@@ -368,11 +505,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "6D9CDB4D81DC164D"
-			rewards: [{
-				id: "4362F9342267B09D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4362F9342267B09D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3605F5016F6157D1"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "7C2EB1E97E1F7C9D"
@@ -387,11 +533,20 @@
 			hide_dependency_lines: true
 			id: "1E8357755479E259"
 			optional: true
-			rewards: [{
-				id: "267E1DA2BC5DB5C5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "267E1DA2BC5DB5C5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F357BABC8DBCDBC"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "49B566024C78B433"
@@ -406,11 +561,20 @@
 			hide_dependency_lines: true
 			id: "1E2F1E036716C031"
 			optional: true
-			rewards: [{
-				id: "6DCC64F4FCD87ECA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6DCC64F4FCD87ECA"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62AF57B35329DB06"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "3F4C79848F8548D5"
@@ -424,11 +588,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "78C112170E17FBF4"
-			rewards: [{
-				id: "696D8973F3FD3B0A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "696D8973F3FD3B0A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0717AF2D6B52EF8C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "3DA37B5163894911"
@@ -442,11 +615,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "6E2806D8DC61C46F"
-			rewards: [{
-				id: "1E2C85D526645FBE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1E2C85D526645FBE"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FFB08923B32C71F"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "359631F5009F3B9F"
@@ -460,11 +642,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "35E8C65CCA676E76"
-			rewards: [{
-				id: "20589A9B4D86DD65"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "20589A9B4D86DD65"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F6DA678C575ED60"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "583FCEF23D524EB6"
@@ -478,11 +669,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "22C51025DC42CDE2"
-			rewards: [{
-				id: "1243D0195D23CDB0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1243D0195D23CDB0"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DAD226A99C44153"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "7379282EA5C084B4"
@@ -496,11 +696,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "6912C0E3D092DD27"
-			rewards: [{
-				id: "50004D6B21F8E849"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "50004D6B21F8E849"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D23DB0BE2159CBA"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "6C02D97660F0347C"
@@ -514,11 +723,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "5AB8651FCB1E2F72"
-			rewards: [{
-				id: "5CD4106705C41360"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5CD4106705C41360"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "492EF85752B6B1F2"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "761B3590C99B461E"
@@ -532,11 +750,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "3844877F6C1AFE77"
-			rewards: [{
-				id: "32FDE909916929D7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "32FDE909916929D7"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1880A240AF685264"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "19547966CF66B82B"
@@ -587,6 +814,20 @@
 			]
 			hide_dependency_lines: true
 			id: "158B24939A269D83"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "10C854C0620D5E78"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "713576BD4FB92B80"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "For when you didn't find 3 diamonds."
 			tasks: [{
@@ -606,6 +847,20 @@
 			]
 			hide_dependency_lines: true
 			id: "0947B4ED95B0267E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "06E2CA085142D4D2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D30EC309BFCAC12"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Totally not just for Netherite."
 			tasks: [{
@@ -620,6 +875,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "6BFD7854F078BF16"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2B4EA52339BF7579"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "198687F279F9AA03"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Get a Grip."
 			tasks: [{
@@ -634,6 +903,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "22A0A9C81A5C85A1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4F7442ADF14AACF6"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75302CF9445D38DB"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "It holds everything together."
 			tasks: [{
@@ -649,11 +932,20 @@
 			hide_dependency_lines: true
 			id: "2098D8BFADB55D2A"
 			optional: true
-			rewards: [{
-				id: "37525488AF6404B2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "37525488AF6404B2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6022C2AB4BAD7454"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "3CB5441C8E4480CC"
@@ -667,11 +959,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "3F56A5253D477B97"
-			rewards: [{
-				id: "2828EA8C5A180BAC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2828EA8C5A180BAC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03117E17360A15A7"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "58407186583371FA"
@@ -685,11 +986,20 @@
 			dependencies: ["64AB1E133E218173"]
 			hide_dependency_lines: true
 			id: "657B3116A6419420"
-			rewards: [{
-				id: "3144F2282E53F770"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3144F2282E53F770"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "039A4DDD0EDD351C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Create your own Handle!"
 			tasks: [{
@@ -710,11 +1020,20 @@
 			]
 			hide_dependency_lines: true
 			id: "11B0B93D725ABE43"
-			rewards: [{
-				id: "221CA06C59187F0D"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					id: "221CA06C59187F0D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "375DC7F90950A0DB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
 			size: 1.25d
 			subtitle: "Your First Repair Kit"
 			tasks: [{
