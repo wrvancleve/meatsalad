@@ -13,15 +13,6 @@
 		{ item: "alltheores:iridium_ingot", random_bonus: 3 }
 		{ item: "meatsalad:dark_matter", random_bonus: 2 }
 		{ item: "apotheosis:boss_summoner" }
-		{
-			item: {
-				Count: 1
-				id: "gateways:gate_pearl"
-				tag: {
-					gateway: "meatsalad:supreme"
-				}
-			}
-		}
 		{ count: 2, item: "apotheosis:mythic_material", random_bonus: 2 }
 		{ item: "irons_spellbooks:legendary_ink", random_bonus: 1 }
 	]

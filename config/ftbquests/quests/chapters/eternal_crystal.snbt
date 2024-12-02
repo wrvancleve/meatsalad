@@ -5,7 +5,7 @@
 	group: "382D29DACC0FCEC1"
 	icon: "meatsalad:eternal_crystal"
 	id: "4A0CD21A2E8DBA35"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "21F0314354C801EE"

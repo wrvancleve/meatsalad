@@ -14,6 +14,13 @@
 	}]
 	quests: [
 		{
+			description: [
+				"Material for &6mythic&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Salvaging &6mythic&r items in the &eSalvaging Table&r"
+				"  - Combine &5Arcane Seeds&r with &bDark Matter&r in the &eEnergizing Orb&r"
+			]
 			id: "738FB4AC92679507"
 			rewards: [
 				{
@@ -45,6 +52,13 @@
 			y: -2.0d
 		}
 		{
+			description: [
+				"Material for &5epic&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Salvaging &5epic&r items in the &eSalvaging Table&r"
+				"  - Combine &9Luminous Crystal Shard&r with &eNetherite Scrap&r in the &eEnergizing Orb&r"
+			]
 			id: "061244C38F05CBFE"
 			rewards: [
 				{
@@ -77,7 +91,7 @@
 		}
 		{
 			dependencies: ["40926361B5A17F74"]
-			description: ["The Salvaging Table can finally get you materials and Gem Dust without using Anvils. You can recycle tools and armor with affixes to get their materials."]
+			description: ["The &eSalvaging Table&r can finally get you materials and &eGem Dust&r without using &eAnvils&r. You can recycle tools and armor with affixes to get their materials."]
 			id: "1A507E77BF750F60"
 			rewards: [
 				{
@@ -102,6 +116,13 @@
 			y: 2.5d
 		}
 		{
+			description: [
+				"Material for &9rare&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Salvaging &9rare&r items in the &eSalvaging Table&r"
+				"  - Combine &2Timeworn Fabric&r with &ediamonds&r in the &eMetallurgic Infuser&r"
+			]
 			id: "40C8A9DF4581FF8C"
 			rewards: [
 				{
@@ -137,7 +158,7 @@
 				"375359043E71349C"
 				"061244C38F05CBFE"
 			]
-			description: ["The Reforging Table does everything a simple one does but better, it can do Epic, Mythic and Ancient Affixes!"]
+			description: ["The &eReforging Table&r does everything a simple one does but better, it can do &5Epic&r, &6Mythic&r and &dAncient&r Affixes!"]
 			id: "166DF03D93BC11F1"
 			rewards: [
 				{
@@ -169,7 +190,7 @@
 		}
 		{
 			dependencies: ["0A70CC1A0F4F1CD1"]
-			description: ["The Simple Reforging Table is used like an Enchantment Table but with Affixes. With Gem Dust, Rarity Materials, and an Affixed Item you can reroll the affixes for a cost of EXP. This can also be used to change the Rarity of the Affixed item up to Rare"]
+			description: ["The &eSimple Reforging Table&r is used like an Enchantment Table but with affixes. With &eSigils of Rebirth&r, Rarity Materials, and an Affixed Item you can reroll the affixes for a cost of EXP. This can also be used to change the rarity of an affixed item up to &9Rare&r"]
 			id: "375359043E71349C"
 			rewards: [
 				{
@@ -200,6 +221,13 @@
 			y: -3.5d
 		}
 		{
+			description: [
+				"Material for &2uncommon&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Salvaging &2uncommon&r items in the &eSalvaging Table&r"
+				"  - Combine &7Mysterious Scrap Material&r with &eliquid xp&r in the &eFluid Encapsulator&r"
+			]
 			id: "0A70CC1A0F4F1CD1"
 			rewards: [
 				{
@@ -231,6 +259,12 @@
 			y: -2.0d
 		}
 		{
+			description: [
+				"Material for &7common&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Salvaging &7common&r items in the &eSalvaging Table&r"
+			]
 			id: "70D60687AAB145FE"
 			rewards: [
 				{
@@ -263,7 +297,7 @@
 		}
 		{
 			dependencies: ["096AFAAD5FEE3804"]
-			description: ["The Simple Reforging Table is used like an Enchantment Table but with Affixes. With Gem Dust, Rarity Materials, and an Affixed Item you can reroll the affixes for a cost of EXP. This can also be used to change the Rarity of the Affixed item up to Rare"]
+			description: ["Fuel for the &eReforging Tables&r"]
 			id: "3D3C18A1B60E15E2"
 			rewards: [
 				{
@@ -289,6 +323,7 @@
 		}
 		{
 			dependencies: ["738FB4AC92679507"]
+			description: ["The &eAugmenting Table&r allows you to level up or switch the affixes on your affixed items. "]
 			id: "54249B79B4545AB3"
 			rewards: [
 				{
@@ -323,6 +358,7 @@
 				"096AFAAD5FEE3804"
 				"738FB4AC92679507"
 			]
+			description: ["Fuel for the &eAugmenting Table&r"]
 			id: "3280B896CEBBD676"
 			rewards: [
 				{
@@ -389,7 +425,7 @@
 		}
 		{
 			dependencies: ["5A0305BB1F8EA932"]
-			description: ["To get Gem Dust you need an Apotheosis Gem and an anvil. Any Apotheosis Gem (Recommended only common and uncommon). Once you get your gems smash them with a falling anvil! Then to make this easier make a Salvaging Table."]
+			description: ["To get &eGem Dust&r you need an Apotheosis Gem and an &eAnvil&r. Any Apotheosis Gem (Recommended only &7common&r and &2uncommon&r). Once you get your gems smash them with a falling &eAnvil&r! Then to make this easier make a &eSalvaging Table&r"]
 			id: "40926361B5A17F74"
 			rewards: [
 				{
@@ -421,7 +457,7 @@
 		}
 		{
 			dependencies: ["5A0305BB1F8EA932"]
-			description: ["Using a Smithing Table, socket a Gem into an affixed item"]
+			description: ["Using a &eSmithing Table&r, socket a gem into an affixed item"]
 			id: "359E1FFAB18FE50F"
 			rewards: [
 				{
@@ -450,7 +486,7 @@
 		{
 			dependencies: ["40926361B5A17F74"]
 			description: [
-				"To increase your gem's rarity and power, combine the following items in the Gem Cutting Table:"
+				"To increase your gem's rarity and power, combine the following items in the &eGem Cutting Table&r:"
 				""
 				"- 2 of the same gem"
 				"- Some gem dust"
@@ -490,7 +526,7 @@
 				"544011D1C48D8E65"
 				"5867B73950D4726A"
 			]
-			description: ["Using the Gem Cutting Table, upgrade a Mythic Gem to an Ancient Gem"]
+			description: ["Using the &eGem Cutting Table&r, upgrade a &6Mythic&r Gem to an &dAncient&r Gem"]
 			id: "4052849FD3742BEC"
 			rewards: [
 				{
@@ -518,7 +554,7 @@
 		}
 		{
 			dependencies: ["40926361B5A17F74"]
-			description: [""]
+			description: ["Slate used to craft all the sigils"]
 			id: "096AFAAD5FEE3804"
 			rewards: [
 				{
@@ -544,7 +580,7 @@
 		}
 		{
 			dependencies: ["096AFAAD5FEE3804"]
-			description: [""]
+			description: ["Removes/deletes socketed gems from an item when combined in the &eSmithing Table&r"]
 			id: "5AAD90931C2AAAC7"
 			rewards: [
 				{
@@ -565,12 +601,20 @@
 				item: "apotheosis:sigil_of_withdrawal"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["096AFAAD5FEE3804"]
-			description: [""]
+			description: [
+				"Adds socket slots (up to 3) when combined with an affixed item in the &eSmithing Table&r"
+				""
+				"In the endgame, you have a few options to get above 3 sockets:"
+				""
+				"To get 4 sockets you can either affix an item up to &dancient&r or combine an affixed item with a &dLost Illusion&r in the &eSmithing Table&r"
+				""
+				"The only way to get 5 sockets is to combine an affixed item with a &dManifest Illusion&r in the &eSmithing Table&r"
+			]
 			id: "490F89FCFE2563E2"
 			rewards: [
 				{
@@ -591,13 +635,19 @@
 				item: "apotheosis:sigil_of_socketing"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: [
 				"57AC67D41845FC18"
 				"738FB4AC92679507"
+			]
+			description: [
+				"Material for &dancient&r affixes \\& gems"
+				""
+				"Obtainment:"
+				"  - Combine &6Godforged Pearl&r with &dEternal Crystal Shard&r in the &5Ancient Fusion Anvil&r"
 			]
 			id: "5867B73950D4726A"
 			rewards: [

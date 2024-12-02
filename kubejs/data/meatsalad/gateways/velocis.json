@@ -215,8 +215,8 @@
   "rewards": [
     {
       "type": "gateways:command",
-      "command": "give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:\"meatsalad:supreme\",LootTable:\"meatsalad:bags/supreme\"}}",
-      "desc": "rewards.meatsalad.loot_table.supreme"
+      "command": "give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:\"meatsalad:velocis\",LootTable:\"meatsalad:bags/velocis\"}}",
+      "desc": "rewards.meatsalad.loot_table.velocis"
     },
     {
       "type": "gateways:experience",

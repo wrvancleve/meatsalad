@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "§6§kMaestris§r§r Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/maestris",
+  "rarity": "rare",
+  "bagColor": "#F08000",
+  "bagOverlayColor": "#FFBF00",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

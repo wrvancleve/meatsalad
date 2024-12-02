@@ -51,16 +51,26 @@ ServerEvents.genericLootTables((event) => {
     addLootTablePool(loot, {type: "misc", name: "very_rare/random"})
     addLootTablePool(loot, {type: "misc", name: "very_rare/random_chance"}, [5, 10])
   })
-  event.addGeneric("meatsalad:bags/supreme", loot => {
-    addStackLootPool(loot, {item: "meatsalad:dark_matter", min: 2, max: 3})
-    addLootTablePool(loot, {type: "affix_materials", name: "max"}, [3, 5])
-    addLootTablePool(loot, {type: "gems", name: "random_max"}, [3, 5])
-    loot.addPool(pool => {
-      pool.rolls = [2, 3]
-      addStack(pool, {item: "irons_spellbooks:legendary_ink", max: 4}, {weight: 2})
-      addStack(pool, {item: "irons_spellbooks:ancient_knowledge_fragment", max: 3}, {weight: 1})
+  const chaosGates = [
+    'arcanis',
+    'maestris',
+    'sentis',
+    'stalgaris',
+    'velocis',
+  ]
+  chaosGates.forEach(chaosType => {
+    event.addGeneric(`meatsalad:bags/${chaosType}`, loot => {
+      addStackLootPool(loot, {item: `meatsalad:${chaosType}_stone`})
+      addStackLootPool(loot, {item: "meatsalad:dark_matter", min: 2, max: 3})
+      addLootTablePool(loot, {type: "affix_materials", name: "max"}, [3, 5])
+      addLootTablePool(loot, {type: "gems", name: "random_max"}, [3, 5])
+      loot.addPool(pool => {
+        pool.rolls = [2, 3]
+        addStack(pool, {item: "irons_spellbooks:legendary_ink", max: 4}, {weight: 2})
+        addStack(pool, {item: "irons_spellbooks:ancient_knowledge_fragment", max: 3}, {weight: 1})
+      })
+      addLootTablePool(loot, {type: "misc", name: "very_rare/random"}, [3, 5])
     })
-    addLootTablePool(loot, {type: "misc", name: "very_rare/random"}, [3, 5])
   })
 
   for (let [boss, {maxChaosLevel}] of Object.entries(global.BOSSES)) {
@@ -75,7 +85,14 @@ ServerEvents.genericLootTables((event) => {
         addLootTablePool(loot, baseLootTable)
         if (chaosLevel > 0) {
           addStackLootPool(loot, {item: "meatsalad:chaos_shard", min: (0 + chaosLevel), max: (2 * chaosLevel)})
-          addStackLootPool(loot, {item: "gateways:gate_pearl", nbt: "{gateway: \"meatsalad:supreme\"}"}, {weight: (25 * chaosLevel)})
+          let totalGateWeight = 25 * chaosLevel
+          let singleGateWeight = totalGateWeight / chaosGates.length
+          loot.addPool(pool => {
+            pool.addEmpty(100 - totalGateWeight)
+            chaosGates.forEach(chaosType => {
+              addStack(pool, {item: "gateways:gate_pearl", nbt: `{gateway: "meatsalad:${chaosType}"}`}, {weight: singleGateWeight})
+            })
+          })
           if (chaosLevel >= 3) {
             addStackLootPool(loot, {item: "meatsalad:lost_illusion"})
           }

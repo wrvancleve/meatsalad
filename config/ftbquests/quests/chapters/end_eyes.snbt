@@ -80,7 +80,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["Obtained from loot chests of Pillager Outposts or other Illager Structures (Overworld)"]
+			description: ["Obtained from loot chests of Pillager Outposts (Overworld)"]
 			id: "702D2E2433677F56"
 			rewards: [
 				{

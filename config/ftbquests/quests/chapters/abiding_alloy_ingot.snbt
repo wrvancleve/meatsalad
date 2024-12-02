@@ -5,8 +5,14 @@
 	group: "382D29DACC0FCEC1"
 	icon: "meatsalad:abiding_alloy_ingot"
 	id: "0BF56521B2B8CF94"
-	order_index: 0
-	quest_links: [ ]
+	order_index: 1
+	quest_links: [{
+		id: "220241F4F11F766A"
+		linked_quest: "3C9C356BDB6A5819"
+		shape: "diamond"
+		x: 0.0d
+		y: 4.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -83,7 +89,7 @@
 			y: 3.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained from the &9&kArcanis&r &9Gateway&r"]
 			id: "392009A0EE0F176B"
 			rewards: [
 				{
@@ -135,7 +141,7 @@
 			y: 2.5d
 		}
 		{
-			description: [""]
+			description: ["Obtained from the &6&kMaestris&r &6Gateway&r"]
 			id: "1103AAAFE1DED587"
 			rewards: [
 				{
@@ -213,7 +219,7 @@
 			y: -3.0d
 		}
 		{
-			description: [""]
+			description: ["Obtained from the &5&kSentis&r &5Gateway&r"]
 			id: "76057DF28EF35DEA"
 			rewards: [
 				{
@@ -291,7 +297,7 @@
 			y: 3.0d
 		}
 		{
-			description: [""]
+			description: ["Obtained from the &c&kStalgaris&r &cGateway&r"]
 			id: "71197B7EFA652F39"
 			rewards: [
 				{
@@ -371,7 +377,7 @@
 			y: 0.0d
 		}
 		{
-			description: [""]
+			description: ["Obtained from the &2&kVelocis&r &2Gateway&r"]
 			id: "5909768561A84016"
 			rewards: [
 				{
@@ -861,6 +867,7 @@
 			y: -2.0d
 		}
 		{
+			description: ["Used to craft many endgame items"]
 			id: "7F9256C5E4CA6060"
 			rewards: [
 				{
@@ -885,31 +892,6 @@
 			}]
 			x: 0.0d
 			y: 6.0d
-		}
-		{
-			id: "3C9C356BDB6A5819"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "7E3BEF73851187D0"
-					type: "xp"
-					xp: 40
-				}
-				{
-					exclude_from_claim_all: true
-					id: "55ACFFE43FFB6FC3"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "41B464E6DFC89055"
-				item: "meatsalad:chaos_shard"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["45A9D19462AB5258"]

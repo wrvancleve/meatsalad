@@ -21,7 +21,7 @@ JEIEvents.information(event => {
     Text.of('Obtained by killing Maledictus.'),
     Text.of('Maledictus is located in the Frosted Prison (Overworld).'),
   ])
-  event.addItem('endrem:corrupted_eye', Text.of('Obtained from loot chests in Pillager Outposts or other Illager Structures.'))
+  event.addItem('endrem:corrupted_eye', Text.of('Obtained from loot chests in Pillager Outposts.'))
   event.addItem('endrem:cursed_eye', Text.of('Obtained from loot chests in Nether Bastions.'))
   event.addItem('endrem:evil_eye', [
     Text.of('Obtained by killing the Netherite Monstrosity.'),

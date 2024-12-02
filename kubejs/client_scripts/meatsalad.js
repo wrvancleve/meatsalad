@@ -30,7 +30,11 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'rewards.meatsalad.loot_table.magic', 'Magic Loot')
   event.add('meatsalad', 'rewards.meatsalad.loot_table.otherside', 'The Other Loot')
   event.add('meatsalad', 'rewards.meatsalad.loot_table.outer_end', 'End Loot')
-  event.add('meatsalad', 'rewards.meatsalad.loot_table.supreme', '§kSupreme§r Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.arcanis', '§9§kArcanis§r§r Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.maestris', '§6§kMaestris§r§r Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.sentis', '§5§kSentis§r§r Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.stalgaris', '§c§kStalgaris§r§r Loot')
+  event.add('meatsalad', 'rewards.meatsalad.loot_table.velocis', '§2§kVelocis§r§r Loot')
 
   // Extra Summon Entity Names
   event.add('meatsalad', 'name.meatsalad.ancient_remnant_1', 'Ancient Remnant+')

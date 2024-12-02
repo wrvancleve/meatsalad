@@ -5,7 +5,7 @@
 	group: "382D29DACC0FCEC1"
 	icon: "meatsalad:infinity_fabric"
 	id: "403A066B92C66FDF"
-	order_index: 2
+	order_index: 3
 	quest_links: [
 		{
 			id: "11BD1A3DF10646DF"
@@ -23,6 +23,15 @@
 			x: 3.0d
 			y: -0.75d
 		}
+		{
+			disable_toast: true
+			id: "7861E321D917B2BF"
+			linked_quest: "247AF042969020F5"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -32,7 +41,7 @@
 				"57AC67D41845FC18"
 				"0DA3403E64E63089"
 				"50650CC76A9935EC"
-				"25D533B5F7657F39"
+				"247AF042969020F5"
 			]
 			hide_details_until_startable: false
 			id: "2CA0273F29B2DAC8"
@@ -118,6 +127,7 @@
 			y: 3.5d
 		}
 		{
+			description: ["Matter that has unique properties that allows it to craft many things"]
 			id: "597F049F648EC535"
 			rewards: [
 				{
@@ -148,7 +158,13 @@
 				"1D0DB72145C53568"
 				"07B6A5B53A1FD6E1"
 			]
-			description: ["Obtained by killing Herobrine"]
+			description: [
+				"Endgame material that has many usages. Obtained by killing Herobrine. Herobrine can be summoned by placing 3 blocks on top of each other in a specific order:"
+				""
+				"Bottom: &eHerobrine Blue&r"
+				"Middle: &eHerobrine Cyan&r"
+				"Top: &eCarved Pumpkin&r"
+			]
 			id: "649779F5BA9CF6E3"
 			rewards: [
 				{
@@ -226,33 +242,6 @@
 			}]
 			x: -3.0d
 			y: -1.0d
-		}
-		{
-			description: ["Obtained by killing Level 3 Chaos Bosses"]
-			id: "25D533B5F7657F39"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "243CF4BCD81FEAD1"
-					type: "xp"
-					xp: 50
-				}
-				{
-					exclude_from_claim_all: true
-					id: "318000B507BFEDF5"
-					table_id: 3670248595616648664L
-					type: "loot"
-				}
-			]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "457875EAA6D732F3"
-				item: "meatsalad:lost_illusion"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.0d
 		}
 	]
 	title: "Infinity Fabric"
