@@ -1,0 +1,23 @@
+{
+  "target": "awakened_bosses:prowler",
+  "attributes": [
+    {
+      "id": "attributeslib:armor_shred",
+      "modifier_name": "Armor Shred",
+      "amount": 1.0,
+      "operation": "addition"
+    },
+    {
+      "id": "attributeslib:prot_shred",
+      "modifier_name": "Armor Prot Shred",
+      "amount": 1.0,
+      "operation": "addition"
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "modifier_name": "Attack Damage",
+      "amount": 7.0,
+      "operation": "addition"
+    }
+  ]
+}

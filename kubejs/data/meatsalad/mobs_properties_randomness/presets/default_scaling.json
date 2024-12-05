@@ -33,6 +33,22 @@
       }
     },
     {
+      "id": "attributeslib:arrow_damage",
+      "modifier_name": "Tier One More Arrow Damage",
+      "amount": 0.25,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_nether"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
       "id": "minecraft:generic.max_health",
       "modifier_name": "Tier Two More Health",
       "amount": 0.5,
@@ -65,6 +81,22 @@
       }
     },
     {
+      "id": "attributeslib:arrow_damage",
+      "modifier_name": "Tier Two More Arrow Damage",
+      "amount": 0.25,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_other"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
       "id": "minecraft:generic.max_health",
       "modifier_name": "Tier Three More Health",
       "amount": 0.5,
@@ -83,6 +115,22 @@
     {
       "id": "minecraft:generic.attack_damage",
       "modifier_name": "Tier Three More Damage",
+      "amount": 0.5,
+      "operation": "multiply_base",
+      "conditions": {
+        "game_stages_unlocked": [
+          {
+            "game_stages": [
+              "the_end"
+            ],
+            "player_mode": "any"
+          }
+        ]
+      }
+    },
+    {
+      "id": "attributeslib:arrow_damage",
+      "modifier_name": "Tier Three More Arrow Damage",
       "amount": 0.5,
       "operation": "multiply_base",
       "conditions": {

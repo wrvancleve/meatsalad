@@ -1,37 +1,70 @@
-const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-const DAMAGE_TYPE = $ResourceKey.createRegistryKey('damage_type')
+const MAGIC_DAMAGES = new Set([
+  'magic',
+  'blood_magic',
+  'dragon_breath_pool',
+  'eldritch_magic',
+  'ender_magic',
+  'evocation_magic',
+  'fire_field',
+  'fire_magic',
+  'holy_magic',
+  'ice_magic',
+  'lightning_magic',
+  'nature_magic',
+  'poison_cloud',
+])
+const PHYSICAL_DAMAGES = new Set([
+  'player',
+  'mob',
+  'attributeslib:current_hp_damage',
+])
 
-function getDamageSource(level, damageType, attacker) {
-  const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType))
-  const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey)
-  return new DamageSource(holder, attacker, attacker)
-}
-
-const getCustomDamageSource = (attacker) => {
-  const level = attacker.getLevel()
-  if (level.isClientSide()) return
-  const entityType = attacker.type.split(':').pop()
-  return getDamageSource(level, `meatsalad:${entityType}`, attacker)
-}
-
-const CHAOS_ENTITIES = [
-  'awakened_bosses:herobrine',
-  'awakened_bosses:herobrine_minion',
-  'awakened_bosses:mahva',
-  'awakened_bosses:prowler',
-  'awakened_bosses:reeker',
-]
-
-EntityEvents.hurt((event) => {
-  // Use only to cancel
-  if (event.source.getType() == 'mob' && CHAOS_ENTITIES.includes(event.source.actual.type)) {
-    let damage = event.getDamage()
-    event.entity.attack(getCustomDamageSource(event.source.actual), damage)
-    event.cancel()
-  }
+global.DAMAGE_TYPES = Object.freeze({
+  PHYSICAL: 0,
+  RANGED: 1,
+  MAGIC: 2,
+  OTHER: 3
 })
 
-const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
+global.getDamageType = (damageSource) => {
+  let damageName = damageSource.getType() + ''
+  if (PHYSICAL_DAMAGES.has(damageName)) {
+    return global.DAMAGE_TYPES.PHYSICAL
+  } else if (damageName == 'arrow') {
+    return global.DAMAGE_TYPES.RANGED
+  } else if (MAGIC_DAMAGES.has(damageName)) {
+    return global.DAMAGE_TYPES.MAGIC
+  } else {
+    return global.DAMAGE_TYPES.OTHER
+  }
+}
+
+function checkPardonOfGodEntityHurt(event) {
+  let entity = event.entity
+  const damageType = global.getDamageType(event.source)
+  if (damageType == global.DAMAGE_TYPES.PHYSICAL) {
+    if (entity.hasEffect('meatsalad:pardon_of_god_melee')) {
+      event.amount = 0
+    }
+  } else if (damageType == global.DAMAGE_TYPES.RANGED) {
+    if (entity.hasEffect('meatsalad:pardon_of_god_projectile')) {
+      event.amount = 0
+    }
+  } else if (damageType == global.DAMAGE_TYPES.MAGIC) {
+    if (entity.hasEffect('meatsalad:pardon_of_god_magic')) {
+      event.amount = 0
+    }
+  }
+}
+
+global.LivingHurt = (event) => {
+  if (event.entity.type == 'awakened_bosses:herobrine' && event.source.getType() !== 'genericKill') {
+    // Apply damage cap for Herobrine
+    event.setAmount(Math.min(event.getAmount(), 35))
+  }
+
+  checkPardonOfGodEntityHurt(event)
+}
 
 global.LivingHurtByPlayer = (event) => {
   const player = event.source.player
@@ -50,6 +83,8 @@ global.LivingHurtByPlayer = (event) => {
     }
   }
 }
+
+const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
 
 global.PlayerDamagedByOthers = (event) => {
   const player = event.entity
@@ -70,6 +105,87 @@ global.PlayerDamagedByOthers = (event) => {
       event.amount *= 0.9
     } else if (healthPercent <= .9) {
       event.amount *= 0.95
+    }
+  }
+}
+
+const getRandomEffect = (godEntity, otherEntity, fullEffectList) => {
+  const effectList = fullEffectList.slice()
+  let effect = null
+
+  const healthPercent = godEntity.health / godEntity.maxHealth
+  let effectChance = 0.0
+  let amplifier = 0
+  if (healthPercent <= 0.15) {
+    effectChance = 1.0
+    amplifier = 2
+  } else if (healthPercent <= 0.33) {
+    effectChance = 0.5
+    amplifier = 1
+  } else if (healthPercent <= 0.67) {
+    effectChance = 0.15
+  } else if (healthPercent <= 0.8) {
+    effectChance = 0.05
+  }
+
+  if (Math.random() <= effectChance) {
+    do {
+      effect = global.randomGet(effectList)
+      if (otherEntity.hasEffect(effect.id)) {
+        effectList.splice(effectList.findIndex(e => e.id === effect.id), 1)
+        effect = null
+      }
+    } while (effectList.length > 0 && effect === null)
+    if (effect && amplifier) {
+      effect = {
+        id: effect.id,
+        amplifier: effect.amplifier + amplifier,
+        duration: effect.duration
+      }
+    }
+  }
+
+  return effect
+}
+
+const hasGodEffect = (entity) => {
+  return entity.hasEffect('meatsalad:glimpse_of_god')
+    || entity.hasEffect('meatsalad:gaze_of_god')
+    || entity.hasEffect('meatsalad:glare_of_god')
+}
+
+const DAMAGED_EFFECTS = [
+  {id: 'minecraft:blindness', amplifier: 0, duration: 5},
+  {id: 'attributeslib:sundering', amplifier: 0, duration: 5},
+  {id: 'cataclysm:curse_of_desert', amplifier: 0, duration: 3},
+  {id: 'cofh_core:sundered', amplifier: 0, duration: 5},
+  {id: 'cofh_core:wrenched', amplifier: 2, duration: 1},
+  {id: 'irons_spellbooks:blight', amplifier: 2, duration: 5},
+  {id: 'irons_spellbooks:slowed', amplifier: 1, duration: 5},
+  {id: 'meatsalad:magic_forbiden', amplifier: 0, duration: 1},
+]
+
+global.GodEntityDamagedByOthers = (event) => {
+  if (hasGodEffect(event.entity) && event.source.actual) {
+    const effectToApply = getRandomEffect(event.entity, event.source.actual, DAMAGED_EFFECTS)
+    if (effectToApply) {
+      event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, false)
+    }
+  }
+}
+
+const ON_ATTACK_EFFECTS = [
+  {id: 'minecraft:wither', amplifier: 4, duration: 5},
+  {id: 'minecraft:poison', amplifier: 4, duration: 5},
+  {id: 'attributeslib:bleeding', amplifier: 4, duration: 5},
+  {id: 'cataclysm:abyssal_curse', amplifier: 4, duration: 5},
+]
+
+global.OthersDamagedByGodEntity = (event) => {
+  if (event.source.actual && hasGodEffect(event.source.actual)) {
+    const effectToApply = getRandomEffect(event.source.actual, event.entity, ON_ATTACK_EFFECTS)
+    if (effectToApply) {
+      event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, false)
     }
   }
 }

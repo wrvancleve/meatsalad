@@ -12,6 +12,18 @@
       "modifier_name": "More Attack Range",
       "amount": 1.0,
       "operation": "multiply_base"
+    },
+    {
+      "id": "attributeslib:armor_shred",
+      "modifier_name": "Armor Shred",
+      "amount": 1.0,
+      "operation": "addition"
+    },
+    {
+      "id": "attributeslib:prot_shred",
+      "modifier_name": "Armor Prot Shred",
+      "amount": 1.0,
+      "operation": "addition"
     }
   ],
   "potion_effects": [
@@ -26,155 +38,5 @@
       "amplifier": 0,
       "hide_particles": true
     }
-  ],
-  "events": {
-    "on_damaged": [
-      {
-        "target": "other",
-        "health_left": 0.8,
-        "potion_effects": [
-          {
-            "id": "minecraft:slowness",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "minecraft:weakness",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "attributeslib:grievous",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "attributeslib:sundering",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:blazing_brand",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:bone_fracture",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          }
-        ]
-      },
-      {
-        "target": "this",
-        "health_left": 0.4,
-        "potion_effects": [
-          {
-            "id": "minecraft:regeneration",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.5
-          }
-        ]
-      },
-      {
-        "target": "other",
-        "health_left": 0.4,
-        "potion_effects": [
-          {
-            "id": "minecraft:blindness",
-            "amplifier": 1,
-            "duration": 10,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:abyssal_burn",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:abyssal_curse",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:abyssal_fear",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          }
-        ]
-      }
-    ],
-    "on_attack": [
-      {
-        "target": "this",
-        "health_left": 0.4,
-        "potion_effects": [
-          {
-            "id": "minecraft:regeneration",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.5
-          }
-        ]
-      },
-      {
-        "target": "other",
-        "health_left": 0.4,
-        "potion_effects": [
-          {
-            "id": "meatsalad:magic_forbiden",
-            "amplifier": 0,
-            "duration": 10,
-            "chance": 0.05
-          },
-          {
-            "id": "minecraft:slowness",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "minecraft:weakness",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "attributeslib:grievous",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "attributeslib:sundering",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:blazing_brand",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          },
-          {
-            "id": "cataclysm:bone_fracture",
-            "amplifier": 4,
-            "duration": 5,
-            "chance": 0.025
-          }
-        ]
-      }
-    ]
-  }
+  ]
 }
