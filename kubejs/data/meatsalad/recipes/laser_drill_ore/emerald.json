@@ -12,18 +12,6 @@
       "whitelist": {
         "type": "minecraft:worldgen/biome",
         "values": [
-          "terralith:emerald_peaks"
-        ]
-      },
-      "blacklist": {},
-      "depth_min": 110,
-      "depth_max": 255,
-      "weight": 30
-    },
-    {
-      "whitelist": {
-        "type": "minecraft:worldgen/biome",
-        "values": [
           "allthemodium:soul_sand_valley",
           "allthemodium:desert_hills",
           "allthemodium:desert",

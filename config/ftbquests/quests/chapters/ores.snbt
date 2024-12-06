@@ -1,0 +1,2695 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ores"
+	group: ""
+	icon: "minecraft:diamond_ore"
+	id: "359A1AF4FD873536"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 320 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    -24 to 320 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eBirch Forest \\& Mountains&r"
+				"    Y: &e232&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 15] 80 to 255 (Any Biome)"
+				"    [Weight: 10] -63 to 79 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 12] 112 to 175"
+				"    [Weight: 10] 176 to 247"
+				"    [Weight: 9] 1 to 111"
+				""
+				"  &3Other:&r"
+				"    [Weight: 8] -24 to 255 (Any Biome)"
+			]
+			id: "22ABF111F71B92B5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5780C715DAD82731"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "49AFEC7BCBFBBBE8"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "46A6E357F04293CC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/iron"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/iron"
+								}
+							}
+						]
+					}
+				}
+				title: "Iron Ore"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    0 to 320 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    128 to 320 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eDesert \\& Savanna&r"
+				"    Y: &e136 to 192&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 20] 136 to 192 (Any Biome)"
+				"    [Weight: 15] 193 to 255 (Any Biome)"
+				"    [Weight: 10] 0 to 135 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 12] 176 to 247"
+				"    [Weight: 10] 1 to 175"
+				""
+				"  &3Other:&r"
+				"    [Weight: 10] 136 to 255 (Any Biome)"
+			]
+			id: "560E9787FDF29CAB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7C9CE381C9F5CC34"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28F7B8A17C24C154"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "549849758D6C1E00"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/coal"
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:coal"
+							}
+						]
+					}
+				}
+				title: "Coal Ore"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 112 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    48 to 207"
+				""
+				"  &3Other:&r"
+				"    -16 to 112 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eOceans&r"
+				"    Y: &e48&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 4] -16 to 112 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 8] 48 to 207"
+				""
+				"  &3Other:&r"
+				"    [Weight: 6] -16 to 112 (Any Biome)"
+			]
+			id: "2433EDC68C2220CA"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "789EED523033E222"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31D2F0A2930E2949"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "4945BF58F0230DD7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/copper"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/copper"
+								}
+							}
+						]
+					}
+				}
+				title: "Copper Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    -63 to 127"
+				""
+				"  &cNether:&r"
+				"    10 to 247 (Any Biome)"
+				""
+				"  &3Other:&r"
+				"    -54 to 310 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eBadlands&r"
+				"    Y: &e32 to 256&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 10] 32 to 255 (Badlands)"
+				"    [Weight: 4] -63 to -48 (Any Biome)"
+				"    [Weight: 3] -47 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 6] 32 to 63"
+				"    [Weight: 4] -63 to 0"
+				"    [Weight: 3] 64 to 127"
+				"    [Weight: 2] 1 to 31"
+				""
+				"  &cNether:&r"
+				"    [Weight: 5] 10 to 247"
+				""
+				"  &3Other:&r"
+				"    [Weight: 8] -54 to 255 (Any Biome)"
+			]
+			id: "4DC56A74B6657670"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5777BA86DB5A6FCB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B77C18C1E6F08A5"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "07E7738E9CFEA76F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/gold"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/gold"
+								}
+							}
+						]
+					}
+				}
+				title: "Gold Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 15 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 111"
+				""
+				"  &3Other:&r"
+				"    -63 to 129 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eSwamp&r"
+				"    Y: &e-63 to -32&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 5] -63 to -32 (Any Biome)"
+				"    [Weight: 4] -31 to 15 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 4] 1 to 47"
+				"    [Weight: 3] 48 to 111"
+				""
+				"  &3Other:&r"
+				"    [Weight: 6] -63 to 15 (Any Biome)"
+			]
+			id: "7AD372494A6C1CB0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "45DE9A3685D2D14B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1592448A212B83E3"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "35DB7DCD9E687E8E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/redstone"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:dusts/redstone"
+								}
+							}
+						]
+					}
+				}
+				title: "Redstone Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 320 (Mountain \\& Windswept Hill Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    -63 to 129 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eMountain \\& Windswept Hill Biomes&r"
+				"    Y: &e232&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -16 to 255 (Mountain \\& Windswept Hill Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 4] 112 to 175"
+				"    [Weight: 2] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+				""
+				"  &3Other:&r"
+				"    [Weight: 4] -16 to 255 (Any Biome)"
+			]
+			id: "3A250445DECCC47F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3C980D0B76FC98D1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FB484A864D77384"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "1530D12459DC87AE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/emerald"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/emerald"
+								}
+							}
+						]
+					}
+				}
+				title: "Emerald Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 64 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    16 to 143"
+				""
+				"  &3Other:&r"
+				"    -63 to 64 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eDark Forest \\& Taiga Biomes&r"
+				"    Y: &e-24&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 4] -32 to 32 (Any Biome)"
+				"    [Weight: 2] -63 to 33 (Any Biome)"
+				"    [Weight: 2] 33 to 64 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 48 to 111"
+				"    [Weight: 2] 112 to 143"
+				"    [Weight: 2] 16 to 47"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 64 (Any Biome)"
+			]
+			id: "1C5E100221CDEB1C"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3C67DE2BB9D6D83D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20EC914649EBED79"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "6C3861DD10069A58"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/lapis"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/lapis"
+								}
+							}
+						]
+					}
+				}
+				title: "Lapis Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 16 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 95"
+				""
+				"  &3Other:&r"
+				"    -63 to 129 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eJungle&r"
+				"    Y: &e-63 to -53&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 14 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 5] 1 to 31"
+				"    [Weight: 3] 32 to 95"
+				""
+				"  &3Other:&r"
+				"    [Weight: 6] 10 to 129 (Any Biome)"
+			]
+			id: "2824496AAE434505"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "245AF7F0EB924B6C"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "051A47EFE04FEF36"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "4BD1A5CE6F4AD62A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/diamond"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/diamond"
+								}
+							}
+						]
+					}
+				}
+				title: "Diamond Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &aMining Dim:&r"
+				"    -63 to 0"
+				""
+				"  &cNether:&r"
+				"    10 to 247 (Any Biome)"
+				""
+				"  &3Other:&r"
+				"    -54 to 310 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &cNether&r"
+				"    Biome: &eBasalt Deltas or Any&r"
+				"    Y: &e10 to 247&r"
+				""
+				"&6Laser Drill:&r"
+				"  &aMining Dim:&r"
+				"    [Weight: 12] -63 to 0"
+				""
+				"  &cNether:&r"
+				"    [Weight: 12] 10 to 247 (Any Biome)"
+				""
+				"  &3Other:&r"
+				"    [Weight: 7] 0 to 255 (Any Biome)"
+			]
+			id: "3ADC94C5C7FD1EB6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "75C3281CC9B86AC9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11DDDBBB2423636D"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "2DB7A66F15D5C998"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/quartz"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/quartz"
+								}
+							}
+						]
+					}
+				}
+				title: "Quartz Ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &aMining Dim:&r"
+				"    -55 to -39"
+				""
+				"  &cNether:&r"
+				"    8 to 24 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &cNether&r"
+				"    Biome: &eAny&r"
+				"    Y: &e15&r"
+				""
+				"&6Laser Drill:&r"
+				"  &aMining Dim:&r"
+				"    [Weight: 1] -55 to -39"
+				""
+				"  &cNether:&r"
+				"    [Weight: 2] 8 to 24 (Any Biome)"
+			]
+			id: "6C266C6DBD407ADC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7B634DDDF72111EA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "099558255AC5EBEA"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "5ACEDDCCC211A489"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/netherite_scrap"
+					}
+				}
+				title: "Ancient Debris"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 143"
+				""
+				"  &3Other:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-4&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 1 to 143"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+			]
+			id: "6CF70F8E359D808C"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "415EDDB09A01F275"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F44AD901D38DCAD"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "04D78F633D28F7F7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/lead"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/lead"
+								}
+							}
+						]
+					}
+				}
+				title: "Lead Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 143"
+				""
+				"  &3Other:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-4&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 1 to 143"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+			]
+			id: "3202B71F0A451F7F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3107756849072DDB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45D6B9B546410574"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "10A3B9D7A6594137"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/nickel"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/nickel"
+								}
+							}
+						]
+					}
+				}
+				title: "Nickel Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 143"
+				""
+				"  &3Other:&r"
+				"    -63 to 56 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-4&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 1 to 143"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 56 (Any Biome)"
+			]
+			id: "1EFFE15A422647C0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6356D48CE1FB6F2E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09A539760638BBB7"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "053FE4C1192B5099"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/silver"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/silver"
+								}
+							}
+						]
+					}
+				}
+				title: "Silver Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    50 to 120 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    112 to 207"
+				""
+				"  &3Other:&r"
+				"    -16 to 112 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e159&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 4] 50 to 120 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 112 to 207"
+				""
+				"  &3Other:&r"
+				"    [Weight: 5] -16 to 112 (Any Biome)"
+			]
+			id: "11534CE85A2F69DB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6AE7EAE02407CE68"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C860E4696669F80"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "1526B07C68D90609"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/aluminum"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/aluminum"
+								}
+							}
+						]
+					}
+				}
+				title: "Aluminum Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 36 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 111"
+				""
+				"  &3Other:&r"
+				"    -63 to 36 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e57&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 36 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 1 to 111"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 36 (Any Biome)"
+			]
+			id: "3B4BA23FAEEA5FD6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0266332859F62C39"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79F9B9BE6FA5554F"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "0734D526A00E2C0A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/osmium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/osmium"
+								}
+							}
+						]
+					}
+				}
+				title: "Osmium Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 36 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 95"
+				""
+				"  &3Other:&r"
+				"    -63 to 129 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e49&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -63 to 36 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 1] 1 to 95"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 129 (Any Biome)"
+			]
+			id: "3F6350A9337C9D56"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "177570538709EB7F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21427358D277E884"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "0449974799F9FB0B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/platinum"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/platinum"
+								}
+							}
+						]
+					}
+				}
+				title: "Platinum Ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 196 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 207"
+				""
+				"  &3Other:&r"
+				"    -63 to 196 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e105&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 4] -63 to 196 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 1 to 207"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 196 (Any Biome)"
+			]
+			id: "29F81DE8E35F55C4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "58D8C94662D48F27"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2490D5AA1F3A6917"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "1C4382E6F869ECC8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/tin"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/tin"
+								}
+							}
+						]
+					}
+				}
+				title: "Tin Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 16 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    -7 to 175"
+				""
+				"  &3Other:&r"
+				"    -63 to 175 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e-7 to 8&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 196 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 6] -7 to 0"
+				"    [Weight: 4] 1 to 8"
+				"    [Weight: 2] 9 to 175"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -63 to 175 (Any Biome)"
+			]
+			id: "2F9BA7F52FD32183"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5214AF2305710B0B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51E569A8DDD228AD"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "6BE3D8E6E0011722"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/uranium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/uranium"
+								}
+							}
+						]
+					}
+				}
+				title: "Uranium Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 126 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 175"
+				""
+				"  &3Other:&r"
+				"    -16 to 112 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e89&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 126 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 1 to 175"
+				""
+				"  &3Other:&r"
+				"    [Weight: 3] -16 to 112 (Any Biome)"
+			]
+			id: "3EC15C3ECE7BDDBD"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5311DCBCB2F8DF96"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "755D96521B1A5AEB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "3FC5B9705FA77171"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/zinc"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/zinc"
+								}
+							}
+						]
+					}
+				}
+				title: "Zinc Ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 143"
+				""
+				"  &3Other:&r"
+				"    -63 to 129 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &3Other&r"
+				"    Biome: &eAny&r"
+				"    Y: &e32&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 1] -63 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 1] 1 to 143"
+				""
+				"  &3Other:&r"
+				"    [Weight: 2] -63 to 129 (Any Biome)"
+			]
+			id: "31DC0D337D7E33C6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "27E91CDFFCB4402B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5CC9EF171D329E34"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "1C388E0F93412498"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/iridium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/iridium"
+								}
+							}
+						]
+					}
+				}
+				title: "Iridium Ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 228 (Warm Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    -63 to 0 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e125&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 228 (Warm Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+				""
+				"  &3Other:&r"
+				"    [Weight: 2] -63 to 0 (Any Biome)"
+			]
+			id: "2A09316A92502338"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6F938D16465239CE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0310A51874C98E85"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "7F1D410B3DF189A4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/ruby"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/ruby"
+								}
+							}
+						]
+					}
+				}
+				title: "Ruby Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 296 (Cold Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    -63 to 0 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e125&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 255 (Cold Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+				""
+				"  &3Other:&r"
+				"    [Weight: 2] -63 to 0 (Any Biome)"
+			]
+			id: "3C846027268BA7E6"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0A1AC4BB20BF1546"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5524CCEA3403508A"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "591DFEB46AC54B0C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/sapphire"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/sapphire"
+								}
+							}
+						]
+					}
+				}
+				title: "Sapphire Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 196 (Forest, Taiga \\& Plains Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &3Other:&r"
+				"    -63 to 0 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e125&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 196 (Forest, Taiga \\& Plains Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+				""
+				"  &3Other:&r"
+				"    [Weight: 2] -63 to 0 (Any Biome)"
+			]
+			id: "051D322B79ADE717"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "607FD8C6E0B3924B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FB7EBC8097D56C3"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "485FE1262047426D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/peridot"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/peridot"
+								}
+							}
+						]
+					}
+				}
+				title: "Peridot Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 228 (Desert Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eDeserts&r"
+				"    Y: &e82&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 228 (Desert Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+			]
+			id: "728B9B73DCF39727"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "01A33ACDB3F00F01"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22B1E8101272C804"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "01C05105C9D5D359"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/topaz"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/topaz"
+								}
+							}
+						]
+					}
+				}
+				title: "Topaz Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 228 (Jungle \\& Swamp Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eJungles \\& Swamps&r"
+				"    Y: &e82&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 228 (Jungle \\& Swamp Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+			]
+			id: "04DDB1DA5AA2373B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "65EE681B32C0959F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "448689C2DD9735F4"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "3B30087437869A3E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/jade"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/jade"
+								}
+							}
+						]
+					}
+				}
+				title: "Jade Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 228 (River \\& Ocean Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 247"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eRivers \\& Oceans&r"
+				"    Y: &e82&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 3] -63 to 228 (River \\& Ocean Biomes)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 112 to 175"
+				"    [Weight: 1] 1 to 111"
+				"    [Weight: 1] 176 to 247"
+			]
+			id: "1E85A8C413F982AB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3BA2B48FB7EBDABF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D8A8B088121A38E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "392A668AA57D0863"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/aquamarine"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/aquamarine"
+								}
+							}
+						]
+					}
+				}
+				title: "Aquamarine Ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 23 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 111"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-30&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 4] -63 to 23 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 3] 1 to 111"
+			]
+			id: "118FB4B843965BFF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "59E29C9B13FD1443"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A55C755443E245E"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "5AD30670712CFE8C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/fluorite"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/fluorite"
+								}
+							}
+						]
+					}
+				}
+				title: "Fluorite Ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &cNether:&r"
+				"    10 to 247 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &cNether&r"
+				"    Biome: &eCrimson Forest&r"
+				"    Y: &e10 to 247&r"
+				""
+				"&6Laser Drill:&r"
+				"  &cNether:&r"
+				"    [Weight: 8] 10 to 247 (Any Biome)"
+			]
+			id: "4FE6662642EF87D1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2CC38B3BAFEA132A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06DC5D696A85E8AB"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "6A0A154E5F7C4CCB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/crimson_iron"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/crimson_iron"
+								}
+							}
+						]
+					}
+				}
+				title: "Crimson Iron Ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &5End:&r"
+				"    8 to 376 (Any Biome)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &5End&r"
+				"    Biome: &eAny&r"
+				"    Y: &e8 to 376&r"
+				""
+				"&6Laser Drill:&r"
+				"  &5End:&r"
+				"    [Weight: 6] 8 to 255 (Any Biome)"
+			]
+			id: "7D616A63EEEED312"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6F27478CDC3DF372"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24D9A3A025690B63"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "5E1432EA85609955"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/azure_silver"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/azure_silver"
+								}
+							}
+						]
+					}
+				}
+				title: "Azure Silver Ore"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 96 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    48 to 143"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e95&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -16 to 96 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 48 to 143"
+			]
+			id: "5A2506E98B06D485"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5E72E7099819A723"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28853243E7C0433A"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "34E89A50BE976D43"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/apatite"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/apatite"
+								}
+							}
+						]
+					}
+				}
+				title: "Apatite Ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 48 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    48 to 143"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e95&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -16 to 48 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 48 to 143"
+			]
+			id: "2A6E131D99FA7A52"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6AF5E6087EE822D8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "696CECFB88A70511"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "6FF87BF768CA0DD5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/cinnabar"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/cinnabar"
+								}
+							}
+						]
+					}
+				}
+				title: "Cinnabar Ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 64 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    48 to 143"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e95&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -16 to 64 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 48 to 143"
+			]
+			id: "674493FF2263D21C"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "507133F38C9F12D0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E589249104C9D72"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "06D1B66300DD7BEC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/niter"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/niter"
+								}
+							}
+						]
+					}
+				}
+				title: "Niter Ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -16 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    48 to 143"
+				""
+				"  &dBest:&r"
+				"    Dimension: &aMining Dim&r"
+				"    Y: &e95&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -16 to 32 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 48 to 143"
+			]
+			id: "383ABF93C0CABD37"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "00D314A3AC59F020"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "193FBB092D3EFA18"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "39AF8A1C9CDAB777"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/sulfur"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:gems/sulfur"
+								}
+							}
+						]
+					}
+				}
+				title: "Sulfur Ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to -38 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    1 to 63"
+				""
+				"  &dBest:&r"
+				"    Dimension: &9Overworld&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-63 to -38&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 2] -63 to -38 (Any Biome)"
+				""
+				"  &aMining Dim:&r"
+				"    [Weight: 2] 1 to 63"
+			]
+			id: "5C8AF39D6152F002"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "49C840AE9055C4EB"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "593049F665B52366"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "5AF103ECA1DDA655"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/arcane_salvage"
+					}
+				}
+				title: "Arcane Debris"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &5End:&r"
+				"    8 to 376 (End Highlands, Crystal Peaks \\& Void Barrens)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &5End&r"
+				"    Biome: &eVoid Barrens&r"
+				"    Y: &e8 to 376&r"
+			]
+			id: "12F67115F006C768"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3C0807E8D96B902C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15C34B25C31F65ED"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "40EE6B422BA64F2F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/adamantite"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/adamantite"
+								}
+							}
+						]
+					}
+				}
+				title: "Adamantite Ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &5End:&r"
+				"    8 to 376 (End Highlands, Crystal Peaks \\& Void Barrens)"
+				""
+				"  &dBest:&r"
+				"    Dimension: &5End&r"
+				"    Biome: &eVoid Barrens&r"
+				"    Y: &e8 to 376&r"
+			]
+			id: "128FF8471768B19F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7F7E2144590DF7E7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4281BC7606FCD417"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "3CC0404F4E3019DE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/mythril"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/mythril"
+								}
+							}
+						]
+					}
+				}
+				title: "Mythril Ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &3Other:&r"
+				"    0 to 40 (Any Biome)"
+				""
+				"&6Laser Drill:&r"
+				"  &3Other:&r"
+				"    [Weight: 1] 0 to 40 (Any Biome)"
+			]
+			id: "6420B17A6D077370"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "160BB497B0AB747F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11C10F8F1D17793D"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "7D7F931BD7CDEF3D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/vibranium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/vibranium"
+								}
+							}
+						]
+					}
+				}
+				title: "Vibranium Ore"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &5End:&r"
+				"    8 to 376 (End Highlands)"
+				""
+				"&6Laser Drill:&r"
+				"  &5End:&r"
+				"    [Weight: 1] 8 to 255 (End Highlands)"
+			]
+			id: "60EBE1F53C8791DC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6EDF800D847BB53F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "748F7703A7DF688E"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "0F4D074AFB632FB4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/unobtainium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/unobtainium"
+								}
+							}
+						]
+					}
+				}
+				title: "Unobtainium Ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"&6Ore Generation:&r"
+				"  &9Overworld:&r"
+				"    -63 to 10 (Deep Dark)"
+				""
+				"  &3Other:&r"
+				"    -63 to 10"
+				""
+				"  &dBest:&r"
+				"    Dimension: &3Other&r"
+				"    Biome: &eAny&r"
+				"    Y: &e-63 to 10&r"
+				""
+				"&6Laser Drill:&r"
+				"  &9Overworld:&r"
+				"    [Weight: 1] -63 to 10 (Deep Dark)"
+			]
+			id: "499B2E57AC0D5499"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "469625D1D88A64E2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "237EFC36231D7275"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "340E61DA2C6B3582"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:ores/allthemodium"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:raw_materials/allthemodium"
+								}
+							}
+						]
+					}
+				}
+				title: "Palladium Ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+	]
+	title: "Ores"
+}

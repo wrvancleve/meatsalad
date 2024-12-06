@@ -3,6 +3,7 @@ ServerEvents.tags('block', event => {
   event.add('forge:ores', 'allthemodium:allthemodium_slate_ore')
   event.add('forge:ores', 'allthemodium:unobtainium_ore')
   event.add('forge:ores', 'allthemodium:other_vibranium_ore')
+  event.removeAllTagsFrom('allthemodium:vibranium_ore')
 })
 
 ServerEvents.tags('item', event => {
@@ -10,6 +11,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores', 'allthemodium:allthemodium_slate_ore')
   event.add('forge:ores', 'allthemodium:unobtainium_ore')
   event.add('forge:ores', 'allthemodium:other_vibranium_ore')
+  event.removeAllTagsFrom('allthemodium:vibranium_ore')
 })
 
 ServerEvents.recipes(event => {
