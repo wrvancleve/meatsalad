@@ -1,0 +1,76 @@
+{
+    "Restriction Data": {
+        "stage": "mythril_ranged_weapon",
+        "itemList": [
+            {
+                "item": "silentgear:bow",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:bow_limbs",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:mythril"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:crossbow",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:crossbow_limbs",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:mythril"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:slingshot",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:slingshot_limbs",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:mythril"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

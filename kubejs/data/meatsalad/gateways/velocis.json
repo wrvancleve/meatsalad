@@ -57,11 +57,6 @@
           "value": 0.7
         },
         {
-          "attribute": "irons_spellbooks:spell_resist",
-          "operation": "ADDITION",
-          "value": 0.5
-        },
-        {
           "type": "gateways:mob_effect",
           "effect": {
             "effect": "meatsalad:glimpse_of_god"
@@ -69,7 +64,7 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 1800,
+      "max_wave_time": 3000,
       "setup_time": 200
     },
     {
@@ -121,11 +116,6 @@
           "value": 0.7
         },
         {
-          "attribute": "irons_spellbooks:spell_resist",
-          "operation": "ADDITION",
-          "value": 0.5
-        },
-        {
           "type": "gateways:mob_effect",
           "effect": {
             "effect": "meatsalad:glimpse_of_god"
@@ -133,7 +123,7 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 1800,
+      "max_wave_time": 3000,
       "setup_time": 200
     },
     {
@@ -185,11 +175,6 @@
           "value": 0.7
         },
         {
-          "attribute": "irons_spellbooks:spell_resist",
-          "operation": "ADDITION",
-          "value": 0.5
-        },
-        {
           "type": "gateways:mob_effect",
           "effect": {
             "effect": "meatsalad:glimpse_of_god"
@@ -197,7 +182,7 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 1800,
+      "max_wave_time": 3000,
       "setup_time": 200
     },
     {
@@ -249,11 +234,6 @@
           "value": 0.7
         },
         {
-          "attribute": "irons_spellbooks:spell_resist",
-          "operation": "ADDITION",
-          "value": 0.5
-        },
-        {
           "type": "gateways:mob_effect",
           "effect": {
             "effect": "meatsalad:glimpse_of_god"
@@ -261,7 +241,7 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 1800,
+      "max_wave_time": 3000,
       "setup_time": 200
     }
   ],

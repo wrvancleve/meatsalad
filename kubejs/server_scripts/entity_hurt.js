@@ -82,6 +82,38 @@ global.LivingHurtByPlayer = (event) => {
       event.amount *= 1.05
     }
   }
+  if (player.stages.has('bowmaster_surge') && global.getDamageType(event.source) == global.DAMAGE_TYPES.RANGED) {
+    const healthPercent = player.health / player.maxHealth
+    let effectChance = 0.0
+    let maxAmplifier = 0
+    if (healthPercent <= 0.1) {
+      effectChance = 1.0
+      maxAmplifier = 9
+    } else if (healthPercent <= .25) {
+      effectChance = 0.35
+      maxAmplifier = 6
+    } else if (healthPercent <= .5) {
+      effectChance = 0.25
+      maxAmplifier = 4
+    } else if (healthPercent <= .75) {
+      effectChance = 0.15
+      maxAmplifier = 2
+    } else if (healthPercent <= .9) {
+      effectChance = 0.1
+      maxAmplifier = 1
+    }
+
+    if (player.hasEffect('meatsalad:bowmaster_surge')) {
+      const currentAmplifier = player.getEffect('meatsalad:bowmaster_surge').getAmplifier()
+      if (currentAmplifier < maxAmplifier) {
+        player.potionEffects.add('meatsalad:bowmaster_surge', 20 * (currentAmplifier + 4), currentAmplifier + 1, false, true)
+      }
+    } else {
+      if (Math.random() <= effectChance) {
+        player.potionEffects.add('meatsalad:bowmaster_surge', 60, 0, false, true)
+      }
+    }
+  }
 }
 
 const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
@@ -169,7 +201,7 @@ global.GodEntityDamagedByOthers = (event) => {
   if (hasGodEffect(event.entity) && event.source.actual) {
     const effectToApply = getRandomEffect(event.entity, event.source.actual, DAMAGED_EFFECTS)
     if (effectToApply) {
-      event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, false)
+      event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)
     }
   }
 }
@@ -185,7 +217,7 @@ global.OthersDamagedByGodEntity = (event) => {
   if (event.source.actual && hasGodEffect(event.source.actual)) {
     const effectToApply = getRandomEffect(event.source.actual, event.entity, ON_ATTACK_EFFECTS)
     if (effectToApply) {
-      event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, false)
+      event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)
     }
   }
 }

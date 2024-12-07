@@ -66,6 +66,8 @@ ClientEvents.lang('en_us', event => {
   })
 
   // Mob Effects
+  event.add('meatsalad', 'effect.meatsalad.bowmaster_surge', "Bowmaster's Surge")
+  event.add('meatsalad', 'effect.meatsalad.bowmaster_surge.description', 'Boosts speed and ranged abilities')
   event.add('meatsalad', 'effect.meatsalad.magic_forbiden', 'Magic Forbiden')
   event.add('meatsalad', 'effect.meatsalad.magic_forbiden.description', 'Disables magic')
   event.add('meatsalad', 'effect.meatsalad.glimpse_of_god', 'Divine Grace: Glimpse')

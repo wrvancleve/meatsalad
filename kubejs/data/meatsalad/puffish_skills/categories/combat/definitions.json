@@ -24,27 +24,77 @@
 			}
 		]
 	},
-	"root_freelancer": {
-		"title": "Path of the Freelancer (+8 Luck)",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
+	"eldritch_cloth_lining": {
+		"title": "Eldritch Cloth Lining",
+		"description": "Unlock the use of Eldritch Cloth as an armor lining",
 		"icon": {
-			"type": "effect",
+			"type": "item",
 			"data": {
-				"effect": "luck"
+				"item": "meatsalad:eldritch_cloth"
 			}
 		},
 		"rewards": [
 			{
-				"type": "puffish_skills:attribute",
+				"type": "puffish_skills:command",
 				"data": {
-					"attribute": "generic.luck",
-					"value": 8,
-					"operation": "addition"
+					"unlock_command": "decstages add @s eldritch_cloth_lining",
+					"lock_command": "decstages remove @s eldritch_cloth_lining"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use Eldritch Cloth as an armor lining!\""
+				}
+			}
+		]
+	},
+	"mp_rage": {
+		"title": "MP Rage",
+		"description": "Ability that gives you mana when you receive damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:instant_mana"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s mp_rage",
+					"lock_command": "gamestage remove @s mp_rage"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have learned the MP Rage ability! You now receive mana when damaged!\""
+				}
+			}
+		]
+	},
+	"mage_mastery_curios": {
+		"title": "Mage Mastery Curios",
+		"description": "Unlock the use of the best Mage Curios",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:spell_power_ring_plus_plus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s mage_mastery_curios",
+					"lock_command": "gamestage remove @s mage_mastery_curios"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use the best Mage Curios!\""
 				}
 			}
 		]
@@ -74,6 +124,81 @@
 			}
 		]
 	},
+	"adamantite_melee_weapon": {
+		"title": "Adamantite Melee Weapons",
+		"description": "Unlock the use Adamantite in melee weapons",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:adamantite_ingot"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "decstages add @s adamantite_melee_weapon",
+					"lock_command": "decstages remove @s adamantite_melee_weapon"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use Adamantite in melee weapons!\""
+				}
+			}
+		]
+	},
+	"berserk": {
+		"title": "Berserk",
+		"description": "Ability that boosts your melee damage as your health gets lower",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "allthemodium:unobtainium_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s berserk",
+					"lock_command": "gamestage remove @s berserk"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have learned the Berserk ability! Your melee damage is increased as your health gets lower!\""
+				}
+			}
+		]
+	},
+	"warrior_mastery_curios": {
+		"title": "Warrior Mastery Curios",
+		"description": "Unlock the use of the best Warrior Curios",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:attack_damage_ring_plus_plus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s warrior_mastery_curios",
+					"lock_command": "gamestage remove @s warrior_mastery_curios"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use the best Warrior Curios!\""
+				}
+			}
+		]
+	},
 	"root_archer": {
 		"title": "Path of the Archer (+10% Arrow Damage)",
 		"frame": {
@@ -94,6 +219,239 @@
 				"data": {
 					"attribute": "attributeslib:arrow_damage",
 					"value": 0.10,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"mythril_ranged_weapon": {
+		"title": "Mythril Ranged Weapons",
+		"description": "Unlock the use Mythril in ranged weapons",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:mythril_ingot"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "decstages add @s mythril_ranged_weapon",
+					"lock_command": "decstages remove @s mythril_ranged_weapon"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use Mythril in ranged weapons!\""
+				}
+			}
+		]
+	},
+	"bowmaster_surge": {
+		"title": "Bowmaster's Surge",
+		"description": "Ability to gain Bowmaster's Surge effect as your health gets lower",
+		"extra_description": "Bowmaster's Surge boosts speed and ranged stats. This effect lasts longer and stacks more as your health gets lower",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "meatsalad:bowmaster_surge"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s bowmaster_surge",
+					"lock_command": "gamestage remove @s bowmaster_surge"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have learned the Bowmaster's Surge ability! You can now gain Bowmaster's Surge effect as your health gets lower!\""
+				}
+			}
+		]
+	},
+	"archer_mastery_curios": {
+		"title": "Archer Mastery Curios",
+		"description": "Unlock the use of the best Archer Curios",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:arrow_damage_ring_plus_plus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s archer_mastery_curios",
+					"lock_command": "gamestage remove @s archer_mastery_curios"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use the best Archer Curios!\""
+				}
+			}
+		]
+	},
+	"root_guardian": {
+		"title": "Path of the Guardian (+10% Armor Toughness)",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:absorption"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.10,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"dragon_scale_armor_coating": {
+		"title": "Dragon Scale Armor Coating",
+		"description": "Unlock the use of Dragon Scale Coating on your armor",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "quark:dragon_scale"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "decstages add @s dragon_scale_armor_coating",
+					"lock_command": "decstages remove @s dragon_scale_armor_coating"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use Dragon Scale Coating on your armor!\""
+				}
+			}
+		]
+	},
+	"damage_control": {
+		"title": "Damage Control",
+		"description": "Ability that reduces non-magic damage as your health gets lower",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "allthemodium:unobtainium_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s damage_control",
+					"lock_command": "gamestage remove @s damage_control"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have learned the Damage Control ability! All non-magic damge is reduced as your health gets lower!\""
+				}
+			}
+		]
+	},
+	"guardian_mastery_curios": {
+		"title": "Guardian Mastery Curios",
+		"description": "Unlock the use of the best Guardian Curios",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "meatsalad:arrow_damage_ring_plus_plus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s guardian_mastery_curios",
+					"lock_command": "gamestage remove @s guardian_mastery_curios"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You can now use the best Guardian Curios!\""
+				}
+			}
+		]
+	},
+	"armor": {
+		"title": "+2.5% Armor",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"healing_received": {
+		"title": "+2.5% Healing Received",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "attributeslib:vitality"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:healing_received",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"armor_toughness": {
+		"title": "+2.5% Armor Toughness",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:netherite_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.025,
 					"operation": "multiply_base"
 				}
 			}
@@ -290,7 +648,7 @@
 		]
 	},
 	"movement_speed": {
-		"title": "+5% Movement Speed",
+		"title": "+2.5% Movement Speed",
 		"icon": {
 			"type": "effect",
 			"data": {
@@ -302,14 +660,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.movement_speed",
-					"value": 0.05,
+					"value": 0.025,
 					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"crit_chance": {
-		"title": "+5% Critical Chance",
+		"title": "+2.5% Critical Chance",
 		"icon": {
 			"type": "effect",
 			"data": {
@@ -321,33 +679,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:crit_chance",
-					"value": 0.05,
-					"operation": "multiply_base"
-				}
-			}
-		]
-	},
-	"dodge_chance": {
-		"title": "+10% Dodge Chance",
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "speed"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "attributeslib:dodge_chance",
-					"value": 0.10,
+					"value": 0.025,
 					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"crit_damage": {
-		"title": "+10% Critical Damage",
+		"title": "+2.5% Critical Damage",
 		"icon": {
 			"type": "effect",
 			"data": {
@@ -359,7 +698,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:crit_damage",
-					"value": 0.10,
+					"value": 0.025,
 					"operation": "multiply_base"
 				}
 			}

@@ -75,6 +75,16 @@ StartupEvents.registry('mob_effect', event => {
     })
     .color(Color.GOLD)
 
+    
+  event.create('meatsalad:bowmaster_surge')
+    .displayName("Bowmaster's Surge")
+    .modifyAttribute('attributeslib:arrow_damage', 'bowmasterArrowDamageBoost', 0.05, "multiply_base")
+    .modifyAttribute('attributeslib:arrow_velocity', 'bowmasterArrowVelocityBoost', 0.05, "multiply_base")
+    .modifyAttribute('attributeslib:draw_speed', 'bowmasterDrawSpeedBoost', 0.05, "multiply_base")
+    .modifyAttribute('minecraft:generic.movement_speed', 'bowmasterMovementSpeedBoost', 0.05, "multiply_base")
+    .beneficial()
+    .color(Color.of('#9c9c9c'))
+
   event.create('meatsalad:pardon_of_god_magic')
     .displayName("God's License: Magic Immunity")
     .beneficial()

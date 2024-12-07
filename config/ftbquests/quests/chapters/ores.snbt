@@ -81,8 +81,8 @@
 				title: "Iron Ore"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 2.5d
+			x: -7.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -154,8 +154,8 @@
 				title: "Coal Ore"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 3.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -227,8 +227,8 @@
 				title: "Copper Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -311,8 +311,8 @@
 				title: "Gold Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.5d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -386,8 +386,8 @@
 				title: "Redstone Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.5d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -461,8 +461,8 @@
 				title: "Emerald Ore"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -538,8 +538,8 @@
 				title: "Lapis Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -6.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -612,8 +612,8 @@
 				title: "Diamond Ore"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -685,8 +685,8 @@
 				title: "Quartz Ore"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -737,8 +737,8 @@
 				title: "Ancient Debris"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -811,7 +811,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -884,7 +884,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -957,7 +957,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -1028,8 +1028,8 @@
 				title: "Aluminum Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -0.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -1101,7 +1101,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -1173,7 +1173,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -0.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -1244,8 +1244,8 @@
 				title: "Tin Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -1318,8 +1318,8 @@
 				title: "Uranium Ore"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -1390,8 +1390,8 @@
 				title: "Zinc Ore"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -1463,8 +1463,8 @@
 				title: "Iridium Ore"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -1537,8 +1537,8 @@
 				title: "Ruby Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -1611,8 +1611,8 @@
 				title: "Sapphire Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -1685,8 +1685,8 @@
 				title: "Peridot Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -1754,8 +1754,8 @@
 				title: "Topaz Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -1823,8 +1823,8 @@
 				title: "Jade Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -1892,8 +1892,8 @@
 				title: "Aquamarine Ore"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -1959,8 +1959,8 @@
 				title: "Fluorite Ore"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -5.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -2020,8 +2020,8 @@
 				title: "Crimson Iron Ore"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: 2.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -2081,8 +2081,8 @@
 				title: "Azure Silver Ore"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.5d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -2147,8 +2147,8 @@
 				title: "Apatite Ore"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -2213,8 +2213,8 @@
 				title: "Cinnabar Ore"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -2279,8 +2279,8 @@
 				title: "Niter Ore"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -2345,8 +2345,8 @@
 				title: "Sulfur Ore"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -2397,8 +2397,8 @@
 				title: "Arcane Debris"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -2454,8 +2454,8 @@
 				title: "Adamantite Ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.5d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -2511,8 +2511,8 @@
 				title: "Mythril Ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.5d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -2567,8 +2567,8 @@
 				title: "Vibranium Ore"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.5d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -2623,8 +2623,8 @@
 				title: "Unobtainium Ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.5d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -2687,8 +2687,84 @@
 				title: "Palladium Ore"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"12F67115F006C768"
+				"11534CE85A2F69DB"
+				"5A2506E98B06D485"
+				"1E85A8C413F982AB"
+				"7D616A63EEEED312"
+				"2A6E131D99FA7A52"
+				"560E9787FDF29CAB"
+				"2433EDC68C2220CA"
+				"4FE6662642EF87D1"
+				"2824496AAE434505"
+				"3A250445DECCC47F"
+				"118FB4B843965BFF"
+				"4DC56A74B6657670"
+				"31DC0D337D7E33C6"
+				"22ABF111F71B92B5"
+				"04DDB1DA5AA2373B"
+				"1C5E100221CDEB1C"
+				"6CF70F8E359D808C"
+				"128FF8471768B19F"
+				"3202B71F0A451F7F"
+				"674493FF2263D21C"
+				"499B2E57AC0D5499"
+				"051D322B79ADE717"
+				"3F6350A9337C9D56"
+				"3ADC94C5C7FD1EB6"
+				"7AD372494A6C1CB0"
+				"2A09316A92502338"
+				"3C846027268BA7E6"
+				"1EFFE15A422647C0"
+				"383ABF93C0CABD37"
+				"29F81DE8E35F55C4"
+				"728B9B73DCF39727"
+				"60EBE1F53C8791DC"
+				"2F9BA7F52FD32183"
+				"6420B17A6D077370"
+				"3EC15C3ECE7BDDBD"
+				"6C266C6DBD407ADC"
+				"5C8AF39D6152F002"
+				"3B4BA23FAEEA5FD6"
+			]
+			hide_dependency_lines: true
+			id: "7973AF390A4818A4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6BA9EB8EACEBE305"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "127965A79060B3B8"
+					table_id: 3670248595616648664L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "6A4D08A2E4C67627"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores"
+					}
+				}
+				title: "All Ores"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "Ores"

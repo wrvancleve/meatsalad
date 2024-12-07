@@ -13,7 +13,12 @@
 	}
 	id: "7FB8D01FCF54E313"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "798919D80F8EBCA1"
+		linked_quest: "499B2E57AC0D5499"
+		x: 4.0d
+		y: 1.5d
+	}]
 	quests: [
 		{
 			description: ["Obtained by killing The Harbinger in Ancient Factories (Overworld)"]
@@ -473,7 +478,7 @@
 		{
 			dependencies: [
 				"08453199907DD711"
-				"141E487A41169494"
+				"499B2E57AC0D5499"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Found in deep dark biomes. Additionally, is a quest reward for killing your first Warden"]
@@ -532,40 +537,6 @@
 				value: 1L
 			}]
 			x: 3.0d
-			y: 1.5d
-		}
-		{
-			dependency_requirement: "one_completed"
-			id: "141E487A41169494"
-			min_required_dependencies: 1
-			rewards: [
-				{
-					auto: "invisible"
-					id: "1CC9B326E63D5730"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "389C45FAC9B4ECA8"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			tasks: [{
-				icon: "allthemodium:allthemodium_ore"
-				id: "2F3532E4172F2D80"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ores/allthemodium"
-					}
-				}
-				title: "Palladium Ore"
-				type: "item"
-			}]
-			x: 4.0d
 			y: 1.5d
 		}
 		{
