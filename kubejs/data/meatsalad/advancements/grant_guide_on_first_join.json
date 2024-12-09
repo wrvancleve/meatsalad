@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "meatsalad:grant_guide_on_first_join"
+    ]
+  }
+}
