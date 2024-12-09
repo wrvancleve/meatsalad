@@ -16,9 +16,33 @@
 		{ item: "fluxnetworks:flux_point" }
 		{ item: "meatsalad:mystery_goo", random_bonus: 3 }
 		{ item: "minecraft:enchanted_golden_apple" }
-		{ item: "bhc:yellow_heart_patch" }
-		{ item: "bhc:green_heart_patch" }
-		{ item: "bhc:blue_heart_patch" }
+		{
+			item: {
+				Count: 1
+				id: "bhc:yellow_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:green_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:blue_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
 		{ item: "apotheosis:sigil_of_enhancement" }
 		{ item: "mekanism:alloy_atomic", random_bonus: 4 }
 		{ item: "hostilenetworks:blank_data_model" }

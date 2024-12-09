@@ -39,7 +39,15 @@
 		{ item: "waystones:warp_scroll" }
 		{ item: "waystones:waystone" }
 		{ item: "bhc:red_heart" }
-		{ item: "bhc:red_heart_patch" }
+		{
+			item: {
+				Count: 1
+				id: "bhc:red_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
 		{ item: "irons_spellbooks:hogskin", random_bonus: 3 }
 		{ item: "irons_spellbooks:frozen_bone", random_bonus: 3 }
 		{ item: "irons_spellbooks:blood_vial", random_bonus: 3 }

@@ -13,9 +13,33 @@
 	order_index: 3
 	rewards: [
 		{ item: "bhc:red_heart" }
-		{ item: "bhc:red_heart_patch" }
-		{ item: "bhc:yellow_heart_patch" }
-		{ item: "bhc:blue_heart_patch" }
+		{
+			item: {
+				Count: 1
+				id: "bhc:red_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:yellow_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:blue_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
 		{ item: "industrialforegoing:latex_bucket" }
 		{ item: "industrialforegoing:pink_slime_bucket" }
 		{ item: "industrialforegoing:mob_imprisonment_tool" }
