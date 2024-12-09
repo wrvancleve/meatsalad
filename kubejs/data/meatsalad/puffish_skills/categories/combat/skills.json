@@ -1,12 +1,6 @@
 {
-	"-17_0": {
-		"definition": "spell_power",
-		"x": -544,
-		"y": 0,
-		"root": false
-	},
 	"-15_-6": {
-		"definition": "spell_power",
+		"definition": "adamantite_melee_weapon",
 		"x": -480,
 		"y": -192,
 		"root": false
@@ -24,7 +18,7 @@
 		"root": false
 	},
 	"-15_6": {
-		"definition": "spell_power",
+		"definition": "charm_slot",
 		"x": -480,
 		"y": 192,
 		"root": false
@@ -42,7 +36,7 @@
 		"root": false
 	},
 	"-13_0": {
-		"definition": "arrow_damage",
+		"definition": "berserk",
 		"x": -416,
 		"y": 0,
 		"root": false
@@ -102,7 +96,7 @@
 		"root": false
 	},
 	"-11_6": {
-		"definition": "arrow_damage",
+		"definition": "healing_received",
 		"x": -352,
 		"y": 192,
 		"root": false
@@ -144,7 +138,7 @@
 		"root": false
 	},
 	"-9_-2": {
-		"definition": "arrow_damage",
+		"definition": "healing_received",
 		"x": -288,
 		"y": -64,
 		"root": false
@@ -192,7 +186,7 @@
 		"root": false
 	},
 	"-8_10": {
-		"definition": "attack_speed",
+		"definition": "armor_toughness",
 		"x": -256,
 		"y": 320,
 		"root": false
@@ -210,19 +204,19 @@
 		"root": false
 	},
 	"-7_4": {
-		"definition": "arrow_velocity",
+		"definition": "armor",
 		"x": -224,
 		"y": 128,
 		"root": false
 	},
 	"-7_13": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": -224,
 		"y": 416,
 		"root": false
 	},
 	"-6_-15": {
-		"definition": "arrow_damage",
+		"definition": "ring_slot",
 		"x": -192,
 		"y": -480,
 		"root": false
@@ -240,31 +234,31 @@
 		"root": false
 	},
 	"-6_-1": {
-		"definition": "max_mana",
+		"definition": "armor",
 		"x": -192,
 		"y": -32,
 		"root": false
 	},
 	"-6_1": {
-		"definition": "arrow_velocity",
+		"definition": "max_mana",
 		"x": -192,
 		"y": 32,
 		"root": false
 	},
 	"-6_8": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": -192,
 		"y": 256,
 		"root": false
 	},
 	"-6_11": {
-		"definition": "melee_damage",
+		"definition": "attack_speed",
 		"x": -192,
 		"y": 352,
 		"root": false
 	},
 	"-6_15": {
-		"definition": "arrow_damage",
+		"definition": "dragon_scale_armor_coating",
 		"x": -192,
 		"y": 480,
 		"root": false
@@ -288,19 +282,19 @@
 		"root": false
 	},
 	"-5_13": {
-		"definition": "max_mana",
+		"definition": "healing_received",
 		"x": -160,
 		"y": 416,
 		"root": false
 	},
 	"-4_-10": {
-		"definition": "arrow_damage",
+		"definition": "armor",
 		"x": -128,
 		"y": -320,
 		"root": false
 	},
 	"-4_-7": {
-		"definition": "attack_speed",
+		"definition": "healing_received",
 		"x": -128,
 		"y": -224,
 		"root": false
@@ -318,7 +312,7 @@
 		"root": false
 	},
 	"-4_7": {
-		"definition": "arrow_damage",
+		"definition": "melee_damage",
 		"x": -128,
 		"y": 224,
 		"root": false
@@ -342,19 +336,19 @@
 		"root": false
 	},
 	"-3_5": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": -96,
 		"y": 160,
 		"root": false
 	},
 	"-3_12": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": -96,
 		"y": 384,
 		"root": false
 	},
 	"-2_-9": {
-		"definition": "melee_damage",
+		"definition": "arrow_velocity",
 		"x": -64,
 		"y": -288,
 		"root": false
@@ -366,7 +360,7 @@
 		"root": true
 	},
 	"-2_9": {
-		"definition": "melee_damage",
+		"definition": "spell_power",
 		"x": -64,
 		"y": 288,
 		"root": false
@@ -384,7 +378,7 @@
 		"root": false
 	},
 	"-1_-6": {
-		"definition": "attack_speed",
+		"definition": "arrow_damage",
 		"x": -32,
 		"y": -192,
 		"root": false
@@ -396,39 +390,27 @@
 		"root": false
 	},
 	"-1_4": {
-		"definition": "max_mana",
+		"definition": "healing_received",
 		"x": -32,
 		"y": 128,
 		"root": false
 	},
 	"-1_6": {
-		"definition": "arrow_damage",
+		"definition": "arrow_velocity",
 		"x": -32,
 		"y": 192,
 		"root": false
 	},
 	"-1_11": {
-		"definition": "attack_speed",
+		"definition": "armor_toughness",
 		"x": -32,
 		"y": 352,
 		"root": false
 	},
 	"-1_15": {
-		"definition": "arrow_velocity",
+		"definition": "armor",
 		"x": -32,
 		"y": 480,
-		"root": false
-	},
-	"0_-17": {
-		"definition": "arrow_damage",
-		"x": 0,
-		"y": -544,
-		"root": false
-	},
-	"0_-13": {
-		"definition": "melee_damage",
-		"x": 0,
-		"y": -416,
 		"root": false
 	},
 	"0_-8": {
@@ -444,7 +426,7 @@
 		"root": true
 	},
 	"0_2": {
-		"definition": "root_freelancer",
+		"definition": "root_guardian",
 		"x": 0,
 		"y": 64,
 		"root": true
@@ -456,15 +438,9 @@
 		"root": false
 	},
 	"0_13": {
-		"definition": "melee_damage",
+		"definition": "damage_control",
 		"x": 0,
 		"y": 416,
-		"root": false
-	},
-	"0_17": {
-		"definition": "arrow_damage",
-		"x": 0,
-		"y": 544,
 		"root": false
 	},
 	"1_-15": {
@@ -480,7 +456,7 @@
 		"root": false
 	},
 	"1_-6": {
-		"definition": "arrow_velocity",
+		"definition": "healing_received",
 		"x": 32,
 		"y": -192,
 		"root": false
@@ -492,25 +468,19 @@
 		"root": false
 	},
 	"1_4": {
-		"definition": "attack_speed",
+		"definition": "armor_toughness",
 		"x": 32,
 		"y": 128,
 		"root": false
 	},
-	"1_6": {
-		"definition": "melee_damage",
-		"x": 32,
-		"y": 192,
-		"root": false
-	},
 	"1_11": {
-		"definition": "max_mana",
+		"definition": "healing_received",
 		"x": 32,
 		"y": 352,
 		"root": false
 	},
 	"1_15": {
-		"definition": "arrow_velocity",
+		"definition": "armor",
 		"x": 32,
 		"y": 480,
 		"root": false
@@ -528,7 +498,7 @@
 		"root": true
 	},
 	"2_9": {
-		"definition": "melee_damage",
+		"definition": "attack_speed",
 		"x": 64,
 		"y": 288,
 		"root": false
@@ -546,25 +516,25 @@
 		"root": false
 	},
 	"3_5": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": 96,
 		"y": 160,
 		"root": false
 	},
 	"3_12": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": 96,
 		"y": 384,
 		"root": false
 	},
 	"4_-10": {
-		"definition": "arrow_damage",
+		"definition": "armor",
 		"x": 128,
 		"y": -320,
 		"root": false
 	},
 	"4_-7": {
-		"definition": "arrow_velocity",
+		"definition": "arrow_damage",
 		"x": 128,
 		"y": -224,
 		"root": false
@@ -582,7 +552,7 @@
 		"root": false
 	},
 	"4_7": {
-		"definition": "melee_damage",
+		"definition": "arrow_velocity",
 		"x": 128,
 		"y": 224,
 		"root": false
@@ -612,19 +582,19 @@
 		"root": false
 	},
 	"5_13": {
-		"definition": "arrow_velocity",
+		"definition": "armor_toughness",
 		"x": 160,
 		"y": 416,
 		"root": false
 	},
 	"6_-15": {
-		"definition": "arrow_damage",
+		"definition": "eldritch_cloth_lining",
 		"x": 192,
 		"y": -480,
 		"root": false
 	},
 	"6_-11": {
-		"definition": "melee_damage",
+		"definition": "arrow_velocity",
 		"x": 192,
 		"y": -352,
 		"root": false
@@ -636,31 +606,31 @@
 		"root": false
 	},
 	"6_-1": {
-		"definition": "max_mana",
+		"definition": "attack_speed",
 		"x": 192,
 		"y": -32,
 		"root": false
 	},
 	"6_1": {
-		"definition": "attack_speed",
+		"definition": "spell_power",
 		"x": 192,
 		"y": 32,
 		"root": false
 	},
 	"6_8": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": 192,
 		"y": 256,
 		"root": false
 	},
 	"6_11": {
-		"definition": "melee_damage",
+		"definition": "spell_power",
 		"x": 192,
 		"y": 352,
 		"root": false
 	},
 	"6_15": {
-		"definition": "arrow_damage",
+		"definition": "ring_slot",
 		"x": 192,
 		"y": 480,
 		"root": false
@@ -672,19 +642,13 @@
 		"root": false
 	},
 	"7_-4": {
-		"definition": "max_mana",
+		"definition": "spell_power",
 		"x": 224,
 		"y": -128,
 		"root": false
 	},
-	"7_4": {
-		"definition": "attack_speed",
-		"x": 224,
-		"y": 128,
-		"root": false
-	},
 	"7_13": {
-		"definition": "spell_power",
+		"definition": "armor",
 		"x": 224,
 		"y": 416,
 		"root": false
@@ -726,19 +690,19 @@
 		"root": false
 	},
 	"8_10": {
-		"definition": "max_mana",
+		"definition": "healing_received",
 		"x": 256,
 		"y": 320,
 		"root": false
 	},
 	"9_-2": {
-		"definition": "melee_damage",
+		"definition": "armor",
 		"x": 288,
 		"y": -64,
 		"root": false
 	},
 	"9_2": {
-		"definition": "melee_damage",
+		"definition": "max_mana",
 		"x": 288,
 		"y": 64,
 		"root": false
@@ -756,13 +720,13 @@
 		"root": false
 	},
 	"10_-4": {
-		"definition": "spell_power",
+		"definition": "melee_damage",
 		"x": 320,
 		"y": -128,
 		"root": false
 	},
 	"10_4": {
-		"definition": "spell_power",
+		"definition": "melee_damage",
 		"x": 320,
 		"y": 128,
 		"root": false
@@ -780,7 +744,7 @@
 		"root": false
 	},
 	"11_-6": {
-		"definition": "melee_damage",
+		"definition": "max_mana",
 		"x": 352,
 		"y": -192,
 		"root": false
@@ -798,7 +762,7 @@
 		"root": false
 	},
 	"11_6": {
-		"definition": "melee_damage",
+		"definition": "armor",
 		"x": 352,
 		"y": 192,
 		"root": false
@@ -840,7 +804,7 @@
 		"root": false
 	},
 	"13_0": {
-		"definition": "melee_damage",
+		"definition": "bowmaster_surge",
 		"x": 416,
 		"y": 0,
 		"root": false
@@ -858,7 +822,7 @@
 		"root": false
 	},
 	"15_-6": {
-		"definition": "spell_power",
+		"definition": "charm_slot",
 		"x": 480,
 		"y": -192,
 		"root": false
@@ -876,39 +840,459 @@
 		"root": false
 	},
 	"15_6": {
-		"definition": "spell_power",
+		"definition": "mythril_ranged_weapon",
 		"x": 480,
 		"y": 192,
 		"root": false
 	},
-	"17_0": {
-		"definition": "spell_power",
-		"x": 544,
+	"wjw8uep5lkvccgx3": {
+		"definition": "arrow_damage",
+		"x": 608,
 		"y": 0,
 		"root": false
 	},
-	"imdvh8lh3mkuzsd0": {
-		"definition": "ring_slot",
+	"jqy7n7vxmatvayi9": {
+		"definition": "movement_speed",
+		"x": -32,
+		"y": -544,
+		"root": false
+	},
+	"hkv68t55jnpj1pem": {
+		"definition": "crit_damage",
+		"x": 32,
+		"y": -544,
+		"root": false
+	},
+	"9i96eybdh9sghahu": {
+		"definition": "spell_power",
+		"x": -96,
+		"y": -512,
+		"root": false
+	},
+	"8j6a3oyov3chxmis": {
+		"definition": "spell_power",
+		"x": 96,
+		"y": -512,
+		"root": false
+	},
+	"ksg5ijezl19fpp57": {
+		"definition": "spell_power",
+		"x": -128,
+		"y": -576,
+		"root": false
+	},
+	"s1fhq8pm35fqpaz0": {
+		"definition": "spell_power",
+		"x": 128,
+		"y": -576,
+		"root": false
+	},
+	"ed3g8shplmb9ujx0": {
+		"definition": "spell_power",
 		"x": 0,
 		"y": -608,
 		"root": false
 	},
-	"502zxf92z8yofxdg": {
-		"definition": "charm_slot",
-		"x": 0,
-		"y": 608,
+	"82f3x216uo7d3nzq": {
+		"definition": "spell_power",
+		"x": -64,
+		"y": -640,
 		"root": false
 	},
-	"izvy3dp1r5q6hr7a": {
+	"el3li0zw4qklmglg": {
+		"definition": "spell_power",
+		"x": 64,
+		"y": -640,
+		"root": false
+	},
+	"kx73ql8p0wdic7ic": {
+		"definition": "spell_power",
+		"x": -32,
+		"y": -704,
+		"root": false
+	},
+	"ijm1srzkp19qxesa": {
+		"definition": "spell_power",
+		"x": 32,
+		"y": -704,
+		"root": false
+	},
+	"9kn6jf6fhd3m5dql": {
+		"definition": "mage_mastery_curios",
+		"x": 0,
+		"y": -768,
+		"root": false
+	},
+	"oen547bhu5g28hzl": {
+		"definition": "mp_rage",
+		"x": 0,
+		"y": -416,
+		"root": false
+	},
+	"ob3du1wdugviq2js": {
+		"definition": "spell_power",
+		"x": -192,
+		"y": -544,
+		"root": false
+	},
+	"rjn6bwd9y52ujkll": {
+		"definition": "spell_power",
+		"x": 192,
+		"y": -544,
+		"root": false
+	},
+	"z9nbbuop8gyobxxj": {
 		"definition": "crit_damage",
+		"x": -128,
+		"y": -640,
+		"root": false
+	},
+	"20b4qvotkqzs22hw": {
+		"definition": "crit_chance",
+		"x": 128,
+		"y": -640,
+		"root": false
+	},
+	"6fvfbf1jkuf71qvt": {
+		"definition": "spell_power",
+		"x": -96,
+		"y": -448,
+		"root": false
+	},
+	"vjvypbyeyes23pbe": {
+		"definition": "spell_power",
+		"x": 96,
+		"y": -448,
+		"root": false
+	},
+	"vuomcyasgobvn57m": {
+		"definition": "movement_speed",
+		"x": -544,
+		"y": 32,
+		"root": false
+	},
+	"uq856ljczhkjr4pg": {
+		"definition": "crit_damage",
+		"x": -544,
+		"y": -32,
+		"root": false
+	},
+	"64v7nrbijugwhsr6": {
+		"definition": "melee_damage",
 		"x": -608,
 		"y": 0,
 		"root": false
 	},
-	"wjw8uep5lkvccgx3": {
-		"definition": "dodge_chance",
-		"x": 608,
+	"uin4bk32vl8dpbu3": {
+		"definition": "melee_damage",
+		"x": -448,
+		"y": 96,
+		"root": false
+	},
+	"emzizi9tn5j40tn9": {
+		"definition": "melee_damage",
+		"x": -448,
+		"y": -96,
+		"root": false
+	},
+	"k4f7sjfvuj36mjqr": {
+		"definition": "melee_damage",
+		"x": -544,
+		"y": 192,
+		"root": false
+	},
+	"023v26o9bww7pj9s": {
+		"definition": "melee_damage",
+		"x": -544,
+		"y": -192,
+		"root": false
+	},
+	"um20tr130jdjo2ai": {
+		"definition": "melee_damage",
+		"x": -576,
+		"y": 128,
+		"root": false
+	},
+	"b5ta9dum0ihijdrs": {
+		"definition": "melee_damage",
+		"x": -576,
+		"y": -128,
+		"root": false
+	},
+	"gnj4pr3e8bda2o08": {
+		"definition": "melee_damage",
+		"x": -640,
+		"y": 64,
+		"root": false
+	},
+	"xp94a6vubi18a71a": {
+		"definition": "melee_damage",
+		"x": -640,
+		"y": -64,
+		"root": false
+	},
+	"137p776gj72zahuc": {
+		"definition": "crit_damage",
+		"x": -640,
+		"y": 128,
+		"root": false
+	},
+	"59o9wvt2tzfcl277": {
+		"definition": "crit_chance",
+		"x": -640,
+		"y": -128,
+		"root": false
+	},
+	"itxzia39mplvdfh2": {
+		"definition": "melee_damage",
+		"x": -704,
+		"y": 32,
+		"root": false
+	},
+	"bsk3mfay7fzzoptp": {
+		"definition": "melee_damage",
+		"x": -704,
+		"y": -32,
+		"root": false
+	},
+	"rk5lg4q0apzn3nkl": {
+		"definition": "warrior_mastery_curios",
+		"x": -768,
 		"y": 0,
+		"root": false
+	},
+	"bhjy9ythashoeg8q": {
+		"definition": "melee_damage",
+		"x": -512,
+		"y": 96,
+		"root": false
+	},
+	"3xxbvjgt9f4i7kwc": {
+		"definition": "melee_damage",
+		"x": -512,
+		"y": -96,
+		"root": false
+	},
+	"gm8ptikn8w9u0v7c": {
+		"definition": "arrow_damage",
+		"x": 544,
+		"y": 192,
+		"root": false
+	},
+	"7s9fyoag126nzbtr": {
+		"definition": "arrow_damage",
+		"x": 576,
+		"y": 128,
+		"root": false
+	},
+	"ryo3ca92ow6ui2ir": {
+		"definition": "arrow_damage",
+		"x": 512,
+		"y": 96,
+		"root": false
+	},
+	"0s0r30hrl53i5d05": {
+		"definition": "arrow_damage",
+		"x": 448,
+		"y": 96,
+		"root": false
+	},
+	"i1fos05e0g3w21kd": {
+		"definition": "arrow_damage",
+		"x": 448,
+		"y": -96,
+		"root": false
+	},
+	"qceog6ybzxz2axhr": {
+		"definition": "arrow_damage",
+		"x": 512,
+		"y": -96,
+		"root": false
+	},
+	"stcbd2qc9arib52s": {
+		"definition": "arrow_damage",
+		"x": 544,
+		"y": -192,
+		"root": false
+	},
+	"oealtadazbrs2nuv": {
+		"definition": "arrow_damage",
+		"x": 576,
+		"y": -128,
+		"root": false
+	},
+	"w4s2eetx7t37sh5f": {
+		"definition": "arrow_damage",
+		"x": 640,
+		"y": -64,
+		"root": false
+	},
+	"7yqtzyvengyhxggb": {
+		"definition": "arrow_damage",
+		"x": 640,
+		"y": 64,
+		"root": false
+	},
+	"pzdi6v2uyponbu47": {
+		"definition": "arrow_damage",
+		"x": 704,
+		"y": -32,
+		"root": false
+	},
+	"izlmup4mx1enrgs8": {
+		"definition": "arrow_damage",
+		"x": 704,
+		"y": 32,
+		"root": false
+	},
+	"v71b8mhgs1jkup9m": {
+		"definition": "archer_mastery_curios",
+		"x": 768,
+		"y": 0,
+		"root": false
+	},
+	"drrpudxw4gsfdv2v": {
+		"definition": "crit_damage",
+		"x": 544,
+		"y": 32,
+		"root": false
+	},
+	"ukmr0wnozbxmo1oi": {
+		"definition": "movement_speed",
+		"x": 544,
+		"y": -32,
+		"root": false
+	},
+	"x9riqlgrptov8tmb": {
+		"definition": "crit_chance",
+		"x": 640,
+		"y": 128,
+		"root": false
+	},
+	"ee1nu6tk34k1s4yh": {
+		"definition": "crit_damage",
+		"x": 640,
+		"y": -128,
+		"root": false
+	},
+	"h8mptbs4kkfcqfpa": {
+		"definition": "armor",
+		"x": -96,
+		"y": 448,
+		"root": false
+	},
+	"g0orugo5uep67al4": {
+		"definition": "armor",
+		"x": 96,
+		"y": 448,
+		"root": false
+	},
+	"iddg7059e9q7bior": {
+		"definition": "armor",
+		"x": -96,
+		"y": 512,
+		"root": false
+	},
+	"pb5jtoqt1bcsvzhx": {
+		"definition": "armor",
+		"x": 96,
+		"y": 512,
+		"root": false
+	},
+	"ae8nml7uyyn8c1oj": {
+		"definition": "armor",
+		"x": -128,
+		"y": 576,
+		"root": false
+	},
+	"520kqp9mgrr5ld2i": {
+		"definition": "armor",
+		"x": 128,
+		"y": 576,
+		"root": false
+	},
+	"2hpb4eyh26llum4f": {
+		"definition": "armor",
+		"x": -192,
+		"y": 544,
+		"root": false
+	},
+	"h34d26o29nq5f2wj": {
+		"definition": "armor",
+		"x": 192,
+		"y": 544,
+		"root": false
+	},
+	"nkrin3nfp8j5wuiw": {
+		"definition": "armor",
+		"x": 64,
+		"y": 640,
+		"root": false
+	},
+	"wwvu3x7i8u5azju7": {
+		"definition": "armor",
+		"x": -64,
+		"y": 640,
+		"root": false
+	},
+	"ce8kkbgm6vj0gb5l": {
+		"definition": "armor",
+		"x": -32,
+		"y": 704,
+		"root": false
+	},
+	"810rlk8gaxr9lin3": {
+		"definition": "armor",
+		"x": 32,
+		"y": 704,
+		"root": false
+	},
+	"ykjcvez1xqbrm7c1": {
+		"definition": "guardian_mastery_curios",
+		"x": 0,
+		"y": 768,
+		"root": false
+	},
+	"4g4qy76joh2s5i9i": {
+		"definition": "armor",
+		"x": 0,
+		"y": 608,
+		"root": false
+	},
+	"jbgcbaiqtddtre4d": {
+		"definition": "crit_chance",
+		"x": -128,
+		"y": 640,
+		"root": false
+	},
+	"edelu4ppwzzbvug0": {
+		"definition": "crit_damage",
+		"x": 128,
+		"y": 640,
+		"root": false
+	},
+	"o15dxkat9zrla1am": {
+		"definition": "crit_damage",
+		"x": -32,
+		"y": 544,
+		"root": false
+	},
+	"zy7xthvpzaw5t6jj": {
+		"definition": "movement_speed",
+		"x": 32,
+		"y": 544,
+		"root": false
+	},
+	"uc58pub445sfue2v": {
+		"definition": "attack_speed",
+		"x": 224,
+		"y": 128,
+		"root": false
+	},
+	"wvljl3rm9ht30ppo": {
+		"definition": "melee_damage",
+		"x": 32,
+		"y": 192,
 		"root": false
 	}
 }

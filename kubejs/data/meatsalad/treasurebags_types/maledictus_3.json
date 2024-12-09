@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "Maledictus+++ Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/maledictus_3",
+  "rarity": "rare",
+  "bagColor": "#3FD4B4",
+  "bagOverlayColor": "#B98A3C",
+  "bagStringColor": "#6D5966",
+  "dropsFromGroups": []
+}

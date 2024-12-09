@@ -1,0 +1,537 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "summoning"
+	group: "382D29DACC0FCEC1"
+	icon: "meatsalad:mystery_goo"
+	id: "0A15D0C62C4E29A4"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4822F84BA431F5AC"]
+			description: ["Used to resummon bosses with &bMystery Goo&r. In the endgame, &bDark Matter&r can be used to summon chaos versions of the bosses"]
+			id: "5F0089D8754A7BFB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "77DC73C333A17B69"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B59E308F05004E5"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "2C385C04BC28B869"
+				item: "summoningrituals:altar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "3C9C356BDB6A5819"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7E3BEF73851187D0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55ACFFE43FFB6FC3"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "41B464E6DFC89055"
+				item: "meatsalad:chaos_shard"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Endgame material that has many usages. Obtained by killing Level 3 Chaos Bosses"]
+			id: "247AF042969020F5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "66F85C6EF6AA7907"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C8F7C88C91ECDAA"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "38FB2433CEFAFBBE"
+				item: "meatsalad:lost_illusion"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Mysterious substance that has transformation capabilities"
+				""
+				"Obtainment:"
+				"  - Various loot chests in the Nether, Other \\& End"
+				"  - Energizing End Portal Eyes in the &eEnergizing Orb&r"
+				""
+				"Usages:"
+				"  - &eGateway Pearls&r"
+				"  - Summoning bosses at the &eSummoning Altar&r"
+				"  - &dUU-Matter&r in the &eEnergizing Orb&r"
+			]
+			id: "4822F84BA431F5AC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "542F1068F6E5B25C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7DA71A66C2A50571"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "307BE159E6A06E5B"
+				item: "meatsalad:mystery_goo"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Nether Fortress Gateway that brings various mobs to you"
+				""
+				"Obtainment:"
+				"  - Loot in Nether chests"
+				"  - Garaunteed loot in Bastion treasure chests and the puzzle chest deep inside the Nether Fortress"
+				"  - Craftable with &bMystery Goo&r once you have obtained one through loot"
+				""
+				"Possible Gateway Rewards:"
+				"  - Netherite Upgrade Smithing Template"
+				"  - Affix materials"
+				"  - Gems"
+				"  - Ink"
+				"  - Other Misc Items"
+			]
+			id: "133FF25327270998"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "421EB6A4C70530FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "551F1BBC57B8B01D"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5F7599BC3594BE31"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:hellish_fortress"
+					}
+				}
+				title: "&cHellish Fortress Gateway&r"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Stronghold Gateway that brings various mobs to you"
+				""
+				"Obtainment:"
+				"  - Loot in Stronghold chests"
+				"  - Garaunteed loot in Grand Library chests"
+				"  - Craftable with &bMystery Goo&r once you have obtained one through loot"
+				""
+				"Possible Gateway Rewards:"
+				"  - Part Blueprints"
+				"  - Affix materials"
+				"  - Gems"
+				"  - Other Misc Items"
+			]
+			id: "5D9EAED77CE48002"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4197C715BC3BE559"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E401BC510835876"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "17AA78BA843CEA43"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:stronghold"
+					}
+				}
+				title: "&7Stronghold Gateway&r"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Magic Gateway that brings various mobs to you"
+				""
+				"Obtainment:"
+				"  - Loot in Ocean Monument, Ancient City and Catacomb chests"
+				"  - Garaunteed loot in magic treasure chests"
+				"  - Craftable with &bMystery Goo&r once you have obtained one through loot"
+				""
+				"Possible Gateway Rewards:"
+				"  - Magic Gems"
+				"  - Ink"
+				"  - &eArcane Essence&r"
+				"  - &eBlank Runes&r"
+				"  - &eAncient Knowledge Fragments&r"
+			]
+			id: "2A706F5302E413AB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3256D519B94F8CD2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "360D0FE2D0C672E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "29DC9C27C8E11D18"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:magic"
+					}
+				}
+				title: "&9Magic Gateway&r"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Otherside Gateway that brings various mobs to you"
+				""
+				"Obtainment:"
+				"  - Loot in Other chests"
+				"  - Garaunteed loot in treasure chests of Other Dungeons"
+				"  - Craftable with &bMystery Goo&r once you have obtained one through loot"
+				""
+				"Possible Gateway Rewards:"
+				"  - Affix materials"
+				"  - Gems"
+				"  - Ink"
+				"  - Other Misc Items"
+			]
+			id: "6842B273D0F54CFB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "641829E1C20A0800"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47A776E60EED4C56"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5475D2BAEE8A4BAD"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:otherside"
+					}
+				}
+				title: "&3Otherside Gateway&r"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Outer End Gateway that brings various mobs to you"
+				""
+				"Obtainment:"
+				"  - Loot in End chests"
+				"  - Garaunteed loot in End meteorite chests"
+				"  - Craftable with &bMystery Goo&r once you have obtained one through loot"
+				""
+				"Possible Gateway Rewards:"
+				"  - &bDark Matter&r"
+				"  - Affix materials"
+				"  - Gems"
+				"  - Ink"
+				"  - Other Misc Items"
+			]
+			id: "00A2E72EC57E28FC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "035F93B4ABBB9476"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2114949C49F2E3C3"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3C467209641D0144"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:outer_end"
+					}
+				}
+				title: "&5Outer End Gateway&r"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "43049B5C1D960B50"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "029962CCF7830325"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60F4359B865AB7C9"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "70DF27440E26E6AB"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:arcanis"
+					}
+				}
+				title: "&9&kArcanis&r &9Gateway&r"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "22D63BB243DFDFD1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "666A00A893F3E429"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "120712D4A736B315"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "16FE66C86C70DD3E"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:maestris"
+					}
+				}
+				title: "&6&kMaestris&r &6Gateway&r"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "7FCD2B5C1DD474C9"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "33F418FEA7C5BEBE"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D2AEC68FA25CE25"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "36A5245F05B90D6E"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:sentis"
+					}
+				}
+				title: "&5&kSentis&r &5Gateway&r"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "78C498A46F85B218"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4F27CF86799E72D2"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "76A481E0213C6867"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "144A1741D66B5FE9"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:velocis"
+					}
+				}
+				title: "&2&kVelocis&r &2Gateway&r"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F0089D8754A7BFB"]
+			description: ["Obtained from chaos bosses (levels 1-3). Chaos bosses can be summoned in the &eSummoning Altar&r with &bDark Matter&r and other items. View the usages of the &eSummoning Altar&r to see all the summons"]
+			id: "452E85D4E3695D57"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4088011A4F5ECB18"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F561B14A049FD90"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "7F76A8C95D058243"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "meatsalad:stalgaris"
+					}
+				}
+				title: "&c&kStalgaris&r &cGateway&r"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+	]
+	title: "Summoning"
+}

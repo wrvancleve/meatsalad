@@ -30,12 +30,6 @@
 		"last_day": 40
 	},
 	{
-		"entity": "minecraft:illusioner",
-		"weight": 5,
-		"first_day": 50,
-		"last_day": 0
-	},
-	{
 		"entity": "minecraft:ravager",
 		"weight": 3,
 		"first_day": 50,

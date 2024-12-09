@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     "BCB",
     " A "
   ], {
-    A: 'experienceobelisk:cognitive_alloy',
+    A: 'minecraft:echo_shard',
     B: 'minecraft:experience_bottle',
     C: 'experienceobelisk:cognitive_crystal',
   }, Item.of('thermal:xp_crystal'), 'tools/xp_crystal')

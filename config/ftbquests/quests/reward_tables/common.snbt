@@ -1,54 +1,37 @@
 {
-	icon: {
-		Count: 1
-		id: "ftbquests:lootcrate"
-		tag: {
-			type: "common_loot"
-		}
-	}
 	id: "205CA17880F8FB70"
+	loot_crate: {
+		color: 9607578
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "common_loot_crate"
+	}
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ item: "minecraft:diamond", random_bonus: 2, weight: 3.0f }
-		{ count: 4, item: "minecraft:iron_ingot", random_bonus: 4, weight: 7.0f }
-		{ count: 2, item: "minecraft:gold_ingot", random_bonus: 2, weight: 5.0f }
-		{ count: 8, item: "minecraft:redstone", random_bonus: 8, weight: 5.0f }
-		{ count: 4, item: "minecraft:torch", random_bonus: 8, weight: 10.0f }
-		{ count: 6, item: "minecraft:slime_ball", random_bonus: 6, weight: 7.0f }
-		{ item: "minecraft:name_tag", weight: 3.0f }
-		{ count: 4, item: "minecraft:lapis_lazuli", random_bonus: 4, weight: 7.0f }
-		{ count: 2, item: "minecraft:cooked_beef", random_bonus: 2, weight: 10.0f }
-		{ count: 2, item: "minecraft:cooked_porkchop", random_bonus: 2, weight: 10.0f }
-		{ count: 3, item: "minecraft:cooked_chicken", random_bonus: 3, weight: 10.0f }
-		{ count: 8, item: "minecraft:oak_log", random_bonus: 8, weight: 15.0f }
-		{ count: 4, item: "minecraft:stone", random_bonus: 8, weight: 10.0f }
-		{ count: 2, item: "minecraft:quartz", random_bonus: 2, weight: 3.0f }
-		{ count: 4, item: "minecraft:feather", random_bonus: 4, weight: 7.0f }
-		{ item: "minecraft:blaze_rod", random_bonus: 1, weight: 3.0f }
-		{ count: 2, item: "minecraft:ender_pearl", random_bonus: 1, weight: 3.0f }
-		{ item: "minecraft:bucket", weight: 7.0f }
-		{ item: "minecraft:saddle", weight: 3.0f }
-		{
-			item: {
-				Count: 1
-				id: "constructionwand:iron_wand"
-				tag: {
-					Damage: 0
-					wand_options: { }
-				}
-			}
-			weight: 5.0f
-		}
-		{ item: "dankstorage:dank_1", weight: 5.0f }
-		{ count: 8, item: "pipez:universal_pipe", random_bonus: 8, weight: 5.0f }
-		{ item: "sophisticatedstorage:basic_to_iron_tier_upgrade", weight: 5.0f }
-		{ item: "sophisticatedstorage:upgrade_base", weight: 5.0f }
-		{ item: "sophisticatedbackpacks:upgrade_base", weight: 5.0f }
-		{ item: "pipez:basic_upgrade", weight: 7.0f }
-		{ item: "waystones:return_scroll", weight: 3.0f }
-		{ item: "waystones:bound_scroll", weight: 3.0f }
+		{ item: "minecraft:oak_log", random_bonus: 7, weight: 3.0f }
+		{ item: "minecraft:stone", random_bonus: 7, weight: 3.0f }
+		{ item: "minecraft:bone", random_bonus: 7, weight: 3.0f }
+		{ item: "minecraft:gunpowder", random_bonus: 7, weight: 3.0f }
+		{ item: "minecraft:string", random_bonus: 7, weight: 3.0f }
+		{ item: "minecraft:feather", random_bonus: 3, weight: 3.0f }
+		{ item: "minecraft:leather", random_bonus: 3, weight: 3.0f }
+		{ item: "minecraft:wheat", random_bonus: 3, weight: 3.0f }
+		{ item: "minecraft:bread", random_bonus: 3, weight: 3.0f }
+		{ item: "minecraft:cooked_beef", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:cooked_porkchop", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:cooked_chicken", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:torch", random_bonus: 7, weight: 2.0f }
+		{ item: "minecraft:coal", random_bonus: 7, weight: 2.0f }
+		{ item: "minecraft:iron_ingot", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:redstone", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:gold_ingot", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:name_tag" }
+		{ item: "minecraft:saddle" }
+		{ item: "minecraft:bucket" }
 	]
 	title: "Common Reward"
-	use_title: true
 }

@@ -9,6 +9,16 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.recipes(event => {
+  event.shaped('meatsalad:eldritch_cloth', [
+    'fff',
+    'fcf',
+    'fff'
+  ], {
+    f: 'irons_spellbooks:ancient_knowledge_fragment',
+    c: 'irons_spellbooks:magic_cloth',
+  }).id('meatsalad:eldritch_cloth')
+  
+
   event.shaped('4x meatsalad:dimensional_shard', [
     'deg',
     'irX',
@@ -25,136 +35,108 @@ ServerEvents.recipes(event => {
     c: '#forge:gems/amethyst',
   }).id('meatsalad:dimensional_shard')
 
-  // Gates
-  energize(event,
-    [
-      Ingredient.of('experienceobelisk:cognitive_amalgam'),
-      Ingredient.of('meatsalad:mystery_goo'),
-      Ingredient.of('meatsalad:infused_ender_pearl'),
-      Ingredient.of('experienceobelisk:cognitive_amalgam'),
-    ],
-    20000,
-    Item.of('meatsalad:incomplete_gate_pearl')
-  )
-  energize(event,
-    [
-      Ingredient.of('experienceobelisk:cognitive_amalgam'),
-      Ingredient.of('meatsalad:mystery_goo'),
-      Ingredient.of('meatsalad:incomplete_gate_pearl'),
-      Ingredient.of('experienceobelisk:cognitive_amalgam'),
-    ],
-    30000,
-    Item.of('meatsalad:incomplete_large_gate_pearl')
-  )
-
-  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:magic` }).strongNBT(), [
-    'AAA',
-    'GeG',
-    'AAA'
-  ], {
-    A: 'irons_spellbooks:arcane_essence',
-    G: '#forge:storage_blocks/copper',
-    e: 'meatsalad:incomplete_large_gate_pearl',
-  }).stage('magic_gate').id('meatsalad:magic_gate')
-  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:stronghold` }).strongNBT(), [
-    'BRB',
-    'GeG',
-    'SSS'
-  ], {
-    B: 'minecraft:bone',
-    R: 'minecraft:rotten_flesh',
-    G: '#forge:storage_blocks/iron',
-    e: 'meatsalad:incomplete_large_gate_pearl',
-    S: 'minecraft:stone_bricks'
-  }).stage('stronghold_gate').id('meatsalad:stronghold_gate')
-  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:otherside` }).strongNBT(), [
-    'BWB',
-    'GeG',
-    'SSS'
-  ], {
-    B: 'bhc:wither_bone',
-    W: 'minecraft:wither_skeleton_skull',
-    G: '#forge:storage_blocks/diamond',
-    e: 'meatsalad:incomplete_large_gate_pearl',
-    S: 'allthemodium:ancient_stone'
-  }).stage('otherside_gate').id('meatsalad:otherside_gate')
-  event.shaped(Item.of('gateways:gate_pearl', 1, { gateway: `meatsalad:outer_end` }).strongNBT(), [
-    'PSP',
-    'GeG',
-    'EEE'
-  ], {
-    P: 'minecraft:popped_chorus_fruit',
-    S: 'minecraft:shulker_shell',
-    G: '#forge:storage_blocks/diamond',
-    e: 'meatsalad:incomplete_large_gate_pearl',
-    E: 'minecraft:end_stone'
-  }).stage('outer_end_gate').id('meatsalad:outer_end_gate')
-  
-  energize(event,
-    [
-      Ingredient.of('#forge:ingots/tyrian_steel'),
-      Ingredient.of('#forge:ingots/refined_obsidian'),
-      Ingredient.of('#forge:ingots/starmetal'),
-      Ingredient.of('#forge:ingots/refined_glowstone'),
-      Ingredient.of('#forge:ingots/iridium'),
-      Ingredient.of('#forge:ingots/neutronium'),
-    ],
-    20000000,
-    Item.of('meatsalad:abiding_alloy_ingot')
-  )
-
-  let hypermatterEnergize = (type) => {
-    energize(event,
-      [
-        Ingredient.of('meatsalad:perfect_crystal'),
-        Ingredient.of('meatsalad:chaos_shard'),
-        Ingredient.of(`meatsalad:${type}_chunk`),
-        Ingredient.of(`meatsalad:${type}_chunk`),
-        Ingredient.of('meatsalad:chaos_shard'),
-        Ingredient.of('meatsalad:abiding_alloy_ingot'),
-      ],
-      100000000,
-      Item.of(`meatsalad:${type}_hypermatter`)
-    )
+  const ancientCuriosUpgrades = (baseItem) => {
+    const itemId = baseItem.split(":").pop()
+    event.custom({
+      type: 'cataclysm:weapon_fusion',
+      base: {item: baseItem},
+      addition: {item: 'meatsalad:lost_illusion'},
+      result: {item: `meatsalad:${itemId}_plus`}
+    }).id(`meatsalad:fusion/${itemId}_plus`)
+    event.custom({
+      type: 'cataclysm:weapon_fusion',
+      base: {item: `meatsalad:${itemId}_plus`},
+      addition: {item: 'meatsalad:manifest_illusion'},
+      result: {item: `meatsalad:${itemId}_plus_plus`}
+    }).id(`meatsalad:fusion/${itemId}_plus_plus`)
   }
 
-  hypermatterEnergize('arcanis')
-  hypermatterEnergize('maestris')
-  hypermatterEnergize('sentis')
-  hypermatterEnergize('stalgaris')
-  hypermatterEnergize('velocis')
+  ancientCuriosUpgrades('meatsalad:lucky_ring')
+
+  ancientCuriosUpgrades('meatsalad:arrow_damage_ring')
+  ancientCuriosUpgrades('meatsalad:arrow_velocity_ring')
+  ancientCuriosUpgrades('meatsalad:dodge_chance_ring')
+
+  ancientCuriosUpgrades('irons_spellbooks:mana_ring')
+  ancientCuriosUpgrades('irons_spellbooks:cooldown_ring')
+  ancientCuriosUpgrades('irons_spellbooks:cast_time_ring')
+  ancientCuriosUpgrades('meatsalad:spell_power_ring')
+
+  ancientCuriosUpgrades('meatsalad:attack_damage_ring')
+  ancientCuriosUpgrades('meatsalad:attack_speed_ring')
+  ancientCuriosUpgrades('meatsalad:critical_damage_ring')
+
+  ancientCuriosUpgrades('meatsalad:armor_ring')
+  ancientCuriosUpgrades('meatsalad:armor_toughness_ring')
+  ancientCuriosUpgrades('meatsalad:healing_ring')
 
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
-      '    C    ',
-      '   CeC   ',
-      'C CsSEC C',
-      'CCmvpuaCC',
-      'CTSDUDSIC',
-      'CIaupvmTC',
-      ' CCWSVCC ',
-      '   CAC   ',
-      '    C    '
+      '    u    ',
+      '   UsP   ',
+      '  VostV  ',
+      ' UoosttP ',
+      'vaowsxtmp',
+      'iasshssmg',
+      'iiayszmgg',
+      '  innng  ',
+      '    n    ',
     ],
     key: {
-      C: Ingredient.of('meatsalad:chaos_shard'),
-      e: Ingredient.of('minecraft:dragon_egg'),
-      s: Ingredient.of('quark:dragon_scale'),
-      S: Ingredient.of('#forge:storage_blocks/starmetal'),
+      u: Ingredient.of('#forge:ingots/unobtainium'),
+      U: Ingredient.of('allthemodium:unobtainium_vibranium_alloy_ingot'),
+      s: Ingredient.of('#forge:ingots/starmetal'),
+      P: Ingredient.of('allthemodium:unobtainium_allthemodium_alloy_ingot'),
+      V: Ingredient.of('allthemodium:vibranium_allthemodium_alloy_ingot'),
+      o: Ingredient.of('#forge:ingots/refined_obsidian'),
+      t: Ingredient.of('#forge:ingots/tyrian_steel'),
+      v: Ingredient.of('#forge:ingots/vibranium'),
+      a: Ingredient.of('#forge:ingots/adamantite'),
+      w: Ingredient.of('meatsalad:velocis_stone'),
+      x: Ingredient.of('meatsalad:maestris_stone'),
+      m: Ingredient.of('#forge:ingots/mythril'),
+      p: Ingredient.of('#forge:ingots/allthemodium'),
+      i: Ingredient.of('#forge:ingots/iridium'),
+      h: Ingredient.of('meatsalad:sentis_stone'),
+      g: Ingredient.of('#forge:ingots/refined_glowstone'),
+      y: Ingredient.of('meatsalad:stalgaris_stone'),
+      z: Ingredient.of('meatsalad:arcanis_stone'),
+      n: Ingredient.of('#forge:ingots/netherite'),
+    },
+    result: Item.of('meatsalad:abiding_alloy_ingot', 4)
+  }).id('meatsalad:abiding_alloy_ingot')
+
+  event.custom({
+    type: 'extendedcrafting:shaped_table',
+    pattern: [
+      '    c    ',
+      '   cDc   ',
+      'c cMIEc c',
+      'ccaaaaacc',
+      'cBadUdaCc',
+      'cNaaaaaYc',
+      ' ccTWScc ',
+      '   cAc   ',
+      '    c    '
+    ],
+    key: {
+      c: Ingredient.of('meatsalad:chaos_shard'),
+      D: Ingredient.of('minecraft:dragon_egg'),
+      M: Ingredient.of('cataclysm:monstrous_horn'),
       E: Ingredient.of('progressivebosses:elder_guardian_spike'),
-      v: Ingredient.of('allthemodium:vibranium_allthemodium_alloy_block'),
-      p: Ingredient.of('allthemodium:unobtainium_allthemodium_alloy_block'),
-      u: Ingredient.of('allthemodium:unobtainium_vibranium_alloy_block'),
-      T: Ingredient.of('#forge:storage_blocks/tyrian_steel'),
-      a: Ingredient.of('#forge:storage_blocks/adamantite'),
-      m: Ingredient.of('#forge:storage_blocks/mythril'),
-      D: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
+      d: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
       U: Ingredient.of('extendedcrafting:ultimate_singularity'),
-      I: Ingredient.of('#forge:storage_blocks/iridium'),
-      W: Ingredient.of('apotheosis:warden_tendril'),
-      V: Ingredient.of('meatsalad:vulcanite'),
+      T: Ingredient.of('apotheosis:warden_tendril'),
+      S: Ingredient.of('quark:dragon_scale'),
       A: Ingredient.of('cataclysm:abyssal_egg'),
+      a: Ingredient.of('#forge:ingots/abiding_alloy'),
+      I: Ingredient.of('#forge:storage_blocks/ignitium'),
+      B: Ingredient.of('#forge:storage_blocks/black_steel'),
+      C: Ingredient.of('#forge:storage_blocks/cursium'),
+      N: Ingredient.of('#forge:storage_blocks/ancient_metal'),
+      Y: Ingredient.of('#forge:storage_blocks/abyssium'),
+      W: Ingredient.of('#forge:storage_blocks/witherite'),
     },
     result: Item.of('meatsalad:eternal_crystal')
   }).id('meatsalad:eternal_crystal')
@@ -178,111 +160,113 @@ ServerEvents.recipes(event => {
   )
 
   nucleosynthesize(event,
-    {tag: '#forge:ingots/uranium'}, // Input
-    {mod: 'meatsalad', item: 'neutronium_ingot'} // Output
-  )
-
-  nucleosynthesize(event,
-    {mod: 'meatsalad', item: 'perfect_crystal'}, // Input
-    {mod: 'meatsalad', item: 'eternal_crystal'} // Output
+    {mod: 'meatsalad', item: 'manifest_illusion'}, // Input
+    {mod: 'extendedcrafting', item: 'ultimate_singularity'}, // Output
+    12500,
+    1000
   )
 
   event.custom({
-    type: 'extendedcrafting:shaped_table',
-    pattern: [
-      'd     d',
-      ' T d T ',
-      '  AMB  ',
-      '  NDE  ',
-      '  d d  '
-    ],
-    key: {
-      d: Ingredient.of('meatsalad:infused_diamond'),
-      T: Ingredient.of('minecraft:totem_of_undying'),
-      A: Ingredient.of('allthemodium:ancient_soulberries'),
-      M: Ingredient.of('meatsalad:mystery_goo'),
-      B: Ingredient.of('silentgear:nether_banana'),
-      N: Ingredient.of('minecraft:nether_star'),
-      D: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
-      E: Ingredient.of('meatsalad:ender_star'),
+    type: 'apotheosis:add_sockets',
+    conditions: [{
+      type: "apotheosis:module",
+      module: "adventure"
+    }],
+    input: {
+      item: "meatsalad:lost_illusion"
     },
-    result: Item.of('meatsalad:manifest_illusion')
-  }).id('meatsalad:manifest_illusion')
+    max_sockets: 4
+  }).id('meatsalad:lost_illusion_add_sockets')
+  event.custom({
+    type: 'apotheosis:add_sockets',
+    conditions: [{
+      type: "apotheosis:module",
+      module: "adventure"
+    }],
+    input: {
+      item: "meatsalad:manifest_illusion"
+    },
+    max_sockets: 5
+  }).id('meatsalad:manifest_illusion_add_sockets')
+
+  const mShaped = (result, pattern, count) => {
+    const resultItem = Item.of(result, count || 1)
+    let [mod, itemId] = resultItem.getId().split(':')
+    event.shaped(resultItem, pattern, {
+      U: { item:'meatsalad:uu_matter'}
+    }).noMirror().noShrink().stage('uu_matter').id(`meatsalad:uu_matter/${itemId}`)
+  }
+
+  // Blocks
+  mShaped('minecraft:dirt', [' U ', '   ', '   '], 64)
+  mShaped('minecraft:grass_block', ['UUU', '   ', '   '], 64)
+  mShaped('minecraft:stone', ['   ', ' U ', '   '], 64)
+  mShaped('minecraft:deepslate', ['   ', 'UUU', '   '], 64)
+  mShaped('minecraft:netherrack', ['   ', '   ', ' U '], 64)
+  mShaped('minecraft:white_wool', ['U U', '   ', ' U '], 64)
+  mShaped('minecraft:sand', ['   ', '   ', 'U  '], 64)
+  mShaped('minecraft:glass', [' U ', 'U U', ' U '], 64)
+  mShaped('minecraft:obsidian', ['UUU', 'UUU', '   '], 16)
+  mShaped('minecraft:oak_log', ['U  ', 'U  ', '   '], 64)
+
+  // Misc Items
+  mShaped('minecraft:clay_ball', ['UU ', 'U  ', 'UU '], 48)
+  mShaped('minecraft:paper', ['   ', '   ', 'UUU'], 32)
+  mShaped('minecraft:redstone', ['   ', ' U ', 'UUU'], 32)
+  mShaped('minecraft:lapis_lazuli', [' U ', ' U ', ' UU'], 16)
+  mShaped('minecraft:coal', ['  U', 'U  ', '  U'], 32)
+  mShaped('minecraft:glowstone_dust', ['U U', '  U', 'U U'], 32)
+  mShaped('minecraft:slime_ball', ['U U', '   ', 'U U'], 32)
+  mShaped('minecraft:bone', ['  U', ' U ', 'U  '], 32)
+  mShaped('minecraft:string', ['  U', 'U  ', ' U '], 32)
+  mShaped('minecraft:flint', [' U ', 'U  ', '   '], 32)
+  mShaped('minecraft:feather', ['  U', ' U ', '   '], 32)
+  mShaped('minecraft:leather', ['U  ', ' U ', '  U'], 32)
+  mShaped('minecraft:gunpowder', ['U U', ' U ', 'U U'], 16)
+
+  // Rare Misc Items
+  mShaped('industrialforegoing:plastic', ['U U', 'U U', 'U U'], 16)
+  mShaped('meatsalad:dimensional_shard', ['U U', ' UU', 'UUU'], 16)
+
+  // Ores
+  mShaped('alltheores:aluminum_ore', [' UU', 'UUU', 'UUU'], 12)
+  mShaped('alltheores:lead_ore', ['UU ', 'UUU', 'UUU'], 12)
+  mShaped('alltheores:nickel_ore', ['UUU', ' UU', 'UUU'], 12)
+  mShaped('alltheores:osmium_ore', ['UUU', 'U U', 'UUU'], 12)
+  mShaped('alltheores:platinum_ore', ['UUU', 'UU ', 'UUU'], 12)
+  mShaped('alltheores:silver_ore', ['UUU', 'UUU', ' UU'], 12)
+  mShaped('alltheores:tin_ore', ['UUU', 'UUU', 'U U'], 12)
+  mShaped('alltheores:uranium_ore', ['UUU', 'UUU', 'UU '], 12)
+  mShaped('alltheores:zinc_ore', [' UU', 'UUU', 'UU '], 12)
+  mShaped('minecraft:gold_ore', [' UU', 'UUU', ' UU'], 12)
+  mShaped('minecraft:iron_ore', ['UU ', 'UUU', 'UU '], 12)
+  mShaped('minecraft:nether_quartz_ore', ['UUU', 'UUU', 'U U'], 12)
+  mShaped('minecraft:copper_ore', ['U U', 'UUU', 'UUU'], 12)
 
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
-      ' XXX ',
-      'ALTEP',
-      'RJaQS',
-      ' XdX ',
-      '  X  '
+      ' e     e ',
+      ' ee   ee ',
+      ' eue euue',
+      ' euueuue ',
+      'eudauade ',
+      ' edlcmde ',
+      'euuadauue',
+      ' eeuuuee ',
+      '   eee   '
     ],
     key: {
-      X: Ingredient.of('meatsalad:chaos_shard'),
-      A: Ingredient.of('#forge:gems/aquamarine'),
-      L: Ingredient.of('#forge:gems/lapis'),
-      T: Ingredient.of('#forge:gems/topaz'),
-      E: Ingredient.of('#forge:gems/emerald'),
-      P: Ingredient.of('#forge:gems/peridot'),
-      R: Ingredient.of('#forge:gems/ruby'),
-      J: Ingredient.of('#forge:gems/jade'),
-      Q: Ingredient.of('#forge:gems/quartz'),
-      S: Ingredient.of('#forge:gems/sapphire'),
-      d: Ingredient.of('#forge:gems/diamond'),
-      a: Ingredient.of('#forge:gems/amethyst'),
-    },
-    result: Item.of('meatsalad:perfect_crystal')
-  }).id('meatsalad:perfect_crystal')
-
-  event.custom({
-    type: 'extendedcrafting:shaped_table',
-    pattern: [
-      ' O     O ',
-      ' OO   OO ',
-      ' OeO OeeO',
-      ' OeeOeeO ',
-      'OeDAeADO ',
-      ' ODLSMDO ',
-      'OeeADAeeO',
-      ' OOeeeOO ',
-      '   OOO   '
-    ],
-    key: {
-      S: Ingredient.of('meatsalad:cosmic_shelling'),
-      L: Ingredient.of('meatsalad:lost_illusion'),
-      M: Ingredient.of('meatsalad:manifest_illusion'),
-      A: Ingredient.of('#forge:storage_blocks/abiding_alloy'),
-      D: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
-      O: Ingredient.of('meatsalad:oblivion_shard'),
-      e: Ingredient.of('meatsalad:eternal_crystal_shard')
+      e: Ingredient.of('meatsalad:eternal_crystal_shard'),
+      u: Ingredient.of('meatsalad:uu_matter'),
+      d: Ingredient.of('meatsalad:draconic_infused_dark_matter'),
+      a: Ingredient.of('#forge:storage_blocks/abiding_alloy'),
+      l: Ingredient.of('meatsalad:lost_illusion'),
+      c: Ingredient.of('meatsalad:chaos_crystal'),
+      m: Ingredient.of('meatsalad:manifest_illusion'),
     },
     result: Item.of('meatsalad:infinity_fabric')
   }).id('meatsalad:infinity_fabric')
-
-  event.shaped('meatsalad:oblivion_shard', [
-    ' OA',
-    'OMO',
-    'AO '
-  ], {
-    O: 'minecraft:obsidian',
-    A: '#forge:storage_blocks/amethyst',
-    M: 'quark:myalite_crystal'
-  }).id('meatsalad:oblivion_shard');
-
-  event.shaped('meatsalad:cosmic_shelling', [
-    'gpg',
-    'aUu',
-    'vgm'
-  ], {
-    g: 'meatsalad:mystery_goo',
-    p: 'meatsalad:maestris_hypermatter',
-    a: 'meatsalad:stalgaris_hypermatter',
-    U: 'meatsalad:uu_matter',
-    u: 'meatsalad:sentis_hypermatter',
-    v: 'meatsalad:arcanis_hypermatter',
-    m: 'meatsalad:velocis_hypermatter',
-  }).id('meatsalad:cosmic_shelling');
 
   event.shaped('16x pipez:infinity_upgrade', [
     'ABA',
@@ -333,100 +317,24 @@ ServerEvents.recipes(event => {
     S: '#forge:ingots/osmium',
     U: 'mekanism:ultimate_chemical_tank'
   }).id('meatsalad:mekanism_creative_chemical_tank')
-
-  // Enchanted Books
-  const ENCHANTS = {
-    'minecraft:protection': { currentMax: 9, newMax: 15 },
-    'minecraft:fire_protection': { currentMax: 9, newMax: 15 },
-    'minecraft:feather_falling': { currentMax: 7, newMax: 10 },
-    'minecraft:blast_protection': { currentMax: 9, newMax: 15 },
-    'minecraft:projectile_protection': { currentMax: 9, newMax: 15 },
-    'minecraft:respiration': { currentMax: 4, newMax: 8 },
-    'minecraft:thorns': { currentMax: 4, newMax: 8 },
-    'minecraft:depth_strider': { currentMax: 4, newMax: 8 },
-    'minecraft:frost_walker': { currentMax: 2, newMax: 5 },
-    'minecraft:soul_speed': { currentMax: 4, newMax: 8 },
-    'minecraft:swift_sneak': { currentMax: 4, newMax: 8 },
-    'minecraft:sharpness': { currentMax: 9, newMax: 15 },
-    'minecraft:smite': { currentMax: 9, newMax: 15 },
-    'minecraft:bane_of_arthropods': { currentMax: 9, newMax: 15 },
-    'minecraft:knockback': { currentMax: 4, newMax: 8 },
-    'minecraft:fire_aspect': { currentMax: 4, newMax: 8 },
-    'minecraft:looting': { currentMax: 4, newMax: 8 },
-    'minecraft:sweeping': { currentMax: 7, newMax: 10 },
-    'minecraft:efficiency': { currentMax: 9, newMax: 15 },
-    'minecraft:unbreaking': { currentMax: 4, newMax: 8 },
-    'minecraft:fortune': { currentMax: 4, newMax: 8 },
-    'minecraft:power': { currentMax: 9, newMax: 15 },
-    'minecraft:punch': { currentMax: 4, newMax: 8 },
-    'minecraft:luck_of_the_sea': { currentMax: 4, newMax: 8 },
-    'minecraft:lure': { currentMax: 4, newMax: 8 },
-    'minecraft:loyalty': { currentMax: 4, newMax: 8 },
-    'minecraft:impaling': { currentMax: 9, newMax: 15 },
-    'minecraft:riptide': { currentMax: 4, newMax: 8 },
-    'minecraft:quick_charge': { currentMax: 4, newMax: 8 },
-    'minecraft:piercing': { currentMax: 7, newMax: 10 },
-    'apotheosis:berserkers_fury': { currentMax: 2, newMax: 5 },
-    'apotheosis:crescendo': { currentMax: 4, newMax: 8 },
-    'apotheosis:earths_boon': { currentMax: 2, newMax: 5 },
-    'apotheosis:icy_thorns': { currentMax: 4, newMax: 8 },
-    'apotheosis:knowledge': { currentMax: 2, newMax: 5 },
-    'apotheosis:natures_blessing': { currentMax: 4, newMax: 8 },
-    'apotheosis:reflective': { currentMax: 4, newMax: 8 },
-    'apotheosis:scavenger': { currentMax: 2, newMax: 5 },
-    'apotheosis:shield_bash': { currentMax: 4, newMax: 8 },
-    'apotheosis:spearfishing': { currentMax: 4, newMax: 8 },
-    'apotheosis:bane_of_illagers': { currentMax: 9, newMax: 15 },
-    'apotheosis:capturing': { currentMax: 2, newMax: 5 },
-    'cofh_core:holding': { currentMax: 9, newMax: 15 },
-    'ensorcellation:magic_protection': { currentMax:9, newMax: 15 },
-    //'ensorcellation:fire_rebuke': { currentMax: 6, newMax: 10 },
-    'ensorcellation:frost_aspect': { currentMax: 4, newMax: 8 },
-    'ensorcellation:leech': { currentMax: 4, newMax: 8 },
-    //'ensorcellation:magic_edge': { currentMax: 7, newMax: 10 },
-    'ensorcellation:vorpal': { currentMax: 4, newMax: 8 },
-    'ensorcellation:hunter': { currentMax: 4, newMax: 8 },
-    'ensorcellation:trueshot': { currentMax: 4, newMax: 8 },
-    'ensorcellation:angler': { currentMax: 7, newMax: 10 },
-    'ensorcellation:phalanx': { currentMax: 9, newMax: 15 },
-  }
-
-  for (let [enchant, enchantProps] of Object.entries(ENCHANTS)) {
-    let currentMax = enchantProps.currentMax
-    let newMax = enchantProps.newMax
-    /*
-    for (let level = currentMax + 2; level <= newMax; level += 1) {
-      event.custom({
-        type: 'cataclysm:weapon_fusion',
-        /*
-        base: {item: 'meatsalad:eternal_crystal_shard'},
-        addition: Item.of('minecraft:enchanted_book').enchant(enchant, level - 1).strongNBT(),
-        result: Item.of('minecraft:enchanted_book').enchant(enchant, level).strongNBT()
-        
-      }).id(`meatsalad:fusion/${enchant.split(':').pop()}_level_${level}_enchanted_book`)
-    }
-    */
-    event.custom({
-      type: 'cataclysm:weapon_fusion',
-      base: Item.of('minecraft:enchanted_book').enchant(enchant, currentMax).strongNBT(),
-      addition: {item: 'meatsalad:eternal_crystal_shard'},
-      result: Item.of('quark:ancient_tome', `{StoredEnchantments:[{id:"${enchant}",lvl:${currentMax}s}]}`)//.strongNBT()
-    }).id(`meatsalad:fusion/${enchant.split(':').pop()}_ancient_tome`)
-  }
-
-  let awakenedUpgrade = (base_ingot, hypermatter, awakened_ingot) => {
-    event.custom({
-      type: 'minecraft:smithing_transform',
-      template: Item.of('meatsalad:awakened_upgrade_smithing_template'),
-      base: Ingredient.of(base_ingot),
-      addition: Item.of(hypermatter),
-      result: Item.of(awakened_ingot)
-    }).id(`meatsalad:smithing/${awakened_ingot.split(':').pop()}`)
-  }
-
-  awakenedUpgrade('#forge:ingots/adamantite', 'meatsalad:stalgaris_hypermatter', 'meatsalad:awakened_adamantite_ingot')
-  awakenedUpgrade('#forge:ingots/allthemodium', 'meatsalad:maestris_hypermatter', 'meatsalad:awakened_palladium_ingot')
-  awakenedUpgrade('#forge:ingots/mythril', 'meatsalad:velocis_hypermatter', 'meatsalad:awakened_mythril_ingot')
-  awakenedUpgrade('#forge:ingots/unobtainium', 'meatsalad:sentis_hypermatter', 'meatsalad:awakened_unobtainium_ingot')
-  awakenedUpgrade('#forge:ingots/vibranium', 'meatsalad:arcanis_hypermatter', 'meatsalad:awakened_vibranium_ingot')
+  event.shaped('refinedstorage:creative_storage_disk', [
+    'GIG',
+    'IDI',
+    'QQQ'
+  ], {
+    G: '#forge:glass',
+    I: 'meatsalad:infinity_fiber',
+    D: 'refinedstorage:64k_storage_disk',
+    Q: 'refinedstorage:quartz_enriched_iron',
+  }).id('meatsalad:creative_storage_disk')
+  event.shaped('refinedstorage:creative_fluid_storage_disk', [
+    'GIG',
+    'IDI',
+    'QQQ'
+  ], {
+    G: '#forge:glass',
+    I: 'meatsalad:infinity_fiber',
+    D: 'refinedstorage:4096k_fluid_storage_disk',
+    Q: 'refinedstorage:quartz_enriched_iron',
+  }).id('meatsalad:creative_fluid_storage_disk')
 })

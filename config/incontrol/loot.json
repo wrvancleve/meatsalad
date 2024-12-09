@@ -105,16 +105,8 @@
     ]
   },
   {
-    "mob": "minecraft:evoker",
-    "remove": [
-      "minecraft:emerald",
-      "minecraft:totem_of_undying"
-    ]
-  },
-  {
     "mob": "minecraft:vindicator",
     "remove": [
-      "minecraft:emerald",
       "minecraft:iron_axe"
     ]
   },

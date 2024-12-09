@@ -21,4 +21,11 @@ ServerEvents.recipes(event => {
   createThrusterRecipe('palladium', 'allthemodium', 'ingot', 'ironjetpacks:advanced_coil')
   createThrusterRecipe('vibranium', 'vibranium', 'ingot', 'ironjetpacks:elite_coil')
   createThrusterRecipe('unobtainium', 'unobtainium', 'ingot', 'ironjetpacks:ultimate_coil')
+
+  event.custom({
+    type: 'cataclysm:weapon_fusion',
+    base: Item.of('ironjetpacks:jetpack', { Id: "ironjetpacks:unobtainium" }).weakNBT(),
+    addition: {item: 'meatsalad:infinity_fabric'},
+    result: Item.of('ironjetpacks:jetpack', { Id: "ironjetpacks:creative" })
+  }).id('meatsalad:fusion/creative_jetpack')
 })

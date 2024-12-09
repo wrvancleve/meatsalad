@@ -3,7 +3,8 @@ ClientEvents.lang('en_us', event => {
   event.add('allthemodium', 'upgrade.allthemodium.allthemodium_upgrade', 'Palladium Upgrade')
   event.add('allthemodium', 'item.allthemodium.smithing_template.allthemodium_upgrade.ingredients', 'Palladium Ingot')
   event.add('allthemodium', 'item.allthemodium.smithing_template.vibranium_upgrade.applies_to', 'Palladium Equipment')
-  event.add('allthemodium', 'vibranium.loc', 'Other: All Biomes Y 0 to 40.')
+  event.add('allthemodium', 'unobtainium.loc', 'The End: End Highlands (Y: 8 to 376)')
+  event.add('allthemodium', 'vibranium.loc', 'Other: All Biomes (Y: 0 to 40)')
   event.add('allthemodium', 'material.allthemodium.allthemodium', 'Palladium')
   event.add('allthemodium', 'material.silentgear.allthemodium', 'Palladium')
   event.add('allthemodium', 'tetra.material.allthemodium', 'Palladium')
@@ -65,6 +66,7 @@ ClientEvents.lang('en_us', event => {
   event.add('allthemodium', 'harvestTier.allthemodium.unobtainium', 'Unobtainium')
   event.add('allthemodium', 'advancements.allthemodium.the_other.description', 'Enter the Other dimension')
   event.add('allthemodium', 'advancements.allthemodium.the_other.title', 'Welcome to the other side!')
+  event.add('allthemodium', 'biome.allthemodium.mining', 'Flatland')
 })
 
 ItemEvents.tooltip(event => {
@@ -120,9 +122,6 @@ JEIEvents.hideItems(event => {
     'allthemodium:unobtainium_allthemodium_alloy_dust',
     'allthemodium:unobtainium_vibranium_alloy_dust',
     'allthemodium:vibranium_allthemodium_alloy_dust',
-    'allthemodium:unobtainium_allthemodium_alloy_ingot',
-    'allthemodium:unobtainium_vibranium_alloy_ingot',
-    'allthemodium:vibranium_allthemodium_alloy_ingot',
     'allthemodium:alloy_sword',
     'allthemodium:alloy_axe',
     'allthemodium:alloy_shovel',

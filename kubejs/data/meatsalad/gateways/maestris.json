@@ -1,0 +1,368 @@
+{
+  "size": "large",
+  "color": "#F08000",
+  "leash_range": 64,
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "count": 5
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 3.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "ADDITION",
+          "value": 30
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "ADDITION",
+          "value": 18
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "MULTIPLY_BASE",
+          "value": 0.3
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:armor_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "attributeslib:prot_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "ADDITION",
+          "value": 0.5
+        },
+        {
+          "type": "gateways:mob_effect",
+          "effect": {
+            "effect": "meatsalad:glimpse_of_god"
+          }
+        }
+      ],
+      "rewards": [],
+      "max_wave_time": 3000,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "quark:forgotten",
+          "count": 5
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 3.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "ADDITION",
+          "value": 30
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "ADDITION",
+          "value": 18
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "MULTIPLY_BASE",
+          "value": 0.3
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:armor_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "attributeslib:prot_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "ADDITION",
+          "value": 0.5
+        },
+        {
+          "type": "gateways:mob_effect",
+          "effect": {
+            "effect": "meatsalad:glimpse_of_god"
+          }
+        }
+      ],
+      "rewards": [],
+      "max_wave_time": 3000,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:elite_draugr",
+          "count": 5
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 3.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "ADDITION",
+          "value": 30
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "ADDITION",
+          "value": 18
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "MULTIPLY_BASE",
+          "value": 0.3
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:armor_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "attributeslib:prot_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "ADDITION",
+          "value": 0.5
+        },
+        {
+          "type": "gateways:mob_effect",
+          "effect": {
+            "effect": "meatsalad:glimpse_of_god"
+          }
+        }
+      ],
+      "rewards": [],
+      "max_wave_time": 3000,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "mutantmonsters:mutant_skeleton",
+          "count": 3
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 3.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "ADDITION",
+          "value": 30
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "ADDITION",
+          "value": 18
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "MULTIPLY_BASE",
+          "value": 0.3
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:armor_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "attributeslib:prot_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "ADDITION",
+          "value": 0.5
+        },
+        {
+          "type": "gateways:mob_effect",
+          "effect": {
+            "effect": "meatsalad:glimpse_of_god"
+          }
+        }
+      ],
+      "rewards": [],
+      "max_wave_time": 3000,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:ignited_revenant",
+          "count": 3
+        }
+      ],
+      "modifiers": [
+        {
+          "attribute": "generic.max_health",
+          "operation": "MULTIPLY_TOTAL",
+          "value": 1.0
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "ADDITION",
+          "value": 30
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "ADDITION",
+          "value": 18
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "MULTIPLY_BASE",
+          "value": 0.3
+        },
+        {
+          "attribute": "generic.attack_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_BASE",
+          "value": 1.0
+        },
+        {
+          "attribute": "attributeslib:armor_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "attributeslib:prot_shred",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "generic.knockback_resistance",
+          "operation": "ADDITION",
+          "value": 0.7
+        },
+        {
+          "attribute": "irons_spellbooks:spell_resist",
+          "operation": "ADDITION",
+          "value": 0.5
+        },
+        {
+          "type": "gateways:mob_effect",
+          "effect": {
+            "effect": "meatsalad:glimpse_of_god"
+          }
+        }
+      ],
+      "rewards": [],
+      "max_wave_time": 3000,
+      "setup_time": 200
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:command",
+      "command": "give @a[team=Meat] treasurebags:treasure_bag{silentlib.LootContainer:{BagType:\"meatsalad:maestris\",LootTable:\"meatsalad:bags/maestris\"}}",
+      "desc": "rewards.meatsalad.loot_table.maestris"
+    },
+    {
+      "type": "gateways:experience",
+      "experience": 1000,
+      "orb_size": 25
+    }
+  ],
+  "failures": [],
+  "rules": {
+    "allow_discarding": true
+  }
+}

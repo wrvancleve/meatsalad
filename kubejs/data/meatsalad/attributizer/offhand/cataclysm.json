@@ -1,0 +1,33 @@
+{
+  "cataclysm:bulwark_of_the_flame": [
+    {
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "ADDITION",
+      "modify": 0.5
+    },
+    {
+      "attribute": "minecraft:generic.armor_toughness",
+      "operation": "ADDITION",
+      "modify": 2.0
+    }
+  ],
+  "cataclysm:black_steel_targe": [
+    {
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "ADDITION",
+      "modify": 0.5
+    },
+    {
+      "attribute": "minecraft:generic.armor_toughness",
+      "operation": "ADDITION",
+      "modify": 1.0
+    }
+  ],
+  "a": [
+    {
+      "attribute": "forge:attack_range",
+      "operation": "ADDITION",
+      "modify": -2.25
+    }
+  ]
+}

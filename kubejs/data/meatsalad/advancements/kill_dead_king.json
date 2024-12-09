@@ -1,0 +1,39 @@
+{
+  "parent": "irons_spellbooks:irons_spellbooks/enter_catacombs",
+  "criteria": {
+    "killed_dead_king": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "irons_spellbooks:dead_king"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.meatsalad.kill_dead_king.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "irons_spellbooks:necronomicon_spell_book"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.meatsalad.kill_dead_king.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_dead_king"
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Obsidian",
+  "colors": [
+    "3b2754",
+    "100c1c"
+  ],
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "materialCount": 81
+}

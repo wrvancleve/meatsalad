@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:nether/summon_wither",
+  "criteria": {
+    "killed_wither": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.meatsalad.kill_wither.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.meatsalad.kill_wither.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_wither"
+    ]
+  ]
+}

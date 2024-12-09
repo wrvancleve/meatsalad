@@ -1,0 +1,108 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ores/sapphire"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "industrialforegoing:laser_drill_ore",
+        "catalyst": {
+          "item": "industrialforegoing:laser_lens11"
+        },
+        "output": {
+          "tag": "forge:ores/sapphire"
+        },
+        "pointer": 0,
+        "rarity": [
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "minecraft:cold_ocean",
+                "minecraft:deep_cold_ocean",
+                "minecraft:deep_frozen_ocean",
+                "minecraft:frozen_ocean",
+                "minecraft:frozen_peaks",
+                "minecraft:frozen_river",
+                "minecraft:grove",
+                "minecraft:ice_spikes",
+                "minecraft:jagged_peaks",
+                "minecraft:old_growth_pine_taiga",
+                "minecraft:snowy_beach",
+                "minecraft:snowy_plains",
+                "minecraft:snowy_slopes",
+                "minecraft:snowy_taiga",
+                "minecraft:taiga"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": -63,
+            "depth_max": 255,
+            "weight": 3
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 112,
+            "depth_max": 175,
+            "weight": 2
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:soul_sand_valley",
+                "allthemodium:desert_hills",
+                "allthemodium:desert",
+                "allthemodium:warped_forest",
+                "allthemodium:crimson_forest",
+                "allthemodium:the_other",
+                "allthemodium:basalt_deltas"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": -63,
+            "depth_max": 0,
+            "weight": 2
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 1,
+            "depth_max": 111,
+            "weight": 1
+          },
+          {
+            "whitelist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                "allthemodium:mining"
+              ]
+            },
+            "blacklist": {},
+            "depth_min": 176,
+            "depth_max": 247,
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -17,11 +17,10 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.aquamarine"
+    "text": "Aquamarine"
   },
   "stats": {
-    "tip": {},
-    "adornment": {}
+    "tip": {}
   },
   "traits": {
     "tip": [
@@ -52,25 +51,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#FF04A4D4"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#FF04A4D4"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#FF04A4D4"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

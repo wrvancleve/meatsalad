@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:cursium_block"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.1,
+          "condition": "random_chance_with_looting",
+          "looting_multiplier": 0.1
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cataclysm:music_disc_maledictus"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cataclysm:entities/maledictus"
+}

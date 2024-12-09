@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "§2§kVelocis§r§r Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/velocis",
+  "rarity": "rare",
+  "bagColor": "#2E8B57",
+  "bagOverlayColor": "#0BDA51",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

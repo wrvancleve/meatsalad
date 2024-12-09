@@ -36,6 +36,7 @@ WorldgenEvents.remove(event => {
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
+    'silentgear:bort_ore',
     'thermal:lead_ore',
     'thermal:nickel_ore',
     'thermal:silver_ore',
@@ -85,16 +86,6 @@ WorldgenEvents.add(event => {
     ore.count(2)
     ore.squared()
     ore.uniformHeight(48, 143)
-  })
-  event.addOre((ore) => {
-    ore.id = "meatsalad:mining_bort"
-    ore.biomes = ['allthemodium:mining']
-    ore.addTarget('minecraft:stone', 'silentgear:bort_ore')
-    ore.addTarget('minecraft:deepslate', 'silentgear:deepslate_bort_ore')
-    ore.size(3)
-    ore.count(3)
-    ore.squared()
-    ore.uniformHeight(1, 111)
   })
   event.addOre((ore) => {
     ore.id = "meatsalad:mining_crimson_iron"

@@ -47,8 +47,8 @@
 	world = true
 	mobs = true
 	client = true
-	experimental = true
-	oddities = true
+	experimental = false
+	oddities = false
 
 [automation]
 	"Chains Connect Blocks" = true
@@ -335,21 +335,21 @@
 		"Swap Off Hand" = true
 
 [tools]
-	Abacus = true
+	Abacus = false
 	"Ambient Discs" = true
 	"Ancient Tomes" = true
 	"Beacon Redirection" = true
-	"Bottled Cloud" = true
+	"Bottled Cloud" = false
 	"Color Runes" = true
 	"Endermosh Music Disc" = true
 	"Parrot Eggs" = true
 	"Pathfinder Maps" = true
-	Pickarang = true
+	Pickarang = false
 	"Seed Pouch" = true
-	"Skull Pikes" = true
+	"Skull Pikes" = false
 	"Slime In A Bucket" = true
 	"Torch Arrow" = true
-	Trowel = true
+	Trowel = false
 
 	[tools.abacus]
 
@@ -426,7 +426,7 @@
 		#minecraft:ice_mountains,2,8,14,7FE4FF
 		Customs = []
 		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
-		"Apply Default Trades" = true
+		"Apply Default Trades" = false
 		#How many steps in the search should the Pathfinder's Quill do per tick? The higher this value, the faster it'll find a result, but the higher chance it'll lag the game while doing so
 		"Pathfinders Quill Speed" = 32
 		#Experimental. Determines if quills should be multithreaded instead. Will ignore quill speed. This could drastically improve performance as it execute the logic off the main thread ideally causing no lag at all
@@ -754,7 +754,7 @@
 		"Smelt Raw Ore Blocks" = true
 
 [world]
-	"Ancient Wood" = true
+	"Ancient Wood" = false
 	"Azalea Wood" = true
 	"Big Stone Clusters" = true
 	"Blossom Trees" = true
@@ -1150,7 +1150,7 @@
 
 		[world.monster_box.dimensions]
 			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld"]
+			Dimensions = ["minecraft:overworld", "allthemodium:the_other"]
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)

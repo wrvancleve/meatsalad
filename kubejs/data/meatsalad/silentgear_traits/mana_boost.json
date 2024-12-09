@@ -6,7 +6,7 @@
       "text": "Mana Boost"
     },
     "description": {
-      "translate": "Grants additional max mana"
+      "text": "Grants additional max mana"
     },
     "attribute_modifiers": {
       "all": [

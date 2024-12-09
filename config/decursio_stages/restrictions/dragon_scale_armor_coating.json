@@ -1,0 +1,99 @@
+{
+    "Restriction Data": {
+        "stage": "dragon_scale_armor_coating",
+        "itemList": [
+            {
+                "item": "silentgear:helmet",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:coating",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:dragon_scale"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:chestplate",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:coating",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:dragon_scale"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:leggings",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:coating",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:dragon_scale"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:boots",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:coating",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:dragon_scale"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -17,24 +17,31 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.jade"
+    "text": "Jade"
   },
   "stats": {
-    "tip": {},
-    "adornment": {}
-  },
-  "traits": {
-    "tip": [
-      {
-        "name": "meatsalad:mana_boost",
-        "level": 2
+    "tip": {
+      "durability": {
+        "add": 512.0
       },
-      {
-        "name": "meatsalad:spell_damage",
-        "level": 2
+      "armor_durability": {
+        "add": 18.0
+      },
+      "harvest_speed": {
+        "add": 2.0
+      },
+      "melee_damage": {
+        "add": 1.5
+      },
+      "ranged_damage": {
+        "add": 0.5
+      },
+      "rarity": {
+        "add": 30.0
       }
-    ]
+    }
   },
+  "traits": {},
   "model": {
     "tip/all": [
       {
@@ -52,25 +59,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#FF1CBB37"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#FF1CBB37"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#FF1CBB37"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

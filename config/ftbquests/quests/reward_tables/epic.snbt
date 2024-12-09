@@ -1,29 +1,130 @@
 {
-	icon: "lootr:lootr_chest"
 	id: "02A3FDF19EB821EE"
+	loot_crate: {
+		color: 16733695
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "epic_loot_crate"
+	}
 	loot_size: 1
-	order_index: 2
+	order_index: 3
 	rewards: [
-		{ item: "sophisticatedbackpacks:stack_upgrade_tier_4" }
-		{ item: "sophisticatedstorage:stack_upgrade_tier_4" }
-		{ count: 2, item: "fluxnetworks:flux_core", random_bonus: 2 }
-		{ count: 4, item: "meatsalad:dimensional_shard", random_bonus: 2 }
+		{ item: "bhc:red_heart" }
+		{
+			item: {
+				Count: 1
+				id: "bhc:red_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:yellow_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bhc:blue_heart_patch"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "industrialforegoing:latex_bucket" }
+		{ item: "industrialforegoing:pink_slime_bucket" }
+		{ item: "industrialforegoing:mob_imprisonment_tool" }
+		{ count: 4, item: "fluxnetworks:flux_dust", random_bonus: 4 }
+		{ item: "fluxnetworks:flux_core", random_bonus: 3 }
+		{ item: "fluxnetworks:flux_plug" }
+		{ item: "fluxnetworks:flux_point" }
+		{ item: "refinedstorage:16k_storage_disk" }
+		{ item: "extrastorage:iron_crafter" }
+		{ item: "extrastorage:gold_crafter" }
+		{ count: 4, item: "meatsalad:dimensional_shard", random_bonus: 4 }
 		{ item: "pipez:ultimate_upgrade", random_bonus: 2 }
 		{ item: "thermal:upgrade_augment_3" }
 		{ item: "mekanism:ingot_refined_obsidian", random_bonus: 3 }
 		{ item: "mekanism:alloy_atomic", random_bonus: 2 }
+		{ item: "apotheosis:sigil_of_rebirth", random_bonus: 3 }
+		{ item: "minecraft:enchanted_golden_apple" }
 		{ count: 4, item: "mekanism:ultimate_universal_cable", random_bonus: 4 }
 		{ count: 4, item: "mekanism:ultimate_mechanical_pipe", random_bonus: 4 }
 		{ count: 4, item: "mekanism:ultimate_pressurized_tube", random_bonus: 4 }
 		{ item: "mekanism:ultimate_tier_installer" }
 		{ item: "mekanism:quantum_entangloporter" }
-		{ item: "apotheosis:sigil_of_socketing" }
-		{ count: 2, item: "apotheosis:epic_material", random_bonus: 4 }
-		{ count: 2, item: "apotheosis:mythic_material", random_bonus: 4 }
-		{ item: "irons_spellbooks:epic_ink", random_bonus: 2 }
-		{ item: "irons_spellbooks:legendary_ink", random_bonus: 2 }
+		{ item: "allthemodium:ancient_soulberries", random_bonus: 3 }
+		{ count: 2, item: "apotheosis:epic_material", random_bonus: 2 }
+		{ item: "irons_spellbooks:epic_ink", random_bonus: 1 }
+		{ item: "meatsalad:mystery_goo", random_bonus: 2 }
+		{ item: "hostilenetworks:blank_data_model" }
 		{ item: "irons_spellbooks:ancient_knowledge_fragment", random_bonus: 1 }
+		{ item: "apotheosis:boss_summoner" }
+		{ item: "meatsalad:mastery_essence" }
+		{ item: "meatsalad:rebirth_essence" }
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:hellish_fortress"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "meatsalad:stronghold"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "meatsalad:magic"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "meatsalad:otherside"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:vibranium_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:allthemodium_sight"
+				}
+			}
+		}
 	]
 	title: "&dEpic Reward"
-	use_title: true
 }

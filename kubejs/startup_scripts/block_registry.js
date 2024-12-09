@@ -1,10 +1,3 @@
-global.getReadableText = (text) => {
-  return String(text)
-    .split('_')
-    .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
-    .join(' ')
-}
-
 StartupEvents.registry('block', event => {
   const IRON_HARVEST_LEVEL_TAG = 'minecraft:needs_iron_tool'
   const NETHERITE_HARVEST_LEVEL_TAG = 'forge:needs_netherite_tool'
@@ -109,6 +102,7 @@ StartupEvents.registry('block', event => {
     addGemBlocks(gem)
   })
 
+  createBlock('abyssium', 'storage_block', IRON_HARVEST_LEVEL_TAG)
   createBlock('adamantite', 'basalt_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
   createBlock('adamantite', 'blackstone_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
   createBlock('adamantite', 'end_ore', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
@@ -120,11 +114,6 @@ StartupEvents.registry('block', event => {
   createBlock('mythril', 'storage_block_raw', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
   createBlock('mythril', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
   createBlock('starmetal', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
-  createBlock('neutronium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  //createBlock('neutronium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
   createBlock('abiding_alloy', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
-  createBlock('awakened_adamantite', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
-  createBlock('awakened_mythril', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
-  createBlock('awakened_palladium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
-  createBlock('awakened_unobtainium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
-  createBlock('awakened_vibranium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
 })

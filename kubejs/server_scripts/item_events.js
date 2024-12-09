@@ -1,14 +1,16 @@
 ItemEvents.rightClicked(event => {
-  if (event.item == 'meatsalad:level_up_skill_token') {
-    Utils.server.runCommandSilent(`/puffish_skills points add ${event.player.username} meatsalad:combat 1`)
-    if (!event.player.isCreative()) {event.item.count--}
-    event.cancel()
-  } else if (event.item == 'meatsalad:reset_skill_token') {
-    Utils.server.runCommandSilent(`/puffish_skills skills reset ${event.player.username} meatsalad:combat`)
-    Utils.server.runCommandSilent(`gamestage remove ${event.player.username} free_charm_1`)
-    Utils.server.runCommandSilent(`gamestage remove ${event.player.username} mage_ring_1`)
-    event.player.tell(Text.gold('Your skill tree was been reset!'))
-    if (!event.player.isCreative()) {event.item.count--}
-    event.cancel()
+  const player = event.player
+  switch (event.item) {
+    case 'meatsalad:mastery_essence':
+      Utils.server.runCommandSilent(`puffish_skills points add ${player.username} meatsalad:combat 1`)
+      if (!player.isCreative()) {event.item.count--}
+      event.cancel()
+      break
+    case 'meatsalad:rebirth_essence':
+      Utils.server.runCommandSilent(`puffish_skills skills reset ${player.username} meatsalad:combat`)
+      player.tell(Text.gold('Your skill tree has been reset!'))
+      if (!player.isCreative()) {event.item.count--}
+      event.cancel()
+      break
   }
 })
