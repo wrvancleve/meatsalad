@@ -47,21 +47,16 @@
 			id: "2CA0273F29B2DAC8"
 			rewards: [
 				{
-					id: "3A64C891271BD1CF"
-					item: "meatsalad:infinity_fabric"
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "623E77D218B44E9E"
 					table_id: 3670248595616648664L
-					type: "loot"
+					type: "choice"
 				}
 				{
 					auto: "invisible"
 					id: "60C5B232C0A39D6C"
 					type: "xp"
-					xp: 5000
+					xp: 50
 				}
 			]
 			shape: "gear"
@@ -127,6 +122,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["37172411ED942FAB"]
 			description: ["Matter that has unique properties that allows it to craft many things"]
 			id: "597F049F648EC535"
 			rewards: [
@@ -242,6 +238,241 @@
 			}]
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["47AC3BAD4C6A1D26"]
+			id: "37172411ED942FAB"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "251869DC93842157"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "700B429F172E4478"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "6A32AE8AF616B34C"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FD5F74EDCFE7FFC"]
+			id: "47AC3BAD4C6A1D26"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "49B1EDEDE9E08060"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E895305A749E49E"
+					table_id: 3670248595616648664L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "74E92C3DC64EEEC5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2F811CADF2CD3136"
+				"2922A4A65832F17F"
+				"27EE91A1FEDCB45E"
+				"71E7A1FD612672DE"
+				"1F2346D554622D18"
+			]
+			id: "2FD5F74EDCFE7FFC"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "511FAD6A3AE31859"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4755B0C366A40190"
+					table_id: 190274823471505902L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "14A0D1C360374523"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			id: "2F811CADF2CD3136"
+			rewards: [
+				{
+					id: "6F600A9C86934DA7"
+					item: {
+						Count: 1
+						id: "mekanism:creative_fluid_tank"
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										Amount: 2147483647
+										FluidName: "minecraft:water"
+									}
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "6A178E962A1E2841"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2175DAFEA50892E6"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "767B6610B85166A8"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			id: "71E7A1FD612672DE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "083699BEC0F63BB6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C5929C0C9E5CE09"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0579B2CAE4632979"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			id: "27EE91A1FEDCB45E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "77B0BDF457FD6097"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EBA0463CBB10F4B"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "105CE6C17D649EC4"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			id: "1F2346D554622D18"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5528F0A1FE94B19F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "116B6DA2C2F0D914"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "35A3A0FC76010153"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			id: "2922A4A65832F17F"
+			rewards: [
+				{
+					id: "07878435DC16834A"
+					item: "pipez:infinity_upgrade"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "00F28A1D5C5F77ED"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C0C3DD8EFDAF8CB"
+					table_id: 3121014603660562895L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4AD888F9E99323A0"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
 		}
 	]
 	title: "Infinity Fabric"

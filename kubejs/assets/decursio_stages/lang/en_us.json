@@ -41,7 +41,7 @@
   "decursio_stages.commands.clear.target": "All your stages have been removed!",
   "decursio_stages.commands.clear.sender": "Removed %s stages from %s's stage data!",
 
-  "decursio_stages.tooltip.stage.message": " skill is required to equip/use!",
+  "decursio_stages.tooltip.stage.message": " is required to equip/use!",
   "decursio_stages.tooltip.stage.left_bracket": "[",
   "decursio_stages.tooltip.stage.right_bracket": "]",
   "decursio_stages.tooltip.stage.stage": "%s",

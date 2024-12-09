@@ -153,6 +153,10 @@ ItemEvents.tooltip(event => {
   addCurioMasteryWarning("warrior", "attack_damage_ring")
   addCurioMasteryWarning("warrior", "attack_speed_ring")
   addCurioMasteryWarning("warrior", "critical_damage_ring")
+
+  addCurioMasteryWarning("guardian", "armor_ring")
+  addCurioMasteryWarning("guardian", "armor_toughness_ring")
+  addCurioMasteryWarning("guardian", "healing_ring")
 })
 
 // ItemEvents.tooltip(event => {

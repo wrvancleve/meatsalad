@@ -381,7 +381,7 @@
 		"icon": {
 			"type": "item",
 			"data": {
-				"item": "meatsalad:arrow_damage_ring_plus_plus"
+				"item": "meatsalad:armor_toughness_ring_plus_plus"
 			}
 		},
 		"rewards": [

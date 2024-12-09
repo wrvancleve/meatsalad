@@ -24,11 +24,19 @@ ServerEvents.genericLootTables((event) => {
       addStack(pool, {item: "meatsalad:critical_damage_ring"})
     })
   })
+  event.addGeneric("meatsalad:curios/guardian", loot => {
+    loot.addPool(pool => {
+      addStack(pool, {item: "meatsalad:armor_ring"})
+      addStack(pool, {item: "meatsalad:armor_toughness_ring"})
+      addStack(pool, {item: "meatsalad:healing_ring"})
+    })
+  })
   event.addGeneric("meatsalad:curios/random", loot => {
     loot.addPool(pool => {
       addLootTable(pool, {type: "curios", name: "archer", weight: 2.0})
       addLootTable(pool, {type: "curios", name: "mage", weight: 2.0})
       addLootTable(pool, {type: "curios", name: "warrior", weight: 2.0})
+      addLootTable(pool, {type: "curios", name: "guardian", weight: 2.0})
       addStack(pool, {item: "meatsalad:lucky_ring"}, {weight: 1.0})
     })
   })

@@ -58,18 +58,14 @@ ServerEvents.recipes(event => {
   for (let [enchant, enchantProps] of Object.entries(ENCHANTS)) {
     let currentMax = enchantProps.currentMax
     let newMax = enchantProps.newMax
-    /*
     for (let level = currentMax + 2; level <= newMax; level += 1) {
       event.custom({
         type: 'cataclysm:weapon_fusion',
-        /*
-        base: {item: 'meatsalad:eternal_crystal_shard'},
-        addition: Item.of('minecraft:enchanted_book').enchant(enchant, level - 1).strongNBT(),
+        base: Item.of('minecraft:enchanted_book').enchant(enchant, level - 1).strongNBT(),
+        addition: Item.of('quark:ancient_tome', `{StoredEnchantments:[{id:'${enchant}',lvl:${currentMax}s}]}`).weakNBT(),
         result: Item.of('minecraft:enchanted_book').enchant(enchant, level).strongNBT()
-        
       }).id(`meatsalad:fusion/${enchant.split(':').pop()}_level_${level}_enchanted_book`)
     }
-    */
     event.custom({
       type: 'cataclysm:weapon_fusion',
       base: Item.of('minecraft:enchanted_book').enchant(enchant, currentMax).strongNBT(),

@@ -79,11 +79,6 @@
 			id: "6E477150D56A208D"
 			rewards: [
 				{
-					id: "0AC5368CC8FB0FBA"
-					item: "meatsalad:eternal_crystal"
-					type: "item"
-				}
-				{
 					id: "7A8B53D586F8EA5C"
 					type: "xp"
 					xp: 50
@@ -92,7 +87,7 @@
 					exclude_from_claim_all: true
 					id: "5C6AEC2EAAFE53B7"
 					table_id: 3670248595616648664L
-					type: "loot"
+					type: "choice"
 				}
 			]
 			shape: "gear"

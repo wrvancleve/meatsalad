@@ -19,11 +19,6 @@ ServerEvents.genericLootTables(event => {
     }
   }
 
-  /*
-  event.addGeneric(`meatsalad:eyes/${eye}`, loot => {
-  })
-  */
-
   for (let [item, {lootTables}] of Object.entries(MISC_ITEMS)) {
     lootTables.forEach(table => {
       event.modify(table.id, loot => {

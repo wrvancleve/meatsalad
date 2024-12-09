@@ -1576,7 +1576,7 @@
 					exclude_from_claim_all: true
 					id: "12175C8D942ECB64"
 					table_id: 6405340112757509514L
-					type: "loot"
+					type: "choice"
 				}
 			]
 			shape: "octagon"

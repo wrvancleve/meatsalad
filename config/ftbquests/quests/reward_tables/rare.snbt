@@ -39,6 +39,7 @@
 		{ item: "waystones:warp_scroll" }
 		{ item: "waystones:waystone" }
 		{ item: "bhc:red_heart" }
+		{ item: "bhc:red_heart_patch" }
 		{ item: "irons_spellbooks:hogskin", random_bonus: 3 }
 		{ item: "irons_spellbooks:frozen_bone", random_bonus: 3 }
 		{ item: "irons_spellbooks:blood_vial", random_bonus: 3 }
@@ -66,6 +67,54 @@
 		{ item: "irons_spellbooks:rare_ink", random_bonus: 1 }
 		{ item: "apotheosis:boss_summoner" }
 		{ count: 8, item: "powah:dielectric_paste", random_bonus: 8 }
+		{ item: "apotheosis:sigil_of_rebirth", random_bonus: 2 }
+		{ item: "meatsalad:mystery_goo" }
+		{ item: "meatsalad:mastery_essence" }
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:hellish_fortress"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "meatsalad:stronghold"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "meatsalad:magic"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:netherite_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:iridium_sight"
+				}
+			}
+		}
 	]
 	title: "&9Rare Reward"
 }

@@ -53,6 +53,33 @@
 		{ count: 2, item: "apotheosis:uncommon_material", random_bonus: 2 }
 		{ item: "irons_spellbooks:common_ink", random_bonus: 1 }
 		{ item: "irons_spellbooks:uncommon_ink", random_bonus: 1 }
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:diamond_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:platinum_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:uranium_sight"
+				}
+			}
+		}
 	]
 	title: "&aUncommon Reward"
 }

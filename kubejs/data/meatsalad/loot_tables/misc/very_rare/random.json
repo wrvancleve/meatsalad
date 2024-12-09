@@ -23,6 +23,10 @@
           }
         },
         {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:curios/random"
+        },
+        {
           "type": "placebo:stack_entry",
           "stack": {
             "item": "meatsalad:mastery_essence"

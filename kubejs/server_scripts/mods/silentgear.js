@@ -102,6 +102,7 @@ ServerEvents.tags('item', event => {
     ]
   }
   for (let [type, material] of Object.entries(GEAR_MATERIALS)) {
+    event.add('silentgear:materials', material)
     event.add(`silentgear:materials/${type}`, material)
   }
 

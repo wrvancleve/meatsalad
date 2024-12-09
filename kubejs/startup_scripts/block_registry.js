@@ -114,6 +114,6 @@ StartupEvents.registry('block', event => {
   createBlock('mythril', 'storage_block_raw', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
   createBlock('mythril', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 50.0, 1200.0)
   createBlock('starmetal', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
-  createBlock('neutronium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
+  //createBlock('neutronium', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 30.0, 1200.0)
   createBlock('abiding_alloy', 'storage_block', NETHERITE_HARVEST_LEVEL_TAG, 70.0, 2500.0)
 })

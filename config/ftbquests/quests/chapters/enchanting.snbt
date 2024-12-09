@@ -16,7 +16,7 @@
 	quests: [
 		{
 			dependencies: ["57AC67D41845FC18"]
-			description: [""]
+			description: ["Ancient Tomes can be used to raise the max level of your enchantments by 1. Apply them in an anvil"]
 			id: "2551EE0EA0833B60"
 			rewards: [
 				{
@@ -816,13 +816,13 @@
 					auto: "invisible"
 					id: "13E4A3BF1FB727B5"
 					type: "xp_levels"
-					xp_levels: 40
+					xp_levels: 50
 				}
 				{
 					exclude_from_claim_all: true
-					id: "0C938DB6EF0CE819"
-					table_id: 190274823471505902L
-					type: "loot"
+					id: "2B0C96C44A004BFA"
+					table_id: 3670248595616648664L
+					type: "choice"
 				}
 			]
 			shape: "hexagon"

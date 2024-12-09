@@ -1,0 +1,63 @@
+{
+    "Restriction Data": {
+        "stage": "the_other",
+        "itemList": [
+            {
+                "item": "ironjetpacks:jetpack",
+                "nbt": {
+                    "Id": "ironjetpacks:vibranium"
+                }
+            },
+            {
+                "item": "minecraft:tipped_arrow",
+                "nbt": {
+                    "Potion": "potionsmaster:vibranium_sight"
+                }
+            },
+            {
+                "item": "potionsmaster:calcinatedvibranium_powder"
+            },
+            {
+                "item": "minecraft:potion",
+                "nbt": {
+                    "Potion": "potionsmaster:vibranium_sight"
+                }
+            },
+            {
+                "item": "minecraft:splash_potion",
+                "nbt": {
+                    "Potion": "potionsmaster:vibranium_sight"
+                }
+            },
+            {
+                "item": "minecraft:lingering_potion",
+                "nbt": {
+                    "Potion": "potionsmaster:vibranium_sight"
+                }
+            },
+            {
+                "item": "apotheosis:potion_charm",
+                "nbt": {
+                    "Potion": "potionsmaster:vibranium_sight"
+                }
+            }
+        ],
+        "tagList": [
+            "forge:ores/vibranium",
+            "forge:storage_blocks/raw_vibranium",
+            "forge:storage_blocks/vibranium",
+            "forge:raw_materials/vibranium",
+            "forge:ingots/vibranium",
+            "forge:plates/vibranium",
+            "forge:gears/vibranium",
+            "forge:nuggets/vibranium",
+            "forge:dusts/vibranium",
+            "mekanism:clumps/vibranium",
+            "mekanism:shards/vibranium",
+            "mekanism:dirty_dusts/vibranium",
+            "mekanism:crystals/vibranium",
+            "forge:ingots/vibranium_allthemodium_alloy",
+            "forge:storage_blocks/vibranium_allthemodium_alloy"
+        ]
+    }
+}

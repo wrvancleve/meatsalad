@@ -27,15 +27,9 @@
       "entries": [
         {
           "type": "placebo:stack_entry",
-          "weight": 25,
           "stack": {
             "item": "irons_spellbooks:blank_rune"
           }
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:curios/mage",
-          "weight": 10
         }
       ]
     },

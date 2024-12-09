@@ -66,6 +66,10 @@ ServerEvents.recipes(event => {
   ancientCuriosUpgrades('meatsalad:attack_speed_ring')
   ancientCuriosUpgrades('meatsalad:critical_damage_ring')
 
+  ancientCuriosUpgrades('meatsalad:armor_ring')
+  ancientCuriosUpgrades('meatsalad:armor_toughness_ring')
+  ancientCuriosUpgrades('meatsalad:healing_ring')
+
   event.custom({
     type: 'extendedcrafting:shaped_table',
     pattern: [
@@ -98,7 +102,7 @@ ServerEvents.recipes(event => {
       g: Ingredient.of('#forge:ingots/refined_glowstone'),
       y: Ingredient.of('meatsalad:stalgaris_stone'),
       z: Ingredient.of('meatsalad:arcanis_stone'),
-      n: Ingredient.of('#forge:ingots/neutronium'),
+      n: Ingredient.of('#forge:ingots/netherite'),
     },
     result: Item.of('meatsalad:abiding_alloy_ingot', 4)
   }).id('meatsalad:abiding_alloy_ingot')
@@ -153,11 +157,6 @@ ServerEvents.recipes(event => {
   nucleosynthesize(event,
     {mod: 'meatsalad', item: 'mystery_goo'}, // Input
     {mod: 'meatsalad', item: 'uu_matter'} // Output
-  )
-
-  nucleosynthesize(event,
-    {tag: '#forge:ingots/uranium'}, // Input
-    {mod: 'meatsalad', item: 'neutronium_ingot'} // Output
   )
 
   nucleosynthesize(event,

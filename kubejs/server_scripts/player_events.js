@@ -78,6 +78,7 @@ PlayerEvents.advancement(event => {
     let stage = advancement.split('/')[1]
     if (!player.stages.has(stage)) {
       Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
+      Utils.server.runCommandSilent(`decstages add ${player.username} ${stage}`)
     }
   } else {
     switch (advancement) {

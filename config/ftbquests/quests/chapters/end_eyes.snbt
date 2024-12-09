@@ -114,7 +114,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			description: ["Obtained by killing The Ancient Remnant in the Cursed Pyramid (Overworld)"]
@@ -328,16 +328,16 @@
 					type: "loot"
 				}
 			]
-			shape: "pentagon"
-			size: 1.5d
+			shape: "rsquare"
+			size: 1.25d
 			subtitle: "Craft a Structure Compass to better locate structures"
 			tasks: [{
 				id: "2BF5FE97A9A13B61"
 				item: "structurecompass:structure_compass"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -3.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["4AA87F707E4EEBE7"]
@@ -441,7 +441,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			description: ["Obtained by killing The Wither"]
@@ -575,6 +575,55 @@
 			title: "Enter The Nether"
 			x: 0.0d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7CDE0E4990A47862"
+				"2DA59DE8765F8C13"
+				"702D2E2433677F56"
+				"6FEDCD787D97941D"
+				"59B4BE881EB41531"
+				"64419370C70B7567"
+				"12B9E1F1D5C40C70"
+				"67329A57DB9E749E"
+				"30C4ECBD79126F23"
+				"3FD414CBC50208A0"
+				"2CE91A7A76E8DD3B"
+				"503896124F05816B"
+			]
+			description: ["Collect all end eyes to go to the End"]
+			id: "70F85B2992E13CBD"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "14A5C214E4B65FB7"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "43177859B6B89A88"
+					table_id: 190274823471505902L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "7BADC2FF74CB2413"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "endrem:ender_portal_eyes"
+					}
+				}
+				title: "All End Eyes"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "End Portal Eyes"

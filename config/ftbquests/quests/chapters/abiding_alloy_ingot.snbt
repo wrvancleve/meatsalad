@@ -49,7 +49,7 @@
 					exclude_from_claim_all: true
 					id: "52735236089B74B2"
 					table_id: 3670248595616648664L
-					type: "loot"
+					type: "choice"
 				}
 			]
 			shape: "gear"
@@ -96,12 +96,12 @@
 					auto: "invisible"
 					id: "4F42C26228D498BB"
 					type: "xp"
-					xp: 40
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "2CF7DBDB528D5F8A"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
@@ -148,12 +148,12 @@
 					auto: "invisible"
 					id: "2A209917FF7E3BF6"
 					type: "xp"
-					xp: 40
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "077CD2094E6A3226"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
@@ -226,12 +226,12 @@
 					auto: "invisible"
 					id: "69D5EA18C3DFE532"
 					type: "xp"
-					xp: 40
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "5F9EAC78CF12FB18"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
@@ -252,12 +252,12 @@
 					auto: "invisible"
 					id: "0F93BC263B73A9BF"
 					type: "xp"
-					xp: 30
+					xp: 40
 				}
 				{
 					exclude_from_claim_all: true
 					id: "5D3BD622FE934972"
-					table_id: 3121014603660562895L
+					table_id: 190274823471505902L
 					type: "loot"
 				}
 			]
@@ -304,12 +304,12 @@
 					auto: "invisible"
 					id: "425B4816D53E2C6C"
 					type: "xp"
-					xp: 40
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "2A8BA53AF174D50D"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
@@ -350,7 +350,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["37172411ED942FAB"]
 			description: [""]
 			id: "542EE0FF5FEA8AC4"
 			rewards: [
@@ -358,19 +357,19 @@
 					auto: "invisible"
 					id: "39749DAA2B6882AB"
 					type: "xp"
-					xp: 50
+					xp: 30
 				}
 				{
 					exclude_from_claim_all: true
 					id: "28053F8C0AA9A8BD"
-					table_id: 3670248595616648664L
+					table_id: 3121014603660562895L
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			tasks: [{
 				id: "5F7D5E2D52D6D0F3"
-				item: "meatsalad:neutronium_ingot"
+				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
 			x: -4.0d
@@ -384,12 +383,12 @@
 					auto: "invisible"
 					id: "2E8535431F4858D9"
 					type: "xp"
-					xp: 40
+					xp: 50
 				}
 				{
 					exclude_from_claim_all: true
 					id: "605B8978F6376B4D"
-					table_id: 190274823471505902L
+					table_id: 3670248595616648664L
 					type: "loot"
 				}
 			]
@@ -508,241 +507,6 @@
 			}]
 			x: -4.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["47AC3BAD4C6A1D26"]
-			id: "37172411ED942FAB"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "251869DC93842157"
-					type: "xp"
-					xp: 50
-				}
-				{
-					exclude_from_claim_all: true
-					id: "700B429F172E4478"
-					table_id: 3670248595616648664L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				id: "6A32AE8AF616B34C"
-				item: "mekanism:antiprotonic_nucleosynthesizer"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2FD5F74EDCFE7FFC"]
-			id: "47AC3BAD4C6A1D26"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "49B1EDEDE9E08060"
-					type: "xp"
-					xp: 50
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4E895305A749E49E"
-					table_id: 3670248595616648664L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "74E92C3DC64EEEC5"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"2F811CADF2CD3136"
-				"2922A4A65832F17F"
-				"27EE91A1FEDCB45E"
-				"71E7A1FD612672DE"
-				"1F2346D554622D18"
-			]
-			id: "2FD5F74EDCFE7FFC"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "511FAD6A3AE31859"
-					type: "xp"
-					xp: 40
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4755B0C366A40190"
-					table_id: 190274823471505902L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				id: "14A0D1C360374523"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 1.5d
-		}
-		{
-			id: "2F811CADF2CD3136"
-			rewards: [
-				{
-					id: "6F600A9C86934DA7"
-					item: {
-						Count: 1
-						id: "mekanism:creative_fluid_tank"
-						tag: {
-							mekData: {
-								FluidTanks: [{
-									Tank: 0b
-									stored: {
-										Amount: 2147483647
-										FluidName: "minecraft:water"
-									}
-								}]
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					id: "6A178E962A1E2841"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2175DAFEA50892E6"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "767B6610B85166A8"
-				item: "mekanismgenerators:control_rod_assembly"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			id: "71E7A1FD612672DE"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "083699BEC0F63BB6"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3C5929C0C9E5CE09"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "0579B2CAE4632979"
-				item: "mekanismgenerators:fission_reactor_logic_adapter"
-				type: "item"
-			}]
-			x: -6.5d
-			y: 2.5d
-		}
-		{
-			id: "27EE91A1FEDCB45E"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "77B0BDF457FD6097"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3EBA0463CBB10F4B"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "105CE6C17D649EC4"
-				item: "mekanismgenerators:fission_reactor_casing"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 3.0d
-		}
-		{
-			id: "1F2346D554622D18"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "5528F0A1FE94B19F"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "116B6DA2C2F0D914"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "35A3A0FC76010153"
-				item: "mekanismgenerators:fission_reactor_port"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 2.5d
-		}
-		{
-			id: "2922A4A65832F17F"
-			rewards: [
-				{
-					id: "07878435DC16834A"
-					item: "pipez:infinity_upgrade"
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					id: "00F28A1D5C5F77ED"
-					type: "xp"
-					xp: 30
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7C0C3DD8EFDAF8CB"
-					table_id: 3121014603660562895L
-					type: "loot"
-				}
-			]
-			shape: "diamond"
-			tasks: [{
-				id: "4AD888F9E99323A0"
-				item: "mekanismgenerators:fission_fuel_assembly"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 2.0d
 		}
 		{
 			dependencies: [

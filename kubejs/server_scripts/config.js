@@ -6,14 +6,6 @@ const CONFIG_FILE = `${CONFIG_DIRECTORY}/${CONFIG_FILE_NAME}`
 const DEFAULT_CONFIG = {
   defaultRandomWeight: 30,
   defaultRandomQuality: 1.0,
-  redHeartWeight: 10,
-  redHeartQuality: 0.5,
-  darkMatterWeight: 10,
-  darkMatterQuality: 0.5,
-  bossAncientWeight: 10,
-  bossAncientQuality: 0.5,
-  gateWeight: 10,
-  gateQuality: 0.5,
 }
 
 const loadConfig = () => {
