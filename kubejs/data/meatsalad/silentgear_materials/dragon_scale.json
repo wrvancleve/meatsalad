@@ -16,10 +16,10 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.dragon_scale"
+    "text": "Dragon Scale"
   },
   "name_prefix": {
-    "translate": "material.meatsalad.dragon_scale"
+    "text": "Dragon Scale"
   },
   "stats": {
     "fletching": {
@@ -52,7 +52,7 @@
         "add": 4.0
       },
       "enchantment_value": {
-        "add": 7.5
+        "add": 10.0
       }
     }
   },

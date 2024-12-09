@@ -36,18 +36,6 @@
             "depth_min": 10,
             "depth_max": 117,
             "weight": 8
-          },
-          {
-            "whitelist": {
-              "type": "minecraft:worldgen/biome",
-              "values": [
-                "allthemodium:mining"
-              ]
-            },
-            "blacklist": {},
-            "depth_min": -63,
-            "depth_max": 0,
-            "weight": 4
           }
         ]
       }

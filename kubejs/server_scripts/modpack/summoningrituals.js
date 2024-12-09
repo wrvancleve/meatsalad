@@ -1,6 +1,6 @@
 //priority: 70
 
-const Summons = {
+const SUMMONS = {
   ancient_remnant: {
     boss: 'cataclysm:ancient_remnant',
     inputs: [
@@ -22,6 +22,13 @@ const Summons = {
     ],
     bossNameColor: 'Dark Red'
   },
+  maledictus: {
+    boss: 'cataclysm:maledictus',
+    inputs: [
+      'cataclysm:cursed_eye',
+    ],
+    bossNameColor: 'Aqua'
+  },
   netherite_monstrosity: {
     boss: 'cataclysm:netherite_monstrosity',
     inputs: [
@@ -39,16 +46,29 @@ const Summons = {
 }
 
 ServerEvents.recipes(event => {
-  let createBossSummons = (bossSummon) => {
-    const boss = bossSummon.boss
-    const bossMobId = boss.split(':')[1]
-    const inputs = bossSummon.inputs
-    const bossNameColor = bossSummon.bossNameColor
+  event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
+    .mobOutput('cataclysm:aptrgangr')
+    .input(Item.of('cataclysm:frosted_stone_bricks', 5))
+    .input(Ingredient.of('#forge:ingots/steel', 3))
+    .recipeTime(200)
+    .id('meatsalad:summoning/aptrgangr')
+  event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
+    .mobOutput('cataclysm:ender_golem')
+    .input(Item.of('minecraft:obsidian', 4))
+    .input(Item.of('minecraft:crying_obsidian', 3))
+    .input(Item.of('cataclysm:void_stone', 1))
+    .recipeTime(200)
+    .id('meatsalad:summoning/ender_golem')
+
+  for (let [bossMobId, bossSummon] of Object.entries(SUMMONS)) {
+    let boss = bossSummon.boss
+    let inputs = bossSummon.inputs
+    let bossNameColor = bossSummon.bossNameColor
 
     for (let i = 0; i <= 3; i++) {
       let entityId = `${bossMobId}_${i}`
       let summoningRitual = event.recipes.summoningrituals.altar('meatsalad:mystery_goo')
-      
+
       // Add mob output
       if (i == 0) {
         summoningRitual = summoningRitual.mobOutput(boss)
@@ -86,10 +106,6 @@ ServerEvents.recipes(event => {
       summoningRitual = summoningRitual.id(`meatsalad:summoning/${entityId}`)
     }
   }
-
-  Object.values(Summons).forEach(bossSummon => {
-    createBossSummons(bossSummon)
-  })
 })
 
 SummoningRituals.complete(event => {
@@ -101,7 +117,7 @@ SummoningRituals.complete(event => {
   let summonModifier = parseInt(summonName.split('_').pop())
   if (summonModifier) {
     let summonMobName = summonName.substring(0, summonName.lastIndexOf('_'))
-    let mobId = Summons[summonMobName].boss
+    let mobId = SUMMONS[summonMobName].boss
 
     let x = event.pos.x
     let y = event.pos.y
@@ -117,6 +133,7 @@ SummoningRituals.complete(event => {
         entity.modifyAttribute('minecraft:generic.max_health', 'HealthBoost', 0.1 * summonModifier, 'multiply_total')
         entity.modifyAttribute('minecraft:generic.attack_damage', 'AttackBoost', 0.1 * summonModifier, 'multiply_total')
         entity.heal(entity.maxHealth)
+        entity.potionEffects.add('meatsalad:glimpse_of_god', 20 * 3600, 0, false, false)
         entity.setGlowing(true)
       }
     })

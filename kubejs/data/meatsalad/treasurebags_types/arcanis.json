@@ -1,0 +1,12 @@
+{
+  "group": "MeatSalad",
+  "displayName": {
+    "text": "§9§kArcanis§r§r Treasure Bag"
+  },
+  "lootTable": "meatsalad:bags/arcanis",
+  "rarity": "rare",
+  "bagColor": "#4169E1",
+  "bagOverlayColor": "#0096FF",
+  "bagStringColor": "#FFFFFF",
+  "dropsFromGroups": []
+}

@@ -3,6 +3,7 @@ ServerEvents.tags('block', event => {
   event.add('forge:ores', 'allthemodium:allthemodium_slate_ore')
   event.add('forge:ores', 'allthemodium:unobtainium_ore')
   event.add('forge:ores', 'allthemodium:other_vibranium_ore')
+  event.removeAllTagsFrom('allthemodium:vibranium_ore')
 })
 
 ServerEvents.tags('item', event => {
@@ -10,6 +11,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores', 'allthemodium:allthemodium_slate_ore')
   event.add('forge:ores', 'allthemodium:unobtainium_ore')
   event.add('forge:ores', 'allthemodium:other_vibranium_ore')
+  event.removeAllTagsFrom('allthemodium:vibranium_ore')
 })
 
 ServerEvents.recipes(event => {
@@ -58,12 +60,6 @@ ServerEvents.recipes(event => {
     'allthemodium:unobtainium_allthemodium_alloy_dust',
     'allthemodium:unobtainium_vibranium_alloy_dust',
     'allthemodium:vibranium_allthemodium_alloy_dust',
-    'allthemodium:unobtainium_allthemodium_alloy_ingot',
-    'allthemodium:unobtainium_vibranium_alloy_ingot',
-    'allthemodium:vibranium_allthemodium_alloy_ingot',
-    'allthemodium:unobtainium_allthemodium_alloy_block',
-    'allthemodium:unobtainium_vibranium_alloy_block',
-    'allthemodium:vibranium_allthemodium_alloy_block',
 
     'allthemodium:alloy_sword',
     'allthemodium:alloy_axe',
@@ -98,6 +94,15 @@ ServerEvents.recipes(event => {
 
   energize(event,
     [
+      Ingredient.of('#forge:ingots/vibranium'),
+      Ingredient.of('allthemodium:piglich_heart'),
+      Ingredient.of('#forge:ingots/allthemodium'),
+    ],
+    1000000000,
+    Item.of('allthemodium:vibranium_allthemodium_alloy_ingot')
+  )
+  energize(event,
+    [
       Ingredient.of('#forge:storage_blocks/vibranium'),
       Ingredient.of('allthemodium:piglich_heart_block'),
       Ingredient.of('#forge:storage_blocks/allthemodium'),
@@ -107,12 +112,30 @@ ServerEvents.recipes(event => {
   )
   energize(event,
     [
+      Ingredient.of('#forge:ingots/unobtainium'),
+      Ingredient.of('allthemodium:piglich_heart'),
+      Ingredient.of('#forge:ingots/allthemodium'),
+    ],
+    1000000000,
+    Item.of('allthemodium:unobtainium_allthemodium_alloy_ingot')
+  )
+  energize(event,
+    [
       Ingredient.of('#forge:storage_blocks/allthemodium'),
       Ingredient.of('allthemodium:piglich_heart_block'),
       Ingredient.of('#forge:storage_blocks/unobtainium'),
     ],
     8100000000,
     Item.of('allthemodium:unobtainium_allthemodium_alloy_block')
+  )
+  energize(event,
+    [
+      Ingredient.of('#forge:ingots/vibranium'),
+      Ingredient.of('allthemodium:piglich_heart'),
+      Ingredient.of('#forge:ingots/unobtainium'),
+    ],
+    1000000000,
+    Item.of('allthemodium:unobtainium_vibranium_alloy_ingot')
   )
   energize(event,
     [

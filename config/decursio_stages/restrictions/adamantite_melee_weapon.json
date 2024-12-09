@@ -1,0 +1,168 @@
+{
+    "Restriction Data": {
+        "stage": "adamantite_melee_weapon",
+        "itemList": [
+            {
+                "item": "silentgear:sword",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:sword_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:dagger",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:dagger_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:katana",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:katana_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:knife",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:knife_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:machete",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:machete_blade",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:spear",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:spear_tip",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "item": "silentgear:trident",
+                "nbt": {
+                    "SGear_Data": {
+                        "Construction": {
+                            "Parts": [
+                                {
+                                    "ID": "silentgear:trident_prongs",
+                                    "Item": {
+                                        "tag": {
+                                            "Materials": [
+                                                {
+                                                    "ID": "meatsalad:adamantite"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

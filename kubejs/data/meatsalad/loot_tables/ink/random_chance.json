@@ -5,14 +5,14 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 65.0
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "meatsalad:ink/random",
           "weight": 35.0,
           "quality": 1.0
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 65.0
         }
       ]
     }

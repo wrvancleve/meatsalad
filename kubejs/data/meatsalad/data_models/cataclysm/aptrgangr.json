@@ -1,0 +1,49 @@
+{
+  "conditions": [
+    {
+      "modid": "cataclysm",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "entity": "cataclysm:aptrgangr",
+  "variants": [],
+  "name": "entity.cataclysm.aptrgangr",
+  "name_color": "#B6B09C",
+  "gui_scale": 0.35,
+  "gui_x_offset": 0.0,
+  "gui_y_offset": 0.0,
+  "gui_z_offset": 0.0,
+  "sim_cost": 16384,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix",
+    "count": 1
+  },
+  "base_drop": {
+    "item": "hostilenetworks:end_prediction",
+    "count": 1
+  },
+  "trivia": "hostilenetworks.trivia.aptrgangr",
+  "fabricator_drops": [
+    {
+      "item": "cataclysm:black_steel_ingot",
+      "count": 1
+    },
+    {
+      "optional": true,
+      "item": "bhc:yellow_heart",
+      "count": 1
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}

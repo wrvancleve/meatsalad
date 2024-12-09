@@ -17,33 +17,32 @@
     }
   },
   "name": {
-    "translate": "material.meatsalad.sapphire"
+    "text": "Sapphire"
   },
   "stats": {
     "tip": {
+      "armor_durability": {
+        "add": 16.0
+      },
       "harvest_speed": {
         "add": 1.0
       },
       "melee_damage": {
         "add": 1.0
       },
-      "magic_damage": {
-        "add": 3.0
-      },
       "ranged_damage": {
         "add": 0.5
       },
       "rarity": {
-        "add": 20.0
+        "add": 25.0
       }
-    },
-    "adornment": {}
+    }
   },
   "traits": {
-    "adornment": [
+    "tip": [
       {
-        "name": "meatsalad:swiftness",
-        "level": 2
+        "name": "silentgear:bastion",
+        "level": 1
       }
     ]
   },
@@ -64,25 +63,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#FF0F6CED"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#FF0F6CED"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#FF0F6CED"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

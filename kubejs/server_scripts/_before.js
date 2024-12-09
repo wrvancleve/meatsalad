@@ -13,6 +13,33 @@ const replaceShaped = (event, pattern, key, result, oldRecipeId) => {
   event.shaped(result, pattern, key).id(`meatsalad:${itemId}`)
 }
 
+const EmptyEntry = (weight) => {
+  return {
+    type: "minecraft:empty",
+    weight: weight
+  }
+}
+
+const TableEntry = (table, weight, quality) => {
+  const tableJson = {
+    type: "minecraft:loot_table",
+    name: table
+  }
+  if (weight) tableJson['weight'] = weight
+  if (quality) tableJson['quality'] = quality
+  return tableJson
+}
+
+const StackEntry = (stack, weight, quality) => {
+  const stackJson = {
+    type: "placebo:stack_entry",
+    stack: stack
+  }
+  if (weight) stackJson['weight'] = weight
+  if (quality) stackJson['quality'] = quality
+  return stackJson
+}
+
 const popProp = (object, prop, defaultValue) => {
   if (object == null) return defaultValue
   const propValue = object[prop] ?? defaultValue

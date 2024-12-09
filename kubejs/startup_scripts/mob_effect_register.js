@@ -1,20 +1,23 @@
-function randomGet(list) {
-  return list[Math.floor(Math.random() * list.length)];
-}
-
 function godPardonEffectIncr(entity) {
-  let effectType = randomGet([
+  const pardonTypes = new Set([
     'meatsalad:pardon_of_god_magic',
     'meatsalad:pardon_of_god_melee',
     'meatsalad:pardon_of_god_projectile',
-    'meatsalad:pardon_of_god_magic',
-    'meatsalad:pardon_of_god_melee'
   ])
-  let amplifier = 0
-  if (entity.hasEffect(effectType)) {
-    amplifier = entity.getEffect(effectType).getAmplifier() + 1
+  if (entity.hasEffect('meatsalad:pardon_of_god_magic')) {
+    pardonTypes.delete('meatsalad:pardon_of_god_magic')
   }
-  entity.potionEffects.add(effectType, 1200 * 20, amplifier, false, true)
+  if (entity.hasEffect('meatsalad:pardon_of_god_melee')) {
+    pardonTypes.delete('meatsalad:pardon_of_god_melee')
+  }
+  if (entity.hasEffect('meatsalad:pardon_of_god_projectile')) {
+    pardonTypes.delete('meatsalad:pardon_of_god_projectile')
+  }
+
+  if (pardonTypes.size >= 2) {
+    const effectType = global.randomGet(Array.from(pardonTypes))
+    entity.potionEffects.add(effectType, 1200 * 20, 0, false, true)
+  }
 }
 
 StartupEvents.registry('mob_effect', event => {
@@ -49,7 +52,7 @@ StartupEvents.registry('mob_effect', event => {
         entity.heal(entity.getMaxHealth() * 0.01)
         if (entity.health < entity.maxHealth * 0.33) {
           entity.removeEffect('meatsalad:gaze_of_god')
-          entity.potionEffects.add('meatsalad:glare_of_god', 180 * 20, 0, false, false)
+          entity.potionEffects.add('meatsalad:glare_of_god', 3600 * 20, 0, false, false)
           godPardonEffectIncr(entity)
         }
       }
@@ -67,11 +70,20 @@ StartupEvents.registry('mob_effect', event => {
           entity.removeEffect('meatsalad:glare_of_god')
           entity.potionEffects.add('meatsalad:glimpse_of_god', 3600 * 20, 0, false, false)
           entity.setHealth(entity.getMaxHealth())
-          godPardonEffectIncr(entity)
         }
       }
     })
     .color(Color.GOLD)
+
+    
+  event.create('meatsalad:bowmaster_surge')
+    .displayName("Bowmaster's Surge")
+    .modifyAttribute('attributeslib:arrow_damage', 'bowmasterArrowDamageBoost', 0.05, "multiply_base")
+    .modifyAttribute('attributeslib:arrow_velocity', 'bowmasterArrowVelocityBoost', 0.05, "multiply_base")
+    .modifyAttribute('attributeslib:draw_speed', 'bowmasterDrawSpeedBoost', 0.05, "multiply_base")
+    .modifyAttribute('minecraft:generic.movement_speed', 'bowmasterMovementSpeedBoost', 0.05, "multiply_base")
+    .beneficial()
+    .color(Color.of('#9c9c9c'))
 
   event.create('meatsalad:pardon_of_god_magic')
     .displayName("God's License: Magic Immunity")

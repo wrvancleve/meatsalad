@@ -2,6 +2,7 @@ ClientEvents.lang('en_us', event => {
   event.add('irons_spellbooks', 'item.irons_spellbooks.dragonskin_spell_book', 'Dragon Scale Spell Book')
   event.add('irons_spellbooks', 'affix.irons_spellbooks:spellbook/attribute/cooldown', 'Quick-Minded')
   event.add('irons_spellbooks', 'affix.irons_spellbooks:spellbook/attribute/cooldown.suffix', 'of the Fast-Wit')
+  event.add('irons_spellbooks', 'gem_class.spellbook', 'Spellbooks')
 })
 
 JEIEvents.removeCategories(event => {
@@ -27,5 +28,6 @@ JEIEvents.hideItems(event => {
     'irons_spellbooks:greater_healing_potion',
     'irons_spellbooks:fire_ale',
     'irons_spellbooks:netherward_tincture',
+    'irons_spellbooks:emerald_stoneplate_ring'
   ])
 })

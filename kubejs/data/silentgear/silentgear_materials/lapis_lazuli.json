@@ -19,46 +19,13 @@
     "translate": "material.silentgear.lapis_lazuli"
   },
   "stats": {
-    "tip": {
-      "harvest_speed": {
-        "mul2": -0.1
-      },
-      "magic_damage": {
-        "add": 2.0
-      },
-      "attack_speed": {
-        "add": 0.3
-      }
-    },
-    "adornment": {}
+    "tip": {}
   },
   "traits": {
     "tip": [
       {
-        "name": "silentgear:holy",
-        "level": 1,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.75
-          }
-        ]
-      },
-      {
         "name": "silentgear:lucky",
         "level": 4,
-        "conditions": [
-          {
-            "type": "silentgear:material_ratio",
-            "ratio": 0.75
-          }
-        ]
-      }
-    ],
-    "adornment": [
-      {
-        "name": "silentgear:lucky",
-        "level": 3,
         "conditions": [
           {
             "type": "silentgear:material_ratio",
@@ -85,21 +52,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#224BAF"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#224BAF"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

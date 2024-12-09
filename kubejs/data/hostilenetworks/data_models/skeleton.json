@@ -32,11 +32,6 @@
         },
         {
             "optional": true,
-            "item": "reliquary:rib_bone",
-            "count": 2
-        },
-        {
-            "optional": true,
             "item": "irons_spellbooks:frozen_bone",
             "count": 1
         }

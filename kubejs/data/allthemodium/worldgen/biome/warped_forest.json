@@ -52,25 +52,31 @@
     "monster": [
       {
         "type": "minecraft:wither_skeleton",
-        "weight": 140,
+        "weight": 2800,
         "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:blaze",
-        "weight": 100,
+        "weight": 2000,
         "minCount": 2,
         "maxCount": 5
       },
       {
         "type": "minecraft:enderman",
-        "weight": 1,
+        "weight": 18,
         "minCount": 6,
         "maxCount": 9
       },
       {
+        "type": "mutantmonsters:mutant_enderman",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
         "type": "irons_spellbooks:cryomancer",
-        "weight": 25,
+        "weight": 500,
         "minCount": 1,
         "maxCount": 1
       }

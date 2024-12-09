@@ -51,22 +51,15 @@
         "add": 9.0
       },
       "harvest_speed": {
-        "add": 2.0
-      },
-      "melee_damage": {
-        "add": 2.0
-      },
-      "magic_damage": {
         "add": 1.0
       },
-      "ranged_damage": {
-        "add": 0.5
+      "melee_damage": {
+        "add": 1.0
       },
       "rarity": {
         "add": 20.0
       }
-    },
-    "adornment": {}
+    }
   },
   "traits": {
     "main": [
@@ -103,12 +96,6 @@
         "name": "silentgear:lustrous",
         "level": 2
       }
-    ],
-    "adornment": [
-      {
-        "name": "silentgear:bastion",
-        "level": 1
-      }
     ]
   },
   "model": {
@@ -143,25 +130,6 @@
       },
       {
         "texture": "silentgear:tip_shine"
-      }
-    ],
-    "adornment/all": [
-      {
-        "texture": "silentgear:adornment_generic",
-        "color": "#33EBCB"
-      },
-      {
-        "texture": "silentgear:adornment_highlight",
-        "color": "#33EBCB"
-      }
-    ],
-    "adornment/part": [
-      {
-        "texture": "silentgear:adornment",
-        "color": "#33EBCB"
-      },
-      {
-        "texture": "silentgear:adornment_highlight"
       }
     ]
   }

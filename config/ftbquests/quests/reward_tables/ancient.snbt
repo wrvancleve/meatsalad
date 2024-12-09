@@ -1,0 +1,19 @@
+{
+	icon: "lootr:trophy"
+	id: "58E456E54678CD8A"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ item: "mekanism:pellet_plutonium", random_bonus: 3 }
+		{ item: "mekanism:pellet_polonium", random_bonus: 2 }
+		{ item: "mekanism:pellet_antimatter" }
+		{ item: "extendedcrafting:ultimate_singularity" }
+		{ item: "meatsalad:eternal_crystal" }
+		{ count: 4, item: "meatsalad:eternal_crystal_shard", random_bonus: 12 }
+		{ item: "meatsalad:abiding_alloy_ingot", random_bonus: 3 }
+		{ count: 2, item: "meatsalad:eternal_crystalline_powder", random_bonus: 6 }
+		{ count: 4, item: "apotheosis:ancient_material", random_bonus: 12 }
+		{ count: 4, item: "irons_spellbooks:ancient_ink", random_bonus: 12 }
+	]
+	title: "&5Ancient Reward"
+}

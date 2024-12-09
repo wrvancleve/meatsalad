@@ -21,8 +21,10 @@
     "minecraft:deepslate_emerald_ore",
     "minecraft:deepslate_lapis_ore",
     "minecraft:deepslate_diamond_ore",
+    "meatsalad:deepslate_aquamarine_ore",
+    "meatsalad:deepslate_jade_ore",
+    "meatsalad:deepslate_topaz_ore",
     "mekanism:deepslate_fluorite_ore",
-    "silentgear:deepslate_bort_ore",
     "thermal:deepslate_cinnabar_ore",
     "thermal:deepslate_niter_ore",
     "thermal:deepslate_sulfur_ore"

@@ -2,19 +2,14 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "placebo:stack_entry",
-          "weight": 1,
-          "min": 1,
-          "max": 1,
-          "stack": {
-            "item": "meatsalad:lost_illusion",
-            "count": 1
-          }
+          "type": "minecraft:item",
+          "name": "meatsalad:manifest_illusion"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "awakened_bosses:entities/herobrine"

@@ -1,0 +1,85 @@
+{
+	id: "544B1BB0FBD3D2D4"
+	loot_crate: {
+		color: 5635925
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "uncommon_loot_crate"
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "minecraft:lapis_lazuli", random_bonus: 7, weight: 2.0f }
+		{ item: "minecraft:slime_ball", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:quartz", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:ender_pearl", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:blaze_rod", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:magma_cream", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:diamond", random_bonus: 1, weight: 2.0f }
+		{ item: "minecraft:emerald", random_bonus: 1, weight: 2.0f }
+		{ item: "minecraft:obsidian", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:ghast_tear", random_bonus: 3, weight: 2.0f }
+		{ item: "silentgear:fine_silk", random_bonus: 3, weight: 2.0f }
+		{ item: "minecraft:golden_apple", weight: 2.0f }
+		{ item: "sophisticatedstorage:upgrade_base" }
+		{ item: "sophisticatedstorage:basic_to_iron_tier_upgrade" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_1" }
+		{ item: "sophisticatedstorage:stack_upgrade_tier_2" }
+		{ item: "sophisticatedbackpacks:upgrade_base" }
+		{ item: "sophisticatedbackpacks:stack_upgrade_starter_tier" }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_1" }
+		{ item: "sophisticatedbackpacks:stack_upgrade_tier_2" }
+		{ item: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+		{ count: 8, item: "pipez:universal_pipe", random_bonus: 8 }
+		{ item: "pipez:basic_upgrade" }
+		{
+			item: {
+				Count: 1
+				id: "constructionwand:iron_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
+		}
+		{ item: "dankstorage:dank_1" }
+		{ item: "waystones:return_scroll" }
+		{ item: "waystones:bound_scroll" }
+		{ item: "silentgear:blueprint_paper" }
+		{ count: 2, item: "apotheosis:common_material", random_bonus: 2 }
+		{ count: 2, item: "apotheosis:uncommon_material", random_bonus: 2 }
+		{ item: "irons_spellbooks:common_ink", random_bonus: 1 }
+		{ item: "irons_spellbooks:uncommon_ink", random_bonus: 1 }
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:diamond_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:platinum_sight"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "potionsmaster:uranium_sight"
+				}
+			}
+		}
+	]
+	title: "&aUncommon Reward"
+}

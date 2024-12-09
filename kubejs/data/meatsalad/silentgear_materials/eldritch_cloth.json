@@ -1,0 +1,51 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 0,
+    "categories": [
+      "organic",
+      "cloth"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "meatsalad:eldritch_cloth"
+    }
+  },
+  "name": {
+    "text": "Eldritch Cloth"
+  },
+  "stats": {
+    "lining": {}
+  },
+  "traits": {
+    "lining": [
+      {
+        "name": "meatsalad:mana_boost",
+        "level": 2
+      },
+      {
+        "name": "meatsalad:spell_damage",
+        "level": 4
+      }
+    ]
+  },
+  "model": {
+    "main/fragment": [
+      {
+        "texture": "silentgear:cloth",
+        "color": "#0A5060"
+      }
+    ],
+    "lining/part": [
+      {
+        "texture": "silentgear:lining_cloth",
+        "color": "#0A5060"
+      }
+    ]
+  }
+}

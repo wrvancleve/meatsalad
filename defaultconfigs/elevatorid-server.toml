@@ -18,5 +18,5 @@
 	#Amount of XP points to use when useXP is enabled
 	#Note this is NOT experience levels
 	#Range: > 1
-	XPPointsAmount = 0
+	XPPointsAmount = 1
 

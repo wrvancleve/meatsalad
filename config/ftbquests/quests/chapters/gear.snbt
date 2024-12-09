@@ -1,0 +1,1134 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gear"
+	group: "0DF589D313E68A18"
+	icon: "silentgear:pickaxe_blueprint"
+	id: "10FB7BCDBFFEAB8C"
+	images: [{
+		height: 4.0d
+		image: "silentgear:textures/item/blueprint_package.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Blueprint paper is used to make blueprints, which are reusable, unlike template boards."
+				""
+				"Blueprint paper can be found in library chests after visting the Nether. Grand Libraries in Strongholds and the Stronghold Gateway are guaranteed sources of blueprint paper"
+			]
+			id: "64AB1E133E218173"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "58630ECB754C6D26"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A4D084797768181"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "28223BD9AC4D64EA"
+				item: "silentgear:blueprint_paper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: [
+				"Everyone loves the sword."
+				""
+				"With this blueprint, you can make the basic sword! Reliable damage, reliable speed."
+			]
+			hide_dependency_lines: true
+			id: "0DF4B01CC5B49E4E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "16720CCB3ED1C3A2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EF96662E405FE70"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Ol' Reliable"
+			tasks: [{
+				id: "6916F3E24E09B0BE"
+				item: "silentgear:sword_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: ["Slightly faster than a sword, but lower damage."]
+			hide_dependency_lines: true
+			id: "3722B43822F80470"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "569FE8789232CF20"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "684DD3C096D79F31"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Release Your Inner Samurai"
+			tasks: [{
+				id: "7929CED2B31B3355"
+				item: "silentgear:katana_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: ["More damage than a sword, but slower."]
+			hide_dependency_lines: true
+			id: "39B85DB54B1037FE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "736360B6DCAC64DA"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "374794E304EDD53B"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Thicc Sword"
+			tasks: [{
+				id: "5849539271864159"
+				item: "silentgear:machete_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: ["Less damage than a sword, but longer reach."]
+			hide_dependency_lines: true
+			id: "405DCD3E36232EEA"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "54C35AD7C673B8BD"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7292D1776DBCAB82"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Release Your Inner Spartan"
+			tasks: [{
+				id: "233073F39E676B83"
+				item: "silentgear:spear_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: ["Higher Durability than a dagger, but lower damage and speed."]
+			hide_dependency_lines: true
+			id: "0D26E5EF6CFCFDBF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "480C996B6EF91910"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A148F94539AD36B"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Stabby."
+			tasks: [{
+				id: "27B86914A7EC8AFB"
+				item: "silentgear:knife_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: [" Low damage, very high attack speed. Reduces the invincibility time of the target."]
+			hide_dependency_lines: true
+			id: "3D2C6FF462B17205"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6F242ECEA2C8AB26"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66307DB2D50C06DD"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Stabby Stabby"
+			tasks: [{
+				id: "07A58F926DAA9F86"
+				item: "silentgear:dagger_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "766C80E5D7B7A916"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "69E8C6F8D3BFA819"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37C6EE025C1DD6D1"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "5456E2D6253496B4"
+				item: "silentgear:pickaxe_blueprint"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "52CDB46F6CBF007B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2D85F22E09FDB6A2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1DB892674F643B78"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "3BA93EF95C2D2AC7"
+				item: "silentgear:shovel_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "69383DA579901E7E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5AE2EB88B968AB84"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "517056B7E928F7CF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "75DA720893D281E2"
+				item: "silentgear:axe_blueprint"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "63CAD77A4488F2CE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "69B3A90EBE7C08A0"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BCD69FD34DFF53C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "The All In One Tool"
+			tasks: [{
+				id: "05E69F9C3D0DC0DD"
+				item: "silentgear:paxel_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "262036FE8E87F50A"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "350D7AB75BA2D89D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E6C876A8745A5D4"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "3x3 Mining"
+			tasks: [{
+				id: "640B83A35EB10103"
+				item: "silentgear:hammer_blueprint"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "3F39BEB788175CEF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "165EDC4330665C22"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C4B0E8E34E98BE8"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "3x3 Digging!"
+			tasks: [{
+				id: "0378C9FD1C97FC8E"
+				item: "silentgear:excavator_blueprint"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "427516AA3E8C9442"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "55313BAC0ABC7732"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "780DC3A13A0A71BF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Versatile Hoe"
+			tasks: [{
+				id: "7BAEC1CCE541863A"
+				item: "silentgear:mattock_blueprint"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "083ABBA1C45FF960"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2A72A2E5EBC9E64D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C288456012A5BB3"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "It's a Lawn Mower."
+			tasks: [{
+				id: "1BD87FE9B7C97844"
+				item: "silentgear:sickle_blueprint"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "67216EC5274F08B9"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "430D04B092F804E9"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D0D547360EC7CEF"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "71F08CAC734CFABA"
+				item: "silentgear:shears_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "462C1F75A2FB9F02"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "73AECD6F2CB1CA8B"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0813D54682E0F70E"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2BC129A5A112714B"
+				item: "silentgear:fishing_rod_blueprint"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "6D9CDB4D81DC164D"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4362F9342267B09D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3605F5016F6157D1"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "7C2EB1E97E1F7C9D"
+				item: "silentgear:bow_blueprint"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "1E8357755479E259"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "267E1DA2BC5DB5C5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F357BABC8DBCDBC"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "49B566024C78B433"
+				item: "silentgear:crossbow_blueprint"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "1E2F1E036716C031"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "6DCC64F4FCD87ECA"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62AF57B35329DB06"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "3F4C79848F8548D5"
+				item: "silentgear:slingshot_blueprint"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "78C112170E17FBF4"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "696D8973F3FD3B0A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0717AF2D6B52EF8C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "3DA37B5163894911"
+				item: "silentgear:shield_blueprint"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "6E2806D8DC61C46F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1E2C85D526645FBE"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FFB08923B32C71F"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "359631F5009F3B9F"
+				item: "silentgear:helmet_blueprint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "35E8C65CCA676E76"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "20589A9B4D86DD65"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F6DA678C575ED60"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "583FCEF23D524EB6"
+				item: "silentgear:chestplate_blueprint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "22C51025DC42CDE2"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1243D0195D23CDB0"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DAD226A99C44153"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "7379282EA5C084B4"
+				item: "silentgear:leggings_blueprint"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "6912C0E3D092DD27"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "50004D6B21F8E849"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D23DB0BE2159CBA"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6C02D97660F0347C"
+				item: "silentgear:boots_blueprint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "5AB8651FCB1E2F72"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "5CD4106705C41360"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "492EF85752B6B1F2"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "761B3590C99B461E"
+				item: "silentgear:elytra_blueprint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "3844877F6C1AFE77"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "32FDE909916929D7"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1880A240AF685264"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "19547966CF66B82B"
+				item: "silentgear:arrow_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			id: "7860FD3D3273351F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "151BDF4BB67DB85D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B55A16331F31600"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			subtitle: "Stores all of your blueprints!"
+			tasks: [{
+				id: "2226DC0E053E8631"
+				item: {
+					Count: 1
+					id: "silentgear:blueprint_book"
+					tag: {
+						Inventory: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: [
+				"The tip upgrade is used to increase the mining level of the tool."
+				""
+				"For example: If you have an iron pickaxe with 1 diamond, you can make a Diamond Tip Upgrade, and place it on your pickaxe. This will allow it to mine obsidian, as well as give it a stat boost."
+			]
+			hide_dependency_lines: true
+			id: "158B24939A269D83"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "10C854C0620D5E78"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "713576BD4FB92B80"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "For when you didn't find 3 diamonds."
+			tasks: [{
+				id: "4ECD1D119E695CBD"
+				item: "silentgear:tip_blueprint"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			description: [
+				"Coats an item or tool."
+				""
+				"Netherite makes a great coating material."
+			]
+			hide_dependency_lines: true
+			id: "0947B4ED95B0267E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "06E2CA085142D4D2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D30EC309BFCAC12"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Totally not just for Netherite."
+			tasks: [{
+				id: "3179733D8ACBDA86"
+				item: "silentgear:coating_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "6BFD7854F078BF16"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2B4EA52339BF7579"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "198687F279F9AA03"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Get a Grip."
+			tasks: [{
+				id: "14B8204814A42B33"
+				item: "silentgear:grip_blueprint"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "22A0A9C81A5C85A1"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4F7442ADF14AACF6"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75302CF9445D38DB"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "It holds everything together."
+			tasks: [{
+				id: "551DBAFE45DC4804"
+				item: "silentgear:binding_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "2098D8BFADB55D2A"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "37525488AF6404B2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6022C2AB4BAD7454"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "3CB5441C8E4480CC"
+				item: "silentgear:lining_blueprint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "3F56A5253D477B97"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2828EA8C5A180BAC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03117E17360A15A7"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "58407186583371FA"
+				item: "silentgear:fletching_blueprint"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["64AB1E133E218173"]
+			hide_dependency_lines: true
+			id: "657B3116A6419420"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3144F2282E53F770"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "039A4DDD0EDD351C"
+					table_id: 6073978969392403156L
+					type: "loot"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Create your own Handle!"
+			tasks: [{
+				id: "146DFBC42B522A36"
+				item: "silentgear:rod_blueprint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Silent Gear items can be repaired using a &9Repair Kit&r."
+				""
+				"To repair an item, place the Repair Kit into a crafting table, then place the materials needed to repair the tool inside the table with it. This will \"fill\" the Repair Kit."
+				""
+				"To repair the tool, combine the filled Repair Kit with the tool you'd like to repair in a crafting grid."
+			]
+			hide_dependency_lines: true
+			id: "11B0B93D725ABE43"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "221CA06C59187F0D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "375DC7F90950A0DB"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			size: 1.25d
+			subtitle: "Your First Repair Kit"
+			tasks: [{
+				id: "123B475266C035CC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "silentgear:very_crude_repair_kit"
+								tag: {
+									Storage: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "silentgear:crude_repair_kit"
+								tag: {
+									Storage: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "silentgear:sturdy_repair_kit"
+								tag: {
+									Storage: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "silentgear:crimson_repair_kit"
+								tag: {
+									Storage: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "silentgear:azure_repair_kit"
+								tag: {
+									Storage: { }
+								}
+							}
+						]
+					}
+				}
+				title: "Any Silent Gear Repair Kit"
+				type: "item"
+			}]
+			title: "Repairing Items"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"To get started with gear crafting in the early game, you'll need to obtain some &eTemplate Parts&r. Templates are single-use \"blueprints\" for creating tool parts."
+				""
+				"In Village loot chests you can find already constructed &eTemplate Parts&r. You can also find &9Template Boards&r in most library loot chests. &9Template Boards&r can be used to craft the template part you want."
+				""
+				"If you combine the &eTemplate Part&r with materials, you can create that part. The type of part determines what materials you are allowed to use."
+				""
+				"Press the &eU&r key with your cursor on the &eTemplate Part&r to see the uses of the part. If you switch to the &eGear Crafting&r tab, you can see what materials can be used with the part."
+			]
+			id: "7B690431CF1B87D0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "70451634EBBAFA04"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "550B70BCBC324D52"
+					table_id: 2331916246003022704L
+					type: "loot"
+				}
+			]
+			size: 1.25d
+			tasks: [{
+				id: "5AD56508A9805096"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "silentgear:templates"
+					}
+				}
+				title: "Templates"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+	]
+	title: "Construct"
+}

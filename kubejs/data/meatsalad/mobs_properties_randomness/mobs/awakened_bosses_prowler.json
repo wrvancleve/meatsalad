@@ -2,22 +2,22 @@
   "target": "awakened_bosses:prowler",
   "attributes": [
     {
-      "id": "apotheosis:prot_pierce",
-      "modifier_name": "Protection pierce",
-      "amount": 48.0,
+      "id": "attributeslib:armor_shred",
+      "modifier_name": "Armor Shred",
+      "amount": 1.0,
       "operation": "addition"
     },
     {
-      "id": "apotheosis:armor_pierce",
-      "modifier_name": "Armor pierce",
-      "amount": 56.0,
+      "id": "attributeslib:prot_shred",
+      "modifier_name": "Armor Prot Shred",
+      "amount": 1.0,
       "operation": "addition"
     },
     {
       "id": "minecraft:generic.attack_damage",
-      "modifier_name": "More Damage",
-      "amount": 6.0,
-      "operation": "multiply_base"
+      "modifier_name": "Attack Damage",
+      "amount": 7.0,
+      "operation": "addition"
     }
   ]
 }

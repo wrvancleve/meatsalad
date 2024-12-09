@@ -20,16 +20,6 @@
   "fabricator_drops": [
     {
       "optional": true,
-      "item": "deeperdarker:heart_of_the_deep",
-      "count": 1
-    },
-    {
-      "optional": true,
-      "item": "deeperdarker:warden_carapace",
-      "count": 1
-    },
-    {
-      "optional": true,
       "item": "apotheosis:warden_tendril",
       "count": 1
     },
