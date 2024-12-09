@@ -3,6 +3,7 @@ ClientEvents.lang('en_us', event => {
   event.add('apotheosis', 'affix.apotheosis:heavy_weapon/attribute/experienced.suffix', 'of the Scholar')
   event.add('apotheosis', 'affix.apotheosis:sword/attribute/experienced', 'Experienced')
   event.add('apotheosis', 'affix.apotheosis:sword/attribute/experienced.suffix', 'of the Scholar')
+  event.add('apotheosis', 'item.apotheosis.gem.meatsalad:ender_umbalite', 'Ender Umbalite')
 })
 
 JEIEvents.hideItems(event => {
