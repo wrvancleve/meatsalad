@@ -12,12 +12,8 @@
 
 {
     teleportation: {
-        back: {
-            enabled: false
-            max: 0
-        }
         home: {
-            cooldown: 60
+            cooldown: 30
         }
         rtp: {
             enabled: false

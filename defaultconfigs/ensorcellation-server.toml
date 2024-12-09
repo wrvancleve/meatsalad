@@ -89,8 +89,8 @@
 		"Max Level" = 3
 
 	[Enchantments.Vitality]
-		#If TRUE, the Vitality Enchantment is available for Chestplates.
-		Enable = true
+		#If TRUE, the Vitality Enchantment is available for Chestplates and Horse Armor.
+		Enable = false
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = true
 		#This option adjusts the maximum allowable level for the Enchantment.
@@ -293,83 +293,25 @@
 
 [Overrides]
 
-	[Overrides.Protection]
-		#If TRUE, the Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
-		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-
-	[Overrides."Blast Protection"]
-		#If TRUE, the Blast Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
-		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-
-	[Overrides."Feather Falling"]
-		#If TRUE, the Feather Falling Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
-		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-
-	[Overrides."Fire Protection"]
-		#If TRUE, the Fire Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
-		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-
-	[Overrides."Projectile Protection"]
-		#If TRUE, the Projectile Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
-		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-
 	[Overrides."Fire Aspect"]
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 2
+		#If TRUE, the Fire Aspect Enchantment will now work on Axes.
+		Enable = true
 
 	[Overrides."Frost Walker"]
-		#If TRUE, the Frost Walker Enchantment is replaced with an improved and more configurable version which works on more items, such as Horse Armor.
+		#If TRUE, the Frost Walker Enchantment will now work on Horse Armor.
 		Enable = true
-		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
-		Treasure = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 2
-		#If TRUE, the Frost Walker Enchantment will also chill Lava into Glossed Magma.
+		#If TRUE, the Frost Walker Enchantment will also freeze Lava into Glossed Magma.
 		"Freeze Lava" = true
 
 	[Overrides.Knockback]
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 2
+		#If TRUE, the Knockback Enchantment will now work on Axes.
+		Enable = true
 
 	[Overrides.Looting]
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 3
+		#If TRUE, the Looting Enchantment will now work on Axes.
+		Enable = true
 
 	[Overrides.Thorns]
-		#If TRUE, the Thorns Enchantment is replaced with a more configurable version which works on more items, such as Shields and Horse Armor.
+		#If TRUE, the Thorns Enchantment will now work on Shields and Horse Armor.
 		Enable = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 4
-		#Adjust this value to set the chance per level of the Enchantment firing (in percentage).
-		#Range: 1 ~ 100
-		"Effect Chance" = 15
-
-	[Overrides.Mending]
-		#If TRUE, the Mending Enchantment is replaced with a new Enchantment - Preservation. This enchantment allows you to repair items at an Anvil without paying an increasing XP cost for every time you repair it. Additionally, these repairs have a much lower chance of damaging the anvil.
-		"Alternate Mending" = false
-		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
-		Treasure = true
-		#Adjust this value to set the chance of an Anvil being damaged when used to repair an item with Preservation (in percentage). Only used if Alternate Mending (Preservation) is enabled.
-		#Range: 0 ~ 12
-		"Anvil Damage Chance" = 3
 
