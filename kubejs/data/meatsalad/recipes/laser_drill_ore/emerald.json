@@ -34,8 +34,8 @@
         ]
       },
       "blacklist": {},
-      "depth_min": 112,
-      "depth_max": 175,
+      "depth_min": 113,
+      "depth_max": 176,
       "weight": 4
     },
     {
@@ -64,7 +64,7 @@
       },
       "blacklist": {},
       "depth_min": 1,
-      "depth_max": 111,
+      "depth_max": 112,
       "weight": 2
     },
     {
@@ -75,7 +75,7 @@
         ]
       },
       "blacklist": {},
-      "depth_min": 176,
+      "depth_min": 177,
       "depth_max": 247,
       "weight": 1
     }
