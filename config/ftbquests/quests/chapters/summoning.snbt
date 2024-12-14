@@ -170,6 +170,7 @@
 						gateway: "gateways:hellish_fortress"
 					}
 				}
+				match_nbt: true
 				title: "&cHellish Fortress Gateway&r"
 				type: "item"
 			}]
@@ -216,6 +217,7 @@
 						gateway: "meatsalad:stronghold"
 					}
 				}
+				match_nbt: true
 				title: "&7Stronghold Gateway&r"
 				type: "item"
 			}]
@@ -263,6 +265,7 @@
 						gateway: "meatsalad:magic"
 					}
 				}
+				match_nbt: true
 				title: "&9Magic Gateway&r"
 				type: "item"
 			}]
@@ -309,6 +312,7 @@
 						gateway: "meatsalad:otherside"
 					}
 				}
+				match_nbt: true
 				title: "&3Otherside Gateway&r"
 				type: "item"
 			}]
@@ -356,6 +360,7 @@
 						gateway: "meatsalad:outer_end"
 					}
 				}
+				match_nbt: true
 				title: "&5Outer End Gateway&r"
 				type: "item"
 			}]
@@ -390,6 +395,7 @@
 						gateway: "meatsalad:arcanis"
 					}
 				}
+				match_nbt: true
 				title: "&9&kArcanis&r &9Gateway&r"
 				type: "item"
 			}]
@@ -424,6 +430,7 @@
 						gateway: "meatsalad:maestris"
 					}
 				}
+				match_nbt: true
 				title: "&6&kMaestris&r &6Gateway&r"
 				type: "item"
 			}]
@@ -458,6 +465,7 @@
 						gateway: "meatsalad:sentis"
 					}
 				}
+				match_nbt: true
 				title: "&5&kSentis&r &5Gateway&r"
 				type: "item"
 			}]
@@ -492,6 +500,7 @@
 						gateway: "meatsalad:velocis"
 					}
 				}
+				match_nbt: true
 				title: "&2&kVelocis&r &2Gateway&r"
 				type: "item"
 			}]
@@ -526,6 +535,7 @@
 						gateway: "meatsalad:stalgaris"
 					}
 				}
+				match_nbt: true
 				title: "&c&kStalgaris&r &cGateway&r"
 				type: "item"
 			}]
