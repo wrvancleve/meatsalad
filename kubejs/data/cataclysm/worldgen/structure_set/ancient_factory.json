@@ -8,8 +8,8 @@
   "placement": {
     "type": "cataclysm:cataclysm_random_spread",
     "salt": 319514301,
-    "spacing": 60,
-    "separation": 50,
+    "spacing": 40,
+    "separation": 25,
     "super_exclusion_zone": {
       "chunk_count": 10,
       "other_set": "#cataclysm:ancient_factory_avoid"

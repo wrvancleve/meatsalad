@@ -8,8 +8,8 @@
   "placement": {
     "type": "cataclysm:cataclysm_random_spread",
     "salt": 1673928450,
-    "spacing": 60,
-    "separation": 50,
+    "spacing": 40,
+    "separation": 25,
     "spread_type": "triangular",
     "super_exclusion_zone": {
       "chunk_count": 10,

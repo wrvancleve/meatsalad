@@ -115,5 +115,5 @@
     - Entity Culling
     - Legendary Tooltips
     - Oculus
-    - Rubidium
-    - Rubidium Extras
+    - *Rubidium
+    - *Rubidium Extras
