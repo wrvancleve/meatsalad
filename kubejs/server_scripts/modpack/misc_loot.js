@@ -39,6 +39,7 @@ ServerEvents.genericLootTables(event => {
       "minecraft:chests/end_city_treasure",
       "minecraft:chests/stronghold_library",
       "betterwitchhuts:chests/hut_0",
+      "betterstrongholds:chests/treasure",
     ],
     'very_rare/random': [
       "minecraft:chests/bastion_treasure",
@@ -48,7 +49,6 @@ ServerEvents.genericLootTables(event => {
       "betterfortresses:chests/puzzle",
       "betterjungletemples:chests/treasure",
       "betteroceanmonuments:chests/upper_side_chamber",
-      "betterstrongholds:chests/treasure",
       "dungeoncrawl:chests/treasure",
       "mes:astral_meteorite",
     ]

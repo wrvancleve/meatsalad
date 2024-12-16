@@ -183,12 +183,13 @@ const GATES = {
     lootTables: [
       { id: "minecraft:chests/stronghold_library", guaranteed: true },
       { id: "betterstrongholds:chests/grand_library", guaranteed: true },
-      { id: "betterstrongholds:chests/treasure", guaranteed: true },
+      
 
       { id: "minecraft:chests/stronghold_corridor" },
       { id: "minecraft:chests/stronghold_crossing" },
       { id: "betterstrongholds:chests/common" },
       { id: "betterstrongholds:chests/library_md" },
+      { id: "betterstrongholds:chests/treasure" },
     ]
   },
   'meatsalad:witch': {

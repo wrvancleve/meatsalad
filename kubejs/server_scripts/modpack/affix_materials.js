@@ -81,7 +81,6 @@ ServerEvents.genericLootTables(event => {
     { id: "betterfortresses:chests/puzzle", type: "random" },
     { id: "betterjungletemples:chests/treasure", type: "random" },
     { id: "betteroceanmonuments:chests/upper_side_chamber", type: "random" },
-    { id: "betterstrongholds:chests/treasure", type: "random" },
     { id: "dungeoncrawl:chests/treasure", type: "random" },
     { id: "mes:astral_meteorite", type: "random" },
 
@@ -99,6 +98,7 @@ ServerEvents.genericLootTables(event => {
     { id: "betterdungeons:zombie_dungeon/chests/common", type: "random_chance" },
     { id: "betterdungeons:zombie_dungeon/chests/tombstone", type: "random_chance" },
     { id: "betterstrongholds:chests/common", type: "random_chance" },
+    { id: "betterstrongholds:chests/treasure", type: "random_chance" },
     { id: "betterwitchhuts:chests/hut_0", type: "random_chance" },
   ]
   LOOT_TABLES.forEach(table => {

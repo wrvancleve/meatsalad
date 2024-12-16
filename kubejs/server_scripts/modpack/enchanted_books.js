@@ -83,6 +83,7 @@ ServerEvents.genericLootTables(event => {
     { id: 'minecraft:chests/stronghold_corridor', type: 'random_single_chance' },
     { id: 'minecraft:chests/stronghold_crossing', type: 'random_single_chance' },
     { id: 'betterwitchhuts:chests/hut_0', type: 'random_single_chance' },
+    { id: 'betterstrongholds:chests/treasure', type: 'random_single_chance' },
 
     { id: 'minecraft:chests/bastion_treasure', type: 'random_single_treasure' },
     { id: 'allthemodium:chest/treasure_room', type: 'random_single_treasure' },
@@ -90,7 +91,6 @@ ServerEvents.genericLootTables(event => {
     { id: 'betterfortresses:chests/puzzle', type: 'random_single_treasure' },
     { id: 'betterjungletemples:chests/treasure', type: 'random_single_treasure' },
     { id: 'betteroceanmonuments:chests/upper_side_chamber', type: 'random_single_treasure' },
-    { id: 'betterstrongholds:chests/treasure', type: 'random_single_treasure' },
     { id: 'dungeoncrawl:chests/treasure', type: 'random_single_treasure' },
     { id: 'mes:astral_meteorite', type: 'random_single_treasure' },
   ]
