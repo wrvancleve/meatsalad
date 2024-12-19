@@ -15,7 +15,7 @@
 
 ["Enable Name Formatting Anvil Recipes"]
 	#Whether custom recipes that allow for the changing of item name color & formatting are enabled
-	Formatting = true
+	Formatting = false
 
 ["Enable Anvil Repair Recipes"]
 	#Whether custom recipes that allow for the repairing of anvils with iron ingots are allowed

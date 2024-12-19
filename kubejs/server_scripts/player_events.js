@@ -21,20 +21,63 @@ PlayerEvents.loggedIn(event => {
   if (!player.isOnScoreboardTeam('Meat')) {
     Utils.server.runCommandSilent(`team join Meat ${player.username}`)
   }
-})
-
-/*
-GameStageEvents.stageAdded(event => {
-  const player = event.player
-  const stage = event.getStage()
-  updateCuriosSlots(player)
-  switch (stage) {
-    case "lucky_ring":
-      Utils.server.runCommandSilent(`advancement grant ${player.username} only meatsalad:stage/lucky_ring`)
-      break
+  const server = event.server
+  const currentStages = server.persistentData.getString('stages') || ""
+  for (let stage of currentStages.split(",")) {
+    if (!player.stages.has(stage)) {
+      addPlayerStage(player, stage)
+    }
   }
 })
 
+const TEAM_STAGES = new Set([
+  "the_nether",
+  "netherite_upgrade",
+  "blaze_gate",
+  "enderman_gate",
+  "slime_gate",
+  "basalz_gate",
+  "blitz_gate",
+  "blizz_gate",
+  "creeper_gate",
+  "hellish_fortress_gate",
+  "magic_gate",
+  "magma_cube_gate",
+  "otherside_gate",
+  "outer_end_gate",
+  "shulker_gate",
+  "skeleton_gate",
+  "spider_gate",
+  "stronghold_gate",
+  "witch_gate",
+  "wither_skeleton_gate",
+  "zombie_gate",
+  "the_other",
+  "the_end",
+  "ender_guardian",
+  "the_harbinger",
+  "ignis",
+  "maledictus",
+  "netherite_monstrosity",
+  "ancient_remnant",
+  "uu_matter",
+  "herobrine",
+])
+
+GameStageEvents.stageAdded(event => {
+  const server = event.server
+  const stage = event.getStage() + ''
+  if (TEAM_STAGES.has(stage)) {
+    const currentStages = server.persistentData.getString('stages') || ""
+    const currentStageList = currentStages.split(",")
+    if (!currentStageList.includes(stage)) {
+      currentStageList.push(stage)
+      server.persistentData.putString('stages', currentStageList.join(","))
+    }
+  }
+})
+
+/*
 GameStageEvents.stageRemoved(event => {
   const player = event.player
   const stage = event.getStage()
