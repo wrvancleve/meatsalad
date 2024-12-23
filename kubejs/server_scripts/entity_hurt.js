@@ -180,6 +180,10 @@ const getRandomEffect = (godEntity, otherEntity, fullEffectList) => {
   return effect
 }
 
+const isValidEntity = (entity) => {
+  return entity && typeof entity.hasEffect === 'function'
+}
+
 const hasGodEffect = (entity) => {
   return entity.hasEffect('meatsalad:glimpse_of_god')
     || entity.hasEffect('meatsalad:gaze_of_god')
@@ -198,7 +202,7 @@ const DAMAGED_EFFECTS = [
 ]
 
 global.GodEntityDamagedByOthers = (event) => {
-  if (hasGodEffect(event.entity) && event.source.actual) {
+  if (isValidEntity(event.entity) && hasGodEffect(event.entity) && isValidEntity(event.source.actual)) {
     const effectToApply = getRandomEffect(event.entity, event.source.actual, DAMAGED_EFFECTS)
     if (effectToApply) {
       event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)
@@ -214,7 +218,7 @@ const ON_ATTACK_EFFECTS = [
 ]
 
 global.OthersDamagedByGodEntity = (event) => {
-  if (event.source.actual && hasGodEffect(event.source.actual)) {
+  if (isValidEntity(event.source.actual) && hasGodEffect(event.source.actual) && isValidEntity(event.entity)) {
     const effectToApply = getRandomEffect(event.source.actual, event.entity, ON_ATTACK_EFFECTS)
     if (effectToApply) {
       event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)

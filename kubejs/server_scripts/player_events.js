@@ -1,19 +1,39 @@
-let addStage = (stage) => {
-  Utils.server.runCommandSilent(`gamestage add @a[team=Meat] ${stage}`)
-}
-
-let addPlayerStage = (player, stage) => {
+const addPlayerStage = (player, stage) => {
   Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
+  Utils.server.runCommandSilent(`decstages add ${player.username} ${stage}`)
 }
 
-let addCraftStage = (stage) => {
-  addStage(stage)
-  Utils.server.runCommandSilent(`tellraw @a[team=Meat] "§6Team Meat has unlocked the ability to craft: ${global.getReadableText(stage)}"`)
+const getPersistedStageList = (server) => {
+  const persistedStagesString = server.persistentData.getString('stages') || ""
+  const persistedStages = []
+  for (let persistedStage of persistedStagesString.split(",")) {
+    if (persistedStage) {
+      persistedStages.push(persistedStage + "")
+    }
+  }
+  return persistedStages
 }
 
-let addSummonStage = (stage) => {
-  addStage(stage)
-  Utils.server.runCommandSilent(`tellraw @a[team=Meat] "§6Team Meat has unlocked the ability to resummon ${global.getReadableText(stage)} at the Summoning Altar"`)
+const addTeamStage = (server, stage) => {
+  const currentStages = getPersistedStageList(server)
+  if (currentStages.includes(stage)) return false
+  Utils.server.runCommandSilent(`gamestage add @a[team=Meat] ${stage}`)
+  Utils.server.runCommandSilent(`decstages add @a[team=Meat] ${stage}`)
+  currentStages.push(stage)
+  server.persistentData.putString('stages', currentStages.join(","))
+  return true
+}
+
+const addCraftStage = (server, stage) => {
+  if (addTeamStage(server, stage)) {
+    Utils.server.runCommandSilent(`tellraw @a[team=Meat] "§6Team Meat has unlocked the ability to craft: ${global.getReadableText(stage)}"`)
+  }
+}
+
+const addSummonStage = (server, stage) => {
+  if (addTeamStage(server, stage)) {
+    Utils.server.runCommandSilent(`tellraw @a[team=Meat] "§6Team Meat has unlocked the ability to resummon ${global.getReadableText(stage)} at the Summoning Altar"`)
+  }
 }
 
 PlayerEvents.loggedIn(event => {
@@ -21,59 +41,24 @@ PlayerEvents.loggedIn(event => {
   if (!player.isOnScoreboardTeam('Meat')) {
     Utils.server.runCommandSilent(`team join Meat ${player.username}`)
   }
-  const server = event.server
-  const currentStages = server.persistentData.getString('stages') || ""
-  for (let stage of currentStages.split(",")) {
+  for (let stage of getPersistedStageList(event.server)) {
     if (!player.stages.has(stage)) {
       addPlayerStage(player, stage)
     }
   }
 })
 
-const TEAM_STAGES = new Set([
+const WORLD_STAGES = new Set([
   "the_nether",
-  "netherite_upgrade",
-  "blaze_gate",
-  "enderman_gate",
-  "slime_gate",
-  "basalz_gate",
-  "blitz_gate",
-  "blizz_gate",
-  "creeper_gate",
-  "hellish_fortress_gate",
-  "magic_gate",
-  "magma_cube_gate",
-  "otherside_gate",
-  "outer_end_gate",
-  "shulker_gate",
-  "skeleton_gate",
-  "spider_gate",
-  "stronghold_gate",
-  "witch_gate",
-  "wither_skeleton_gate",
-  "zombie_gate",
   "the_other",
   "the_end",
-  "ender_guardian",
-  "the_harbinger",
-  "ignis",
-  "maledictus",
-  "netherite_monstrosity",
-  "ancient_remnant",
-  "uu_matter",
-  "herobrine",
 ])
 
 GameStageEvents.stageAdded(event => {
-  const server = event.server
+  const player = event.player
   const stage = event.getStage() + ''
-  if (TEAM_STAGES.has(stage)) {
-    const currentStages = server.persistentData.getString('stages') || ""
-    const currentStageList = currentStages.split(",")
-    if (!currentStageList.includes(stage)) {
-      currentStageList.push(stage)
-      server.persistentData.putString('stages', currentStageList.join(","))
-    }
+  if (WORLD_STAGES.has(stage)) {
+    Utils.server.runCommandSilent(`advancement grant ${player.username} only meatsalad:stage/${stage}`)
   }
 })
 
@@ -91,60 +76,54 @@ GameStageEvents.stageRemoved(event => {
 */
 
 PlayerEvents.inventoryChanged(event => {
-  const { player, item, level } = event
+  const { player, item, server } = event
   switch (item.id) {
     case 'gateways:gate_pearl':
-      let gateId = item.nbt.gateway
+      const gateId = item.nbt.gateway
       if (gateId in GATES) {
-        let gateName = gateId.split(':').pop().split('/').pop()
-        let gateStage = `${gateName}_gate`
-        if (!player.stages.has(gateStage)) {
-          addCraftStage(gateStage)
-        }
+        const gateName = gateId.split(':').pop().split('/').pop()
+        const gateStage = `${gateName}_gate`
+        addCraftStage(server, gateStage)
       }
       break
     case 'minecraft:netherite_upgrade_smithing_template':
-      if (!player.stages.has('netherite_upgrade')) {
-        addCraftStage('netherite_upgrade')
-      }
+      addCraftStage(server, 'netherite_upgrade')
       break
     case 'meatsalad:uu_matter':
-      addStage('uu_matter')
+      addTeamStage(server, 'uu_matter')
       break
   }
 })
 
 PlayerEvents.advancement(event => {
-  let player = event.player
-  let advancement = event.getAdvancement() + ''
+  const player = event.player
+  const server = event.server
+  const advancement = event.getAdvancement() + ''
   if (advancement.startsWith('meatsalad:stage/')) {
-    let stage = advancement.split('/')[1]
-    if (!player.stages.has(stage)) {
-      Utils.server.runCommandSilent(`gamestage add ${player.username} ${stage}`)
-      Utils.server.runCommandSilent(`decstages add ${player.username} ${stage}`)
-    }
+    const stage = advancement.split('/')[1]
+    addTeamStage(server, stage)
   } else {
     switch (advancement) {
       case 'cataclysm:kill_ender_guardian':
-        addSummonStage('ender_guardian')
+        addSummonStage(server, 'ender_guardian')
         break
       case 'cataclysm:kill_harbinger':
-        addSummonStage('the_harbinger')
+        addSummonStage(server, 'the_harbinger')
         break
       case 'cataclysm:kill_ignis':
-        addSummonStage('ignis')
+        addSummonStage(server, 'ignis')
         break
       case 'cataclysm:kill_maledictus':
-        addSummonStage('maledictus')
+        addSummonStage(server, 'maledictus')
         break
       case 'cataclysm:kill_monstrosity':
-        addSummonStage('netherite_monstrosity')
+        addSummonStage(server, 'netherite_monstrosity')
         break
       case 'cataclysm:kill_remnant':
-        addSummonStage('ancient_remnant')
+        addSummonStage(server, 'ancient_remnant')
         break
       case 'awakened_bosses:herobrine_dead':
-        addStage('herobrine')
+        addTeamStage(server, 'herobrine')
         break
     }
   }

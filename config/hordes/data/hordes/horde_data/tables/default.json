@@ -3,116 +3,116 @@
 		"entity": "minecraft:zombie",
 		"weight": 35,
 		"first_day": 0,
-		"last_day": 20,
+		"last_day": 40,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:skeleton",
 		"weight": 10,
-		"first_day": 20,
-		"last_day": 30,
+		"first_day": 40,
+		"last_day": 60,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:spider",
 		"weight": 10,
-		"first_day": 20,
-		"last_day": 30
+		"first_day": 40,
+		"last_day": 60
 	},
 	{
 		"entity": "minecraft:husk",
 		"weight": 20,
-		"first_day": 30,
+		"first_day": 60,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:creeper",
 		"weight": 5,
-		"first_day": 20,
-		"last_day": 40,
+		"first_day": 40,
+		"last_day": 80,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:drowned",
 		"weight": 5,
-		"first_day": 30,
-		"last_day": 40,
+		"first_day": 60,
+		"last_day": 80,
 		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:trident,Count:1}]}"
 	},
 	{
 		"entity": "minecraft:zombie_horse",
 		"weight": 3,
-		"first_day": 30,
-		"last_day": 30,
+		"first_day": 60,
+		"last_day": 60,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:skeleton_horse",
 		"weight": 3,
-		"first_day": 30,
-		"last_day": 30,
+		"first_day": 60,
+		"last_day": 60,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:cave_spider",
 		"weight": 10,
-		"first_day": 40,
+		"first_day": 80,
 		"last_day": 0
 	},
 	{
 		"entity": "minecraft:stray",
 		"weight": 10,
-		"first_day": 40,
+		"first_day": 80,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "minecraft:zombie_horse",
 		"weight": 3,
-		"first_day": 40,
+		"first_day": 80,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"],Passengers:[{id:drowned,Tags:[\"canClimb\"],HandItems:[{id:trident,Count:1}]}]}"
 	},
 	{
 		"entity": "minecraft:skeleton_horse",
 		"weight": 3,
-		"first_day": 40,
-		"last_day": 40,
+		"first_day": 80,
+		"last_day": 80,
 		"nbt": "{Passengers:[{id:skeleton,Tags:[\"canClimb\"]}]}"
 	},
 	{
 		"entity": "minecraft:creeper",
 		"weight": 3,
-		"first_day": 50,
+		"first_day": 100,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"],powered:1}"
 	},
 	{
 		"entity": "minecraft:skeleton_horse",
 		"weight": 3,
-		"first_day": 50,
+		"first_day": 100,
 		"last_day": 0,
 		"nbt": "{Passengers:[{id:stray,Tags:[\"canClimb\"]}]}"
 	},
 	{
 		"entity": "mutantmonsters:mutant_creeper",
 		"weight": 1,
-		"first_day": 60,
+		"first_day": 120,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "mutantmonsters:mutant_skeleton",
 		"weight": 1,
-		"first_day": 60,
+		"first_day": 120,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	},
 	{
 		"entity": "mutantmonsters:mutant_zombie",
 		"weight": 1,
-		"first_day": 60,
+		"first_day": 120,
 		"last_day": 0,
 		"nbt": "{Tags:[\"canClimb\"]}"
 	}

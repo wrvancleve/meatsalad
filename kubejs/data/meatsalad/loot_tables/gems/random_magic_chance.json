@@ -7,12 +7,12 @@
         {
           "type": "minecraft:loot_table",
           "name": "meatsalad:gems/random_magic",
-          "weight": 35.0,
+          "weight": 25.0,
           "quality": 1.0
         },
         {
           "type": "minecraft:empty",
-          "weight": 65.0
+          "weight": 75.0
         }
       ]
     }

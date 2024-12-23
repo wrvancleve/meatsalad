@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:materials/random_treasure"
+          "name": "meatsalad:materials/random"
         }
       ]
     },
@@ -16,7 +16,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:enchanted_books/random_single_treasure"
+          "name": "meatsalad:enchanted_books/random_single"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:affix_materials/random_chance"
+          "name": "meatsalad:affix_materials/random"
         }
       ]
     }

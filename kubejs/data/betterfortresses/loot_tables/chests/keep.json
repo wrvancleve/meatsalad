@@ -1,19 +1,12 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:materials/random",
-          "weight": 65
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/gear_upgrades/random",
-          "weight": 35,
-          "quality": 1.0
+          "name": "meatsalad:misc/gear_upgrades/random"
         }
       ]
     }

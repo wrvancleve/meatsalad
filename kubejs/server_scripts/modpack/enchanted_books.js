@@ -86,8 +86,6 @@ ServerEvents.genericLootTables(event => {
     { id: 'betterstrongholds:chests/treasure', type: 'random_single_chance' },
 
     { id: 'minecraft:chests/bastion_treasure', type: 'random_single_treasure' },
-    { id: 'allthemodium:chest/treasure_room', type: 'random_single_treasure' },
-    { id: 'allthemodium:chest/treasure_room_loot', type: 'random_single_treasure' },
     { id: 'betterfortresses:chests/puzzle', type: 'random_single_treasure' },
     { id: 'betterjungletemples:chests/treasure', type: 'random_single_treasure' },
     { id: 'betteroceanmonuments:chests/upper_side_chamber', type: 'random_single_treasure' },

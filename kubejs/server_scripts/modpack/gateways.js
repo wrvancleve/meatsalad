@@ -393,8 +393,8 @@ ServerEvents.genericLootTables((event) => {
         // pool.rolls = 1
         // pool.bonusRolls = 0
         pool.addEntry(EmptyEntry(90))
-        pool.addEntry(GateEntry(gateId, 6, 0.5))
-        pool.addEntry(TableEntry("meatsalad:misc/rare/random", 4, 0.5))
+        pool.addEntry(GateEntry(gateId, 4, 0.5))
+        pool.addEntry(TableEntry("meatsalad:misc/rare/random", 6, 0.5))
       })
     })
 

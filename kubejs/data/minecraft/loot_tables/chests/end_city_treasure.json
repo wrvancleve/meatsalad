@@ -3,18 +3,27 @@
   "pools": [
     {
       "rolls": 1.0,
+      "bonus_rolls": 0.05,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "meatsalad:misc/gear_upgrades/random_treasure"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:materials/random_treasure",
-          "weight": 65
+          "name": "meatsalad:misc/gear_upgrades/random_affix_treasure",
+          "weight": 35.0,
+          "quality": 1.0
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/gear_upgrades/random_treasure",
-          "weight": 35,
-          "quality": 1.0
+          "type": "minecraft:empty",
+          "weight": 65.0
         }
       ]
     },

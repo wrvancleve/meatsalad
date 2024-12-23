@@ -75,8 +75,6 @@ ServerEvents.genericLootTables(event => {
 
     // random
     { id: "minecraft:chests/bastion_treasure", type: "random" },
-    { id: "allthemodium:chest/treasure_room", type: "random" },
-    { id: "allthemodium:chest/treasure_room_loot", type: "random" },
     { id: "betterdeserttemples:chests/pharaoh_hidden", type: "random" },
     { id: "betterfortresses:chests/puzzle", type: "random" },
     { id: "betterjungletemples:chests/treasure", type: "random" },

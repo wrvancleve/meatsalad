@@ -6,14 +6,23 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:materials/random",
-          "weight": 65
-        },
+          "name": "meatsalad:misc/gear_upgrades/random"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "meatsalad:misc/gear_upgrades/random",
-          "weight": 35,
+          "name": "meatsalad:misc/gear_upgrades/random_affix",
+          "weight": 35.0,
           "quality": 1.0
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 65.0
         }
       ]
     }
