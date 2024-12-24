@@ -268,15 +268,14 @@ ServerEvents.recipes(event => {
     result: Item.of('meatsalad:infinity_fabric')
   }).id('meatsalad:infinity_fabric')
 
-  event.shaped('16x pipez:infinity_upgrade', [
+  event.shaped('pipez:infinity_upgrade', [
     'ABA',
     'BCB',
-    'ADA'
+    'ABA'
   ], {
     A: '#forge:ingots/unobtainium',
     B: 'minecraft:redstone_block',
-    C: 'pipez:ultimate_upgrade',
-    D: 'meatsalad:infinity_fiber'
+    C: 'pipez:ultimate_upgrade'
   }).id('meatsalad:pipez_infinity_upgrade')
   event.shaped('thermal:machine_efficiency_creative_augment', [
     'ABA',

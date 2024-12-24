@@ -329,25 +329,6 @@
 			id: "2F811CADF2CD3136"
 			rewards: [
 				{
-					id: "6F600A9C86934DA7"
-					item: {
-						Count: 1
-						id: "mekanism:creative_fluid_tank"
-						tag: {
-							mekData: {
-								FluidTanks: [{
-									Tank: 0b
-									stored: {
-										Amount: 2147483647
-										FluidName: "minecraft:water"
-									}
-								}]
-							}
-						}
-					}
-					type: "item"
-				}
-				{
 					auto: "invisible"
 					id: "6A178E962A1E2841"
 					type: "xp"
@@ -447,11 +428,6 @@
 		{
 			id: "2922A4A65832F17F"
 			rewards: [
-				{
-					id: "07878435DC16834A"
-					item: "pipez:infinity_upgrade"
-					type: "item"
-				}
 				{
 					auto: "invisible"
 					id: "00F28A1D5C5F77ED"
