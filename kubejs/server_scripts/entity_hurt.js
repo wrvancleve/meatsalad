@@ -57,10 +57,33 @@ function checkPardonOfGodEntityHurt(event) {
   }
 }
 
+const isValidEntity = (entity) => {
+  return entity && typeof entity.hasEffect === 'function'
+}
+
+const entityHasChaosEffect = (entity) => {
+  return entity.hasEffect('meatsalad:chaos')
+}
+
+const getEntityDamageCap = (entity) => {
+  /*
+    .08 @ 0 || 70
+    .07 @ 1 || 55
+    .06 @ 2 || 40
+    .05 @ 3 || 25
+  */
+  const maxHealth = entity.maxHealth
+  const chaosLevel = entity.getEffect('meatsalad:chaos').getAmplifier()
+  const damageCapPercent = Math.max(.08 - (.01 * chaosLevel), .05)
+  const damageCapMin = Math.max(70 - (15 * chaosLevel), 25)
+  return Math.max(maxHealth * damageCapPercent, damageCapMin)
+}
+
 global.LivingHurt = (event) => {
-  if (event.entity.type == 'awakened_bosses:herobrine' && event.source.getType() !== 'genericKill') {
-    // Apply damage cap for Herobrine
-    event.setAmount(Math.min(event.getAmount(), 35))
+  const entity = event.entity
+  if (isValidEntity(entity) && entityHasChaosEffect(entity) && event.source.getType() !== 'genericKill') {
+    const damageCap = getEntityDamageCap(entity)
+    event.setAmount(Math.min(event.getAmount(), damageCap))
   }
 
   checkPardonOfGodEntityHurt(event)
@@ -141,11 +164,11 @@ global.PlayerDamagedByOthers = (event) => {
   }
 }
 
-const getRandomEffect = (godEntity, otherEntity, fullEffectList) => {
+const getRandomEffect = (ChaosEntity, otherEntity, fullEffectList) => {
   const effectList = fullEffectList.slice()
   let effect = null
 
-  const healthPercent = godEntity.health / godEntity.maxHealth
+  const healthPercent = ChaosEntity.health / ChaosEntity.maxHealth
   let effectChance = 0.0
   let amplifier = 0
   if (healthPercent <= 0.15) {
@@ -180,16 +203,6 @@ const getRandomEffect = (godEntity, otherEntity, fullEffectList) => {
   return effect
 }
 
-const isValidEntity = (entity) => {
-  return entity && typeof entity.hasEffect === 'function'
-}
-
-const hasGodEffect = (entity) => {
-  return entity.hasEffect('meatsalad:glimpse_of_god')
-    || entity.hasEffect('meatsalad:gaze_of_god')
-    || entity.hasEffect('meatsalad:glare_of_god')
-}
-
 const DAMAGED_EFFECTS = [
   {id: 'minecraft:blindness', amplifier: 0, duration: 5},
   {id: 'attributeslib:sundering', amplifier: 0, duration: 5},
@@ -201,8 +214,8 @@ const DAMAGED_EFFECTS = [
   {id: 'meatsalad:magic_forbiden', amplifier: 0, duration: 1},
 ]
 
-global.GodEntityDamagedByOthers = (event) => {
-  if (isValidEntity(event.entity) && hasGodEffect(event.entity) && isValidEntity(event.source.actual)) {
+global.ChaosEntityDamagedByOthers = (event) => {
+  if (isValidEntity(event.entity) && entityHasChaosEffect(event.entity) && isValidEntity(event.source.actual)) {
     const effectToApply = getRandomEffect(event.entity, event.source.actual, DAMAGED_EFFECTS)
     if (effectToApply) {
       event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)
@@ -217,8 +230,8 @@ const ON_ATTACK_EFFECTS = [
   {id: 'cataclysm:abyssal_curse', amplifier: 4, duration: 5},
 ]
 
-global.OthersDamagedByGodEntity = (event) => {
-  if (isValidEntity(event.source.actual) && hasGodEffect(event.source.actual) && isValidEntity(event.entity)) {
+global.OthersDamagedByChaosEntity = (event) => {
+  if (isValidEntity(event.source.actual) && entityHasChaosEffect(event.source.actual) && isValidEntity(event.entity)) {
     const effectToApply = getRandomEffect(event.source.actual, event.entity, ON_ATTACK_EFFECTS)
     if (effectToApply) {
       event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)

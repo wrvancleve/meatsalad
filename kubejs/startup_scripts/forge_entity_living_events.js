@@ -10,8 +10,8 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', 
     global.PlayerDamagedByOthers(event)
   }
 
-  global.GodEntityDamagedByOthers(event)
-  global.OthersDamagedByGodEntity(event)
+  global.ChaosEntityDamagedByOthers(event)
+  global.OthersDamagedByChaosEntity(event)
 })
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', event => {

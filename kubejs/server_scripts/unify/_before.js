@@ -40,6 +40,7 @@ const getRecipeInputKey = function (recipeType, recipeJson) {
       break
     case 'minecraft:crafting_shapeless':
     case 'thermal:crystallizer':
+    case 'create:pressing':
       inputKeys = ['ingredients']
       break
     case 'mekanism:enriching':
@@ -165,6 +166,10 @@ const unify = function (event, unifyTag, unifyRecipes) {
     'minecraft:blasting': {
       input: 'ingredient',
       output: 'result'
+    },
+    'create:pressing': {
+      input: 'ingredients',
+      output: 'results'
     },
     'mekanism:crushing': {
       input: 'input',

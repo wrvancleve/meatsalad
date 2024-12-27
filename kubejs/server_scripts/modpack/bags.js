@@ -85,10 +85,12 @@ ServerEvents.genericLootTables((event) => {
         addLootTablePool(loot, baseLootTable)
         if (chaosLevel > 0) {
           addStackLootPool(loot, {item: "meatsalad:chaos_shard", min: (0 + chaosLevel), max: (2 * chaosLevel)})
-          let totalGateWeight = 25 * chaosLevel
+          let totalGateWeight = 25 + (25 * chaosLevel)
           let singleGateWeight = totalGateWeight / chaosGates.length
           loot.addPool(pool => {
-            pool.addEmpty(100 - totalGateWeight)
+            if (totalGateWeight < 100) {
+              pool.addEmpty(100 - totalGateWeight)
+            }
             chaosGates.forEach(chaosType => {
               addStack(pool, {item: "gateways:gate_pearl", nbt: `{gateway: "meatsalad:${chaosType}"}`}, {weight: singleGateWeight})
             })

@@ -704,7 +704,7 @@
 			}
 		]
 	},
-	"ring_slot": {
+	"mage_ring_slot": {
 		"title": "+1 Ring Slot",
 		"icon": {
 			"type": "item",
@@ -716,8 +716,8 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "curios add ring @s 1",
-					"lock_command": "curios remove ring @s 1"
+					"unlock_command": "gamestage add @s mage_ring",
+					"lock_command": "gamestage remove @s mage_ring"
 				}
 			},
 			{
@@ -728,7 +728,31 @@
 			}
 		]
 	},
-	"charm_slot": {
+	"guardian_ring_slot": {
+		"title": "+1 Ring Slot",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "angelring:diamond_ring"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s guardian_ring",
+					"lock_command": "gamestage remove @s guardian_ring"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have gained one additional ring slot!\""
+				}
+			}
+		]
+	},
+	"warrior_charm_slot": {
 		"title": "+1 Charm Slot",
 		"icon": {
 			"type": "item",
@@ -740,8 +764,32 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "curios add charm @s 1",
-					"lock_command": "curios remove charm @s 1"
+					"unlock_command": "gamestage add @s warrior_charm",
+					"lock_command": "gamestage remove @s warrior_charm"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "tellraw @s \"§6You have gained one additional charm slot!\""
+				}
+			}
+		]
+	},
+	"archer_charm_slot": {
+		"title": "+1 Charm Slot",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:totem_of_undying"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "gamestage add @s archer_charm",
+					"lock_command": "gamestage remove @s archer_charm"
 				}
 			},
 			{

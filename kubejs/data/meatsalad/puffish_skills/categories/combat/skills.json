@@ -18,7 +18,7 @@
 		"root": false
 	},
 	"-15_6": {
-		"definition": "charm_slot",
+		"definition": "warrior_charm_slot",
 		"x": -480,
 		"y": 192,
 		"root": false
@@ -216,7 +216,7 @@
 		"root": false
 	},
 	"-6_-15": {
-		"definition": "ring_slot",
+		"definition": "mage_ring_slot",
 		"x": -192,
 		"y": -480,
 		"root": false
@@ -630,7 +630,7 @@
 		"root": false
 	},
 	"6_15": {
-		"definition": "ring_slot",
+		"definition": "guardian_ring_slot",
 		"x": 192,
 		"y": 480,
 		"root": false
@@ -822,7 +822,7 @@
 		"root": false
 	},
 	"15_-6": {
-		"definition": "charm_slot",
+		"definition": "archer_charm_slot",
 		"x": 480,
 		"y": -192,
 		"root": false

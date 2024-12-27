@@ -186,7 +186,6 @@ ServerEvents.recipes(event => {
     'silentgear:coating_smithing_template',
     'silentgear:coating_smithing_template_duplication',
     'silentgear:red_card_upgrade',
-    'silentgear:salvager',
     'silentgear:bracelet_template',
     'silentgear:bracelet_blueprint',
     'silentgear:bracelet_blueprint_alt',

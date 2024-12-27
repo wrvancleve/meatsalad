@@ -1,7 +1,6 @@
 JEIEvents.removeCategories(event => {
   event.remove('silentgear:compounding/gem')
   event.remove('silentgear:compounding/metal')
-  event.remove('silentgear:salvager')
 })
 
 JEIEvents.hideItems(event => {
@@ -15,8 +14,7 @@ JEIEvents.hideItems(event => {
     'silentgear:coating_smithing_template',
     'silentgear:red_card_upgrade',
     'silentgear:gear_smithing_table',
-    'silentgear:salvager',
-    
+
     'silentgear:adornment',
     'silentgear:alloy_ingot',
     'silentgear:arrow_heads',

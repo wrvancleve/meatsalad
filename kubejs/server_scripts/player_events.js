@@ -48,6 +48,31 @@ PlayerEvents.loggedIn(event => {
   }
 })
 
+const updateCuriosSlot = (player, slot, defaultCount, stages) => {
+  let count = defaultCount
+  for (let stage of stages) {
+    if (player.stages.has(stage)) {
+      count += 1
+    }
+  }
+  Utils.server.runCommandSilent(`curios set ${slot} ${player.username} ${count}`)
+}
+
+const RING_STAGES = [
+  'mage_ring',
+  'guardian_ring'
+]
+
+const CHARM_STAGES = [
+  'warrior_charm',
+  'archer_charm'
+]
+
+const updateCuriosSlots = (player) => {
+  updateCuriosSlot(player, 'ring', 1, RING_STAGES)
+  updateCuriosSlot(player, 'charm', 1, CHARM_STAGES)
+}
+
 const WORLD_STAGES = new Set([
   "the_nether",
   "the_other",
@@ -60,20 +85,13 @@ GameStageEvents.stageAdded(event => {
   if (WORLD_STAGES.has(stage)) {
     Utils.server.runCommandSilent(`advancement grant ${player.username} only meatsalad:stage/${stage}`)
   }
+  updateCuriosSlots(player)
 })
 
-/*
 GameStageEvents.stageRemoved(event => {
   const player = event.player
-  const stage = event.getStage()
   updateCuriosSlots(player)
-  switch (stage) {
-    case "lucky_ring":
-      Utils.server.runCommandSilent(`advancement revoke ${player.username} only meatsalad:stage/lucky_ring`)
-      break
-  }
 })
-*/
 
 PlayerEvents.inventoryChanged(event => {
   const { player, item, server } = event

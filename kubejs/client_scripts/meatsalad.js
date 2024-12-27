@@ -70,6 +70,8 @@ ClientEvents.lang('en_us', event => {
   event.add('meatsalad', 'effect.meatsalad.bowmaster_surge.description', 'Boosts speed and ranged abilities')
   event.add('meatsalad', 'effect.meatsalad.magic_forbiden', 'Magic Forbiden')
   event.add('meatsalad', 'effect.meatsalad.magic_forbiden.description', 'Disables magic')
+  event.add('meatsalad', 'effect.meatsalad.chaos', 'Chaos Power')
+  event.add('meatsalad', 'effect.meatsalad.chaos.description', 'Give negative effects on hit')
   event.add('meatsalad', 'effect.meatsalad.glimpse_of_god', 'Divine Grace: Glimpse')
   event.add('meatsalad', 'effect.meatsalad.glimpse_of_god.description', 'Just a glimpose of the divine magic of a god. Capable of damage immunity')
   event.add('meatsalad', 'effect.meatsalad.gaze_of_god', 'Divine Grace: Gaze')
@@ -121,6 +123,7 @@ JEIEvents.information(event => {
     Text.of('Usages:'),
     Text.of('  Crafts/upgrades many items!'),
     Text.of('  Adds a gem socket to affixed items (Max of 5)'),
+    Text.of('  Upgrade data models to Self Aware'),
   ])
 })
 

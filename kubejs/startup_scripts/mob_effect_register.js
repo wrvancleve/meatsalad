@@ -27,6 +27,16 @@ StartupEvents.registry('mob_effect', event => {
     .harmful()
     .color(Color.DARK_GRAY)
 
+  event.create('meatsalad:chaos')
+    .displayName("Chaos Power")
+    .modifyAttribute('minecraft:generic.knockback_resistance', 'chaosKnockbackResistance', 0.25, "addition")
+    .modifyAttribute('minecraft:generic.movement_speed', 'chaosMovementSpeed', 0.05, "multiply_base")
+    .modifyAttribute('attributeslib:armor_shred', 'chaosArmorShred', 0.25, "addition")
+    .modifyAttribute('attributeslib:life_steal', 'chaosLifeSteal', 0.05, "addition")
+    .modifyAttribute('attributeslib:prot_shred', 'chaosProtShred', 0.25, "addition")
+    .beneficial()
+    .color(Color.BLACK)
+
   event.create('meatsalad:glimpse_of_god')
     .displayName("Divine Grace: Glimpse")
     .beneficial()

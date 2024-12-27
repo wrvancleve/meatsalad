@@ -43,4 +43,10 @@ ServerEvents.recipes(event => {
     I: 'meatsalad:infused_ender_pearl',
     C: '#forge:circuits/ultimate'
   }, Item.of('hostilenetworks:sim_chamber'))
+
+  event.shaped('minecraft:dragon_head', ['AAA','BPB','AAA'],{
+    A: 'hostilenetworks:end_prediction',
+    P: Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:ender_dragon"}}').strongNBT(),
+    B: 'minecraft:dragon_breath'
+  })
 })

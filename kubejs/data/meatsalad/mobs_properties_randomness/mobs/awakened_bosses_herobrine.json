@@ -28,6 +28,11 @@
   ],
   "potion_effects": [
     {
+      "id": "meatsalad:chaos",
+      "amplifier": 3,
+      "hide_particles": true
+    },
+    {
       "id": "meatsalad:glimpse_of_god",
       "amplifier": 0,
       "duration": 3600,

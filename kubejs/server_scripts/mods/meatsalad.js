@@ -8,6 +8,10 @@ ServerEvents.tags('block', event => {
   event.add('silentgear:starlight_charger_pillars/tier5', 'meatsalad:abiding_alloy_block')
 })
 
+ServerEvents.tags('mob_effect', event => {
+  event.add('cataclysm:effective_for_bosses', 'meatsalad:chaos')
+})
+
 ServerEvents.recipes(event => {
   event.shaped('meatsalad:eldritch_cloth', [
     'fff',
@@ -189,6 +193,15 @@ ServerEvents.recipes(event => {
     max_sockets: 5
   }).id('meatsalad:manifest_illusion_add_sockets')
 
+  event.shapeless('hostilenetworks:data_model', ['hostilenetworks:data_model', "meatsalad:manifest_illusion"])
+    .modifyResult((inventory, itemstack) => {
+        let item = inventory.find('hostilenetworks:data_model')
+        if (item.nbt == null) return itemstack
+        let nbt = item.nbt
+        nbt.data_model.data = 1254 // MAX VALUE
+        return itemstack.withNBT(nbt)
+    }).id(`meatsalad:data_model_booster`)
+
   const mShaped = (result, pattern, count) => {
     const resultItem = Item.of(result, count || 1)
     let [mod, itemId] = resultItem.getId().split(':')
@@ -336,4 +349,26 @@ ServerEvents.recipes(event => {
     D: 'refinedstorage:4096k_fluid_storage_disk',
     Q: 'refinedstorage:quartz_enriched_iron',
   }).id('meatsalad:creative_fluid_storage_disk')
+  event.custom({
+    type: 'create:mechanical_crafting',
+    pattern: ['CLC', 'HSH', 'LGL'],
+    key: {
+      C: Ingredient.of('create:cogwheel').toJson(),
+      L: Ingredient.of('create:large_cogwheel').toJson(),
+      H: Ingredient.of('create:shaft').toJson(),
+      S: Ingredient.of('meatsalad:infinity_fabric').toJson(),
+      G: Ingredient.of('create:gearbox').toJson()
+    },
+    result: Ingredient.of('create:creative_motor').toJson(),
+    acceptMirrored: false
+  }).id('meatsalad:creative_motor')
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+      Ingredient.of('create:blaze_cake').toJson(),
+      Ingredient.of('meatsalad:infinity_fabric').toJson()
+    ],
+    results: [Ingredient.of('create:creative_blaze_cake').toJson()],
+    heatRequirement: 'superheated'
+  }).id('meatsalad:creative_blaze_cake')
 })

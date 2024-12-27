@@ -19,17 +19,17 @@
         {
           "attribute": "minecraft:generic.armor",
           "operation": "ADDITION",
-          "value": 30
+          "value": 20
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
           "operation": "ADDITION",
-          "value": 18
+          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
-          "value": 0.3
+          "value": 0.25
         },
         {
           "attribute": "generic.attack_damage",
@@ -44,22 +44,22 @@
         {
           "attribute": "attributeslib:armor_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "attributeslib:prot_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "generic.knockback_resistance",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "type": "gateways:mob_effect",
           "effect": {
-            "effect": "meatsalad:glimpse_of_god"
+            "effect": "meatsalad:chaos"
           }
         }
       ],
@@ -78,17 +78,17 @@
         {
           "attribute": "minecraft:generic.armor",
           "operation": "ADDITION",
-          "value": 30
+          "value": 20
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
           "operation": "ADDITION",
-          "value": 18
+          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
-          "value": 0.3
+          "value": 0.25
         },
         {
           "attribute": "generic.attack_damage",
@@ -103,22 +103,22 @@
         {
           "attribute": "attributeslib:armor_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "attributeslib:prot_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "generic.knockback_resistance",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "type": "gateways:mob_effect",
           "effect": {
-            "effect": "meatsalad:glimpse_of_god"
+            "effect": "meatsalad:chaos"
           }
         }
       ],
@@ -137,17 +137,17 @@
         {
           "attribute": "minecraft:generic.armor",
           "operation": "ADDITION",
-          "value": 30
+          "value": 20
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
           "operation": "ADDITION",
-          "value": 18
+          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
-          "value": 0.3
+          "value": 0.25
         },
         {
           "attribute": "generic.attack_damage",
@@ -162,22 +162,22 @@
         {
           "attribute": "attributeslib:armor_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "attributeslib:prot_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "generic.knockback_resistance",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "type": "gateways:mob_effect",
           "effect": {
-            "effect": "meatsalad:glimpse_of_god"
+            "effect": "meatsalad:chaos"
           }
         }
       ],
@@ -196,17 +196,17 @@
         {
           "attribute": "minecraft:generic.armor",
           "operation": "ADDITION",
-          "value": 30
+          "value": 20
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
           "operation": "ADDITION",
-          "value": 18
+          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
-          "value": 0.3
+          "value": 0.25
         },
         {
           "attribute": "generic.attack_damage",
@@ -221,22 +221,22 @@
         {
           "attribute": "attributeslib:armor_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "attributeslib:prot_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "generic.knockback_resistance",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "type": "gateways:mob_effect",
           "effect": {
-            "effect": "meatsalad:glimpse_of_god"
+            "effect": "meatsalad:chaos"
           }
         }
       ],

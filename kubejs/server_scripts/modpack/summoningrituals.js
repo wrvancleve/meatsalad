@@ -129,12 +129,10 @@ SummoningRituals.complete(event => {
       if (entity.isLiving() && entity.type == mobId && displayName.endsWith('+'.repeat(summonModifier)) && !entity.isGlowing()) {
         if (summonModifier > 0) {
           entity.persistentData.putInt('chaos_level', summonModifier)
+          entity.potionEffects.add('meatsalad:chaos', 20 * 14400, summonModifier - 1, false, false)
+          entity.modifyAttribute('minecraft:generic.attack_damage', 'AttackBoost', 0.1 * summonModifier, 'multiply_total')
+          entity.setGlowing(true)
         }
-        entity.modifyAttribute('minecraft:generic.max_health', 'HealthBoost', 0.1 * summonModifier, 'multiply_total')
-        entity.modifyAttribute('minecraft:generic.attack_damage', 'AttackBoost', 0.1 * summonModifier, 'multiply_total')
-        entity.heal(entity.maxHealth)
-        entity.potionEffects.add('meatsalad:glimpse_of_god', 20 * 3600, 0, false, false)
-        entity.setGlowing(true)
       }
     })
   }
