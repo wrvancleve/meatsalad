@@ -126,7 +126,11 @@ SummoningRituals.complete(event => {
     let area = new AABB.of(x - radius, y - radius, z - radius, x + radius, y + radius, z + radius)
     event.level.getEntitiesWithin(area).forEach(entity => {
       let displayName = entity.getDisplayName().getString() + ''
-      if (entity.isLiving() && entity.type == mobId && displayName.endsWith('+'.repeat(summonModifier)) && !entity.isGlowing()) {
+      if (entity.isLiving()
+        && entity.type == mobId
+        && (displayName.endsWith('+'.repeat(summonModifier)) || displayName.endsWith(`_${summonModifier}`))
+        && !entity.isGlowing()
+      ) {
         if (summonModifier > 0) {
           entity.persistentData.putInt('chaos_level', summonModifier)
           entity.potionEffects.add('meatsalad:chaos', 20 * 14400, summonModifier - 1, false, false)
