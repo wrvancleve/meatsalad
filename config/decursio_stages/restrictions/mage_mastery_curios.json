@@ -1,0 +1,31 @@
+{
+    "Restriction Data": {
+        "stage": "mage_mastery_curios",
+        "itemList": [
+            {
+                "item": "meatsalad:mana_ring_plus"
+            },
+            {
+                "item": "meatsalad:mana_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:cooldown_ring_plus"
+            },
+            {
+                "item": "meatsalad:cooldown_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:cast_time_ring_plus"
+            },
+            {
+                "item": "meatsalad:cast_time_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:spell_power_ring_plus"
+            },
+            {
+                "item": "meatsalad:spell_power_ring_plus_plus"
+            }
+        ]
+    }
+}

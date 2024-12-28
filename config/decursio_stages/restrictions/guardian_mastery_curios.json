@@ -1,0 +1,25 @@
+{
+    "Restriction Data": {
+        "stage": "guardian_mastery_curios",
+        "itemList": [
+            {
+                "item": "meatsalad:armor_ring_plus"
+            },
+            {
+                "item": "meatsalad:armor_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:armor_toughness_ring_plus"
+            },
+            {
+                "item": "meatsalad:armor_toughness_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:healing_ring_plus"
+            },
+            {
+                "item": "meatsalad:healing_ring_plus_plus"
+            }
+        ]
+    }
+}

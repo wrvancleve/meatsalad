@@ -134,32 +134,6 @@ ItemEvents.tooltip(event => {
   event.add('meatsalad:rebirth_essence', [
     Text.of('Right Click to reset your skill tree').gold(),
   ])
-
-  const addCurioMasteryWarning = (type, itemId) => {
-    event.add(`meatsalad:${itemId}_plus`, [
-      Text.of(`Requires ${global.getReadableText(`${type}_mastery_curios`)} skill to equip`).red()
-    ])
-    event.add(`meatsalad:${itemId}_plus_plus`, [
-      Text.of(`Requires ${global.getReadableText(`${type}_mastery_curios`)} skill to equip`).red()
-    ])
-  }
-
-  addCurioMasteryWarning("archer", "arrow_damage_ring")
-  addCurioMasteryWarning("archer", "arrow_velocity_ring")
-  addCurioMasteryWarning("archer", "dodge_chance_ring")
-
-  addCurioMasteryWarning("mage", "mana_ring")
-  addCurioMasteryWarning("mage", "cooldown_ring")
-  addCurioMasteryWarning("mage", "cast_time_ring")
-  addCurioMasteryWarning("mage", "spell_power_ring")
-
-  addCurioMasteryWarning("warrior", "attack_damage_ring")
-  addCurioMasteryWarning("warrior", "attack_speed_ring")
-  addCurioMasteryWarning("warrior", "critical_damage_ring")
-
-  addCurioMasteryWarning("guardian", "armor_ring")
-  addCurioMasteryWarning("guardian", "armor_toughness_ring")
-  addCurioMasteryWarning("guardian", "healing_ring")
 })
 
 // ItemEvents.tooltip(event => {

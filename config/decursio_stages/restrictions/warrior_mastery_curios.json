@@ -1,0 +1,25 @@
+{
+    "Restriction Data": {
+        "stage": "warrior_mastery_curios",
+        "itemList": [
+            {
+                "item": "meatsalad:attack_damage_ring_plus"
+            },
+            {
+                "item": "meatsalad:attack_damage_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:attack_speed_ring_plus"
+            },
+            {
+                "item": "meatsalad:attack_speed_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:critical_damage_ring_plus"
+            },
+            {
+                "item": "meatsalad:critical_damage_ring_plus_plus"
+            }
+        ]
+    }
+}

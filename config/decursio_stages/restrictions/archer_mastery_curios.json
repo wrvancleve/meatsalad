@@ -1,0 +1,25 @@
+{
+    "Restriction Data": {
+        "stage": "archer_mastery_curios",
+        "itemList": [
+            {
+                "item": "meatsalad:arrow_damage_ring_plus"
+            },
+            {
+                "item": "meatsalad:arrow_damage_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:arrow_velocity_ring_plus"
+            },
+            {
+                "item": "meatsalad:arrow_velocity_ring_plus_plus"
+            },
+            {
+                "item": "meatsalad:dodge_chance_ring_plus"
+            },
+            {
+                "item": "meatsalad:dodge_chance_ring_plus_plus"
+            }
+        ]
+    }
+}

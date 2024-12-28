@@ -87,8 +87,8 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "gamestage add @s mage_mastery_curios",
-					"lock_command": "gamestage remove @s mage_mastery_curios"
+					"unlock_command": "decstages add @s mage_mastery_curios",
+					"lock_command": "decstages remove @s mage_mastery_curios"
 				}
 			},
 			{
@@ -187,8 +187,8 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "gamestage add @s warrior_mastery_curios",
-					"lock_command": "gamestage remove @s warrior_mastery_curios"
+					"unlock_command": "decstages add @s warrior_mastery_curios",
+					"lock_command": "decstages remove @s warrior_mastery_curios"
 				}
 			},
 			{
@@ -288,8 +288,8 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "gamestage add @s archer_mastery_curios",
-					"lock_command": "gamestage remove @s archer_mastery_curios"
+					"unlock_command": "decstages add @s archer_mastery_curios",
+					"lock_command": "decstages remove @s archer_mastery_curios"
 				}
 			},
 			{
@@ -388,8 +388,8 @@
 			{
 				"type": "puffish_skills:command",
 				"data": {
-					"unlock_command": "gamestage add @s guardian_mastery_curios",
-					"lock_command": "gamestage remove @s guardian_mastery_curios"
+					"unlock_command": "decstages add @s guardian_mastery_curios",
+					"lock_command": "decstages remove @s guardian_mastery_curios"
 				}
 			},
 			{
