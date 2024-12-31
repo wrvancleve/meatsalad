@@ -33,34 +33,6 @@ ServerEvents.recipes(event => {
     energy: 12000
   }).id('meatsalad:smelter/quartz_enriched_iron')
 
-
-  // processor_binding
-  event.remove({ id: 'refinedstorage:processor_binding' })
-  event.custom({
-    type: 'thermal:smelter',
-    ingredients: [
-      {
-        tag: 'forge:string',
-        count: 2
-      },
-      {
-        tag: 'forge:slimeballs',
-        count: 1
-      }
-    ],
-    result: [Item.of('refinedstorage:processor_binding', 8)],
-    energy: 8000
-  }).id('meatsalad:smelter/processor_binding')
-  event.custom({
-    type: 'mekanism:combining',
-    extraInput: {
-      amount: 2,
-      ingredient: { tag: 'forge:string' }
-    },
-    mainInput: { ingredient: { tag: 'forge:slimeballs' } },
-    output: { item: 'refinedstorage:processor_binding', count: 8 }
-  }).id('meatsalad:combining/processor_binding')
-
   // silicon
   event.remove({ id: 'refinedstorage:silicon' })
   event.custom({

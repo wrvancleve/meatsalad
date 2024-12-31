@@ -15,5 +15,5 @@ ServerEvents.recipes(event => {
   ], {
     i: 'meatsalad:infinity_fiber',
     d: 'dankstorage:dank_6'
-  }, Item.of('dankstorage:dank_7'), '7')
+  }, Item.of('dankstorage:dank_7'))
 })

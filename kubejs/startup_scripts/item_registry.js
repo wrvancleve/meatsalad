@@ -483,6 +483,8 @@ StartupEvents.registry('item', event => {
   createTaggedItem('abyssium', 'ingot', 'epic')
   createTaggedItem('abyssium', 'nugget', 'epic')
 
+  createItem('sentient_processor', 'epic')
+
   createItem('arcanis_stone', 'epic')
   // createItem('arcanis_hypermatter', 'epic')
   createItem('maestris_stone', 'epic')

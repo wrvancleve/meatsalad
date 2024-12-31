@@ -66,17 +66,17 @@ const entityHasChaosEffect = (entity) => {
 }
 
 const getEntityDamageCap = (entity) => {
-  /*
-    .08 @ 0 || 70
-    .07 @ 1 || 55
-    .06 @ 2 || 40
-    .05 @ 3 || 25
-  */
-  const maxHealth = entity.maxHealth
   const chaosLevel = entity.getEffect('meatsalad:chaos').getAmplifier()
-  const damageCapPercent = Math.max(.08 - (.01 * chaosLevel), .05)
-  const damageCapMin = Math.max(70 - (15 * chaosLevel), 25)
-  return Math.max(maxHealth * damageCapPercent, damageCapMin)
+  switch (chaosLevel) {
+    case 0:
+      return 70
+    case 1:
+      return 55
+    case 2:
+      return 40
+    default:
+      return 25
+  }
 }
 
 global.LivingHurt = (event) => {

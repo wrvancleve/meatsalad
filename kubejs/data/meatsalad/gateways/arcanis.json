@@ -7,14 +7,14 @@
       "entities": [
         {
           "entity": "irons_spellbooks:necromancer",
-          "count": 5
+          "count": 7
         }
       ],
       "modifiers": [
         {
           "attribute": "generic.max_health",
           "operation": "MULTIPLY_TOTAL",
-          "value": 3.0
+          "value": 5.0
         },
         {
           "attribute": "minecraft:generic.armor",
@@ -69,21 +69,21 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 3000,
+      "max_wave_time": 3600,
       "setup_time": 200
     },
     {
       "entities": [
         {
           "entity": "irons_spellbooks:cryomancer",
-          "count": 5
+          "count": 7
         }
       ],
       "modifiers": [
         {
           "attribute": "generic.max_health",
           "operation": "MULTIPLY_TOTAL",
-          "value": 3.0
+          "value": 4.0
         },
         {
           "attribute": "minecraft:generic.armor",
@@ -138,21 +138,21 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 3000,
+      "max_wave_time": 3600,
       "setup_time": 200
     },
     {
       "entities": [
         {
           "entity": "irons_spellbooks:archevoker",
-          "count": 5
+          "count": 7
         }
       ],
       "modifiers": [
         {
           "attribute": "generic.max_health",
           "operation": "MULTIPLY_TOTAL",
-          "value": 3.0
+          "value": 4.0
         },
         {
           "attribute": "minecraft:generic.armor",
@@ -207,14 +207,14 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 3000,
+      "max_wave_time": 3600,
       "setup_time": 200
     },
     {
       "entities": [
         {
           "entity": "mutantmonsters:mutant_creeper",
-          "count": 3
+          "count": 5
         }
       ],
       "modifiers": [
@@ -271,36 +271,31 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 3000,
+      "max_wave_time": 3600,
       "setup_time": 200
     },
     {
       "entities": [
         {
           "entity": "cataclysm:amethyst_crab",
-          "count": 3
+          "count": 5
         }
       ],
       "modifiers": [
         {
-          "attribute": "generic.max_health",
-          "operation": "MULTIPLY_TOTAL",
-          "value": 1.0
-        },
-        {
           "attribute": "minecraft:generic.armor",
           "operation": "ADDITION",
-          "value": 30
+          "value": 20
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
           "operation": "ADDITION",
-          "value": 18
+          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
-          "value": 0.3
+          "value": 0.25
         },
         {
           "attribute": "generic.attack_damage",
@@ -315,20 +310,15 @@
         {
           "attribute": "attributeslib:armor_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "attributeslib:prot_shred",
           "operation": "ADDITION",
-          "value": 0.7
+          "value": 0.5
         },
         {
           "attribute": "generic.knockback_resistance",
-          "operation": "ADDITION",
-          "value": 0.7
-        },
-        {
-          "attribute": "irons_spellbooks:spell_resist",
           "operation": "ADDITION",
           "value": 0.5
         },
@@ -340,7 +330,7 @@
         }
       ],
       "rewards": [],
-      "max_wave_time": 3000,
+      "max_wave_time": 4200,
       "setup_time": 200
     }
   ],

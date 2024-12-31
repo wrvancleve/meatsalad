@@ -136,12 +136,14 @@ const unify = function (event, unifyTag, unifyRecipes) {
   const GEM_MATERIALS = [
     'amethyst',
     'apatite',
+    'aquamarine',
     'certus_quartz',
     'cinnabar',
     'diamond',
     'dimensional_shard',
     'emerald',
     'fluorite',
+    'jade',
     'lapis',
     'niter',
     'peridot',
@@ -149,6 +151,7 @@ const unify = function (event, unifyTag, unifyRecipes) {
     'ruby',
     'sapphire',
     'sulfur',
+    'topaz',
   ]
   const RECIPE_KEYS = {
     'minecraft:crafting_shaped': {

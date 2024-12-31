@@ -39,6 +39,16 @@ ServerEvents.recipes(event => {
     c: '#forge:gems/amethyst',
   }).id('meatsalad:dimensional_shard')
 
+  energize(event,
+    [
+      Ingredient.of('meatsalad:chaos_crystal'),
+      Ingredient.of('#forge:circuits/ultimate'),
+      Ingredient.of('meatsalad:lost_illusion'),
+    ],
+    1000000000,
+    Item.of('meatsalad:sentient_processor')
+  )
+
   const ancientCuriosUpgrades = (baseItem) => {
     const itemId = baseItem.split(":").pop()
     event.custom({
@@ -145,6 +155,80 @@ ServerEvents.recipes(event => {
     result: Item.of('meatsalad:eternal_crystal')
   }).id('meatsalad:eternal_crystal')
 
+  event.custom({
+    type: 'extendedcrafting:shaped_table',
+    pattern: [
+      'abcdefghi',
+      'jklmnopqr',
+      'stuvwxyzA',
+      'BCDEFGHIJ',
+      'KLMNOPQRS',
+      'TUVWXYZ12',
+      '34       ',
+      '         ',
+      '         '
+    ],
+    key: {
+      a: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:aluminum' }).strongNBT(),
+      b: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:amethyst' }).strongNBT(),
+      c: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:ancient_soulberries' }).strongNBT(),
+      d: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:apatite' }).strongNBT(),
+      e: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:aquamarine' }).strongNBT(),
+      f: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:basalz_rod' }).strongNBT(),
+      g: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:blaze_rod' }).strongNBT(),
+      h: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:blitz_rod' }).strongNBT(),
+      i: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:blizz_rod' }).strongNBT(),
+      j: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:bone' }).strongNBT(),
+      k: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:chorus_fruit' }).strongNBT(),
+      l: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:cinder_essence' }).strongNBT(),
+      m: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:cinnabar' }).strongNBT(),
+      n: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:coal' }).strongNBT(),
+      o: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:copper' }).strongNBT(),
+      p: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:diamond' }).strongNBT(),
+      q: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:echo_shard' }).strongNBT(),
+      r: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:emerald' }).strongNBT(),
+      s: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:ender_pearl' }).strongNBT(),
+      t: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:fluorite' }).strongNBT(),
+      u: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:frozen_bone' }).strongNBT(),
+      v: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:ghast_tear' }).strongNBT(),
+      w: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:glowstone' }).strongNBT(),
+      x: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:gold' }).strongNBT(),
+      y: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:gunpowder' }).strongNBT(),
+      z: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:hogskin' }).strongNBT(),
+      A: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:iron' }).strongNBT(),
+      B: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:jade' }).strongNBT(),
+      C: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:lapis_lazuli' }).strongNBT(),
+      D: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:lead' }).strongNBT(),
+      E: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:magma_cream' }).strongNBT(),
+      F: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:myalite_crystal' }).strongNBT(),
+      G: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:nether_banana' }).strongNBT(),
+      H: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:nickel' }).strongNBT(),
+      I: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:niter' }).strongNBT(),
+      J: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:obsidian' }).strongNBT(),
+      K: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:osmium' }).strongNBT(),
+      L: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:peridot' }).strongNBT(),
+      M: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:phantom_membrane' }).strongNBT(),
+      N: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:platinum' }).strongNBT(),
+      O: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:quartz' }).strongNBT(),
+      P: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:redstone' }).strongNBT(),
+      Q: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:rotten_flesh' }).strongNBT(),
+      R: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:ruby' }).strongNBT(),
+      S: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:sapphire' }).strongNBT(),
+      T: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:shulker_shell' }).strongNBT(),
+      U: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:silver' }).strongNBT(),
+      V: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:slime_ball' }).strongNBT(),
+      W: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:spider_eye' }).strongNBT(),
+      X: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:sulfur' }).strongNBT(),
+      Y: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:tin' }).strongNBT(),
+      Z: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:topaz' }).strongNBT(),
+      1: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:uranium' }).strongNBT(),
+      2: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:witch_pupil' }).strongNBT(),
+      3: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:wither_bone' }).strongNBT(),
+      4: Item.of('extendedcrafting:singularity', 1, { Id: 'extendedcrafting:zinc' }).strongNBT(),
+    },
+    result: Item.of('extendedcrafting:ultimate_singularity')
+  }).id('meatsalad:ultimate_singularity')
+
   smash(event, Ingredient.of('meatsalad:eternal_crystal'), Item.of('meatsalad:eternal_crystal_shard', 32))
   smash(event, Ingredient.of('meatsalad:eternal_crystal_shard'), Item.of('meatsalad:eternal_crystalline_powder', 16))
 
@@ -193,7 +277,7 @@ ServerEvents.recipes(event => {
     max_sockets: 5
   }).id('meatsalad:manifest_illusion_add_sockets')
 
-  event.shapeless('hostilenetworks:data_model', ['hostilenetworks:data_model', "meatsalad:manifest_illusion"])
+  event.shapeless('hostilenetworks:data_model', ['hostilenetworks:data_model', "meatsalad:sentient_processor"])
     .modifyResult((inventory, itemstack) => {
         let item = inventory.find('hostilenetworks:data_model')
         if (item.nbt == null) return itemstack

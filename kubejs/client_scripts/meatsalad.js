@@ -123,7 +123,6 @@ JEIEvents.information(event => {
     Text.of('Usages:'),
     Text.of('  Crafts/upgrades many items!'),
     Text.of('  Adds a gem socket to affixed items (Max of 5)'),
-    Text.of('  Upgrade data models to Self Aware'),
   ])
 })
 
@@ -133,6 +132,9 @@ ItemEvents.tooltip(event => {
   ])
   event.add('meatsalad:rebirth_essence', [
     Text.of('Right Click to reset your skill tree').gold(),
+  ])
+  event.add('meatsalad:sentient_processor', [
+    Text.of('Combine with any Tier Data Model to upgrade it to a Self-Aware Data Model').gold(),
   ])
 })
 

@@ -15,6 +15,7 @@
 		{ item: "fluxnetworks:flux_plug" }
 		{ item: "fluxnetworks:flux_point" }
 		{ item: "meatsalad:mystery_goo", random_bonus: 3 }
+		{ item: "meatsalad:sentient_processor" }
 		{ item: "minecraft:enchanted_golden_apple" }
 		{
 			item: {
