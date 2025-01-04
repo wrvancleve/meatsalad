@@ -60,7 +60,7 @@ ServerEvents.genericLootTables((event) => {
   ]
   chaosGates.forEach(chaosType => {
     event.addGeneric(`meatsalad:bags/${chaosType}`, loot => {
-      addStackLootPool(loot, {item: `meatsalad:${chaosType}_stone`})
+      addStackLootPool(loot, {item: `meatsalad:${chaosType}_stone`, min: 1, max: 3})
       addStackLootPool(loot, {item: "meatsalad:dark_matter", min: 2, max: 3})
       addLootTablePool(loot, {type: "affix_materials", name: "max"}, [3, 5])
       addLootTablePool(loot, {type: "gems", name: "random_max"}, [3, 5])

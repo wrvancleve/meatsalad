@@ -1,0 +1,24 @@
+{
+    "entity": "irons_spellbooks:citadel_keeper",
+    "variants": [],
+    "name": "entity.irons_spellbooks.citadel_keeper",
+    "name_color": "#343434",
+    "gui_scale": 0.85,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 768,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.citadel_keeper",
+    "fabricator_drops": [
+        {
+            "item": "irons_spellbooks:cinder_essence",
+            "count": 1
+        }
+    ]
+}

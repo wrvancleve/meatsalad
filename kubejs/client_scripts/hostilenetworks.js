@@ -1,6 +1,7 @@
 ClientEvents.lang('en_us', event => {
   event.add('hostilenetworks', 'hostilenetworks.trivia.ancient_remnant', 'Prehistoric Guardian of the Burning Arena')
   event.add('hostilenetworks', 'hostilenetworks.trivia.aptrgangr', 'Guardian of the Frosted Prison')
+  event.add('hostilenetworks', 'hostilenetworks.trivia.citadel_keeper', 'Knight of the Magic Citadel')
   event.add('hostilenetworks', 'hostilenetworks.trivia.ignis', 'Knight of the Burning Arena')
   event.add('hostilenetworks', 'hostilenetworks.trivia.ender_golem', 'Golem of the Ruined Citadel')
   event.add('hostilenetworks', 'hostilenetworks.trivia.ender_guardian', 'Guardian of the Ruined Citadel')

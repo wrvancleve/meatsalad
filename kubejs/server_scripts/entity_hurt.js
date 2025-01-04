@@ -61,8 +61,10 @@ const isValidEntity = (entity) => {
   return entity && typeof entity.hasEffect === 'function'
 }
 
-const entityHasChaosEffect = (entity) => {
-  return entity.hasEffect('meatsalad:chaos')
+const entityHasChaosEffect = (entity, requiredLevel) => {
+  const hasChaosEffect = entity.hasEffect('meatsalad:chaos')
+  if (!hasChaosEffect) return false
+  return entity.getEffect('meatsalad:chaos').getAmplifier() >= requiredLevel
 }
 
 const getEntityDamageCap = (entity) => {
@@ -81,7 +83,7 @@ const getEntityDamageCap = (entity) => {
 
 global.LivingHurt = (event) => {
   const entity = event.entity
-  if (isValidEntity(entity) && entityHasChaosEffect(entity) && event.source.getType() !== 'genericKill') {
+  if (isValidEntity(entity) && entityHasChaosEffect(entity, 0) && event.source.getType() !== 'genericKill') {
     const damageCap = getEntityDamageCap(entity)
     event.setAmount(Math.min(event.getAmount(), damageCap))
   }
@@ -215,7 +217,7 @@ const DAMAGED_EFFECTS = [
 ]
 
 global.ChaosEntityDamagedByOthers = (event) => {
-  if (isValidEntity(event.entity) && entityHasChaosEffect(event.entity) && isValidEntity(event.source.actual)) {
+  if (isValidEntity(event.entity) && entityHasChaosEffect(event.entity, 3) && isValidEntity(event.source.actual)) {
     const effectToApply = getRandomEffect(event.entity, event.source.actual, DAMAGED_EFFECTS)
     if (effectToApply) {
       event.source.actual.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)
@@ -231,7 +233,7 @@ const ON_ATTACK_EFFECTS = [
 ]
 
 global.OthersDamagedByChaosEntity = (event) => {
-  if (isValidEntity(event.source.actual) && entityHasChaosEffect(event.source.actual) && isValidEntity(event.entity)) {
+  if (isValidEntity(event.source.actual) && entityHasChaosEffect(event.source.actual, 0) && isValidEntity(event.entity)) {
     const effectToApply = getRandomEffect(event.source.actual, event.entity, ON_ATTACK_EFFECTS)
     if (effectToApply) {
       event.entity.potionEffects.add(effectToApply.id, effectToApply.duration * 20, effectToApply.amplifier, false, true)

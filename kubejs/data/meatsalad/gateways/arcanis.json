@@ -17,16 +17,6 @@
           "value": 5.0
         },
         {
-          "attribute": "minecraft:generic.armor",
-          "operation": "ADDITION",
-          "value": 20
-        },
-        {
-          "attribute": "minecraft:generic.armor_toughness",
-          "operation": "ADDITION",
-          "value": 12
-        },
-        {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
           "value": 0.25
@@ -84,16 +74,6 @@
           "attribute": "generic.max_health",
           "operation": "MULTIPLY_TOTAL",
           "value": 4.0
-        },
-        {
-          "attribute": "minecraft:generic.armor",
-          "operation": "ADDITION",
-          "value": 20
-        },
-        {
-          "attribute": "minecraft:generic.armor_toughness",
-          "operation": "ADDITION",
-          "value": 12
         },
         {
           "attribute": "minecraft:generic.movement_speed",
@@ -155,16 +135,6 @@
           "value": 4.0
         },
         {
-          "attribute": "minecraft:generic.armor",
-          "operation": "ADDITION",
-          "value": 20
-        },
-        {
-          "attribute": "minecraft:generic.armor_toughness",
-          "operation": "ADDITION",
-          "value": 12
-        },
-        {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
           "value": 0.25
@@ -224,16 +194,6 @@
           "value": 3.0
         },
         {
-          "attribute": "minecraft:generic.armor",
-          "operation": "ADDITION",
-          "value": 20
-        },
-        {
-          "attribute": "minecraft:generic.armor_toughness",
-          "operation": "ADDITION",
-          "value": 12
-        },
-        {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
           "value": 0.25
@@ -282,16 +242,6 @@
         }
       ],
       "modifiers": [
-        {
-          "attribute": "minecraft:generic.armor",
-          "operation": "ADDITION",
-          "value": 20
-        },
-        {
-          "attribute": "minecraft:generic.armor_toughness",
-          "operation": "ADDITION",
-          "value": 12
-        },
         {
           "attribute": "minecraft:generic.movement_speed",
           "operation": "MULTIPLY_BASE",
