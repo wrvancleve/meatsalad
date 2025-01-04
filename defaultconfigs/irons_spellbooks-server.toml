@@ -38,6 +38,8 @@
 	upgradeWhitelist = []
 	#Upgrade Blacklist. Use an item's id to prevent it from being upgraded, ex: "minecraft:iron_sword"
 	upgradeBlacklist = []
+	#Whether merging scrolls with ink to upgrade them in the Arcane Anvil is enabled.
+	scrollMerging = true
 
 ["Imbue Overrides"]
 	#Use these lists to change what items can interact with the Arcane Anvil's imbue system.
@@ -580,10 +582,10 @@
 		MaxLevel = 4
 		AncientLevel = 6
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, ANCIENT
-		MinRarity = "UNCOMMON"
+		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 45.0
+		CooldownInSeconds = 80.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:firecracker"]
@@ -907,10 +909,10 @@
 		MaxLevel = 4
 		AncientLevel = 6
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, ANCIENT
-		MinRarity = "UNCOMMON"
+		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.5
-		CooldownInSeconds = 45.0
+		CooldownInSeconds = 80.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:wisp"]
