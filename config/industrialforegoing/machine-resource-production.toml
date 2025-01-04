@@ -109,7 +109,7 @@
 
 	[MachineResourceProductionConfig.OreLaserBaseConfig]
 		#Max progress of the machine
-		maxProgress = 100
+		maxProgress = 80
 		#How much weight of an item the catalyst will increase
 		catalystModifier = 8
 
