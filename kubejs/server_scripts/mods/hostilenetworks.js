@@ -44,13 +44,28 @@ ServerEvents.recipes(event => {
     C: '#forge:circuits/ultimate'
   }, Item.of('hostilenetworks:sim_chamber'))
 
+  // Extra Nether Prediction Usages
+  event.shapeless('silentgear:crimson_iron_ingot', [
+    'minecraft:magma_cream',
+    'minecraft:blaze_powder',
+    '#forge:ingots/iron',
+    'hostilenetworks:nether_prediction',
+  ]).id('meatsalad:crimson_iron_ingot')
   event.shapeless('irons_spellbooks:cinder_essence', [
     'irons_spellbooks:arcane_essence',
     'hostilenetworks:nether_prediction',
   ]).id('meatsalad:cinder_essence')
+
+  // Extra End Prediction Usages
+  event.shapeless('silentgear:azure_silver_ingot', [
+    'minecraft:ender_pearl',
+    'minecraft:ender_pearl',
+    '#forge:ingots/silver',
+    'hostilenetworks:end_prediction',
+  ]).id('meatsalad:azure_silver_ingot')
   event.shaped('minecraft:dragon_head', ['AAA','BPB','AAA'],{
     A: 'hostilenetworks:end_prediction',
     P: Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:ender_dragon"}}').strongNBT(),
     B: 'minecraft:dragon_breath'
-  })
+  }).id('meatsalad:dragon_head')
 })

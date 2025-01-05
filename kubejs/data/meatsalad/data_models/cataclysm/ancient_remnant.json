@@ -19,13 +19,17 @@
     "count": 1
   },
   "base_drop": {
-    "item": "hostilenetworks:end_prediction",
+    "item": "hostilenetworks:overworld_prediction",
     "count": 1
   },
   "trivia": "hostilenetworks.trivia.ancient_remnant",
   "fabricator_drops": [
     {
       "item": "cataclysm:ancient_metal_block",
+      "count": 1
+    },
+    {
+      "item": "cataclysm:remnant_skull",
       "count": 1
     },
     {

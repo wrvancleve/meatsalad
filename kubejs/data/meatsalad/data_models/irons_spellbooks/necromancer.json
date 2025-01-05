@@ -5,25 +5,25 @@
             "type": "forge:mod_loaded"
         }
     ],
-    "entity": "irons_spellbooks:citadel_keeper",
+    "entity": "irons_spellbooks:necromancer",
     "variants": [],
-    "name": "entity.irons_spellbooks.citadel_keeper",
+    "name": "entity.irons_spellbooks.necromancer",
     "name_color": "#413C41",
-    "gui_scale": 0.8,
+    "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 768,
+    "sim_cost": 256,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },
     "base_drop": {
-        "item": "hostilenetworks:nether_prediction"
+        "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "hostilenetworks.trivia.citadel_keeper",
+    "trivia": "hostilenetworks.trivia.necromancer",
     "fabricator_drops": [
         {
-            "item": "irons_spellbooks:cinder_essence",
+            "item": "irons_spellbooks:arcane_essence",
             "count": 8
         }
     ]

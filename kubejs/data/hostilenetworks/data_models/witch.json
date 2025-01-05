@@ -43,7 +43,7 @@
         {
             "optional": true,
             "item": "endrem:witch_pupil",
-            "count": 1
+            "count": 2
         }
     ]
 }

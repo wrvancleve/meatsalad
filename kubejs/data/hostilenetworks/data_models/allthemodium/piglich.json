@@ -19,14 +19,14 @@
     "count": 1
   },
   "base_drop": {
-    "item": "hostilenetworks:end_prediction",
+    "item": "hostilenetworks:nether_prediction",
     "count": 1
   },
   "trivia": "hostilenetworks.trivia.piglich",
   "fabricator_drops": [
     {
       "item": "allthemodium:piglich_heart",
-      "count": 1
+      "count": 2
     },
     {
       "optional": true,

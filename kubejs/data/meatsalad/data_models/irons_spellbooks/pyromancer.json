@@ -1,8 +1,14 @@
 {
-    "entity": "minecraft:vindicator",
+    "conditions": [
+        {
+            "modid": "irons_spellbooks",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "irons_spellbooks:pyromancer",
     "variants": [],
-    "name": "entity.minecraft.vindicator",
-    "name_color": "#325566",
+    "name": "entity.irons_spellbooks.pyromancer",
+    "name_color": "#DC6348",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -14,15 +20,14 @@
     "base_drop": {
         "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "hostilenetworks.trivia.vindicator",
+    "trivia": "hostilenetworks.trivia.pyromancer",
     "fabricator_drops": [
         {
-            "id": "minecraft:emerald",
+            "item": "irons_spellbooks:arcane_essence",
             "count": 8
         },
         {
-            "optional": true,
-            "item": "endrem:corrupted_eye",
+            "item": "irons_spellbooks:fire_rune",
             "count": 1
         }
     ]

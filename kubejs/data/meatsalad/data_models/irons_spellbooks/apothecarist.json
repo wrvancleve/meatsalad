@@ -1,0 +1,34 @@
+{
+    "conditions": [
+        {
+            "modid": "irons_spellbooks",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "irons_spellbooks:apothecarist",
+    "variants": [],
+    "name": "entity.irons_spellbooks.apothecarist",
+    "name_color": "#55EA62",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 512,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.apothecarist",
+    "fabricator_drops": [
+        {
+            "item": "irons_spellbooks:arcane_essence",
+            "count": 8
+        },
+        {
+            "item": "irons_spellbooks:nature_rune",
+            "count": 1
+        }
+    ]
+}

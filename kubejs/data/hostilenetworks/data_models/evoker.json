@@ -19,6 +19,10 @@
     "trivia": "hostilenetworks.trivia.evoker",
     "fabricator_drops": [
         {
+            "id": "minecraft:emerald",
+            "count": 16
+        },
+        {
             "item": "minecraft:totem_of_undying",
             "count": 1
         },
