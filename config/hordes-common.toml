@@ -71,7 +71,7 @@
 	#Whether skeletons and strays burn in sunlight.
 	skeletonsBurn = false
 	#Whether zombie villagers have vanilla curing mechanics or not
-	zombieVillagersCanBeCured = false
+	zombieVillagersCanBeCured = true
 	#Whether piglins and hoglins automatically convert to zombies in the overworld
 	piglinsHoglinsConvert = false
 	#Whether zombie horses are aggressive or not.
@@ -83,7 +83,7 @@
 	#Whether unmounted horses are scared of zombies.
 	zombiesScareHorses = true
 	#Whether zombie piglins are hostile by default
-	zombiePiglinsHostile = true
+	zombiePiglinsHostile = false
 	#Whether piglins kill zombie mobs
 	piglinsHuntZombies = true
 	#Whether piglins use cures they find and keep in their inventory to heal infection.

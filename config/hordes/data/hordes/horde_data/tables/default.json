@@ -3,8 +3,50 @@
 		"entity": "minecraft:zombie",
 		"weight": 35,
 		"first_day": 0,
+		"last_day": 20,
+		"nbt": "{Tags:[\"canClimb\"]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
 		"last_day": 40,
 		"nbt": "{Tags:[\"canClimb\"]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 40,
+		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:iron_sword,Count:1},{id:ender_pearl,Count:1}]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 40,
+		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:iron_sword,Count:1},{id:lava_bucket,Count:1}]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 40,
+		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:diamond_pickaxe,Count:1}]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 40,
+		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:flint_and_steel,Count:1}]}"
+	},
+	{
+		"entity": "minecraft:zombie",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 40,
+		"nbt": "{Tags:[\"canClimb\"],HandItems:[{id:tnt,Count:1}]}"
 	},
 	{
 		"entity": "minecraft:skeleton",

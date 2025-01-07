@@ -19,7 +19,7 @@
     "count": 1
   },
   "base_drop": {
-    "item": "hostilenetworks:overworld_prediction",
+    "item": "hostilenetworks:end_prediction",
     "count": 1
   },
   "trivia": "hostilenetworks.trivia.ender_guardian",
